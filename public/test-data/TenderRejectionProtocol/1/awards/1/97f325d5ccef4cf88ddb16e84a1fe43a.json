@@ -1,0 +1,101 @@
+{
+  "data": {
+    "id": "97f325d5ccef4cf88ddb16e84a1fe43a",
+    "status": "active",
+    "date": "2024-02-26T17:17:25.878074+02:00",
+    "value": {
+      "amount": 598500,
+      "currency": "UAH",
+      "valueAddedTaxIncluded": true
+    },
+    "suppliers": [
+      {
+        "name": "ТОВ Нове Світло",
+        "identifier": {
+          "scheme": "UA-EDR",
+          "id": "38862199",
+          "legalName": "ТОВ Нове Світло"
+        },
+        "address": {
+          "streetAddress": "м. Житомир, вул. Небесної Сотні 35\\21",
+          "locality": "",
+          "region": "Житомирська область",
+          "postalCode": "",
+          "countryName": "Україна"
+        },
+        "contactPoint": {
+          "email": "nove-svitlo@bk.ru",
+          "telephone": "+380675609188",
+          "name": "Олена Єремейчук"
+        },
+        "scale": "not specified"
+      }
+    ],
+    "bid_id": "02676da6d6e649bdbde0e65813b46ca5",
+    "documents": [
+      {
+        "documentType": "registerExtract",
+        "id": "c3d1a5988fd14bd39b14a47bb77858f8",
+        "datePublished": "2024-02-26T16:44:39.248049+02:00",
+        "hash": "md5:3f5a8c2383f8d3f51cfce6948992633f",
+        "title": "edr_identification.yaml",
+        "format": "application/yaml",
+        "url": "https://public-docs.prozorro.gov.ua/get/09f39da29eaf46b884be7e046967c9cc?Signature=%2FgzOG9a3FiI2dGFW3DaZPqpOyZCRCrh8VwPV7t75VyOeksTt06meuRSD6sd5c7GDqAnW1R6BnmhBxyhbj5B1Dw%3D%3D&KeyID=52462340",
+        "documentOf": "tender",
+        "dateModified": "2024-02-26T16:44:39.248049+02:00",
+        "author": "bots",
+        "language": "uk"
+      },
+      {
+        "documentType": "notice",
+        "title_en": "Untitled.pdf",
+        "title_ru": "Untitled.pdf",
+        "description": "SHA1: 5e8b342aae61067a6acab7639772e0e0fb99e5f9; SHA2-384: 559f5360ba02cb30dc32a5b09299c5f21596cbfa73e9a10e9cdda3268b7daf276e94d80f44b92a22acd253a9aced1ac9",
+        "id": "9a9cda56fe674310b186990ab3b06db9",
+        "datePublished": "2024-02-26T17:14:38.149606+02:00",
+        "hash": "md5:ccb958e05b3d69e2431c5f1d5eacce4c",
+        "title": "Протокол",
+        "format": "application/pdf",
+        "url": "https://public-docs.prozorro.gov.ua/get/48ad1c48813c4761ae083f91a1044f3c?Signature=74JOk1ABlnhKV%2FRX8Q80cC9LKmM98FWj18FCPl7iqpbtoW430HdcqIXp1zk9C5jKzrcUKrhzZyWy8VD2CCx8BA%3D%3D&KeyID=52462340",
+        "documentOf": "tender",
+        "dateModified": "2024-02-26T17:14:38.149606+02:00",
+        "author": "tender_owner",
+        "language": "uk"
+      },
+      {
+        "title_en": "sign.p7s",
+        "title_ru": "sign.p7s",
+        "description": "SHA1: dec48376a1bb27f55d1aba1120bf1c99835b8cb8; SHA2-384: d97afc71293ba9b6aa58584a508104f2e8e3bdafcecfed4d995746493847a5008103d8d1a9df46b62e591d7b24be47d0",
+        "id": "c82ae63d2ef142958e53d161d027cf34",
+        "datePublished": "2024-02-26T17:17:24.993073+02:00",
+        "hash": "md5:36fd43e9006cc5491aa3137290194d90",
+        "title": "sign.p7s",
+        "format": "application/pkcs7-signature",
+        "url": "/test-data/TenderRejectionProtocol/1/awards/1/sign.p7s",
+        "documentOf": "tender",
+        "dateModified": "2024-02-26T17:17:24.993073+02:00",
+        "author": "tender_owner",
+        "language": "uk"
+      },
+      {
+        "documentType": "register",
+        "hash": "md5:135b35569abcec59ee493d5c6140f892",
+        "title": "napc",
+        "format": "text/plain",
+        "url": "https://public-docs.prozorro.gov.ua/get/c6e923fdadc143f9a7d16121376d1121?Signature=U6tWQsG09eyvWAweXrtQvs8GvgIZtdUafbM96CZ55I0AS6QJqXajT7wGRQeSz5oW3BR0Huix5nWcyWPIsSXIDw%3D%3D&KeyID=52462340",
+        "documentOf": "tender",
+        "language": "uk",
+        "id": "b87059454c2d4cada92219a87d889144",
+        "datePublished": "2024-02-26T17:17:41.881663+02:00",
+        "dateModified": "2024-02-26T17:17:41.881663+02:00",
+        "author": "bots"
+      }
+    ],
+    "qualified": true,
+    "eligible": true,
+    "complaintPeriod": {
+      "startDate": "2024-02-26T17:17:25.878074+02:00",
+      "endDate": "2024-03-08T00:00:00+02:00"
+    }
+  }
+}

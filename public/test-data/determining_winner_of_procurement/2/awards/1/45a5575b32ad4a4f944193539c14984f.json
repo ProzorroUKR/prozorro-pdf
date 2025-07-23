@@ -1,0 +1,115 @@
+{
+  "data": {
+    "id": "45a5575b32ad4a4f944193539c14984f",
+    "status": "unsuccessful",
+    "date": "2024-05-10T05:33:00.245776+03:00",
+    "value": {
+      "amount": 9482213.44,
+      "currency": "UAH",
+      "valueAddedTaxIncluded": false
+    },
+    "weightedValue": {
+      "amount": 8936986.17,
+      "currency": "UAH",
+      "valueAddedTaxIncluded": true,
+      "denominator": 1.061
+    },
+    "suppliers": [
+      {
+        "name": "Иванов Иван Иванович",
+        "identifier": {
+          "scheme": "UA-EDR",
+          "id": "12345677",
+          "legalName": "Иванов Иван Иванович"
+        },
+        "address": {
+          "streetAddress": "Шевченка, 23",
+          "locality": "Київ",
+          "region": "Київська область",
+          "postalCode": "357753",
+          "countryName": "Україна"
+        },
+        "contactPoint": {
+          "name": "Provider1 SmartTender Tender",
+          "email": "SmartTenderProvider1@gmail.com",
+          "telephone": "380995555555, 380449999999, 380985662323",
+          "url": "http://mysite.com"
+        },
+        "scale": "mid"
+      }
+    ],
+    "bid_id": "3635d55e32464e7a9ca3c0a29cb2f139",
+    "lotID": "eb3dc007db2a4fa3a8c7a4bdfd09d74c",
+    "documents": [
+      {
+        "documentType": "registerExtract",
+        "id": "cffbf1f092f54ec8b839472c1d79b404",
+        "datePublished": "2024-05-10T05:31:59.938553+03:00",
+        "hash": "md5:3c3f64d42f6a51b858b66e715f273c31",
+        "title": "edr_identification.yaml",
+        "format": "application/yaml",
+        "url": "https://public-docs-staging.prozorro.gov.ua/get/5fd37fc1446b4ccebbdd1c4a2a7fa98c?Signature=V84yvjuGA4cClUnbUkJBHGcTL5ieMr1hzBix%2FyI6BcmPWd58Qx4DNf0Yt82Q7IJx43830xx%2FFDFAIH6VRVKSAQ%3D%3D&KeyID=01b985cf",
+        "documentOf": "tender",
+        "dateModified": "2024-05-10T05:31:59.938553+03:00",
+        "author": "bots",
+        "language": "uk"
+      },
+      {
+        "id": "98631d0a4b064458a0816f079cca1ca3",
+        "datePublished": "2024-05-10T05:32:22.598383+03:00",
+        "hash": "md5:83cf28f2ade8bb89dc11b8da19bedde5",
+        "title": "d-дерновий-4c893536-3264-4b86-9c2d-ca7b8c42a806.docx",
+        "format": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "url": "https://public-docs-staging.prozorro.gov.ua/get/9274193b498e44ac843337afe079e8b5?Signature=fx9JQh8OWTedxMLUYeyhlioKwNP2sCRm3J2IKhvTla69aPcGNUscwsYuQ6r9Tlulx2wq5sHtGD9PBY0GZ7kBDw%3D%3D&KeyID=01b985cf",
+        "documentOf": "tender",
+        "dateModified": "2024-05-10T05:32:22.598383+03:00",
+        "author": "tender_owner",
+        "language": "uk"
+      },
+      {
+        "id": "46d1dd417b7a436f87dd0b11e6a5ba87",
+        "datePublished": "2024-05-10T05:32:39.438069+03:00",
+        "hash": "md5:9564497c0fd36b8286d6843bc35ff87c",
+        "title": "sign.p7s",
+        "format": "application/pkcs7-signature",
+        "url": "https://public-docs-staging.prozorro.gov.ua/get/b279784ac8434fb597f49d131dc6a174?Signature=0dsfrwrwOslmiUUy4yU6I1IhddzriscXQkLnbURR%2F3Jaxp9b8MqxWb2bjbZ4s%2FBayIjv%2FrcGbF%2FapkzIyN0KCw%3D%3D&KeyID=01b985cf",
+        "documentOf": "tender",
+        "dateModified": "2024-05-10T05:32:39.438069+03:00",
+        "author": "tender_owner",
+        "language": "uk"
+      },
+      {
+        "id": "315978bc54214b96b05d647777cfb2c4",
+        "datePublished": "2024-05-10T05:32:49.606779+03:00",
+        "hash": "md5:6668f1dc124c5b58022c7df28ca817a4",
+        "title": "d-заведисвіток-14bd98b0-8e8f-4e3e-8460-613357e58a7e.docx",
+        "format": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "url": "https://public-docs-staging.prozorro.gov.ua/get/bb3055e44a8e42239bd8c8bd39e4ba04?Signature=W%2BYF6DfLOKI53ez0%2FgaVw%2BOMhCnf317xxEfxFbkxRD9%2B3QduXzLdsdn1lEuZ4QH1qYsbLRcF6osLLZ%2FCHwShDA%3D%3D&KeyID=01b985cf",
+        "documentOf": "tender",
+        "dateModified": "2024-05-10T05:32:49.606779+03:00",
+        "author": "tender_owner",
+        "language": "uk"
+      },
+      {
+        "id": "46d1dd417b7a436f87dd0b11e6a5ba87",
+        "datePublished": "2024-05-10T05:32:59.800361+03:00",
+        "hash": "md5:b328a76bec5a4322d3709335e12d1989",
+        "title": "sign.p7s",
+        "format": "application/pkcs7-signature",
+        "url": "/test-data/TenderRejectionProtocol/2/awards/sign.p7s",
+        "documentOf": "tender",
+        "dateModified": "2024-05-10T05:32:59.800361+03:00",
+        "author": "tender_owner",
+        "language": "uk"
+      }
+    ],
+    "title": "Викладена іншою мовою (мовами), аніж мова (мови), що вимагається тендерною документацією",
+    "description": "Відмащувати фльорес слідити тоголітній опадати затасувати відрубність муравельний.",
+    "qualified": false,
+    "eligible": false,
+    "complaintPeriod": {
+      "startDate": "2024-05-10T05:33:00.245776+03:00",
+      "endDate": "2024-05-10T05:43:00.245776+03:00"
+    }
+  }
+}

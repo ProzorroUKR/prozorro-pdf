@@ -1,0 +1,2165 @@
+{
+  "data": {
+    "title": "[\u0422\u0415\u0421\u0422\u0423\u0412\u0410\u041d\u041d\u042f] \u041e\u0442\u043a\u0440\u044b\u0442\u0430\u044f 0322-1",
+    "title_en": "[TESTING] ",
+    "title_ru": "[\u0422\u0415\u0421\u0422\u0418\u0420\u041e\u0412\u0410\u041d\u0418\u0415] ",
+    "documents": [
+      {
+        "id": "ffe8b895afef447c970593ca111ba8bc",
+        "hash": "md5:1cc5d2a89efe93b517b9d34be03e1300",
+        "documentType": "eligibilityCriteria",
+        "title": "biddingDocuments \u2014 \u043a\u043e\u043f\u0438\u044f (2) - Copy.xlsx",
+        "format": "text/plain",
+        "url": "https://public-docs-sandbox-2.prozorro.gov.ua/get/b8195715bf424455a01ae79796163176?Signature=wZgAast5eoaX6URbj%2BvpXq23NwoDj4u%2BDmZs7%2Fjd%2BLBpphccGm8rZtNZ2yGzfH%2Btm1YsvnbpdZOPijvjXLdmCA%3D%3D&KeyID=1331dc52",
+        "datePublished": "2021-03-22T15:19:14.286484+02:00",
+        "dateModified": "2021-03-22T15:19:14.286495+02:00",
+        "author": "tender_owner",
+        "documentOf": "tender"
+      },
+      {
+        "id": "44348186f4f64eaea25c06f1adf31d66",
+        "hash": "md5:1cc5d2a89efe93b517b9d34be03e1300",
+        "documentType": "eligibilityCriteria",
+        "title": "biddingDocuments \u2014 \u043a\u043e\u043f\u0438\u044f - Copy.xlsx",
+        "format": "text/plain",
+        "url": "https://public-docs-sandbox-2.prozorro.gov.ua/get/14c637d6dbea4fa2942e1a4494407c42?Signature=yMJsf4vuB90OxDrTh%2BuwM8XUs6qIYe%2FRgCVImf7rsg4bbDTlTK83sujLc9ur7qwP0VfdMToWVe0ptZjCVnkpAg%3D%3D&KeyID=1331dc52",
+        "datePublished": "2021-03-22T15:19:14.453774+02:00",
+        "dateModified": "2021-03-22T15:19:14.453789+02:00",
+        "author": "tender_owner",
+        "documentOf": "tender"
+      },
+      {
+        "id": "f541b980f23b470099396cc6303707e5",
+        "hash": "md5:1cc5d2a89efe93b517b9d34be03e1300",
+        "documentType": "biddingDocuments",
+        "title": "biddingDocuments \u2014 \u043a\u043e\u043f\u0438\u044f (2) - Copy.xlsx",
+        "format": "text/plain",
+        "url": "https://public-docs-sandbox-2.prozorro.gov.ua/get/36105a1d2e37457882a01116b6adc4f2?Signature=jG2GziNTkD%2BGG%2BQKQdHtHDUuWcj1bTnfj66PQMllHKUiDwuTUed0w1gx6lDHho8zdIbLIbDqAZ6S6PrgfrgYAw%3D%3D&KeyID=1331dc52",
+        "datePublished": "2021-03-22T15:19:28.584062+02:00",
+        "dateModified": "2021-03-22T15:19:28.584076+02:00",
+        "relatedItem": "b49cb01be4c94d1bab81c0c550587201",
+        "author": "tender_owner",
+        "documentOf": "lot"
+      },
+      {
+        "id": "1afd26a47d6c44bd9ef2c893e62fee91",
+        "hash": "md5:1cc5d2a89efe93b517b9d34be03e1300",
+        "documentType": "contractProforma",
+        "title": "biddingDocuments \u2014 \u043a\u043e\u043f\u0438\u044f (4) - Copy.xlsx",
+        "format": "text/plain",
+        "url": "https://public-docs-sandbox-2.prozorro.gov.ua/get/99e74e72186443299358b5e346117c75?Signature=YIlNKEe7GuEYOnmU%2F52TYcq71LYWrUskMkOuQL43IjdeaV8L1IEGLL9%2B0GRM%2BUPWqoAB%2B5TjHTD9dOtRJaWzDA%3D%3D&KeyID=1331dc52",
+        "datePublished": "2021-03-22T15:19:34.792429+02:00",
+        "dateModified": "2021-03-22T15:19:34.792444+02:00",
+        "relatedItem": "1726c8ada8a14fb19317b2e1481a11ba",
+        "author": "tender_owner",
+        "documentOf": "item"
+      },
+      {
+        "id": "203f76e50aec4ed8813b5eb080e4270b",
+        "hash": "md5:1cc5d2a89efe93b517b9d34be03e1300",
+        "documentType": "evaluationCriteria",
+        "title": "biddingDocuments \u2014 \u043a\u043e\u043f\u0438\u044f (3) - Copy.xlsx",
+        "format": "text/plain",
+        "url": "https://public-docs-sandbox-2.prozorro.gov.ua/get/839035a939d74ddfb0fc0eed16c50da2?Signature=L4U3lWklc2J%2BePLBnNbZxGo0WJ705lHmwrg4dFlbpbWf2yUoq4GS4KONP9CX5r8teQVj8Z1bAcYJ1opdU%2ByqAQ%3D%3D&KeyID=1331dc52",
+        "datePublished": "2021-03-22T15:19:45.075340+02:00",
+        "dateModified": "2021-03-22T15:19:45.075351+02:00",
+        "relatedItem": "a1f3e2aa71694bc09d762f300e13fa18",
+        "author": "tender_owner",
+        "documentOf": "lot"
+      },
+      {
+        "id": "94e8deda220c4bae938e4bf66273a07c",
+        "hash": "md5:682d6abf54a0947a873b1188e85a895c",
+        "title": "sign.p7s",
+        "format": "application/pkcs7-signature",
+        "url": "https://public-docs-sandbox-2.prozorro.gov.ua/get/f7d562a011e34e0799052cbc4be4c41e?Signature=L5kWrwjS9Zj%2FgFa8nnPGU%2B%2FJdPJwmlRUBm3TXhEnce80zthcHFK5Ly4pILv0fjjmzvMPegEm2%2B%2FHxycuBPf9BA%3D%3D&KeyID=1331dc52",
+        "datePublished": "2021-03-22T15:21:38.187578+02:00",
+        "dateModified": "2021-03-22T15:21:38.187593+02:00",
+        "author": "tender_owner",
+        "documentOf": "tender"
+      },
+      {
+        "id": "94e8deda220c4bae938e4bf66273a07c",
+        "hash": "md5:542d9cc0ad6904e38e1eaa02ab3d7f68",
+        "title": "sign.p7s",
+        "format": "application/pkcs7-signature",
+        "url": "test-data/announcement/sign_stage.p7s",
+        "datePublished": "2021-03-22T15:21:38.187578+02:00",
+        "dateModified": "2021-03-22T15:33:16.299322+02:00",
+        "author": "tender_owner",
+        "documentOf": "tender"
+      }
+    ],
+    "date": "2021-03-22T16:29:28.773864+02:00",
+    "dateModified": "2021-03-22T16:29:28.773864+02:00",
+    "tenderID": "UA-2021-03-22-000039-a",
+    "owner": "e-tender.biz",
+    "mode": "test",
+    "procurementMethodDetails": "quick, accelerator=1440",
+    "mainProcurementCategory": "goods",
+    "milestones": [
+      {
+        "id": "973dee3f2ddf43e6b6e9760980181e72",
+        "title": "submissionDateOfApplications",
+        "type": "financing",
+        "code": "postpayment",
+        "percentage": 100.0,
+        "duration": {
+          "days": 2,
+          "type": "banking"
+        },
+        "sequenceNumber": 1,
+        "relatedLot": "a1f3e2aa71694bc09d762f300e13fa18"
+      },
+      {
+        "id": "f84089bad110405c82e5bcfd69ee0e6a",
+        "title": "signingTheContract",
+        "type": "financing",
+        "code": "prepayment",
+        "percentage": 100.0,
+        "duration": {
+          "days": 2,
+          "type": "working"
+        },
+        "sequenceNumber": 1,
+        "relatedLot": "b49cb01be4c94d1bab81c0c550587201"
+      }
+    ],
+    "plans": [
+      {
+        "id": "8586238e0b02479999f3b507d9d31d78"
+      }
+    ],
+    "procurementMethod": "open",
+    "awardCriteria": "lowestCost",
+    "submissionMethod": "electronicAuction",
+    "submissionMethodDetails": "quick(mode:fast-forward)",
+    "criteria": [
+      {
+        "id": "520dcbf0c6b349faa7468ac6333d6d1b",
+        "title": "\u0412\u0447\u0438\u043d\u0435\u043d\u043d\u044f \u0437\u043b\u043e\u0447\u0438\u043d\u0456\u0432, \u0443\u0447\u0438\u043d\u0435\u043d\u0438\u0445 \u0437 \u043a\u043e\u0440\u0438\u0441\u043b\u0438\u0432\u0438\u0445 \u043c\u043e\u0442\u0438\u0432\u0456\u0432",
+        "description": "\u0421\u043b\u0443\u0436\u0431\u043e\u0432\u0430 (\u043f\u043e\u0441\u0430\u0434\u043e\u0432\u0430) \u043e\u0441\u043e\u0431\u0430 \u0443\u0447\u0430\u0441\u043d\u0438\u043a\u0430 \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456, \u044f\u043a\u0430 \u043f\u0456\u0434\u043f\u0438\u0441\u0430\u043b\u0430 \u0442\u0435\u043d\u0434\u0435\u0440\u043d\u0443 \u043f\u0440\u043e\u043f\u043e\u0437\u0438\u0446\u0456\u044e (\u0430\u0431\u043e \u0443\u043f\u043e\u0432\u043d\u043e\u0432\u0430\u0436\u0435\u043d\u0430 \u043d\u0430 \u043f\u0456\u0434\u043f\u0438\u0441\u0430\u043d\u043d\u044f \u0434\u043e\u0433\u043e\u0432\u043e\u0440\u0443 \u0432 \u0440\u0430\u0437\u0456 \u043f\u0435\u0440\u0435\u0433\u043e\u0432\u043e\u0440\u043d\u043e\u0457 \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456) \u0430\u0431\u043e \u0444\u0456\u0437\u0438\u0447\u043d\u0430 \u043e\u0441\u043e\u0431\u0430, \u044f\u043a\u0430 \u0454 \u0443\u0447\u0430\u0441\u043d\u0438\u043a\u043e\u043c \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456, \u043d\u0435 \u0431\u0443\u043b\u0430 \u0437\u0430\u0441\u0443\u0434\u0436\u0435\u043d\u0430 \u0437\u0430 \u043a\u0440\u0438\u043c\u0456\u043d\u0430\u043b\u044c\u043d\u0435 \u043f\u0440\u0430\u0432\u043e\u043f\u043e\u0440\u0443\u0448\u0435\u043d\u043d\u044f, \u0432\u0447\u0438\u043d\u0435\u043d\u0435 \u0437 \u043a\u043e\u0440\u0438\u0441\u043b\u0438\u0432\u0438\u0445 \u043c\u043e\u0442\u0438\u0432\u0456\u0432 (\u0437\u043e\u043a\u0440\u0435\u043c\u0430, \u043f\u043e\u0432\u2019\u044f\u0437\u0430\u043d\u0435 \u0437 \u0445\u0430\u0431\u0430\u0440\u043d\u0438\u0446\u0442\u0432\u043e\u043c \u0442\u0430 \u0432\u0456\u0434\u043c\u0438\u0432\u0430\u043d\u043d\u044f\u043c \u043a\u043e\u0448\u0442\u0456\u0432), \u0441\u0443\u0434\u0438\u043c\u0456\u0441\u0442\u044c \u0437 \u044f\u043a\u043e\u0457 \u0437\u043d\u044f\u0442\u043e \u0430\u0431\u043e \u043f\u043e\u0433\u0430\u0448\u0435\u043d\u043e \u0443 \u0432\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u043e\u043c\u0443 \u0437\u0430\u043a\u043e\u043d\u043e\u043c \u043f\u043e\u0440\u044f\u0434\u043a\u0443",
+        "source": "tenderer",
+        "relatesTo": "tenderer",
+        "classification": {
+          "scheme": "ESPD211",
+          "id": "CRITERION.EXCLUSION.CONVICTIONS.PARTICIPATION_IN_CRIMINAL_ORGANISATION"
+        },
+        "legislation": [
+          {
+            "version": "2020-04-19",
+            "identifier": {
+              "id": "922-VIII",
+              "legalName": "\u0417\u0430\u043a\u043e\u043d \u0423\u043a\u0440\u0430\u0457\u043d\u0438 \"\u041f\u0440\u043e \u043f\u0443\u0431\u043b\u0456\u0447\u043d\u0456 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456\"",
+              "uri": "https://zakon.rada.gov.ua/laws/show/922-19"
+            },
+            "type": "NATIONAL_LEGISLATION",
+            "article": "17.1.5"
+          },
+          {
+            "version": "2020-04-19",
+            "identifier": {
+              "id": "922-VIII",
+              "legalName": "\u0417\u0430\u043a\u043e\u043d \u0423\u043a\u0440\u0430\u0457\u043d\u0438 \"\u041f\u0440\u043e \u043f\u0443\u0431\u043b\u0456\u0447\u043d\u0456 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456\"",
+              "uri": "https://zakon.rada.gov.ua/laws/show/922-19"
+            },
+            "type": "NATIONAL_LEGISLATION",
+            "article": "17.1.6"
+          }
+        ],
+        "requirementGroups": [
+          {
+            "id": "9b0edbfbec6b40f986e64d7f5bddf53e",
+            "description": "\u0423\u0447\u0430\u0441\u043d\u0438\u043a \u0444\u0456\u0437\u0438\u0447\u043d\u0430 \u043e\u0441\u043e\u0431\u0430 \u043f\u0456\u0434\u0442\u0432\u0435\u0440\u0434\u0436\u0443\u0454, \u0449\u043e",
+            "requirements": [
+              {
+                "id": "a8ed13d700d74e63ae0cc0cb90e77d69",
+                "title": "\u0424\u0456\u0437\u0438\u0447\u043d\u0430 \u043e\u0441\u043e\u0431\u0430, \u044f\u043a\u0430 \u0454 \u0443\u0447\u0430\u0441\u043d\u0438\u043a\u043e\u043c \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456, \u043d\u0435 \u0431\u0443\u043b\u0430 \u0437\u0430\u0441\u0443\u0434\u0436\u0435\u043d\u0430 \u0437\u0430 \u043a\u0440\u0438\u043c\u0456\u043d\u0430\u043b\u044c\u043d\u0435 \u043f\u0440\u0430\u0432\u043e\u043f\u043e\u0440\u0443\u0448\u0435\u043d\u043d\u044f, \u0432\u0447\u0438\u043d\u0435\u043d\u0435 \u0437 \u043a\u043e\u0440\u0438\u0441\u043b\u0438\u0432\u0438\u0445 \u043c\u043e\u0442\u0438\u0432\u0456\u0432 (\u0437\u043e\u043a\u0440\u0435\u043c\u0430, \u043f\u043e\u0432\u2019\u044f\u0437\u0430\u043d\u0435 \u0437 \u0445\u0430\u0431\u0430\u0440\u043d\u0438\u0446\u0442\u0432\u043e\u043c \u0442\u0430 \u0432\u0456\u0434\u043c\u0438\u0432\u0430\u043d\u043d\u044f\u043c \u043a\u043e\u0448\u0442\u0456\u0432), \u0441\u0443\u0434\u0438\u043c\u0456\u0441\u0442\u044c \u0437 \u044f\u043a\u043e\u0457 \u0437\u043d\u044f\u0442\u043e \u0430\u0431\u043e \u043f\u043e\u0433\u0430\u0448\u0435\u043d\u043e \u0443 \u0432\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u043e\u043c\u0443 \u0437\u0430\u043a\u043e\u043d\u043e\u043c \u043f\u043e\u0440\u044f\u0434\u043a\u0443",
+                "dataType": "boolean",
+                "eligibleEvidences": [
+                  {
+                    "id": "9ea8082552e94ddd972ed32396589161",
+                    "title": "\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442 1",
+                    "type": "document",
+                    "relatedDocument": {
+                      "id": "ffe8b895afef447c970593ca111ba8bc",
+                      "title": "biddingDocuments \u2014 \u043a\u043e\u043f\u0438\u044f (2) - Copy.xlsx"
+                    }
+                  },
+                  {
+                    "id": "20fd2fb92029438bafdb04f8ffa4ede1",
+                    "title": "\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442 2",
+                    "type": "document",
+                    "relatedDocument": {
+                      "id": "44348186f4f64eaea25c06f1adf31d66",
+                      "title": "biddingDocuments \u2014 \u043a\u043e\u043f\u0438\u044f - Copy.xlsx"
+                    }
+                  }
+                ],
+                "expectedValue": "true",
+                "status": "active",
+                "datePublished": "2021-03-22T15:20:41.140694+02:00"
+              }
+            ]
+          },
+          {
+            "id": "5d4ef44832754baaa843fb5e20fc6e50",
+            "description": "\u0423\u0447\u0430\u0441\u043d\u0438\u043a \u044e\u0440\u0438\u0434\u0438\u0447\u043d\u0430 \u043e\u0441\u043e\u0431\u0430 \u043f\u0456\u0434\u0442\u0432\u0435\u0440\u0434\u0436\u0443\u0454, \u0449\u043e",
+            "requirements": [
+              {
+                "id": "766815059cf345f4a9f897e687844fd6",
+                "title": "\u0421\u043b\u0443\u0436\u0431\u043e\u0432\u0430 (\u043f\u043e\u0441\u0430\u0434\u043e\u0432\u0430) \u043e\u0441\u043e\u0431\u0430 \u0443\u0447\u0430\u0441\u043d\u0438\u043a\u0430 \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456, \u044f\u043a\u0430 \u043f\u0456\u0434\u043f\u0438\u0441\u0430\u043b\u0430 \u0442\u0435\u043d\u0434\u0435\u0440\u043d\u0443 \u043f\u0440\u043e\u043f\u043e\u0437\u0438\u0446\u0456\u044e (\u0430\u0431\u043e \u0443\u043f\u043e\u0432\u043d\u043e\u0432\u0430\u0436\u0435\u043d\u0430 \u043d\u0430 \u043f\u0456\u0434\u043f\u0438\u0441\u0430\u043d\u043d\u044f \u0434\u043e\u0433\u043e\u0432\u043e\u0440\u0443 \u0432 \u0440\u0430\u0437\u0456 \u043f\u0435\u0440\u0435\u0433\u043e\u0432\u043e\u0440\u043d\u043e\u0457 \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456), \u043d\u0435 \u0431\u0443\u043b\u0430 \u0437\u0430\u0441\u0443\u0434\u0436\u0435\u043d\u0430 \u0437\u0430 \u043a\u0440\u0438\u043c\u0456\u043d\u0430\u043b\u044c\u043d\u0435 \u043f\u0440\u0430\u0432\u043e\u043f\u043e\u0440\u0443\u0448\u0435\u043d\u043d\u044f, \u0432\u0447\u0438\u043d\u0435\u043d\u0435 \u0437 \u043a\u043e\u0440\u0438\u0441\u043b\u0438\u0432\u0438\u0445 \u043c\u043e\u0442\u0438\u0432\u0456\u0432 (\u0437\u043e\u043a\u0440\u0435\u043c\u0430, \u043f\u043e\u0432\u2019\u044f\u0437\u0430\u043d\u0435 \u0437 \u0445\u0430\u0431\u0430\u0440\u043d\u0438\u0446\u0442\u0432\u043e\u043c, \u0448\u0430\u0445\u0440\u0430\u0439\u0441\u0442\u0432\u043e\u043c \u0442\u0430 \u0432\u0456\u0434\u043c\u0438\u0432\u0430\u043d\u043d\u044f\u043c \u043a\u043e\u0448\u0442\u0456\u0432), \u0441\u0443\u0434\u0438\u043c\u0456\u0441\u0442\u044c \u0437 \u044f\u043a\u043e\u0457 \u0437\u043d\u044f\u0442\u043e \u0430\u0431\u043e \u043f\u043e\u0433\u0430\u0448\u0435\u043d\u043e \u0443 \u0432\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u043e\u043c\u0443 \u0437\u0430\u043a\u043e\u043d\u043e\u043c \u043f\u043e\u0440\u044f\u0434\u043a\u0443",
+                "dataType": "boolean",
+                "eligibleEvidences": [
+                  {
+                    "id": "ea7410ab5f66485cb8b8e6b371db6ad9",
+                    "title": "\u0417\u0430\u044f\u0432\u04301",
+                    "type": "statement"
+                  }
+                ],
+                "expectedValue": "true",
+                "status": "active",
+                "datePublished": "2021-03-22T15:20:41.141129+02:00"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "de49c70c98974694b8bb12876809d103",
+        "title": "\u0412\u0447\u0438\u043d\u0435\u043d\u043d\u044f \u0435\u043a\u043e\u043d\u043e\u043c\u0456\u0447\u043d\u0438\u0445 \u043f\u0440\u0430\u0432\u043e\u043f\u043e\u0440\u0443\u0448\u0435\u043d\u044c",
+        "description": "\u0421\u0443\u0431'\u0454\u043a\u0442 \u0433\u043e\u0441\u043f\u043e\u0434\u0430\u0440\u044e\u0432\u0430\u043d\u043d\u044f (\u0443\u0447\u0430\u0441\u043d\u0438\u043a) \u043f\u0440\u043e\u0442\u044f\u0433\u043e\u043c \u043e\u0441\u0442\u0430\u043d\u043d\u0456\u0445 \u0442\u0440\u044c\u043e\u0445 \u0440\u043e\u043a\u0456\u0432 \u043d\u0435 \u043f\u0440\u0438\u0442\u044f\u0433\u0443\u0432\u0430\u0432\u0441\u044f \u0434\u043e \u0432\u0456\u0434\u043f\u043e\u0432\u0456\u0434\u0430\u043b\u044c\u043d\u043e\u0441\u0442\u0456 \u0437\u0430 \u043f\u043e\u0440\u0443\u0448\u0435\u043d\u043d\u044f, \u043f\u0435\u0440\u0435\u0434\u0431\u0430\u0447\u0435\u043d\u0435 \u043f\u0443\u043d\u043a\u0442\u043e\u043c 4 \u0447\u0430\u0441\u0442\u0438\u043d\u0438 \u0434\u0440\u0443\u0433\u043e\u0457 \u0441\u0442\u0430\u0442\u0442\u0456 6, \u043f\u0443\u043d\u043a\u0442\u043e\u043c 1 \u0441\u0442\u0430\u0442\u0442\u0456 50 \u0417\u0430\u043a\u043e\u043d\u0443 \u0423\u043a\u0440\u0430\u0457\u043d\u0438 \"\u041f\u0440\u043e \u0437\u0430\u0445\u0438\u0441\u0442 \u0435\u043a\u043e\u043d\u043e\u043c\u0456\u0447\u043d\u043e\u0457 \u043a\u043e\u043d\u043a\u0443\u0440\u0435\u043d\u0446\u0456\u0457\", \u0443 \u0432\u0438\u0433\u043b\u044f\u0434\u0456 \u0432\u0447\u0438\u043d\u0435\u043d\u043d\u044f \u0430\u043d\u0442\u0438\u043a\u043e\u043d\u043a\u0443\u0440\u0435\u043d\u0442\u043d\u0438\u0445 \u0443\u0437\u0433\u043e\u0434\u0436\u0435\u043d\u0438\u0445 \u0434\u0456\u0439, \u0449\u043e \u0441\u0442\u043e\u0441\u0443\u044e\u0442\u044c\u0441\u044f \u0441\u043f\u043e\u0442\u0432\u043e\u0440\u0435\u043d\u043d\u044f \u0440\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442\u0456\u0432 \u0442\u0435\u043d\u0434\u0435\u0440\u0456\u0432",
+        "source": "tenderer",
+        "relatesTo": "tenderer",
+        "classification": {
+          "scheme": "ESPD211",
+          "id": "CRITERION.EXCLUSION.CONVICTIONS.FRAUD"
+        },
+        "legislation": [
+          {
+            "version": "2020-04-19",
+            "identifier": {
+              "id": "922-VIII",
+              "legalName": "\u0417\u0430\u043a\u043e\u043d \u0423\u043a\u0440\u0430\u0457\u043d\u0438 \"\u041f\u0440\u043e \u043f\u0443\u0431\u043b\u0456\u0447\u043d\u0456 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456\"",
+              "uri": "https://zakon.rada.gov.ua/laws/show/922-19"
+            },
+            "type": "NATIONAL_LEGISLATION",
+            "article": "17.1.4"
+          },
+          {
+            "version": "2020-02-13",
+            "identifier": {
+              "id": "2210-III",
+              "legalName": "\u0417\u0430\u043a\u043e\u043d \u0423\u043a\u0440\u0430\u0457\u043d\u0438 \"\u041f\u0440\u043e \u0437\u0430\u0445\u0438\u0441\u0442 \u0435\u043a\u043e\u043d\u043e\u043c\u0456\u0447\u043d\u043e\u0457 \u043a\u043e\u043d\u043a\u0443\u0440\u0435\u043d\u0446\u0456\u0457\"",
+              "uri": "https://zakon.rada.gov.ua/laws/show/2210-14"
+            },
+            "type": "NATIONAL_LEGISLATION",
+            "article": "6.2.4"
+          },
+          {
+            "version": "2020-02-13",
+            "identifier": {
+              "id": "2210-III",
+              "legalName": "\u0417\u0430\u043a\u043e\u043d \u0423\u043a\u0440\u0430\u0457\u043d\u0438 \"\u041f\u0440\u043e \u0437\u0430\u0445\u0438\u0441\u0442 \u0435\u043a\u043e\u043d\u043e\u043c\u0456\u0447\u043d\u043e\u0457 \u043a\u043e\u043d\u043a\u0443\u0440\u0435\u043d\u0446\u0456\u0457\"",
+              "uri": "https://zakon.rada.gov.ua/laws/show/2210-14"
+            },
+            "type": "NATIONAL_LEGISLATION",
+            "article": "50.1"
+          }
+        ],
+        "requirementGroups": [
+          {
+            "id": "36fd2a47ea0e4fd5a8f5f540f2a4bbe0",
+            "description": "\u0423\u0447\u0430\u0441\u043d\u0438\u043a \u043f\u0456\u0434\u0442\u0432\u0435\u0440\u0434\u0436\u0443\u0454, \u0449\u043e",
+            "requirements": [
+              {
+                "id": "df7c0721284745baa34559e9183878cf",
+                "title": "\u0421\u0443\u0431'\u0454\u043a\u0442 \u0433\u043e\u0441\u043f\u043e\u0434\u0430\u0440\u044e\u0432\u0430\u043d\u043d\u044f (\u0443\u0447\u0430\u0441\u043d\u0438\u043a) \u043f\u0440\u043e\u0442\u044f\u0433\u043e\u043c \u043e\u0441\u0442\u0430\u043d\u043d\u0456\u0445 \u0442\u0440\u044c\u043e\u0445 \u0440\u043e\u043a\u0456\u0432 \u043d\u0435 \u043f\u0440\u0438\u0442\u044f\u0433\u0443\u0432\u0430\u0432\u0441\u044f \u0434\u043e \u0432\u0456\u0434\u043f\u043e\u0432\u0456\u0434\u0430\u043b\u044c\u043d\u043e\u0441\u0442\u0456 \u0437\u0430 \u043f\u043e\u0440\u0443\u0448\u0435\u043d\u043d\u044f, \u043f\u0435\u0440\u0435\u0434\u0431\u0430\u0447\u0435\u043d\u0435 \u043f\u0443\u043d\u043a\u0442\u043e\u043c 4 \u0447\u0430\u0441\u0442\u0438\u043d\u0438 \u0434\u0440\u0443\u0433\u043e\u0457 \u0441\u0442\u0430\u0442\u0442\u0456 6, \u043f\u0443\u043d\u043a\u0442\u043e\u043c 1 \u0441\u0442\u0430\u0442\u0442\u0456 50 \u0417\u0430\u043a\u043e\u043d\u0443 \u0423\u043a\u0440\u0430\u0457\u043d\u0438 \"\u041f\u0440\u043e \u0437\u0430\u0445\u0438\u0441\u0442 \u0435\u043a\u043e\u043d\u043e\u043c\u0456\u0447\u043d\u043e\u0457 \u043a\u043e\u043d\u043a\u0443\u0440\u0435\u043d\u0446\u0456\u0457\", \u0443 \u0432\u0438\u0433\u043b\u044f\u0434\u0456 \u0432\u0447\u0438\u043d\u0435\u043d\u043d\u044f \u0430\u043d\u0442\u0438\u043a\u043e\u043d\u043a\u0443\u0440\u0435\u043d\u0442\u043d\u0438\u0445 \u0443\u0437\u0433\u043e\u0434\u0436\u0435\u043d\u0438\u0445 \u0434\u0456\u0439, \u0449\u043e \u0441\u0442\u043e\u0441\u0443\u044e\u0442\u044c\u0441\u044f \u0441\u043f\u043e\u0442\u0432\u043e\u0440\u0435\u043d\u043d\u044f \u0440\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442\u0456\u0432 \u0442\u0435\u043d\u0434\u0435\u0440\u0456\u0432",
+                "dataType": "boolean",
+                "expectedValue": "true",
+                "status": "active",
+                "datePublished": "2021-03-22T15:20:41.146428+02:00"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "33e3816addaa4b479aa136755ca9f7ad",
+        "title": "\u0412\u0447\u0438\u043d\u0435\u043d\u043d\u044f \u043a\u043e\u0440\u0443\u043f\u0446\u0456\u0439\u043d\u0438\u0445 \u043f\u0440\u0430\u0432\u043e\u043f\u043e\u0440\u0443\u0448\u0435\u043d\u044c",
+        "description": "\u0412\u0456\u0434\u043e\u043c\u043e\u0441\u0442\u0456 \u043f\u0440\u043e \u044e\u0440\u0438\u0434\u0438\u0447\u043d\u0443 \u043e\u0441\u043e\u0431\u0443, \u044f\u043a\u0430 \u0454 \u0443\u0447\u0430\u0441\u043d\u0438\u043a\u043e\u043c \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456, \u043d\u0435 \u0432\u043d\u0435\u0441\u0435\u043d\u043e \u0434\u043e \u0404\u0434\u0438\u043d\u043e\u0433\u043e \u0434\u0435\u0440\u0436\u0430\u0432\u043d\u043e\u0433\u043e \u0440\u0435\u0454\u0441\u0442\u0440\u0443 \u043e\u0441\u0456\u0431, \u044f\u043a\u0456 \u0432\u0447\u0438\u043d\u0438\u043b\u0438 \u043a\u043e\u0440\u0443\u043f\u0446\u0456\u0439\u043d\u0456 \u0430\u0431\u043e \u043f\u043e\u0432'\u044f\u0437\u0430\u043d\u0456 \u0437 \u043a\u043e\u0440\u0443\u043f\u0446\u0456\u0454\u044e \u043f\u0440\u0430\u0432\u043e\u043f\u043e\u0440\u0443\u0448\u0435\u043d\u043d\u044f. \u0421\u043b\u0443\u0436\u0431\u043e\u0432\u0443 (\u043f\u043e\u0441\u0430\u0434\u043e\u0432\u0443) \u043e\u0441\u043e\u0431\u0443 \u0443\u0447\u0430\u0441\u043d\u0438\u043a\u0430 \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456, \u044f\u043a\u0443 \u0443\u043f\u043e\u0432\u043d\u043e\u0432\u0430\u0436\u0435\u043d\u043e \u0443\u0447\u0430\u0441\u043d\u0438\u043a\u043e\u043c \u043f\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043b\u044f\u0442\u0438 \u0439\u043e\u0433\u043e \u0456\u043d\u0442\u0435\u0440\u0435\u0441\u0438 \u043f\u0456\u0434 \u0447\u0430\u0441 \u043f\u0440\u043e\u0432\u0435\u0434\u0435\u043d\u043d\u044f \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456, \u0444\u0456\u0437\u0438\u0447\u043d\u0443 \u043e\u0441\u043e\u0431\u0443, \u044f\u043a\u0430 \u0454 \u0443\u0447\u0430\u0441\u043d\u0438\u043a\u043e\u043c, \u043d\u0435 \u0431\u0443\u043b\u043e \u043f\u0440\u0438\u0442\u044f\u0433\u043d\u0443\u0442\u043e \u0437\u0433\u0456\u0434\u043d\u043e \u0456\u0437 \u0437\u0430\u043a\u043e\u043d\u043e\u043c \u0434\u043e \u0432\u0456\u0434\u043f\u043e\u0432\u0456\u0434\u0430\u043b\u044c\u043d\u043e\u0441\u0442\u0456 \u0437\u0430 \u0432\u0447\u0438\u043d\u0435\u043d\u043d\u044f \u043a\u043e\u0440\u0443\u043f\u0446\u0456\u0439\u043d\u043e\u0433\u043e \u043f\u0440\u0430\u0432\u043e\u043f\u043e\u0440\u0443\u0448\u0435\u043d\u043d\u044f \u0430\u0431\u043e \u043f\u0440\u0430\u0432\u043e\u043f\u043e\u0440\u0443\u0448\u0435\u043d\u043d\u044f, \u043f\u043e\u0432'\u044f\u0437\u0430\u043d\u043e\u0433\u043e \u0437 \u043a\u043e\u0440\u0443\u043f\u0446\u0456\u0454\u044e",
+        "source": "tenderer",
+        "relatesTo": "tenderer",
+        "classification": {
+          "scheme": "ESPD211",
+          "id": "CRITERION.EXCLUSION.CONVICTIONS.CORRUPTION"
+        },
+        "legislation": [
+          {
+            "version": "2020-04-19",
+            "identifier": {
+              "id": "922-VIII",
+              "legalName": "\u0417\u0430\u043a\u043e\u043d \u0423\u043a\u0440\u0430\u0457\u043d\u0438 \"\u041f\u0440\u043e \u043f\u0443\u0431\u043b\u0456\u0447\u043d\u0456 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456\"",
+              "uri": "https://zakon.rada.gov.ua/laws/show/922-19"
+            },
+            "type": "NATIONAL_LEGISLATION",
+            "article": "17.1.2"
+          },
+          {
+            "version": "2020-04-19",
+            "identifier": {
+              "id": "922-VIII",
+              "legalName": "\u0417\u0430\u043a\u043e\u043d \u0423\u043a\u0440\u0430\u0457\u043d\u0438 \"\u041f\u0440\u043e \u043f\u0443\u0431\u043b\u0456\u0447\u043d\u0456 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456\"",
+              "uri": "https://zakon.rada.gov.ua/laws/show/922-19"
+            },
+            "type": "NATIONAL_LEGISLATION",
+            "article": "17.1.3"
+          }
+        ],
+        "requirementGroups": [
+          {
+            "id": "99782396b5d0446297821a2c609f4747",
+            "description": "\u0423\u0447\u0430\u0441\u043d\u0438\u043a \u043f\u0456\u0434\u0442\u0432\u0435\u0440\u0434\u0436\u0443\u0454, \u0449\u043e",
+            "requirements": [
+              {
+                "id": "0d91a9d560ba416f9fa0c2745c20173d",
+                "title": "\u0412\u0456\u0434\u043e\u043c\u043e\u0441\u0442\u0456 \u043f\u0440\u043e \u044e\u0440\u0438\u0434\u0438\u0447\u043d\u0443 \u043e\u0441\u043e\u0431\u0443, \u044f\u043a\u0430 \u0454 \u0443\u0447\u0430\u0441\u043d\u0438\u043a\u043e\u043c \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456, \u043d\u0435 \u0432\u043d\u0435\u0441\u0435\u043d\u043e \u0434\u043e \u0404\u0434\u0438\u043d\u043e\u0433\u043e \u0434\u0435\u0440\u0436\u0430\u0432\u043d\u043e\u0433\u043e \u0440\u0435\u0454\u0441\u0442\u0440\u0443 \u043e\u0441\u0456\u0431, \u044f\u043a\u0456 \u0432\u0447\u0438\u043d\u0438\u043b\u0438 \u043a\u043e\u0440\u0443\u043f\u0446\u0456\u0439\u043d\u0456 \u0430\u0431\u043e \u043f\u043e\u0432'\u044f\u0437\u0430\u043d\u0456 \u0437 \u043a\u043e\u0440\u0443\u043f\u0446\u0456\u0454\u044e \u043f\u0440\u0430\u0432\u043e\u043f\u043e\u0440\u0443\u0448\u0435\u043d\u043d\u044f",
+                "dataType": "boolean",
+                "expectedValue": "true",
+                "status": "active",
+                "datePublished": "2021-03-22T15:20:41.151134+02:00"
+              },
+              {
+                "id": "b6565d36ba744d93b733df59f8acc510",
+                "title": "\u0421\u043b\u0443\u0436\u0431\u043e\u0432\u0443 (\u043f\u043e\u0441\u0430\u0434\u043e\u0432\u0443) \u043e\u0441\u043e\u0431\u0443 \u0443\u0447\u0430\u0441\u043d\u0438\u043a\u0430 \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456, \u044f\u043a\u0443 \u0443\u043f\u043e\u0432\u043d\u043e\u0432\u0430\u0436\u0435\u043d\u043e \u0443\u0447\u0430\u0441\u043d\u0438\u043a\u043e\u043c \u043f\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043b\u044f\u0442\u0438 \u0439\u043e\u0433\u043e \u0456\u043d\u0442\u0435\u0440\u0435\u0441\u0438 \u043f\u0456\u0434 \u0447\u0430\u0441 \u043f\u0440\u043e\u0432\u0435\u0434\u0435\u043d\u043d\u044f \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456, \u0444\u0456\u0437\u0438\u0447\u043d\u0443 \u043e\u0441\u043e\u0431\u0443, \u044f\u043a\u0430 \u0454 \u0443\u0447\u0430\u0441\u043d\u0438\u043a\u043e\u043c, \u043d\u0435 \u0431\u0443\u043b\u043e \u043f\u0440\u0438\u0442\u044f\u0433\u043d\u0443\u0442\u043e \u0437\u0433\u0456\u0434\u043d\u043e \u0456\u0437 \u0437\u0430\u043a\u043e\u043d\u043e\u043c \u0434\u043e \u0432\u0456\u0434\u043f\u043e\u0432\u0456\u0434\u0430\u043b\u044c\u043d\u043e\u0441\u0442\u0456 \u0437\u0430 \u0432\u0447\u0438\u043d\u0435\u043d\u043d\u044f \u043a\u043e\u0440\u0443\u043f\u0446\u0456\u0439\u043d\u043e\u0433\u043e \u043f\u0440\u0430\u0432\u043e\u043f\u043e\u0440\u0443\u0448\u0435\u043d\u043d\u044f \u0430\u0431\u043e \u043f\u0440\u0430\u0432\u043e\u043f\u043e\u0440\u0443\u0448\u0435\u043d\u043d\u044f, \u043f\u043e\u0432'\u044f\u0437\u0430\u043d\u043e\u0433\u043e \u0437 \u043a\u043e\u0440\u0443\u043f\u0446\u0456\u0454\u044e",
+                "dataType": "boolean",
+                "expectedValue": "true",
+                "status": "active",
+                "datePublished": "2021-03-22T15:20:41.151262+02:00"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "167657a2d28d48099f2ef7f662847f88",
+        "title": "\u0412\u0447\u0438\u043d\u0435\u043d\u043d\u044f \u043f\u0440\u0430\u0432\u043e\u043f\u043e\u0440\u0443\u0448\u0435\u043d\u044c, \u043f\u043e\u0432'\u044f\u0437\u0430\u043d\u0438\u0445 \u0437 \u0432\u0438\u043a\u043e\u0440\u0438\u0441\u0442\u0430\u043d\u043d\u044f\u043c \u0434\u0438\u0442\u044f\u0447\u043e\u0457 \u043f\u0440\u0430\u0446\u0456 \u0447\u0438 \u0431\u0443\u0434\u044c-\u044f\u043a\u0438\u043c\u0438 \u0444\u043e\u0440\u043c\u0430\u043c\u0438 \u0442\u043e\u0440\u0433\u0456\u0432\u043b\u0456 \u043b\u044e\u0434\u044c\u043c\u0438",
+        "description": "\u0421\u043b\u0443\u0436\u0431\u043e\u0432\u0430 (\u043f\u043e\u0441\u0430\u0434\u043e\u0432\u0430) \u043e\u0441\u043e\u0431\u0430 \u0443\u0447\u0430\u0441\u043d\u0438\u043a\u0430 \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456, \u044f\u043a\u0443 \u0443\u043f\u043e\u0432\u043d\u043e\u0432\u0430\u0436\u0435\u043d\u043e \u0443\u0447\u0430\u0441\u043d\u0438\u043a\u043e\u043c \u043f\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043b\u044f\u0442\u0438 \u0439\u043e\u0433\u043e \u0456\u043d\u0442\u0435\u0440\u0435\u0441\u0438 \u043f\u0456\u0434 \u0447\u0430\u0441 \u043f\u0440\u043e\u0432\u0435\u0434\u0435\u043d\u043d\u044f \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456, \u0444\u0456\u0437\u0438\u0447\u043d\u0443 \u043e\u0441\u043e\u0431\u0443, \u044f\u043a\u0430 \u0454 \u0443\u0447\u0430\u0441\u043d\u0438\u043a\u043e\u043c, \u043d\u0435 \u0431\u0443\u043b\u043e \u043f\u0440\u0438\u0442\u044f\u0433\u043d\u0443\u0442\u043e \u0437\u0433\u0456\u0434\u043d\u043e \u0456\u0437 \u0437\u0430\u043a\u043e\u043d\u043e\u043c \u0434\u043e \u0432\u0456\u0434\u043f\u043e\u0432\u0456\u0434\u0430\u043b\u044c\u043d\u043e\u0441\u0442\u0456 \u0437\u0430 \u0432\u0447\u0438\u043d\u0435\u043d\u043d\u044f \u043f\u0440\u0430\u0432\u043e\u043f\u043e\u0440\u0443\u0448\u0435\u043d\u043d\u044f, \u043f\u043e\u0432'\u044f\u0437\u0430\u043d\u043e\u0433\u043e \u0437 \u0432\u0438\u043a\u043e\u0440\u0438\u0441\u0442\u0430\u043d\u043d\u044f\u043c \u0434\u0438\u0442\u044f\u0447\u043e\u0457 \u043f\u0440\u0430\u0446\u0456 \u0447\u0438 \u0431\u0443\u0434\u044c-\u044f\u043a\u0438\u043c\u0438 \u0444\u043e\u0440\u043c\u0430\u043c\u0438 \u0442\u043e\u0440\u0433\u0456\u0432\u043b\u0456 \u043b\u044e\u0434\u044c\u043c\u0438",
+        "source": "tenderer",
+        "relatesTo": "tenderer",
+        "classification": {
+          "scheme": "ESPD211",
+          "id": "CRITERION.EXCLUSION.CONVICTIONS.CHILD_LABOUR-HUMAN_TRAFFICKING"
+        },
+        "legislation": [
+          {
+            "version": "2020-04-19",
+            "identifier": {
+              "id": "922-VIII",
+              "legalName": "\u0417\u0430\u043a\u043e\u043d \u0423\u043a\u0440\u0430\u0457\u043d\u0438 \"\u041f\u0440\u043e \u043f\u0443\u0431\u043b\u0456\u0447\u043d\u0456 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456\"",
+              "uri": "https://zakon.rada.gov.ua/laws/show/922-19"
+            },
+            "type": "NATIONAL_LEGISLATION",
+            "article": "17.1.12"
+          }
+        ],
+        "requirementGroups": [
+          {
+            "id": "5b81dbd0e7b34227b6075e894c9f0f20",
+            "description": "\u0423\u0447\u0430\u0441\u043d\u0438\u043a \u043f\u0456\u0434\u0442\u0432\u0435\u0440\u0434\u0436\u0443\u0454, \u0449\u043e",
+            "requirements": [
+              {
+                "id": "fdfa451f8344405d85d246092fe256ef",
+                "title": "\u0421\u043b\u0443\u0436\u0431\u043e\u0432\u0430 (\u043f\u043e\u0441\u0430\u0434\u043e\u0432\u0430) \u043e\u0441\u043e\u0431\u0430 \u0443\u0447\u0430\u0441\u043d\u0438\u043a\u0430 \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456, \u044f\u043a\u0443 \u0443\u043f\u043e\u0432\u043d\u043e\u0432\u0430\u0436\u0435\u043d\u043e \u0443\u0447\u0430\u0441\u043d\u0438\u043a\u043e\u043c \u043f\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043b\u044f\u0442\u0438 \u0439\u043e\u0433\u043e \u0456\u043d\u0442\u0435\u0440\u0435\u0441\u0438 \u043f\u0456\u0434 \u0447\u0430\u0441 \u043f\u0440\u043e\u0432\u0435\u0434\u0435\u043d\u043d\u044f \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456, \u0444\u0456\u0437\u0438\u0447\u043d\u0443 \u043e\u0441\u043e\u0431\u0443, \u044f\u043a\u0430 \u0454 \u0443\u0447\u0430\u0441\u043d\u0438\u043a\u043e\u043c, \u043d\u0435 \u0431\u0443\u043b\u043e \u043f\u0440\u0438\u0442\u044f\u0433\u043d\u0443\u0442\u043e \u0437\u0433\u0456\u0434\u043d\u043e \u0456\u0437 \u0437\u0430\u043a\u043e\u043d\u043e\u043c \u0434\u043e \u0432\u0456\u0434\u043f\u043e\u0432\u0456\u0434\u0430\u043b\u044c\u043d\u043e\u0441\u0442\u0456 \u0437\u0430 \u0432\u0447\u0438\u043d\u0435\u043d\u043d\u044f \u043f\u0440\u0430\u0432\u043e\u043f\u043e\u0440\u0443\u0448\u0435\u043d\u043d\u044f, \u043f\u043e\u0432'\u044f\u0437\u0430\u043d\u043e\u0433\u043e \u0437 \u0432\u0438\u043a\u043e\u0440\u0438\u0441\u0442\u0430\u043d\u043d\u044f\u043c \u0434\u0438\u0442\u044f\u0447\u043e\u0457 \u043f\u0440\u0430\u0446\u0456 \u0447\u0438 \u0431\u0443\u0434\u044c-\u044f\u043a\u0438\u043c\u0438 \u0444\u043e\u0440\u043c\u0430\u043c\u0438 \u0442\u043e\u0440\u0433\u0456\u0432\u043b\u0456 \u043b\u044e\u0434\u044c\u043c\u0438",
+                "dataType": "boolean",
+                "expectedValue": "true",
+                "status": "active",
+                "datePublished": "2021-03-22T15:20:41.153947+02:00"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "b192a266cd9c4b7d97237c84fb8bc007",
+        "title": "\u0417\u0430\u0431\u043e\u0440\u0433\u043e\u0432\u0430\u043d\u0456\u0441\u0442\u044c \u0437\u0456 \u0441\u043f\u043b\u0430\u0442\u0438 \u043f\u043e\u0434\u0430\u0442\u043a\u0456\u0432 \u0456 \u0437\u0431\u043e\u0440\u0456\u0432 (\u043e\u0431\u043e\u0432'\u044f\u0437\u043a\u043e\u0432\u0438\u0445 \u043f\u043b\u0430\u0442\u0435\u0436\u0456\u0432)",
+        "description": "\u0423\u0447\u0430\u0441\u043d\u0438\u043a \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456 \u043d\u0435 \u043c\u0430\u0454 \u0437\u0430\u0431\u043e\u0440\u0433\u043e\u0432\u0430\u043d\u043e\u0441\u0442\u0456 \u0437\u0456 \u0441\u043f\u043b\u0430\u0442\u0438 \u043f\u043e\u0434\u0430\u0442\u043a\u0456\u0432 \u0456 \u0437\u0431\u043e\u0440\u0456\u0432 (\u043e\u0431\u043e\u0432'\u044f\u0437\u043a\u043e\u0432\u0438\u0445 \u043f\u043b\u0430\u0442\u0435\u0436\u0456\u0432)",
+        "source": "tenderer",
+        "relatesTo": "tenderer",
+        "classification": {
+          "scheme": "ESPD211",
+          "id": "CRITERION.EXCLUSION.CONTRIBUTIONS.PAYMENT_OF_TAXES"
+        },
+        "legislation": [
+          {
+            "version": "2020-04-19",
+            "identifier": {
+              "id": "922-VIII",
+              "legalName": "\u0417\u0430\u043a\u043e\u043d \u0423\u043a\u0440\u0430\u0457\u043d\u0438 \"\u041f\u0440\u043e \u043f\u0443\u0431\u043b\u0456\u0447\u043d\u0456 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456\"",
+              "uri": "https://zakon.rada.gov.ua/laws/show/922-19"
+            },
+            "type": "NATIONAL_LEGISLATION",
+            "article": "17.1.13"
+          }
+        ],
+        "requirementGroups": [
+          {
+            "id": "987cfc59331541e59c2de8806a5490d1",
+            "description": "\u0423\u0447\u0430\u0441\u043d\u0438\u043a \u043f\u0456\u0434\u0442\u0432\u0435\u0440\u0434\u0436\u0443\u0454, \u0449\u043e",
+            "requirements": [
+              {
+                "id": "44475e57f95b4d0f94a3918f74684390",
+                "title": "\u0412\u0456\u043d \u043d\u0435 \u043c\u0430\u0454 \u0437\u0430\u0431\u043e\u0440\u0433\u043e\u0432\u0430\u043d\u043e\u0441\u0442\u0456 \u0437\u0456 \u0441\u043f\u043b\u0430\u0442\u0438 \u043f\u043e\u0434\u0430\u0442\u043a\u0456\u0432 \u0456 \u0437\u0431\u043e\u0440\u0456\u0432 (\u043e\u0431\u043e\u0432'\u044f\u0437\u043a\u043e\u0432\u0438\u0445 \u043f\u043b\u0430\u0442\u0435\u0436\u0456\u0432)",
+                "dataType": "boolean",
+                "expectedValue": "true",
+                "status": "active",
+                "datePublished": "2021-03-22T15:20:41.161392+02:00"
+              }
+            ]
+          },
+          {
+            "id": "328bcbe6e72d4d339ac80bd1e91afd8a",
+            "description": "\u0423\u0447\u0430\u0441\u043d\u0438\u043a \u043f\u0456\u0434\u0442\u0432\u0435\u0440\u0434\u0436\u0443\u0454, \u0449\u043e",
+            "requirements": [
+              {
+                "id": "74a46881b02c446e9f9de365812a682a",
+                "title": "\u0412\u0456\u043d \u043c\u0430\u0454 \u0437\u0430\u0431\u043e\u0440\u0433\u043e\u0432\u0430\u043d\u0456\u0441\u0442\u044c \u0437\u0456 \u0441\u043f\u043b\u0430\u0442\u0438 \u043f\u043e\u0434\u0430\u0442\u043a\u0456\u0432 \u0456 \u0437\u0431\u043e\u0440\u0456\u0432 (\u043e\u0431\u043e\u0432'\u044f\u0437\u043a\u043e\u0432\u0438\u0445 \u043f\u043b\u0430\u0442\u0435\u0436\u0456\u0432)",
+                "dataType": "boolean",
+                "expectedValue": "true",
+                "status": "active",
+                "datePublished": "2021-03-22T15:20:41.161545+02:00"
+              },
+              {
+                "id": "4bbd65f766134d068c53a8e94e7bf6c3",
+                "title": "\u0421\u0443\u043c\u0430 \u0456\u0441\u043d\u0443\u044e\u0447\u043e\u0457 \u0437\u0430\u0431\u043e\u0440\u0433\u043e\u0432\u0430\u043d\u043e\u0441\u0442\u0456",
+                "dataType": "number",
+                "status": "active",
+                "datePublished": "2021-03-22T15:20:41.161659+02:00"
+              },
+              {
+                "id": "ced6911bc7c44d91a81e33dfe9a8557e",
+                "title": "\u0425\u0430\u0440\u0430\u043a\u0442\u0435\u0440 \u0456\u0441\u043d\u0443\u044e\u0447\u043e\u0457 \u0437\u0430\u0431\u043e\u0440\u0433\u043e\u0432\u0430\u043d\u043e\u0441\u0442\u0456",
+                "dataType": "string",
+                "status": "active",
+                "datePublished": "2021-03-22T15:20:41.161785+02:00"
+              },
+              {
+                "id": "90b4396f64c64cd085278a5897a8371c",
+                "title": "\u041f\u0440\u0438\u0447\u0438\u043d\u0430 \u0432\u0438\u043d\u0438\u043a\u043d\u0435\u043d\u043d\u044f \u0456\u0441\u043d\u0443\u044e\u0447\u043e\u0457 \u0437\u0430\u0431\u043e\u0440\u0433\u043e\u0432\u0430\u043d\u043e\u0441\u0442\u0456",
+                "dataType": "string",
+                "status": "active",
+                "datePublished": "2021-03-22T15:20:41.161922+02:00"
+              },
+              {
+                "id": "a672f2ced3f445949ece582601ac2a6a",
+                "title": "\u0423\u0447\u0430\u0441\u043d\u0438\u043a \u0437\u0434\u0456\u0439\u0441\u043d\u0438\u0432 \u0437\u0430\u0445\u043e\u0434\u0438 \u0449\u043e\u0434\u043e \u0440\u043e\u0437\u0441\u0442\u0440\u043e\u0447\u0435\u043d\u043d\u044f \u0456 \u0432\u0456\u0434\u0441\u0442\u0440\u043e\u0447\u0435\u043d\u043d\u044f \u0442\u0430\u043a\u043e\u0457 \u0437\u0430\u0431\u043e\u0440\u0433\u043e\u0432\u0430\u043d\u043e\u0441\u0442\u0456 \u0443 \u043f\u043e\u0440\u044f\u0434\u043a\u0443 \u0442\u0430 \u043d\u0430 \u0443\u043c\u043e\u0432\u0430\u0445, \u0432\u0438\u0437\u043d\u0430\u0447\u0435\u043d\u0438\u0445 \u0437\u0430\u043a\u043e\u043d\u043e\u0434\u0430\u0432\u0441\u0442\u0432\u043e\u043c \u043a\u0440\u0430\u0457\u043d\u0438 \u0440\u0435\u0454\u0441\u0442\u0440\u0430\u0446\u0456\u0457 \u0442\u0430\u043a\u043e\u0433\u043e \u0443\u0447\u0430\u0441\u043d\u0438\u043a\u0430",
+                "dataType": "boolean",
+                "expectedValue": "true",
+                "status": "active",
+                "datePublished": "2021-03-22T15:20:41.162036+02:00"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "b6594c4fe2a64f7cbfeff9e0f22d4288",
+        "title": "\u041f\u043e\u0440\u0443\u0448\u0435\u043d\u043d\u044f \u0441\u043f\u0440\u0430\u0432 \u043f\u0440\u043e \u0431\u0430\u043d\u043a\u0440\u0443\u0442\u0441\u0442\u0432\u043e",
+        "description": "\u0423\u0447\u0430\u0441\u043d\u0438\u043a \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456 \u043d\u0435 \u0432\u0438\u0437\u043d\u0430\u043d\u0438\u0439 \u0443 \u0432\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u043e\u043c\u0443 \u0437\u0430\u043a\u043e\u043d\u043e\u043c \u043f\u043e\u0440\u044f\u0434\u043a\u0443 \u0431\u0430\u043d\u043a\u0440\u0443\u0442\u043e\u043c \u0442\u0430 \u0441\u0442\u043e\u0441\u043e\u0432\u043d\u043e \u043d\u044c\u043e\u0433\u043e \u043d\u0435 \u0432\u0456\u0434\u043a\u0440\u0438\u0442\u0430 \u043b\u0456\u043a\u0432\u0456\u0434\u0430\u0446\u0456\u0439\u043d\u0430 \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0430",
+        "source": "tenderer",
+        "relatesTo": "tenderer",
+        "classification": {
+          "scheme": "ESPD211",
+          "id": "CRITERION.EXCLUSION.BUSINESS.BANKRUPTCY"
+        },
+        "legislation": [
+          {
+            "version": "2020-04-19",
+            "identifier": {
+              "id": "922-VIII",
+              "legalName": "\u0417\u0430\u043a\u043e\u043d \u0423\u043a\u0440\u0430\u0457\u043d\u0438 \"\u041f\u0440\u043e \u043f\u0443\u0431\u043b\u0456\u0447\u043d\u0456 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456\"",
+              "uri": "https://zakon.rada.gov.ua/laws/show/922-19"
+            },
+            "type": "NATIONAL_LEGISLATION",
+            "article": "17.1.8"
+          }
+        ],
+        "requirementGroups": [
+          {
+            "id": "39b16a8f8d9548ddb9a34676b9a048ec",
+            "description": "\u0423\u0447\u0430\u0441\u043d\u0438\u043a \u043f\u0456\u0434\u0442\u0432\u0435\u0440\u0434\u0436\u0443\u0454, \u0449\u043e",
+            "requirements": [
+              {
+                "id": "c6aada0931e547d9a09c0b17c7e7bac9",
+                "title": "\u0423\u0447\u0430\u0441\u043d\u0438\u043a \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456 \u043d\u0435 \u0432\u0438\u0437\u043d\u0430\u043d\u0438\u0439 \u0443 \u0432\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u043e\u043c\u0443 \u0437\u0430\u043a\u043e\u043d\u043e\u043c \u043f\u043e\u0440\u044f\u0434\u043a\u0443 \u0431\u0430\u043d\u043a\u0440\u0443\u0442\u043e\u043c \u0442\u0430 \u0441\u0442\u043e\u0441\u043e\u0432\u043d\u043e \u043d\u044c\u043e\u0433\u043e \u043d\u0435 \u0432\u0456\u0434\u043a\u0440\u0438\u0442\u0430 \u043b\u0456\u043a\u0432\u0456\u0434\u0430\u0446\u0456\u0439\u043d\u0430 \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0430",
+                "dataType": "boolean",
+                "expectedValue": "true",
+                "status": "active",
+                "datePublished": "2021-03-22T15:20:41.164925+02:00"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "05c06cceca704e87a1bc000cb38b5cc4",
+        "title": "\u0412\u0438\u044f\u0432\u043b\u0435\u043d\u043d\u044f \u0444\u0430\u043a\u0442\u0443 \u0437\u0432'\u044f\u0437\u043a\u0443 \u0443\u0447\u0430\u0441\u043d\u0438\u043a\u0430 \u0437 \u0456\u043d\u0448\u0438\u043c\u0438 \u0443\u0447\u0430\u0441\u043d\u0438\u043a\u0430\u043c\u0438 \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0430\u0431\u043e \u0437\u0430\u043c\u043e\u0432\u043d\u0438\u043a\u043e\u043c",
+        "description": "\u0422\u0435\u043d\u0434\u0435\u0440\u043d\u0430 \u043f\u0440\u043e\u043f\u043e\u0437\u0438\u0446\u0456\u044f \u043f\u043e\u0434\u0430\u043d\u0430 \u0443\u0447\u0430\u0441\u043d\u0438\u043a\u043e\u043c \u043a\u043e\u043d\u043a\u0443\u0440\u0435\u043d\u0442\u043d\u043e\u0457 \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456 \u0430\u0431\u043e \u0443\u0447\u0430\u0441\u0442\u044c \u0443 \u043f\u0435\u0440\u0435\u0433\u043e\u0432\u043e\u0440\u043d\u0456\u0439 \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0456 \u0431\u0435\u0440\u0435 \u0443\u0447\u0430\u0441\u043d\u0438\u043a, \u044f\u043a\u0438\u0439 \u0454 \u043f\u043e\u0432'\u044f\u0437\u0430\u043d\u043e\u044e \u043e\u0441\u043e\u0431\u043e\u044e \u0437 \u0456\u043d\u0448\u0438\u043c\u0438 \u0443\u0447\u0430\u0441\u043d\u0438\u043a\u0430\u043c\u0438 \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456 \u0442\u0430/\u0430\u0431\u043e \u0437 \u0443\u043f\u043e\u0432\u043d\u043e\u0432\u0430\u0436\u0435\u043d\u043e\u044e \u043e\u0441\u043e\u0431\u043e\u044e (\u043e\u0441\u043e\u0431\u0430\u043c\u0438), \u0442\u0430/\u0430\u0431\u043e \u0437 \u043a\u0435\u0440\u0456\u0432\u043d\u0438\u043a\u043e\u043c \u0437\u0430\u043c\u043e\u0432\u043d\u0438\u043a\u0430",
+        "source": "procuringEntity",
+        "relatesTo": "tenderer",
+        "classification": {
+          "scheme": "ESPD211",
+          "id": "CRITERION.EXCLUSION.MISCONDUCT.MARKET_DISTORTION"
+        },
+        "legislation": [
+          {
+            "version": "2020-04-19",
+            "identifier": {
+              "id": "922-VIII",
+              "legalName": "\u0417\u0430\u043a\u043e\u043d \u0423\u043a\u0440\u0430\u0457\u043d\u0438 \"\u041f\u0440\u043e \u043f\u0443\u0431\u043b\u0456\u0447\u043d\u0456 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456\"",
+              "uri": "https://zakon.rada.gov.ua/laws/show/922-19"
+            },
+            "type": "NATIONAL_LEGISLATION",
+            "article": "17.1.7"
+          }
+        ],
+        "requirementGroups": [
+          {
+            "id": "7b8fb6fb9a42431394c285c018afb519",
+            "description": "\u0417\u0430\u043c\u043e\u0432\u043d\u0438\u043a \u043f\u0456\u0434\u0442\u0432\u0435\u0440\u0434\u0436\u0443\u0454, \u0449\u043e",
+            "requirements": [
+              {
+                "id": "483cf3ebf55e415e8cab621ba828ea00",
+                "title": "\u0422\u0435\u043d\u0434\u0435\u0440\u043d\u0430 \u043f\u0440\u043e\u043f\u043e\u0437\u0438\u0446\u0456\u044f \u043f\u043e\u0434\u0430\u043d\u0430 \u0443\u0447\u0430\u0441\u043d\u0438\u043a\u043e\u043c \u043a\u043e\u043d\u043a\u0443\u0440\u0435\u043d\u0442\u043d\u043e\u0457 \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456 \u0430\u0431\u043e \u0443\u0447\u0430\u0441\u0442\u044c \u0443 \u043f\u0435\u0440\u0435\u0433\u043e\u0432\u043e\u0440\u043d\u0456\u0439 \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0456 \u0431\u0435\u0440\u0435 \u0443\u0447\u0430\u0441\u043d\u0438\u043a, \u044f\u043a\u0438\u0439 \u0454 \u043f\u043e\u0432'\u044f\u0437\u0430\u043d\u043e\u044e \u043e\u0441\u043e\u0431\u043e\u044e \u0437 \u0456\u043d\u0448\u0438\u043c\u0438 \u0443\u0447\u0430\u0441\u043d\u0438\u043a\u0430\u043c\u0438 \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456 \u0442\u0430/\u0430\u0431\u043e \u0437 \u0443\u043f\u043e\u0432\u043d\u043e\u0432\u0430\u0436\u0435\u043d\u043e\u044e \u043e\u0441\u043e\u0431\u043e\u044e (\u043e\u0441\u043e\u0431\u0430\u043c\u0438), \u0442\u0430/\u0430\u0431\u043e \u0437 \u043a\u0435\u0440\u0456\u0432\u043d\u0438\u043a\u043e\u043c \u0437\u0430\u043c\u043e\u0432\u043d\u0438\u043a\u0430",
+                "dataType": "boolean",
+                "status": "active",
+                "datePublished": "2021-03-22T15:20:41.167577+02:00"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "62be69a7d2f743e190afff576275749c",
+        "title": "\u0412\u0438\u044f\u0432\u043b\u0435\u043d\u043d\u044f \u0444\u0430\u043a\u0442\u0443 \u043d\u0430\u043c\u0456\u0440\u0443 \u0432\u043f\u043b\u0438\u0432\u0443 \u043d\u0430 \u043f\u0440\u0438\u0439\u043d\u044f\u0442\u0442\u044f \u0440\u0456\u0448\u0435\u043d\u043d\u044f \u0437\u0430\u043c\u043e\u0432\u043d\u0438\u043a\u0430",
+        "description": "\u0417\u0430\u043c\u043e\u0432\u043d\u0438\u043a \u043c\u0430\u0454 \u043d\u0435\u0437\u0430\u043f\u0435\u0440\u0435\u0447\u043d\u0456 \u0434\u043e\u043a\u0430\u0437\u0438 \u0442\u043e\u0433\u043e, \u0449\u043e \u0443\u0447\u0430\u0441\u043d\u0438\u043a \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456 \u043f\u0440\u043e\u043f\u043e\u043d\u0443\u0454, \u0434\u0430\u0454 \u0430\u0431\u043e \u043f\u043e\u0433\u043e\u0434\u0436\u0443\u0454\u0442\u044c\u0441\u044f \u0434\u0430\u0442\u0438 \u043f\u0440\u044f\u043c\u043e \u0447\u0438 \u043e\u043f\u043e\u0441\u0435\u0440\u0435\u0434\u043a\u043e\u0432\u0430\u043d\u043e \u0431\u0443\u0434\u044c-\u044f\u043a\u0456\u0439 \u0441\u043b\u0443\u0436\u0431\u043e\u0432\u0456\u0439 (\u043f\u043e\u0441\u0430\u0434\u043e\u0432\u0456\u0439) \u043e\u0441\u043e\u0431\u0456 \u0437\u0430\u043c\u043e\u0432\u043d\u0438\u043a\u0430, \u0456\u043d\u0448\u043e\u0433\u043e \u0434\u0435\u0440\u0436\u0430\u0432\u043d\u043e\u0433\u043e \u043e\u0440\u0433\u0430\u043d\u0443 \u0432\u0438\u043d\u0430\u0433\u043e\u0440\u043e\u0434\u0443 \u0432 \u0431\u0443\u0434\u044c-\u044f\u043a\u0456\u0439 \u0444\u043e\u0440\u043c\u0456 (\u043f\u0440\u043e\u043f\u043e\u0437\u0438\u0446\u0456\u044f \u0449\u043e\u0434\u043e \u043d\u0430\u0439\u043c\u0443 \u043d\u0430 \u0440\u043e\u0431\u043e\u0442\u0443, \u0446\u0456\u043d\u043d\u0430 \u0440\u0456\u0447, \u043f\u043e\u0441\u043b\u0443\u0433\u0430 \u0442\u043e\u0449\u043e) \u0437 \u043c\u0435\u0442\u043e\u044e \u0432\u043f\u043b\u0438\u043d\u0443\u0442\u0438 \u043d\u0430 \u043f\u0440\u0438\u0439\u043d\u044f\u0442\u0442\u044f \u0440\u0456\u0448\u0435\u043d\u043d\u044f \u0449\u043e\u0434\u043e \u0432\u0438\u0437\u043d\u0430\u0447\u0435\u043d\u043d\u044f \u043f\u0435\u0440\u0435\u043c\u043e\u0436\u0446\u044f \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456 \u0430\u0431\u043e \u0437\u0430\u0441\u0442\u043e\u0441\u0443\u0432\u0430\u043d\u043d\u044f \u0437\u0430\u043c\u043e\u0432\u043d\u0438\u043a\u043e\u043c \u043f\u0435\u0432\u043d\u043e\u0457 \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456",
+        "source": "procuringEntity",
+        "relatesTo": "tenderer",
+        "classification": {
+          "scheme": "ESPD211",
+          "id": "CRITERION.EXCLUSION.CONFLICT_OF_INTEREST.MISINTERPRETATION"
+        },
+        "legislation": [
+          {
+            "version": "2020-04-19",
+            "identifier": {
+              "id": "922-VIII",
+              "legalName": "\u0417\u0430\u043a\u043e\u043d \u0423\u043a\u0440\u0430\u0457\u043d\u0438 \"\u041f\u0440\u043e \u043f\u0443\u0431\u043b\u0456\u0447\u043d\u0456 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456\"",
+              "uri": "https://zakon.rada.gov.ua/laws/show/922-19"
+            },
+            "type": "NATIONAL_LEGISLATION",
+            "article": "17.1.1"
+          }
+        ],
+        "requirementGroups": [
+          {
+            "id": "adca722054b54f659c36d83361508726",
+            "description": "\u0417\u0430\u043c\u043e\u0432\u043d\u0438\u043a \u043f\u0456\u0434\u0442\u0432\u0435\u0440\u0434\u0436\u0443\u0454, \u0449\u043e",
+            "requirements": [
+              {
+                "id": "d04ad07f21dd4338a59ace5f8e7f11f8",
+                "title": "\u0417\u0430\u043c\u043e\u0432\u043d\u0438\u043a \u043c\u0430\u0454 \u043d\u0435\u0437\u0430\u043f\u0435\u0440\u0435\u0447\u043d\u0456 \u0434\u043e\u043a\u0430\u0437\u0438 \u0442\u043e\u0433\u043e, \u0449\u043e \u0443\u0447\u0430\u0441\u043d\u0438\u043a \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456 \u043f\u0440\u043e\u043f\u043e\u043d\u0443\u0454, \u0434\u0430\u0454 \u0430\u0431\u043e \u043f\u043e\u0433\u043e\u0434\u0436\u0443\u0454\u0442\u044c\u0441\u044f \u0434\u0430\u0442\u0438 \u043f\u0440\u044f\u043c\u043e \u0447\u0438 \u043e\u043f\u043e\u0441\u0435\u0440\u0435\u0434\u043a\u043e\u0432\u0430\u043d\u043e \u0431\u0443\u0434\u044c-\u044f\u043a\u0456\u0439 \u0441\u043b\u0443\u0436\u0431\u043e\u0432\u0456\u0439 (\u043f\u043e\u0441\u0430\u0434\u043e\u0432\u0456\u0439) \u043e\u0441\u043e\u0431\u0456 \u0437\u0430\u043c\u043e\u0432\u043d\u0438\u043a\u0430, \u0456\u043d\u0448\u043e\u0433\u043e \u0434\u0435\u0440\u0436\u0430\u0432\u043d\u043e\u0433\u043e \u043e\u0440\u0433\u0430\u043d\u0443 \u0432\u0438\u043d\u0430\u0433\u043e\u0440\u043e\u0434\u0443 \u0432 \u0431\u0443\u0434\u044c-\u044f\u043a\u0456\u0439 \u0444\u043e\u0440\u043c\u0456 (\u043f\u0440\u043e\u043f\u043e\u0437\u0438\u0446\u0456\u044f \u0449\u043e\u0434\u043e \u043d\u0430\u0439\u043c\u0443 \u043d\u0430 \u0440\u043e\u0431\u043e\u0442\u0443, \u0446\u0456\u043d\u043d\u0430 \u0440\u0456\u0447, \u043f\u043e\u0441\u043b\u0443\u0433\u0430 \u0442\u043e\u0449\u043e) \u0437 \u043c\u0435\u0442\u043e\u044e \u0432\u043f\u043b\u0438\u043d\u0443\u0442\u0438 \u043d\u0430 \u043f\u0440\u0438\u0439\u043d\u044f\u0442\u0442\u044f \u0440\u0456\u0448\u0435\u043d\u043d\u044f \u0449\u043e\u0434\u043e \u0432\u0438\u0437\u043d\u0430\u0447\u0435\u043d\u043d\u044f \u043f\u0435\u0440\u0435\u043c\u043e\u0436\u0446\u044f \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456 \u0430\u0431\u043e \u0437\u0430\u0441\u0442\u043e\u0441\u0443\u0432\u0430\u043d\u043d\u044f \u0437\u0430\u043c\u043e\u0432\u043d\u0438\u043a\u043e\u043c \u043f\u0435\u0432\u043d\u043e\u0457 \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456",
+                "dataType": "boolean",
+                "status": "active",
+                "datePublished": "2021-03-22T15:20:41.169925+02:00"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "23a89e50d19f441289946a5d83cc8b7d",
+        "title": "\u041d\u0430\u044f\u0432\u043d\u0456\u0441\u0442\u044c \u0456\u043d\u0448\u0438\u0445 \u043f\u0456\u0434\u0441\u0442\u0430\u0432 \u0434\u043b\u044f \u0432\u0456\u0434\u043c\u043e\u0432\u0438 \u0432 \u0443\u0447\u0430\u0441\u0442\u0456 \u0443 \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0456 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456",
+        "description": "\u0423 \u0404\u0434\u0438\u043d\u043e\u043c\u0443 \u0434\u0435\u0440\u0436\u0430\u0432\u043d\u043e\u043c\u0443 \u0440\u0435\u0454\u0441\u0442\u0440\u0456 \u044e\u0440\u0438\u0434\u0438\u0447\u043d\u0438\u0445 \u043e\u0441\u0456\u0431, \u0444\u0456\u0437\u0438\u0447\u043d\u0438\u0445 \u043e\u0441\u0456\u0431 - \u043f\u0456\u0434\u043f\u0440\u0438\u0454\u043c\u0446\u0456\u0432 \u0442\u0430 \u0433\u0440\u043e\u043c\u0430\u0434\u0441\u044c\u043a\u0438\u0445 \u0444\u043e\u0440\u043c\u0443\u0432\u0430\u043d\u044c \u043f\u0440\u0438\u0441\u0443\u0442\u043d\u044f \u0456\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0456\u044f, \u043f\u0435\u0440\u0435\u0434\u0431\u0430\u0447\u0435\u043d\u0430 \u043f\u0443\u043d\u043a\u0442\u043e\u043c 9 \u0447\u0430\u0441\u0442\u0438\u043d\u0438 \u0434\u0440\u0443\u0433\u043e\u0457 \u0441\u0442\u0430\u0442\u0442\u0456 9 \u0417\u0430\u043a\u043e\u043d\u0443 \u0423\u043a\u0440\u0430\u0457\u043d\u0438 \"\u041f\u0440\u043e \u0434\u0435\u0440\u0436\u0430\u0432\u043d\u0443 \u0440\u0435\u0454\u0441\u0442\u0440\u0430\u0446\u0456\u044e \u044e\u0440\u0438\u0434\u0438\u0447\u043d\u0438\u0445 \u043e\u0441\u0456\u0431, \u0444\u0456\u0437\u0438\u0447\u043d\u0438\u0445 \u043e\u0441\u0456\u0431 - \u043f\u0456\u0434\u043f\u0440\u0438\u0454\u043c\u0446\u0456\u0432 \u0442\u0430 \u0433\u0440\u043e\u043c\u0430\u0434\u0441\u044c\u043a\u0438\u0445 \u0444\u043e\u0440\u043c\u0443\u0432\u0430\u043d\u044c\" (\u043a\u0440\u0456\u043c \u043d\u0435\u0440\u0435\u0437\u0438\u0434\u0435\u043d\u0442\u0456\u0432)",
+        "source": "tenderer",
+        "relatesTo": "tenderer",
+        "classification": {
+          "scheme": "ESPD211",
+          "id": "CRITERION.EXCLUSION.NATIONAL.OTHER"
+        },
+        "legislation": [
+          {
+            "version": "2020-04-19",
+            "identifier": {
+              "id": "922-VIII",
+              "legalName": "\u0417\u0430\u043a\u043e\u043d \u0423\u043a\u0440\u0430\u0457\u043d\u0438 \"\u041f\u0440\u043e \u043f\u0443\u0431\u043b\u0456\u0447\u043d\u0456 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456\"",
+              "uri": "https://zakon.rada.gov.ua/laws/show/922-19"
+            },
+            "type": "NATIONAL_LEGISLATION",
+            "article": "17.1.9"
+          },
+          {
+            "version": "2020-03-16",
+            "identifier": {
+              "id": "755-IV",
+              "legalName": "\u0417\u0430\u043a\u043e\u043d \u0423\u043a\u0440\u0430\u0457\u043d\u0438 \"\u041f\u0440\u043e \u0434\u0435\u0440\u0436\u0430\u0432\u043d\u0443 \u0440\u0435\u0454\u0441\u0442\u0440\u0430\u0446\u0456\u044e \u044e\u0440\u0438\u0434\u0438\u0447\u043d\u0438\u0445 \u043e\u0441\u0456\u0431, \u0444\u0456\u0437\u0438\u0447\u043d\u0438\u0445 \u043e\u0441\u0456\u0431 - \u043f\u0456\u0434\u043f\u0440\u0438\u0454\u043c\u0446\u0456\u0432 \u0442\u0430 \u0433\u0440\u043e\u043c\u0430\u0434\u0441\u044c\u043a\u0438\u0445 \u0444\u043e\u0440\u043c\u0443\u0432\u0430\u043d\u044c\"",
+              "uri": "https://zakon.rada.gov.ua/laws/show/755-15"
+            },
+            "type": "NATIONAL_LEGISLATION",
+            "article": "9.2.9"
+          },
+          {
+            "version": "2020-04-19",
+            "identifier": {
+              "id": "922-VIII",
+              "legalName": "\u0417\u0430\u043a\u043e\u043d \u0423\u043a\u0440\u0430\u0457\u043d\u0438 \"\u041f\u0440\u043e \u043f\u0443\u0431\u043b\u0456\u0447\u043d\u0456 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456\"",
+              "uri": "https://zakon.rada.gov.ua/laws/show/922-19"
+            },
+            "type": "NATIONAL_LEGISLATION",
+            "article": "17.1.10"
+          },
+          {
+            "version": "2020-04-19",
+            "identifier": {
+              "id": "922-VIII",
+              "legalName": "\u0417\u0430\u043a\u043e\u043d \u0423\u043a\u0440\u0430\u0457\u043d\u0438 \"\u041f\u0440\u043e \u043f\u0443\u0431\u043b\u0456\u0447\u043d\u0456 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456\"",
+              "uri": "https://zakon.rada.gov.ua/laws/show/922-19"
+            },
+            "type": "NATIONAL_LEGISLATION",
+            "article": "17.1.11"
+          },
+          {
+            "version": "2020-04-19",
+            "identifier": {
+              "id": "1644-VII",
+              "legalName": "\u0417\u0430\u043a\u043e\u043d \u0423\u043a\u0440\u0430\u0457\u043d\u0438 \"\u041f\u0440\u043e \u0441\u0430\u043d\u043a\u0446\u0456\u0457\"",
+              "uri": "https://zakon.rada.gov.ua/laws/show/1644-18"
+            },
+            "type": "NATIONAL_LEGISLATION"
+          }
+        ],
+        "requirementGroups": [
+          {
+            "id": "76905899ad6740aa92f287465eac0416",
+            "description": "\u0423\u0447\u0430\u0441\u043d\u0438\u043a \u043f\u0456\u0434\u0442\u0432\u0435\u0440\u0434\u0436\u0443\u0454, \u0449\u043e",
+            "requirements": [
+              {
+                "id": "24fb9215a2904a01a892477e6dd0c7c9",
+                "title": "\u0423 \u0404\u0434\u0438\u043d\u043e\u043c\u0443 \u0434\u0435\u0440\u0436\u0430\u0432\u043d\u043e\u043c\u0443 \u0440\u0435\u0454\u0441\u0442\u0440\u0456 \u044e\u0440\u0438\u0434\u0438\u0447\u043d\u0438\u0445 \u043e\u0441\u0456\u0431, \u0444\u0456\u0437\u0438\u0447\u043d\u0438\u0445 \u043e\u0441\u0456\u0431 - \u043f\u0456\u0434\u043f\u0440\u0438\u0454\u043c\u0446\u0456\u0432 \u0442\u0430 \u0433\u0440\u043e\u043c\u0430\u0434\u0441\u044c\u043a\u0438\u0445 \u0444\u043e\u0440\u043c\u0443\u0432\u0430\u043d\u044c \u043f\u0440\u0438\u0441\u0443\u0442\u043d\u044f \u0456\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0456\u044f, \u043f\u0435\u0440\u0435\u0434\u0431\u0430\u0447\u0435\u043d\u0430 \u043f\u0443\u043d\u043a\u0442\u043e\u043c 9 \u0447\u0430\u0441\u0442\u0438\u043d\u0438 \u0434\u0440\u0443\u0433\u043e\u0457 \u0441\u0442\u0430\u0442\u0442\u0456 9 \u0417\u0430\u043a\u043e\u043d\u0443 \u0423\u043a\u0440\u0430\u0457\u043d\u0438 \"\u041f\u0440\u043e \u0434\u0435\u0440\u0436\u0430\u0432\u043d\u0443 \u0440\u0435\u0454\u0441\u0442\u0440\u0430\u0446\u0456\u044e \u044e\u0440\u0438\u0434\u0438\u0447\u043d\u0438\u0445 \u043e\u0441\u0456\u0431, \u0444\u0456\u0437\u0438\u0447\u043d\u0438\u0445 \u043e\u0441\u0456\u0431 - \u043f\u0456\u0434\u043f\u0440\u0438\u0454\u043c\u0446\u0456\u0432 \u0442\u0430 \u0433\u0440\u043e\u043c\u0430\u0434\u0441\u044c\u043a\u0438\u0445 \u0444\u043e\u0440\u043c\u0443\u0432\u0430\u043d\u044c\" (\u043a\u0440\u0456\u043c \u043d\u0435\u0440\u0435\u0437\u0438\u0434\u0435\u043d\u0442\u0456\u0432)",
+                "dataType": "boolean",
+                "expectedValue": "true",
+                "status": "active",
+                "datePublished": "2021-03-22T15:20:41.174548+02:00"
+              },
+              {
+                "id": "32c34b763b5643dd90c8497a1865f540",
+                "title": "\u0423\u0447\u0430\u0441\u043d\u0438\u043a \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456 \u043d\u0435 \u0454 \u043e\u0441\u043e\u0431\u043e\u044e, \u0434\u043e \u044f\u043a\u043e\u0457 \u0437\u0430\u0441\u0442\u043e\u0441\u043e\u0432\u0430\u043d\u043e \u0441\u0430\u043d\u043a\u0446\u0456\u044e \u0443 \u0432\u0438\u0433\u043b\u044f\u0434\u0456 \u0437\u0430\u0431\u043e\u0440\u043e\u043d\u0438 \u043d\u0430 \u0437\u0434\u0456\u0439\u0441\u043d\u0435\u043d\u043d\u044f \u0443 \u043d\u0435\u0457 \u043f\u0443\u0431\u043b\u0456\u0447\u043d\u0438\u0445 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u0435\u043b\u044c \u0442\u043e\u0432\u0430\u0440\u0456\u0432, \u0440\u043e\u0431\u0456\u0442 \u0456 \u043f\u043e\u0441\u043b\u0443\u0433 \u0437\u0433\u0456\u0434\u043d\u043e \u0456\u0437 \u0417\u0430\u043a\u043e\u043d\u043e\u043c \u0423\u043a\u0440\u0430\u0457\u043d\u0438 \"\u041f\u0440\u043e \u0441\u0430\u043d\u043a\u0446\u0456\u0457\"",
+                "dataType": "boolean",
+                "expectedValue": "true",
+                "status": "active",
+                "datePublished": "2021-03-22T15:20:41.174674+02:00"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "eb4f727ef0134e029b698ca1f129e6ab",
+        "title": "\u041c\u043e\u0432\u0430 (\u043c\u043e\u0432\u0438), \u044f\u043a\u043e\u044e (\u044f\u043a\u0438\u043c\u0438) \u043f\u043e\u0432\u0438\u043d\u043d\u0456 \u0433\u043e\u0442\u0443\u0432\u0430\u0442\u0438\u0441\u044f \u0442\u0435\u043d\u0434\u0435\u0440\u043d\u0456 \u043f\u0440\u043e\u043f\u043e\u0437\u0438\u0446\u0456\u0457",
+        "source": "tenderer",
+        "relatesTo": "tender",
+        "classification": {
+          "scheme": "ESPD211",
+          "id": "CRITERION.OTHER.BID.LANGUAGE"
+        },
+        "legislation": [
+          {
+            "version": "2020-04-19",
+            "identifier": {
+              "id": "922-VIII",
+              "legalName": "\u0417\u0430\u043a\u043e\u043d \u0423\u043a\u0440\u0430\u0457\u043d\u0438 \"\u041f\u0440\u043e \u043f\u0443\u0431\u043b\u0456\u0447\u043d\u0456 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456\"",
+              "uri": "https://zakon.rada.gov.ua/laws/show/922-19"
+            },
+            "type": "NATIONAL_LEGISLATION"
+          }
+        ],
+        "requirementGroups": [
+          {
+            "id": "95fd7372845148328d31e0e1dd133e10",
+            "description": "\u0423\u0447\u0430\u0441\u043d\u0438\u043a \u043f\u0456\u0434\u0442\u0432\u0435\u0440\u0434\u0436\u0443\u0454, \u0449\u043e",
+            "requirements": [
+              {
+                "id": "ca12e1d434164fdbb989216065d72b92",
+                "title": "\u041c\u043e\u0432\u0430 \u0442\u0435\u043d\u0434\u0435\u0440\u043d\u043e\u0457 \u043f\u0440\u043e\u043f\u043e\u0437\u0438\u0446\u0456\u0457 \u0443\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430",
+                "dataType": "boolean",
+                "expectedValue": "true",
+                "status": "active",
+                "datePublished": "2021-03-22T15:20:41.177441+02:00"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "value": {
+      "amount": 24635.0,
+      "currency": "UAH",
+      "valueAddedTaxIncluded": true
+    },
+    "awardPeriod": {
+      "startDate": "2021-03-22T16:02:46.315423+02:00",
+      "endDate": "2021-03-22T16:19:18.014164+02:00"
+    },
+    "procuringEntity": {
+      "name": "CustomerOrganization",
+      "name_en": "\u00abCustomerOrganization\u00bb\u00bb",
+      "identifier": {
+        "scheme": "UA-EDR",
+        "id": "99988879",
+        "legalName": "CustomerOrganization",
+        "legalName_en": "\u00abCustomerOrganization\u00bb\u00bb"
+      },
+      "address": {
+        "streetAddress": "\u0421\u0430\u043a\u0441\u0430\u0433\u0430\u043d\u0441\u043a\u043e\u0433\u043e 88",
+        "locality": "\u043c. \u041a\u0438\u0457\u0432",
+        "region": "\u043c. \u041a\u0438\u0457\u0432",
+        "postalCode": "02000",
+        "countryName": "\u0423\u043a\u0440\u0430\u0457\u043d\u0430"
+      },
+      "contactPoint": {
+        "name": "CustomerSecondName CustomerFirstName ",
+        "email": "Kucenko.marko+1@gmail.com",
+        "telephone": ""
+      },
+      "kind": "defense"
+    },
+    "minimalStep": {
+      "amount": 246.24,
+      "currency": "UAH",
+      "valueAddedTaxIncluded": true
+    },
+    "guarantee": {
+      "amount": 12.0,
+      "currency": "UAH"
+    },
+    "enquiryPeriod": {
+      "startDate": "2021-03-22T15:18:57.780682+02:00",
+      "endDate": "2021-03-22T15:50:00+02:00",
+      "clarificationsUntil": "2021-03-22T15:53:00+02:00",
+      "invalidationDate": "2021-03-22T15:33:16.300537+02:00"
+    },
+    "tenderPeriod": {
+      "startDate": "2021-03-22T15:18:57.780682+02:00",
+      "endDate": "2021-03-22T16:00:00+02:00"
+    },
+    "bids": [
+      {
+        "tenderers": [
+          {
+            "name": "Seller_1",
+            "name_en": "Seller_1",
+            "identifier": {
+              "scheme": "UA-EDR",
+              "id": "33322211",
+              "legalName": "Seller_1",
+              "legalName_en": "Seller_1"
+            },
+            "address": {
+              "streetAddress": "\u0413\u043e\u0433\u043e\u043b\u044f 4\\3",
+              "locality": "\u0411\u0443\u0440\u0448\u0442\u0438\u043d",
+              "region": "\u0406\u0432\u0430\u043d\u043e-\u0424\u0440\u0430\u043d\u043a\u0456\u0432\u0441\u044c\u043a\u0430 \u043e\u0431\u043b\u0430\u0441\u0442\u044c",
+              "postalCode": "23333",
+              "countryName": "\u0423\u043a\u0440\u0430\u0457\u043d\u0430"
+            },
+            "contactPoint": {
+              "name": "SellerLastName SellerName",
+              "name_en": "SellerName",
+              "email": "Kucenko.marko+2@gmail.com",
+              "telephone": "380552221132, 380552221132"
+            },
+            "scale": "micro"
+          }
+        ],
+        "date": "2021-03-22T15:27:35.647681+02:00",
+        "id": "b5cdf1cf91e64b30b08c24a0bf6b49bb",
+        "requirementResponses": [
+          {
+            "id": "501322156b3a4b2cb0cb43a602448af2",
+            "requirement": {
+              "id": "a8ed13d700d74e63ae0cc0cb90e77d69",
+              "title": "\u0424\u0456\u0437\u0438\u0447\u043d\u0430 \u043e\u0441\u043e\u0431\u0430, \u044f\u043a\u0430 \u0454 \u0443\u0447\u0430\u0441\u043d\u0438\u043a\u043e\u043c \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456, \u043d\u0435 \u0431\u0443\u043b\u0430 \u0437\u0430\u0441\u0443\u0434\u0436\u0435\u043d\u0430 \u0437\u0430 \u043a\u0440\u0438\u043c\u0456\u043d\u0430\u043b\u044c\u043d\u0435 \u043f\u0440\u0430\u0432\u043e\u043f\u043e\u0440\u0443\u0448\u0435\u043d\u043d\u044f, \u0432\u0447\u0438\u043d\u0435\u043d\u0435 \u0437 \u043a\u043e\u0440\u0438\u0441\u043b\u0438\u0432\u0438\u0445 \u043c\u043e\u0442\u0438\u0432\u0456\u0432 (\u0437\u043e\u043a\u0440\u0435\u043c\u0430, \u043f\u043e\u0432\u2019\u044f\u0437\u0430\u043d\u0435 \u0437 \u0445\u0430\u0431\u0430\u0440\u043d\u0438\u0446\u0442\u0432\u043e\u043c \u0442\u0430 \u0432\u0456\u0434\u043c\u0438\u0432\u0430\u043d\u043d\u044f\u043c \u043a\u043e\u0448\u0442\u0456\u0432), \u0441\u0443\u0434\u0438\u043c\u0456\u0441\u0442\u044c \u0437 \u044f\u043a\u043e\u0457 \u0437\u043d\u044f\u0442\u043e \u0430\u0431\u043e \u043f\u043e\u0433\u0430\u0448\u0435\u043d\u043e \u0443 \u0432\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u043e\u043c\u0443 \u0437\u0430\u043a\u043e\u043d\u043e\u043c \u043f\u043e\u0440\u044f\u0434\u043a\u0443"
+            },
+            "evidences": [
+              {
+                "id": "b94493e4cd6c49ef92f591e3566b7e5b",
+                "type": "document",
+                "relatedDocument": {
+                  "id": "30c0ca8e5fdb47289104110143191ad0",
+                  "title": "biddingDocuments \u2014 \u043a\u043e\u043f\u0438\u044f (2) - Copy.xlsx"
+                }
+              },
+              {
+                "id": "3fa3386bdc134be79605be38026038c0",
+                "type": "document",
+                "relatedDocument": {
+                  "id": "66dd33a15dfc4d389988ac1b3d47c3c9",
+                  "title": "biddingDocuments \u2014 \u043a\u043e\u043f\u0438\u044f - Copy (2).xlsx"
+                }
+              }
+            ],
+            "value": "true"
+          },
+          {
+            "id": "3619d8b1e1684918b56abc108eb176ce",
+            "requirement": {
+              "id": "df7c0721284745baa34559e9183878cf",
+              "title": "\u0421\u0443\u0431'\u0454\u043a\u0442 \u0433\u043e\u0441\u043f\u043e\u0434\u0430\u0440\u044e\u0432\u0430\u043d\u043d\u044f (\u0443\u0447\u0430\u0441\u043d\u0438\u043a) \u043f\u0440\u043e\u0442\u044f\u0433\u043e\u043c \u043e\u0441\u0442\u0430\u043d\u043d\u0456\u0445 \u0442\u0440\u044c\u043e\u0445 \u0440\u043e\u043a\u0456\u0432 \u043d\u0435 \u043f\u0440\u0438\u0442\u044f\u0433\u0443\u0432\u0430\u0432\u0441\u044f \u0434\u043e \u0432\u0456\u0434\u043f\u043e\u0432\u0456\u0434\u0430\u043b\u044c\u043d\u043e\u0441\u0442\u0456 \u0437\u0430 \u043f\u043e\u0440\u0443\u0448\u0435\u043d\u043d\u044f, \u043f\u0435\u0440\u0435\u0434\u0431\u0430\u0447\u0435\u043d\u0435 \u043f\u0443\u043d\u043a\u0442\u043e\u043c 4 \u0447\u0430\u0441\u0442\u0438\u043d\u0438 \u0434\u0440\u0443\u0433\u043e\u0457 \u0441\u0442\u0430\u0442\u0442\u0456 6, \u043f\u0443\u043d\u043a\u0442\u043e\u043c 1 \u0441\u0442\u0430\u0442\u0442\u0456 50 \u0417\u0430\u043a\u043e\u043d\u0443 \u0423\u043a\u0440\u0430\u0457\u043d\u0438 \"\u041f\u0440\u043e \u0437\u0430\u0445\u0438\u0441\u0442 \u0435\u043a\u043e\u043d\u043e\u043c\u0456\u0447\u043d\u043e\u0457 \u043a\u043e\u043d\u043a\u0443\u0440\u0435\u043d\u0446\u0456\u0457\", \u0443 \u0432\u0438\u0433\u043b\u044f\u0434\u0456 \u0432\u0447\u0438\u043d\u0435\u043d\u043d\u044f \u0430\u043d\u0442\u0438\u043a\u043e\u043d\u043a\u0443\u0440\u0435\u043d\u0442\u043d\u0438\u0445 \u0443\u0437\u0433\u043e\u0434\u0436\u0435\u043d\u0438\u0445 \u0434\u0456\u0439, \u0449\u043e \u0441\u0442\u043e\u0441\u0443\u044e\u0442\u044c\u0441\u044f \u0441\u043f\u043e\u0442\u0432\u043e\u0440\u0435\u043d\u043d\u044f \u0440\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442\u0456\u0432 \u0442\u0435\u043d\u0434\u0435\u0440\u0456\u0432"
+            },
+            "value": "true"
+          },
+          {
+            "id": "aefdb823f25f49b3a70d285a6550843f",
+            "requirement": {
+              "id": "0d91a9d560ba416f9fa0c2745c20173d",
+              "title": "\u0412\u0456\u0434\u043e\u043c\u043e\u0441\u0442\u0456 \u043f\u0440\u043e \u044e\u0440\u0438\u0434\u0438\u0447\u043d\u0443 \u043e\u0441\u043e\u0431\u0443, \u044f\u043a\u0430 \u0454 \u0443\u0447\u0430\u0441\u043d\u0438\u043a\u043e\u043c \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456, \u043d\u0435 \u0432\u043d\u0435\u0441\u0435\u043d\u043e \u0434\u043e \u0404\u0434\u0438\u043d\u043e\u0433\u043e \u0434\u0435\u0440\u0436\u0430\u0432\u043d\u043e\u0433\u043e \u0440\u0435\u0454\u0441\u0442\u0440\u0443 \u043e\u0441\u0456\u0431, \u044f\u043a\u0456 \u0432\u0447\u0438\u043d\u0438\u043b\u0438 \u043a\u043e\u0440\u0443\u043f\u0446\u0456\u0439\u043d\u0456 \u0430\u0431\u043e \u043f\u043e\u0432'\u044f\u0437\u0430\u043d\u0456 \u0437 \u043a\u043e\u0440\u0443\u043f\u0446\u0456\u0454\u044e \u043f\u0440\u0430\u0432\u043e\u043f\u043e\u0440\u0443\u0448\u0435\u043d\u043d\u044f"
+            },
+            "value": "true"
+          },
+          {
+            "id": "188f80b7a6cc42c1bcb6a39e7adfe428",
+            "requirement": {
+              "id": "b6565d36ba744d93b733df59f8acc510",
+              "title": "\u0421\u043b\u0443\u0436\u0431\u043e\u0432\u0443 (\u043f\u043e\u0441\u0430\u0434\u043e\u0432\u0443) \u043e\u0441\u043e\u0431\u0443 \u0443\u0447\u0430\u0441\u043d\u0438\u043a\u0430 \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456, \u044f\u043a\u0443 \u0443\u043f\u043e\u0432\u043d\u043e\u0432\u0430\u0436\u0435\u043d\u043e \u0443\u0447\u0430\u0441\u043d\u0438\u043a\u043e\u043c \u043f\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043b\u044f\u0442\u0438 \u0439\u043e\u0433\u043e \u0456\u043d\u0442\u0435\u0440\u0435\u0441\u0438 \u043f\u0456\u0434 \u0447\u0430\u0441 \u043f\u0440\u043e\u0432\u0435\u0434\u0435\u043d\u043d\u044f \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456, \u0444\u0456\u0437\u0438\u0447\u043d\u0443 \u043e\u0441\u043e\u0431\u0443, \u044f\u043a\u0430 \u0454 \u0443\u0447\u0430\u0441\u043d\u0438\u043a\u043e\u043c, \u043d\u0435 \u0431\u0443\u043b\u043e \u043f\u0440\u0438\u0442\u044f\u0433\u043d\u0443\u0442\u043e \u0437\u0433\u0456\u0434\u043d\u043e \u0456\u0437 \u0437\u0430\u043a\u043e\u043d\u043e\u043c \u0434\u043e \u0432\u0456\u0434\u043f\u043e\u0432\u0456\u0434\u0430\u043b\u044c\u043d\u043e\u0441\u0442\u0456 \u0437\u0430 \u0432\u0447\u0438\u043d\u0435\u043d\u043d\u044f \u043a\u043e\u0440\u0443\u043f\u0446\u0456\u0439\u043d\u043e\u0433\u043e \u043f\u0440\u0430\u0432\u043e\u043f\u043e\u0440\u0443\u0448\u0435\u043d\u043d\u044f \u0430\u0431\u043e \u043f\u0440\u0430\u0432\u043e\u043f\u043e\u0440\u0443\u0448\u0435\u043d\u043d\u044f, \u043f\u043e\u0432'\u044f\u0437\u0430\u043d\u043e\u0433\u043e \u0437 \u043a\u043e\u0440\u0443\u043f\u0446\u0456\u0454\u044e"
+            },
+            "value": "true"
+          },
+          {
+            "id": "74c80d84745b4ba3ae25443b61818ea5",
+            "requirement": {
+              "id": "fdfa451f8344405d85d246092fe256ef",
+              "title": "\u0421\u043b\u0443\u0436\u0431\u043e\u0432\u0430 (\u043f\u043e\u0441\u0430\u0434\u043e\u0432\u0430) \u043e\u0441\u043e\u0431\u0430 \u0443\u0447\u0430\u0441\u043d\u0438\u043a\u0430 \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456, \u044f\u043a\u0443 \u0443\u043f\u043e\u0432\u043d\u043e\u0432\u0430\u0436\u0435\u043d\u043e \u0443\u0447\u0430\u0441\u043d\u0438\u043a\u043e\u043c \u043f\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043b\u044f\u0442\u0438 \u0439\u043e\u0433\u043e \u0456\u043d\u0442\u0435\u0440\u0435\u0441\u0438 \u043f\u0456\u0434 \u0447\u0430\u0441 \u043f\u0440\u043e\u0432\u0435\u0434\u0435\u043d\u043d\u044f \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456, \u0444\u0456\u0437\u0438\u0447\u043d\u0443 \u043e\u0441\u043e\u0431\u0443, \u044f\u043a\u0430 \u0454 \u0443\u0447\u0430\u0441\u043d\u0438\u043a\u043e\u043c, \u043d\u0435 \u0431\u0443\u043b\u043e \u043f\u0440\u0438\u0442\u044f\u0433\u043d\u0443\u0442\u043e \u0437\u0433\u0456\u0434\u043d\u043e \u0456\u0437 \u0437\u0430\u043a\u043e\u043d\u043e\u043c \u0434\u043e \u0432\u0456\u0434\u043f\u043e\u0432\u0456\u0434\u0430\u043b\u044c\u043d\u043e\u0441\u0442\u0456 \u0437\u0430 \u0432\u0447\u0438\u043d\u0435\u043d\u043d\u044f \u043f\u0440\u0430\u0432\u043e\u043f\u043e\u0440\u0443\u0448\u0435\u043d\u043d\u044f, \u043f\u043e\u0432'\u044f\u0437\u0430\u043d\u043e\u0433\u043e \u0437 \u0432\u0438\u043a\u043e\u0440\u0438\u0441\u0442\u0430\u043d\u043d\u044f\u043c \u0434\u0438\u0442\u044f\u0447\u043e\u0457 \u043f\u0440\u0430\u0446\u0456 \u0447\u0438 \u0431\u0443\u0434\u044c-\u044f\u043a\u0438\u043c\u0438 \u0444\u043e\u0440\u043c\u0430\u043c\u0438 \u0442\u043e\u0440\u0433\u0456\u0432\u043b\u0456 \u043b\u044e\u0434\u044c\u043c\u0438"
+            },
+            "value": "true"
+          },
+          {
+            "id": "ff30f1e0b33247928af34832f9cfa398",
+            "requirement": {
+              "id": "44475e57f95b4d0f94a3918f74684390",
+              "title": "\u0412\u0456\u043d \u043d\u0435 \u043c\u0430\u0454 \u0437\u0430\u0431\u043e\u0440\u0433\u043e\u0432\u0430\u043d\u043e\u0441\u0442\u0456 \u0437\u0456 \u0441\u043f\u043b\u0430\u0442\u0438 \u043f\u043e\u0434\u0430\u0442\u043a\u0456\u0432 \u0456 \u0437\u0431\u043e\u0440\u0456\u0432 (\u043e\u0431\u043e\u0432'\u044f\u0437\u043a\u043e\u0432\u0438\u0445 \u043f\u043b\u0430\u0442\u0435\u0436\u0456\u0432)"
+            },
+            "value": "true"
+          },
+          {
+            "id": "20f9a3f8f88f45209e86661023b12a54",
+            "requirement": {
+              "id": "c6aada0931e547d9a09c0b17c7e7bac9",
+              "title": "\u0423\u0447\u0430\u0441\u043d\u0438\u043a \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456 \u043d\u0435 \u0432\u0438\u0437\u043d\u0430\u043d\u0438\u0439 \u0443 \u0432\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u043e\u043c\u0443 \u0437\u0430\u043a\u043e\u043d\u043e\u043c \u043f\u043e\u0440\u044f\u0434\u043a\u0443 \u0431\u0430\u043d\u043a\u0440\u0443\u0442\u043e\u043c \u0442\u0430 \u0441\u0442\u043e\u0441\u043e\u0432\u043d\u043e \u043d\u044c\u043e\u0433\u043e \u043d\u0435 \u0432\u0456\u0434\u043a\u0440\u0438\u0442\u0430 \u043b\u0456\u043a\u0432\u0456\u0434\u0430\u0446\u0456\u0439\u043d\u0430 \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0430"
+            },
+            "value": "true"
+          },
+          {
+            "id": "e7341185d6f2458cad9152db84c3f66c",
+            "requirement": {
+              "id": "24fb9215a2904a01a892477e6dd0c7c9",
+              "title": "\u0423 \u0404\u0434\u0438\u043d\u043e\u043c\u0443 \u0434\u0435\u0440\u0436\u0430\u0432\u043d\u043e\u043c\u0443 \u0440\u0435\u0454\u0441\u0442\u0440\u0456 \u044e\u0440\u0438\u0434\u0438\u0447\u043d\u0438\u0445 \u043e\u0441\u0456\u0431, \u0444\u0456\u0437\u0438\u0447\u043d\u0438\u0445 \u043e\u0441\u0456\u0431 - \u043f\u0456\u0434\u043f\u0440\u0438\u0454\u043c\u0446\u0456\u0432 \u0442\u0430 \u0433\u0440\u043e\u043c\u0430\u0434\u0441\u044c\u043a\u0438\u0445 \u0444\u043e\u0440\u043c\u0443\u0432\u0430\u043d\u044c \u043f\u0440\u0438\u0441\u0443\u0442\u043d\u044f \u0456\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0456\u044f, \u043f\u0435\u0440\u0435\u0434\u0431\u0430\u0447\u0435\u043d\u0430 \u043f\u0443\u043d\u043a\u0442\u043e\u043c 9 \u0447\u0430\u0441\u0442\u0438\u043d\u0438 \u0434\u0440\u0443\u0433\u043e\u0457 \u0441\u0442\u0430\u0442\u0442\u0456 9 \u0417\u0430\u043a\u043e\u043d\u0443 \u0423\u043a\u0440\u0430\u0457\u043d\u0438 \"\u041f\u0440\u043e \u0434\u0435\u0440\u0436\u0430\u0432\u043d\u0443 \u0440\u0435\u0454\u0441\u0442\u0440\u0430\u0446\u0456\u044e \u044e\u0440\u0438\u0434\u0438\u0447\u043d\u0438\u0445 \u043e\u0441\u0456\u0431, \u0444\u0456\u0437\u0438\u0447\u043d\u0438\u0445 \u043e\u0441\u0456\u0431 - \u043f\u0456\u0434\u043f\u0440\u0438\u0454\u043c\u0446\u0456\u0432 \u0442\u0430 \u0433\u0440\u043e\u043c\u0430\u0434\u0441\u044c\u043a\u0438\u0445 \u0444\u043e\u0440\u043c\u0443\u0432\u0430\u043d\u044c\" (\u043a\u0440\u0456\u043c \u043d\u0435\u0440\u0435\u0437\u0438\u0434\u0435\u043d\u0442\u0456\u0432)"
+            },
+            "value": "true"
+          },
+          {
+            "id": "ebb397fd9af54ccd8734d5b9d0c95986",
+            "requirement": {
+              "id": "32c34b763b5643dd90c8497a1865f540",
+              "title": "\u0423\u0447\u0430\u0441\u043d\u0438\u043a \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456 \u043d\u0435 \u0454 \u043e\u0441\u043e\u0431\u043e\u044e, \u0434\u043e \u044f\u043a\u043e\u0457 \u0437\u0430\u0441\u0442\u043e\u0441\u043e\u0432\u0430\u043d\u043e \u0441\u0430\u043d\u043a\u0446\u0456\u044e \u0443 \u0432\u0438\u0433\u043b\u044f\u0434\u0456 \u0437\u0430\u0431\u043e\u0440\u043e\u043d\u0438 \u043d\u0430 \u0437\u0434\u0456\u0439\u0441\u043d\u0435\u043d\u043d\u044f \u0443 \u043d\u0435\u0457 \u043f\u0443\u0431\u043b\u0456\u0447\u043d\u0438\u0445 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u0435\u043b\u044c \u0442\u043e\u0432\u0430\u0440\u0456\u0432, \u0440\u043e\u0431\u0456\u0442 \u0456 \u043f\u043e\u0441\u043b\u0443\u0433 \u0437\u0433\u0456\u0434\u043d\u043e \u0456\u0437 \u0417\u0430\u043a\u043e\u043d\u043e\u043c \u0423\u043a\u0440\u0430\u0457\u043d\u0438 \"\u041f\u0440\u043e \u0441\u0430\u043d\u043a\u0446\u0456\u0457\""
+            },
+            "value": "true"
+          },
+          {
+            "id": "1d11ccd5650646a38a521656107da668",
+            "requirement": {
+              "id": "ca12e1d434164fdbb989216065d72b92",
+              "title": "\u041c\u043e\u0432\u0430 \u0442\u0435\u043d\u0434\u0435\u0440\u043d\u043e\u0457 \u043f\u0440\u043e\u043f\u043e\u0437\u0438\u0446\u0456\u0457 \u0443\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430"
+            },
+            "value": "true"
+          }
+        ],
+        "lotValues": [
+          {
+            "value": {
+              "amount": 123.0,
+              "currency": "UAH",
+              "valueAddedTaxIncluded": true
+            },
+            "relatedLot": "b49cb01be4c94d1bab81c0c550587201",
+            "participationUrl": "https://auction-sandbox-2-old.prozorro.gov.ua/tenders/fc1ac96978654613a7a39544f70a6bd6_b49cb01be4c94d1bab81c0c550587201/login?bidder_id=b5cdf1cf91e64b30b08c24a0bf6b49bb&hash=1b389d22f1361b6f89b98e818b1aef5982d348e7",
+            "date": "2021-03-22T15:27:35.647874+02:00"
+          }
+        ],
+        "status": "active",
+        "selfQualified": true,
+        "documents": [
+          {
+            "id": "30c0ca8e5fdb47289104110143191ad0",
+            "hash": "md5:1cc5d2a89efe93b517b9d34be03e1300",
+            "documentType": "eligibilityDocuments",
+            "title": "biddingDocuments \u2014 \u043a\u043e\u043f\u0438\u044f (2) - Copy.xlsx",
+            "format": "text/plain",
+            "url": "https://public-docs-sandbox-2.prozorro.gov.ua/get/1599a55e59084ec9b943c270495da432?Signature=CQCiXvqTXPj4PN1Y1Xjf2X0ilJPrB43L3EGy7wMVPsBEaezpB4wFISMsHi%2Fx%2FwezmofgUzqKyRMNMfe4Swf2BQ%3D%3D&KeyID=1331dc52",
+            "datePublished": "2021-03-22T15:27:52.308939+02:00",
+            "dateModified": "2021-03-22T15:27:52.308953+02:00",
+            "documentOf": "tender",
+            "confidentiality": "public"
+          },
+          {
+            "id": "66dd33a15dfc4d389988ac1b3d47c3c9",
+            "hash": "md5:1cc5d2a89efe93b517b9d34be03e1300",
+            "documentType": "eligibilityDocuments",
+            "title": "biddingDocuments \u2014 \u043a\u043e\u043f\u0438\u044f - Copy (2).xlsx",
+            "format": "text/plain",
+            "url": "https://public-docs-sandbox-2.prozorro.gov.ua/get/440889ea4ac24b0b953dc92df4ee462d?Signature=jGjP%2B64UcGa4oYiViR7CR2DouvwgNyrEeDnOvndKySWOOAv7JQ1EVhOPi8r49KMjqaAqRu3y%2FOMLx53d1yyCCw%3D%3D&KeyID=1331dc52",
+            "datePublished": "2021-03-22T15:27:52.573458+02:00",
+            "dateModified": "2021-03-22T15:27:52.573474+02:00",
+            "documentOf": "tender",
+            "confidentiality": "public"
+          },
+          {
+            "id": "91e7abc8bee44fac8cc834437be3755a",
+            "hash": "md5:1cc5d2a89efe93b517b9d34be03e1300",
+            "documentType": "eligibilityDocuments",
+            "title": "biddingDocuments \u2014 \u043a\u043e\u043f\u0438\u044f - Copy.xlsx",
+            "format": "text/plain",
+            "url": "https://public-docs-sandbox-2.prozorro.gov.ua/get/12380854f94848e5b8d233060815825f?Signature=SSGWPYu4byMNS8rBifLTMubF4QNL8fGPfdzLwi4SY7mPnabjuGxpGsLaA%2BeCsYx5NBEBzXIeoOz2rR7YEARmAA%3D%3D&KeyID=1331dc52",
+            "datePublished": "2021-03-22T15:27:52.839961+02:00",
+            "dateModified": "2021-03-22T15:27:52.839976+02:00",
+            "documentOf": "tender",
+            "confidentiality": "public"
+          },
+          {
+            "id": "000b83b0f8a148e287390bab3c793cb3",
+            "hash": "md5:1cc5d2a89efe93b517b9d34be03e1300",
+            "documentType": "eligibilityDocuments",
+            "title": "biddingDocuments \u2014 \u043a\u043e\u043f\u0438\u044f - Copy (3).xlsx",
+            "format": "text/plain",
+            "url": "https://public-docs-sandbox-2.prozorro.gov.ua/get/d6101279a14d42b2961ca0474811c5dd?Signature=%2B3NSkGWiITUSxhFWpRUBK4AQaaFLHSTblVItVYpkZh562vPMjIcNrNRUzwuHY8Y8HF%2FLawnwViR3gfL5321oDw%3D%3D&KeyID=1331dc52",
+            "datePublished": "2021-03-22T15:27:53.127619+02:00",
+            "dateModified": "2021-03-22T15:27:53.127646+02:00",
+            "documentOf": "tender",
+            "confidentiality": "public"
+          }
+        ]
+      },
+      {
+        "tenderers": [
+          {
+            "name": "Seller_1",
+            "name_en": "Seller_1",
+            "identifier": {
+              "scheme": "UA-EDR",
+              "id": "33322211",
+              "legalName": "Seller_1",
+              "legalName_en": "Seller_1"
+            },
+            "address": {
+              "streetAddress": "\u0413\u043e\u0433\u043e\u043b\u044f 4\\3",
+              "locality": "\u0411\u0443\u0440\u0448\u0442\u0438\u043d",
+              "region": "\u0406\u0432\u0430\u043d\u043e-\u0424\u0440\u0430\u043d\u043a\u0456\u0432\u0441\u044c\u043a\u0430 \u043e\u0431\u043b\u0430\u0441\u0442\u044c",
+              "postalCode": "23333",
+              "countryName": "\u0423\u043a\u0440\u0430\u0457\u043d\u0430"
+            },
+            "contactPoint": {
+              "name": "SellerLastName SellerName",
+              "name_en": "SellerName",
+              "email": "Kucenko.marko+2@gmail.com",
+              "telephone": "380552221132, 380552221132"
+            },
+            "scale": "micro"
+          }
+        ],
+        "date": "2021-03-22T15:30:05.877482+02:00",
+        "id": "f35aeb0e04694ac6b03620227c6ea5fc",
+        "requirementResponses": [
+          {
+            "id": "d0c767d6ed294235af66cbd5fd665688",
+            "requirement": {
+              "id": "766815059cf345f4a9f897e687844fd6",
+              "title": "\u0421\u043b\u0443\u0436\u0431\u043e\u0432\u0430 (\u043f\u043e\u0441\u0430\u0434\u043e\u0432\u0430) \u043e\u0441\u043e\u0431\u0430 \u0443\u0447\u0430\u0441\u043d\u0438\u043a\u0430 \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456, \u044f\u043a\u0430 \u043f\u0456\u0434\u043f\u0438\u0441\u0430\u043b\u0430 \u0442\u0435\u043d\u0434\u0435\u0440\u043d\u0443 \u043f\u0440\u043e\u043f\u043e\u0437\u0438\u0446\u0456\u044e (\u0430\u0431\u043e \u0443\u043f\u043e\u0432\u043d\u043e\u0432\u0430\u0436\u0435\u043d\u0430 \u043d\u0430 \u043f\u0456\u0434\u043f\u0438\u0441\u0430\u043d\u043d\u044f \u0434\u043e\u0433\u043e\u0432\u043e\u0440\u0443 \u0432 \u0440\u0430\u0437\u0456 \u043f\u0435\u0440\u0435\u0433\u043e\u0432\u043e\u0440\u043d\u043e\u0457 \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456), \u043d\u0435 \u0431\u0443\u043b\u0430 \u0437\u0430\u0441\u0443\u0434\u0436\u0435\u043d\u0430 \u0437\u0430 \u043a\u0440\u0438\u043c\u0456\u043d\u0430\u043b\u044c\u043d\u0435 \u043f\u0440\u0430\u0432\u043e\u043f\u043e\u0440\u0443\u0448\u0435\u043d\u043d\u044f, \u0432\u0447\u0438\u043d\u0435\u043d\u0435 \u0437 \u043a\u043e\u0440\u0438\u0441\u043b\u0438\u0432\u0438\u0445 \u043c\u043e\u0442\u0438\u0432\u0456\u0432 (\u0437\u043e\u043a\u0440\u0435\u043c\u0430, \u043f\u043e\u0432\u2019\u044f\u0437\u0430\u043d\u0435 \u0437 \u0445\u0430\u0431\u0430\u0440\u043d\u0438\u0446\u0442\u0432\u043e\u043c, \u0448\u0430\u0445\u0440\u0430\u0439\u0441\u0442\u0432\u043e\u043c \u0442\u0430 \u0432\u0456\u0434\u043c\u0438\u0432\u0430\u043d\u043d\u044f\u043c \u043a\u043e\u0448\u0442\u0456\u0432), \u0441\u0443\u0434\u0438\u043c\u0456\u0441\u0442\u044c \u0437 \u044f\u043a\u043e\u0457 \u0437\u043d\u044f\u0442\u043e \u0430\u0431\u043e \u043f\u043e\u0433\u0430\u0448\u0435\u043d\u043e \u0443 \u0432\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u043e\u043c\u0443 \u0437\u0430\u043a\u043e\u043d\u043e\u043c \u043f\u043e\u0440\u044f\u0434\u043a\u0443"
+            },
+            "evidences": [
+              {
+                "id": "2340bd5571ae42108bd11be9455c9182",
+                "title": "\u044b\u0444\u0432\u0430 \u044b\u0430\u0444\u044b\u044b \u0430\u0444\u044b\u0430",
+                "type": "statement"
+              }
+            ],
+            "value": "true"
+          },
+          {
+            "id": "1d94ab4203fe4afcb6c2cc38cf3b65e7",
+            "requirement": {
+              "id": "df7c0721284745baa34559e9183878cf",
+              "title": "\u0421\u0443\u0431'\u0454\u043a\u0442 \u0433\u043e\u0441\u043f\u043e\u0434\u0430\u0440\u044e\u0432\u0430\u043d\u043d\u044f (\u0443\u0447\u0430\u0441\u043d\u0438\u043a) \u043f\u0440\u043e\u0442\u044f\u0433\u043e\u043c \u043e\u0441\u0442\u0430\u043d\u043d\u0456\u0445 \u0442\u0440\u044c\u043e\u0445 \u0440\u043e\u043a\u0456\u0432 \u043d\u0435 \u043f\u0440\u0438\u0442\u044f\u0433\u0443\u0432\u0430\u0432\u0441\u044f \u0434\u043e \u0432\u0456\u0434\u043f\u043e\u0432\u0456\u0434\u0430\u043b\u044c\u043d\u043e\u0441\u0442\u0456 \u0437\u0430 \u043f\u043e\u0440\u0443\u0448\u0435\u043d\u043d\u044f, \u043f\u0435\u0440\u0435\u0434\u0431\u0430\u0447\u0435\u043d\u0435 \u043f\u0443\u043d\u043a\u0442\u043e\u043c 4 \u0447\u0430\u0441\u0442\u0438\u043d\u0438 \u0434\u0440\u0443\u0433\u043e\u0457 \u0441\u0442\u0430\u0442\u0442\u0456 6, \u043f\u0443\u043d\u043a\u0442\u043e\u043c 1 \u0441\u0442\u0430\u0442\u0442\u0456 50 \u0417\u0430\u043a\u043e\u043d\u0443 \u0423\u043a\u0440\u0430\u0457\u043d\u0438 \"\u041f\u0440\u043e \u0437\u0430\u0445\u0438\u0441\u0442 \u0435\u043a\u043e\u043d\u043e\u043c\u0456\u0447\u043d\u043e\u0457 \u043a\u043e\u043d\u043a\u0443\u0440\u0435\u043d\u0446\u0456\u0457\", \u0443 \u0432\u0438\u0433\u043b\u044f\u0434\u0456 \u0432\u0447\u0438\u043d\u0435\u043d\u043d\u044f \u0430\u043d\u0442\u0438\u043a\u043e\u043d\u043a\u0443\u0440\u0435\u043d\u0442\u043d\u0438\u0445 \u0443\u0437\u0433\u043e\u0434\u0436\u0435\u043d\u0438\u0445 \u0434\u0456\u0439, \u0449\u043e \u0441\u0442\u043e\u0441\u0443\u044e\u0442\u044c\u0441\u044f \u0441\u043f\u043e\u0442\u0432\u043e\u0440\u0435\u043d\u043d\u044f \u0440\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442\u0456\u0432 \u0442\u0435\u043d\u0434\u0435\u0440\u0456\u0432"
+            },
+            "value": "true"
+          },
+          {
+            "id": "71d8d727a1ae43d1a57d13fe5054f192",
+            "requirement": {
+              "id": "0d91a9d560ba416f9fa0c2745c20173d",
+              "title": "\u0412\u0456\u0434\u043e\u043c\u043e\u0441\u0442\u0456 \u043f\u0440\u043e \u044e\u0440\u0438\u0434\u0438\u0447\u043d\u0443 \u043e\u0441\u043e\u0431\u0443, \u044f\u043a\u0430 \u0454 \u0443\u0447\u0430\u0441\u043d\u0438\u043a\u043e\u043c \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456, \u043d\u0435 \u0432\u043d\u0435\u0441\u0435\u043d\u043e \u0434\u043e \u0404\u0434\u0438\u043d\u043e\u0433\u043e \u0434\u0435\u0440\u0436\u0430\u0432\u043d\u043e\u0433\u043e \u0440\u0435\u0454\u0441\u0442\u0440\u0443 \u043e\u0441\u0456\u0431, \u044f\u043a\u0456 \u0432\u0447\u0438\u043d\u0438\u043b\u0438 \u043a\u043e\u0440\u0443\u043f\u0446\u0456\u0439\u043d\u0456 \u0430\u0431\u043e \u043f\u043e\u0432'\u044f\u0437\u0430\u043d\u0456 \u0437 \u043a\u043e\u0440\u0443\u043f\u0446\u0456\u0454\u044e \u043f\u0440\u0430\u0432\u043e\u043f\u043e\u0440\u0443\u0448\u0435\u043d\u043d\u044f"
+            },
+            "value": "true"
+          },
+          {
+            "id": "8f67f655d2724716b3452542174267e9",
+            "requirement": {
+              "id": "b6565d36ba744d93b733df59f8acc510",
+              "title": "\u0421\u043b\u0443\u0436\u0431\u043e\u0432\u0443 (\u043f\u043e\u0441\u0430\u0434\u043e\u0432\u0443) \u043e\u0441\u043e\u0431\u0443 \u0443\u0447\u0430\u0441\u043d\u0438\u043a\u0430 \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456, \u044f\u043a\u0443 \u0443\u043f\u043e\u0432\u043d\u043e\u0432\u0430\u0436\u0435\u043d\u043e \u0443\u0447\u0430\u0441\u043d\u0438\u043a\u043e\u043c \u043f\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043b\u044f\u0442\u0438 \u0439\u043e\u0433\u043e \u0456\u043d\u0442\u0435\u0440\u0435\u0441\u0438 \u043f\u0456\u0434 \u0447\u0430\u0441 \u043f\u0440\u043e\u0432\u0435\u0434\u0435\u043d\u043d\u044f \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456, \u0444\u0456\u0437\u0438\u0447\u043d\u0443 \u043e\u0441\u043e\u0431\u0443, \u044f\u043a\u0430 \u0454 \u0443\u0447\u0430\u0441\u043d\u0438\u043a\u043e\u043c, \u043d\u0435 \u0431\u0443\u043b\u043e \u043f\u0440\u0438\u0442\u044f\u0433\u043d\u0443\u0442\u043e \u0437\u0433\u0456\u0434\u043d\u043e \u0456\u0437 \u0437\u0430\u043a\u043e\u043d\u043e\u043c \u0434\u043e \u0432\u0456\u0434\u043f\u043e\u0432\u0456\u0434\u0430\u043b\u044c\u043d\u043e\u0441\u0442\u0456 \u0437\u0430 \u0432\u0447\u0438\u043d\u0435\u043d\u043d\u044f \u043a\u043e\u0440\u0443\u043f\u0446\u0456\u0439\u043d\u043e\u0433\u043e \u043f\u0440\u0430\u0432\u043e\u043f\u043e\u0440\u0443\u0448\u0435\u043d\u043d\u044f \u0430\u0431\u043e \u043f\u0440\u0430\u0432\u043e\u043f\u043e\u0440\u0443\u0448\u0435\u043d\u043d\u044f, \u043f\u043e\u0432'\u044f\u0437\u0430\u043d\u043e\u0433\u043e \u0437 \u043a\u043e\u0440\u0443\u043f\u0446\u0456\u0454\u044e"
+            },
+            "value": "true"
+          },
+          {
+            "id": "d0e5341425054dbebd151ae5836f9303",
+            "requirement": {
+              "id": "fdfa451f8344405d85d246092fe256ef",
+              "title": "\u0421\u043b\u0443\u0436\u0431\u043e\u0432\u0430 (\u043f\u043e\u0441\u0430\u0434\u043e\u0432\u0430) \u043e\u0441\u043e\u0431\u0430 \u0443\u0447\u0430\u0441\u043d\u0438\u043a\u0430 \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456, \u044f\u043a\u0443 \u0443\u043f\u043e\u0432\u043d\u043e\u0432\u0430\u0436\u0435\u043d\u043e \u0443\u0447\u0430\u0441\u043d\u0438\u043a\u043e\u043c \u043f\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043b\u044f\u0442\u0438 \u0439\u043e\u0433\u043e \u0456\u043d\u0442\u0435\u0440\u0435\u0441\u0438 \u043f\u0456\u0434 \u0447\u0430\u0441 \u043f\u0440\u043e\u0432\u0435\u0434\u0435\u043d\u043d\u044f \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456, \u0444\u0456\u0437\u0438\u0447\u043d\u0443 \u043e\u0441\u043e\u0431\u0443, \u044f\u043a\u0430 \u0454 \u0443\u0447\u0430\u0441\u043d\u0438\u043a\u043e\u043c, \u043d\u0435 \u0431\u0443\u043b\u043e \u043f\u0440\u0438\u0442\u044f\u0433\u043d\u0443\u0442\u043e \u0437\u0433\u0456\u0434\u043d\u043e \u0456\u0437 \u0437\u0430\u043a\u043e\u043d\u043e\u043c \u0434\u043e \u0432\u0456\u0434\u043f\u043e\u0432\u0456\u0434\u0430\u043b\u044c\u043d\u043e\u0441\u0442\u0456 \u0437\u0430 \u0432\u0447\u0438\u043d\u0435\u043d\u043d\u044f \u043f\u0440\u0430\u0432\u043e\u043f\u043e\u0440\u0443\u0448\u0435\u043d\u043d\u044f, \u043f\u043e\u0432'\u044f\u0437\u0430\u043d\u043e\u0433\u043e \u0437 \u0432\u0438\u043a\u043e\u0440\u0438\u0441\u0442\u0430\u043d\u043d\u044f\u043c \u0434\u0438\u0442\u044f\u0447\u043e\u0457 \u043f\u0440\u0430\u0446\u0456 \u0447\u0438 \u0431\u0443\u0434\u044c-\u044f\u043a\u0438\u043c\u0438 \u0444\u043e\u0440\u043c\u0430\u043c\u0438 \u0442\u043e\u0440\u0433\u0456\u0432\u043b\u0456 \u043b\u044e\u0434\u044c\u043c\u0438"
+            },
+            "value": "true"
+          },
+          {
+            "id": "c44d05b00c924e218e6d9f66e7e72d89",
+            "requirement": {
+              "id": "44475e57f95b4d0f94a3918f74684390",
+              "title": "\u0412\u0456\u043d \u043d\u0435 \u043c\u0430\u0454 \u0437\u0430\u0431\u043e\u0440\u0433\u043e\u0432\u0430\u043d\u043e\u0441\u0442\u0456 \u0437\u0456 \u0441\u043f\u043b\u0430\u0442\u0438 \u043f\u043e\u0434\u0430\u0442\u043a\u0456\u0432 \u0456 \u0437\u0431\u043e\u0440\u0456\u0432 (\u043e\u0431\u043e\u0432'\u044f\u0437\u043a\u043e\u0432\u0438\u0445 \u043f\u043b\u0430\u0442\u0435\u0436\u0456\u0432)"
+            },
+            "value": "true"
+          },
+          {
+            "id": "8f100cae39ee4b29a0be72fc57f02fb5",
+            "requirement": {
+              "id": "c6aada0931e547d9a09c0b17c7e7bac9",
+              "title": "\u0423\u0447\u0430\u0441\u043d\u0438\u043a \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456 \u043d\u0435 \u0432\u0438\u0437\u043d\u0430\u043d\u0438\u0439 \u0443 \u0432\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u043e\u043c\u0443 \u0437\u0430\u043a\u043e\u043d\u043e\u043c \u043f\u043e\u0440\u044f\u0434\u043a\u0443 \u0431\u0430\u043d\u043a\u0440\u0443\u0442\u043e\u043c \u0442\u0430 \u0441\u0442\u043e\u0441\u043e\u0432\u043d\u043e \u043d\u044c\u043e\u0433\u043e \u043d\u0435 \u0432\u0456\u0434\u043a\u0440\u0438\u0442\u0430 \u043b\u0456\u043a\u0432\u0456\u0434\u0430\u0446\u0456\u0439\u043d\u0430 \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0430"
+            },
+            "value": "true"
+          },
+          {
+            "id": "0ff751e4fe39477d97e0b7c3e1c2ef05",
+            "requirement": {
+              "id": "24fb9215a2904a01a892477e6dd0c7c9",
+              "title": "\u0423 \u0404\u0434\u0438\u043d\u043e\u043c\u0443 \u0434\u0435\u0440\u0436\u0430\u0432\u043d\u043e\u043c\u0443 \u0440\u0435\u0454\u0441\u0442\u0440\u0456 \u044e\u0440\u0438\u0434\u0438\u0447\u043d\u0438\u0445 \u043e\u0441\u0456\u0431, \u0444\u0456\u0437\u0438\u0447\u043d\u0438\u0445 \u043e\u0441\u0456\u0431 - \u043f\u0456\u0434\u043f\u0440\u0438\u0454\u043c\u0446\u0456\u0432 \u0442\u0430 \u0433\u0440\u043e\u043c\u0430\u0434\u0441\u044c\u043a\u0438\u0445 \u0444\u043e\u0440\u043c\u0443\u0432\u0430\u043d\u044c \u043f\u0440\u0438\u0441\u0443\u0442\u043d\u044f \u0456\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0456\u044f, \u043f\u0435\u0440\u0435\u0434\u0431\u0430\u0447\u0435\u043d\u0430 \u043f\u0443\u043d\u043a\u0442\u043e\u043c 9 \u0447\u0430\u0441\u0442\u0438\u043d\u0438 \u0434\u0440\u0443\u0433\u043e\u0457 \u0441\u0442\u0430\u0442\u0442\u0456 9 \u0417\u0430\u043a\u043e\u043d\u0443 \u0423\u043a\u0440\u0430\u0457\u043d\u0438 \"\u041f\u0440\u043e \u0434\u0435\u0440\u0436\u0430\u0432\u043d\u0443 \u0440\u0435\u0454\u0441\u0442\u0440\u0430\u0446\u0456\u044e \u044e\u0440\u0438\u0434\u0438\u0447\u043d\u0438\u0445 \u043e\u0441\u0456\u0431, \u0444\u0456\u0437\u0438\u0447\u043d\u0438\u0445 \u043e\u0441\u0456\u0431 - \u043f\u0456\u0434\u043f\u0440\u0438\u0454\u043c\u0446\u0456\u0432 \u0442\u0430 \u0433\u0440\u043e\u043c\u0430\u0434\u0441\u044c\u043a\u0438\u0445 \u0444\u043e\u0440\u043c\u0443\u0432\u0430\u043d\u044c\" (\u043a\u0440\u0456\u043c \u043d\u0435\u0440\u0435\u0437\u0438\u0434\u0435\u043d\u0442\u0456\u0432)"
+            },
+            "value": "true"
+          },
+          {
+            "id": "1dbd338e556b442999bd960591fa9b10",
+            "requirement": {
+              "id": "32c34b763b5643dd90c8497a1865f540",
+              "title": "\u0423\u0447\u0430\u0441\u043d\u0438\u043a \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456 \u043d\u0435 \u0454 \u043e\u0441\u043e\u0431\u043e\u044e, \u0434\u043e \u044f\u043a\u043e\u0457 \u0437\u0430\u0441\u0442\u043e\u0441\u043e\u0432\u0430\u043d\u043e \u0441\u0430\u043d\u043a\u0446\u0456\u044e \u0443 \u0432\u0438\u0433\u043b\u044f\u0434\u0456 \u0437\u0430\u0431\u043e\u0440\u043e\u043d\u0438 \u043d\u0430 \u0437\u0434\u0456\u0439\u0441\u043d\u0435\u043d\u043d\u044f \u0443 \u043d\u0435\u0457 \u043f\u0443\u0431\u043b\u0456\u0447\u043d\u0438\u0445 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u0435\u043b\u044c \u0442\u043e\u0432\u0430\u0440\u0456\u0432, \u0440\u043e\u0431\u0456\u0442 \u0456 \u043f\u043e\u0441\u043b\u0443\u0433 \u0437\u0433\u0456\u0434\u043d\u043e \u0456\u0437 \u0417\u0430\u043a\u043e\u043d\u043e\u043c \u0423\u043a\u0440\u0430\u0457\u043d\u0438 \"\u041f\u0440\u043e \u0441\u0430\u043d\u043a\u0446\u0456\u0457\""
+            },
+            "value": "true"
+          },
+          {
+            "id": "c9b7111e05ab402e9a4ee93597d72e6f",
+            "requirement": {
+              "id": "ca12e1d434164fdbb989216065d72b92",
+              "title": "\u041c\u043e\u0432\u0430 \u0442\u0435\u043d\u0434\u0435\u0440\u043d\u043e\u0457 \u043f\u0440\u043e\u043f\u043e\u0437\u0438\u0446\u0456\u0457 \u0443\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430"
+            },
+            "value": "true"
+          }
+        ],
+        "lotValues": [
+          {
+            "value": {
+              "amount": 123.0,
+              "currency": "UAH",
+              "valueAddedTaxIncluded": true
+            },
+            "relatedLot": "a1f3e2aa71694bc09d762f300e13fa18",
+            "participationUrl": "https://auction-sandbox-2-old.prozorro.gov.ua/tenders/fc1ac96978654613a7a39544f70a6bd6_a1f3e2aa71694bc09d762f300e13fa18/login?bidder_id=f35aeb0e04694ac6b03620227c6ea5fc&hash=cc0c58a0693d1bb71d8710a7705c50a01d25d810",
+            "date": "2021-03-22T15:30:05.877674+02:00"
+          }
+        ],
+        "status": "active",
+        "selfQualified": true,
+        "documents": [
+          {
+            "id": "80e379badab249d19faa895fcc4d499c",
+            "hash": "md5:1cc5d2a89efe93b517b9d34be03e1300",
+            "documentType": "eligibilityDocuments",
+            "title": "biddingDocuments - Copy.xlsx",
+            "format": "text/plain",
+            "url": "https://public-docs-sandbox-2.prozorro.gov.ua/get/52c93bedf3f74b7a9a115cf6e15b7ff3?Signature=606I%2FQ6KtO2Fxf0ZhrJ24IH2qNuWc4CxpmabBfRruOLgvvnxEp81yTlHgr%2B8UEEeZSpYTW07Rw%2FpO4AG8K4%2BBA%3D%3D&KeyID=1331dc52",
+            "datePublished": "2021-03-22T15:30:33.625235+02:00",
+            "dateModified": "2021-03-22T15:30:33.625249+02:00",
+            "documentOf": "tender",
+            "confidentiality": "public"
+          },
+          {
+            "id": "dedc28647271416d91e51745c36d78db",
+            "hash": "md5:1cc5d2a89efe93b517b9d34be03e1300",
+            "documentType": "eligibilityDocuments",
+            "title": "biddingDocuments - Copy (2).xlsx",
+            "format": "text/plain",
+            "url": "https://public-docs-sandbox-2.prozorro.gov.ua/get/a7f3a0658c474104bee3be3ff69f2192?Signature=3yxPiw9AcjJGNYSgJEk6dSLiv9ub99AVMr10kEeBLbA1p6%2B0a67FiKVBxLBjsvT%2F3keLRux%2BnFWKBRSJX5o9AQ%3D%3D&KeyID=1331dc52",
+            "datePublished": "2021-03-22T15:30:33.920792+02:00",
+            "dateModified": "2021-03-22T15:30:33.920804+02:00",
+            "documentOf": "tender",
+            "confidentiality": "public"
+          },
+          {
+            "id": "07b180dcde4a4340b33615501c522f57",
+            "hash": "md5:1cc5d2a89efe93b517b9d34be03e1300",
+            "documentType": "eligibilityDocuments",
+            "title": "biddingDocuments - Copy (3).xlsx",
+            "format": "text/plain",
+            "url": "https://public-docs-sandbox-2.prozorro.gov.ua/get/479f8a1c66c8480fbe5510d865c44709?Signature=xedfNbfXGROsbqu4nCBGvVaW2C2bzlY%2BekNmZqPg5Wqyr38E%2FSkQpdr3CAtyEfteQa3Cm61GEIDn3sn54awnDg%3D%3D&KeyID=1331dc52",
+            "datePublished": "2021-03-22T15:30:34.916706+02:00",
+            "dateModified": "2021-03-22T15:30:34.916721+02:00",
+            "documentOf": "tender",
+            "confidentiality": "public"
+          }
+        ]
+      },
+      {
+        "tenderers": [
+          {
+            "name": "Seller_2_1",
+            "name_en": "Seller_2_1",
+            "identifier": {
+              "scheme": "UA-EDR",
+              "id": "98965632",
+              "legalName": "Seller_2_1",
+              "legalName_en": "Seller_2_1"
+            },
+            "address": {
+              "streetAddress": "\u041a\u0430\u043f\u0440\u043e\u043d\u043e\u0432\u0430",
+              "locality": "\u0411\u0443\u0447\u0430",
+              "region": "\u041a\u0438\u0457\u0432\u0441\u044c\u043a\u0430 \u043e\u0431\u043b\u0430\u0441\u0442\u044c",
+              "postalCode": "56565",
+              "countryName": "\u0423\u043a\u0440\u0430\u0457\u043d\u0430"
+            },
+            "contactPoint": {
+              "name": "SellerSecond SellerSecond",
+              "name_en": "SellerSecond",
+              "email": "Kucenko.marko+3@gmail.com",
+              "telephone": "654654132165, 654654132165"
+            },
+            "scale": "sme"
+          }
+        ],
+        "date": "2021-03-22T15:45:15.165106+02:00",
+        "id": "9d1f0256d7e54eeba9b355ec64bef8e2",
+        "requirementResponses": [
+          {
+            "id": "7a7b9a86bca14f818664518b17743959",
+            "requirement": {
+              "id": "766815059cf345f4a9f897e687844fd6",
+              "title": "\u0421\u043b\u0443\u0436\u0431\u043e\u0432\u0430 (\u043f\u043e\u0441\u0430\u0434\u043e\u0432\u0430) \u043e\u0441\u043e\u0431\u0430 \u0443\u0447\u0430\u0441\u043d\u0438\u043a\u0430 \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456, \u044f\u043a\u0430 \u043f\u0456\u0434\u043f\u0438\u0441\u0430\u043b\u0430 \u0442\u0435\u043d\u0434\u0435\u0440\u043d\u0443 \u043f\u0440\u043e\u043f\u043e\u0437\u0438\u0446\u0456\u044e (\u0430\u0431\u043e \u0443\u043f\u043e\u0432\u043d\u043e\u0432\u0430\u0436\u0435\u043d\u0430 \u043d\u0430 \u043f\u0456\u0434\u043f\u0438\u0441\u0430\u043d\u043d\u044f \u0434\u043e\u0433\u043e\u0432\u043e\u0440\u0443 \u0432 \u0440\u0430\u0437\u0456 \u043f\u0435\u0440\u0435\u0433\u043e\u0432\u043e\u0440\u043d\u043e\u0457 \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456), \u043d\u0435 \u0431\u0443\u043b\u0430 \u0437\u0430\u0441\u0443\u0434\u0436\u0435\u043d\u0430 \u0437\u0430 \u043a\u0440\u0438\u043c\u0456\u043d\u0430\u043b\u044c\u043d\u0435 \u043f\u0440\u0430\u0432\u043e\u043f\u043e\u0440\u0443\u0448\u0435\u043d\u043d\u044f, \u0432\u0447\u0438\u043d\u0435\u043d\u0435 \u0437 \u043a\u043e\u0440\u0438\u0441\u043b\u0438\u0432\u0438\u0445 \u043c\u043e\u0442\u0438\u0432\u0456\u0432 (\u0437\u043e\u043a\u0440\u0435\u043c\u0430, \u043f\u043e\u0432\u2019\u044f\u0437\u0430\u043d\u0435 \u0437 \u0445\u0430\u0431\u0430\u0440\u043d\u0438\u0446\u0442\u0432\u043e\u043c, \u0448\u0430\u0445\u0440\u0430\u0439\u0441\u0442\u0432\u043e\u043c \u0442\u0430 \u0432\u0456\u0434\u043c\u0438\u0432\u0430\u043d\u043d\u044f\u043c \u043a\u043e\u0448\u0442\u0456\u0432), \u0441\u0443\u0434\u0438\u043c\u0456\u0441\u0442\u044c \u0437 \u044f\u043a\u043e\u0457 \u0437\u043d\u044f\u0442\u043e \u0430\u0431\u043e \u043f\u043e\u0433\u0430\u0448\u0435\u043d\u043e \u0443 \u0432\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u043e\u043c\u0443 \u0437\u0430\u043a\u043e\u043d\u043e\u043c \u043f\u043e\u0440\u044f\u0434\u043a\u0443"
+            },
+            "evidences": [
+              {
+                "id": "54ec9f0a2cba41e78dec4d97a7941053",
+                "title": "234 34234234424234",
+                "type": "statement"
+              }
+            ],
+            "value": "true"
+          },
+          {
+            "id": "e2092c5fa9e9482bb7a2a44b8fd27112",
+            "requirement": {
+              "id": "df7c0721284745baa34559e9183878cf",
+              "title": "\u0421\u0443\u0431'\u0454\u043a\u0442 \u0433\u043e\u0441\u043f\u043e\u0434\u0430\u0440\u044e\u0432\u0430\u043d\u043d\u044f (\u0443\u0447\u0430\u0441\u043d\u0438\u043a) \u043f\u0440\u043e\u0442\u044f\u0433\u043e\u043c \u043e\u0441\u0442\u0430\u043d\u043d\u0456\u0445 \u0442\u0440\u044c\u043e\u0445 \u0440\u043e\u043a\u0456\u0432 \u043d\u0435 \u043f\u0440\u0438\u0442\u044f\u0433\u0443\u0432\u0430\u0432\u0441\u044f \u0434\u043e \u0432\u0456\u0434\u043f\u043e\u0432\u0456\u0434\u0430\u043b\u044c\u043d\u043e\u0441\u0442\u0456 \u0437\u0430 \u043f\u043e\u0440\u0443\u0448\u0435\u043d\u043d\u044f, \u043f\u0435\u0440\u0435\u0434\u0431\u0430\u0447\u0435\u043d\u0435 \u043f\u0443\u043d\u043a\u0442\u043e\u043c 4 \u0447\u0430\u0441\u0442\u0438\u043d\u0438 \u0434\u0440\u0443\u0433\u043e\u0457 \u0441\u0442\u0430\u0442\u0442\u0456 6, \u043f\u0443\u043d\u043a\u0442\u043e\u043c 1 \u0441\u0442\u0430\u0442\u0442\u0456 50 \u0417\u0430\u043a\u043e\u043d\u0443 \u0423\u043a\u0440\u0430\u0457\u043d\u0438 \"\u041f\u0440\u043e \u0437\u0430\u0445\u0438\u0441\u0442 \u0435\u043a\u043e\u043d\u043e\u043c\u0456\u0447\u043d\u043e\u0457 \u043a\u043e\u043d\u043a\u0443\u0440\u0435\u043d\u0446\u0456\u0457\", \u0443 \u0432\u0438\u0433\u043b\u044f\u0434\u0456 \u0432\u0447\u0438\u043d\u0435\u043d\u043d\u044f \u0430\u043d\u0442\u0438\u043a\u043e\u043d\u043a\u0443\u0440\u0435\u043d\u0442\u043d\u0438\u0445 \u0443\u0437\u0433\u043e\u0434\u0436\u0435\u043d\u0438\u0445 \u0434\u0456\u0439, \u0449\u043e \u0441\u0442\u043e\u0441\u0443\u044e\u0442\u044c\u0441\u044f \u0441\u043f\u043e\u0442\u0432\u043e\u0440\u0435\u043d\u043d\u044f \u0440\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442\u0456\u0432 \u0442\u0435\u043d\u0434\u0435\u0440\u0456\u0432"
+            },
+            "value": "true"
+          },
+          {
+            "id": "693c6eec88c748c39372420884bf696e",
+            "requirement": {
+              "id": "0d91a9d560ba416f9fa0c2745c20173d",
+              "title": "\u0412\u0456\u0434\u043e\u043c\u043e\u0441\u0442\u0456 \u043f\u0440\u043e \u044e\u0440\u0438\u0434\u0438\u0447\u043d\u0443 \u043e\u0441\u043e\u0431\u0443, \u044f\u043a\u0430 \u0454 \u0443\u0447\u0430\u0441\u043d\u0438\u043a\u043e\u043c \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456, \u043d\u0435 \u0432\u043d\u0435\u0441\u0435\u043d\u043e \u0434\u043e \u0404\u0434\u0438\u043d\u043e\u0433\u043e \u0434\u0435\u0440\u0436\u0430\u0432\u043d\u043e\u0433\u043e \u0440\u0435\u0454\u0441\u0442\u0440\u0443 \u043e\u0441\u0456\u0431, \u044f\u043a\u0456 \u0432\u0447\u0438\u043d\u0438\u043b\u0438 \u043a\u043e\u0440\u0443\u043f\u0446\u0456\u0439\u043d\u0456 \u0430\u0431\u043e \u043f\u043e\u0432'\u044f\u0437\u0430\u043d\u0456 \u0437 \u043a\u043e\u0440\u0443\u043f\u0446\u0456\u0454\u044e \u043f\u0440\u0430\u0432\u043e\u043f\u043e\u0440\u0443\u0448\u0435\u043d\u043d\u044f"
+            },
+            "value": "true"
+          },
+          {
+            "id": "420cb524f0de49b59e199eb0bfd063dd",
+            "requirement": {
+              "id": "b6565d36ba744d93b733df59f8acc510",
+              "title": "\u0421\u043b\u0443\u0436\u0431\u043e\u0432\u0443 (\u043f\u043e\u0441\u0430\u0434\u043e\u0432\u0443) \u043e\u0441\u043e\u0431\u0443 \u0443\u0447\u0430\u0441\u043d\u0438\u043a\u0430 \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456, \u044f\u043a\u0443 \u0443\u043f\u043e\u0432\u043d\u043e\u0432\u0430\u0436\u0435\u043d\u043e \u0443\u0447\u0430\u0441\u043d\u0438\u043a\u043e\u043c \u043f\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043b\u044f\u0442\u0438 \u0439\u043e\u0433\u043e \u0456\u043d\u0442\u0435\u0440\u0435\u0441\u0438 \u043f\u0456\u0434 \u0447\u0430\u0441 \u043f\u0440\u043e\u0432\u0435\u0434\u0435\u043d\u043d\u044f \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456, \u0444\u0456\u0437\u0438\u0447\u043d\u0443 \u043e\u0441\u043e\u0431\u0443, \u044f\u043a\u0430 \u0454 \u0443\u0447\u0430\u0441\u043d\u0438\u043a\u043e\u043c, \u043d\u0435 \u0431\u0443\u043b\u043e \u043f\u0440\u0438\u0442\u044f\u0433\u043d\u0443\u0442\u043e \u0437\u0433\u0456\u0434\u043d\u043e \u0456\u0437 \u0437\u0430\u043a\u043e\u043d\u043e\u043c \u0434\u043e \u0432\u0456\u0434\u043f\u043e\u0432\u0456\u0434\u0430\u043b\u044c\u043d\u043e\u0441\u0442\u0456 \u0437\u0430 \u0432\u0447\u0438\u043d\u0435\u043d\u043d\u044f \u043a\u043e\u0440\u0443\u043f\u0446\u0456\u0439\u043d\u043e\u0433\u043e \u043f\u0440\u0430\u0432\u043e\u043f\u043e\u0440\u0443\u0448\u0435\u043d\u043d\u044f \u0430\u0431\u043e \u043f\u0440\u0430\u0432\u043e\u043f\u043e\u0440\u0443\u0448\u0435\u043d\u043d\u044f, \u043f\u043e\u0432'\u044f\u0437\u0430\u043d\u043e\u0433\u043e \u0437 \u043a\u043e\u0440\u0443\u043f\u0446\u0456\u0454\u044e"
+            },
+            "value": "true"
+          },
+          {
+            "id": "efd15ebf313a4c328c3182761f8f28a8",
+            "requirement": {
+              "id": "fdfa451f8344405d85d246092fe256ef",
+              "title": "\u0421\u043b\u0443\u0436\u0431\u043e\u0432\u0430 (\u043f\u043e\u0441\u0430\u0434\u043e\u0432\u0430) \u043e\u0441\u043e\u0431\u0430 \u0443\u0447\u0430\u0441\u043d\u0438\u043a\u0430 \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456, \u044f\u043a\u0443 \u0443\u043f\u043e\u0432\u043d\u043e\u0432\u0430\u0436\u0435\u043d\u043e \u0443\u0447\u0430\u0441\u043d\u0438\u043a\u043e\u043c \u043f\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043b\u044f\u0442\u0438 \u0439\u043e\u0433\u043e \u0456\u043d\u0442\u0435\u0440\u0435\u0441\u0438 \u043f\u0456\u0434 \u0447\u0430\u0441 \u043f\u0440\u043e\u0432\u0435\u0434\u0435\u043d\u043d\u044f \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456, \u0444\u0456\u0437\u0438\u0447\u043d\u0443 \u043e\u0441\u043e\u0431\u0443, \u044f\u043a\u0430 \u0454 \u0443\u0447\u0430\u0441\u043d\u0438\u043a\u043e\u043c, \u043d\u0435 \u0431\u0443\u043b\u043e \u043f\u0440\u0438\u0442\u044f\u0433\u043d\u0443\u0442\u043e \u0437\u0433\u0456\u0434\u043d\u043e \u0456\u0437 \u0437\u0430\u043a\u043e\u043d\u043e\u043c \u0434\u043e \u0432\u0456\u0434\u043f\u043e\u0432\u0456\u0434\u0430\u043b\u044c\u043d\u043e\u0441\u0442\u0456 \u0437\u0430 \u0432\u0447\u0438\u043d\u0435\u043d\u043d\u044f \u043f\u0440\u0430\u0432\u043e\u043f\u043e\u0440\u0443\u0448\u0435\u043d\u043d\u044f, \u043f\u043e\u0432'\u044f\u0437\u0430\u043d\u043e\u0433\u043e \u0437 \u0432\u0438\u043a\u043e\u0440\u0438\u0441\u0442\u0430\u043d\u043d\u044f\u043c \u0434\u0438\u0442\u044f\u0447\u043e\u0457 \u043f\u0440\u0430\u0446\u0456 \u0447\u0438 \u0431\u0443\u0434\u044c-\u044f\u043a\u0438\u043c\u0438 \u0444\u043e\u0440\u043c\u0430\u043c\u0438 \u0442\u043e\u0440\u0433\u0456\u0432\u043b\u0456 \u043b\u044e\u0434\u044c\u043c\u0438"
+            },
+            "value": "true"
+          },
+          {
+            "id": "cf1eefdf7833422e932e671ecd89effa",
+            "requirement": {
+              "id": "44475e57f95b4d0f94a3918f74684390",
+              "title": "\u0412\u0456\u043d \u043d\u0435 \u043c\u0430\u0454 \u0437\u0430\u0431\u043e\u0440\u0433\u043e\u0432\u0430\u043d\u043e\u0441\u0442\u0456 \u0437\u0456 \u0441\u043f\u043b\u0430\u0442\u0438 \u043f\u043e\u0434\u0430\u0442\u043a\u0456\u0432 \u0456 \u0437\u0431\u043e\u0440\u0456\u0432 (\u043e\u0431\u043e\u0432'\u044f\u0437\u043a\u043e\u0432\u0438\u0445 \u043f\u043b\u0430\u0442\u0435\u0436\u0456\u0432)"
+            },
+            "value": "true"
+          },
+          {
+            "id": "f67ed0fb11d945199f42c6b2e4ddf228",
+            "requirement": {
+              "id": "c6aada0931e547d9a09c0b17c7e7bac9",
+              "title": "\u0423\u0447\u0430\u0441\u043d\u0438\u043a \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456 \u043d\u0435 \u0432\u0438\u0437\u043d\u0430\u043d\u0438\u0439 \u0443 \u0432\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u043e\u043c\u0443 \u0437\u0430\u043a\u043e\u043d\u043e\u043c \u043f\u043e\u0440\u044f\u0434\u043a\u0443 \u0431\u0430\u043d\u043a\u0440\u0443\u0442\u043e\u043c \u0442\u0430 \u0441\u0442\u043e\u0441\u043e\u0432\u043d\u043e \u043d\u044c\u043e\u0433\u043e \u043d\u0435 \u0432\u0456\u0434\u043a\u0440\u0438\u0442\u0430 \u043b\u0456\u043a\u0432\u0456\u0434\u0430\u0446\u0456\u0439\u043d\u0430 \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0430"
+            },
+            "value": "true"
+          },
+          {
+            "id": "381e429042b846179fbac5cb55805c19",
+            "requirement": {
+              "id": "24fb9215a2904a01a892477e6dd0c7c9",
+              "title": "\u0423 \u0404\u0434\u0438\u043d\u043e\u043c\u0443 \u0434\u0435\u0440\u0436\u0430\u0432\u043d\u043e\u043c\u0443 \u0440\u0435\u0454\u0441\u0442\u0440\u0456 \u044e\u0440\u0438\u0434\u0438\u0447\u043d\u0438\u0445 \u043e\u0441\u0456\u0431, \u0444\u0456\u0437\u0438\u0447\u043d\u0438\u0445 \u043e\u0441\u0456\u0431 - \u043f\u0456\u0434\u043f\u0440\u0438\u0454\u043c\u0446\u0456\u0432 \u0442\u0430 \u0433\u0440\u043e\u043c\u0430\u0434\u0441\u044c\u043a\u0438\u0445 \u0444\u043e\u0440\u043c\u0443\u0432\u0430\u043d\u044c \u043f\u0440\u0438\u0441\u0443\u0442\u043d\u044f \u0456\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0456\u044f, \u043f\u0435\u0440\u0435\u0434\u0431\u0430\u0447\u0435\u043d\u0430 \u043f\u0443\u043d\u043a\u0442\u043e\u043c 9 \u0447\u0430\u0441\u0442\u0438\u043d\u0438 \u0434\u0440\u0443\u0433\u043e\u0457 \u0441\u0442\u0430\u0442\u0442\u0456 9 \u0417\u0430\u043a\u043e\u043d\u0443 \u0423\u043a\u0440\u0430\u0457\u043d\u0438 \"\u041f\u0440\u043e \u0434\u0435\u0440\u0436\u0430\u0432\u043d\u0443 \u0440\u0435\u0454\u0441\u0442\u0440\u0430\u0446\u0456\u044e \u044e\u0440\u0438\u0434\u0438\u0447\u043d\u0438\u0445 \u043e\u0441\u0456\u0431, \u0444\u0456\u0437\u0438\u0447\u043d\u0438\u0445 \u043e\u0441\u0456\u0431 - \u043f\u0456\u0434\u043f\u0440\u0438\u0454\u043c\u0446\u0456\u0432 \u0442\u0430 \u0433\u0440\u043e\u043c\u0430\u0434\u0441\u044c\u043a\u0438\u0445 \u0444\u043e\u0440\u043c\u0443\u0432\u0430\u043d\u044c\" (\u043a\u0440\u0456\u043c \u043d\u0435\u0440\u0435\u0437\u0438\u0434\u0435\u043d\u0442\u0456\u0432)"
+            },
+            "value": "true"
+          },
+          {
+            "id": "8a4a17059a3c45e7b4ec275e2228dd95",
+            "requirement": {
+              "id": "32c34b763b5643dd90c8497a1865f540",
+              "title": "\u0423\u0447\u0430\u0441\u043d\u0438\u043a \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456 \u043d\u0435 \u0454 \u043e\u0441\u043e\u0431\u043e\u044e, \u0434\u043e \u044f\u043a\u043e\u0457 \u0437\u0430\u0441\u0442\u043e\u0441\u043e\u0432\u0430\u043d\u043e \u0441\u0430\u043d\u043a\u0446\u0456\u044e \u0443 \u0432\u0438\u0433\u043b\u044f\u0434\u0456 \u0437\u0430\u0431\u043e\u0440\u043e\u043d\u0438 \u043d\u0430 \u0437\u0434\u0456\u0439\u0441\u043d\u0435\u043d\u043d\u044f \u0443 \u043d\u0435\u0457 \u043f\u0443\u0431\u043b\u0456\u0447\u043d\u0438\u0445 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u0435\u043b\u044c \u0442\u043e\u0432\u0430\u0440\u0456\u0432, \u0440\u043e\u0431\u0456\u0442 \u0456 \u043f\u043e\u0441\u043b\u0443\u0433 \u0437\u0433\u0456\u0434\u043d\u043e \u0456\u0437 \u0417\u0430\u043a\u043e\u043d\u043e\u043c \u0423\u043a\u0440\u0430\u0457\u043d\u0438 \"\u041f\u0440\u043e \u0441\u0430\u043d\u043a\u0446\u0456\u0457\""
+            },
+            "value": "true"
+          },
+          {
+            "id": "9004fb934b4f4227bf833cbf8831aa2b",
+            "requirement": {
+              "id": "ca12e1d434164fdbb989216065d72b92",
+              "title": "\u041c\u043e\u0432\u0430 \u0442\u0435\u043d\u0434\u0435\u0440\u043d\u043e\u0457 \u043f\u0440\u043e\u043f\u043e\u0437\u0438\u0446\u0456\u0457 \u0443\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430"
+            },
+            "value": "true"
+          }
+        ],
+        "lotValues": [
+          {
+            "value": {
+              "amount": 12.0,
+              "currency": "UAH",
+              "valueAddedTaxIncluded": true
+            },
+            "relatedLot": "b49cb01be4c94d1bab81c0c550587201",
+            "participationUrl": "https://auction-sandbox-2-old.prozorro.gov.ua/tenders/fc1ac96978654613a7a39544f70a6bd6_b49cb01be4c94d1bab81c0c550587201/login?bidder_id=9d1f0256d7e54eeba9b355ec64bef8e2&hash=a983d5ae74ef9bd8181ff8b9579e7511f7d56176",
+            "date": "2021-03-22T15:45:15.165282+02:00"
+          }
+        ],
+        "status": "active",
+        "selfQualified": true
+      },
+      {
+        "tenderers": [
+          {
+            "name": "Seller_2_1",
+            "name_en": "Seller_2_1",
+            "identifier": {
+              "scheme": "UA-EDR",
+              "id": "98965632",
+              "legalName": "Seller_2_1",
+              "legalName_en": "Seller_2_1"
+            },
+            "address": {
+              "streetAddress": "\u041a\u0430\u043f\u0440\u043e\u043d\u043e\u0432\u0430",
+              "locality": "\u0411\u0443\u0447\u0430",
+              "region": "\u041a\u0438\u0457\u0432\u0441\u044c\u043a\u0430 \u043e\u0431\u043b\u0430\u0441\u0442\u044c",
+              "postalCode": "56565",
+              "countryName": "\u0423\u043a\u0440\u0430\u0457\u043d\u0430"
+            },
+            "contactPoint": {
+              "name": "SellerSecond SellerSecond",
+              "name_en": "SellerSecond",
+              "email": "Kucenko.marko+3@gmail.com",
+              "telephone": "654654132165, 654654132165"
+            },
+            "scale": "sme"
+          }
+        ],
+        "date": "2021-03-22T15:45:46.775185+02:00",
+        "id": "b4bdece33b4f4b5fbb2ff777f81c32d2",
+        "requirementResponses": [
+          {
+            "id": "bd8e0aad6f6a40379e48878d570dc98a",
+            "requirement": {
+              "id": "766815059cf345f4a9f897e687844fd6",
+              "title": "\u0421\u043b\u0443\u0436\u0431\u043e\u0432\u0430 (\u043f\u043e\u0441\u0430\u0434\u043e\u0432\u0430) \u043e\u0441\u043e\u0431\u0430 \u0443\u0447\u0430\u0441\u043d\u0438\u043a\u0430 \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456, \u044f\u043a\u0430 \u043f\u0456\u0434\u043f\u0438\u0441\u0430\u043b\u0430 \u0442\u0435\u043d\u0434\u0435\u0440\u043d\u0443 \u043f\u0440\u043e\u043f\u043e\u0437\u0438\u0446\u0456\u044e (\u0430\u0431\u043e \u0443\u043f\u043e\u0432\u043d\u043e\u0432\u0430\u0436\u0435\u043d\u0430 \u043d\u0430 \u043f\u0456\u0434\u043f\u0438\u0441\u0430\u043d\u043d\u044f \u0434\u043e\u0433\u043e\u0432\u043e\u0440\u0443 \u0432 \u0440\u0430\u0437\u0456 \u043f\u0435\u0440\u0435\u0433\u043e\u0432\u043e\u0440\u043d\u043e\u0457 \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456), \u043d\u0435 \u0431\u0443\u043b\u0430 \u0437\u0430\u0441\u0443\u0434\u0436\u0435\u043d\u0430 \u0437\u0430 \u043a\u0440\u0438\u043c\u0456\u043d\u0430\u043b\u044c\u043d\u0435 \u043f\u0440\u0430\u0432\u043e\u043f\u043e\u0440\u0443\u0448\u0435\u043d\u043d\u044f, \u0432\u0447\u0438\u043d\u0435\u043d\u0435 \u0437 \u043a\u043e\u0440\u0438\u0441\u043b\u0438\u0432\u0438\u0445 \u043c\u043e\u0442\u0438\u0432\u0456\u0432 (\u0437\u043e\u043a\u0440\u0435\u043c\u0430, \u043f\u043e\u0432\u2019\u044f\u0437\u0430\u043d\u0435 \u0437 \u0445\u0430\u0431\u0430\u0440\u043d\u0438\u0446\u0442\u0432\u043e\u043c, \u0448\u0430\u0445\u0440\u0430\u0439\u0441\u0442\u0432\u043e\u043c \u0442\u0430 \u0432\u0456\u0434\u043c\u0438\u0432\u0430\u043d\u043d\u044f\u043c \u043a\u043e\u0448\u0442\u0456\u0432), \u0441\u0443\u0434\u0438\u043c\u0456\u0441\u0442\u044c \u0437 \u044f\u043a\u043e\u0457 \u0437\u043d\u044f\u0442\u043e \u0430\u0431\u043e \u043f\u043e\u0433\u0430\u0448\u0435\u043d\u043e \u0443 \u0432\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u043e\u043c\u0443 \u0437\u0430\u043a\u043e\u043d\u043e\u043c \u043f\u043e\u0440\u044f\u0434\u043a\u0443"
+            },
+            "evidences": [
+              {
+                "id": "c9d69140e01742feb913ff96e230ef91",
+                "title": "123\u0430 \u044b\u0432\u0430\u044b\u0430\u044b\u0432",
+                "type": "statement"
+              }
+            ],
+            "value": "true"
+          },
+          {
+            "id": "7c70f6c02c0042cc8dffa584b02a34aa",
+            "requirement": {
+              "id": "df7c0721284745baa34559e9183878cf",
+              "title": "\u0421\u0443\u0431'\u0454\u043a\u0442 \u0433\u043e\u0441\u043f\u043e\u0434\u0430\u0440\u044e\u0432\u0430\u043d\u043d\u044f (\u0443\u0447\u0430\u0441\u043d\u0438\u043a) \u043f\u0440\u043e\u0442\u044f\u0433\u043e\u043c \u043e\u0441\u0442\u0430\u043d\u043d\u0456\u0445 \u0442\u0440\u044c\u043e\u0445 \u0440\u043e\u043a\u0456\u0432 \u043d\u0435 \u043f\u0440\u0438\u0442\u044f\u0433\u0443\u0432\u0430\u0432\u0441\u044f \u0434\u043e \u0432\u0456\u0434\u043f\u043e\u0432\u0456\u0434\u0430\u043b\u044c\u043d\u043e\u0441\u0442\u0456 \u0437\u0430 \u043f\u043e\u0440\u0443\u0448\u0435\u043d\u043d\u044f, \u043f\u0435\u0440\u0435\u0434\u0431\u0430\u0447\u0435\u043d\u0435 \u043f\u0443\u043d\u043a\u0442\u043e\u043c 4 \u0447\u0430\u0441\u0442\u0438\u043d\u0438 \u0434\u0440\u0443\u0433\u043e\u0457 \u0441\u0442\u0430\u0442\u0442\u0456 6, \u043f\u0443\u043d\u043a\u0442\u043e\u043c 1 \u0441\u0442\u0430\u0442\u0442\u0456 50 \u0417\u0430\u043a\u043e\u043d\u0443 \u0423\u043a\u0440\u0430\u0457\u043d\u0438 \"\u041f\u0440\u043e \u0437\u0430\u0445\u0438\u0441\u0442 \u0435\u043a\u043e\u043d\u043e\u043c\u0456\u0447\u043d\u043e\u0457 \u043a\u043e\u043d\u043a\u0443\u0440\u0435\u043d\u0446\u0456\u0457\", \u0443 \u0432\u0438\u0433\u043b\u044f\u0434\u0456 \u0432\u0447\u0438\u043d\u0435\u043d\u043d\u044f \u0430\u043d\u0442\u0438\u043a\u043e\u043d\u043a\u0443\u0440\u0435\u043d\u0442\u043d\u0438\u0445 \u0443\u0437\u0433\u043e\u0434\u0436\u0435\u043d\u0438\u0445 \u0434\u0456\u0439, \u0449\u043e \u0441\u0442\u043e\u0441\u0443\u044e\u0442\u044c\u0441\u044f \u0441\u043f\u043e\u0442\u0432\u043e\u0440\u0435\u043d\u043d\u044f \u0440\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442\u0456\u0432 \u0442\u0435\u043d\u0434\u0435\u0440\u0456\u0432"
+            },
+            "value": "true"
+          },
+          {
+            "id": "701f3599df344e3995d042e5c509f8f3",
+            "requirement": {
+              "id": "0d91a9d560ba416f9fa0c2745c20173d",
+              "title": "\u0412\u0456\u0434\u043e\u043c\u043e\u0441\u0442\u0456 \u043f\u0440\u043e \u044e\u0440\u0438\u0434\u0438\u0447\u043d\u0443 \u043e\u0441\u043e\u0431\u0443, \u044f\u043a\u0430 \u0454 \u0443\u0447\u0430\u0441\u043d\u0438\u043a\u043e\u043c \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456, \u043d\u0435 \u0432\u043d\u0435\u0441\u0435\u043d\u043e \u0434\u043e \u0404\u0434\u0438\u043d\u043e\u0433\u043e \u0434\u0435\u0440\u0436\u0430\u0432\u043d\u043e\u0433\u043e \u0440\u0435\u0454\u0441\u0442\u0440\u0443 \u043e\u0441\u0456\u0431, \u044f\u043a\u0456 \u0432\u0447\u0438\u043d\u0438\u043b\u0438 \u043a\u043e\u0440\u0443\u043f\u0446\u0456\u0439\u043d\u0456 \u0430\u0431\u043e \u043f\u043e\u0432'\u044f\u0437\u0430\u043d\u0456 \u0437 \u043a\u043e\u0440\u0443\u043f\u0446\u0456\u0454\u044e \u043f\u0440\u0430\u0432\u043e\u043f\u043e\u0440\u0443\u0448\u0435\u043d\u043d\u044f"
+            },
+            "value": "true"
+          },
+          {
+            "id": "a059f824e1874e979cfc5bee0ff68bd5",
+            "requirement": {
+              "id": "b6565d36ba744d93b733df59f8acc510",
+              "title": "\u0421\u043b\u0443\u0436\u0431\u043e\u0432\u0443 (\u043f\u043e\u0441\u0430\u0434\u043e\u0432\u0443) \u043e\u0441\u043e\u0431\u0443 \u0443\u0447\u0430\u0441\u043d\u0438\u043a\u0430 \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456, \u044f\u043a\u0443 \u0443\u043f\u043e\u0432\u043d\u043e\u0432\u0430\u0436\u0435\u043d\u043e \u0443\u0447\u0430\u0441\u043d\u0438\u043a\u043e\u043c \u043f\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043b\u044f\u0442\u0438 \u0439\u043e\u0433\u043e \u0456\u043d\u0442\u0435\u0440\u0435\u0441\u0438 \u043f\u0456\u0434 \u0447\u0430\u0441 \u043f\u0440\u043e\u0432\u0435\u0434\u0435\u043d\u043d\u044f \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456, \u0444\u0456\u0437\u0438\u0447\u043d\u0443 \u043e\u0441\u043e\u0431\u0443, \u044f\u043a\u0430 \u0454 \u0443\u0447\u0430\u0441\u043d\u0438\u043a\u043e\u043c, \u043d\u0435 \u0431\u0443\u043b\u043e \u043f\u0440\u0438\u0442\u044f\u0433\u043d\u0443\u0442\u043e \u0437\u0433\u0456\u0434\u043d\u043e \u0456\u0437 \u0437\u0430\u043a\u043e\u043d\u043e\u043c \u0434\u043e \u0432\u0456\u0434\u043f\u043e\u0432\u0456\u0434\u0430\u043b\u044c\u043d\u043e\u0441\u0442\u0456 \u0437\u0430 \u0432\u0447\u0438\u043d\u0435\u043d\u043d\u044f \u043a\u043e\u0440\u0443\u043f\u0446\u0456\u0439\u043d\u043e\u0433\u043e \u043f\u0440\u0430\u0432\u043e\u043f\u043e\u0440\u0443\u0448\u0435\u043d\u043d\u044f \u0430\u0431\u043e \u043f\u0440\u0430\u0432\u043e\u043f\u043e\u0440\u0443\u0448\u0435\u043d\u043d\u044f, \u043f\u043e\u0432'\u044f\u0437\u0430\u043d\u043e\u0433\u043e \u0437 \u043a\u043e\u0440\u0443\u043f\u0446\u0456\u0454\u044e"
+            },
+            "value": "true"
+          },
+          {
+            "id": "dc68f6e1c9bd4002973b2f286636774e",
+            "requirement": {
+              "id": "fdfa451f8344405d85d246092fe256ef",
+              "title": "\u0421\u043b\u0443\u0436\u0431\u043e\u0432\u0430 (\u043f\u043e\u0441\u0430\u0434\u043e\u0432\u0430) \u043e\u0441\u043e\u0431\u0430 \u0443\u0447\u0430\u0441\u043d\u0438\u043a\u0430 \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456, \u044f\u043a\u0443 \u0443\u043f\u043e\u0432\u043d\u043e\u0432\u0430\u0436\u0435\u043d\u043e \u0443\u0447\u0430\u0441\u043d\u0438\u043a\u043e\u043c \u043f\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043b\u044f\u0442\u0438 \u0439\u043e\u0433\u043e \u0456\u043d\u0442\u0435\u0440\u0435\u0441\u0438 \u043f\u0456\u0434 \u0447\u0430\u0441 \u043f\u0440\u043e\u0432\u0435\u0434\u0435\u043d\u043d\u044f \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456, \u0444\u0456\u0437\u0438\u0447\u043d\u0443 \u043e\u0441\u043e\u0431\u0443, \u044f\u043a\u0430 \u0454 \u0443\u0447\u0430\u0441\u043d\u0438\u043a\u043e\u043c, \u043d\u0435 \u0431\u0443\u043b\u043e \u043f\u0440\u0438\u0442\u044f\u0433\u043d\u0443\u0442\u043e \u0437\u0433\u0456\u0434\u043d\u043e \u0456\u0437 \u0437\u0430\u043a\u043e\u043d\u043e\u043c \u0434\u043e \u0432\u0456\u0434\u043f\u043e\u0432\u0456\u0434\u0430\u043b\u044c\u043d\u043e\u0441\u0442\u0456 \u0437\u0430 \u0432\u0447\u0438\u043d\u0435\u043d\u043d\u044f \u043f\u0440\u0430\u0432\u043e\u043f\u043e\u0440\u0443\u0448\u0435\u043d\u043d\u044f, \u043f\u043e\u0432'\u044f\u0437\u0430\u043d\u043e\u0433\u043e \u0437 \u0432\u0438\u043a\u043e\u0440\u0438\u0441\u0442\u0430\u043d\u043d\u044f\u043c \u0434\u0438\u0442\u044f\u0447\u043e\u0457 \u043f\u0440\u0430\u0446\u0456 \u0447\u0438 \u0431\u0443\u0434\u044c-\u044f\u043a\u0438\u043c\u0438 \u0444\u043e\u0440\u043c\u0430\u043c\u0438 \u0442\u043e\u0440\u0433\u0456\u0432\u043b\u0456 \u043b\u044e\u0434\u044c\u043c\u0438"
+            },
+            "value": "true"
+          },
+          {
+            "id": "64b4513fede846098a5eec397f08f563",
+            "requirement": {
+              "id": "44475e57f95b4d0f94a3918f74684390",
+              "title": "\u0412\u0456\u043d \u043d\u0435 \u043c\u0430\u0454 \u0437\u0430\u0431\u043e\u0440\u0433\u043e\u0432\u0430\u043d\u043e\u0441\u0442\u0456 \u0437\u0456 \u0441\u043f\u043b\u0430\u0442\u0438 \u043f\u043e\u0434\u0430\u0442\u043a\u0456\u0432 \u0456 \u0437\u0431\u043e\u0440\u0456\u0432 (\u043e\u0431\u043e\u0432'\u044f\u0437\u043a\u043e\u0432\u0438\u0445 \u043f\u043b\u0430\u0442\u0435\u0436\u0456\u0432)"
+            },
+            "value": "true"
+          },
+          {
+            "id": "6abaa46c700349d3be2dc28eca974a82",
+            "requirement": {
+              "id": "c6aada0931e547d9a09c0b17c7e7bac9",
+              "title": "\u0423\u0447\u0430\u0441\u043d\u0438\u043a \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456 \u043d\u0435 \u0432\u0438\u0437\u043d\u0430\u043d\u0438\u0439 \u0443 \u0432\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u043e\u043c\u0443 \u0437\u0430\u043a\u043e\u043d\u043e\u043c \u043f\u043e\u0440\u044f\u0434\u043a\u0443 \u0431\u0430\u043d\u043a\u0440\u0443\u0442\u043e\u043c \u0442\u0430 \u0441\u0442\u043e\u0441\u043e\u0432\u043d\u043e \u043d\u044c\u043e\u0433\u043e \u043d\u0435 \u0432\u0456\u0434\u043a\u0440\u0438\u0442\u0430 \u043b\u0456\u043a\u0432\u0456\u0434\u0430\u0446\u0456\u0439\u043d\u0430 \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0430"
+            },
+            "value": "true"
+          },
+          {
+            "id": "e32c1b21c36945d4adf89bae9b05ee79",
+            "requirement": {
+              "id": "24fb9215a2904a01a892477e6dd0c7c9",
+              "title": "\u0423 \u0404\u0434\u0438\u043d\u043e\u043c\u0443 \u0434\u0435\u0440\u0436\u0430\u0432\u043d\u043e\u043c\u0443 \u0440\u0435\u0454\u0441\u0442\u0440\u0456 \u044e\u0440\u0438\u0434\u0438\u0447\u043d\u0438\u0445 \u043e\u0441\u0456\u0431, \u0444\u0456\u0437\u0438\u0447\u043d\u0438\u0445 \u043e\u0441\u0456\u0431 - \u043f\u0456\u0434\u043f\u0440\u0438\u0454\u043c\u0446\u0456\u0432 \u0442\u0430 \u0433\u0440\u043e\u043c\u0430\u0434\u0441\u044c\u043a\u0438\u0445 \u0444\u043e\u0440\u043c\u0443\u0432\u0430\u043d\u044c \u043f\u0440\u0438\u0441\u0443\u0442\u043d\u044f \u0456\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0456\u044f, \u043f\u0435\u0440\u0435\u0434\u0431\u0430\u0447\u0435\u043d\u0430 \u043f\u0443\u043d\u043a\u0442\u043e\u043c 9 \u0447\u0430\u0441\u0442\u0438\u043d\u0438 \u0434\u0440\u0443\u0433\u043e\u0457 \u0441\u0442\u0430\u0442\u0442\u0456 9 \u0417\u0430\u043a\u043e\u043d\u0443 \u0423\u043a\u0440\u0430\u0457\u043d\u0438 \"\u041f\u0440\u043e \u0434\u0435\u0440\u0436\u0430\u0432\u043d\u0443 \u0440\u0435\u0454\u0441\u0442\u0440\u0430\u0446\u0456\u044e \u044e\u0440\u0438\u0434\u0438\u0447\u043d\u0438\u0445 \u043e\u0441\u0456\u0431, \u0444\u0456\u0437\u0438\u0447\u043d\u0438\u0445 \u043e\u0441\u0456\u0431 - \u043f\u0456\u0434\u043f\u0440\u0438\u0454\u043c\u0446\u0456\u0432 \u0442\u0430 \u0433\u0440\u043e\u043c\u0430\u0434\u0441\u044c\u043a\u0438\u0445 \u0444\u043e\u0440\u043c\u0443\u0432\u0430\u043d\u044c\" (\u043a\u0440\u0456\u043c \u043d\u0435\u0440\u0435\u0437\u0438\u0434\u0435\u043d\u0442\u0456\u0432)"
+            },
+            "value": "true"
+          },
+          {
+            "id": "5b1606dd69504a669f508a5e3cd992c9",
+            "requirement": {
+              "id": "32c34b763b5643dd90c8497a1865f540",
+              "title": "\u0423\u0447\u0430\u0441\u043d\u0438\u043a \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456 \u043d\u0435 \u0454 \u043e\u0441\u043e\u0431\u043e\u044e, \u0434\u043e \u044f\u043a\u043e\u0457 \u0437\u0430\u0441\u0442\u043e\u0441\u043e\u0432\u0430\u043d\u043e \u0441\u0430\u043d\u043a\u0446\u0456\u044e \u0443 \u0432\u0438\u0433\u043b\u044f\u0434\u0456 \u0437\u0430\u0431\u043e\u0440\u043e\u043d\u0438 \u043d\u0430 \u0437\u0434\u0456\u0439\u0441\u043d\u0435\u043d\u043d\u044f \u0443 \u043d\u0435\u0457 \u043f\u0443\u0431\u043b\u0456\u0447\u043d\u0438\u0445 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u0435\u043b\u044c \u0442\u043e\u0432\u0430\u0440\u0456\u0432, \u0440\u043e\u0431\u0456\u0442 \u0456 \u043f\u043e\u0441\u043b\u0443\u0433 \u0437\u0433\u0456\u0434\u043d\u043e \u0456\u0437 \u0417\u0430\u043a\u043e\u043d\u043e\u043c \u0423\u043a\u0440\u0430\u0457\u043d\u0438 \"\u041f\u0440\u043e \u0441\u0430\u043d\u043a\u0446\u0456\u0457\""
+            },
+            "value": "true"
+          },
+          {
+            "id": "dd250210ba5040e3a03981bbfea08891",
+            "requirement": {
+              "id": "ca12e1d434164fdbb989216065d72b92",
+              "title": "\u041c\u043e\u0432\u0430 \u0442\u0435\u043d\u0434\u0435\u0440\u043d\u043e\u0457 \u043f\u0440\u043e\u043f\u043e\u0437\u0438\u0446\u0456\u0457 \u0443\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430"
+            },
+            "value": "true"
+          }
+        ],
+        "lotValues": [
+          {
+            "value": {
+              "amount": 23.0,
+              "currency": "UAH",
+              "valueAddedTaxIncluded": true
+            },
+            "relatedLot": "a1f3e2aa71694bc09d762f300e13fa18",
+            "participationUrl": "https://auction-sandbox-2-old.prozorro.gov.ua/tenders/fc1ac96978654613a7a39544f70a6bd6_a1f3e2aa71694bc09d762f300e13fa18/login?bidder_id=b4bdece33b4f4b5fbb2ff777f81c32d2&hash=14d14bfbe847de55d368326704b70856125f2ad7",
+            "date": "2021-03-22T15:45:46.775368+02:00"
+          }
+        ],
+        "status": "active",
+        "selfQualified": true,
+        "documents": [
+          {
+            "id": "ac9a21d1f41e445485c8698176aee187",
+            "hash": "md5:e20833e6a826a99cb8e4d67c6f86dfa3",
+            "title": "sign.p7s",
+            "format": "application/pkcs7-signature",
+            "url": "https://public-docs-sandbox-2.prozorro.gov.ua/get/6c2ef3cd6a73447aac7b28701369e85d?Signature=ra1VMe5PzhTN%2BB2qUQev7BZ%2FB1lDja8BlEr9jCuFZYFBv2Ehqi7%2BNN5iJBElMJFoY1C9dkKXtuNTxdEgI4sGDQ%3D%3D&KeyID=1331dc52",
+            "datePublished": "2021-03-22T15:46:44.906604+02:00",
+            "dateModified": "2021-03-22T15:46:44.906616+02:00",
+            "documentOf": "tender"
+          }
+        ]
+      }
+    ],
+    "awards": [
+      {
+        "id": "14c61bd5b0964ef4b25c28cdaa2a8971",
+        "title": "\u0423\u0447\u0430\u0441\u043d\u0438\u043a \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456 \u043d\u0435 \u0432\u0456\u0434\u043f\u043e\u0432\u0456\u0434\u0430\u0454 \u043a\u0432\u0430\u043b\u0456\u0444\u0456\u043a\u0430\u0446\u0456\u0439\u043d\u0438\u043c (\u043a\u0432\u0430\u043b\u0456\u0444\u0456\u043a\u0430\u0446\u0456\u0439\u043d\u043e\u043c\u0443) \u043a\u0440\u0438\u0442\u0435\u0440\u0456\u044f\u043c, \u0443\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u0438\u043c \u0441\u0442\u0430\u0442\u0442\u0435\u044e 16 \u0417\u0430\u043a\u043e\u043d\u0443 \u0442\u0430/\u0430\u0431\u043e \u043d\u0430\u044f\u0432\u043d\u0456 \u043f\u0456\u0434\u0441\u0442\u0430\u0432\u0438, \u0432\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u0456 \u0447\u0430\u0441\u0442\u0438\u043d\u043e\u044e \u043f\u0435\u0440\u0448\u043e\u044e \u0441\u0442\u0430\u0442\u0442\u0456 17 \u0417\u0430\u043a\u043e\u043d\u0443",
+        "description": "\u0423\u0447\u0430\u0441\u043d\u0438\u043a \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456 \u043d\u0435 \u0432\u0456\u0434\u043f\u043e\u0432\u0456\u0434\u0430\u0454 \u0432\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u0438\u043c \u0430\u0431\u0437\u0430\u0446\u043e\u043c \u043f\u0435\u0440\u0448\u0438\u043c \u0447\u0430\u0441\u0442\u0438\u043d\u0438 \u0442\u0440\u0435\u0442\u044c\u043e\u0457 \u0441\u0442\u0430\u0442\u0442\u0456 22 \u0417\u0430\u043a\u043e\u043d\u0443 \u0432\u0438\u043c\u043e\u0433\u0430\u043c \u0434\u043e \u0443\u0447\u0430\u0441\u043d\u0438\u043a\u0430 \u0432\u0456\u0434\u043f\u043e\u0432\u0456\u0434\u043d\u043e \u0434\u043e \u0437\u0430\u043a\u043e\u043d\u043e\u0434\u0430\u0432\u0441\u0442\u0432\u0430",
+        "status": "unsuccessful",
+        "date": "2021-03-22T16:12:06.108720+02:00",
+        "value": {
+          "amount": 12.0,
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        },
+        "suppliers": [
+          {
+            "name": "Seller_2_1",
+            "name_en": "Seller_2_1",
+            "identifier": {
+              "scheme": "UA-EDR",
+              "id": "98965632",
+              "legalName": "Seller_2_1",
+              "legalName_en": "Seller_2_1"
+            },
+            "address": {
+              "streetAddress": "\u041a\u0430\u043f\u0440\u043e\u043d\u043e\u0432\u0430",
+              "locality": "\u0411\u0443\u0447\u0430",
+              "region": "\u041a\u0438\u0457\u0432\u0441\u044c\u043a\u0430 \u043e\u0431\u043b\u0430\u0441\u0442\u044c",
+              "postalCode": "56565",
+              "countryName": "\u0423\u043a\u0440\u0430\u0457\u043d\u0430"
+            },
+            "contactPoint": {
+              "name": "SellerSecond SellerSecond",
+              "name_en": "SellerSecond",
+              "email": "Kucenko.marko+3@gmail.com",
+              "telephone": "654654132165, 654654132165"
+            },
+            "scale": "sme"
+          }
+        ],
+        "documents": [
+          {
+            "id": "a131d7f8fb574a589513bd528f7e0397",
+            "hash": "md5:86b1d86b1359c88c44e60fefc5cf23b9",
+            "documentType": "registerExtract",
+            "title": "edr_identification.yaml",
+            "format": "application/yaml",
+            "url": "https://public-docs-sandbox-2.prozorro.gov.ua/get/4189a0de859d466b9397b1d38e3e8fec?Signature=U6HQbctMNm8PkhZQv1f4eDd%2FW9DIRHODdrZeof6WsGOV0dbgbnl4mpsLManfKhIIBUDYR%2FT6jZIxE2LdmMajBg%3D%3D&KeyID=1331dc52",
+            "datePublished": "2021-03-22T16:03:09.401462+02:00",
+            "dateModified": "2021-03-22T16:03:09.401486+02:00",
+            "author": "bots",
+            "documentOf": "tender"
+          },
+          {
+            "id": "cc0c306416dc43609cdc8543637bb5ec",
+            "hash": "md5:28982fbdc6231a90b77a2553187e7671",
+            "documentType": "complaints",
+            "title": "\u0421\u043a\u0430\u0440\u0433\u0438 \u0442\u0430 \u0440\u0456\u0448\u0435\u043d\u043d\u044f.txt",
+            "format": "text/plain",
+            "url": "https://public-docs-sandbox-2.prozorro.gov.ua/get/3079b8703ad34e38869ed93e121b7aef?Signature=%2BEzSjJQet1OiOTz%2B3qmNTVObbP9cpWXOTJwlD3aG%2B1FPOy4nwl3Y15NmaBmsYV3FOMXHhMBIae4BEoE%2FpzGtAw%3D%3D&KeyID=1331dc52",
+            "datePublished": "2021-03-22T16:07:54.481259+02:00",
+            "dateModified": "2021-03-22T16:07:54.481270+02:00",
+            "author": "tender_owner",
+            "documentOf": "tender"
+          },
+          {
+            "id": "ec05ef6387f948e49f5d9e31186ef970",
+            "hash": "md5:9aa7ae1e6392e718359467afca4afead",
+            "title": "sign.p7s",
+            "format": "application/pkcs7-signature",
+            "url": "https://public-docs-sandbox-2.prozorro.gov.ua/get/8030c157146a480e8df8ed16751019fc?Signature=kVr5v7OCk5QBrD%2BRqNGfpQ7qzVr9V1QmDrXZxzlizMYcKCy0biwlXD0DHNXXsT9gCydi1ydfmiqFHhs6adUVAA%3D%3D&KeyID=1331dc52",
+            "datePublished": "2021-03-22T16:08:23.037708+02:00",
+            "dateModified": "2021-03-22T16:08:23.037721+02:00",
+            "author": "tender_owner",
+            "documentOf": "tender"
+          }
+        ],
+        "requirementResponses": [
+          {
+            "id": "a5824207c397455bb72d6f4c82343eb8",
+            "requirement": {
+              "id": "483cf3ebf55e415e8cab621ba828ea00",
+              "title": "\u0422\u0435\u043d\u0434\u0435\u0440\u043d\u0430 \u043f\u0440\u043e\u043f\u043e\u0437\u0438\u0446\u0456\u044f \u043f\u043e\u0434\u0430\u043d\u0430 \u0443\u0447\u0430\u0441\u043d\u0438\u043a\u043e\u043c \u043a\u043e\u043d\u043a\u0443\u0440\u0435\u043d\u0442\u043d\u043e\u0457 \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456 \u0430\u0431\u043e \u0443\u0447\u0430\u0441\u0442\u044c \u0443 \u043f\u0435\u0440\u0435\u0433\u043e\u0432\u043e\u0440\u043d\u0456\u0439 \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0456 \u0431\u0435\u0440\u0435 \u0443\u0447\u0430\u0441\u043d\u0438\u043a, \u044f\u043a\u0438\u0439 \u0454 \u043f\u043e\u0432'\u044f\u0437\u0430\u043d\u043e\u044e \u043e\u0441\u043e\u0431\u043e\u044e \u0437 \u0456\u043d\u0448\u0438\u043c\u0438 \u0443\u0447\u0430\u0441\u043d\u0438\u043a\u0430\u043c\u0438 \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456 \u0442\u0430/\u0430\u0431\u043e \u0437 \u0443\u043f\u043e\u0432\u043d\u043e\u0432\u0430\u0436\u0435\u043d\u043e\u044e \u043e\u0441\u043e\u0431\u043e\u044e (\u043e\u0441\u043e\u0431\u0430\u043c\u0438), \u0442\u0430/\u0430\u0431\u043e \u0437 \u043a\u0435\u0440\u0456\u0432\u043d\u0438\u043a\u043e\u043c \u0437\u0430\u043c\u043e\u0432\u043d\u0438\u043a\u0430"
+            },
+            "value": "true"
+          },
+          {
+            "id": "8b375dd9963b4de2ac352de9d1b49e35",
+            "requirement": {
+              "id": "d04ad07f21dd4338a59ace5f8e7f11f8",
+              "title": "\u0417\u0430\u043c\u043e\u0432\u043d\u0438\u043a \u043c\u0430\u0454 \u043d\u0435\u0437\u0430\u043f\u0435\u0440\u0435\u0447\u043d\u0456 \u0434\u043e\u043a\u0430\u0437\u0438 \u0442\u043e\u0433\u043e, \u0449\u043e \u0443\u0447\u0430\u0441\u043d\u0438\u043a \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456 \u043f\u0440\u043e\u043f\u043e\u043d\u0443\u0454, \u0434\u0430\u0454 \u0430\u0431\u043e \u043f\u043e\u0433\u043e\u0434\u0436\u0443\u0454\u0442\u044c\u0441\u044f \u0434\u0430\u0442\u0438 \u043f\u0440\u044f\u043c\u043e \u0447\u0438 \u043e\u043f\u043e\u0441\u0435\u0440\u0435\u0434\u043a\u043e\u0432\u0430\u043d\u043e \u0431\u0443\u0434\u044c-\u044f\u043a\u0456\u0439 \u0441\u043b\u0443\u0436\u0431\u043e\u0432\u0456\u0439 (\u043f\u043e\u0441\u0430\u0434\u043e\u0432\u0456\u0439) \u043e\u0441\u043e\u0431\u0456 \u0437\u0430\u043c\u043e\u0432\u043d\u0438\u043a\u0430, \u0456\u043d\u0448\u043e\u0433\u043e \u0434\u0435\u0440\u0436\u0430\u0432\u043d\u043e\u0433\u043e \u043e\u0440\u0433\u0430\u043d\u0443 \u0432\u0438\u043d\u0430\u0433\u043e\u0440\u043e\u0434\u0443 \u0432 \u0431\u0443\u0434\u044c-\u044f\u043a\u0456\u0439 \u0444\u043e\u0440\u043c\u0456 (\u043f\u0440\u043e\u043f\u043e\u0437\u0438\u0446\u0456\u044f \u0449\u043e\u0434\u043e \u043d\u0430\u0439\u043c\u0443 \u043d\u0430 \u0440\u043e\u0431\u043e\u0442\u0443, \u0446\u0456\u043d\u043d\u0430 \u0440\u0456\u0447, \u043f\u043e\u0441\u043b\u0443\u0433\u0430 \u0442\u043e\u0449\u043e) \u0437 \u043c\u0435\u0442\u043e\u044e \u0432\u043f\u043b\u0438\u043d\u0443\u0442\u0438 \u043d\u0430 \u043f\u0440\u0438\u0439\u043d\u044f\u0442\u0442\u044f \u0440\u0456\u0448\u0435\u043d\u043d\u044f \u0449\u043e\u0434\u043e \u0432\u0438\u0437\u043d\u0430\u0447\u0435\u043d\u043d\u044f \u043f\u0435\u0440\u0435\u043c\u043e\u0436\u0446\u044f \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456 \u0430\u0431\u043e \u0437\u0430\u0441\u0442\u043e\u0441\u0443\u0432\u0430\u043d\u043d\u044f \u0437\u0430\u043c\u043e\u0432\u043d\u0438\u043a\u043e\u043c \u043f\u0435\u0432\u043d\u043e\u0457 \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456"
+            },
+            "value": "true"
+          }
+        ],
+        "milestones": [
+          {
+            "id": "f0addc69376d45ae94470044d6b91646",
+            "code": "alp",
+            "dueDate": "2021-03-22T16:03:46.330693+02:00",
+            "description": "\u043d\u0430\u0439\u0431\u0456\u043b\u044c\u0448 \u0435\u043a\u043e\u043d\u043e\u043c\u0456\u0447\u043d\u043e \u0432\u0438\u0433\u0456\u0434\u043d\u0430 \u043f\u0440\u043e\u043f\u043e\u0437\u0438\u0446\u0456\u044f \u0454 \u043c\u0435\u043d\u0448\u043e\u044e \u043d\u0430 40 \u0430\u0431\u043e \u0431\u0456\u043b\u044c\u0448\u0435 \u0432\u0456\u0434\u0441\u043e\u0442\u043a\u0456\u0432 \u0432\u0456\u0434 \u0441\u0435\u0440\u0435\u0434\u043d\u044c\u043e\u0430\u0440\u0438\u0444\u043c\u0435\u0442\u0438\u0447\u043d\u043e\u0433\u043e \u0437\u043d\u0430\u0447\u0435\u043d\u043d\u044f \u0446\u0456\u043d\u0438/\u043f\u0440\u0438\u0432\u0435\u0434\u0435\u043d\u043e\u0457 \u0446\u0456\u043d\u0438 \u0442\u0435\u043d\u0434\u0435\u0440\u043d\u0438\u0445 \u043f\u0440\u043e\u043f\u043e\u0437\u0438\u0446\u0456\u0439 \u0456\u043d\u0448\u0438\u0445 \u0443\u0447\u0430\u0441\u043d\u0438\u043a\u0456\u0432 \u043d\u0430 \u043f\u043e\u0447\u0430\u0442\u043a\u043e\u0432\u043e\u043c\u0443 \u0435\u0442\u0430\u043f\u0456 \u0430\u0443\u043a\u0446\u0456\u043e\u043d\u0443 / \u043d\u0430\u0439\u0431\u0456\u043b\u044c\u0448 \u0435\u043a\u043e\u043d\u043e\u043c\u0456\u0447\u043d\u043e \u0432\u0438\u0433\u0456\u0434\u043d\u0430 \u043f\u0440\u043e\u043f\u043e\u0437\u0438\u0446\u0456\u044f \u0454 \u043c\u0435\u043d\u0448\u043e\u044e \u043d\u0430 30 \u0430\u0431\u043e \u0431\u0456\u043b\u044c\u0448\u0435 \u0432\u0456\u0434\u0441\u043e\u0442\u043a\u0456\u0432 \u0432\u0456\u0434 \u043d\u0430\u0441\u0442\u0443\u043f\u043d\u043e\u0457 \u0446\u0456\u043d\u0438/\u043f\u0440\u0438\u0432\u0435\u0434\u0435\u043d\u043e\u0457 \u0446\u0456\u043d\u0438 \u0442\u0435\u043d\u0434\u0435\u0440\u043d\u043e\u0457 \u043f\u0440\u043e\u043f\u043e\u0437\u0438\u0446\u0456\u0457 \u0437\u0430 \u0440\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442\u0430\u043c\u0438 \u043f\u0440\u043e\u0432\u0435\u0434\u0435\u043d\u043e\u0433\u043e \u0435\u043b\u0435\u043a\u0442\u0440\u043e\u043d\u043d\u043e\u0433\u043e \u0430\u0443\u043a\u0446\u0456\u043e\u043d\u0443",
+            "date": "2021-03-22T16:02:46.330693+02:00"
+          }
+        ],
+        "bid_id": "9d1f0256d7e54eeba9b355ec64bef8e2",
+        "lotID": "b49cb01be4c94d1bab81c0c550587201",
+        "complaintPeriod": {
+          "startDate": "2021-03-22T16:12:06.022895+02:00",
+          "endDate": "2021-03-22T16:22:06.029365+02:00"
+        },
+        "qualified": false,
+        "eligible": false
+      },
+      {
+        "id": "f47346452f994502a20ff8f7eec4ca5c",
+        "status": "active",
+        "date": "2021-03-22T16:12:51.431497+02:00",
+        "value": {
+          "amount": 23.0,
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        },
+        "suppliers": [
+          {
+            "name": "Seller_2_1",
+            "name_en": "Seller_2_1",
+            "identifier": {
+              "scheme": "UA-EDR",
+              "id": "98965632",
+              "legalName": "Seller_2_1",
+              "legalName_en": "Seller_2_1"
+            },
+            "address": {
+              "streetAddress": "\u041a\u0430\u043f\u0440\u043e\u043d\u043e\u0432\u0430",
+              "locality": "\u0411\u0443\u0447\u0430",
+              "region": "\u041a\u0438\u0457\u0432\u0441\u044c\u043a\u0430 \u043e\u0431\u043b\u0430\u0441\u0442\u044c",
+              "postalCode": "56565",
+              "countryName": "\u0423\u043a\u0440\u0430\u0457\u043d\u0430"
+            },
+            "contactPoint": {
+              "name": "SellerSecond SellerSecond",
+              "name_en": "SellerSecond",
+              "email": "Kucenko.marko+3@gmail.com",
+              "telephone": "654654132165, 654654132165"
+            },
+            "scale": "sme"
+          }
+        ],
+        "documents": [
+          {
+            "id": "b2d1e4bce8b449a6869a0552cb4f1855",
+            "hash": "md5:91c18400e86efc421ec5cc65a3185fbd",
+            "documentType": "registerExtract",
+            "title": "edr_identification.yaml",
+            "format": "application/yaml",
+            "url": "https://public-docs-sandbox-2.prozorro.gov.ua/get/8a2239a87d3f4b84a4bff1fe0ff11c1e?Signature=A6HH7Uk7ckv58X%2FwheHMZUlv7HTF%2FWEMCiYGQbGpKuhk4HyAZd2zTdNxxIXz4%2FgokxzZDUGPPKPxUGQFZaTkDQ%3D%3D&KeyID=1331dc52",
+            "datePublished": "2021-03-22T16:03:40.996340+02:00",
+            "dateModified": "2021-03-22T16:03:40.996365+02:00",
+            "author": "bots",
+            "documentOf": "tender"
+          },
+          {
+            "id": "3d0d1ecac4ba4af3a8b8eb6a44910222",
+            "hash": "md5:28982fbdc6231a90b77a2553187e7671",
+            "documentType": "evaluationReports",
+            "title": "\u0417\u0432\u0456\u0442 \u043f\u0440\u043e \u043e\u0446\u0456\u043d\u043a\u0443.txt",
+            "format": "text/plain",
+            "url": "https://public-docs-sandbox-2.prozorro.gov.ua/get/57b1115c76ef4e87b834e8f4eea2f302?Signature=gbm7%2BWUf6AHXa7aR6Tv2Eecfkw8zqqbO%2B80dYlIa66xF0Eiqz6Vs6P72eZ7grqNi4GiYMbdtwmnb8czAvfYFAg%3D%3D&KeyID=1331dc52",
+            "datePublished": "2021-03-22T16:10:44.452011+02:00",
+            "dateModified": "2021-03-22T16:10:44.452024+02:00",
+            "author": "tender_owner",
+            "documentOf": "tender"
+          },
+          {
+            "id": "9f9581ce38274fc9a7aa5f09f585ee00",
+            "hash": "md5:fd2865b2ced54403bba0645d540a99f5",
+            "title": "sign.p7s",
+            "format": "application/pkcs7-signature",
+            "url": "https://public-docs-sandbox-2.prozorro.gov.ua/get/1cccd44556a2456898c3a05857558547?Signature=lsOOUmJVslnt8Q1O8NvxHqt5f5AkjrmXZas6DO2rKGvzU74UELwMfJBYRuamaGO9pN1tmPUFpVAD5Llq30UtDg%3D%3D&KeyID=1331dc52",
+            "datePublished": "2021-03-22T16:11:15.178323+02:00",
+            "dateModified": "2021-03-22T16:11:15.178335+02:00",
+            "author": "tender_owner",
+            "documentOf": "tender"
+          },
+          {
+            "id": "d959971b391449d7810ce162d67deae8",
+            "hash": "md5:adeabe54ebaf9af437700c444e587abc",
+            "documentType": "registerFiscal",
+            "title": "26590034554364J1603102100700044710320212659.KVT.p7s",
+            "format": "text/plain",
+            "url": "https://public-docs-sandbox-2.prozorro.gov.ua/get/69652f003a81483ebf47284643fed6f8?Signature=btC6MUASrgnA2tPWZwFmbdX10qFx8pUjssGFV4NgeeMI1U6HLeOqQPZroUPnufQeQCha%2BH9LbKTdhuZQpQj2BQ%3D%3D&KeyID=1331dc52",
+            "datePublished": "2021-03-22T16:13:19.618943+02:00",
+            "dateModified": "2021-03-22T16:13:19.618954+02:00",
+            "author": "bots",
+            "documentOf": "tender"
+          }
+        ],
+        "milestones": [
+          {
+            "id": "8c529c9a3e2d4d9f9b46de73d46131d8",
+            "code": "alp",
+            "dueDate": "2021-03-22T16:03:46.343141+02:00",
+            "description": "\u043d\u0430\u0439\u0431\u0456\u043b\u044c\u0448 \u0435\u043a\u043e\u043d\u043e\u043c\u0456\u0447\u043d\u043e \u0432\u0438\u0433\u0456\u0434\u043d\u0430 \u043f\u0440\u043e\u043f\u043e\u0437\u0438\u0446\u0456\u044f \u0454 \u043c\u0435\u043d\u0448\u043e\u044e \u043d\u0430 40 \u0430\u0431\u043e \u0431\u0456\u043b\u044c\u0448\u0435 \u0432\u0456\u0434\u0441\u043e\u0442\u043a\u0456\u0432 \u0432\u0456\u0434 \u0441\u0435\u0440\u0435\u0434\u043d\u044c\u043e\u0430\u0440\u0438\u0444\u043c\u0435\u0442\u0438\u0447\u043d\u043e\u0433\u043e \u0437\u043d\u0430\u0447\u0435\u043d\u043d\u044f \u0446\u0456\u043d\u0438/\u043f\u0440\u0438\u0432\u0435\u0434\u0435\u043d\u043e\u0457 \u0446\u0456\u043d\u0438 \u0442\u0435\u043d\u0434\u0435\u0440\u043d\u0438\u0445 \u043f\u0440\u043e\u043f\u043e\u0437\u0438\u0446\u0456\u0439 \u0456\u043d\u0448\u0438\u0445 \u0443\u0447\u0430\u0441\u043d\u0438\u043a\u0456\u0432 \u043d\u0430 \u043f\u043e\u0447\u0430\u0442\u043a\u043e\u0432\u043e\u043c\u0443 \u0435\u0442\u0430\u043f\u0456 \u0430\u0443\u043a\u0446\u0456\u043e\u043d\u0443 / \u043d\u0430\u0439\u0431\u0456\u043b\u044c\u0448 \u0435\u043a\u043e\u043d\u043e\u043c\u0456\u0447\u043d\u043e \u0432\u0438\u0433\u0456\u0434\u043d\u0430 \u043f\u0440\u043e\u043f\u043e\u0437\u0438\u0446\u0456\u044f \u0454 \u043c\u0435\u043d\u0448\u043e\u044e \u043d\u0430 30 \u0430\u0431\u043e \u0431\u0456\u043b\u044c\u0448\u0435 \u0432\u0456\u0434\u0441\u043e\u0442\u043a\u0456\u0432 \u0432\u0456\u0434 \u043d\u0430\u0441\u0442\u0443\u043f\u043d\u043e\u0457 \u0446\u0456\u043d\u0438/\u043f\u0440\u0438\u0432\u0435\u0434\u0435\u043d\u043e\u0457 \u0446\u0456\u043d\u0438 \u0442\u0435\u043d\u0434\u0435\u0440\u043d\u043e\u0457 \u043f\u0440\u043e\u043f\u043e\u0437\u0438\u0446\u0456\u0457 \u0437\u0430 \u0440\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442\u0430\u043c\u0438 \u043f\u0440\u043e\u0432\u0435\u0434\u0435\u043d\u043e\u0433\u043e \u0435\u043b\u0435\u043a\u0442\u0440\u043e\u043d\u043d\u043e\u0433\u043e \u0430\u0443\u043a\u0446\u0456\u043e\u043d\u0443",
+            "date": "2021-03-22T16:02:46.343141+02:00"
+          }
+        ],
+        "bid_id": "b4bdece33b4f4b5fbb2ff777f81c32d2",
+        "lotID": "a1f3e2aa71694bc09d762f300e13fa18",
+        "complaintPeriod": {
+          "startDate": "2021-03-22T16:12:51.413260+02:00",
+          "endDate": "2021-03-22T16:22:51.415708+02:00"
+        },
+        "qualified": true,
+        "eligible": true
+      },
+      {
+        "id": "4c1f78c472984c2cb2e9ca2fb4d912ba",
+        "status": "cancelled",
+        "date": "2021-03-22T16:17:27.056735+02:00",
+        "value": {
+          "amount": 123.0,
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        },
+        "suppliers": [
+          {
+            "name": "Seller_1",
+            "name_en": "Seller_1",
+            "identifier": {
+              "scheme": "UA-EDR",
+              "id": "33322211",
+              "legalName": "Seller_1",
+              "legalName_en": "Seller_1"
+            },
+            "address": {
+              "streetAddress": "\u0413\u043e\u0433\u043e\u043b\u044f 4\\3",
+              "locality": "\u0411\u0443\u0440\u0448\u0442\u0438\u043d",
+              "region": "\u0406\u0432\u0430\u043d\u043e-\u0424\u0440\u0430\u043d\u043a\u0456\u0432\u0441\u044c\u043a\u0430 \u043e\u0431\u043b\u0430\u0441\u0442\u044c",
+              "postalCode": "23333",
+              "countryName": "\u0423\u043a\u0440\u0430\u0457\u043d\u0430"
+            },
+            "contactPoint": {
+              "name": "SellerLastName SellerName",
+              "name_en": "SellerName",
+              "email": "Kucenko.marko+2@gmail.com",
+              "telephone": "380552221132, 380552221132"
+            },
+            "scale": "micro"
+          }
+        ],
+        "documents": [
+          {
+            "id": "14e29b0f50364901a606bee631995662",
+            "hash": "md5:db31e24ff50bcd9b621074faffba17a8",
+            "documentType": "registerExtract",
+            "title": "edr_identification.yaml",
+            "format": "application/yaml",
+            "url": "https://public-docs-sandbox-2.prozorro.gov.ua/get/3f4e93b07f03444c9e856c5dce05aaf7?Signature=CHq8XOaB2J%2FueDNDOEhEV6IFuNW34%2B%2FIeOmQMdQ%2FCw2JZ%2FmkJCnLjqwYkoosIgc7OMtCuVVtWvzKco9a2jsdCw%3D%3D&KeyID=1331dc52",
+            "datePublished": "2021-03-22T16:12:15.703041+02:00",
+            "dateModified": "2021-03-22T16:12:15.703062+02:00",
+            "author": "bots",
+            "documentOf": "tender"
+          },
+          {
+            "id": "d8aacf123fdb48dd9e84aaf64c3bc275",
+            "hash": "md5:28982fbdc6231a90b77a2553187e7671",
+            "documentType": "awardNotice",
+            "title": "\u041f\u043e\u0432\u0456\u0434\u043e\u043c\u043b\u0435\u043d\u043d\u044f \u043f\u0440\u043e \u0440\u0456\u0448\u0435\u043d\u043d\u044f.txt",
+            "format": "text/plain",
+            "url": "https://public-docs-sandbox-2.prozorro.gov.ua/get/8c2d69688e6946b5bab7239d7136d2fb?Signature=M%2FAnqo%2BlSLOcnCoWJH9J7wbPlyWvhnsTVl8TwvzRp%2BzzEfsmSSLiaK83fN1h0VkX10libVdSPWzLZ9H0hG0mAw%3D%3D&KeyID=1331dc52",
+            "datePublished": "2021-03-22T16:13:30.574737+02:00",
+            "dateModified": "2021-03-22T16:13:30.574751+02:00",
+            "author": "tender_owner",
+            "documentOf": "tender"
+          },
+          {
+            "id": "432fab1804894195b47e623d82ade692",
+            "hash": "md5:c06ebfb208f3256b144996fd93932e53",
+            "title": "sign.p7s",
+            "format": "application/pkcs7-signature",
+            "url": "https://public-docs-sandbox-2.prozorro.gov.ua/get/08888734ef5f4e65bdc25210421728d3?Signature=W0%2BDPRAP4cyDQRly99bz89%2BXebsQ72QiP855NiBG2dxMa4Wj2Dw9r9hMF%2FR1EG0x2%2BY9NWD%2FQDBHhhX8gYsrBw%3D%3D&KeyID=1331dc52",
+            "datePublished": "2021-03-22T16:14:23.907218+02:00",
+            "dateModified": "2021-03-22T16:14:23.909056+02:00",
+            "author": "tender_owner",
+            "documentOf": "tender"
+          },
+          {
+            "id": "0bb87fac8a494a4490751ef4f6df404b",
+            "hash": "md5:ae2375902090e69163ac6eb868e70d27",
+            "documentType": "registerFiscal",
+            "title": "26590034554364J1603102100700044910320212659.KVT.p7s",
+            "format": "text/plain",
+            "url": "https://public-docs-sandbox-2.prozorro.gov.ua/get/b99dcbe50e3040ee9c93aa8e86662129?Signature=0sIuLCb0RVOYapwkmi%2BDBHPJXmKeV3LqslUN3tZFbVHDC1MLFkPm9C%2FepN9b%2FrYCad2rC6H3nv1YLWtE83K%2FAg%3D%3D&KeyID=1331dc52",
+            "datePublished": "2021-03-22T16:15:20.541160+02:00",
+            "dateModified": "2021-03-22T16:15:20.541173+02:00",
+            "author": "bots",
+            "documentOf": "tender"
+          }
+        ],
+        "bid_id": "b5cdf1cf91e64b30b08c24a0bf6b49bb",
+        "lotID": "b49cb01be4c94d1bab81c0c550587201",
+        "complaintPeriod": {
+          "startDate": "2021-03-22T16:15:02.846104+02:00",
+          "endDate": "2021-03-22T16:17:27.007831+02:00"
+        },
+        "qualified": true,
+        "eligible": true
+      },
+      {
+        "id": "43847dbe9efa4ea6a480b43978dd29b0",
+        "title": "\u0423\u0447\u0430\u0441\u043d\u0438\u043a \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456 \u043d\u0435 \u0432\u0456\u0434\u043f\u043e\u0432\u0456\u0434\u0430\u0454 \u043a\u0432\u0430\u043b\u0456\u0444\u0456\u043a\u0430\u0446\u0456\u0439\u043d\u0438\u043c (\u043a\u0432\u0430\u043b\u0456\u0444\u0456\u043a\u0430\u0446\u0456\u0439\u043d\u043e\u043c\u0443) \u043a\u0440\u0438\u0442\u0435\u0440\u0456\u044f\u043c, \u0443\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u0438\u043c \u0441\u0442\u0430\u0442\u0442\u0435\u044e 16 \u0417\u0430\u043a\u043e\u043d\u0443 \u0442\u0430/\u0430\u0431\u043e \u043d\u0430\u044f\u0432\u043d\u0456 \u043f\u0456\u0434\u0441\u0442\u0430\u0432\u0438, \u0432\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u0456 \u0447\u0430\u0441\u0442\u0438\u043d\u043e\u044e \u043f\u0435\u0440\u0448\u043e\u044e \u0441\u0442\u0430\u0442\u0442\u0456 17 \u0417\u0430\u043a\u043e\u043d\u0443, \u0423\u0447\u0430\u0441\u043d\u0438\u043a \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456 \u043d\u0435 \u0432\u0456\u0434\u043f\u043e\u0432\u0456\u0434\u0430\u0454 \u0432\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u0438\u043c \u0430\u0431\u0437\u0430\u0446\u043e\u043c \u043f\u0435\u0440\u0448\u0438\u043c \u0447\u0430\u0441\u0442\u0438\u043d\u0438 \u0442\u0440\u0435\u0442\u044c\u043e\u0457 \u0441\u0442\u0430\u0442\u0442\u0456 22 \u0417\u0430\u043a\u043e\u043d\u0443 \u0432\u0438\u043c\u043e\u0433\u0430\u043c \u0434\u043e \u0443\u0447\u0430\u0441\u043d\u0438\u043a\u0430 \u0432\u0456\u0434\u043f\u043e\u0432\u0456\u0434\u043d\u043e \u0434\u043e \u0437\u0430\u043a\u043e\u043d\u043e\u0434\u0430\u0432\u0441\u0442\u0432\u0430, \u0423\u0447\u0430\u0441\u043d\u0438\u043a \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456 \u0437\u0430\u0437\u043d\u0430\u0447\u0438\u0432 \u0443 \u0442\u0435\u043d\u0434\u0435\u0440\u043d\u0456\u0439 \u043f\u0440\u043e\u043f\u043e\u0437\u0438\u0446\u0456\u0457 \u043d\u0435\u0434\u043e\u0441\u0442\u043e\u0432\u0456\u0440\u043d\u0443 \u0456\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0456\u044e, \u0449\u043e \u0454 \u0441\u0443\u0442\u0442\u0454\u0432\u043e\u044e \u043f\u0440\u0438 \u0432\u0438\u0437\u043d\u0430\u0447\u0435\u043d\u043d\u0456 \u0440\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442\u0456\u0432 \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456, \u044f\u043a\u0443 \u0437\u0430\u043c\u043e\u0432\u043d\u0438\u043a\u043e\u043c \u0432\u0438\u044f\u0432\u043b\u0435\u043d\u043e \u0437\u0433\u0456\u0434\u043d\u043e \u0437 \u0447\u0430\u0441\u0442\u0438\u043d\u043e\u044e \u043f\u2019\u044f\u0442\u043d\u0430\u0434\u0446\u044f\u0442\u043e\u044e \u0441\u0442\u0430\u0442\u0442\u0456 29 \u0417\u0430\u043a\u043e\u043d\u0443",
+        "description": "\u0423\u0447\u0430\u0441\u043d\u0438\u043a \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456 \u0437\u0430\u0437\u043d\u0430\u0447\u0438\u0432 \u0443 \u0442\u0435\u043d\u0434\u0435\u0440\u043d\u0456\u0439 \u043f\u0440\u043e\u043f\u043e\u0437\u0438\u0446\u0456\u0457 \u043d\u0435\u0434\u043e\u0441\u0442\u043e\u0432\u0456\u0440\u043d\u0443 \u0456\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0456\u044e, \u0449\u043e \u0454 \u0441\u0443\u0442\u0442\u0454\u0432\u043e\u044e \u043f\u0440\u0438 \u0432\u0438\u0437\u043d\u0430\u0447\u0435\u043d\u043d\u0456 \u0440\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442\u0456\u0432 \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0438 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456, \u044f\u043a\u0443 \u0437\u0430\u043c\u043e\u0432\u043d\u0438\u043a\u043e\u043c \u0432\u0438\u044f\u0432\u043b\u0435\u043d\u043e \u0437\u0433\u0456\u0434\u043d\u043e \u0437 \u0447\u0430\u0441\u0442\u0438\u043d\u043e\u044e \u043f\u2019\u044f\u0442\u043d\u0430\u0434\u0446\u044f\u0442\u043e\u044e \u0441\u0442\u0430\u0442\u0442\u0456 29 \u0417\u0430\u043a\u043e\u043d\u0443",
+        "status": "unsuccessful",
+        "date": "2021-03-22T16:19:18.051507+02:00",
+        "value": {
+          "amount": 123.0,
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        },
+        "suppliers": [
+          {
+            "name": "Seller_1",
+            "name_en": "Seller_1",
+            "identifier": {
+              "scheme": "UA-EDR",
+              "id": "33322211",
+              "legalName": "Seller_1",
+              "legalName_en": "Seller_1"
+            },
+            "address": {
+              "streetAddress": "\u0413\u043e\u0433\u043e\u043b\u044f 4\\3",
+              "locality": "\u0411\u0443\u0440\u0448\u0442\u0438\u043d",
+              "region": "\u0406\u0432\u0430\u043d\u043e-\u0424\u0440\u0430\u043d\u043a\u0456\u0432\u0441\u044c\u043a\u0430 \u043e\u0431\u043b\u0430\u0441\u0442\u044c",
+              "postalCode": "23333",
+              "countryName": "\u0423\u043a\u0440\u0430\u0457\u043d\u0430"
+            },
+            "contactPoint": {
+              "name": "SellerLastName SellerName",
+              "name_en": "SellerName",
+              "email": "Kucenko.marko+2@gmail.com",
+              "telephone": "380552221132, 380552221132"
+            },
+            "scale": "micro"
+          }
+        ],
+        "documents": [
+          {
+            "id": "58a282e222724edebdc15b6bb8d71d6c",
+            "hash": "md5:28982fbdc6231a90b77a2553187e7671",
+            "documentType": "evaluationReports",
+            "title": "\u0417\u0432\u0456\u0442 \u043f\u0440\u043e \u043e\u0446\u0456\u043d\u043a\u0443.txt",
+            "format": "text/plain",
+            "url": "https://public-docs-sandbox-2.prozorro.gov.ua/get/7735cf276e1044f59d60a3b9bc57e637?Signature=CmHKRLR1%2F%2FeyNP%2FTOcMB3pjMjwQTYq2YDWbjIhcf4vcwej00TOAMa2VXcNncHcbYzPn%2B3lUiYIRE04ZQZI%2BRAQ%3D%3D&KeyID=1331dc52",
+            "datePublished": "2021-03-22T16:17:59.333342+02:00",
+            "dateModified": "2021-03-22T16:17:59.333366+02:00",
+            "author": "tender_owner",
+            "documentOf": "tender"
+          },
+          {
+            "id": "c4767882d39748b68c20e5ca7f078f73",
+            "hash": "md5:a84438c1a1e8fca543546a32529db3a0",
+            "documentType": "registerExtract",
+            "title": "edr_identification.yaml",
+            "format": "application/yaml",
+            "url": "https://public-docs-sandbox-2.prozorro.gov.ua/get/1313caf76db94e0eae16622421f23197?Signature=ucjRJjbkqZch7K7bHIfOtprwJj9r1m7UWn6USEniHkK6FEatBNNdkABH5Eg0YLfI1TvEbsESwqdDA%2Bp9sCG7Dg%3D%3D&KeyID=1331dc52",
+            "datePublished": "2021-03-22T16:18:22.274748+02:00",
+            "dateModified": "2021-03-22T16:18:22.274760+02:00",
+            "author": "bots",
+            "documentOf": "tender"
+          },
+          {
+            "id": "43bf66050b0a471db8cef3b289ec22cb",
+            "hash": "md5:818a7d9fada5628ceb521d1a3eb21354",
+            "title": "sign.p7s",
+            "format": "application/pkcs7-signature",
+            "url": "https://public-docs-sandbox-2.prozorro.gov.ua/get/10e4cc253ce5490aaa4fd1ed6e054246?Signature=3dfoY71bbjSPCc3PLVVLTaZJI8vlB640RYWq3x1fLC3ZuzlToUx%2BCcEV7WDvdxObkqRijEc%2BTBX0VdOEUbahAQ%3D%3D&KeyID=1331dc52",
+            "datePublished": "2021-03-22T16:18:25.925465+02:00",
+            "dateModified": "2021-03-22T16:18:25.925495+02:00",
+            "author": "tender_owner",
+            "documentOf": "tender"
+          }
+        ],
+        "bid_id": "b5cdf1cf91e64b30b08c24a0bf6b49bb",
+        "lotID": "b49cb01be4c94d1bab81c0c550587201",
+        "complaintPeriod": {
+          "startDate": "2021-03-22T16:19:18.002242+02:00",
+          "endDate": "2021-03-22T16:29:18.014052+02:00"
+        },
+        "qualified": false,
+        "eligible": false
+      }
+    ],
+    "contracts": [
+      {
+        "id": "c1d1fb9ae1c64c0d865ef5f774b74fe5",
+        "contractID": "UA-2021-03-22-000039-a-a1",
+        "contractNumber": "\u0414\u043e\u0433\u043e\u0432\u043e\u0440 \u2116 999-532-\u0444\u0444",
+        "status": "active",
+        "period": {
+          "endDate": "2021-03-31T00:00:00+03:00"
+        },
+        "dateSigned": "2021-03-22T16:23:00+02:00",
+        "suppliers": [
+          {
+            "name": "Seller_2_1",
+            "name_en": "Seller_2_1",
+            "identifier": {
+              "scheme": "UA-EDR",
+              "id": "98965632",
+              "legalName": "Seller_2_1",
+              "legalName_en": "Seller_2_1"
+            },
+            "address": {
+              "streetAddress": "\u041a\u0430\u043f\u0440\u043e\u043d\u043e\u0432\u0430",
+              "locality": "\u0411\u0443\u0447\u0430",
+              "region": "\u041a\u0438\u0457\u0432\u0441\u044c\u043a\u0430 \u043e\u0431\u043b\u0430\u0441\u0442\u044c",
+              "postalCode": "56565",
+              "countryName": "\u0423\u043a\u0440\u0430\u0457\u043d\u0430"
+            },
+            "contactPoint": {
+              "name": "SellerSecond SellerSecond",
+              "name_en": "SellerSecond",
+              "email": "Kucenko.marko+3@gmail.com",
+              "telephone": "654654132165, 654654132165"
+            },
+            "scale": "sme"
+          }
+        ],
+        "date": "2021-03-22T16:25:46.529593+02:00",
+        "value": {
+          "amount": 23.0,
+          "currency": "UAH",
+          "valueAddedTaxIncluded": false,
+          "amountNet": 23.0
+        },
+        "awardID": "f47346452f994502a20ff8f7eec4ca5c",
+        "documents": [
+          {
+            "id": "89b67c206a9c433baa5f9225211555d9",
+            "hash": "md5:101bfbd31ab3ed8dbf0db743ffc7a011",
+            "documentType": "contractAnnexe",
+            "title": "biddingDocumentsS1L3.docx",
+            "format": "text/plain",
+            "url": "https://public-docs-sandbox-2.prozorro.gov.ua/get/05fee8dbce90446199e0c464f1de4f8d?Signature=DZkFBF5fmSFaJJ%2B0M4T%2BkUMf8WDuHqkMyptVwYr9faLAy7vwV7pjUKid1qCPC4QFu0iR%2F64ze2RexBxx5j3YDg%3D%3D&KeyID=1331dc52",
+            "datePublished": "2021-03-22T16:24:09.133326+02:00",
+            "dateModified": "2021-03-22T16:24:09.133350+02:00",
+            "documentOf": "tender"
+          },
+          {
+            "id": "789846d01544424b864da9cdd0cb7931",
+            "hash": "md5:a5ef1232d9df6b252c5b52f7bfe9c8a1",
+            "title": "sign.p7s",
+            "format": "application/pkcs7-signature",
+            "url": "https://public-docs-sandbox-2.prozorro.gov.ua/get/8166edad96454e7e8c2ab3910bdfae6d?Signature=MDfXNHv499DFiqTGclTgBgxfULMMB4JhMfRPvzesDRe2vpjub7ZpgvfCndilYVgt%2Fomtfj4P9shxGkqTtTgnAg%3D%3D&KeyID=1331dc52",
+            "datePublished": "2021-03-22T16:24:31.384543+02:00",
+            "dateModified": "2021-03-22T16:24:31.384557+02:00",
+            "documentOf": "tender"
+          }
+        ],
+        "items": [
+          {
+            "id": "c9e88af052ad4307a3eb6d95cabda26e",
+            "description": "\u041e\u0442\u043a\u0440\u044b\u0442\u0430\u044f 0322-1\u041e\u0442\u043a\u0440\u044b\u0442\u0430\u044f 0322-1",
+            "unit": {
+              "name": "\u043c\u0435\u0442\u0440\u0438 \u043a\u0432\u0430\u0434\u0440\u0430\u0442\u043d\u0456",
+              "code": "MTK"
+            },
+            "quantity": 12.0,
+            "relatedLot": "a1f3e2aa71694bc09d762f300e13fa18",
+            "classification": {
+              "description": "\u041d\u0430\u0441\u0456\u043d\u043d\u044f \u043a\u0432\u0456\u0442\u0456\u0432",
+              "scheme": "\u0414\u041a021",
+              "id": "03111900-1"
+            },
+            "deliveryDate": {
+              "endDate": "2021-04-08T00:00:00+03:00"
+            },
+            "deliveryAddress": {
+              "streetAddress": "",
+              "locality": "\u0412\u0456\u0434\u043f\u043e\u0432\u0456\u0434\u043d\u043e \u0434\u043e \u0434\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u0446\u0456\u0457",
+              "region": "",
+              "postalCode": "",
+              "countryName": "\u0423\u043a\u0440\u0430\u0457\u043d\u0430"
+            }
+          }
+        ]
+      },
+      {
+        "id": "32239261bcd445a88ba70a738e53e9e1",
+        "contractID": "UA-2021-03-22-000039-a-a2",
+        "status": "cancelled",
+        "suppliers": [
+          {
+            "name": "Seller_1",
+            "name_en": "Seller_1",
+            "identifier": {
+              "scheme": "UA-EDR",
+              "id": "33322211",
+              "legalName": "Seller_1",
+              "legalName_en": "Seller_1"
+            },
+            "address": {
+              "streetAddress": "\u0413\u043e\u0433\u043e\u043b\u044f 4\\3",
+              "locality": "\u0411\u0443\u0440\u0448\u0442\u0438\u043d",
+              "region": "\u0406\u0432\u0430\u043d\u043e-\u0424\u0440\u0430\u043d\u043a\u0456\u0432\u0441\u044c\u043a\u0430 \u043e\u0431\u043b\u0430\u0441\u0442\u044c",
+              "postalCode": "23333",
+              "countryName": "\u0423\u043a\u0440\u0430\u0457\u043d\u0430"
+            },
+            "contactPoint": {
+              "name": "SellerLastName SellerName",
+              "name_en": "SellerName",
+              "email": "Kucenko.marko+2@gmail.com",
+              "telephone": "380552221132, 380552221132"
+            },
+            "scale": "micro"
+          }
+        ],
+        "date": "2021-03-22T16:17:27.056735+02:00",
+        "value": {
+          "amount": 123.0,
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true,
+          "amountNet": 123.0
+        },
+        "awardID": "4c1f78c472984c2cb2e9ca2fb4d912ba",
+        "items": [
+          {
+            "id": "1726c8ada8a14fb19317b2e1481a11ba",
+            "description": "\u041e\u0442\u043a\u0440\u044b\u0442\u0430\u044f 0322-1",
+            "unit": {
+              "name": "\u043c\u0435\u0442\u0440\u0438",
+              "code": "MTR"
+            },
+            "quantity": 12.0,
+            "relatedLot": "b49cb01be4c94d1bab81c0c550587201",
+            "classification": {
+              "description": "\u041d\u0430\u0441\u0456\u043d\u043d\u044f \u043f\u043b\u043e\u0434\u043e\u0432\u0438\u0445 \u043a\u0443\u043b\u044c\u0442\u0443\u0440",
+              "scheme": "\u0414\u041a021",
+              "id": "03111800-0"
+            },
+            "deliveryDate": {
+              "endDate": "2021-04-08T00:00:00+03:00"
+            },
+            "deliveryAddress": {
+              "streetAddress": "",
+              "locality": "\u0412\u0456\u0434\u043f\u043e\u0432\u0456\u0434\u043d\u043e \u0434\u043e \u0434\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u0446\u0456\u0457",
+              "region": "",
+              "postalCode": "",
+              "countryName": "\u0423\u043a\u0440\u0430\u0457\u043d\u0430"
+            }
+          },
+          {
+            "id": "6f554bbaa86b429ca3e393a2aaf093a0",
+            "description": "\u041e\u0442\u043a\u0440\u044b\u0442\u0430\u044f 0322-1",
+            "unit": {
+              "name": "\u043c\u0435\u0442\u0440\u0438",
+              "code": "MTR"
+            },
+            "quantity": 12.0,
+            "relatedLot": "b49cb01be4c94d1bab81c0c550587201",
+            "classification": {
+              "description": "\u041d\u0430\u0441\u0456\u043d\u043d\u044f \u043f\u043b\u043e\u0434\u043e\u0432\u0438\u0445 \u043a\u0443\u043b\u044c\u0442\u0443\u0440",
+              "scheme": "\u0414\u041a021",
+              "id": "03111800-0"
+            },
+            "deliveryDate": {
+              "endDate": "2021-04-08T00:00:00+03:00"
+            },
+            "deliveryAddress": {
+              "streetAddress": "",
+              "locality": "\u0412\u0456\u0434\u043f\u043e\u0432\u0456\u0434\u043d\u043e \u0434\u043e \u0434\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u0446\u0456\u0457",
+              "region": "",
+              "postalCode": "",
+              "countryName": "\u0423\u043a\u0440\u0430\u0457\u043d\u0430"
+            }
+          },
+          {
+            "id": "29b27a648279403bb32f00e0f9054ebc",
+            "description": "\u041e\u0442\u043a\u0440\u044b\u0442\u0430\u044f 0322-1",
+            "unit": {
+              "name": "\u043c\u0435\u0442\u0440\u0438",
+              "code": "MTR"
+            },
+            "quantity": 12.0,
+            "relatedLot": "b49cb01be4c94d1bab81c0c550587201",
+            "classification": {
+              "description": "\u041d\u0430\u0441\u0456\u043d\u043d\u044f \u043f\u043b\u043e\u0434\u043e\u0432\u0438\u0445 \u043a\u0443\u043b\u044c\u0442\u0443\u0440",
+              "scheme": "\u0414\u041a021",
+              "id": "03111800-0"
+            },
+            "deliveryDate": {
+              "endDate": "2021-04-08T00:00:00+03:00"
+            },
+            "deliveryAddress": {
+              "streetAddress": "",
+              "locality": "\u0412\u0456\u0434\u043f\u043e\u0432\u0456\u0434\u043d\u043e \u0434\u043e \u0434\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u0446\u0456\u0457",
+              "region": "",
+              "postalCode": "",
+              "countryName": "\u0423\u043a\u0440\u0430\u0457\u043d\u0430"
+            }
+          }
+        ]
+      }
+    ],
+    "procurementMethodType": "aboveThresholdUA",
+    "items": [
+      {
+        "id": "1726c8ada8a14fb19317b2e1481a11ba",
+        "description": "\u041e\u0442\u043a\u0440\u044b\u0442\u0430\u044f 0322-1",
+        "unit": {
+          "name": "\u043c\u0435\u0442\u0440\u0438",
+          "code": "MTR"
+        },
+        "quantity": 12.0,
+        "relatedLot": "b49cb01be4c94d1bab81c0c550587201",
+        "classification": {
+          "description": "\u041d\u0430\u0441\u0456\u043d\u043d\u044f \u043f\u043b\u043e\u0434\u043e\u0432\u0438\u0445 \u043a\u0443\u043b\u044c\u0442\u0443\u0440",
+          "scheme": "\u0414\u041a021",
+          "id": "03111800-0"
+        },
+        "deliveryDate": {
+          "endDate": "2021-04-08T00:00:00+03:00"
+        },
+        "deliveryAddress": {
+          "streetAddress": "",
+          "locality": "\u0412\u0456\u0434\u043f\u043e\u0432\u0456\u0434\u043d\u043e \u0434\u043e \u0434\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u0446\u0456\u0457",
+          "region": "",
+          "postalCode": "",
+          "countryName": "\u0423\u043a\u0440\u0430\u0457\u043d\u0430"
+        }
+      },
+      {
+        "id": "6f554bbaa86b429ca3e393a2aaf093a0",
+        "description": "\u041e\u0442\u043a\u0440\u044b\u0442\u0430\u044f 0322-1",
+        "unit": {
+          "name": "\u043c\u0435\u0442\u0440\u0438",
+          "code": "MTR"
+        },
+        "quantity": 12.0,
+        "relatedLot": "b49cb01be4c94d1bab81c0c550587201",
+        "classification": {
+          "description": "\u041d\u0430\u0441\u0456\u043d\u043d\u044f \u043f\u043b\u043e\u0434\u043e\u0432\u0438\u0445 \u043a\u0443\u043b\u044c\u0442\u0443\u0440",
+          "scheme": "\u0414\u041a021",
+          "id": "03111800-0"
+        },
+        "deliveryDate": {
+          "endDate": "2021-04-08T00:00:00+03:00"
+        },
+        "deliveryAddress": {
+          "streetAddress": "",
+          "locality": "\u0412\u0456\u0434\u043f\u043e\u0432\u0456\u0434\u043d\u043e \u0434\u043e \u0434\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u0446\u0456\u0457",
+          "region": "",
+          "postalCode": "",
+          "countryName": "\u0423\u043a\u0440\u0430\u0457\u043d\u0430"
+        }
+      },
+      {
+        "id": "29b27a648279403bb32f00e0f9054ebc",
+        "description": "\u041e\u0442\u043a\u0440\u044b\u0442\u0430\u044f 0322-1",
+        "unit": {
+          "name": "\u043c\u0435\u0442\u0440\u0438",
+          "code": "MTR"
+        },
+        "quantity": 12.0,
+        "relatedLot": "b49cb01be4c94d1bab81c0c550587201",
+        "classification": {
+          "description": "\u041d\u0430\u0441\u0456\u043d\u043d\u044f \u043f\u043b\u043e\u0434\u043e\u0432\u0438\u0445 \u043a\u0443\u043b\u044c\u0442\u0443\u0440",
+          "scheme": "\u0414\u041a021",
+          "id": "03111800-0"
+        },
+        "deliveryDate": {
+          "endDate": "2021-04-08T00:00:00+03:00"
+        },
+        "deliveryAddress": {
+          "streetAddress": "",
+          "locality": "\u0412\u0456\u0434\u043f\u043e\u0432\u0456\u0434\u043d\u043e \u0434\u043e \u0434\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u0446\u0456\u0457",
+          "region": "",
+          "postalCode": "",
+          "countryName": "\u0423\u043a\u0440\u0430\u0457\u043d\u0430"
+        }
+      },
+      {
+        "id": "c9e88af052ad4307a3eb6d95cabda26e",
+        "description": "\u041e\u0442\u043a\u0440\u044b\u0442\u0430\u044f 0322-1\u041e\u0442\u043a\u0440\u044b\u0442\u0430\u044f 0322-1",
+        "unit": {
+          "name": "\u043c\u0435\u0442\u0440\u0438 \u043a\u0432\u0430\u0434\u0440\u0430\u0442\u043d\u0456",
+          "code": "MTK"
+        },
+        "quantity": 12.0,
+        "relatedLot": "a1f3e2aa71694bc09d762f300e13fa18",
+        "classification": {
+          "description": "\u041d\u0430\u0441\u0456\u043d\u043d\u044f \u043a\u0432\u0456\u0442\u0456\u0432",
+          "scheme": "\u0414\u041a021",
+          "id": "03111900-1"
+        },
+        "deliveryDate": {
+          "endDate": "2021-04-08T00:00:00+03:00"
+        },
+        "deliveryAddress": {
+          "streetAddress": "",
+          "locality": "\u0412\u0456\u0434\u043f\u043e\u0432\u0456\u0434\u043d\u043e \u0434\u043e \u0434\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u0446\u0456\u0457",
+          "region": "",
+          "postalCode": "",
+          "countryName": "\u0423\u043a\u0440\u0430\u0457\u043d\u0430"
+        }
+      }
+    ],
+    "lots": [
+      {
+        "id": "b49cb01be4c94d1bab81c0c550587201",
+        "title": "\u041b\u041e\u0422 1",
+        "date": "2021-03-22T16:29:28.773864+02:00",
+        "status": "unsuccessful",
+        "value": {
+          "amount": 12312.0,
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        },
+        "minimalStep": {
+          "amount": 246.24,
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        },
+        "auctionPeriod": {
+          "startDate": "2021-03-22T16:02:42.549310+02:00",
+          "endDate": "2021-03-22T16:02:42.549310+02:00"
+        },
+        "auctionUrl": "https://auction-sandbox-2-old.prozorro.gov.ua/tenders/fc1ac96978654613a7a39544f70a6bd6_b49cb01be4c94d1bab81c0c550587201",
+        "guarantee": {
+          "amount": 12.0,
+          "currency": "UAH"
+        }
+      },
+      {
+        "id": "a1f3e2aa71694bc09d762f300e13fa18",
+        "title": "\u041b\u041e\u0422 2",
+        "date": "2021-03-22T16:25:46.529593+02:00",
+        "status": "complete",
+        "value": {
+          "amount": 12323.0,
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        },
+        "minimalStep": {
+          "amount": 246.46,
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        },
+        "auctionPeriod": {
+          "startDate": "2021-03-22T16:02:46.248345+02:00",
+          "endDate": "2021-03-22T16:02:46.248345+02:00"
+        },
+        "auctionUrl": "https://auction-sandbox-2-old.prozorro.gov.ua/tenders/fc1ac96978654613a7a39544f70a6bd6_a1f3e2aa71694bc09d762f300e13fa18",
+        "guarantee": {
+          "amount": 0.0,
+          "currency": "UAH"
+        }
+      }
+    ],
+    "status": "complete",
+    "complaintPeriod": {
+      "startDate": "2021-03-22T15:18:57.780682+02:00",
+      "endDate": "2021-03-22T15:56:00+02:00"
+    },
+    "dateCreated": "2021-03-22T15:18:57.897207+02:00",
+    "id": "fc1ac96978654613a7a39544f70a6bd6"
+  }
+}

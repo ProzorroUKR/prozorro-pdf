@@ -1,0 +1,141 @@
+{
+  "data": {
+    "awardID": "553eeea0de6044db896bd429ef3abde0",
+    "contractID": "UA-2025-01-30-000017-a-a1",
+    "contractNumber": "1234567",
+    "dateSigned": "2025-01-30T15:50:00.632098+02:00",
+    "dateModified": "2025-01-30T15:51:44.970410+02:00",
+    "dateCreated": "2025-01-30T15:48:54.268252+02:00",
+    "tender_id": "4b8dd3d29d3544f4ac730c8601eeeffe",
+    "owner": "broker",
+    "period": {
+      "startDate": "2024-12-24T01:00:00+02:00",
+      "endDate": "2025-12-19T01:00:00+02:00"
+    },
+    "status": "active",
+    "buyer": {
+      "name": "Державне управління справами",
+      "identifier": {
+        "scheme": "UA-EDR",
+        "id": "00037256",
+        "uri": "http://www.dus.gov.ua/"
+      },
+      "additionalContactPoints": [
+        {
+          "name": "Mazurak Lyudmila",
+          "name_en": "Mazurak Lyudmila",
+          "email": "yavoriv-kech@post.mil.gov.ua",
+          "telephone": "+3880325921140"
+        }
+      ],
+      "address": {
+        "streetAddress": "вул. Банкова, 11, корпус 1",
+        "locality": "м. Київ",
+        "region": "м. Київ",
+        "postalCode": "01220",
+        "countryName": "Україна"
+      },
+      "signerInfo": {
+        "name": "Test Testovich",
+        "email": "example@email.com",
+        "telephone": "+380950000000",
+        "iban": "111111111111111",
+        "position": "Генеральний директор",
+        "authorizedBy": "спосіб авторизації"
+      },
+      "kind": "general"
+    },
+    "suppliers": [
+      {
+        "name": "Державне управління справами",
+        "identifier": {
+          "scheme": "UA-EDR",
+          "id": "00137256",
+          "uri": "http://www.dus.gov.ua/"
+        },
+        "address": {
+          "streetAddress": "вул. Банкова, 11, корпус 1",
+          "locality": "м. Київ",
+          "region": "м. Київ",
+          "postalCode": "01220",
+          "countryName": "Україна"
+        },
+        "signerInfo": {
+          "name": "Test Testovich",
+          "email": "example@email.com",
+          "telephone": "+380950000000",
+          "iban": "111111111111111",
+          "position": "Генеральний директор",
+          "authorizedBy": "щось змінили і не сказали"
+        },
+        "scale": "micro"
+      }
+    ],
+    "items": [
+      {
+        "id": "dc50e65102894d0eb69bec470de7a8cb",
+        "description": "item 1 - Комп'ютерне обладнання Lorem ipsum dolor sit amet, no minimum euripidis eos, vel ea quis maiestatis. Mel ad quas homero abhorreant, at regione quaerendum his. Pro ne malis facete commodo. In facilisi intellegat adipiscing eam, quo oblique adolescens in, ceteros indoctum sed no.",
+        "quantity": 5,
+        "classification": {
+          "description": "Cтупінь локалізації",
+          "scheme": "ДК021",
+          "id": "03220000-9"
+        },
+        "deliveryAddress": {
+          "streetAddress": "вул. Банкова 1",
+          "locality": "м. Київ",
+          "region": "м. Київ",
+          "postalCode": "79000",
+          "countryName": "Україна"
+        },
+        "deliveryDate": {
+          "startDate": "2023-09-22T01:00:00+03:00",
+          "endDate": "2023-09-25T01:00:00+03:00"
+        },
+        "attributes": [
+          {
+            "name": "Бренд 2",
+            "values": [
+              "ASUS"
+            ]
+          },
+          {
+            "name": "Яскравість екрану",
+            "unit": {
+              "name": "кд/м2",
+              "code": "A24"
+            },
+            "value": 300
+          },
+          {
+            "name": "Роздільна здатність екрану",
+            "values": [
+              "FHD (1920x1080)"
+            ]
+          }
+        ],
+        "unit": {
+          "name": "кг",
+          "value": {
+            "amount": 6,
+            "currency": "UAH",
+            "valueAddedTaxIncluded": true
+          },
+          "code": "KGM"
+        }
+      }
+    ],
+    "contractTemplateName": "03220000-9.0002.01",
+    "value": {
+      "amount": 11120372,
+      "currency": "UAH",
+      "valueAddedTaxIncluded": true,
+      "amountNet": 11120372
+    },
+    "date": "2025-01-30T15:51:44.970410+02:00",
+    "id": "93cf06097b9848e99cd9e3871c5a5c3a"
+  },
+  "config": {
+    "restricted": false
+  }
+}

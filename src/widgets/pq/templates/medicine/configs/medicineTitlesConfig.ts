@@ -1,0 +1,15 @@
+export const medicineTitlesConfig: Record<string, string> = {
+  subject: "ПРЕДМЕТ ДОГОВОРУ",
+  price: "ЦІНА ДОГОВОРУ",
+  paymentOrder: "ПОРЯДОК ОПЛАТИ",
+  deliveryTerms: "УМОВИ ПОСТАВКИ",
+  guarantee: "ЯКІСТЬ ТА ГАРАНТІЇ",
+  acceptanceOrder: "ПОРЯДОК ПОСТАВКИ ТА ПРИЙМАННЯ-ПЕРЕДАЧІ ПРОДУКЦІЇ",
+  responsibilities: "ВІДПОВІДАЛЬНІСТЬ СТОРІН ЗА ПОРУШЕННЯ УМОВ ДОГОВОРУ",
+  disputes: "ВИРІШЕННЯ СПОРІВ",
+  forceMajeure: "ОБСТАВИНИ НЕПЕРЕБОРНОЇ СИЛИ",
+  anticorruption: "АНТИКОРУПЦІЙНІ ЗАСТЕРЕЖЕННЯ",
+  messaging: "ПОРЯДОК ЗДІЙСНЕННЯ ПОВІДОМЛЕННЯ СТОРІН",
+  contractAction: "ДІЯ ДОГОВОРУ",
+  finalStatements: "ПРИКІНЦЕВІ ПОЛОЖЕННЯ",
+};

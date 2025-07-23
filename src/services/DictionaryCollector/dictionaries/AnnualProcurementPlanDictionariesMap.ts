@@ -1,0 +1,13 @@
+export const annualProcurementPlanDictionaries = new Map<string, string>()
+  .set("organisation", "kind")
+  .set("tender_procurement_method_type", "tender_procurement_method_type")
+  .set("budget_source", "budget_source")
+  .set("inn", "inn")
+  .set("atc", "atc")
+  .set("roads", "ua_road")
+  .set("budget_expenditures", "kekv_uk")
+  .set("buildings_structures_dk", "dk018_uk")
+  .set("dk015", "dk015_uk")
+  .set("dk003", "dk003_uk")
+  .set("units", "recommended")
+  .set("classifier_dk", "dk021_uk");

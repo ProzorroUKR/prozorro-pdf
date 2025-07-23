@@ -1,0 +1,16 @@
+export enum FormattingFunctionsEnum {
+  NUMBER_TO_TEXT = "numberToText",
+  PRICE_WITH_TAX_TO_TEXT = "priceWithTaxToText",
+  CONVERT_DATE = "convertDate",
+  FORMAT_DATE = "formatDate",
+  PAYMENT_DETAILS = "paymentDetails",
+  GET_GUARANTEE_PERIOD = "getGuaranteePeriod",
+  GET_ENSURING_TYPE = "getEnsuringType",
+  GET_ENSURING_OPTIONAL_FIELD = "getEnsuringOptionalField",
+  GET_PERCENT = "getPercent",
+  DELIVERY_DATE_DIFF = "deliveryDateDiff",
+  CUSTOMER_LOCATION = "customerLocation",
+  FORMAT_CLASSIFICATION = "formatClassification",
+  EDUCATION_PRICE = "educationPrice",
+  TENDER_ID = "tenderId",
+}

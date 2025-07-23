@@ -1,0 +1,67 @@
+data:
+  activityKind:
+    description: Будівництво житлових і нежитлових будівель
+    id: '41.20'
+    scheme: КВЕД
+  additionalActivityKinds:
+  - description: Лісозаготівлі
+    id: '02.20'
+    scheme: КВЕД
+  - description: Електромонтажні роботи
+    id: '43.21'
+    scheme: КВЕД
+  - description: Монтаж водопровідних мереж, систем опалення та кондиціонування
+    id: '43.22'
+    scheme: КВЕД
+  - description: Штукатурні роботи
+    id: '43.31'
+    scheme: КВЕД
+  - description: Установлення столярних виробів
+    id: '43.32'
+    scheme: КВЕД
+  - description: Покриття підлоги й облицювання стін
+    id: '43.33'
+    scheme: КВЕД
+  - description: Малярні роботи та скління
+    id: '43.34'
+    scheme: КВЕД
+  - description: Діяльність посередників у торгівлі деревиною, будівельними матеріалами
+      та санітарно-технічними виробами
+    id: '46.13'
+    scheme: КВЕД
+  - description: Оптова торгівля іншими товарами господарського призначення
+    id: '46.49'
+    scheme: КВЕД
+  - description: Діяльність у сфері архітектури
+    id: '71.11'
+    scheme: КВЕД
+  - description: Будівництво трубопроводів
+    id: '42.21'
+    scheme: КВЕД
+  - description: Інша професійна, наукова та технічна діяльність, н.в.і.у.
+    id: '74.90'
+    scheme: КВЕД
+  - description: Діяльність у сфері інжинірингу, геології та геодезії, надання послуг
+      технічного консультування в цих сферах
+    id: '71.12'
+    scheme: КВЕД
+  - description: Будівництво доріг і автострад
+    id: '42.11'
+    scheme: КВЕД
+  address:
+    countryName: Україна
+    postalCode: '37600'
+    streetAddress: Україна, 37600, Полтавська обл., місто Миргород, ВУЛИЦЯ ПАНАСА
+      МИРНОГО, будинок 18, квартира 86
+  identification:
+    legalName: ДУПАК ВІТАЛІЙ ВІКТОРОВИЧ
+    scheme: UA-EDR
+  registrationStatus: registered
+  registrationStatusDetails: зареєстровано
+meta:
+  author: IdentificationBot
+  id: d02a27ab937d450cb29dbb79485a41f6.2.2
+  sourceDate: '2025-02-10T09:47:13+00:00'
+  sourceRequests:
+  - req-56077224-4164-42e7-9b6c-d8bac1860ef2
+  version: 2.0.0

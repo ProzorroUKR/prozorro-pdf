@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Prozorro-PDF | Testing Page</title>
+    <link rel="icon" type="image/x-icon" href="https://prozorro.gov.ua/favicon.ico">
+    <script type="text/javascript" src="https://eds-staging.prozorro.gov.ua/index.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+
+    <style>
+      .content {
+          display: contents;
+      }
+
+      #signToDocFrameID {
+          width: 100%;
+          height: 90vh;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar bg-light border-bottom border-body bg-gradient">
+      <div class="container">
+        <div class="row w-100 align-items-center">
+          <div class="col col-2 col-xl-1 p-2">
+            <span class="navbar-brand">
+              <img src="https://prozorro.gov.ua/favicon.ico" alt="Prozorro" width="36" height="36">
+            </span>
+          </div>
+
+          <div class="col col-10 col-xl-9 p-2">
+            <div class="input-group input-group-lg">
+              <input
+                type="text"
+                class="form-control"
+                aria-label="Sizing example input"
+                aria-describedby="Search"
+                placeholder="Назва документу або тип"
+                id="searchInput"
+              >
+            </div>
+          </div>
+
+          <div class="col col-12 col-xl-2 p-2 d-none d-xl-block">
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" id="layoutSwitchSimple">
+              <label class="form-check-label" for="layoutSwitchSimple">Vertical layout</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid my-3">
+      <div class="row" id="layoutRow">
+        <div class="col col-12 col-xl-6">
+          <div class="accordion p-3" id="accordionList"></div>
+        </div>
+
+        <div class="col col-12 col-xl-6">
+          <div class="p-3">
+            <div id="signToDocFrameID"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <template id="app-card-template">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapse}"
+            aria-expanded="true"
+            aria-controls="collapse"
+          ></button>
+        </h2>
+
+        <div
+          id="collapse"
+          class="accordion-collapse collapse"
+          data-bs-parent="#accordionList"
+        >
+          <div class="accordion-body">
+            <!-- URL input group -->
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text"></span>
+              </div>
+
+              <textarea class="form-control" rows="1" aria-label="Object URL"></textarea>
+            </div>
+
+            <!-- OPTIONAL: Document input group -->
+            <div id="documentInputGroup" class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text"></span>
+              </div>
+
+              <textarea class="form-control" rows="1" aria-label="Document title"></textarea>
+            </div>
+
+            <!-- OPTIONAL: Date input group -->
+            <div id="dateInputGroup" class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text"></span>
+              </div>
+
+              <input class="form-control" type="datetime-local" aria-label="Sign date">
+            </div>
+
+            <!-- OPTIONAL: Contract template name input group -->
+            <div id="contractTemplateNameInputGroup" class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">Contract template name</span>
+              </div>
+
+              <textarea class="form-control" rows="1" aria-label="Contract template name"></textarea>
+            </div>
+
+            <!-- OPTIONAL: Tender URL input group -->
+            <div id="tenderUrlGroup" class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">Tender URL</span>
+              </div>
+
+              <textarea class="form-control" rows="1" aria-label="Tender URL">/test-data/complaints/tender.json</textarea>
+            </div>
+
+            <p class="card-text mt-3">
+              <span class="btn-group" role="group" aria-label="Navigation">
+                <button type="button" class="btn btn-primary">Open in frame</button>
+                <button type="button" class="btn btn-info">Open in new window</button>
+                <button type="button" class="btn btn-dark">Download</button>
+              </span>
+            </p>
+
+            <p class="card-text">
+              <small class="text-muted"></small>
+            </p>
+          </div>
+        </div>
+      </div>
+    </template>
+
+    <template id="app-spinner-template">
+      <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+      <span role="status">Generating...</span>
+    </template>
+
+    <template id="app-error-template">
+      <div class="alert alert-danger" role="alert">
+        <strong id="message"></strong>
+        <pre class="mb-0" id="description" style="white-space: pre-wrap;"></pre>
+      </div>
+    </template>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script type="module" src="/src/main.ts"></script>
+
+    <script>
+      customElements.define("app-card", class extends HTMLElement {
+        connectedCallback() {
+          const template = document.getElementById("app-card-template").content.cloneNode(true);
+
+          // Generate dynamic IDs to avoid conflicts
+          const type = this.getAttribute("type") || "card";
+          const collapseId = `collapse-${type}-${Math.random().toString(36).substring(2, 8)}`;
+          const button = template.querySelector(".accordion-button");
+
+          // Bind collapse ID
+          button.setAttribute("data-bs-target", `#${collapseId}`);
+          button.setAttribute("aria-controls", collapseId);
+          button.innerHTML = `<b class="content">#${type}</b> – ${this.getAttribute("title")}`;
+          template.querySelector(".accordion-collapse").setAttribute("id", collapseId);
+
+          const classList = this.getAttribute("classList");
+          if (classList) {
+            template.querySelector(".accordion-collapse").classList.add(classList);
+          }
+
+          const labels = template.querySelectorAll(".input-group-text");
+          labels[0].textContent = this.getAttribute("urlLabel");
+          labels[1].textContent = this.getAttribute("documentLabel");
+          labels[2].textContent = this.getAttribute("dateLabel");
+
+          const textareas = template.querySelectorAll("textarea");
+          textareas[0].value = this.getAttribute("urlValue");
+          textareas[1].value = this.getAttribute("documentValue");
+
+          const inputDate = template.querySelector("input");
+          inputDate.value = this.getAttribute("dateValue");
+
+          // Handle input group visibility
+          template.getElementById("documentInputGroup").style.display = /true/.test(this.getAttribute("hideDocumentInputGroup")) ? 'none' : 'flex';
+          template.getElementById("dateInputGroup").style.display = /true/.test(this.getAttribute("hideDateInputGroup")) ? 'none' : 'flex';
+          template.getElementById("contractTemplateNameInputGroup").style.display = /true/.test(this.getAttribute("showContractTemplateNameGroup")) ? 'flex' : 'none';
+          template.getElementById("tenderUrlGroup").style.display = /true/.test(this.getAttribute("showTenderUrlGroup")) ? 'flex' : 'none';
+
+          template.querySelector(".text-muted").innerHTML = this.getAttribute("description");
+
+          const btnGroup = template.querySelectorAll("button.btn");
+          const [btnOpenInFrame, btnOpenInNewWindow, btnDownload] = btnGroup;
+          btnOpenInFrame?.addEventListener("click", async () => await btnActionWrapper(openInFramePdfFile, btnOpenInFrame));
+          btnOpenInNewWindow?.addEventListener("click", async () => await btnActionWrapper(openInNewWindowPdfFile, btnOpenInNewWindow));
+          btnDownload?.addEventListener("click", async () => await btnActionWrapper(downloadPdfFile, btnDownload));
+
+          const btnActionWrapper = async (cb, btn) => {
+            const text = btn.textContent;
+            // Clear error message or previous PDF
+            document.getElementById("signToDocFrameID").innerHTML = "";
+
+            try {
+              btnGroup.forEach(btn => btn.disabled = true);
+              btn.innerHTML = "";
+              btn.appendChild(document.getElementById("app-spinner-template").content.cloneNode(true));
+
+              await cb({
+                url: textareas[0].value,
+                title: textareas[1].value,
+                type,
+                date: inputDate.value,
+                contractTemplateName: textareas[2].value,
+                tender: textareas[3].value,
+              });
+
+            } catch (error) {
+             errorExceptionHandler(error);
+            } finally {
+              btnGroup.forEach(btn => btn.disabled = false);
+              btn.innerHTML = text;
+            }
+          }
+
+          this.appendChild(template);
+        }
+      });
+
+      window.onload = async () => {
+        await window.eds.init({
+          debug: true,
+        });
+
+        await window.signToDoc.init(window.eds);
+
+        /**
+         * @typedef {Object} AppCardData
+         * @property {string} type - PDF type  (e.g. window.signToDoc.TYPES.*)
+         * @property {string} title - The title displayed in the accordion header
+         * @property {string} urlLabel - Label for the URL input field
+         * @property {string} urlValue - Pre-filled value for the URL input field
+         * @property {string} [documentLabel] - Label for the document input field
+         * @property {string} [documentValue] - Pre-filled value for the document input field
+         * @property {string} [dateLabel] - Optional label for the sign date
+         * @property {string} [dateValue] - Optional value for the sign date (ISO 8601 format)
+         * @property {string} [description] - HTML string shown as description/help text
+         * @property {boolean} [hideDocumentInputGroup] - Hide document input group
+         * @property {boolean} [hideDateInputGroup] - Hide date input group
+         * @property {boolean} [showContractTemplateNameGroup] - Show contract template name group, for PQ
+         * @property {boolean} [showTenderUrlGroup] - Show Tender URL  group, for Complaint
+         */
+
+        /** @type {AppCardData[]} */
+        const DATA_COLLECTION = [
+          {
+            type: window.signToDoc.TYPES.TICKET,
+            title: "Квитанція ДФС",
+            urlLabel: "Тендер",
+            urlValue: "/test-data/tender.json",
+            documentLabel: "Документ",
+            documentValue: "document.XML.p7s",
+            description: `Квитанція створюється з першого посилання на об'єкт, який вказаний в полі <span class='badge text-bg-info'>URL</span>, додатково можливо вказати тип шаблону в полі <span class='badge text-bg-info'>TYPE</span> <br>в секції <span class='badge badge-secondary'>Об'єкти ЦБД</span> <br>У полі <span class='badge text-bg-info'>Документ</span> має бути вказаний <samp>title</samp> документу з масиву <samp>documents</samp> у полі <samp>awards</samp> <br>Підтримуються документи, що мають розширення <samp>*.XML.p7s</samp> та <samp>*.KVT.p7s</samp>`,
+            hideDateInputGroup: true,
+          },
+          {
+            type: window.signToDoc.TYPES.CONCLUSION,
+            title: "Висновок про результати моніторингу",
+            urlLabel: "Моніторинг",
+            urlValue: "/test-data/m-test/m1.json",
+            documentLabel: "Документ",
+            documentValue: "sign.p7s",
+            description: `У полі <span class='badge text-bg-info'>Документ</span> має бути вказаний <samp>title</samp> документу з масиву <samp>documents</samp> у полі <samp>conclusion</samp> <br>Підтримуються документи, що мають розширення <samp>*.p7s</samp>`,
+            hideDateInputGroup: true,
+          },
+          {
+            type: window.signToDoc.TYPES.NAZK,
+            title: "Висновок про результати НАЗК",
+            urlLabel: "Award",
+            urlValue: "https://lb-api-sandbox-2.prozorro.gov.ua/api/2.5/tenders/72c79e1bd8ca481a8b0bb21591a4afde/awards/43fa1c2337594af5a9d016357197cd20",
+            documentLabel: "Award id",
+            documentValue: "napc",
+            description: ` У полі <span class="badge text-bg-info">Award</span> має бути вказане <samp>посилання</samp>  на award з якого ми отримуємо документ НАЗК`,
+            hideDateInputGroup: true,
+          },
+          {
+            type: window.signToDoc.TYPES.ANNOUNCEMENT,
+            title: "Оголошення про проведення відкритих торгів",
+            urlLabel: "Announcement док",
+            urlValue: "/test-data/announcement_documents.json",
+            documentLabel: "Документ",
+            documentValue: "sign.p7s",
+            dateLabel: "Sign date modified",
+            dateValue: "2020-01-20T11:41",
+            description: `У полі <span class="badge text-bg-info">Документ</span> має бути вказаний <samp>title</samp> документу з масиву <samp>documents</samp> у полі <samp>conclusion</samp> <br>Підтримуються документи, що мають розширення <samp>*.p7s</samp>`,
+          },
+          {
+            type: window.signToDoc.TYPES.PQ,
+            title: "Електронні договори",
+            urlLabel: "PQ link/type",
+            urlValue: "/test-data/pq/generic.json",
+            documentLabel: "File title",
+            documentValue: "pq",
+            hideDateInputGroup: true,
+            showContractTemplateNameGroup: true,
+          },
+          {
+            type: window.signToDoc.TYPES.ANNUAL_PROCUREMENT_PLAN,
+            title: "Протокол річного плану закупівель",
+            urlLabel: "Рlan link",
+            urlValue: "/test-data/AnnualProcurementPlan/1/tender.json",
+            documentLabel: "File title",
+            documentValue: "sign.p7s",
+            dateLabel: "Sign date modified",
+            dateValue: "2022-09-27T13:54",
+          },
+          {
+            type: window.signToDoc.TYPES.TENDER_REJECTION_PROTOCOL,
+            title: "Протокол відхилення тендерної пропозиції/пропозиції",
+            urlLabel: "Award link with status unsuccessful",
+            urlValue: "/test-data/TenderRejectionProtocol/1/awards/b776595b01bf4d14a57e717d4083e295.json",
+            documentLabel: "File title",
+            documentValue: "sign.p7s",
+            description: `
+               Щоб сформувати документ потрібно передати лінку на award зі статусом unsuccessful <code>{"status":"unsuccessful"}</code>
+               <br>У полі <span class="badge text-bg-info">Tender link</span> передається лінк на тендер де знаходиться відповідний award(з id який вказаний в полі <span class="badge text-bg-info">Award link</span>) сам лінк матиме вигляд <samp>https://{platform_link}/{tender_id_link}</samp>
+               <br>У полі <span class="badge text-bg-info">File title</span> має бути підпис, за замовчуванням це файл sign.p7s. Сюди має бути вложено весь об'єкт тендеру
+            `,
+            hideDateInputGroup: true,
+          },
+          {
+            type: window.signToDoc.TYPES.DETERMINING_WINNER_OF_PROCUREMENT,
+            title: "Протокол визначення переможця закупівлі та намір укласти договір про закупівлю",
+            urlLabel: "Award Link with status active",
+            urlValue: "/test-data/determining_winner_of_procurement/1/awards/97f325d5ccef4cf88ddb16e84a1fe43a.json",
+            documentLabel: "File title",
+            documentValue: "sign.p7s",
+            hideDateInputGroup: true,
+            description: `
+              Щоб сформувати документ потрібно передати лінку на award зі статусом unsuccessful <code>{"status":"active"}</code>
+              <br>У полі <span class="badge text-bg-info">Award link</span> сам лінк матиме вигляд <samp>https://{platform_link}/{tender_id_link}/awards/{award_id_link}</samp>
+              <br>У полі <span class="badge text-bg-info">File title</span> має бути підпис, за замовчуванням це файл sign.p7s. Сюди має бути вложено весь об'єкт тендеру
+            `,
+          },
+          {
+            type: window.signToDoc.TYPES.PROTOCOL_ON_EXTENSION_OF_REVIEW_PERIOD,
+            title: "Протокол продовження строку розгляду тендерної пропозиції/пропозиції",
+            urlLabel: "Award link with status {{TODO}}",
+            urlValue: "/test-data/ProtocolOnExtensionOfReviewPeriod/2/awards/1/a077d05f29fb49dda35da43b850b7d20.json",
+            documentLabel: "File title",
+            documentValue: "sign.p7s",
+            hideDateInputGroup: true,
+            description: `
+              Щоб сформувати документ потрібно передати лінку на award TODO вказати статуси
+              <br>У полі <span class="badge text-bg-info">Award link</span> сам лінк матиме вигляд https://{platform_link}/{tender_id_link}/awards/{award_id_link}
+              <br>У полі <span class="badge text-bg-info">File title</span> має бути підпис, за замовчуванням це файл sign.p7s
+            `,
+          },
+          {
+            type: window.signToDoc.TYPES.PURCHASE_CANCELLATION_PROTOCOL,
+            title: "Протокол відміни закупівлі/лоту або визнання таким, що не відбувся",
+            urlLabel: "Cancellation link",
+            urlValue: "/test-data/purchase_cancellation_protocol/1/cancellation/9529d4bf7a0b44c9bfdd6c34d23b0a1d.json",
+            documentLabel: "File title",
+            documentValue: "sign.p7s",
+            hideDateInputGroup: true,
+            description: `
+              Щоб сформувати документ потрібно передати лінку на cancellation ID
+              <br>У полі <span class="badge text-bg-info">Cancellation link</span> сам лінк матиме вигляд <samp>https://{platform_link}/{tender_id_link}/cancellations/{cancellation_id}</samp>
+              <br>У полі <span class="badge text-bg-info">File title</span> має бути підпис, за замовчуванням це файл sign.p7s. Сюди має бути вложено весь об'єкт тендеру
+            `,
+          },
+          {
+            type: window.signToDoc.TYPES.PROTOCOL_CONSIDERATION_TENDER_OFFERS,
+            title: "Протокол розгляду тендерних пропозицій",
+            urlLabel: "Document ID link",
+            urlValue: "/test-data/protocol_consideration_tender/1/documents/55dd9f06ea8b4c8c8679de9c532f18e8.json",
+            documentLabel: "File title",
+            documentValue: "sign.p7s",
+            dateLabel: "Sign date modified",
+            dateValue: "2024-07-22T12:42",
+            description: `
+              Щоб сформувати документ потрібно передати лінку на document зі в якому є поле evaluationReport. <code>{"documentType":"evaluationReport"}</code>
+              <br>У полі <span class="badge text-bg-info">Date modified підпису</span> вказується дата підпису документу для версійності. Якщо не вказувати дату, то сформується для останнього підписаного документу
+              <br>У полі <span class="badge text-bg-info">File title</span> має бути підпис, за замовчуванням це файл sign.p7s. Сюди має бути вложено весь об'єкт тендеру
+            `,
+          },
+          {
+            type: window.signToDoc.TYPES.TENDER_OFFER,
+            title: "Тендерна пропозиція/пропозиція",
+            urlLabel: "Bid link",
+            urlValue: "/test-data/TenderOffer/1/bids/1/76c896bde4b047c6aebddd3325e70b63.json",
+            documentLabel: "File title",
+            documentValue: "sign.p7s",
+            dateLabel: "Sign date modified",
+            dateValue: "2021-08-19T13:12",
+            description: `
+              Щоб сформувати документ потрібно передати лінку на Bid в списку документів яких є <code>sign.p7s</code>
+              <br>У полі <span class="badge text-bg-info">Bid link</span> сам лінк матиме вигляд <samp>https://{platform_link}/{tender_id_link}/bids/{bid_id_link}</samp>
+              <br>У полі <span class="badge text-bg-info">File title</span> має бути підпис, за замовчуванням це файл sign.p7s
+            `,
+          },
+          {
+            type: window.signToDoc.TYPES.EDR,
+            title: "Довідка ЄДР",
+            urlLabel: "Awards or Qualification ID link",
+            urlValue: "/test-data/edr/5c5dc2a1b6f24b9e8894439f9502aa62.json",
+            documentLabel: "File title",
+            documentValue: "sign.p7s",
+            dateLabel: "Sign date modified",
+            dateValue: "2025-03-03T22:03:24",
+            description: `
+              Щоб сформувати документ потрібно передати лінку на document зі в якому є поле evaluationReport. <code>{"documentType":"registerExtract"}</code>
+              <br>У полі <span class="badge text-bg-info">File title</span> має бути підпис, за замовчуванням це файл edr_identification.yaml. Сюди має бути вложено весь об'єкт тендеру
+            `,
+          },
+          {
+            type: window.signToDoc.TYPES.COMPLAINT,
+            title: "Скарга",
+            urlLabel: "Complaint link",
+            urlValue: "/test-data/complaints/complaint.json",
+            documentLabel: "File title",
+            documentValue: "sign.p7s",
+            hideDateInputGroup: true,
+            showTenderUrlGroup: true,
+          },
+        ];
+
+        createCardList(DATA_COLLECTION);
+
+        document.getElementById("layoutSwitchSimple").addEventListener("change", function () {
+          const rows = document.querySelectorAll("#layoutRow .col")
+          rows.forEach((row) => row.classList.value =  this.checked ? "col col-12" : "col col-12 col-xl-6");
+        });
+
+        document.getElementById("searchInput").addEventListener("input", ({ target: { value } }) => {
+          if (value.length < 3) {
+            createCardList(DATA_COLLECTION);
+            return;
+          }
+
+          const filteredList = DATA_COLLECTION.filter(({ type, title }) => `#${type} – ${title}`.toLowerCase().includes(value.toLowerCase()));
+          createCardList(filteredList);
+        });
+      }
+
+      /**
+       * @param {AppCardData[]} config
+       */
+      const createCardList = (config) => {
+        document.getElementById("accordionList").innerHTML = "";
+        config.forEach((data, index) => {
+          const card = document.createElement("app-card");
+          Object.entries(data).forEach(([key, value]) => card.setAttribute(key, value));
+          card.setAttribute("classList", index ? "" : "show");
+          document.getElementById("accordionList").appendChild(card);
+        });
+      }
+
+      const errorExceptionHandler = (error) => {
+        const component = document.getElementById("app-error-template").content.cloneNode(true);
+        component.getElementById("message").innerHTML = error.message || String(error);
+        component.getElementById("description").innerHTML = `--- SIGN TO DOC: Error Details ---
+              Code: ${error.code}
+              Message: ${error.message}
+              Timestamp: ${error.timestamp}
+              Original Error: ${error.originalError || error.stack}`;
+        document.getElementById("signToDocFrameID").appendChild(component);
+      }
+
+      const downloadPdfFile = async ({ url, title, type, date, contractTemplateName, tender }) => {
+          await window.signToDoc.setConfig({url, type});
+          await window.signToDoc.save({title, date, contractTemplateName, tender});
+      }
+
+      const openInNewWindowPdfFile = async ({ url, title, type, date, contractTemplateName, tender }) => {
+          await window.signToDoc.setConfig({url, type});
+          await window.signToDoc.open({title, date, contractTemplateName, tender});
+      }
+
+      const openInFramePdfFile = async ({ url, title, type, date, contractTemplateName, tender }) => {
+          await window.signToDoc.setConfig({url, type});
+          await window.signToDoc.getIframe({title, date, contractTemplateName, tender});
+      }
+    </script>
+  </body>
+</html>

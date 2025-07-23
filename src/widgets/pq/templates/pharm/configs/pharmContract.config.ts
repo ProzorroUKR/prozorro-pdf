@@ -1,0 +1,101 @@
+import { pqBase, pqTexts } from "@/widgets/pq/configs/pqTexts";
+import { PdfItemEnum } from "@/widgets/pq/types/TextConfigType";
+import type { TextConfigType } from "@/widgets/pq/types/TextConfigType";
+import { STRING } from "@/constants/string";
+
+export const pharmContractConfig: TextConfigType = {
+  subject: [pqTexts.subject.pharmObligation, pqTexts.subject.suplierGuarantee],
+  price: [pqTexts.price.currencyPharm],
+  paymentOrder: [
+    pqTexts.paymentOrder.totalPriceReview,
+    pqTexts.paymentOrder.priceNoIncrease,
+    pqTexts.paymentOrder.priceIncludes,
+    pqTexts.paymentOrder.pharmCashless,
+    pqTexts.paymentOrder.paymentPeriod,
+    pqTexts.paymentOrder.paymentHold,
+    pqTexts.paymentOrder.prePayment,
+  ],
+  deliveryTerms: [
+    pqTexts.deliveryTerms.pharmDueDate,
+    pqTexts.deliveryTerms.pharmDeliveryPlace,
+    pqTexts.deliveryTerms.pharmOwnership,
+    pqTexts.deliveryTerms.pharmSafety,
+    pqTexts.deliveryTerms.pharmDeliveryPeriod,
+    pqTexts.deliveryTerms.pharmDeliveryMessage,
+    pqTexts.deliveryTerms.pharmDocumentList,
+    pqTexts.deliveryTerms.pharmCopiesCheck,
+  ],
+  guarantee: [
+    pqTexts.guarantee.pharmQualityGuarantee,
+    pqTexts.guarantee.pharmDueDate,
+    pqTexts.guarantee.unqualified,
+    pqTexts.guarantee.claim,
+    pqTexts.guarantee.nonArrival,
+    pqTexts.guarantee.utilization,
+  ],
+  acceptanceOrder: [
+    pqTexts.acceptanceOrder.specialRights,
+    pqTexts.acceptanceOrder.acceptance,
+    pqTexts.acceptanceOrder.propperPaking,
+    pqTexts.acceptanceOrder.customerInspection,
+    pqTexts.acceptanceOrder.customerRefusal,
+    pqTexts.acceptanceOrder.acompanyingDocs,
+  ],
+  responsibilities: [
+    pqTexts.responsibilities.improperExecution,
+    pqTexts.responsibilities.violationDelivery,
+    pqTexts.responsibilities.untimelyTransfer,
+    pqTexts.responsibilities.penaltyAmount,
+  ],
+  disputes: [pqTexts.disputes.communication, pqTexts.disputes.court],
+  forceMajeure: [
+    pqTexts.forceMajeure.deadlinePostpone,
+    pqTexts.forceMajeure.postponeMesage,
+    pqTexts.forceMajeure.postponeDocument,
+    pqTexts.forceMajeure.defectNotQualified,
+    pqTexts.forceMajeure.dismissalGrounds,
+  ],
+  anticorruption: [
+    pqTexts.anticorruption.noStimulation,
+    pqTexts.anticorruption.immediateNotification,
+    pqTexts.anticorruption.anticorruptionLaw,
+    pqTexts.anticorruption.confidentiality,
+    pqTexts.anticorruption.supplierGuarantees,
+    pqTexts.anticorruption.affiliatedPersons,
+    pqTexts.anticorruption.suspicion,
+    pqTexts.anticorruption.controlAnticorruption,
+    pqTexts.anticorruption.consideration,
+    pqTexts.anticorruption.fullConfidelity,
+    pqTexts.anticorruption.familyIssues,
+  ],
+  messaging: [
+    pqTexts.messaging.electronic,
+    pqTexts.messaging.addresses,
+    {
+      text: [pqTexts.messaging.fromSupplier, 0, STRING.DELIMITER.DOUBLE_NEWLINE],
+      paths: ["suppliers[0].signerInfo.email"],
+      defaults: [pqBase.eAddress],
+      pdfType: PdfItemEnum.TEXT,
+    },
+    {
+      text: [pqTexts.messaging.fromCustomer, 0, STRING.DELIMITER.DOUBLE_NEWLINE],
+      paths: ["buyer.signerInfo.email"],
+      defaults: [pqBase.eAddress],
+      pdfType: PdfItemEnum.TEXT,
+    },
+  ],
+  contractAction: [
+    pqTexts.contractAction.takesEffectPharm,
+    pqTexts.contractAction.postponedPharm,
+    pqTexts.contractAction.changes,
+  ],
+  finalStatements: [
+    pqTexts.finalStatements.groundsTermination,
+    pqTexts.finalStatements.phaximile,
+    pqTexts.finalStatements.sideEffects,
+    pqTexts.finalStatements.fullResponsibility,
+    pqTexts.finalStatements.additionalTasks,
+    pqTexts.finalStatements.allCorrections,
+    pqTexts.finalStatements.fullUnderstanding,
+  ],
+};

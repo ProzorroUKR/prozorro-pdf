@@ -1,0 +1,605 @@
+{
+  "data": {
+    "requirementResponses": [
+      {
+        "title": "Вчинення злочинів, учинених з корисливих мотивів",
+        "description": "Фізична особа, яка є учасником процедури закупівлі, не була засуджена за кримінальне правопорушення, вчинене з корисливих мотивів (зокрема, пов’язане з хабарництвом та відмиванням коштів), судимість з якої не знято або не погашено в установленому законом порядку або керівник учасника процедури закупівлі не був засуджений за кримінальне правопорушення, вчинене з корисливих мотивів (зокрема, пов’язане з хабарництвом, шахрайством та відмиванням коштів), судимість з якого не знято або не погашено в установленому законом порядку",
+        "requirement": {
+          "id": "8b66706cd5e24be78876efeef3b1c1d2",
+          "title": "Фізична особа, яка є учасником процедури закупівлі, не була засуджена за кримінальне правопорушення, вчинене з корисливих мотивів (зокрема, пов’язане з хабарництвом та відмиванням коштів), судимість з якої не знято або не погашено в установленому законом порядку"
+        },
+        "value": "true",
+        "id": "f170a00a6d424a79a081dd002dfa4805"
+      },
+      {
+        "title": "Вчинення економічних правопорушень",
+        "description": "Суб’єкт господарювання (учасник процедури закупівлі) протягом останніх трьох років не притягувався до відповідальності за порушення, передбачене пунктом 4 частини другої статті 6, пунктом 1 статті 50 Закону України \"Про захист економічної конкуренції\", у вигляді вчинення антиконкурентних узгоджених дій, що стосуються спотворення результатів тендерів",
+        "requirement": {
+          "id": "8a4ee4593b2443c395b3c04760a5f3e7",
+          "title": "Суб’єкт господарювання (учасник процедури закупівлі) протягом останніх трьох років не притягувався до відповідальності за порушення, передбачене пунктом 4 частини другої статті 6, пунктом 1 статті 50 Закону України \"Про захист економічної конкуренції\", у вигляді вчинення антиконкурентних узгоджених дій, що стосуються спотворення результатів тендерів"
+        },
+        "value": "true",
+        "id": "a3a0c96c870443db850d22078f2798be"
+      },
+      {
+        "title": "Вчинення корупційних правопорушень",
+        "description": "Відомості про юридичну особу, яка є учасником процедури закупівлі, не внесено до Єдиного державного реєстру осіб, які вчинили корупційні або пов'язані з корупцією правопорушення. Керівника учасника процедури закупівлі, фізичну особу, яка є учасником процедури закупівлі, не було притягнуто згідно із законом до відповідальності за вчинення корупційного правопорушення або правопорушення, пов’язаного з корупцією",
+        "requirement": {
+          "id": "9bedeb0f6c6146aba64a4325f0651155",
+          "title": "Відомості про юридичну особу, яка є учасником процедури закупівлі, не внесено до Єдиного державного реєстру осіб, які вчинили корупційні або пов'язані з корупцією правопорушення"
+        },
+        "value": "true",
+        "id": "a41e6eacf32640f5bb808204a4a24695"
+      },
+      {
+        "title": "Вчинення корупційних правопорушень",
+        "description": "Відомості про юридичну особу, яка є учасником процедури закупівлі, не внесено до Єдиного державного реєстру осіб, які вчинили корупційні або пов'язані з корупцією правопорушення. Керівника учасника процедури закупівлі, фізичну особу, яка є учасником процедури закупівлі, не було притягнуто згідно із законом до відповідальності за вчинення корупційного правопорушення або правопорушення, пов’язаного з корупцією",
+        "requirement": {
+          "id": "85dd657876fa4cdeabf9654558afafb4",
+          "title": "Керівника учасника процедури закупівлі, фізичну особу, яка є учасником процедури закупівлі, не було притягнуто згідно із законом до відповідальності за вчинення корупційного правопорушення або правопорушення, пов’язаного з корупцією"
+        },
+        "value": "true",
+        "id": "eb0d43cf34604e6bb9b69ff795489ef3"
+      },
+      {
+        "title": "Вчинення правопорушень, пов'язаних з використанням дитячої праці чи будь-якими формами торгівлі людьми",
+        "description": "Керівника учасника процедури закупівлі, фізичну особу, яка є учасником процедури закупівлі, не було притягнуто згідно із законом до відповідальності за вчинення правопорушення, пов’язаного з використанням дитячої праці чи будь-якими формами торгівлі людьми",
+        "requirement": {
+          "id": "9079d592fafa44a69e26f9217ab4b95b",
+          "title": "Керівника учасника процедури закупівлі, фізичну особу, яка є учасником процедури закупівлі, не було притягнуто згідно із законом до відповідальності за вчинення правопорушення, пов’язаного з використанням дитячої праці чи будь-якими формами торгівлі людьми"
+        },
+        "value": "true",
+        "id": "b0b58cb52c6e48d99344c3ba20a9f7a8"
+      },
+      {
+        "title": "Порушення справ про банкрутство",
+        "description": "Учасник процедури закупівлі не визнаний у встановленому законом порядку банкрутом та стосовно нього не відкрита ліквідаційна процедура",
+        "requirement": {
+          "id": "5102e64162b74552ad392bda9e027a29",
+          "title": "Учасник процедури закупівлі не визнаний у встановленому законом порядку банкрутом та стосовно нього не відкрита ліквідаційна процедура"
+        },
+        "value": "true",
+        "id": "d03061e122c347d891f46d45c7d602b9"
+      },
+      {
+        "title": "Наявність інших підстав для відмови в участі у процедурі закупівлі",
+        "description": "У Єдиному державному реєстрі юридичних осіб, фізичних осіб - підприємців та громадських формувань присутня інформація, передбачена пунктом 9 частини другої статті 9 Закону України \"Про державну реєстрацію юридичних осіб, фізичних осіб - підприємців та громадських формувань\" (крім нерезидентів)",
+        "requirement": {
+          "id": "ef9b12fc5f064bff9191a417b1db91de",
+          "title": "У Єдиному державному реєстрі юридичних осіб, фізичних осіб - підприємців та громадських формувань присутня інформація, передбачена пунктом 9 частини другої статті 9 Закону України \"Про державну реєстрацію юридичних осіб, фізичних осіб - підприємців та громадських формувань\" (крім нерезидентів)"
+        },
+        "value": "true",
+        "id": "aef65fa967b048898743e5040b11a538"
+      },
+      {
+        "title": "Наявність інших підстав для відмови в участі у процедурі закупівлі",
+        "description": "У Єдиному державному реєстрі юридичних осіб, фізичних осіб - підприємців та громадських формувань присутня інформація, передбачена пунктом 9 частини другої статті 9 Закону України \"Про державну реєстрацію юридичних осіб, фізичних осіб - підприємців та громадських формувань\" (крім нерезидентів)",
+        "requirement": {
+          "id": "1c18a58ca2354565b4380740d36417ee",
+          "title": "Учасник процедури закупівлі або кінцевий бенефіціарний власник, член або учасник (акціонер) юридичної особи — учасника процедури закупівлі не є особою, до якої застосовано санкцію у вигляді заборони на здійснення у неї публічних закупівель товарів, робіт і послуг згідно із Законом України \"Про санкції\", крім випадку, коли активи такої особи в установленому законодавством порядку передані в управління АРМА"
+        },
+        "value": "true",
+        "id": "cdd4bb3f0f5741e4a7226effb691b780"
+      },
+      {
+        "title": "Мова (мови), якою (якими) повинні готуватися тендерні пропозиції",
+        "requirement": {
+          "id": "ba82c1989c774767bd20df2f38bc475a",
+          "title": "Мова тендерної пропозиції українська"
+        },
+        "value": "true",
+        "id": "bb44d2b8a8cc4b269435a1dd1e0ed69f"
+      }
+    ],
+    "tenderers": [
+      {
+        "name": "ФОП \"ЧЕРВІНСЬКА СВІТЛАНА АНАТОЛІЇВНА\"",
+        "identifier": {
+          "scheme": "UA-EDR",
+          "id": "2554911143",
+          "legalName": "ФОП \"ЧЕРВІНСЬКА СВІТЛАНА АНАТОЛІЇВНА\""
+        },
+        "address": {
+          "streetAddress": "ВУЛИЦЯ ГАГАРІНА, будинок 1, квартира 27",
+          "locality": "місто Хмельницький",
+          "region": "Хмельницька область",
+          "postalCode": "29000",
+          "countryName": "Україна"
+        },
+        "contactPoint": {
+          "name": "Світлана Червінська",
+          "email": "chsveta2018@gmail.com",
+          "telephone": "+380632235878"
+        },
+        "scale": "mid"
+      }
+    ],
+    "status": "active",
+    "id": "0c95b243219e4c4bacf01680fede8b1f",
+    "date": "2024-05-02T15:26:46.454796+03:00",
+    "documents": [
+      {
+        "documentType": "qualificationDocuments",
+        "description": "SHA1:e6051098e47156b17017486bd9d7625fe0e1cfd9;SHA2-384:b929e6a69f2db4a1cb3bde990eb6c6fb4c4083d5e616b152bfac1f55ebba4c62cbe7697e1d401ee9fdd5c8ed132f61a0;Antivirus: ESET Antivirus,fids:b0180d4dd8824179842dc3a047bb1564:fide",
+        "id": "8ca03826d96043bba3da3c81d6af3a43",
+        "datePublished": "2024-05-02T15:26:46.454796+03:00",
+        "hash": "md5:33f3f28fc2dd1e599b48cb6b8526d150",
+        "title": "авторизаційний лист.pdf",
+        "format": "application/pdf",
+        "url": "https://public-docs.prozorro.gov.ua/get/5e4badb5d5044e1c8823c150370c921e?Signature=TdpWa1vh7ShvMKAsY6%2FcLVPBnwsrBFP821PBVcVDaJxE61Wm%2B3cAH3QyUTHFGKL0MAC1luK18WuAA%2BMG4hlyDg%3D%3D&KeyID=52462340",
+        "documentOf": "tender",
+        "dateModified": "2024-05-02T15:26:46.454796+03:00",
+        "language": "uk",
+        "confidentiality": "public",
+        "confidentialityRationale": ""
+      },
+      {
+        "documentType": "qualificationDocuments",
+        "description": "SHA1:af66bcfd55e9f4f66aedcd266dff1925e2c4eb72;SHA2-384:1f1b69219ed6dee9ce54a73c320f79109dbd4146cdc181f1c812b6eb843e8301109aca8323438f2eb4eb4486305a9956;Antivirus: ESET Antivirus,fids:6f9a0e2635764569a693f94807abb141:fide",
+        "id": "823cc75d579240578fe161efd7c43840",
+        "datePublished": "2024-05-02T15:26:46.454796+03:00",
+        "hash": "md5:8d868208e8a96f1ab32c09336dc5f829",
+        "title": "висновки та декларації.pdf",
+        "format": "application/pdf",
+        "url": "https://public-docs.prozorro.gov.ua/get/c0da45c5d6a84a01be65109eb93ced76?Signature=qBVPbr3C99Z5RnnN%2FPXVkZZW4EwFKshQo%2BpYWZZB%2BtGolylg8Qf6l3k0SRFs0MdFMpltgN0wt9z5XYG2xwRICw%3D%3D&KeyID=52462340",
+        "documentOf": "tender",
+        "dateModified": "2024-05-02T15:26:46.454796+03:00",
+        "language": "uk",
+        "confidentiality": "public",
+        "confidentialityRationale": ""
+      },
+      {
+        "documentType": "qualificationDocuments",
+        "description": "SHA1:6d026616cda701e20e733f5ce47927f36533aecc;SHA2-384:50d67fa7c9f5744191d3e35a795a721f2439a21834eff3fb170391901abaef8b4d0f4ccb4e44722c9ef11fd5659db03d;Antivirus: ESET Antivirus,fids:349294c878fd42ae93e669186461f0c9:fide",
+        "id": "5e3eb8ff05094bf9a8b1c4821a28bd01",
+        "datePublished": "2024-05-02T15:26:46.454796+03:00",
+        "hash": "md5:e219600416da341bc081e4d0d6583dab",
+        "title": "висновок та декларації.pdf",
+        "format": "application/pdf",
+        "url": "https://public-docs.prozorro.gov.ua/get/c0d7dacd91244ea68e7e3c7327748b12?Signature=ite2qpDApT8Dl5Hj5Jon01D1BMCR6YrAsOvRNf0gBOOO1qNRjRU4j1uflX%2FGFWhvT8sXXgrv6lp0kyScoOtGBQ%3D%3D&KeyID=52462340",
+        "documentOf": "tender",
+        "dateModified": "2024-05-02T15:26:46.454796+03:00",
+        "language": "uk",
+        "confidentiality": "public",
+        "confidentialityRationale": ""
+      },
+      {
+        "documentType": "qualificationDocuments",
+        "description": "SHA1:caba7986668cf6c8db1a1118cd2e918dee1ce075;SHA2-384:701c2bdaf44981cd08074f3af8d7ccc5421ef5feb4e6f79689d5de0d4843809d8ea0526a929f5ef840a4529f09a53763;Antivirus: ESET Antivirus,fids:399b5970cef54f2cad5331c4ec3bb8b0:fide",
+        "id": "32fd009ddea440579077cfc72c1964d0",
+        "datePublished": "2024-05-02T15:26:46.454796+03:00",
+        "hash": "md5:fc963bc1591d1ad1af24fcaf7eb20f95",
+        "title": "гарантійні листи.pdf",
+        "format": "application/pdf",
+        "url": "https://public-docs.prozorro.gov.ua/get/ef40191bbb394226b47c97f72d9ddd9c?Signature=2FEwrsPLN6RWc%2BkOYxy6gRTpEe%2FpHv%2BPXCJ4aRtn0VSelHrQk4tGYyilZ4xYrbMzXe3y8bit8WpyJDMskjHUAg%3D%3D&KeyID=52462340",
+        "documentOf": "tender",
+        "dateModified": "2024-05-02T15:26:46.454796+03:00",
+        "language": "uk",
+        "confidentiality": "public",
+        "confidentialityRationale": ""
+      },
+      {
+        "documentType": "qualificationDocuments",
+        "description": "SHA1:590a51d17dfe27b8020a746275dbd86cbfaa5eea;SHA2-384:f2d58f8b883559a6d6a9e8e6c346a0c5d16106aadf0eb72191f593a3c035fbd168a3e380e0235bef0ad0666ac80a7e3e;Antivirus: ESET Antivirus,fids:6c721ac7be254c1e8277d5b9e6b3ec14:fide",
+        "id": "1f696620be5f4cc9aaba99e7a48c410a",
+        "datePublished": "2024-05-02T15:26:46.454796+03:00",
+        "hash": "md5:7a520a53ed5cfc8bb4688d4849bb0f8e",
+        "title": "лист-згода.pdf",
+        "format": "application/pdf",
+        "url": "https://public-docs.prozorro.gov.ua/get/9e80305aefd44081874a4d61e8774ec6?Signature=%2BDiKk0uodh6daQHAZ8A1b7AxZkkq4hMtMy4n%2F7xsn8y0BZnsaA1B1vLNCBYMSdk3JAO4C3veBkP9xg7sYPq8BQ%3D%3D&KeyID=52462340",
+        "documentOf": "tender",
+        "dateModified": "2024-05-02T15:26:46.454796+03:00",
+        "language": "uk",
+        "confidentiality": "public",
+        "confidentialityRationale": ""
+      },
+      {
+        "documentType": "technicalSpecifications",
+        "description": "SHA1:04e2daa869c946f897f8ae6560fd642eb9b3b94c;SHA2-384:c436669344d6172c9adfe3b1e226afd9748797601a5f071df572eb5e76d902cce20c77dcd0414ed72b44b751dc5c7132;Antivirus: ESET Antivirus,fids:56e0b37fa12a4fd8bf5d871914bdf9e1:fide",
+        "id": "8762a5bf948a437e9470c51e8543dc6a",
+        "datePublished": "2024-05-02T15:26:46.454796+03:00",
+        "hash": "md5:bbdc11ec10d63147ea23f06be57fa154",
+        "title": "медико-технічні характеристики.pdf",
+        "format": "application/pdf",
+        "url": "https://public-docs.prozorro.gov.ua/get/bb2f4cefa92640df8a2a937570950ab7?Signature=%2BG7kSsuSWfSza5gHQ7FDQCt5B85sroZg38Ul6iVsuwnb%2FVlhg7wR0OpPu8PsPd%2FNSHM0ax9WByU%2BcirXHbhdDA%3D%3D&KeyID=52462340",
+        "documentOf": "tender",
+        "dateModified": "2024-05-02T15:26:46.454796+03:00",
+        "language": "uk",
+        "confidentiality": "public",
+        "confidentialityRationale": ""
+      },
+      {
+        "documentType": "qualificationDocuments",
+        "description": "SHA1:1990eb9caf44266be5b16fc6af2c499b038958a5;SHA2-384:b7556d2085b26195675c72c19570523fe2a2288d283d54f35413e1864e72ddc29ff45743082be413e9f1db854b6fe499;Antivirus: ESET Antivirus,fids:6a2a6d9e3776456f844d7404b7d4222a:fide",
+        "id": "0a1fbdb359ba44bb8037c33549a9f3f4",
+        "datePublished": "2024-05-02T15:26:46.454796+03:00",
+        "hash": "md5:9be19fbdc39b708e2a9f8d6c95c9d45d",
+        "title": "листи175.pdf",
+        "format": "application/pdf",
+        "url": "https://public-docs.prozorro.gov.ua/get/2953be3286f04244b11f36e15139c47b?Signature=pa2iFhgKvSNEJWapo2oRq4%2FSECZ2B7jIsZKI3EjAyqwRfRjtOq4i0AXesiHGtR4nrrVn7IvwoM2QW3LMVQkODg%3D%3D&KeyID=52462340",
+        "documentOf": "tender",
+        "dateModified": "2024-05-02T15:26:46.454796+03:00",
+        "language": "uk",
+        "confidentiality": "public",
+        "confidentialityRationale": ""
+      },
+      {
+        "documentType": "qualificationDocuments",
+        "description": "SHA1:bdc121e6c2ba2893986d6f31b8fb4904cd345ef1;SHA2-384:0321197f6de96e168b0a7c8b123779664706a9f82f23421db0dbe3ed560660340901e34615cae42e58840e0912c38518;Antivirus: ESET Antivirus,fids:451e24450494409f83b27a5ebb6d0dca:fide",
+        "id": "df51babe839140c78db7d832fe16af64",
+        "datePublished": "2024-05-02T15:26:46.454796+03:00",
+        "hash": "md5:34a41c7057c97512590704751278d341",
+        "title": "сертифікати177.pdf",
+        "format": "application/pdf",
+        "url": "https://public-docs.prozorro.gov.ua/get/e6192cb1bd864b35937561fc0487d010?Signature=Ntg%2BHpJh8yynoRYqQUjx5gTxZqrDduJUEIsO8QTRDvnxXzpJud2axybu1YOHL5PaCpwLPv2KOuCU4uEGYrFrDQ%3D%3D&KeyID=52462340",
+        "documentOf": "tender",
+        "dateModified": "2024-05-02T15:26:46.454796+03:00",
+        "language": "uk",
+        "confidentiality": "public",
+        "confidentialityRationale": ""
+      },
+      {
+        "documentType": "qualificationDocuments",
+        "description": "SHA1:c364ddd1d143e26d34157497b44f973ac13311cc;SHA2-384:eb7e68022e7ee5a3e9e497a5376199930ff0d6cc74c90054b0cd4c75bd831eab831ab2635b253ee35d1a19e3b1c020a5;Antivirus: ESET Antivirus,fids:26c5f872a4f94fc8aa00f6c5fb657bd3:fide",
+        "id": "9ee61b499b714e4f8e983cabf9c350f8",
+        "datePublished": "2024-05-02T15:26:46.454796+03:00",
+        "hash": "md5:fb169f2afcff8085feb34ceac554d227",
+        "title": "Установчі документи176.pdf",
+        "format": "application/pdf",
+        "url": "https://public-docs.prozorro.gov.ua/get/6b922760c2ce44dfae103716104b3991?Signature=8RZ37AW5P2%2B8Bw8YAQI1kgTjaNEBhNYs0docLfZiyA%2B%2B2MP2NiQfR0SsT5TDGBLhkVdgmCB5NvfltttNrTHpCw%3D%3D&KeyID=52462340",
+        "documentOf": "tender",
+        "dateModified": "2024-05-02T15:26:46.454796+03:00",
+        "language": "uk",
+        "confidentiality": "public",
+        "confidentialityRationale": ""
+      },
+      {
+        "documentType": "qualificationDocuments",
+        "description": "SHA1:1990eb9caf44266be5b16fc6af2c499b038958a5;SHA2-384:b7556d2085b26195675c72c19570523fe2a2288d283d54f35413e1864e72ddc29ff45743082be413e9f1db854b6fe499;Antivirus: ESET Antivirus,fids:f2df24045b124b90bec6aa3024b4e75d:fide",
+        "relatedItem": "7ac71904b1f84ef0a99421d734182634",
+        "id": "0582733fb07042a0a278a4c565247344",
+        "datePublished": "2024-05-02T15:26:46.454796+03:00",
+        "hash": "md5:9be19fbdc39b708e2a9f8d6c95c9d45d",
+        "title": "листи175.pdf",
+        "format": "application/pdf",
+        "url": "https://public-docs.prozorro.gov.ua/get/c6e7ab7e155f48b69c5b7cb336e523a8?Signature=pYAzEm5eYzQBJhNuWisYuTP0vxeq6xt17ABOkff3lYBaNY9sguQ2MHD8wrvfJ66yamkASi4zTk7xqSArybNkCQ%3D%3D&KeyID=52462340",
+        "documentOf": "lot",
+        "dateModified": "2024-05-02T15:26:46.454796+03:00",
+        "language": "uk",
+        "confidentiality": "public",
+        "confidentialityRationale": ""
+      },
+      {
+        "documentType": "qualificationDocuments",
+        "description": "SHA1:bdc121e6c2ba2893986d6f31b8fb4904cd345ef1;SHA2-384:0321197f6de96e168b0a7c8b123779664706a9f82f23421db0dbe3ed560660340901e34615cae42e58840e0912c38518;Antivirus: ESET Antivirus,fids:20e07ed56e7247c8b44d9320e7a27aef:fide",
+        "relatedItem": "7ac71904b1f84ef0a99421d734182634",
+        "id": "7caccff4749b4bf0adb7dba743309335",
+        "datePublished": "2024-05-02T15:26:46.454796+03:00",
+        "hash": "md5:34a41c7057c97512590704751278d341",
+        "title": "сертифікати177.pdf",
+        "format": "application/pdf",
+        "url": "https://public-docs.prozorro.gov.ua/get/eebaf6ccab3f4cbf813590c2317f238a?Signature=EcgHkCyPELdaJBWG78yYyKzP2yaiYs%2Be6EOs5lifR2w3K1iCI6OIijl0QnYixmcEZY8G73OElUccIo60WcHeBA%3D%3D&KeyID=52462340",
+        "documentOf": "lot",
+        "dateModified": "2024-05-02T15:26:46.454796+03:00",
+        "language": "uk",
+        "confidentiality": "public",
+        "confidentialityRationale": ""
+      },
+      {
+        "documentType": "qualificationDocuments",
+        "description": "SHA1:c364ddd1d143e26d34157497b44f973ac13311cc;SHA2-384:eb7e68022e7ee5a3e9e497a5376199930ff0d6cc74c90054b0cd4c75bd831eab831ab2635b253ee35d1a19e3b1c020a5;Antivirus: ESET Antivirus,fids:6f9c838bb4574883853a7be9884ed804:fide",
+        "relatedItem": "7ac71904b1f84ef0a99421d734182634",
+        "id": "350d345708004eb2a739f3d69e43b573",
+        "datePublished": "2024-05-02T15:26:46.454796+03:00",
+        "hash": "md5:fb169f2afcff8085feb34ceac554d227",
+        "title": "Установчі документи176.pdf",
+        "format": "application/pdf",
+        "url": "https://public-docs.prozorro.gov.ua/get/cb1330d53e6745b9bbaa6147fe5b78d2?Signature=PJnjdQ7OPLiYrcS9Rog%2BOjhoI1FK4sf5G3RrT5w8rfSZt84JA6DR%2F9xO61nsguL6Wpko9LWo8MysHmvwE%2B%2BvAQ%3D%3D&KeyID=52462340",
+        "documentOf": "lot",
+        "dateModified": "2024-05-02T15:26:46.454796+03:00",
+        "language": "uk",
+        "confidentiality": "public",
+        "confidentialityRationale": ""
+      },
+      {
+        "documentType": "qualificationDocuments",
+        "description": "SHA1:ac4e3d830070b0aff0247fde6f8bc4445fcd2db1;SHA2-384:b2931bddf1f8b07316e1973d73ecf72657397f9dfcf6313f887d563c680b05a08031338d4467a019ca45a1112d000544;Antivirus: ESET Antivirus,fids:359d941aeedc4ff8965a47e7d5d494aa:fide",
+        "relatedItem": "7ac71904b1f84ef0a99421d734182634",
+        "id": "d19047b1911b41048d5a4de4fef15f6e",
+        "datePublished": "2024-05-02T15:26:46.454796+03:00",
+        "hash": "md5:3f071330bc60097c41fa5060892ca0fc",
+        "title": "авторизаційний лист.pdf",
+        "format": "application/pdf",
+        "url": "https://public-docs.prozorro.gov.ua/get/4dcbaa8ba15d4a89b55e676e5eee6412?Signature=Xgen6idphRJ9pXE5eZRxu%2Bp3wfM29Pg1fTURb2aN8iyOAWr0vOsHdDlH6TtsGP2V1x07bLYCJNjIIiUnUWOcDQ%3D%3D&KeyID=52462340",
+        "documentOf": "lot",
+        "dateModified": "2024-05-02T15:26:46.454796+03:00",
+        "language": "uk",
+        "confidentiality": "public",
+        "confidentialityRationale": ""
+      },
+      {
+        "documentType": "qualificationDocuments",
+        "description": "SHA1:0cd6cec08a675183092af22093a70c8e5c9ddfc3;SHA2-384:38c1755205b2a1a4f14446f36a11d7dd6c8d0ef783ab9835f5d4f39ff28a032d2976a8460ca17b44e5a2815a8eacaa8e;Antivirus: ESET Antivirus,fids:fba7ee63a9e743c2a7bbb3f5f06181d3:fide",
+        "relatedItem": "7ac71904b1f84ef0a99421d734182634",
+        "id": "7c2116da6a724b2984d082190c34e22e",
+        "datePublished": "2024-05-02T15:26:46.454796+03:00",
+        "hash": "md5:9459066c6d4833b72fb0a8e55440cf18",
+        "title": "висновки та декларації.pdf",
+        "format": "application/pdf",
+        "url": "https://public-docs.prozorro.gov.ua/get/ab9b7ff1906e4e00bc1e39d37a258ad3?Signature=WnvQTPIO3%2Feke3%2BVyPZ%2Fcyt31QTNm2JRgIpLhwy7cVpsiIKQAYo0CufHaEsUBiHVUimV8v3kIuJWNuWgw%2FKXDw%3D%3D&KeyID=52462340",
+        "documentOf": "lot",
+        "dateModified": "2024-05-02T15:26:46.454796+03:00",
+        "language": "uk",
+        "confidentiality": "public",
+        "confidentialityRationale": ""
+      },
+      {
+        "documentType": "qualificationDocuments",
+        "description": "SHA1:6d026616cda701e20e733f5ce47927f36533aecc;SHA2-384:50d67fa7c9f5744191d3e35a795a721f2439a21834eff3fb170391901abaef8b4d0f4ccb4e44722c9ef11fd5659db03d;Antivirus: ESET Antivirus,fids:7204bb15a8894a4d98c659b915a29f18:fide",
+        "relatedItem": "7ac71904b1f84ef0a99421d734182634",
+        "id": "f7553577a3e94991ad0c2568183a2861",
+        "datePublished": "2024-05-02T15:26:46.454796+03:00",
+        "hash": "md5:e219600416da341bc081e4d0d6583dab",
+        "title": "висновки та декларація.pdf",
+        "format": "application/pdf",
+        "url": "https://public-docs.prozorro.gov.ua/get/3190ad633be340ce8508b9492b61b5b5?Signature=L78kQKCQVT9wXop6Vtqbmb3OUqapHmRpCYSIg8Zh9KbVXrCzeHO2ciRzqKpeTSCfTO5boC3uRfUnn8W6PbX%2BAQ%3D%3D&KeyID=52462340",
+        "documentOf": "lot",
+        "dateModified": "2024-05-02T15:26:46.454796+03:00",
+        "language": "uk",
+        "confidentiality": "public",
+        "confidentialityRationale": ""
+      },
+      {
+        "documentType": "qualificationDocuments",
+        "description": "SHA1:a76b4f22cde9a319521a232359b9ed9fb0b64fa3;SHA2-384:bcdc3a5edf0ce139045aaca806a46e988bee77e1b477ede409e433870f480b1b18d5ba3836b7ade53e61f4bbe1db9fed;Antivirus: ESET Antivirus,fids:2c6f759baf0a4c2ea05c7caff686bae0:fide",
+        "relatedItem": "7ac71904b1f84ef0a99421d734182634",
+        "id": "88663e16a9a5478c8c43ec9d03d55dbc",
+        "datePublished": "2024-05-02T15:26:46.454796+03:00",
+        "hash": "md5:9cffa09981927997497eef7a4113a050",
+        "title": "лист-згода.pdf",
+        "format": "application/pdf",
+        "url": "https://public-docs.prozorro.gov.ua/get/08b3f2feb31a450291bf45abd87c55a8?Signature=B7lccnR5CvXhRf1ZZAXu0Id4oD%2FsZthXsCps%2BKupdRXfQtiA47GsSVnAQX0Rx9nddRDN1r5OWA9EwfCWJ6cTAQ%3D%3D&KeyID=52462340",
+        "documentOf": "lot",
+        "dateModified": "2024-05-02T15:26:46.454796+03:00",
+        "language": "uk",
+        "confidentiality": "public",
+        "confidentialityRationale": ""
+      },
+      {
+        "documentType": "qualificationDocuments",
+        "description": "SHA1:1db93253967414b2a5a1ee09739932d2959c0327;SHA2-384:b7285928e9156c518f5de750499437487ecfb854e8dad6ec5cb04981967f8c53f2c7ea326a8d968750c8ea3785950f94;Antivirus: ESET Antivirus,fids:afafa310c69b4d6d8a90f9e49b0676a6:fide",
+        "relatedItem": "7ac71904b1f84ef0a99421d734182634",
+        "id": "1e528f9ec675443c9dbd8b7942e70ba7",
+        "datePublished": "2024-05-02T15:26:46.454796+03:00",
+        "hash": "md5:685179487c1ac3628aa6b92c70ea0fbd",
+        "title": "листи та довідки.pdf",
+        "format": "application/pdf",
+        "url": "https://public-docs.prozorro.gov.ua/get/6a7443e343054d6cb38a3ea3220de85b?Signature=u0377p6j9B4gSHkY54nqcBK0qjxmP6MNTGl3eSGLqD2AccaHCSJnzzKnwI9bhOGQ2RzWvFHaHDwjpCpCVXGwBg%3D%3D&KeyID=52462340",
+        "documentOf": "lot",
+        "dateModified": "2024-05-02T15:26:46.454796+03:00",
+        "language": "uk",
+        "confidentiality": "public",
+        "confidentialityRationale": ""
+      },
+      {
+        "documentType": "technicalSpecifications",
+        "description": "SHA1:e0e65a6212873c8ded6c8716e30f39610df7cd52;SHA2-384:3cc5db5951eb4383a0f77929fe079505b1d0d1d01df646f9ef223faeec03a96af75173d4754e01f6a2157512f1c146fd;Antivirus: ESET Antivirus,fids:4dd671d4de5d4bceaddf8f78a91598a3:fide",
+        "relatedItem": "7ac71904b1f84ef0a99421d734182634",
+        "id": "fee7c3c054e64cdab2430c68f0f48714",
+        "datePublished": "2024-05-02T15:26:46.454796+03:00",
+        "hash": "md5:831fb0b93496d9a4a86aba49c3599ed3",
+        "title": "медико-технічні характеристики.pdf",
+        "format": "application/pdf",
+        "url": "https://public-docs.prozorro.gov.ua/get/ac64cbed84724eaca5c5f7e7c048375b?Signature=8aAcXR7K8r1tzxAlavQsMXhzbuPEwCVm40cF9wX833ycksdLhaL3hjTpwKC2zqI4JYk9s2Ty0ietahA4yrMFBw%3D%3D&KeyID=52462340",
+        "documentOf": "lot",
+        "dateModified": "2024-05-02T15:26:46.454796+03:00",
+        "language": "uk",
+        "confidentiality": "public",
+        "confidentialityRationale": ""
+      },
+      {
+        "description": "SHA1:3fe3fd70e77ab46af4772762c1f006ff54f5fa71;SHA2-384:d46a15a97aa9e36c4efe6a9a60c230aa8a168ac6e5c4b2d7d3e4ded5b1ace421e391e8730b97d5b09eecce171f575718;Antivirus: ESET Antivirus,fids:7eef151613e341c4a26944bffcc9e526:fide",
+        "id": "dc38234aaa1a4622b09ba4dcee97e9e2",
+        "datePublished": "2024-05-02T15:29:59.510435+03:00",
+        "hash": "md5:0c820b7dee3d3530d2b62b9695d7bbf5",
+        "title": "sign.p7s",
+        "format": "application/pkcs7-signature",
+        "url": "https://public-docs.prozorro.gov.ua/get/36cee1c52a4043488800fea17e1a95d3?Signature=q3Yr79Ys0kWimwDosW%2BxRqxf3YEmcsZdM1oifSBaXu%2FiUcjugN6xI3VoOyZ3ZRHZY8vjESPfg%2FprntVyAuNMDA%3D%3D&KeyID=52462340",
+        "documentOf": "tender",
+        "dateModified": "2024-05-02T15:30:00.639960+03:00",
+        "language": "uk",
+        "confidentiality": "public"
+      },
+      {
+        "documentType": "qualificationDocuments",
+        "description": "SHA1:8beec24b1d454e8f0cf332e118001512e41da34f;SHA2-384:59b8df6232ae6eff0d6c39482e23893bc49442f0424285a91a305afdfd807380d7ee3c0c09a1515d4baf9bcbafbda777;Antivirus: ESET Antivirus,fids:183c64f0cd9c41b88319a60f98016b89:fide",
+        "id": "a55a48015f9d4a0dac393661610ff7f4",
+        "datePublished": "2024-05-08T08:54:56.852626+03:00",
+        "hash": "md5:3f3f12f7a1a136471b02219b5a19b425",
+        "title": "Довідка.pdf",
+        "format": "application/pdf",
+        "url": "https://public-docs.prozorro.gov.ua/get/e581b29dd8ce49019a1cdeab6d1ed781?Signature=0uOlGwt1dDS7pAjr5RE%2BzFEweOfxoCOJJsFKZaapWYY7rtE8FEp2h%2F8qLI%2BOJd5Qe8%2B1By9bvjgiOrZvcKLyCQ%3D%3D&KeyID=52462340",
+        "documentOf": "tender",
+        "dateModified": "2024-05-08T08:56:04.231042+03:00",
+        "language": "uk",
+        "confidentiality": "public",
+        "confidentialityRationale": ""
+      },
+      {
+        "documentType": "qualificationDocuments",
+        "description": "SHA1:4aa6381802e8e7668d9d40079063e7ed0c4846a6;SHA2-384:a6ef629c59df2723cb45eff958fc2ec755ed547f6a2e14a97a011406b2ecf438ec318b1f802a33ce5091e82e050ab131;Antivirus: ESET Antivirus,fids:7ca54b15fba94d9a905e01978eacb39d:fide",
+        "id": "968c22002936456aa8fa8c86e1dbea1d",
+        "datePublished": "2024-05-08T08:56:04.559240+03:00",
+        "hash": "md5:faf98fe2a499db48d7ec43a373b1676e",
+        "title": "Довідка.pdf.p7s",
+        "format": "application/pkcs7-signature",
+        "url": "https://public-docs.prozorro.gov.ua/get/bd41ae2c1c1243d7a8b28094d04131bb?Signature=VkauIFK7o5r2jlVvsGJWWowvA%2F5bVECMM11yASDOUMJ2MLu793IjekwFglAgmnVvk%2BNRLdNkYA5ehOMOQzj9Ag%3D%3D&KeyID=52462340",
+        "documentOf": "tender",
+        "dateModified": "2024-05-08T08:56:04.740140+03:00",
+        "language": "uk",
+        "confidentiality": "public",
+        "confidentialityRationale": ""
+      },
+      {
+        "documentType": "qualificationDocuments",
+        "description": "SHA1:b32d22e0ba9a9a168667a8a3f85d257752fabdaf;SHA2-384:620f68e49701e6b95be8cff5d4d3d6f6df91e94e5f3dd719f2e66145e528bc08b6d91188ee1435fe625a9c939e8691ff;Antivirus: ESET Antivirus,fids:fd05f63533ab4b5bb20ffad9e13a0f59:fide",
+        "id": "7f47a9d26012452e9ad33475ba7424a2",
+        "datePublished": "2024-05-08T08:56:05.049604+03:00",
+        "hash": "md5:a6910e8c2c2a0eb91b7ca517584115cb",
+        "title": "Витяг-2743855-ЧЕРВІНСЬКА-2024-04-26.pdf",
+        "format": "application/pdf",
+        "url": "https://public-docs.prozorro.gov.ua/get/46e5cee288bf4b8e9ee5598d9bc511a8?Signature=an2jg%2F0BoCdpEc%2FC1JnwJ87hd0ESrf%2B2Bo8chsehGYjoqEX0qD3cKSzOcQSjv2LBC4R7YNztko%2BNQ0rLnC2OBw%3D%3D&KeyID=52462340",
+        "documentOf": "tender",
+        "dateModified": "2024-05-08T08:56:05.215639+03:00",
+        "language": "uk",
+        "confidentiality": "public",
+        "confidentialityRationale": ""
+      },
+      {
+        "documentType": "qualificationDocuments",
+        "description": "SHA1:4e48017a8bfcddaf1a741ce26dc65ba36ac87343;SHA2-384:a45abc0d33e342e51de4ef352f2fdcb29441e71502e98f0b823339c87892c9578da691eb9242b833e5267e216cbcc5be;Antivirus: ESET Antivirus,fids:bff31dab863d4c36b17cf7034cbe7582:fide",
+        "id": "544b77970d044e8f91abaac45a0369a2",
+        "datePublished": "2024-05-08T08:56:05.572023+03:00",
+        "hash": "md5:bafa21d6dc3ace4bd92f865b7c54a6ca",
+        "title": "Витяг-2743855-ЧЕРВІНСЬКА-2024-04-26.pdf.p7s",
+        "format": "application/pkcs7-signature",
+        "url": "https://public-docs.prozorro.gov.ua/get/8faee66d9e9a446d9e283a3e977ad9f4?Signature=E8%2Faz%2FNB6V5neUMplOxDZIQEbH5HGf3zfbOwKQfFTrQvyIg%2F9GHxs%2BaRiu7xE4pHr%2F1HXiAbLzi4fFIWzGjuBA%3D%3D&KeyID=52462340",
+        "documentOf": "tender",
+        "dateModified": "2024-05-08T08:56:05.713031+03:00",
+        "language": "uk",
+        "confidentiality": "public",
+        "confidentialityRationale": ""
+      }
+    ],
+    "financialDocuments": [
+      {
+        "documentType": "billOfQuantity",
+        "description": "SHA1:b729eae833934eabc57524edbd6fc40c6001f571;SHA2-384:b6a1015977c71032e5e0de218ee9e04f8ad4c1f601a00d6c49d74560645f072270200bab4d1580e59203a338b5245d9a;Antivirus: ESET Antivirus,fids:7164f6183bd843c9b00eb32e7f2f6d0d:fide",
+        "id": "ebfe092b7ff944aab99173601c4a6e1b",
+        "datePublished": "2024-05-02T15:26:46.454796+03:00",
+        "hash": "md5:b859be7f7731154013646655b8b7e505",
+        "title": "договір.pdf",
+        "format": "application/pdf",
+        "url": "https://public-docs.prozorro.gov.ua/get/2c381058c0d84304b9bd0aa41c590bde?Signature=MMBmwVI71ybJMFzcwOvKkVq12AKhggkEHfwBoOKm9gTsKUe73t%2F5tjPWHU7dtz3QX6ssEKlFLP62xZIEowY2Bg%3D%3D&KeyID=52462340",
+        "documentOf": "tender",
+        "dateModified": "2024-05-02T15:26:46.454796+03:00",
+        "language": "uk",
+        "confidentiality": "public",
+        "confidentialityRationale": ""
+      },
+      {
+        "documentType": "commercialProposal",
+        "description": "SHA1:63910fa8c9c42130dfe64e8e9d3dcf78ce29796e;SHA2-384:7206c1f8f2593cd08bd055cc7d1a30c7ffe52cf95ee9d083270b6489d64909372a5a984b168f055a5197f9728143d997;Antivirus: ESET Antivirus,fids:90475134e362434abb00401cce17a11d:fide",
+        "id": "85a4e1143f8b46b5a709ca7c3e3640c2",
+        "datePublished": "2024-05-02T15:26:46.454796+03:00",
+        "hash": "md5:0710a9fa7423b00ae00d689674472da8",
+        "title": "цінова пропозиція.pdf",
+        "format": "application/pdf",
+        "url": "https://public-docs.prozorro.gov.ua/get/ad20776dc85b472db930ed589547c8ea?Signature=xS%2BKBo6BQdR5idRnJzR2XTEtY9swHx2%2Fo3Rus0w4w7gg0GKzPoX8BeQYkTGd%2F5JPA%2FclFqMCQGLTlP8ynAZzBw%3D%3D&KeyID=52462340",
+        "documentOf": "tender",
+        "dateModified": "2024-05-02T15:26:46.454796+03:00",
+        "language": "uk",
+        "confidentiality": "public",
+        "confidentialityRationale": ""
+      },
+      {
+        "documentType": "billOfQuantity",
+        "description": "SHA1:3541e9c43f83b377016b06cb3315fc759b2b7007;SHA2-384:7026f848a141cfcaddaf44b867beee37988555665380e83f32db8038b68a9aca2d094d3ad0a52b1eaab8522a1ad3d4ca;Antivirus: ESET Antivirus,fids:38b4eaac3ad3425da393eac99ceebd40:fide",
+        "relatedItem": "7ac71904b1f84ef0a99421d734182634",
+        "id": "8c7d89ec68704c76b5cecab850105413",
+        "datePublished": "2024-05-02T15:26:46.454796+03:00",
+        "hash": "md5:f91c61dbc40f703b57d8827a0a60a4cc",
+        "title": "договір.pdf",
+        "format": "application/pdf",
+        "url": "https://public-docs.prozorro.gov.ua/get/5bd982766f484cfc833fbfda58dd83f2?Signature=QYHUTvbjWme4hPBJUAarBqyvSzUs8NDtO8zIWfJNlwsCwXAd2wutUZCZYnr2gIo01ZUC4miBIyDtrZym3WhFDg%3D%3D&KeyID=52462340",
+        "documentOf": "lot",
+        "dateModified": "2024-05-02T15:26:46.454796+03:00",
+        "language": "uk",
+        "confidentiality": "public",
+        "confidentialityRationale": ""
+      },
+      {
+        "documentType": "commercialProposal",
+        "description": "SHA1:b171946dc37fd0368db5f6167b846ca9267981a9;SHA2-384:7bb7958db0b6d3a9591ba810b14f5a63be7d0ecb8f1df96ba9c2532ae86dc1ca806fafec23bb256766c7e311af4ca41d;Antivirus: ESET Antivirus,fids:152370abc5774105b9aafe723839d08c:fide",
+        "relatedItem": "7ac71904b1f84ef0a99421d734182634",
+        "id": "9c4879d3de284bc9a7a971c2230198a6",
+        "datePublished": "2024-05-02T15:26:46.454796+03:00",
+        "hash": "md5:b0bc1d21134fc369a0845de2585a66e5",
+        "title": "цінова пропозиція.pdf",
+        "format": "application/pdf",
+        "url": "https://public-docs.prozorro.gov.ua/get/8d087add764744a093e07fd72ae323f9?Signature=qUd%2BtinLKblyVPVseuJAZGwwc5g5M0O%2FFGPegDFfNuwvF6aKQPSDYyeHslKWRXhZweOB7WUP6PZ1mR0ZH%2F6bBQ%3D%3D&KeyID=52462340",
+        "documentOf": "lot",
+        "dateModified": "2024-05-02T15:26:46.454796+03:00",
+        "language": "uk",
+        "confidentiality": "public",
+        "confidentialityRationale": ""
+      },
+      {
+        "description": "SHA1:90dff9a833c7f5577e45df2e2af02dafd7a5153f;SHA2-384:44aa6ec509bc926dca4929e9a7377b210a26bbfee42eed58f6bee98d102b8bf105001c8df3a114b9b07e795f96752d27;Antivirus: ESET Antivirus,fids:bf1048764ee64072be29187ed9575743:fide",
+        "id": "2ec0cb9aaa384dd090f3beb12133a289",
+        "datePublished": "2024-05-02T15:29:58.866172+03:00",
+        "hash": "md5:a6720f0533001d29b725f1f0fe8deca5",
+        "title": "sign.p7s",
+        "format": "application/pkcs7-signature",
+        "url": "https://public-docs.prozorro.gov.ua/get/31bed28afafe49468d6040d18627e953?Signature=ULo9AJ1R%2FlulrEf6aw9wL6hNOX9TJMn59XuRRr%2BCiZdRl6Fz5U1ajum6t6L%2FEaK6vOSvxYbZGVhxQ%2BSnNMdWAQ%3D%3D&KeyID=52462340",
+        "documentOf": "tender",
+        "dateModified": "2024-05-02T15:29:59.053054+03:00",
+        "language": "uk",
+        "confidentiality": "public"
+      },
+      {
+        "description": "SHA1:5c363e764d9594659048ed9f7effb8c7b477469b;SHA2-384:0268543f4577a75c1c0550710678873e84d4e0aacb8728a3ce296b7a8fba010f7089bebae691c57fde22f8893e33ec4a;Antivirus: ESET Antivirus,fids:7cae068af4d34f2288e608d824bf32fd:fide",
+        "id": "2ec0cb9aaa384dd090f3beb12133a289",
+        "datePublished": "2024-05-08T09:13:33.038862+03:00",
+        "hash": "md5:09f5a7bd453455645339d285cc01ef45",
+        "title": "sign.p7s",
+        "format": "application/pkcs7-signature",
+        "url": "https://public-docs.prozorro.gov.ua/get/1c06309864ff445587b1846092405bc5?Signature=nGsq2UtsjADhKB0bS%2BIxKTjcY0u5%2FCu7E%2BL4%2BH6MJzlu2OdsZoQa8FULE86KXQP%2BTprPuW6SzHPJC39VuhzgCg%3D%3D&KeyID=52462340",
+        "documentOf": "tender",
+        "dateModified": "2024-05-08T09:13:33.218159+03:00",
+        "language": "uk",
+        "confidentiality": "public"
+      },
+      {
+        "description": "SHA1:f3f839f7f907c21b53506827039704af2c97049b;SHA2-384:241b0b1ccc28b8e61fc93e3305b51e101f47d4bbf83f2d8d0b8a93112f45f1e2d3e90c222d7e739d2c630062e877de3b;Antivirus: ESET Antivirus,fids:2fb3c3501c0446698618624f7bea4896:fide",
+        "id": "2ec0cb9aaa384dd090f3beb12133a289",
+        "datePublished": "2024-05-08T09:28:36.727131+03:00",
+        "hash": "md5:d841fc784667c27efa46d73f45afddb7",
+        "title": "sign.p7s",
+        "format": "application/pkcs7-signature",
+        "url": "/test-data/TenderOffer/8/bids/2/0c95b243219e4c4bacf01680fede8b1f.json",
+        "documentOf": "tender",
+        "dateModified": "2024-05-08T09:28:36.848707+03:00",
+        "language": "uk",
+        "confidentiality": "public"
+      }
+    ],
+    "selfQualified": true,
+    "subcontractingDetails": "",
+    "lotValues": [
+      {
+        "value": {
+          "amount": 38800,
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        },
+        "relatedLot": "7ac71904b1f84ef0a99421d734182634",
+        "status": "active",
+        "date": "2024-05-02T15:26:46.454796+03:00",
+        "subcontractingDetails": ""
+      },
+      {
+        "value": {
+          "amount": 732630,
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        },
+        "relatedLot": "72d403c2dd564a938bce9f9eca4d7170",
+        "status": "active",
+        "date": "2024-05-02T15:26:46.454796+03:00",
+        "subcontractingDetails": "",
+        "participationUrl": "https://auctions.prozorro.gov.ua/tenders/eec99ac170ad4b6a988c2356e19500cc_72d403c2dd564a938bce9f9eca4d7170/login?bidder_id=0c95b243219e4c4bacf01680fede8b1f&hash=067b97c21fba4478b7b07cc5fe670654"
+      }
+    ]
+  }
+}

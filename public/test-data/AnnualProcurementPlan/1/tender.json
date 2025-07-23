@@ -1,0 +1,103 @@
+{
+  "data": {
+    "procuringEntity": {
+      "id": "01ab03f77be04d159c00ab2309f74960",
+      "name": "ТРИПІЛЬСЬКА ТЕПЛОВА ЕЛЕКТРИЧНА СТАНЦІЯ ПУБЛІЧНОГО АКЦІОНЕРНОГО ТОВАРИСТВА \"ЦЕНТРЕНЕРГО\"",
+      "identifier": {
+        "scheme": "UA-EDR",
+        "id": "00131334",
+        "legalName": "ТРИПІЛЬСЬКА ТЕПЛОВА ЕЛЕКТРИЧНА СТАНЦІЯ ПУБЛІЧНОГО АКЦІОНЕРНОГО ТОВАРИСТВА \"ЦЕНТРЕНЕРГО\""
+      },
+      "address": {
+        "streetAddress": "вулиця Промислова, 1, місто Українка, Обухівський район, Київська область",
+        "locality": "Українка",
+        "region": "Київська область",
+        "postalCode": "08720",
+        "countryName": "Україна"
+      },
+      "kind": "special"
+    },
+    "tender": {
+      "procurementMethod": "open",
+      "procurementMethodType": "aboveThresholdEU",
+      "tenderPeriod": {
+        "startDate": "2022-10-01T00:00:00+03:00"
+      }
+    },
+    "budget": {
+      "id": "44160000-9",
+      "description": "Трубна продукція",
+      "amount": 72996,
+      "currency": "UAH",
+      "amountNet": 0,
+      "period": {
+        "startDate": "2022-01-01T00:00:00+02:00",
+        "endDate": "2022-01-01T00:00:00+02:00"
+      },
+      "notes": "ТпТЕС",
+      "breakdown": [
+        {
+          "id": "98cc71c5efef4d278b89271350d27c4a",
+          "title": "own",
+          "description": "",
+          "value": {
+            "amount": 72996,
+            "currency": "UAH"
+          }
+        }
+      ]
+    },
+    "classification": {
+      "description": "Магістралі, трубопроводи, труби, обсадні труби, тюбінги та супутні вироби",
+      "scheme": "ДК021",
+      "id": "44160000-9"
+    },
+    "documents": [
+      {
+        "id": "fd219c7c9c1f4435ba9039202a218f13",
+        "hash": "md5:421a9ec4a8c41b69df26c9188e928534",
+        "title": "sign.p7s",
+        "format": "application/pkcs7-signature",
+        "url": "https://public-docs.prozorro.gov.ua/get/7f4b2b816493454e980c5ba283e107e8?Signature=PDSJ%2F%2FraxDF03p%2BOV5Ht6zQyYr%2FYmPzcWlBIs2MZZuJqmr5PxDxKRVUAqntxtAtuNzIyQZqFqzQ8iBr2aGBpDA%3D%3D&KeyID=52462340",
+        "datePublished": "2022-09-26T20:43:25.054397+03:00",
+        "dateModified": "2022-09-26T20:43:25.054442+03:00"
+      },
+      {
+        "id": "fd219c7c9c1f4435ba9039202a218f13",
+        "hash": "md5:6f6daa19a53cd8f922dc51b43f933215",
+        "title": "sign.p7s",
+        "format": "application/pkcs7-signature",
+        "url": "/test-data/AnnualProcurementPlan/1/sign.p7s",
+        "datePublished": "2022-09-27T13:54:30.867644+03:00",
+        "dateModified": "2022-09-27T13:54:30.866221+03:00"
+      }
+    ],
+    "tender_id": "2625f14e3c0f4bbc8aec6f3f9d709e0c",
+    "planID": "UA-P-2022-09-26-002848-a",
+    "buyers": [
+      {
+        "id": "09e95d8e5c654d72b0856dfe22c59102",
+        "name": "Публічне Акціонерне Товариство  \"Центренерго\"",
+        "identifier": {
+          "scheme": "UA-EDR",
+          "id": "22927045",
+          "legalName": "Публічне Акціонерне Товариство  \"Центренерго\""
+        },
+        "address": {
+          "streetAddress": "ВУЛИЦЯ РУДИКІВСЬКА, будинок 49",
+          "locality": "смт Козин, Обухівський район",
+          "region": "Київська область",
+          "postalCode": "08711",
+          "countryName": "Україна"
+        },
+        "kind": "special"
+      }
+    ],
+    "status": "complete",
+    "dateCreated": "2022-09-26T20:43:23.118716+03:00",
+    "dateModified": "2022-10-24T10:29:03.975008+03:00",
+    "datePublished": "2022-09-26T20:43:23.123952+03:00",
+    "owner": "it.ua",
+    "id": "7e82f16694cb4af0997e87b2e23905df"
+  }
+}

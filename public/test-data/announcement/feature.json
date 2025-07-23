@@ -1,0 +1,1739 @@
+{
+  "data": {
+    "procurementMethod": "open",
+    "awardPeriod": {
+      "startDate": "2020-08-25T14:25:07.203297+03:00",
+      "endDate": "2020-08-27T18:33:06.904956+03:00"
+    },
+    "mainProcurementCategory": "goods",
+    "features": [
+      {
+        "code": "1f5d8cb869ec4a68a30a6a0d901b5755",
+        "featureOf": "tenderer",
+        "description": "Умови розрахунків",
+        "enum": [
+          {
+            "value": 0.3,
+            "title": "оплата за фактом поставки товару"
+          },
+          {
+            "value": 0,
+            "title": "попередня оплата"
+          }
+        ],
+        "title": "Умови оплати"
+      }
+    ],
+    "complaintPeriod": {
+      "startDate": "2020-08-06T13:18:18.422968+03:00",
+      "endDate": "2020-08-19T00:00:00+03:00"
+    },
+    "auctionUrl": "https://auction.openprocurement.org/tenders/da8f4ff74394428695124a7f8af781f4",
+    "enquiryPeriod": {
+      "startDate": "2020-08-06T13:18:18.422968+03:00",
+      "clarificationsUntil": "2020-08-19T00:00:00+03:00",
+      "endDate": "2020-08-13T18:00:00+03:00",
+      "invalidationDate": "2020-08-15T05:48:25.690686+03:00"
+    },
+    "submissionMethod": "electronicAuction",
+    "complaints": [
+      {
+        "status": "mistaken",
+        "documents": [
+          {
+            "hash": "md5:b67ad01356d56ceb78ef5b7f2fe130e1",
+            "author": "complaint_owner",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/49a3dac0fc38496782ee463f618768ec?KeyID=52462340&Signature=I1ym0yUOwVhPI3b8ITmnpu8DBvuL2aPqkhjdrD6AE0XIX6y7bhN%2Fl%252BcbAEd4zv3tOZ7srAZ%252BIAbg6hnCpZkmDg%253D%253D",
+            "title": "СКАРГА на дії Замовника  до закупівлі UA-2020-08-06-003989-а.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-08-17T16:50:14.583263+03:00",
+            "dateModified": "2020-08-17T16:50:14.583285+03:00",
+            "id": "0f2466cf6f9d48409651b449670ace17"
+          },
+          {
+            "hash": "md5:8a078677ac03e58d8c9345b92908a376",
+            "author": "complaint_owner",
+            "format": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "url": "https://public.docs.openprocurement.org/get/bb4cdde2e7e248b09533e355ed90e8cb?KeyID=52462340&Signature=wrltP%2FN6%2FZHcpKcdS4zPqKT%252BQD58gM0n67FEiAOVW%2F%252B6lGZUlYUNaHyYC8ODal6CofEUFqrTMiHD65nybv95DA%253D%253D",
+            "title": "Скаргана дії Замовника до закупівлі UA-2020-08-06-003989-а.docx",
+            "documentOf": "tender",
+            "datePublished": "2020-08-17T16:50:15.003458+03:00",
+            "dateModified": "2020-08-17T16:50:15.003493+03:00",
+            "id": "e11de5a284e347e19d53d9e6922ad656"
+          }
+        ],
+        "author": {
+          "contactPoint": {
+            "telephone": "+380503846888",
+            "url": "http://www.vibroseparator.ua",
+            "name": "Злобіна Світлана",
+            "email": "ZSV@VIBROSEPARATOR.UA"
+          },
+          "identifier": {
+            "scheme": "UA-EDR",
+            "id": "39268892",
+            "legalName": "ТОВ \"ПАРТНЕР-ВС\""
+          },
+          "name": "ТОВ \"ПАРТНЕР-ВС\"",
+          "address": {
+            "countryName": "Україна"
+          }
+        },
+        "title": "Скарга ",
+        "value": {
+          "currency": "UAH",
+          "amount": 8400
+        },
+        "rejectReason": "complaintPeriodEnded",
+        "complaintID": "UA-2020-08-06-003989-a.b1",
+        "date": "2020-08-19T00:03:53.359364+03:00",
+        "type": "complaint",
+        "id": "4ecd09f76b3c4c358573242ef4fcc41b",
+        "description": "Скарга на дії Замовника"
+      },
+      {
+        "status": "invalid",
+        "dateDecision": "2020-08-21T11:43:20.621908+03:00",
+        "documents": [
+          {
+            "hash": "md5:b67ad01356d56ceb78ef5b7f2fe130e1",
+            "author": "complaint_owner",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/4da9cec4bb3b4f5f9541bdf7601ce032?KeyID=52462340&Signature=wO%252Bwul0GM0WQ6VaK5Jstf98xHBtFuAxIb%252BrIezhbzleZMgYTs7hYTeYq%252BcsUPm3NiKTI9XpLRc4xHvVAySIWDg%253D%253D",
+            "title": "СКАРГА на дії Замовника  до закупівлі UA-2020-08-06-003989-а.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-08-18T12:19:48.276759+03:00",
+            "dateModified": "2020-08-18T12:19:48.276796+03:00",
+            "id": "79d264d4094f46afb91389d2ce95bd61"
+          },
+          {
+            "hash": "md5:8a078677ac03e58d8c9345b92908a376",
+            "author": "complaint_owner",
+            "format": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "url": "https://public.docs.openprocurement.org/get/7faebe3fca7b4dd880e38f5c042514da?KeyID=52462340&Signature=o6YtS%2FNj8SIoK3Wk%2FiO77A74kOhjuuFUCO345e8ech94SUfyJGbAifz%2Ff4Tst6wK1y1y%252BjL5F1VBBs3KI3ZWCA%253D%253D",
+            "title": "Скаргана дії Замовника до закупівлі UA-2020-08-06-003989-а.docx",
+            "documentOf": "tender",
+            "datePublished": "2020-08-18T12:19:52.762852+03:00",
+            "dateModified": "2020-08-18T12:19:52.762886+03:00",
+            "id": "8bd2cbea597c4e00b9232f5387496de2"
+          },
+          {
+            "hash": "md5:8df6b2cd0297e5289f553eff3b3a2b63",
+            "author": "aboveThresholdReviewers",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/2fe4db83e54a4f6987b3529fcbf353d0?KeyID=52462340&Signature=7MT4naZwmjdYlovbXbqOs37nSJZGWZwJeck2ga5JOy2Jg2edRfZ9f2y7am4qT%252BJ0JC9n%252B0D%252Bw%252BVeVsO%2FSvGqBQ%253D%253D",
+            "title": "Рішення від 20.08.2020 №15854.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-08-21T11:42:29.321551+03:00",
+            "dateModified": "2020-08-21T11:42:29.321584+03:00",
+            "id": "f147e120f81c43b99d69447e7c507ece"
+          }
+        ],
+        "author": {
+          "contactPoint": {
+            "telephone": "+380503846888",
+            "url": "http://www.vibroseparator.ua",
+            "name": "Злобіна Світлана",
+            "email": "ZSV@VIBROSEPARATOR.UA"
+          },
+          "identifier": {
+            "scheme": "UA-EDR",
+            "id": "39268892",
+            "legalName": "ТОВ \"ПАРТНЕР-ВС\""
+          },
+          "name": "ТОВ \"ПАРТНЕР-ВС\"",
+          "address": {
+            "countryName": "Україна"
+          }
+        },
+        "title": "Скарга ",
+        "value": {
+          "currency": "UAH",
+          "amount": 8400
+        },
+        "rejectReason": "lawNonCompliance",
+        "dateSubmitted": "2020-08-18T12:26:16.638558+03:00",
+        "complaintID": "UA-2020-08-06-003989-a.b2",
+        "date": "2020-08-21T11:43:20.631264+03:00",
+        "acceptance": false,
+        "type": "complaint",
+        "id": "06a49dd9a8b04de5855d8045176ac212",
+        "description": "Скарга на дії замовника"
+      }
+    ],
+    "procuringEntity": {
+      "contactPoint": {
+        "telephone": "+380672642801",
+        "name": "Людмила Шишкіна",
+        "email": "gonbasparus@meta.ua"
+      },
+      "identifier": {
+        "scheme": "UA-EDR",
+        "id": "40055042",
+        "legalName": "Комунальний заклад \"Маріупольський міський водноспортивний комплекс\""
+      },
+      "name": "Комунальний заклад \"Маріупольський міський водноспортивний комплекс\"",
+      "kind": "general",
+      "address": {
+        "postalCode": "87525",
+        "countryName": "Україна",
+        "streetAddress": "Приморський бульвар, буд. 36",
+        "region": "Донецька область",
+        "locality": "м. Маріуполь"
+      }
+    },
+    "questions": [
+      {
+        "description": "Додатком №1 до Тендерної документації для юридичних осіб для підтвердження відповідності пропозиції учасника кваліфікаційним, зазначених у ч. 1 ст. 16 ЗУ «Про публічні закупівлі» передбачено наявність чинної ліцензії на будівництво об’єктів, що за класом наслідків (відповідальності) належать до об’єктів з середніми (СС2) та значними (СС3) наслідками. Прошу роз’яснити за якими критеріями (характеристиками можливих наслідків від відмови будівлі або споруди) предмет закупівлі, тобто Торговельна модульна споруда віднесена до класу наслідків з середніми (СС2) та значними (СС3) наслідками?",
+        "title": "щодо вимоги ліцензії на будівництво",
+        "author": {
+          "contactPoint": {
+            "telephone": "+380503846888",
+            "url": "http://www.vibroseparator.ua",
+            "name": "Злобіна Світлана",
+            "email": "ZSV@VIBROSEPARATOR.UA"
+          },
+          "identifier": {
+            "scheme": "UA-EDR",
+            "id": "39268892",
+            "legalName": "ТОВ \"ПАРТНЕР-ВС\""
+          },
+          "name": "ТОВ \"ПАРТНЕР-ВС\"",
+          "address": {
+            "countryName": "Україна"
+          }
+        },
+        "answer": "Доброго дня! Відповідаючи на ваше запитання повідомляемо наступне:Згідно «ДСТУ Б В.2.2-22:2008. БУДІВЛІ МОБІЛЬНІ (ІНВЕНТАРНІ) Загальні технічні умови» Клас відповідальності мобільних будівель і споруд слід приймати III згідно з ДБН В.1.2-2. Класу наслідків  СС-2 відповідають  ІІІ та ІV категорія складності.\n\nКлас наслідків визначається для кожного об'єкта. Віднесення об'єкта до певного класу наслідків (відповідальності) здійснюється проектною організацією за погодженням із замовником будівництва.",
+        "date": "2020-08-12T16:39:10.806001+03:00",
+        "dateAnswered": "2020-08-13T13:55:15.617351+03:00",
+        "id": "2f47963a34cf406e9e709c7a50ef37ce",
+        "questionOf": "tender"
+      },
+      {
+        "description": "Відповідно до Розділу V «Оцінка тендерних пропозицій» Інструкції з підготовки Тендерної документації, а саме п. 1.3 зазначено, що замовником визначаються критерії та методика оцінки відповідно до статті 29 ЗУ «Про публічні закупівлі». Прошу роз’яснити, який саме критерій оцінки буде застосований замовником, адже ст. 29 ЗУ «Про публічні закупівлі» передбачає, що критерієм оцінки є:                                        - ціна; або\n- вартість життєвого циклу; або\n",
+        "title": "щодо оцінки ТП",
+        "author": {
+          "contactPoint": {
+            "telephone": "+380503846888",
+            "url": "http://www.vibroseparator.ua",
+            "name": "Злобіна Світлана",
+            "email": "ZSV@VIBROSEPARATOR.UA"
+          },
+          "identifier": {
+            "scheme": "UA-EDR",
+            "id": "39268892",
+            "legalName": "ТОВ \"ПАРТНЕР-ВС\""
+          },
+          "name": "ТОВ \"ПАРТНЕР-ВС\"",
+          "address": {
+            "countryName": "Україна"
+          }
+        },
+        "answer": "Доброго дня! Відповідаючи на ваше запитання повідомляемо що згідно частини 1. ст. 29 ЗУ \"Про Публічні закупівлі\" Оцінка тендерних пропозицій/пропозицій проводиться автоматично електронною системою закупівель на основі критеріїв і методики оцінки, зазначених замовником у тендерній документації/оголошенні про проведення спрощеної закупівлі, шляхом застосування електронного аукціону.",
+        "date": "2020-08-12T16:40:41.157568+03:00",
+        "dateAnswered": "2020-08-13T14:06:21.857582+03:00",
+        "id": "3645affc99c7424a98c2d7a9f1a1463b",
+        "questionOf": "tender"
+      },
+      {
+        "description": "Відповідно до Розділу V «Оцінка тендерних пропозицій» Інструкції з підготовки Тендерної документації, а саме п. 1.3 зазначено, що замовником визначаються критерії та методика оцінки відповідно до статті 29 ЗУ «Про публічні закупівлі». Прошу роз’яснити, який саме критерій оцінки буде застосований замовником, адже ст. 29 ЗУ «Про публічні закупівлі» передбачає, що критерієм оцінки є:                                        - ціна; або\n- вартість життєвого циклу; або\n- ціна/вартість життєвого циклу разом з іншими критеріями оцінки, зокрема, такими як: умови оплати, строк виконання, гарантійне обслуговування, передача технології та підготовка управлінських, наукових і виробничих кадрів, застосування заходів охорони навколишнього середовища та/або соціального захисту, які пов’язані із предметом закупівлі.\n",
+        "title": "щодо оцінки ТП",
+        "author": {
+          "contactPoint": {
+            "telephone": "+380503846888",
+            "url": "http://www.vibroseparator.ua",
+            "name": "Злобіна Світлана",
+            "email": "ZSV@VIBROSEPARATOR.UA"
+          },
+          "identifier": {
+            "scheme": "UA-EDR",
+            "id": "39268892",
+            "legalName": "ТОВ \"ПАРТНЕР-ВС\""
+          },
+          "name": "ТОВ \"ПАРТНЕР-ВС\"",
+          "address": {
+            "countryName": "Україна"
+          }
+        },
+        "answer": "Доброго дня! Відповідаючи на ваше запитання повідомляемо що згідно частини 1. ст. 29 ЗУ \"Про Публічні закупівлі\" Оцінка тендерних пропозицій/пропозицій проводиться автоматично електронною системою закупівель на основі критеріїв і методики оцінки, зазначених замовником у тендерній документації/оголошенні про проведення спрощеної закупівлі, шляхом застосування електронного аукціону. Дата і час проведення електронного аукціону визначаються електронною системою закупівель автоматично. ",
+        "date": "2020-08-12T16:41:49.584891+03:00",
+        "dateAnswered": "2020-08-13T14:35:09.823118+03:00",
+        "id": "208dc7e1c28b41b3b912be8af1cd9353",
+        "questionOf": "tender"
+      },
+      {
+        "description": "Відповідно до Розділу VI «Результати торгів та укладення договору про закупівлю» Інструкції з підготовки Тендерної документації, а саме п. 4.5.8 передбачені Зміни умов у зв’язку із застосуванням положень ч. 6 ст. 42 Закону. В той же час ст. 42 ЗУ «Про публічні закупівлі» регулює вимоги до Звіту про виконання договору про закупівлю. Прошу роз’яснити, яке відношення має Звіт про виконання договору про закупівлю до укладення договору про закупівлю та його істотних умов?",
+        "title": "щодо вимог розділу VI п.4.5.8",
+        "author": {
+          "contactPoint": {
+            "telephone": "+380503846888",
+            "url": "http://www.vibroseparator.ua",
+            "name": "Злобіна Світлана",
+            "email": "ZSV@VIBROSEPARATOR.UA"
+          },
+          "identifier": {
+            "scheme": "UA-EDR",
+            "id": "39268892",
+            "legalName": "ТОВ \"ПАРТНЕР-ВС\""
+          },
+          "name": "ТОВ \"ПАРТНЕР-ВС\"",
+          "address": {
+            "countryName": "Україна"
+          }
+        },
+        "answer": "Доброго дня! Відповідаючи на ваше запитання повідомляемо що зміни до договору здійснюються згідно ст 41 ЗУ \"Про Публічні закупівлі\" ",
+        "date": "2020-08-12T16:45:09.211989+03:00",
+        "dateAnswered": "2020-08-13T14:41:13.557377+03:00",
+        "id": "91a5f4b040b046588738e64741f49ff9",
+        "questionOf": "tender"
+      }
+    ],
+    "owner": "prom.ua",
+    "plans": [
+      {
+        "id": "0abe0c44a6c943939b8e6c4eb1e3da00"
+      }
+    ],
+    "documents": [
+      {
+        "hash": "md5:56362dc0b80bb9dd7990229ee9264fcb",
+        "author": "tender_owner",
+        "format": "application/msword",
+        "url": "https://public.docs.openprocurement.org/get/6c62eddaaa194bc1bc1132c176af1895?KeyID=52462340&Signature=wCPJ8cZTH0wJtvq69N9jxyrj4JWEopIpR45KkjRBu2nPz2pP%2FiXZc%252Bd9efp2huOXRFUC97t5luip2r%2FJr%252BRoDg%253D%253D",
+        "title": "ТД Торговельна модульна споруда ММСК.doc",
+        "documentOf": "tender",
+        "datePublished": "2020-08-06T13:18:19.349105+03:00",
+        "documentType": "biddingDocuments",
+        "dateModified": "2020-08-06T13:18:19.349125+03:00",
+        "relatedItem": "da8f4ff74394428695124a7f8af781f4",
+        "id": "2187434913d548a7ae06a83385389b20"
+      },
+      {
+        "hash": "md5:b4d1b0676dff5b41d7a84b91e0de79b8",
+        "author": "tender_owner",
+        "format": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "url": "https://public.docs.openprocurement.org/get/daf119dad2874f428dcf18656e952307?KeyID=52462340&Signature=TuObAN%2FVj%252BRM8JTNfZC4FLpae58d3iKi3Dnfa3XEub%2FhhJWhhIoA2IudlLfeC2wPQ%2FV9yVgIVTcxsxmISi8FDA%253D%253D",
+        "title": "Договір.docx",
+        "documentOf": "tender",
+        "datePublished": "2020-08-06T13:18:19.973979+03:00",
+        "documentType": "contractProforma",
+        "dateModified": "2020-08-06T13:18:19.974009+03:00",
+        "relatedItem": "da8f4ff74394428695124a7f8af781f4",
+        "id": "e6cac47fe5b44d548b832a304f00ac00"
+      },
+      {
+        "hash": "md5:b215e7629378166978bdb8a293dab705",
+        "author": "tender_owner",
+        "format": "application/pkcs7-signature",
+        "url": "https://public.docs.openprocurement.org/get/b67ff67786f44b1f85e1b8724d4343d1?KeyID=52462340&Signature=lGdTngFgBedZjQfS2XgmB6elSJAgCHPkzY3YxxP1%252Ba5ZZTPxO4K51gPOZNPAgZWfhyoYMpC9%252BT74Vrd5Xrj%2FDw%253D%253D",
+        "title": "sign.p7s",
+        "documentOf": "tender",
+        "datePublished": "2020-08-06T13:20:16.808507+03:00",
+        "dateModified": "2020-08-06T13:20:16.808546+03:00",
+        "relatedItem": "da8f4ff74394428695124a7f8af781f4",
+        "id": "93feb9830da048558454463e28e39f21"
+      },
+      {
+        "hash": "md5:a48b879254755c6ffc48abf25deaa2db",
+        "author": "tender_owner",
+        "format": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "url": "https://public.docs.openprocurement.org/get/199353a216794d8588250f825fee18ed?KeyID=52462340&Signature=nWB0xsj7w%2FLjUHYvDZwsZ5bKopwmAMtD8Rymok3KaMOIdmyZmmI74u8QZPBDdhNewDfGiiparjDDLdsmOCgqDQ%253D%253D",
+        "title": "Договір 14.08.2020.docx",
+        "documentOf": "tender",
+        "datePublished": "2020-08-06T13:18:19.973979+03:00",
+        "documentType": "contractProforma",
+        "dateModified": "2020-08-14T18:03:56.490072+03:00",
+        "relatedItem": "da8f4ff74394428695124a7f8af781f4",
+        "id": "e6cac47fe5b44d548b832a304f00ac00"
+      },
+      {
+        "hash": "md5:07d164a6c85c93352ea6d44dc442b26b",
+        "author": "tender_owner",
+        "format": "application/msword",
+        "url": "https://public.docs.openprocurement.org/get/4b91fde1b79544f3bd787872c98fcb7b?KeyID=52462340&Signature=SfozLctx%252BSRy9ByAsu46NMPwj4jk%2FFNu%252B2atF37smI45sCGiXh5rKAGeAGAm2DywbWedCl3qRonvnvl%252BC2u8AA%253D%253D",
+        "title": "ТД Торговельна модульна споруда ММСК 14.08.doc",
+        "documentOf": "tender",
+        "datePublished": "2020-08-06T13:18:19.349105+03:00",
+        "documentType": "biddingDocuments",
+        "dateModified": "2020-08-14T18:03:57.790045+03:00",
+        "relatedItem": "da8f4ff74394428695124a7f8af781f4",
+        "id": "2187434913d548a7ae06a83385389b20"
+      },
+      {
+        "hash": "md5:cf9c4edb5d46b033f1a9dc3217a9d7e4",
+        "author": "tender_owner",
+        "format": "application/msword",
+        "url": "https://public.docs.openprocurement.org/get/878e6a9b254a48759fb368f32be1e4d6?KeyID=52462340&Signature=1cCTNzoDdFYQs0lITggs9AI5764KwB%252Bsn%2FPSR%2FSJsrqw%2FXrKfBtIJF4r2E%252BJy3zr%2F1MlGuT99LPpXhFeJ14tCA%253D%253D",
+        "title": "Перелік змін Торговельна модульна споруда 2,8М 14.08.2020.doc",
+        "documentOf": "tender",
+        "datePublished": "2020-08-14T18:03:58.771940+03:00",
+        "dateModified": "2020-08-14T18:03:58.771972+03:00",
+        "relatedItem": "da8f4ff74394428695124a7f8af781f4",
+        "id": "dc07788e7bae4840ac7109242b5b45ba"
+      },
+      {
+        "hash": "md5:f982a4907a2de9b7cdba90c1b87f3311",
+        "author": "tender_owner",
+        "format": "application/pdf",
+        "url": "https://public.docs.openprocurement.org/get/e3e74e62b9eb442cba78a195d154228d?KeyID=52462340&Signature=d9f%2Fqeid8oR%2FHbzERs5QVmxlWVFZrYhluO2uXyYH1GqdHLFiUJ2Qpfj%252BIwabO9rdaQQ9WUQVxntWImRIwwI8CA%253D%253D",
+        "title": "Протокол 00341 14.08.2020.pdf",
+        "documentOf": "tender",
+        "datePublished": "2020-08-14T18:03:59.729062+03:00",
+        "dateModified": "2020-08-14T18:03:59.729083+03:00",
+        "relatedItem": "da8f4ff74394428695124a7f8af781f4",
+        "id": "901f59b4320f4e51aac67dc165096074"
+      },
+      {
+        "hash": "md5:8b196b9350db2ea94a91e05fee8a4a53",
+        "author": "tender_owner",
+        "format": "application/pkcs7-signature",
+        "url": "test-data/announcement/sign_feature.p7s",
+        "title": "sign.p7s",
+        "documentOf": "tender",
+        "datePublished": "2020-08-06T13:20:16.808507+03:00",
+        "dateModified": "2020-08-15T05:48:25.459882+03:00",
+        "relatedItem": "da8f4ff74394428695124a7f8af781f4",
+        "id": "93feb9830da048558454463e28e39f21"
+      },
+      {
+        "hash": "md5:00a96c9756d4a87154795769f3e8e19d",
+        "author": "auction",
+        "format": "text/plain",
+        "url": "https://public.docs.openprocurement.org/get/15a7a845f8904db7a1f9dc4fba17fdf2?KeyID=52462340&Signature=40nAUEN5YOL08Scpt6HzEJfZ1zmCcQERm1QjN5vcgC06tznHcNq0Li9H1HvwdZFe3SYraftc2eJjD8YqVlQABg%253D%253D",
+        "title": "audit_da8f4ff74394428695124a7f8af781f4.yaml",
+        "documentOf": "tender",
+        "datePublished": "2020-08-25T14:25:05.986995+03:00",
+        "dateModified": "2020-08-25T14:25:05.987028+03:00",
+        "id": "fcdf02909d1d46fca1dd0b5244d344fa"
+      },
+      {
+        "hash": "md5:9d5fb95a2a08b6f3bd67bf441ee4eff0",
+        "author": "auction",
+        "format": "text/plain",
+        "url": "https://public.docs.openprocurement.org/get/6d2e084980b44aada901eb4d6176583f?KeyID=52462340&Signature=2C1Vu2Ttbikwy4oSPl7etJ3wf%252B%252BQjfDE686GaLiVusyd6XFMGdYV1m%2FD3eaQVYYYtjaYP0iFn6zwnICLWwr6Cw%253D%253D",
+        "title": "audit_da8f4ff74394428695124a7f8af781f4.yaml",
+        "documentOf": "tender",
+        "datePublished": "2020-08-25T14:25:05.986995+03:00",
+        "dateModified": "2020-08-25T14:25:08.727497+03:00",
+        "id": "fcdf02909d1d46fca1dd0b5244d344fa"
+      }
+    ],
+    "title": "Торговельна модульна споруда",
+    "tenderID": "UA-2020-08-06-003989-a",
+    "dateModified": "2020-09-10T12:24:40.819573+03:00",
+    "status": "complete",
+    "tenderPeriod": {
+      "startDate": "2020-08-06T13:18:18.422968+03:00",
+      "endDate": "2020-08-23T18:00:00+03:00"
+    },
+    "description": "",
+    "contracts": [
+      {
+        "status": "active",
+        "documents": [
+          {
+            "hash": "md5:e969cfdedee3f82409e5993a58c3b706",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/c16677ba1a7d40edae7c522d94ac41e1?KeyID=52462340&Signature=S2NMy%2FzRHyDm2NDe5IUt5HsWHzvSdrTAzVZpSroP7IXttIVk4dGqWnOJBOO0%2F603hsHT1sOAsMYFGetPoqYPBw%253D%253D",
+            "title": "договор 0015.PDF",
+            "documentOf": "tender",
+            "datePublished": "2020-09-10T12:22:51.369648+03:00",
+            "documentType": "contractSigned",
+            "dateModified": "2020-09-10T12:22:51.369681+03:00",
+            "id": "b751b8d08b084d6bbc12cdee35441b8f"
+          },
+          {
+            "hash": "md5:37d2150037d247f2e0d0c68bff000f09",
+            "format": "application/pkcs7-signature",
+            "url": "https://public.docs.openprocurement.org/get/701a245551fb47cf8ef998af95b90c6c?KeyID=52462340&Signature=VM9%2F3CLhFmhR0bsf7lKd%252BK8eolOjzwIo%2F6I4l%2FtWbWZh1IrFDGaW%2Fz9JAaPVjq01ravw0w0%252B%252B4jixVCPkbf4DQ%253D%253D",
+            "title": "sign.p7s",
+            "documentOf": "tender",
+            "datePublished": "2020-09-10T12:24:17.684083+03:00",
+            "dateModified": "2020-09-10T12:24:17.684107+03:00",
+            "id": "bd7ca4ecc15a44448fde9c0a0296ed4d"
+          }
+        ],
+        "items": [
+          {
+            "description": "Торговельна модульна споруда",
+            "classification": {
+              "scheme": "ДК021",
+              "description": "Конструкції та їх частини",
+              "id": "44210000-5"
+            },
+            "deliveryAddress": {
+              "postalCode": "87525",
+              "countryName": "Україна",
+              "streetAddress": "Приморський бульвар, 36",
+              "region": "Донецька область",
+              "locality": "Маріуполь"
+            },
+            "deliveryDate": {
+              "endDate": "2020-09-25T00:00:00+03:00"
+            },
+            "id": "b4703d44dfb74721af0274513bfbf366",
+            "unit": {
+              "code": "H87",
+              "name": "штуки"
+            },
+            "quantity": 1
+          }
+        ],
+        "suppliers": [
+          {
+            "scale": "mid",
+            "contactPoint": {
+              "telephone": "+380504004648",
+              "name": "Олег Мирошниченко",
+              "email": "mail@artmetall.ua"
+            },
+            "identifier": {
+              "scheme": "UA-EDR",
+              "id": "37805242",
+              "legalName": "ТОВ \"АРТМЕТАЛ УКРАЇНА\""
+            },
+            "name": "ТОВ \"АРТМЕТАЛ УКРАЇНА\"",
+            "address": {
+              "postalCode": "49000",
+              "countryName": "Україна",
+              "streetAddress": "ВУЛИЦЯ ЯНТАРНА, будинок 42, квартира 165",
+              "region": "Дніпропетровська область",
+              "locality": "місто Дніпро"
+            }
+          }
+        ],
+        "contractNumber": "15",
+        "period": {
+          "startDate": "2020-09-10T00:00:00+03:00",
+          "endDate": "2020-12-31T00:00:00+02:00"
+        },
+        "dateSigned": "2020-09-10T12:21:00+03:00",
+        "value": {
+          "currency": "UAH",
+          "amount": 2614800,
+          "amountNet": 2179000,
+          "valueAddedTaxIncluded": true
+        },
+        "date": "2020-09-10T12:24:40.819573+03:00",
+        "awardID": "f1d218dc65ad40b192caf9a21f2e9e5e",
+        "id": "300d20238da743c0b4a6ad3210bfd889",
+        "contractID": "UA-2020-08-06-003989-a-c1"
+      }
+    ],
+    "auctionPeriod": {
+      "startDate": "2020-08-25T13:58:05+03:00",
+      "endDate": "2020-08-25T14:25:07.080951+03:00"
+    },
+    "procurementMethodType": "aboveThresholdUA",
+    "awards": [
+      {
+        "status": "unsuccessful",
+        "documents": [
+          {
+            "hash": "md5:68f7c8a2e9e8d7c74d2ba898aa036589",
+            "author": "bots",
+            "format": "application/yaml",
+            "url": "https://public.docs.openprocurement.org/get/117f336dd24f43fe9bbc1d8a1940a63e?KeyID=52462340&Signature=LEIeSr6w9i9ysyrOVjqtuFwCW6Lm0yhm%2FDaZmQKy6DHscbd7PsB2QamLOi3%252BP%252BTG3rbvF0q68A17y5LqYTlrCQ%253D%253D",
+            "title": "edr_identification.yaml",
+            "documentOf": "tender",
+            "datePublished": "2020-08-25T14:25:18.250433+03:00",
+            "documentType": "registerExtract",
+            "dateModified": "2020-08-25T14:25:18.250453+03:00",
+            "id": "6509026c2b0a4cbc9db7a6cd0e205a62"
+          },
+          {
+            "hash": "md5:adc822495ebc26a5f9e25f8136bc4f17",
+            "author": "tender_owner",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/93b64adbab7f42c3807f797545aa3d73?KeyID=52462340&Signature=Zfjecp7d0nXhZkhPmGsSdpiMrBZvdCPEmUdSnR%252BxQu5zLWHSnsCHkAC6qKGIX%2Fk2KU0f6sthhmYz1LKe6LBcCg%253D%253D",
+            "title": "протокол 038.PDF",
+            "documentOf": "tender",
+            "datePublished": "2020-08-27T18:01:15.832987+03:00",
+            "documentType": "evaluationReports",
+            "dateModified": "2020-08-27T18:01:15.833022+03:00",
+            "id": "d7d8200ae544485cb32f9bcc194694cd"
+          },
+          {
+            "hash": "md5:c5cb2cfbd4e7cebba14393b584c3b60c",
+            "author": "tender_owner",
+            "format": "application/pkcs7-signature",
+            "url": "https://public.docs.openprocurement.org/get/a09ebd5909484dd48773de69fe550627?KeyID=52462340&Signature=zdALPAkpRkWfVw%252Bt86liCmc3f%252B0aMybgnJomcLvYoltxRQ7i0gHX6Ff0lRCCjIWMGdtOLoiD%252Bvv2RrrDg4GFBA%253D%253D",
+            "title": "sign.p7s",
+            "documentOf": "tender",
+            "datePublished": "2020-08-27T18:02:22.858730+03:00",
+            "dateModified": "2020-08-27T18:02:22.858764+03:00",
+            "id": "9703d238a096444ca406b5429a599eaa"
+          }
+        ],
+        "description": "Учасник процедури закупівлі не надав обґрунтування аномально низької ціни тендерної пропозиції",
+        "title": "Учасник процедури закупівлі не надав обґрунтування аномально низької ціни тендерної пропозиції",
+        "suppliers": [
+          {
+            "scale": "mid",
+            "contactPoint": {
+              "telephone": "+380503846888",
+              "url": "http://www.vibroseparator.ua",
+              "name": "Злобіна Світлана",
+              "email": "ZSV@VIBROSEPARATOR.UA"
+            },
+            "identifier": {
+              "scheme": "UA-EDR",
+              "id": "39268892",
+              "legalName": "ТОВ \"ПАРТНЕР-ВС\""
+            },
+            "name": "ТОВ \"ПАРТНЕР-ВС\"",
+            "address": {
+              "postalCode": "",
+              "countryName": "Україна",
+              "streetAddress": "10001, Житомирська обл., місто Житомир, ВУЛИЦЯ ПАРАДЖАНОВА СЕРГІЯ, будинок 93",
+              "region": "Житомирська область",
+              "locality": "Житомир"
+            }
+          }
+        ],
+        "complaintPeriod": {
+          "startDate": "2020-08-27T18:02:23.424102+03:00",
+          "endDate": "2020-09-07T00:00:00+03:00"
+        },
+        "bid_id": "c2bd17f4a34f41728122daff4158feb7",
+        "value": {
+          "currency": "UAH",
+          "amount": 1830000,
+          "valueAddedTaxIncluded": true
+        },
+        "qualified": false,
+        "milestones": [
+          {
+            "date": "2020-08-25T14:25:07.258656+03:00",
+            "description": "найбільш економічно вигідна пропозиція є меншою на 30 або більше відсотків від наступної ціни/приведеної ціни тендерної пропозиції за результатами проведеного електронного аукціону",
+            "code": "alp",
+            "id": "f9c6ccacd51848de95199c20756ce5f2",
+            "dueDate": "2020-08-27T00:00:00+03:00"
+          }
+        ],
+        "date": "2020-08-27T18:02:23.564917+03:00",
+        "eligible": false,
+        "id": "03c9695f615b4ecdaafd13cf135d9679"
+      },
+      {
+        "status": "active",
+        "documents": [
+          {
+            "hash": "md5:27a5c769c11fb9d7be9aa93fc6de6e9b",
+            "author": "bots",
+            "format": "application/yaml",
+            "url": "https://public.docs.openprocurement.org/get/b42d2225724e4fa6b822abfa6a4b6b26?KeyID=52462340&Signature=OACqkr2fBmw2t%2FNZWUw0M3aqaffsghLWB9PvS1j7xOoWJs0A9Sn%2Fg2eLV6dCs23zT07hggfhcTO4cSDuxpX4Dw%253D%253D",
+            "title": "edr_identification.yaml",
+            "documentOf": "tender",
+            "datePublished": "2020-08-27T18:02:40.856012+03:00",
+            "documentType": "registerExtract",
+            "dateModified": "2020-08-27T18:02:40.856032+03:00",
+            "id": "caa7c035d7fc44dbb3a8bc1202108d90"
+          },
+          {
+            "hash": "md5:8d85afe523edad6fe351dd70db747af9",
+            "author": "tender_owner",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/bcdf4add82a342baa523bfaaef78a422?KeyID=52462340&Signature=Xih7ndOC4x%2FZBPM6tCtGSKH7L4cIrtTsxAQc8bd1DMxFT691p5qwUuYjyKtPqi4t5EgxgybLNUXTtzrC2CirBQ%253D%253D",
+            "title": "протокол 039.PDF",
+            "documentOf": "tender",
+            "datePublished": "2020-08-27T18:32:17.507559+03:00",
+            "documentType": "evaluationReports",
+            "dateModified": "2020-08-27T18:32:17.507594+03:00",
+            "id": "a06e4272575a49c58e302c63711657d9"
+          },
+          {
+            "hash": "md5:6f78df2adaaa60cb29673a70514690f8",
+            "author": "tender_owner",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/207dc450e976468c82641d3219abcaf0?KeyID=52462340&Signature=fAdG5S3xzSpnouYrldePKYp%252BbQ9bPmCGTjM0%252Bqw0CIjOrjklKyAGFP4C6TZwJhftpQ94Bl6%2FSmgOIgfidKODAw%253D%253D",
+            "title": "повідомлення.PDF",
+            "documentOf": "tender",
+            "datePublished": "2020-08-27T18:32:19.270238+03:00",
+            "dateModified": "2020-08-27T18:32:19.270258+03:00",
+            "id": "835500b16014490b9321c308cd7f5f81"
+          },
+          {
+            "hash": "md5:fc561cbb5a208fa7dc1304781512fd1b",
+            "author": "tender_owner",
+            "format": "application/pkcs7-signature",
+            "url": "https://public.docs.openprocurement.org/get/dab1453dcf434eb8a441c2b0cce69d4f?KeyID=52462340&Signature=PrVZcAlzrTpDXy6Ll9cqW5diwcr0xaCX46A4KTXCw5gGn2Vx26dyJ%252BF1nosa2eHSkI2JN%252BR19QV4jS2%252BqH9eAw%253D%253D",
+            "title": "sign.p7s",
+            "documentOf": "tender",
+            "datePublished": "2020-08-27T18:33:06.329281+03:00",
+            "dateModified": "2020-08-27T18:33:06.329301+03:00",
+            "id": "9050ef49360a4ef49359c0b8f5de7aed"
+          },
+          {
+            "hash": "md5:35359681e3e8606900a5bfb65bccab0c",
+            "author": "bots",
+            "format": "text/plain",
+            "url": "https://public.docs.openprocurement.org/get/b069b76034f54cd4b7aa985c06d9371f?KeyID=52462340&Signature=qiHQLfWSJLyLj%252BHTjUQQlwHFK%252BqFIHUDm%2FgI%2FwRlNCVjIgmXSTyWxDJY9Uc8pa9Y%2FPvPuWys%2FCxyk6RKf2f4Cg%253D%253D",
+            "title": "26590002426097J1603102100001104610820202659.KVT.p7s",
+            "documentOf": "tender",
+            "datePublished": "2020-08-27T18:33:20.553008+03:00",
+            "documentType": "registerFiscal",
+            "dateModified": "2020-08-27T18:33:20.553030+03:00",
+            "id": "783122fb41e9468f9bbfb984ed1536a4"
+          },
+          {
+            "hash": "md5:4019886bedc4d9656b64e9e94106eddf",
+            "author": "bots",
+            "format": "text/plain",
+            "url": "https://public.docs.openprocurement.org/get/3e6bd07f1d0c4b06b7e627c13e41797b?KeyID=52462340&Signature=gquSgcOOrPEelLb94noFqx3slK8gWANUivsroNSqPAR2aXQ8Dy9WeJVIOZXnC9W6bvDFCMZRSFWzJksT7wsOCQ%253D%253D",
+            "title": "26590002426097J1603102100000007510920202659.KVT.p7s",
+            "documentOf": "tender",
+            "datePublished": "2020-09-01T09:01:18.782361+03:00",
+            "documentType": "registerFiscal",
+            "dateModified": "2020-09-01T09:01:18.782380+03:00",
+            "id": "f367178dd463449b90bc6447e7b6d09d"
+          },
+          {
+            "hash": "md5:5fed148de341436f571d761636961e49",
+            "author": "bots",
+            "format": "text/plain",
+            "url": "https://public.docs.openprocurement.org/get/549239a743d34acdbee201de63680247?KeyID=52462340&Signature=kbqIXNw55yGCWW16ajrFTTCek7AzM70tumk2ET4pTG7eFfsv12h4YA9eXcUH1WI3QVOCRgABB%2Fo4%2FxSfPgg7Dg%253D%253D",
+            "title": "26590002426097J1703102100000007510920202659.XML.p7s",
+            "documentOf": "tender",
+            "datePublished": "2020-09-01T11:03:07.959608+03:00",
+            "documentType": "registerFiscal",
+            "dateModified": "2020-09-01T11:03:07.959637+03:00",
+            "id": "1138acaa76b44443a4aea5d980227d57"
+          }
+        ],
+        "complaintPeriod": {
+          "startDate": "2020-08-27T18:33:06.894938+03:00",
+          "endDate": "2020-09-07T00:00:00+03:00"
+        },
+        "suppliers": [
+          {
+            "scale": "mid",
+            "contactPoint": {
+              "telephone": "+380504004648",
+              "name": "Олег Мирошниченко",
+              "email": "mail@artmetall.ua"
+            },
+            "identifier": {
+              "scheme": "UA-EDR",
+              "id": "37805242",
+              "legalName": "ТОВ \"АРТМЕТАЛ УКРАЇНА\""
+            },
+            "name": "ТОВ \"АРТМЕТАЛ УКРАЇНА\"",
+            "address": {
+              "postalCode": "49000",
+              "countryName": "Україна",
+              "streetAddress": "ВУЛИЦЯ ЯНТАРНА, будинок 42, квартира 165",
+              "region": "Дніпропетровська область",
+              "locality": "місто Дніпро"
+            }
+          }
+        ],
+        "eligible": true,
+        "bid_id": "392650272f134aeca91bc2b8257ced57",
+        "value": {
+          "currency": "UAH",
+          "amount": 2614800,
+          "valueAddedTaxIncluded": true
+        },
+        "qualified": true,
+        "date": "2020-08-27T18:33:06.930415+03:00",
+        "id": "f1d218dc65ad40b192caf9a21f2e9e5e"
+      }
+    ],
+    "date": "2020-09-10T12:24:40.819573+03:00",
+    "milestones": [
+      {
+        "code": "prepayment",
+        "description": "Умови оплати залежатимуть від нецінового критерію \"Умови розрахунків\", який обирає учасник закупівлі, згідно умов тендерної документації. Якщо учасник обирає \"попередню оплату 30%\", то післяоплата складає 70%",
+        "sequenceNumber": 0,
+        "title": "signingTheContract",
+        "duration": {
+          "type": "calendar",
+          "days": 30
+        },
+        "percentage": 30,
+        "type": "financing",
+        "id": "e6303a40d4934826992a9c9ba9744cbb"
+      },
+      {
+        "code": "postpayment",
+        "description": "Умови оплати залежатимуть від нецінового критерію \"Умови розрахунків\", який обирає учасник закупівлі, згідно умов тендерної документації. Якщо учасник обирає \"оплата за фактом поставки товару\", то оплата за фактом поставки товару складає 100%",
+        "sequenceNumber": 1,
+        "title": "deliveryOfGoods",
+        "duration": {
+          "type": "calendar",
+          "days": 30
+        },
+        "percentage": 70,
+        "type": "financing",
+        "id": "a50a596d11e941efafc5baeac3dd0398"
+      }
+    ],
+    "minimalStep": {
+      "currency": "UAH",
+      "amount": 15000,
+      "valueAddedTaxIncluded": true
+    },
+    "items": [
+      {
+        "description": "Торговельна модульна споруда",
+        "classification": {
+          "scheme": "ДК021",
+          "description": "Конструкції та їх частини",
+          "id": "44210000-5"
+        },
+        "deliveryAddress": {
+          "postalCode": "87525",
+          "countryName": "Україна",
+          "streetAddress": "Приморський бульвар, 36",
+          "region": "Донецька область",
+          "locality": "Маріуполь"
+        },
+        "deliveryDate": {
+          "endDate": "2020-09-25T00:00:00+03:00"
+        },
+        "id": "b4703d44dfb74721af0274513bfbf366",
+        "unit": {
+          "code": "H87",
+          "name": "штуки"
+        },
+        "quantity": 1
+      }
+    ],
+    "bids": [
+      {
+        "status": "active",
+        "documents": [
+          {
+            "hash": "md5:b9ee0d85778987e12c70375c05fb12d4",
+            "confidentiality": "public",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/1d342bc0e16c453b89fceb1dc23bcc1a?KeyID=52462340&Signature=d2MiacTgG345kpYzcTMpJTh3zpI5KkDGF5vYcqtv5S%2FVXwenO%252BENqldPkDTxH6aUpllKknMdicopFI5OI492Dg%253D%253D",
+            "confidentialityRationale": "",
+            "title": "Тендерна пропозиція.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-08-21T16:41:39.217529+03:00",
+            "documentType": "commercialProposal",
+            "dateModified": "2020-08-21T16:41:39.217578+03:00",
+            "id": "3ab5ea4c610f438dbc339f34501f22d4"
+          },
+          {
+            "hash": "md5:5657ecdbcc1a8c73b9cdac1a4a29720f",
+            "confidentiality": "public",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/f0c4f7e48eb04b76b0e0e8f0fd1af107?KeyID=52462340&Signature=iE4Nn0DE5zFmFVrrqJrZ0VmowdwiU6P%2Fwc0oRuQFpUXxP6Pc2GBrJMQRKWzbp4HEILM8M0WBx%252BNzyVqH1So9AQ%253D%253D",
+            "confidentialityRationale": "",
+            "title": "1. Довідка про наявність працівників.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-08-21T16:41:39.218521+03:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2020-08-21T16:41:39.218569+03:00",
+            "id": "37445b94295a41e8a72041cc2c79dac7"
+          },
+          {
+            "hash": "md5:eacde0bd03f78e90bff64d5443a91668",
+            "confidentiality": "public",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/f77cf03728434424aeb291f56bb366a4?KeyID=52462340&Signature=RNLVfUY%252BKSWs473iGJts47ObU71oOWN8T2E4VPh4Z2Tzvf%252BjkXIZJz%2FENcIBrOGXvxhIZAKZroGLDfkGx2YYCw%253D%253D",
+            "confidentialityRationale": "",
+            "title": "1. Лист-гарантія.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-08-21T16:41:39.219497+03:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2020-08-21T16:41:39.219527+03:00",
+            "id": "99e6d5aa072c47208b0c3403f48f9c85"
+          },
+          {
+            "hash": "md5:1d97504cc0f5a2309154c39318a64054",
+            "confidentiality": "public",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/f9e733c652344f4f9907aad09528fb43?KeyID=52462340&Signature=LUtd3iv6qKbJxgrjzxjvE2XUcnsg%252Bb0G8u2fnP7roM0CFHWC0Q2ebuw87AUc0x%2FNvub1589ebwC1lmiK3EzQDg%253D%253D",
+            "confidentialityRationale": "",
+            "title": "1. Повноваження уповноваженої особи.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-08-21T16:41:39.220209+03:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2020-08-21T16:41:39.220232+03:00",
+            "id": "bd22d878a03c4747ba53a4a51e660c77"
+          },
+          {
+            "hash": "md5:2335af798009c58d385b6fc73e440469",
+            "confidentiality": "public",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/38921be742f746ee9c0747d3be4f7938?KeyID=52462340&Signature=7jDUfSMvS6%252Bbjypw7H%2FkG%2F69xicu6ZGDLyjYvayrA5BfT03XhD4IkkDEld0G8IvdiQzAQE%2FszL1V%2FvAIxqb%2FBA%253D%253D",
+            "confidentialityRationale": "",
+            "title": "2. Довідка про ТОВ БТК МІРА.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-08-21T16:41:39.221021+03:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2020-08-21T16:41:39.221055+03:00",
+            "id": "842ce2d7446044d98048a936267dd291"
+          },
+          {
+            "hash": "md5:9f9878bf990f17e8cbfe8a40c70dc3f5",
+            "confidentiality": "public",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/b53fe33f0ae34f3681cae66dc356735f?KeyID=52462340&Signature=U5rHVdlvPyYn6hDNBJd1myTg5CwemgysJPAzIdxCu3ZQsk5jMPEbyNdkEDDAbmkALP9pxZmHp%2FN%252BA9N7QnWjDQ%253D%253D",
+            "confidentialityRationale": "",
+            "title": "3. Дозвіл.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-08-21T16:41:39.221960+03:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2020-08-21T16:41:39.221991+03:00",
+            "id": "4e3933b5c6034666b51e0c019fe3eb2c"
+          },
+          {
+            "hash": "md5:f4e45a6c81559e82971f380f18e5646a",
+            "confidentiality": "public",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/cb75d29c85e94ca9a75a22ec81232d4e?KeyID=52462340&Signature=tN%252BbAbPwk0bml1jHmkXoYWFf%2FjFq38YGYykuMvd85VManZWnI5kqx%252BwH61Zv4%2F7p2RN%252BtVRuP4BB9emdf%2FZ3Bw%253D%253D",
+            "confidentialityRationale": "",
+            "title": "3. Інформація відповідність технічним вимогам.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-08-21T16:41:39.222825+03:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2020-08-21T16:41:39.222845+03:00",
+            "id": "8a59f5ea6c0c4b568d4bf18e4629a8c8"
+          },
+          {
+            "hash": "md5:26ce6fbe135561d7188bb2f40d0399e7",
+            "confidentiality": "public",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/2af334aa1e564c589e5eed72804b0a98?KeyID=52462340&Signature=0Ke7CPRvrlo%252Ba8hYoHN3PDPBCV1seieDsxhWib5B5ojlBM5%252BTwxNvCzCpQqFv0wvNgmChPA4prvF0khpdjj8Dg%253D%253D",
+            "confidentialityRationale": "",
+            "title": "3. Ліцензія ТОВ БТК МІРА.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-08-21T16:41:39.223680+03:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2020-08-21T16:41:39.223714+03:00",
+            "id": "5b98f1fef19f455c906061a1be870985"
+          },
+          {
+            "hash": "md5:4f8f0d02788171ef09058c80521019dd",
+            "confidentiality": "public",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/391d6afbdcb845f0bbe761617b821e67?KeyID=52462340&Signature=vODDT2vDhcNjaSVdGdQdGdDaj3MW8U6tQnA4pqS5oqcK8om00E7FQxtf9lxEvv1cmUmu2ODN3aPX%252BIu0u967DA%253D%253D",
+            "confidentialityRationale": "",
+            "title": "4. Згода з суттєвими умовами договору.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-08-21T16:41:39.224699+03:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2020-08-21T16:41:39.224734+03:00",
+            "id": "38bd4b50bdf947379dbb7bbb90e239e2"
+          },
+          {
+            "hash": "md5:a9b2d2c264adaa269e611ce5faa94ce0",
+            "confidentiality": "public",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/78648b1a647140c08a8f3bbbc2a8b70b?KeyID=52462340&Signature=WLF2pOn91JaQG4r3HG7%2Fa%252BCP4e3UuP0JS5Fz8KJdi0rJIKpfQvVE3K1Zw2MYWd%2FfYQPxWROLNyVNyQ59jixFDA%253D%253D",
+            "confidentialityRationale": "",
+            "title": "4. п. 6.ч.1 ст. 17 Закону.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-08-21T16:41:39.225671+03:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2020-08-21T16:41:39.225705+03:00",
+            "id": "fbab0a6342454417b59ed27b47422c34"
+          },
+          {
+            "hash": "md5:8e418835c11f4343cc29026adb0b28ec",
+            "confidentiality": "public",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/e413ed667e154184a337b2a64da7930e?KeyID=52462340&Signature=fcBtiLQ3YmYKN0qKZugFkEzX10w5pMpijFCLA656iN7gKB1xTpwYI2sf9JPDwbVqBlZGnN5vhKy3ug1LFHA8BQ%253D%253D",
+            "confidentialityRationale": "",
+            "title": "6. Довідка захист довкілля.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-08-21T16:41:39.226576+03:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2020-08-21T16:41:39.226597+03:00",
+            "id": "2c4aa5cc13214774a2469697f02e69b8"
+          },
+          {
+            "hash": "md5:10fccd610bf661cd98accc58bb06e183",
+            "confidentiality": "public",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/d00ee41301e9463daa81626756f7ddec?KeyID=52462340&Signature=QN%252BHaqe98lhUILQ5f2CWiNro2syIuROMtXLMBTlXqsjatdQjkfuyMZCZ2nSGC1KS8%252BpHMWMI3JYrSnjUvifgDQ%253D%253D",
+            "confidentialityRationale": "",
+            "title": "7. Копія Статуту ТОВ БТК МІРА.PDF",
+            "documentOf": "tender",
+            "datePublished": "2020-08-21T16:41:39.227458+03:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2020-08-21T16:41:39.227504+03:00",
+            "id": "d2522c39e2bd484ebee4461946a517a8"
+          },
+          {
+            "hash": "md5:d79d9bedd79e9de5f85107f0f9ecb0fc",
+            "confidentiality": "public",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/4ef2446901bc4b8e8f49c2d6fa5e15c2?KeyID=52462340&Signature=R%2FYJVThTU02N1cnF0UBaF%2FvOYtchNKI4n8DheD9Bk8a%2F%252BWLNB%2FsfoW7rrjWG3mQqh4PLbu4gAs2yI2rE3H7nCQ%253D%253D",
+            "confidentialityRationale": "",
+            "title": "8. Витяг з ЄДР.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-08-21T16:41:39.228350+03:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2020-08-21T16:41:39.228378+03:00",
+            "id": "9fe335e6d647463da4a90565c3efc601"
+          },
+          {
+            "hash": "md5:e420f51d24cc526576cb0e407fa4a6d2",
+            "confidentiality": "public",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/801e6c98b167478283508236a8ebb42b?KeyID=52462340&Signature=NYVDAo%2F86Fc8DCO15DeB%252BUJ%252BmtMzr4cwbgimX775Ul92ko0FioiULzenF5rn6smQBDZPOn8y1CUoQKweWz5CAQ%253D%253D",
+            "confidentialityRationale": "",
+            "title": "9. Довідка п.12 ч.1 ст. 17 Закону.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-08-21T16:41:39.229207+03:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2020-08-21T16:41:39.229228+03:00",
+            "id": "dceb609e077d4f218c96fbfcc74bc9b0"
+          },
+          {
+            "hash": "md5:025361e914f31061cf59c733f6f0b955",
+            "confidentiality": "public",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/67ad8fde61b145b4adea9a9001a0a9a4?KeyID=52462340&Signature=hleyW1GVRCGqWRpVsLr72PItx8R%252Bk7h8yVlY%2FsiDi4TwZuWzvGiojhLn7rfE2rEw0%252BQ5vGiZa11lSYe1k23cAg%253D%253D",
+            "confidentialityRationale": "",
+            "title": "10. п. 13 ч.1 ст. 17 Закону.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-08-21T16:41:39.230350+03:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2020-08-21T16:41:39.230385+03:00",
+            "id": "b7a67a61fc0945988cf0374848bc760d"
+          },
+          {
+            "hash": "md5:5bac98856783b871eeca76f2bf062bbf",
+            "confidentiality": "public",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/87306dbe87304a548e0be08cde9ded62?KeyID=52462340&Signature=my8kBTCmhgPQTz2UokhHMrQxQUEsh3N2ZPbLWqks%252Bh2g%252BKDmLV%252ByqmYZTdWHNXhK%2FHNadCSkC%2FS4UmSAEtJBAg%253D%253D",
+            "confidentialityRationale": "",
+            "title": "11. ч.2 ст. 17 Закону.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-08-21T16:41:39.231526+03:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2020-08-21T16:41:39.231576+03:00",
+            "id": "1acc6788321c43a1bee1955e21e42d12"
+          },
+          {
+            "hash": "md5:d28177e84100a7b7d51bb1bd7b16428b",
+            "confidentiality": "public",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/06fc7e11964c403facc1101daee7cd40?KeyID=52462340&Signature=X8XX5uwEgrqGHxNUaDdVZl89YTPtwVWoRBlbYpk%2FdcwQtUnleSYXhctodXF7KeQCHxk6%2FZXPz2Wb5LblvSv7Bg%253D%253D",
+            "confidentialityRationale": "",
+            "title": "Копія Виписки та Відомостей ТОВ БТК МІРА.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-08-21T16:41:39.232632+03:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2020-08-21T16:41:39.232666+03:00",
+            "id": "07288682ab1e4585acfb2ac364f9dc37"
+          },
+          {
+            "hash": "md5:8f736e441c6045246c55075d96ceb4a7",
+            "confidentiality": "public",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/bf2b27fd6ddd4f3e9efd6a2cf8608b0e?KeyID=52462340&Signature=D7I28IgwzSqBs8IgS7%252BiwWUqgEndBaE7YGpYpmvJuPKkf2Y441QLTW4eZQkBymzZ%252BI8K%252B48fAvzOFDR6JtbsDw%253D%253D",
+            "confidentialityRationale": "",
+            "title": "Копія витягу про реєстрацію платника ПДВ.PDF",
+            "documentOf": "tender",
+            "datePublished": "2020-08-21T16:41:39.233840+03:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2020-08-21T16:41:39.233875+03:00",
+            "id": "83acc1ffe60a47cc88be15399eb4964e"
+          },
+          {
+            "hash": "md5:514118385ab54c1a92e06ecd16514e15",
+            "confidentiality": "public",
+            "format": "application/pkcs7-signature",
+            "url": "https://public.docs.openprocurement.org/get/66075a4829504f9c8cbf110371b35602?KeyID=52462340&Signature=qnFo97s2gmnQVCjGxqfGL9II0MPB8GKYH6Tg4aj8B4m27Vm1fgRKWH51D6KIaR615XqgAJ4uXpuTFnARrqjXBg%253D%253D",
+            "title": "sign.p7s",
+            "documentOf": "tender",
+            "datePublished": "2020-08-21T16:43:36.934352+03:00",
+            "dateModified": "2020-08-21T16:43:36.934374+03:00",
+            "id": "cf161047d1054d93877acbb123e28403"
+          }
+        ],
+        "parameters": [
+          {
+            "code": "1f5d8cb869ec4a68a30a6a0d901b5755",
+            "value": 0.3
+          }
+        ],
+        "selfEligible": true,
+        "value": {
+          "currency": "UAH",
+          "amount": 2690000,
+          "valueAddedTaxIncluded": true
+        },
+        "subcontractingDetails": "",
+        "selfQualified": true,
+        "tenderers": [
+          {
+            "scale": "mid",
+            "contactPoint": {
+              "telephone": "+380977091956",
+              "name": "Олена Андреєва",
+              "email": "lawyer_andreeva@miracorporation.com"
+            },
+            "identifier": {
+              "scheme": "UA-EDR",
+              "id": "35793772",
+              "legalName": "ТОВ \"БУДІВЕЛЬНА ТА ТОРГІВЕЛЬНА КОМПАНІЯ \"МІРА\""
+            },
+            "name": "ТОВ \"БУДІВЕЛЬНА ТА ТОРГІВЕЛЬНА КОМПАНІЯ \"МІРА\"",
+            "address": {
+              "postalCode": "87533",
+              "countryName": "Україна",
+              "streetAddress": "ВУЛИЦЯ ЧЕРВОНОФЛОТСЬКА, будинок 182, офіс 3",
+              "region": "Донецька область",
+              "locality": "місто Маріуполь"
+            }
+          }
+        ],
+        "date": "2020-08-25T14:12:48.327577+03:00",
+        "id": "92cd5b8eaf5148758148ce6b9db93131",
+        "participationUrl": "https://auction.openprocurement.org/tenders/da8f4ff74394428695124a7f8af781f4/login?bidder_id=92cd5b8eaf5148758148ce6b9db93131&hash=683192cfdf29b7abb04e97f5134e59c1195b2169"
+      },
+      {
+        "status": "active",
+        "documents": [
+          {
+            "hash": "md5:84e45c56f77f269af58ff6c9ad4c37e8",
+            "confidentiality": "public",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/8a4547c76f544371a2254b6d67a572a6?KeyID=52462340&Signature=vccBU0N7OS2EIsTCYkClUk8foyb9SP%2FAWcKIG%2FQxwDnEUSwUcYMzUswVmzlBoT73qjcRlzL2o%2FizFPoSucVjBw%253D%253D",
+            "confidentialityRationale": "",
+            "title": "ISO 9001 (цветной).pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-08-21T16:41:45.342214+03:00",
+            "dateModified": "2020-08-21T16:41:45.342242+03:00",
+            "id": "e772a01214374a6992184f023a106fb4"
+          },
+          {
+            "hash": "md5:f693cd4b1e01c5c48de9d25e3b1a0e18",
+            "confidentiality": "public",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/51045f47230a4afe8b769cecb3b1744b?KeyID=52462340&Signature=S7Cap1G9HTXjWBSlf0ipqOSRFW8c3H%2FkI9uI8QXUxpoohaT8tU8Kai4u%2Ff872i%2Fk3BqWmNT%2F4un7HS%2F7TqW6Ag%253D%253D",
+            "confidentialityRationale": "",
+            "title": "Витяг НДС.PDF",
+            "documentOf": "tender",
+            "datePublished": "2020-08-21T16:41:45.343248+03:00",
+            "dateModified": "2020-08-21T16:41:45.343276+03:00",
+            "id": "f3721d4069e14052be2ca538b657c844"
+          },
+          {
+            "hash": "md5:bc711cdc37a7fa7299d0388c4ce0de21",
+            "confidentiality": "public",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/e9800f05e8034b5fbfefb21bd4474849?KeyID=52462340&Signature=clLMdWsafpSiywPlKmuAS3aMz1gq76sJ89gCtuRNjEeqD1G7QnaWKQrcSJmyEqvCa%2FVuaeGIYi%2F%2FRjkmkj2HBw%253D%253D",
+            "confidentialityRationale": "",
+            "title": "Витяг.PDF",
+            "documentOf": "tender",
+            "datePublished": "2020-08-21T16:41:45.344254+03:00",
+            "dateModified": "2020-08-21T16:41:45.344282+03:00",
+            "id": "c55872f8b2a44498b8c7ca3acce20f13"
+          },
+          {
+            "hash": "md5:b75d0468cdcc09d6c6594668d947f43b",
+            "confidentiality": "public",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/ee6dff67a51b43d7b1ba4e235528ae74?KeyID=52462340&Signature=GlqKzX5Gl2xDA1yl3o%2Fn1usrpBOltotZyyCeT%252BaBgb81irdmP4m45UcsV3fRu05Z9%2FIbMJiBe%2FKssirLVtiKBQ%253D%253D",
+            "confidentialityRationale": "",
+            "title": "Відомості про участника.PDF",
+            "documentOf": "tender",
+            "datePublished": "2020-08-21T16:41:45.345200+03:00",
+            "dateModified": "2020-08-21T16:41:45.345227+03:00",
+            "id": "3a5e528c3b4c4fa5a6c6e311f366ada3"
+          },
+          {
+            "hash": "md5:0b980258ed68fe017f50cd92aa8793b0",
+            "confidentiality": "public",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/6096661dea5a4f9795f664856e9c0dbc?KeyID=52462340&Signature=htJAmI6TguFs9wDBsSogliI4%252BAEWhsjOE1%2FHNUGuqdzEIx4qDbpUvE5diYa02ZrhwqeaiR1mXywe6KE0pzoYBQ%253D%253D",
+            "confidentialityRationale": "",
+            "title": "Візуалізація.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-08-21T16:41:45.346151+03:00",
+            "dateModified": "2020-08-21T16:41:45.346177+03:00",
+            "id": "221cbe05873b41c689cc8b5ef6e1f121"
+          },
+          {
+            "hash": "md5:b0a71790d9711c64119c9a5435aaa88d",
+            "confidentiality": "public",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/136144e095ef4193821a8239897b0ec3?KeyID=52462340&Signature=M66bfCjMmjlVsqPWiYSIXS1zARnmfA8Qz992oXMx78Ek%252BOri5ELJJce96umBnt4oObdBwjPsYXqK6HcfEvhRBQ%253D%253D",
+            "confidentialityRationale": "",
+            "title": "Довідка за вчинення правопорушення.PDF",
+            "documentOf": "tender",
+            "datePublished": "2020-08-21T16:41:45.347226+03:00",
+            "dateModified": "2020-08-21T16:41:45.347280+03:00",
+            "id": "93784aa978704be5ab59ca157579f291"
+          },
+          {
+            "hash": "md5:98058be9d52278194f3c7e8e1daddc96",
+            "confidentiality": "public",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/5800e11558584d3a8cb853112b153cfb?KeyID=52462340&Signature=yFNlVifDQfVOGPIIgVQRUWesXgJ%2FLo9QTymsLZpe56%2FOkrCWXNbWQOC97fNLaBkh6rwfCWdb7V6REKr0PJ0cAA%253D%253D",
+            "confidentialityRationale": "",
+            "title": "Довідка засудженний за злочини.PDF",
+            "documentOf": "tender",
+            "datePublished": "2020-08-21T16:41:45.348631+03:00",
+            "dateModified": "2020-08-21T16:41:45.348677+03:00",
+            "id": "16d09f9ae7d9440bb88bfc6485f53367"
+          },
+          {
+            "hash": "md5:b90e27d5403be0ba0b766d7e864f2e90",
+            "confidentiality": "public",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/07a4ad630aec4864bf9028bd9a368a25?KeyID=52462340&Signature=To%2FCa0CdZXYL%252Bfyir46kfno5zJZsvwGh%2FrJSpqUegXorwwBP1sTrcxWFlddvoWhmiWxZh7CfUUT3%252BFbGnLBvBw%253D%253D",
+            "confidentialityRationale": "",
+            "title": "Довідка захисту довкілля.PDF",
+            "documentOf": "tender",
+            "datePublished": "2020-08-21T16:41:45.349453+03:00",
+            "dateModified": "2020-08-21T16:41:45.349472+03:00",
+            "id": "ae7f577a5d2a45388223c024e0955e8a"
+          },
+          {
+            "hash": "md5:58414cbaf61524293a1670330f08e2a7",
+            "confidentiality": "public",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/1703ff4e8bdb44b5bdf53a0a03e43f71?KeyID=52462340&Signature=B55J4DLaD5cMkk4yiXf1AFruwOq851Lm860sQCq9w%2FxTEkqhRGj8UytqJshR5t2JUkOPMRXNV0DI9mFQ5ZxVAg%253D%253D",
+            "confidentialityRationale": "",
+            "title": "Довідка про виконання забов'язань.PDF",
+            "documentOf": "tender",
+            "datePublished": "2020-08-21T16:41:45.350119+03:00",
+            "dateModified": "2020-08-21T16:41:45.350149+03:00",
+            "id": "6705e9a6e7264efc8dbee38cb4b413f7"
+          },
+          {
+            "hash": "md5:8bc026aaea9412b9e4706893149ebc67",
+            "confidentiality": "public",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/336b3c1007e74c6e89cfc02f8666d8f4?KeyID=52462340&Signature=vetmW2z9Z4m6U0MnUS2A8OFE0RW8I%2F7jKd5EH7XR9yi3VLFzV%2FZ6GzIsPu%252BqOB1ieOs5Qf5Pwc9W2FSoqgM7Cg%253D%253D",
+            "confidentialityRationale": "",
+            "title": "Довідка про працівників.PDF",
+            "documentOf": "tender",
+            "datePublished": "2020-08-21T16:41:45.350757+03:00",
+            "dateModified": "2020-08-21T16:41:45.350774+03:00",
+            "id": "63c468e97a6f49dea31f457ae1a55995"
+          },
+          {
+            "hash": "md5:f110c28045c95a994f2dd3c986585ccc",
+            "confidentiality": "public",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/97a81b4cb6fa4941a483374cfe70df76?KeyID=52462340&Signature=%2FsUv%252B9RVT%2FP90KVrpp0%2Fsmji%2FCqZCa1nZ92sfHOnx4HnUXQZ5fIPPcmS6MUo%2Fy5rNM2MvlI%2Fe1Ozra0KGjH8CQ%253D%253D",
+            "confidentialityRationale": "",
+            "title": "Заборгованість платежів.PDF",
+            "documentOf": "tender",
+            "datePublished": "2020-08-21T16:41:45.351344+03:00",
+            "dateModified": "2020-08-21T16:41:45.351363+03:00",
+            "id": "513d5971c1af4d29bb13a8acdb839d39"
+          },
+          {
+            "hash": "md5:0656eafb2c518928a19d143a205e1a12",
+            "confidentiality": "public",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/8c54ec05316443368024f1f7519fa0b8?KeyID=52462340&Signature=%252BoHvGnX4sUm%252BtpB4gy4QZYqjNj52hQedkqtbToq3JO2Am7b4cZi%2F8Bng74kt0mkDxMBnb%252BctiDOLwDIlyvhfAw%253D%253D",
+            "confidentialityRationale": "",
+            "title": "Лист-гарантія.PDF",
+            "documentOf": "tender",
+            "datePublished": "2020-08-21T16:41:45.351947+03:00",
+            "dateModified": "2020-08-21T16:41:45.351964+03:00",
+            "id": "5929f760f31e4f9dab29bfbf3e3e00b2"
+          },
+          {
+            "hash": "md5:3a1e8ef37ab094d62ac86309baecc190",
+            "confidentiality": "public",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/43825b022bf046e18f2045e6ce6121ed?KeyID=52462340&Signature=FV5wQVIgQa51x6GYakDA9X0WVBcGeMIKh6W4TJ9NLDjU4di5DnkdkZkWMl2t9%2Fx%252BkaFBcK4nfXOiG57UtW7HBg%253D%253D",
+            "confidentialityRationale": "",
+            "title": "Лист-згода.PDF",
+            "documentOf": "tender",
+            "datePublished": "2020-08-21T16:41:45.352490+03:00",
+            "dateModified": "2020-08-21T16:41:45.352507+03:00",
+            "id": "c23ebcb7e09a4568ae8642c7e1a36cf8"
+          },
+          {
+            "hash": "md5:a3b3e7df0f0d23548deb61597d284ccb",
+            "confidentiality": "public",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/4e1ef0231f01483198ec712805b824ac?KeyID=52462340&Signature=S2kBia3woPdmI%252B1%252BWvleKlQBTHZVcff8GZYb6rL62b1svJU6DjweENDMI0Un7vQCfY2IeY5sNAiT05Q22USSCw%253D%253D",
+            "confidentialityRationale": "",
+            "title": "Ліцензія на будівництво (1).PDF",
+            "documentOf": "tender",
+            "datePublished": "2020-08-21T16:41:45.353073+03:00",
+            "dateModified": "2020-08-21T16:41:45.353104+03:00",
+            "id": "c76999634ffc48cb82dea68e35eeceac"
+          },
+          {
+            "hash": "md5:f5994986bc6eb4ac936d375a953a0ffc",
+            "confidentiality": "public",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/49d84b887f6141759306ab19ae8521e1?KeyID=52462340&Signature=C92OisqvQyPmF8aa1f3mTijmwq%252Bl%252BH05bNmibuWN9PR5ueWJ07FAfJ9R1qrG9mW3G9wBuff0YjDCb%252BH3ssnsAw%253D%253D",
+            "confidentialityRationale": "",
+            "title": "Ліцензія на будівництво.PDF",
+            "documentOf": "tender",
+            "datePublished": "2020-08-21T16:41:45.353857+03:00",
+            "dateModified": "2020-08-21T16:41:45.353873+03:00",
+            "id": "9752619f418e48f58d7b5097535c8f3f"
+          },
+          {
+            "hash": "md5:302e27ceadaa707bce2ce97212b33ffb",
+            "confidentiality": "public",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/4e75ce207f394547901e1eb99af3c9df?KeyID=52462340&Signature=cc9fvDW3xrIKNMhmfSMd21IhhDR10U9QP5U3EFwpLnzBQydr%252BI4nX9o%2F9qd%252Bg0JJKi5Bu3Kjmh04VXJ4UWzQCQ%253D%253D",
+            "confidentialityRationale": "",
+            "title": "Наказ Мірошниченко.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-08-21T16:41:45.354415+03:00",
+            "dateModified": "2020-08-21T16:41:45.354433+03:00",
+            "id": "b59266b2f86f4d8bb9cea26ed1dcab11"
+          },
+          {
+            "hash": "md5:679a9ee785c5fb4c52e215dbc1364291",
+            "confidentiality": "public",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/1dd0558ffbb74a078a16bf3d3bbfcf57?KeyID=52462340&Signature=VzRPaJkVpPWxHDpwTPBBbDwMFwPqyUIOTtszQWhcsK2xfRlMdKABK%252B%2F5f5SJaST6kVN06lRlY8cYlXhA8YQoCQ%253D%253D",
+            "confidentialityRationale": "",
+            "title": "Протокол загальних зборів.PDF",
+            "documentOf": "tender",
+            "datePublished": "2020-08-21T16:41:45.355016+03:00",
+            "dateModified": "2020-08-21T16:41:45.355032+03:00",
+            "id": "0d87fc232ddd4705b34717e0ab14c397"
+          },
+          {
+            "hash": "md5:d7ee8de76d7d8256140c4da03bd109df",
+            "confidentiality": "public",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/58904e67ef7545b1980b1a91d3a8bd5f?KeyID=52462340&Signature=dPWZmLtp8nURx%2FESYCOzv%252BhgMtY%2FzUOe2s47d49o9rUOi7smFYMfFh0D0VVjw%2FFWt5yd9PsTwOaWkulOlAeMCw%253D%253D",
+            "confidentialityRationale": "",
+            "title": "Свідоцтво НДС.PDF",
+            "documentOf": "tender",
+            "datePublished": "2020-08-21T16:41:45.355697+03:00",
+            "dateModified": "2020-08-21T16:41:45.355724+03:00",
+            "id": "a80ebe445a68446c83fdb554a46a9a08"
+          },
+          {
+            "hash": "md5:750ccbdabfcc3cf91c4a9929a3623e22",
+            "confidentiality": "public",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/12b5f3f13fc845d9a69562d3ead429fd?KeyID=52462340&Signature=46uOtnpZaLorZEQxap6K%2F%2FjeOupGbn8vj%2FnF5L6LgKT6uGqeSom8AyWH%252B1ZlWU0OHTIcOVblqJCPH1fLHfAWAA%253D%253D",
+            "confidentialityRationale": "",
+            "title": "Скан паспорта.PDF",
+            "documentOf": "tender",
+            "datePublished": "2020-08-21T16:41:45.356805+03:00",
+            "dateModified": "2020-08-21T16:41:45.356840+03:00",
+            "id": "855845844c204d818da4f58fadb3c82a"
+          },
+          {
+            "hash": "md5:fcdf126821438e6702733e864a172a5f",
+            "confidentiality": "public",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/3359a9fbef2a40619fc3b3403612dc55?KeyID=52462340&Signature=wZg%2FW8MqiUH9C%2FtqDfmPkUpOBnTD%252B1BU9eAAC8s7izbFuc3RNbQvYXQf3u8tkLzCz4%252B3eL6ZjihzxJFHIb0UAQ%253D%253D",
+            "confidentialityRationale": "",
+            "title": "Статут.PDF",
+            "documentOf": "tender",
+            "datePublished": "2020-08-21T16:41:45.357967+03:00",
+            "dateModified": "2020-08-21T16:41:45.358020+03:00",
+            "id": "5ab328e963f24d2ca07755fba94bc2aa"
+          },
+          {
+            "hash": "md5:d7dfb16c504184a5de42e9e771fbedf2",
+            "confidentiality": "public",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/53a0b109e02946e1919adb145fcfc6da?KeyID=52462340&Signature=PaPMD1OR5x%252BIsuV5Ipq33pF%252Bs%2Fy5ZVyKoGykRse9Q3t7c3HIYBdaKsVwSYmuKfZYcwgs3w7SXQOIctznjHGVBQ%253D%253D",
+            "confidentialityRationale": "",
+            "title": "Технічна відповідність.PDF",
+            "documentOf": "tender",
+            "datePublished": "2020-08-21T16:41:45.358663+03:00",
+            "documentType": "technicalSpecifications",
+            "dateModified": "2020-08-21T16:41:45.358690+03:00",
+            "id": "95778293beea40e0a8a4ee675e767463"
+          },
+          {
+            "hash": "md5:108fabe184e02a998ace73fab3726622",
+            "confidentiality": "public",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/bdf21d97a4804276985ab64248d4adee?KeyID=52462340&Signature=OHM7UVdx8McbkgbHLvN9VIOSedOB7BppNmSHW9gft6ZoPYKWMeHgkYHJeK%2F0BnnsJNTce3dL%2FpySxAhyskD8Aw%253D%253D",
+            "confidentialityRationale": "",
+            "title": "Фінансова звітність.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-08-21T16:41:45.359564+03:00",
+            "dateModified": "2020-08-21T16:41:45.359592+03:00",
+            "id": "fbde50832a5749c097ba3a466a0b3373"
+          },
+          {
+            "hash": "md5:8f4ad48bd16d1e67190e6505e0ef9b9f",
+            "confidentiality": "public",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/8f6f5342bcd746ed8fc9f3fada5e7dc5?KeyID=52462340&Signature=dbfSUL%2F3wD3YJnjJtZpZiw8nDwJUdrQBmdZ8qGZBkAGS%2FDeRjKWk6sAbmgMoA2b2ZQQhDydx0wV34vZyqPACCw%253D%253D",
+            "confidentialityRationale": "",
+            "title": "Цінова пропозиція (2).PDF",
+            "documentOf": "tender",
+            "datePublished": "2020-08-21T16:41:45.360432+03:00",
+            "documentType": "commercialProposal",
+            "dateModified": "2020-08-21T16:41:45.360471+03:00",
+            "id": "84d9d8d28b5744abbf2073df444d359f"
+          },
+          {
+            "hash": "md5:053acde678a0194fb6022c7ccd2e9bd2",
+            "confidentiality": "public",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/ffdf85d8942c4d1890e7fcfcb2bb23cf?KeyID=52462340&Signature=LSMTc8ZI06DEfWdUaOp9goESZ8ENtSDLUhve5TS3hMdN7Cw%2Fcne7geSTHg%252BSmXVCO738jHvPC2ITmaaGxXSMBQ%253D%253D",
+            "title": "Довідка МВД Мірошниченко 04.09.PDF",
+            "documentOf": "tender",
+            "datePublished": "2020-09-04T17:00:07.208421+03:00",
+            "dateModified": "2020-09-04T17:00:07.208443+03:00",
+            "id": "d8a570f7a420428ebc77a980812a4482"
+          },
+          {
+            "hash": "md5:b48ef7e113e24ac6ddefeb70dd5216f8",
+            "confidentiality": "public",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/17f542680d58467d8fab8aaed4741d1a?KeyID=52462340&Signature=fn1OLNrkQP6YXNKJCNo4VYKld87l80UY%2FSNBb8siMKGd9%2F6fF2rZi1wIltjFEIwpdo3zdQcxz%252BTC6asep4EpBA%253D%253D",
+            "title": "Довідка про виконання забов'язань (04.09).PDF",
+            "documentOf": "tender",
+            "datePublished": "2020-09-04T17:00:08.891076+03:00",
+            "dateModified": "2020-09-04T17:00:08.891096+03:00",
+            "id": "20a67f2a9c0046ef842af9b89da549f1"
+          },
+          {
+            "hash": "md5:9b36add29e849dbab68451852bfbc0a6",
+            "confidentiality": "public",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/0eef09fba69b41f89206c6814e11077e?KeyID=52462340&Signature=4bPcPAk25JkMAi39AnvgvO8xhGG9f%252BGX5IBZg%2Ft1aATIMjaX%2FC7MzUj7HAukcP9ycC4oImOTZvx8q4pOPdFdAw%253D%253D",
+            "title": "Довідка про відсутність заборгованості з платежів, контроль за справлянням яких покладено на контролюючі органи (04.09.20).pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-09-04T17:00:10.948429+03:00",
+            "dateModified": "2020-09-04T17:00:10.948450+03:00",
+            "id": "723f09b2d9f94e54a389ad2ed57447ba"
+          },
+          {
+            "hash": "md5:9ecd6cc28c90f1547d3eb6b411d99abd",
+            "confidentiality": "public",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/724a4dcfadc04a449487546cdb95f504?KeyID=52462340&Signature=ZaJT0gJeyI0pRhJHnMEZIVpaDISZmGwTpa3y90t9vUNr0wBd7QG%252B9z5TsnOnapOdNPr9u9bd4G78NGaGlnw%252BAQ%253D%253D",
+            "title": "Засудженний за торгівлю людьми (04.09).PDF",
+            "documentOf": "tender",
+            "datePublished": "2020-09-04T17:00:13.311855+03:00",
+            "dateModified": "2020-09-04T17:00:13.311891+03:00",
+            "id": "0beaebc1f9da4422b5ea6b1cb5420e1b"
+          },
+          {
+            "hash": "md5:6da1e38428a6a157d2f5467f93b3f764",
+            "confidentiality": "public",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/3dc42234e5b441e28b8152bcbcf381ea?KeyID=52462340&Signature=JXWPI1eSitlHSaUtAv6hSH3RLzs1ybzkYvNntVF%252BhOxn2MD7jCz8UR3pjF4bT9Lq4%252BbdtLTW%2FfB1UtdgSEFnBg%253D%253D",
+            "title": "Справка про банкрутство  (04.09).PDF",
+            "documentOf": "tender",
+            "datePublished": "2020-09-04T17:00:15.003942+03:00",
+            "dateModified": "2020-09-04T17:00:15.003989+03:00",
+            "id": "94ba79f0983e49a6b9fa78e64c5c3df3"
+          },
+          {
+            "hash": "md5:52a0d85e213fc9b6a43c2beaf4504150",
+            "confidentiality": "public",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/e3066062c93a4f7e9c73a00be7f12a04?KeyID=52462340&Signature=aLmvbe9e5qYP14ukmXjecBzg1gup9fft91%252BVcKmodiHYGQH9L17EMdFOcNzyAqcx%252BnSr%252BQTHBdxosgzcKq7LBA%253D%253D",
+            "title": "Справка про корупційне правопорушення (04.09).PDF",
+            "documentOf": "tender",
+            "datePublished": "2020-09-04T17:00:17.329306+03:00",
+            "dateModified": "2020-09-04T17:00:17.329327+03:00",
+            "id": "5ba70e065a3744158e11eacede3be40a"
+          },
+          {
+            "hash": "md5:2244a6d83ebb0b93b385a042ace8d58f",
+            "confidentiality": "public",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/8f32c4248bf145d6aa6ecfcc396381e8?KeyID=52462340&Signature=7zODWGFRx8kDPVGJrECcHciT3pLnvEDAlyD69J8TXT4SN3z6ZldyeakFlOAXEkYsSgHRMPcQsopiMW7a30x7Aw%253D%253D",
+            "title": "Справка про корупційні правопорушення  (04.09).PDF",
+            "documentOf": "tender",
+            "datePublished": "2020-09-04T17:00:19.259247+03:00",
+            "dateModified": "2020-09-04T17:00:19.259270+03:00",
+            "id": "98738a89f7144bfcbd6808bbb86b4a55"
+          },
+          {
+            "hash": "md5:22b4be1244b6755eb854b2d040986fbf",
+            "confidentiality": "public",
+            "format": "application/pkcs7-signature",
+            "url": "https://public.docs.openprocurement.org/get/9e0b9da515614a3aa7a4bacb2303abb6?KeyID=52462340&Signature=lKKBORT3VMhxtHc7jVs2b3EpzztzeWhQ1Qh0r7gnB4knQvecVpR8%2F71hl266Ps1zBkH2eXJK96mVONKMnSusAg%253D%253D",
+            "title": "sign.p7s",
+            "documentOf": "tender",
+            "datePublished": "2020-09-04T21:04:07.203835+03:00",
+            "dateModified": "2020-09-04T21:04:07.203855+03:00",
+            "id": "b9897ebcf5ef4065be25084e8ce82b16"
+          }
+        ],
+        "parameters": [
+          {
+            "code": "1f5d8cb869ec4a68a30a6a0d901b5755",
+            "value": 0.3
+          }
+        ],
+        "selfEligible": true,
+        "value": {
+          "currency": "UAH",
+          "amount": 2614800,
+          "valueAddedTaxIncluded": true
+        },
+        "subcontractingDetails": "",
+        "selfQualified": true,
+        "tenderers": [
+          {
+            "scale": "mid",
+            "contactPoint": {
+              "telephone": "+380504004648",
+              "name": "Олег Мирошниченко",
+              "email": "mail@artmetall.ua"
+            },
+            "identifier": {
+              "scheme": "UA-EDR",
+              "id": "37805242",
+              "legalName": "ТОВ \"АРТМЕТАЛ УКРАЇНА\""
+            },
+            "name": "ТОВ \"АРТМЕТАЛ УКРАЇНА\"",
+            "address": {
+              "postalCode": "49000",
+              "countryName": "Україна",
+              "streetAddress": "ВУЛИЦЯ ЯНТАРНА, будинок 42, квартира 165",
+              "region": "Дніпропетровська область",
+              "locality": "місто Дніпро"
+            }
+          }
+        ],
+        "date": "2020-08-25T14:20:41.147532+03:00",
+        "id": "392650272f134aeca91bc2b8257ced57",
+        "participationUrl": "https://auction.openprocurement.org/tenders/da8f4ff74394428695124a7f8af781f4/login?bidder_id=392650272f134aeca91bc2b8257ced57&hash=7cf6e36d9c1dcabc39fcfa1f633191347192efde"
+      },
+      {
+        "status": "active",
+        "documents": [
+          {
+            "hash": "md5:0c88ff9becc0cb2d62cf53f007e0317c",
+            "confidentiality": "public",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/f6fbc7955c07479ea91732299ec602b7?KeyID=52462340&Signature=sYDTLH82pwj4Iok7QEzCjTpA8fG2d%252BcEZY6VanLmDh4XOya4msVn9UrAsbwNMIC2nEJhCYpl6uv%252BIkFdF45BDA%253D%253D",
+            "title": "1.ТЕНДЕРНА ПРОПОЗИЦІЯ.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-08-21T17:37:47.614139+03:00",
+            "documentType": "commercialProposal",
+            "dateModified": "2020-08-21T17:37:47.614158+03:00",
+            "id": "46803a84534944efaec49ffbb1092b67"
+          },
+          {
+            "hash": "md5:ab5d2c8b0808db3fa2111f96825d8bee",
+            "confidentiality": "public",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/7378b975100c44529716095c5142c6b5?KeyID=52462340&Signature=muRNJpMVqrX69lvZuxw62XczX0TpzH2joXYxXnf%252B%2FeZwWZsI0Bn9EfmUwTD8lrdun%2Fj1WX7%2FVvfhLIeaJUtGDQ%253D%253D",
+            "title": "2.КВАЛІФІКАЦІЙНІ ДОКУМЕНТИ ДО ТП.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-08-21T17:37:47.614829+03:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2020-08-21T17:37:47.614849+03:00",
+            "id": "b31117c261b54df1886e658b8e0bd595"
+          },
+          {
+            "hash": "md5:93b3916582a6b388b91d800e7e356a41",
+            "confidentiality": "public",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/aa6b8e8daeb84d0e9de81e0e3155e819?KeyID=52462340&Signature=NyTPlOFDHRP6Ji7ErUBvhK9U02SmfrbWciKCXmWIF82%2F9%2FwmnidQEBa94RxH1vhskPr3tu8BR1%252B6H1enhUZiBg%253D%253D",
+            "title": "3.ІНФОРМАЦІЯ ПРО ВІДПОВІДНІСТЬ ТЕХ.ВИМОГ ТА ТЕХ.СПЕЦИФІКАЦІЯ.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-08-21T17:37:47.615475+03:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2020-08-21T17:37:47.615493+03:00",
+            "id": "abd3b19f917d45c199eb5d0daeac8ecf"
+          },
+          {
+            "hash": "md5:e32477f298c6c1132cc6b1b52ada49e0",
+            "confidentiality": "public",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/910452cfd4ed4cb089a23181d2755939?KeyID=52462340&Signature=E9Hpxkgl89lx98SCpJixyiJYvpUofAICqZad2Qq3VEJ%252BXZYzXFSvhj0mJLt2dmixWd62OZmV3K%252BddnqRQkdAAg%253D%253D",
+            "title": "ВИТЯГ З ЄДР.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-08-21T17:37:47.616171+03:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2020-08-21T17:37:47.616189+03:00",
+            "id": "c71e54e54e684ee1b2c505b2de7c125d"
+          },
+          {
+            "hash": "md5:e5f5bd34db76db7b3bf3028d25c841de",
+            "confidentiality": "public",
+            "format": "image/jpeg",
+            "url": "https://public.docs.openprocurement.org/get/b527aea8b7c645c69e23aac366af5b12?KeyID=52462340&Signature=rxQRAIFLdstPkj9lSD6OwF4BEDjH2ISyMxCxNUUNcB2uxOglDJUVWcP6%2FBvqvhelZQufqIMNShz5Nk7K%2FAnbCg%253D%253D",
+            "title": "ВИТЯГ з реєстру про ПДВ.jpg",
+            "documentOf": "tender",
+            "datePublished": "2020-08-21T17:37:47.616705+03:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2020-08-21T17:37:47.616725+03:00",
+            "id": "3fb01c566c9f404ab8369aaa1b913a00"
+          },
+          {
+            "hash": "md5:cde85fd2c77948959fdd3d58fd193c95",
+            "confidentiality": "public",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/0f424a63aaed4e1bab1e7aaa0486a8ba?KeyID=52462340&Signature=ckGaok%252BonJ3VusFE6j7h9%2F49WyCfQNpxcRNv4YM4S5vAf0OdO%252BN5twrLYF3d6URWpLuen40MkN42euXAtkR9Bw%253D%253D",
+            "title": "ЛІЦЕНЗІЯ на будівництво.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-08-21T17:37:47.617250+03:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2020-08-21T17:37:47.617268+03:00",
+            "id": "37fbd2b546b94afeb6464e77ff513a73"
+          },
+          {
+            "hash": "md5:1b3be399de3abe88b7bc5cc56925a72d",
+            "confidentiality": "public",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/cfbdbbe708c5415a8ce5a43a262350de?KeyID=52462340&Signature=qIXN8B4EGCrd00OELc10%2FJfx1jIzs3Tp2NVWGOOeJ%252B37TvYuk4mjF%2FpXG33uD%252B8AjnZqM1IxEXPADJXQYY4cCQ%253D%253D",
+            "title": "Наказ про призначення генерального директора.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-08-21T17:37:47.617802+03:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2020-08-21T17:37:47.617820+03:00",
+            "id": "81c0b9add4ba47af88a1a56d41d357ca"
+          },
+          {
+            "hash": "md5:5a6f9bab8fc90ba1786832290b4f39b6",
+            "confidentiality": "public",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/d982624679424edabb08dac6ec158c75?KeyID=52462340&Signature=LXE4hdZ1ZYgVZuVrfgW4XT5LUCRZFgNCT0Q7%252B81GnUc8VnwiCNw4dO1CoBizZzPZM%2F6r3Xaf7KDjNCJ%252BpIJHBQ%253D%253D",
+            "title": "Паспорт та Ідент.код ТУЗ І.В..pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-08-21T17:37:47.618312+03:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2020-08-21T17:37:47.618327+03:00",
+            "id": "492713278efb4675b858871265000cdd"
+          },
+          {
+            "hash": "md5:2f9ee06c17452f689cc9f5e40bfad24b",
+            "confidentiality": "public",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/c23b42bd9feb4b0fae2469d7cfd04cbd?KeyID=52462340&Signature=%2FlqoaPNxScXncZnUN2Sa2zvvVGO9dUJY2WPE5UZr%2F5mxLZMR1yBJthOH0WZ8xrWg892coXwbacfa85VKkHgYDw%253D%253D",
+            "title": "Протокол загальних зборів учасників.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-08-21T17:37:47.618863+03:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2020-08-21T17:37:47.618880+03:00",
+            "id": "be5e049ccb484dc991aeb6ce515c6bc7"
+          },
+          {
+            "hash": "md5:461d705c6d90cb1f64180dea2f82d1c0",
+            "confidentiality": "public",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/bdbe7e1687b2417eb6f50f3a580d0beb?KeyID=52462340&Signature=1j0n%252BOq5X%252BPquQozMDHgrklt1KeWLyCHzx6YM7V9uZckOefxScrRgtvYzj6uVNSDlbVOdOxR75%252B0oCktbPnfCg%253D%253D",
+            "title": "СЕРТИФІКАТ  ISO 9001 2015.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-08-21T17:37:47.619370+03:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2020-08-21T17:37:47.619386+03:00",
+            "id": "6b16ce7972a1463bbaa33155b9956dcf"
+          },
+          {
+            "hash": "md5:385dbcf9e7ace6d31ae54f2a17e8d8de",
+            "confidentiality": "public",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/9c8674d7d65c476694d1fe6c802aefe6?KeyID=52462340&Signature=yakGS9Yrt5XCVonKdHHCrvOhisorfPlgLtj%2FYdsPReDrorPOd%2FU2TSxkoGzn42NsGmp3j5dpG2xMvye9YkI0DA%253D%253D",
+            "title": "Статут Партнер-Вс (нова редакція).pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-08-21T17:37:47.619921+03:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2020-08-21T17:37:47.619938+03:00",
+            "id": "b1a75e37f324438c8afa1b92137d20ed"
+          },
+          {
+            "hash": "md5:0e3ba5e18f8e51f5edaa92accdbed87b",
+            "format": "application/pkcs7-signature",
+            "url": "https://public.docs.openprocurement.org/get/ac702b544cd44025ab2389a57c5b3990?KeyID=52462340&Signature=uR55XbPBOXn3QnXEtUJ%252Bz4%2FrGSa4CiffR9je5adKcBQYGb73Fzmc4NQvk7ixzxLjs423riRoLKSegMDkyRTtAQ%253D%253D",
+            "title": "sign.p7s",
+            "documentOf": "tender",
+            "datePublished": "2020-08-21T17:38:09.097567+03:00",
+            "dateModified": "2020-08-21T17:38:09.097606+03:00",
+            "id": "afeadc3ed1464ad2990146bdcb0a63f0"
+          },
+          {
+            "hash": "md5:df67ff6a3c7c14e9868d4dabe6dce5c1",
+            "format": "application/pdf",
+            "url": "https://public.docs.openprocurement.org/get/0a5d4f08d4bb4ebeb084c35a99da713b?KeyID=52462340&Signature=laergR%252BQluVgIgolAes%252BzK7sYeAf3mBYg1UrqkPeEeAMEplaADGpn4Ko1HH5TSMlv%252BqPO5fjFK7TXKwStBjUCA%253D%253D",
+            "title": "Пояснення аномально низької ціни.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-08-26T18:25:10.153967+03:00",
+            "documentType": "evidence",
+            "dateModified": "2020-08-26T18:25:10.153999+03:00",
+            "id": "b89b16f365314ae0be71cddb902ccca0"
+          },
+          {
+            "hash": "md5:b05b9c3e669ccff414c886eb4e3c9ee5",
+            "format": "application/msword",
+            "url": "https://public.docs.openprocurement.org/get/f85dacc70c7b473b83394e2b9838b451?KeyID=52462340&Signature=hj7vjNyDxleGQBl%252Bg1xb1TMXtZ4Djand7SRKbk%2FGM8SaME22732uMkUO8nSAtonBa4hrnzCWj9MVfLvFIXMdAA%253D%253D",
+            "title": "пояснення про аномально низької ціни.doc",
+            "documentOf": "tender",
+            "datePublished": "2020-08-26T18:25:11.061937+03:00",
+            "documentType": "evidence",
+            "dateModified": "2020-08-26T18:25:11.061957+03:00",
+            "id": "aeabd39865d046b5987a23d5b88b105a"
+          },
+          {
+            "hash": "md5:20296afdd8c257ac3790579b363b9d43",
+            "format": "application/pkcs7-signature",
+            "url": "https://public.docs.openprocurement.org/get/933b45bbd693498e9d74a34477054031?KeyID=52462340&Signature=hk%252BGvDRVBwoDj9tI9YAKgFEKMFTbLbeO8UNTAltRbmfSC4TiAf2bHJivZ3X5%252BwOoNvFGqCfo5AXLHljyOdyYDw%253D%253D",
+            "title": "sign.p7s",
+            "documentOf": "tender",
+            "datePublished": "2020-08-21T17:38:09.097567+03:00",
+            "dateModified": "2020-08-26T18:25:24.296141+03:00",
+            "id": "afeadc3ed1464ad2990146bdcb0a63f0"
+          }
+        ],
+        "parameters": [
+          {
+            "code": "1f5d8cb869ec4a68a30a6a0d901b5755",
+            "value": 0
+          }
+        ],
+        "selfEligible": true,
+        "value": {
+          "currency": "UAH",
+          "amount": 1830000,
+          "valueAddedTaxIncluded": true
+        },
+        "selfQualified": true,
+        "tenderers": [
+          {
+            "scale": "mid",
+            "contactPoint": {
+              "telephone": "+380503846888",
+              "url": "http://www.vibroseparator.ua",
+              "name": "Злобіна Світлана",
+              "email": "ZSV@VIBROSEPARATOR.UA"
+            },
+            "identifier": {
+              "scheme": "UA-EDR",
+              "id": "39268892",
+              "legalName": "ТОВ \"ПАРТНЕР-ВС\""
+            },
+            "name": "ТОВ \"ПАРТНЕР-ВС\"",
+            "address": {
+              "postalCode": "",
+              "countryName": "Україна",
+              "streetAddress": "10001, Житомирська обл., місто Житомир, ВУЛИЦЯ ПАРАДЖАНОВА СЕРГІЯ, будинок 93",
+              "region": "Житомирська область",
+              "locality": "Житомир"
+            }
+          }
+        ],
+        "date": "2020-08-25T14:23:27.241804+03:00",
+        "id": "c2bd17f4a34f41728122daff4158feb7",
+        "participationUrl": "https://auction.openprocurement.org/tenders/da8f4ff74394428695124a7f8af781f4/login?bidder_id=c2bd17f4a34f41728122daff4158feb7&hash=0f648fd921f3be62598c7a8d6317d0a8d134afaa"
+      }
+    ],
+    "value": {
+      "currency": "UAH",
+      "amount": 2800000,
+      "valueAddedTaxIncluded": true
+    },
+    "guarantee": {
+      "currency": "UAH",
+      "amount": 0
+    },
+    "awardCriteria": "lowestCost",
+    "dateCreated": "2020-08-06T13:18:18.585774+03:00",
+    "id": "da8f4ff74394428695124a7f8af781f4"
+  }
+}
