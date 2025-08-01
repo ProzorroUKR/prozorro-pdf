@@ -29,7 +29,7 @@ stages:
   stage: build
   variables:
     IMAGE_TAG: $CI_COMMIT_REF_NAME-$CI_PIPELINE_ID
-    VAULT_FRONT_PATH: prozorro-pdf/data/env_dev
+    VAULT_PATH: prozorro-pdf/data/env_dev
     VAULT_ADDR: http://vault-np.k8s.prozorro.gov.ua
   image:
     name: docker-registry.prozorro.gov.ua/web-projects/docker-images/kaniko:custom
@@ -43,7 +43,7 @@ stages:
       --data '{"role": "client-services", "jwt": "'"$ID_VAULT"'"}'
       $VAULT_ADDR/v1/auth/jwt/login | jq '.auth.client_token' | tr -d '\"')
     - >
-      curl -s --header "X-Vault-Token: $VAULT_TOKEN" -X GET $VAULT_ADDR/v1/$VAULT_FRONT_PATH|
+      curl -s --header "X-Vault-Token: $VAULT_TOKEN" -X GET $VAULT_ADDR/v1/$VAULT_PATH|
       jq -r '.data.data | to_entries[] | [.key, .value] | @tsv' |sed -e 's/\t/=/g' > .env.production
   script:
     - >
@@ -67,7 +67,7 @@ Build_app_img_staging:
   extends: .base_app_img_build
   variables:
     IMAGE_TAG: $CI_COMMIT_TAG-staging
-    VAULT_FRONT_PATH: prozorro-pdf/data/env_st
+    VAULT_PATH: prozorro-pdf/data/env_st
   rules:
     - if: $CI_COMMIT_TAG
 
@@ -202,7 +202,7 @@ Deploy staging kube:
       NPM_TOKEN=$(curl -s --header "X-Vault-Token: $VAULT_TOKEN" -X GET $VAULT_ADDR/v1/prozorro-pdf/data/npm-token | jq -r .data.data.token)
     - echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
     - >
-      curl -s --header "X-Vault-Token: $VAULT_TOKEN" -X GET $VAULT_ADDR/v1/$VAULT_FRONT_PATH|
+      curl -s --header "X-Vault-Token: $VAULT_TOKEN" -X GET $VAULT_ADDR/v1/$VAULT_PATH|
       jq -r '.data.data | to_entries[] | [.key, .value] | @tsv' |sed -e 's/\t/=/g' > .env.production
   script:
     - npm version $CI_COMMIT_TAG --no-git-tag-version --allow-same-version
@@ -218,12 +218,14 @@ publish_stage:
   <<: *base_app_publish
   variables:
     VAULT_ADDR: http://vault-np.k8s.prozorro.gov.ua
+    VAULT_PATH: prozorro-pdf/data/env_st
     NPM_PUBLISH_PARAMS: "--tag beta"
 
 publish_prod:
   <<: *base_app_publish
   variables:
     VAULT_ADDR: http://vault-np.k8s.prozorro.gov.ua
+    VAULT_PATH: prozorro-pdf/data/env_prod
     NPM_PUBLISH_PARAMS: ""
     IS_PROD: 1
   rules:
