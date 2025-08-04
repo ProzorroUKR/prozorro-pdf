@@ -1,6 +1,6 @@
 {
   "name": "prozorro-pdf",
-  "private": true,
+  "private": false,
   "version": "0.0.1",
   "main": "./dist/prozorro-pdf.cjs.js",
   "module": "./dist/prozorro-pdf.es.js",
