@@ -1,1 +1,1 @@
-# prozorro-pdf
+# @prozorro/prozorro-pdf
