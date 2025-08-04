@@ -1,5 +1,5 @@
 {
-  "name": "@prozorro/prozorro-pdf",
+  "name": "prozorro-pdf",
   "private": false,
   "version": "0.0.1",
   "main": "./dist/prozorro-pdf.cjs.js",
