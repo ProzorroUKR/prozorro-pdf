@@ -237,6 +237,7 @@ sync_version_back:
   stage: publish-npm
   image: docker-registry.prozorro.gov.ua/web-projects/docker-images/node:22.11.0-alpine
   before_script:
+    - ssh-keyscan -p 28722 195.178.150.84 > /root/.ssh/known_hosts
     - git config --global user.email "gitlab@git.prozorro.gov.ua"
     - git config --global user.name  "GitLab CI"
     - git remote set-url origin "git@git.prozorro.gov.ua:Web-Projects/client-services/prozorro-pdf.git"
