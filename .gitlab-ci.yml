@@ -219,14 +219,14 @@ publish_stage:
   variables:
     VAULT_ADDR: http://vault-np.k8s.prozorro.gov.ua
     VAULT_PATH: prozorro-pdf/data/env_st
-    NPM_PUBLISH_PARAMS: "--tag beta"
+    NPM_PUBLISH_PARAMS: "--access public --tag beta"
 
 publish_prod:
   <<: *base_app_publish
   variables:
     VAULT_ADDR: http://vault-np.k8s.prozorro.gov.ua
     VAULT_PATH: prozorro-pdf/data/env_prod
-    NPM_PUBLISH_PARAMS: ""
+    NPM_PUBLISH_PARAMS: "--access public"
     IS_PROD: 1
   rules:
     - if: $CI_COMMIT_TAG
