@@ -1,17 +1,16 @@
 /// <reference types="vitest" />
 import path from "path";
 import { defineConfig } from "vite";
-import packageJson from "./package.json";
 
 export default defineConfig({
   base: "./",
   build: {
-    outDir: "./build/dist",
+    outDir: "./dist/lib",
     lib: {
       entry: path.resolve(__dirname, "src/main.ts"),
       name: "ProzorroPdf",
       formats: ["es", "iife", "cjs", "umd"],
-      fileName: format => `${packageJson.name}.${format}.js`,
+      fileName: format => `prozorro-pdf.${format}.js`,
     },
   },
   test: {
@@ -22,7 +21,6 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "src"),
-      "@@": path.resolve(__dirname),
     },
   },
 });

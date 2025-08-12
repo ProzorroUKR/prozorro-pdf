@@ -6,7 +6,7 @@
     "allowJs": false,
     "emitDeclarationOnly": true,
     "baseUrl": ".",
-    "outFile": "./build/dist/prozorro-pdf.d.ts",
+    "outFile": "./dist/lib/prozorro-pdf.d.ts",
     "declarationMap": true,
     "skipLibCheck": true,
     "paths": {

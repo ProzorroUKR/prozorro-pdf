@@ -2,18 +2,18 @@
   "name": "@prozorro/prozorro-pdf",
   "private": false,
   "version": "0.0.4",
-  "main": "./dist/prozorro-pdf.cjs.js",
-  "module": "./dist/prozorro-pdf.es.js",
-  "types": "./dist/index.d.ts",
+  "main": "./dist/lib/prozorro-pdf.cjs.js",
+  "module": "./dist/lib/prozorro-pdf.es.js",
+  "types": "./dist/lib/prozorro-pdf.d.ts",
   "type": "module",
   "exports": {
     ".": {
-      "import": "./dist/prozorro-pdf.es.js",
-      "require": "./dist/prozorro-pdf.cjs.js",
-      "types": "./dist/index.d.ts"
+      "import": "./dist/lib/prozorro-pdf.es.js",
+      "require": "./dist/lib/prozorro-pdf.cjs.js",
+      "types": "./dist/lib/prozorro-pdf.d.ts"
     },
     "./dist/": {
-      "import": "./dist/"
+      "import": "./dist/lib"
     }
   },
   "files": [
@@ -21,16 +21,23 @@
   ],
   "scripts": {
     "dev": "vite --config vite.config.lib.ts",
-    "build:lib": "rimraf build/**/* && tsc && vite build --config vite.config.lib.ts && npm run types && copyfiles ./package.json build",
+
+    "build:lib": "tsc && vite build --config vite.config.lib.ts && npm run types && copyfiles ./package.json dist/lib && npm run removeFromBuild:lib",
     "build:app": "vite build --config vite.config.app.ts",
-    "build": "npm run build:lib && npm run build:app",
+    "build": "npm run clean && npm run build:lib && npm run build:app",
+
     "test": "vitest",
     "preview": "vite preview",
     "test:coverage": "vitest --coverage",
+
     "lint:scripts": "eslint . --ext .ts",
     "format:scripts": "prettier . --write",
     "format": "npm run format:scripts && npm run format:styles",
-    "types": "tsc --project tsconfig.types.json"
+
+    "types": "tsc --project tsconfig.types.json",
+
+    "removeFromBuild:lib": "rimraf ./dist/lib/robots.txt ./dist/lib/test-data",
+    "clean": "rimraf dist"
   },
   "devDependencies": {
     "@types/lodash": "^4.17.17",
