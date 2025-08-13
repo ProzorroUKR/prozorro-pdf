@@ -2,6 +2,9 @@
   "name": "@prozorro/prozorro-pdf",
   "private": false,
   "version": "0.0.8",
+  "description": "PDF generation service",
+  "author": "Dmytro Rybachek",
+  "license": "MIT",
   "main": "./dist/lib/prozorro-pdf.cjs.js",
   "module": "./dist/lib/prozorro-pdf.es.js",
   "types": "./dist/lib/prozorro-pdf.d.ts",
@@ -21,16 +24,21 @@
   ],
   "scripts": {
     "dev": "vite --config vite.config.lib.ts",
+
     "build:lib": "tsc && vite build --config vite.config.lib.ts && npm run types && copyfiles ./package.json dist/lib && npm run removeFromBuild:lib",
     "build:app": "vite build --config vite.config.app.ts",
     "build": "npm run clean && npm run build:lib && npm run build:app",
+
     "test": "vitest",
     "preview": "vite preview",
     "test:coverage": "vitest --coverage",
+
     "lint:scripts": "eslint . --ext .ts",
     "format:scripts": "prettier . --write",
     "format": "npm run format:scripts && npm run format:styles",
+
     "types": "tsc --project tsconfig.types.json",
+
     "removeFromBuild:lib": "rimraf ./dist/lib/robots.txt ./dist/lib/test-data",
     "clean": "rimraf dist"
   },
