@@ -27,6 +27,7 @@ import { FetchTender } from "@/widgets/pq//services/receivingData/FetchTender";
 import type { PQContractType } from "@/widgets/pq/types/PQTypes";
 import { ERROR_CODES } from "@/widgets/ErrorExceptionCore/constants/ERROR_CODES.enum";
 import { ObjectDecoder } from "@/utils/ObjectDecoder";
+import { FONT_CDN } from "@/constants/env";
 
 export class PDF implements PDFInterface {
   readonly TYPES = PdfTypes;
@@ -45,10 +46,10 @@ export class PDF implements PDFInterface {
 
     pdfMake.fonts = {
       Times: {
-        normal: `${location.origin}/fonts/Times-New-Roman.ttf`,
-        bold: `${location.origin}/fonts/Times-New-Roman-Bold.ttf`,
-        italics: `${location.origin}/fonts/Times-New-Roman-Italic.ttf`,
-        bolditalics: `${location.origin}/fonts/Times-New-Roman-Bold-Italic.ttf`,
+        normal: `${FONT_CDN}/fonts/Times-New-Roman.ttf`,
+        bold: `${FONT_CDN}/fonts/Times-New-Roman-Bold.ttf`,
+        italics: `${FONT_CDN}/fonts/Times-New-Roman-Italic.ttf`,
+        bolditalics: `${FONT_CDN}/fonts/Times-New-Roman-Bold-Italic.ttf`,
       },
     };
   }
