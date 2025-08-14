@@ -1,4 +1,4 @@
-import { TemplateCodesEnum } from "@/widgets/pq/types/TemplateCodes.enum";
+import { PROZORRO_TEMPLATE_CODES } from "@/widgets/pq/types/TemplateCodes.enum";
 import { generalTitlesConfig } from "@/widgets/pq//configs/pqTitles";
 import { foodTitlesConfig } from "@/widgets/pq/templates/food/configs/foodTitles.config";
 import { medicineV2titlesConfig } from "@/widgets/pq/templates/medicine2/config/medicineV2titles.config";
@@ -9,17 +9,17 @@ import { medicineTitlesConfig } from "@/widgets/pq/templates/medicine/configs/me
 import { pharm2TitlesConfig } from "@/widgets/pq/templates/pharm2/configs/pharm2Titles.config";
 import { fuel2TitlesConfig } from "@/widgets/pq/templates/fuel2/configs/fuel2Titles.config";
 
-export const TemplateToPqTitlesMap = new Map<TemplateCodesEnum, Record<string, string>>()
-  .set(TemplateCodesEnum.FRUIT, generalTitlesConfig)
-  .set(TemplateCodesEnum.FRUIT2, generalTitlesConfig)
-  .set(TemplateCodesEnum.COMPUTER, generalTitlesConfig)
-  .set(TemplateCodesEnum.SOFTWARE, softwareTitlesConfig)
-  .set(TemplateCodesEnum.OTHER, generalTitlesConfig)
-  .set(TemplateCodesEnum.MEDICINE, medicineTitlesConfig)
-  .set(TemplateCodesEnum.PHARM, medicineTitlesConfig)
-  .set(TemplateCodesEnum.PHARM2, pharm2TitlesConfig)
-  .set(TemplateCodesEnum.GAS, fuelTitlesConfig)
-  .set(TemplateCodesEnum.GAS2, fuel2TitlesConfig)
-  .set(TemplateCodesEnum.GENERIC, genericTitlesConfig)
-  .set(TemplateCodesEnum.MEDICINE2, medicineV2titlesConfig)
-  .set(TemplateCodesEnum.FOOD, foodTitlesConfig);
+export const TemplateToPqTitlesMap = new Map<PROZORRO_TEMPLATE_CODES, Record<string, string>>()
+  .set(PROZORRO_TEMPLATE_CODES.FRUIT, generalTitlesConfig)
+  .set(PROZORRO_TEMPLATE_CODES.FRUIT2, generalTitlesConfig)
+  .set(PROZORRO_TEMPLATE_CODES.COMPUTER, generalTitlesConfig)
+  .set(PROZORRO_TEMPLATE_CODES.SOFTWARE, softwareTitlesConfig)
+  .set(PROZORRO_TEMPLATE_CODES.OTHER, generalTitlesConfig)
+  .set(PROZORRO_TEMPLATE_CODES.MEDICINE, medicineTitlesConfig)
+  .set(PROZORRO_TEMPLATE_CODES.PHARM, medicineTitlesConfig)
+  .set(PROZORRO_TEMPLATE_CODES.PHARM2, pharm2TitlesConfig)
+  .set(PROZORRO_TEMPLATE_CODES.GAS, fuelTitlesConfig)
+  .set(PROZORRO_TEMPLATE_CODES.GAS2, fuel2TitlesConfig)
+  .set(PROZORRO_TEMPLATE_CODES.GENERIC, genericTitlesConfig)
+  .set(PROZORRO_TEMPLATE_CODES.MEDICINE2, medicineV2titlesConfig)
+  .set(PROZORRO_TEMPLATE_CODES.FOOD, foodTitlesConfig);

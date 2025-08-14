@@ -3,9 +3,10 @@ import type { AxiosResponse } from "axios";
 import { pdfDictionaryMap } from "@/services/PDF/pdfDictionaryMap";
 import type { DictionaryCollectorInterface } from "@/services/DictionaryCollector/DictionaryCollectorInterface";
 import { STATIC_DATA_URL } from "@/constants/env.ts";
+import { PdfTemplateTypes } from "@/services/PDF/PdfTemplateTypes.ts";
 
 export class DictionaryCollector implements DictionaryCollectorInterface {
-  async load(documentType: string): Promise<Map<string, Record<string, any>>> {
+  async load(documentType: PdfTemplateTypes): Promise<Map<string, Record<string, any>>> {
     let loadedDictionaries = new Map<string, Record<string, any>>();
     const dictionariesMap = pdfDictionaryMap.get(documentType);
     if (dictionariesMap && dictionariesMap?.size) {

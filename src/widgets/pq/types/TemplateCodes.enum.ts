@@ -1,4 +1,4 @@
-export enum TemplateCodesEnum {
+export enum PROZORRO_TEMPLATE_CODES {
   FRUIT = "03220000.0001.01",
   FRUIT2 = "03220000.0002.01",
   GAS = "09130000.0001.01",

@@ -2,12 +2,9 @@ import * as PDF_HELPER_CONST from "@/constants/pdf/pdfHelperConstants";
 import { AbstractDocumentStrategy } from "@/services/PDF/document/AbstractDocumentStrategy";
 import type { SignerType } from "types/sign/SignerType";
 import { DEFAULT_PAGE_MARGIN } from "@/config/pdf/announcementConstants";
-import type {
-  PQContractType,
-  PQDataComplexType,
-} from "@/widgets/pq/types/PQTypes";
+import type { PQContractType, PQDataComplexType } from "@/widgets/pq/types/PQTypes";
 import { STRING } from "@/constants/string";
-import { TemplateCodesEnum } from "@/widgets/pq/types/TemplateCodes.enum";
+import { PROZORRO_TEMPLATE_CODES } from "@/widgets/pq/types/TemplateCodes.enum";
 import type { TenderOfferType } from "@/types/TenderOffer/Tender";
 import { TEMPLATE_TO_BUILDER } from "@/widgets/pq/configs/TemplateToBuilder.map";
 import { TemplateCodeChecker } from "@/widgets/pq/utils/TemplateCodeChecker";
@@ -22,23 +19,15 @@ export class PQDataMaker extends AbstractDocumentStrategy {
     contract?: PQDataComplexType | Record<string, any>
   ): Record<string, any>[] {
     this._tender = contract?.tender || {};
-    const contractObject: PQContractType | Record<string, never> =
-      contract?.contract || { contractTemplateName: STRING.EMPTY };
-    const contractTemplate: TemplateCodesEnum =
-      TemplateCodeChecker.validatedTemplateName(
-        this._formatContractTemplate(
-          contractObject.contractTemplateName || contractTemplateName
-        )
-      );
+    const contractObject: PQContractType | Record<string, never> = contract?.contract || {
+      contractTemplateName: STRING.EMPTY,
+    };
+    const contractTemplate: PROZORRO_TEMPLATE_CODES = TemplateCodeChecker.validatedTemplateName(
+      this._formatContractTemplate(contractObject.contractTemplateName || contractTemplateName)
+    );
 
     if (TEMPLATE_TO_BUILDER.get(contractTemplate)) {
-      return (
-        TEMPLATE_TO_BUILDER.get(contractTemplate)?.build(
-          contractObject,
-          contractTemplate,
-          this._tender
-        ) || []
-      );
+      return TEMPLATE_TO_BUILDER.get(contractTemplate)?.build(contractObject, contractTemplate, this._tender) || [];
     }
 
     return [];

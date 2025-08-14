@@ -1,7 +1,7 @@
 import type { AddressType } from "@/types/Tender/AddressType";
 import type { ClassificationType } from "@/types/Tender/ClassificationType";
 import type { IdentifierType } from "@/types/Tender/IdentifierType";
-import { TemplateCodesEnum } from "@/widgets/pq/types/TemplateCodes.enum";
+import { PROZORRO_TEMPLATE_CODES } from "@/widgets/pq/types/TemplateCodes.enum";
 import type { TenderOfferType } from "@/types/TenderOffer/Tender";
 
 export type PQDataComplexType = {
@@ -23,7 +23,7 @@ export type PQContractType = {
   buyer: PQsupplier;
   suppliers: PQsupplier[];
   items: PQItem[];
-  contractTemplateName: TemplateCodesEnum;
+  contractTemplateName: PROZORRO_TEMPLATE_CODES;
   bid_owner: string;
   date: string;
   id: string;

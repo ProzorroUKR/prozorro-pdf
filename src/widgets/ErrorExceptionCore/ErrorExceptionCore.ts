@@ -1,20 +1,20 @@
-import type { ErrorDetailsModel } from "@/types/ErrorDetailsModel";
-import { ERROR_CODES } from "@/widgets/ErrorExceptionCore/constants/ERROR_CODES.enum";
+import type { ProzorroPdfErrorModel } from "@/types/ProzorroPdfError.model.ts";
+import { PROZORRO_PDF_ERROR_CODES } from "@/widgets/ErrorExceptionCore/constants/ERROR_CODES.enum";
 
-export interface IErrorExceptionCore extends Error {
+export interface IPrzorroPdfErrorExceptionCore extends Error {
   readonly timestamp?: Date;
-  readonly code: ERROR_CODES;
-  readonly details: ErrorDetailsModel;
+  readonly code: PROZORRO_PDF_ERROR_CODES;
+  readonly details: ProzorroPdfErrorModel;
   logWithTrace: () => void;
 }
 
-export class ErrorExceptionCore extends Error implements IErrorExceptionCore {
+export class ErrorExceptionCore extends Error implements IPrzorroPdfErrorExceptionCore {
   public readonly timestamp?: Date;
-  public readonly code: ERROR_CODES;
-  public readonly details: ErrorDetailsModel;
+  public readonly code: PROZORRO_PDF_ERROR_CODES;
+  public readonly details: ProzorroPdfErrorModel;
 
-  constructor(info: string | Error | ErrorDetailsModel) {
-    const details: ErrorDetailsModel = ErrorExceptionCore.getDetails(info);
+  constructor(info: string | Error | ProzorroPdfErrorModel) {
+    const details: ProzorroPdfErrorModel = ErrorExceptionCore.getDetails(info);
 
     super(details?.message);
 
@@ -38,8 +38,8 @@ export class ErrorExceptionCore extends Error implements IErrorExceptionCore {
     this.logWithTrace();
   }
 
-  static getDetails(details: string | Error | ErrorDetailsModel): ErrorDetailsModel {
-    const timestamp = (details as ErrorDetailsModel)?.timestamp || new Date();
+  static getDetails(details: string | Error | ProzorroPdfErrorModel): ProzorroPdfErrorModel {
+    const timestamp = (details as ProzorroPdfErrorModel)?.timestamp || new Date();
 
     switch (true) {
       case details instanceof ErrorExceptionCore: // handler if passed instance of ErrorExceptionCore in this class
@@ -47,19 +47,19 @@ export class ErrorExceptionCore extends Error implements IErrorExceptionCore {
       case details instanceof Error: // handler for original errors
         return {
           timestamp,
-          code: ERROR_CODES.SERVICE_UNAVAILABLE,
+          code: PROZORRO_PDF_ERROR_CODES.SERVICE_UNAVAILABLE,
           message: (details as Error).message,
           originalError: details as Error,
         };
       case typeof details === "string":
         return {
           timestamp,
-          code: ERROR_CODES.SERVICE_UNAVAILABLE,
+          code: PROZORRO_PDF_ERROR_CODES.SERVICE_UNAVAILABLE,
           message: details as string,
         };
       default:
         return {
-          ...(details as ErrorDetailsModel),
+          ...(details as ProzorroPdfErrorModel),
           timestamp,
         };
     }

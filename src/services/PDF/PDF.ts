@@ -3,13 +3,12 @@ import pdfMake from "pdfmake/build/pdfmake";
 import type { Pdfmake } from "@/vite-env";
 import { XMLParser } from "@/services/Dom/XMLParser";
 import { ErrorExceptionCore } from "@/widgets/ErrorExceptionCore/ErrorExceptionCore";
-import type { PDFInterface } from "@/services/PDF/PDFInterface";
 import type { TenderResponseType } from "@/types/Tender/TenderResponseType";
 import { DocumentManager } from "@/services/PDF/document/DocumentManager";
 import { Base64 } from "@/utils/Base64";
 import { Assert } from "@/widgets/ErrorExceptionCore/Assert";
 import { ERROR_MESSAGES } from "@/widgets/ErrorExceptionCore/configs/messages";
-import { PdfTypes } from "@/services/PDF/PdfTypes";
+import { PROZORRO_PDF_TYPES } from "@/services/PDF/PdfTypes";
 import type { PdfConfigType } from "@/types/pdf/PdfConfigType";
 import { LoaderManager } from "@/services/PDF/P7SLoader/LoaderManager";
 import type { PdfDocumentConfigType } from "@/types/pdf/PdfDocumentConfigType";
@@ -22,23 +21,33 @@ import { ENCODING } from "@/constants/encoding";
 import type { SignerType } from "types/sign/SignerType";
 import { PdfTemplateTypes } from "@/services/PDF/PdfTemplateTypes";
 import { SIGN_TO_DOC_FRAME_ID, STRING } from "@/constants/string";
-import { TemplateCodesEnum } from "@/widgets/pq/types/TemplateCodes.enum";
+import { PROZORRO_TEMPLATE_CODES } from "@/widgets/pq/types/TemplateCodes.enum";
 import { FetchTender } from "@/widgets/pq//services/receivingData/FetchTender";
 import type { PQContractType } from "@/widgets/pq/types/PQTypes";
-import { ERROR_CODES } from "@/widgets/ErrorExceptionCore/constants/ERROR_CODES.enum";
+import { PROZORRO_PDF_ERROR_CODES } from "@/widgets/ErrorExceptionCore/constants/ERROR_CODES.enum";
 import { ObjectDecoder } from "@/utils/ObjectDecoder";
 import { FONT_CDN } from "@/constants/env";
 
-export class PDF implements PDFInterface {
-  readonly TYPES = PdfTypes;
-  readonly TEMPLATES = TemplateCodesEnum;
+export interface IProzorroPdf {
+  TYPES: typeof PROZORRO_PDF_TYPES;
+  TEMPLATES: typeof PROZORRO_TEMPLATE_CODES;
+  init(eds: any): void;
+  setConfig(config: PdfConfigType): Promise<void | ErrorExceptionCore>;
+  open(config: PdfDocumentConfigType): Promise<void | ErrorExceptionCore>;
+  getIframe(config: PdfDocumentConfigType): Promise<void | ErrorExceptionCore>;
+  save(config: PdfDocumentConfigType): Promise<void | ErrorExceptionCore>;
+}
+
+export class ProzorroPdf implements IProzorroPdf {
+  readonly TYPES = PROZORRO_PDF_TYPES;
+  readonly TEMPLATES = PROZORRO_TEMPLATE_CODES;
   private readonly base64 = new Base64();
   private readonly xmlParser = new XMLParser();
   private readonly documentManager = new DocumentManager(this.xmlParser);
   private readonly dataTypeValidator = new DataTypeValidator();
   private readonly pdf = pdfMake as Pdfmake;
   private object?: PdfObjectType;
-  private documentType = PdfTypes.TICKET;
+  private documentType = PROZORRO_PDF_TYPES.TICKET;
   private eds?: EdsInterface;
 
   init(eds: EdsInterface): void {
@@ -58,7 +67,7 @@ export class PDF implements PDFInterface {
     try {
       this.documentType = type || this.documentType;
 
-      if (type === PdfTypes.PQ && url === STRING.EMPTY) {
+      if (type === PROZORRO_PDF_TYPES.PQ && url === STRING.EMPTY) {
         return;
       }
 
@@ -83,7 +92,7 @@ export class PDF implements PDFInterface {
       throw new ErrorExceptionCore({
         originalError: error,
         message: (error as any)?.message,
-        code: ERROR_CODES.PDF_GENERATION_FAILED,
+        code: PROZORRO_PDF_ERROR_CODES.PDF_GENERATION_FAILED,
       });
     }
   }
@@ -104,7 +113,7 @@ export class PDF implements PDFInterface {
       throw new ErrorExceptionCore({
         originalError: error,
         message: (error as any)?.message,
-        code: ERROR_CODES.PDF_GENERATION_FAILED,
+        code: PROZORRO_PDF_ERROR_CODES.PDF_GENERATION_FAILED,
       });
     }
   }
@@ -120,14 +129,14 @@ export class PDF implements PDFInterface {
       throw new ErrorExceptionCore({
         originalError: error,
         message: (error as any)?.message,
-        code: ERROR_CODES.PDF_GENERATION_FAILED,
+        code: PROZORRO_PDF_ERROR_CODES.PDF_GENERATION_FAILED,
       });
     }
   }
 
   private async create(config: PdfDocumentConfigType): Promise<Record<string, any>> {
     try {
-      if (this.documentType === PdfTypes.PQ) {
+      if (this.documentType === PROZORRO_PDF_TYPES.PQ) {
         const signers = [] as SignerType[];
         const dictionaries = await new DictionaryCollector().load(PdfTemplateTypes.PQ);
         this.object = await FetchTender.getTenderForContract(this.object as PQContractType);
@@ -144,7 +153,7 @@ export class PDF implements PDFInterface {
       }
 
       Assert.isDefined(this.object, ERROR_MESSAGES.VALIDATION_FAILED.undefinedObject);
-      Assert.isDefined(this.eds, ERROR_MESSAGES.INVALID_PARAMS.libraryInit, ERROR_CODES.INVALID_PARAMS);
+      Assert.isDefined(this.eds, ERROR_MESSAGES.INVALID_PARAMS.libraryInit, PROZORRO_PDF_ERROR_CODES.INVALID_PARAMS);
 
       const loaderManager = new LoaderManager(this.base64, axios);
       loaderManager.setLoaderType(this.documentType);
@@ -169,7 +178,11 @@ export class PDF implements PDFInterface {
         this.object = payload;
       }
 
-      Assert.isDefined(data, ERROR_MESSAGES.INVALID_SIGNATURE.documentEncoding, ERROR_CODES.INVALID_SIGNATURE);
+      Assert.isDefined(
+        data,
+        ERROR_MESSAGES.INVALID_SIGNATURE.documentEncoding,
+        PROZORRO_PDF_ERROR_CODES.INVALID_SIGNATURE
+      );
       const dictionaries = await new DictionaryCollector().load(type);
 
       this.documentManager.setDocumentType(type);
@@ -184,7 +197,7 @@ export class PDF implements PDFInterface {
     encoding: ENCODING | undefined,
     type: string
   ): Promise<{ data: any; signers: any }> {
-    Assert.isDefined(this.eds, ERROR_MESSAGES.INVALID_PARAMS.libraryInit, ERROR_CODES.INVALID_PARAMS);
+    Assert.isDefined(this.eds, ERROR_MESSAGES.INVALID_PARAMS.libraryInit, PROZORRO_PDF_ERROR_CODES.INVALID_PARAMS);
 
     try {
       const response = await this.eds.verify(file, encoding);
@@ -199,7 +212,7 @@ export class PDF implements PDFInterface {
       };
     } catch (error) {
       throw new ErrorExceptionCore({
-        code: ERROR_CODES.INVALID_SIGNATURE,
+        code: PROZORRO_PDF_ERROR_CODES.INVALID_SIGNATURE,
         message: (error as any)?.message,
         originalError: error,
       });

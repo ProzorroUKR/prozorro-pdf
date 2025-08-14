@@ -12,7 +12,7 @@ import { DocumentExtractionService } from "@/services/PDF/document/DocumentExtra
 import { STRING } from "@/constants/string";
 import * as PDF_HELPER_CONST from "@/constants/pdf/pdfHelperConstants";
 import { PDF_FILED_KEYS } from "@/constants/pdf/pdfFieldKeys";
-import { TemplateCodesEnum } from "@/widgets/pq/types/TemplateCodes.enum";
+import { PROZORRO_TEMPLATE_CODES } from "@/widgets/pq/types/TemplateCodes.enum";
 import type { AddressType } from "@/types/Tender/AddressType";
 import { StringHandler } from "@/utils/StringHandler";
 import { AllVersionFormatter } from "@/widgets/pq/services/contractTextFormatters/AllVersionFormatter";
@@ -33,13 +33,13 @@ import { ClassificationTransformer } from "@/widgets/pq/services/Classification/
 import type { ClassificationType } from "@/types/Tender/ClassificationType";
 
 export class FirstVersionFormatter {
-  static isMedicineTemplate(templateName: TemplateCodesEnum): boolean {
-    return [TemplateCodesEnum.MEDICINE, TemplateCodesEnum.PHARM].includes(templateName);
+  static isMedicineTemplate(templateName: PROZORRO_TEMPLATE_CODES): boolean {
+    return [PROZORRO_TEMPLATE_CODES.MEDICINE, PROZORRO_TEMPLATE_CODES.PHARM].includes(templateName);
   }
 
   static createBasicHeader(
     contractObject: PQContractType,
-    contractTemplateParam: TemplateCodesEnum
+    contractTemplateParam: PROZORRO_TEMPLATE_CODES
   ): Record<string, any>[] {
     const nextNamedBuyer = FirstVersionFormatter.isMedicineTemplate(contractTemplateParam)
       ? pqBase.nextNamedCustomer
@@ -102,7 +102,7 @@ export class FirstVersionFormatter {
 
   static createSignature(
     contractObject: PQContractType | Record<any, any>,
-    contractTemplateParam: TemplateCodesEnum
+    contractTemplateParam: PROZORRO_TEMPLATE_CODES
   ): Record<string, any> {
     const { buyer } = contractObject;
     const supplier = DocumentExtractionService.getField<PQsupplier | string>(contractObject, "suppliers[0]");
@@ -193,7 +193,7 @@ export class FirstVersionFormatter {
 
   static createAddition(
     contractObject: PQContractType | Record<any, any>,
-    contractTemplateParam: TemplateCodesEnum
+    contractTemplateParam: PROZORRO_TEMPLATE_CODES
   ): Record<string, any>[] {
     const { items = [] } = contractObject;
 
@@ -295,7 +295,7 @@ export class FirstVersionFormatter {
 
   static createSpecificationUnderTableList(
     contractObject: PQContractType | Record<string, any>,
-    contractTemplateParam: TemplateCodesEnum
+    contractTemplateParam: PROZORRO_TEMPLATE_CODES
   ): string[] {
     const tableList: string[] = [];
     const listConfig = TemplateToSpecificationListMap.get(contractTemplateParam) || generalListConfig;

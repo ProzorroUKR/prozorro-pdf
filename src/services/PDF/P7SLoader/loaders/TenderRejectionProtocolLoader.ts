@@ -10,27 +10,18 @@ import type { DocumentType } from "@/types/Tender/DocumentType";
 import { AwardStatus } from "@/types/Tender/AwardType";
 import type { AwardType } from "@/types/Tender/AwardType";
 import { ErrorExceptionCore } from "@/widgets/ErrorExceptionCore/ErrorExceptionCore";
-import { ERROR_CODES } from "@/widgets/ErrorExceptionCore/constants/ERROR_CODES.enum";
+import { PROZORRO_PDF_ERROR_CODES } from "@/widgets/ErrorExceptionCore/constants/ERROR_CODES.enum";
 
-export class TenderRejectionProtocolLoader
-  extends AbstractLoaderStrategy
-  implements LoaderStrategyInterface
-{
-  public async load(
-    object: AwardType,
-    config: PdfDocumentConfigType
-  ): Promise<P7SLoadResultType> {
+export class TenderRejectionProtocolLoader extends AbstractLoaderStrategy implements LoaderStrategyInterface {
+  public async load(object: AwardType, config: PdfDocumentConfigType): Promise<P7SLoadResultType> {
     const { documents, status, eligible, qualified } = object;
 
     Assert.isDefined(status, ERROR_MESSAGES.VALIDATION_FAILED.undefinedStatus);
-    Assert.isDefined(
-      documents,
-      ERROR_MESSAGES.VALIDATION_FAILED.documentListUndefined
-    );
+    Assert.isDefined(documents, ERROR_MESSAGES.VALIDATION_FAILED.documentListUndefined);
 
     if (![AwardStatus.UNSUCCESSFUL, AwardStatus.CANCELLED].includes(status)) {
       throw new ErrorExceptionCore({
-        code: ERROR_CODES.VALIDATION_FAILED,
+        code: PROZORRO_PDF_ERROR_CODES.VALIDATION_FAILED,
         message: ERROR_MESSAGES.VALIDATION_FAILED.awardStatusNotFind,
       });
     }
@@ -38,7 +29,7 @@ export class TenderRejectionProtocolLoader
     if (status === AwardStatus.CANCELLED) {
       if (!(eligible === false || qualified === false)) {
         throw new ErrorExceptionCore({
-          code: ERROR_CODES.VALIDATION_FAILED,
+          code: PROZORRO_PDF_ERROR_CODES.VALIDATION_FAILED,
           message: ERROR_MESSAGES.VALIDATION_FAILED.wrongEligibleOrQualified,
         });
       }
@@ -53,21 +44,14 @@ export class TenderRejectionProtocolLoader
     };
   }
 
-  private getDocumentUrl(
-    documentList: DocumentType[],
-    { date }: PdfDocumentConfigType
-  ): string {
+  private getDocumentUrl(documentList: DocumentType[], { date }: PdfDocumentConfigType): string {
     const documents = documentList.filter(
       (doc: Record<string, any>) =>
-        doc.documentType === "notice" &&
-        this.approximateCheckDateModified(doc.dateModified, date)
+        doc.documentType === "notice" && this.approximateCheckDateModified(doc.dateModified, date)
     );
     const document = ArrayHandler.getLastElement(documents);
 
-    Assert.isDefined(
-      document,
-      ERROR_MESSAGES.VALIDATION_FAILED.undefinedDocumentTitle
-    );
+    Assert.isDefined(document, ERROR_MESSAGES.VALIDATION_FAILED.undefinedDocumentTitle);
 
     return document.url;
   }

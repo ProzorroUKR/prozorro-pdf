@@ -1,10 +1,10 @@
 import type { PQContractType } from "@/widgets/pq/types/PQTypes";
-import { TemplateCodesEnum } from "@/widgets/pq/types/TemplateCodes.enum";
+import { PROZORRO_TEMPLATE_CODES } from "@/widgets/pq/types/TemplateCodes.enum";
 
 export interface IPQBuilder {
   build(
     contractObject: PQContractType | Record<string, never>,
-    contractTemplate: TemplateCodesEnum,
+    contractTemplate: PROZORRO_TEMPLATE_CODES,
     tender: any
   ): Record<string, any>[];
 }

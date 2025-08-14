@@ -1,4 +1,4 @@
-export enum ERROR_CODES {
+export enum PROZORRO_PDF_ERROR_CODES {
   INVALID_SIGNATURE = "INVALID_SIGNATURE", // EDS errors
   INVALID_PARAMS = "INVALID_PARAMS", // invalid params passed to library
   VALIDATION_FAILED = "VALIDATION_FAILED", // business logic error

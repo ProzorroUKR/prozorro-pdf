@@ -1,4 +1,4 @@
-import { TemplateCodesEnum } from "@/widgets/pq/types/TemplateCodes.enum";
+import { PROZORRO_TEMPLATE_CODES } from "@/widgets/pq/types/TemplateCodes.enum";
 import { DocumentExtractionService } from "@/services/PDF/document/DocumentExtractionService";
 import { PDF_FILED_KEYS } from "@/constants/pdf/pdfFieldKeys";
 import { PQ_SPECIFICATION_HEADING_MARGIN, PQ_TESTING_GROUNDS_MARGIN } from "@/widgets/pq/configs/margins";
@@ -6,7 +6,7 @@ import { labAnalysisTexts, testingGroundsTexts } from "@/widgets/pq/templates/me
 
 export class MedicineFormatter {
   static createMedAddition(contractTemplate: string): Record<string, any>[] {
-    const text = contractTemplate === TemplateCodesEnum.MEDICINE ? testingGroundsTexts : labAnalysisTexts;
+    const text = contractTemplate === PROZORRO_TEMPLATE_CODES.MEDICINE ? testingGroundsTexts : labAnalysisTexts;
     return [
       {
         text: DocumentExtractionService.getField(text, "addition2"),

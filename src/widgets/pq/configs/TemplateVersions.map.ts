@@ -1,21 +1,21 @@
-import { TemplateCodesEnum } from "@/widgets/pq/types/TemplateCodes.enum";
+import { PROZORRO_TEMPLATE_CODES } from "@/widgets/pq/types/TemplateCodes.enum";
 import { TemplateVersionsEnum } from "@/widgets/pq/types/TemplateVersions.enum";
 
-export const TemplateVersionsMap = new Map<TemplateVersionsEnum, TemplateCodesEnum[]>()
+export const TemplateVersionsMap = new Map<TemplateVersionsEnum, PROZORRO_TEMPLATE_CODES[]>()
   .set(TemplateVersionsEnum.VERSION_1, [
-    TemplateCodesEnum.OTHER,
-    TemplateCodesEnum.GAS,
-    TemplateCodesEnum.PHARM,
-    TemplateCodesEnum.MEDICINE,
-    TemplateCodesEnum.COMPUTER,
-    TemplateCodesEnum.FRUIT,
+    PROZORRO_TEMPLATE_CODES.OTHER,
+    PROZORRO_TEMPLATE_CODES.GAS,
+    PROZORRO_TEMPLATE_CODES.PHARM,
+    PROZORRO_TEMPLATE_CODES.MEDICINE,
+    PROZORRO_TEMPLATE_CODES.COMPUTER,
+    PROZORRO_TEMPLATE_CODES.FRUIT,
   ])
   .set(TemplateVersionsEnum.VERSION_2, [
-    TemplateCodesEnum.GENERIC,
-    TemplateCodesEnum.FOOD,
-    TemplateCodesEnum.FRUIT2,
-    TemplateCodesEnum.GAS2,
-    TemplateCodesEnum.PHARM2,
-    TemplateCodesEnum.MEDICINE2,
-    TemplateCodesEnum.SOFTWARE,
+    PROZORRO_TEMPLATE_CODES.GENERIC,
+    PROZORRO_TEMPLATE_CODES.FOOD,
+    PROZORRO_TEMPLATE_CODES.FRUIT2,
+    PROZORRO_TEMPLATE_CODES.GAS2,
+    PROZORRO_TEMPLATE_CODES.PHARM2,
+    PROZORRO_TEMPLATE_CODES.MEDICINE2,
+    PROZORRO_TEMPLATE_CODES.SOFTWARE,
   ]);

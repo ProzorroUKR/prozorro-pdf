@@ -6,11 +6,9 @@ import { ErrorExceptionCore } from "@/widgets/ErrorExceptionCore/ErrorExceptionC
 import { ERROR_MESSAGES } from "@/widgets/ErrorExceptionCore/configs/messages";
 import type { PdfObjectType } from "@/types/pdf/PdfObjectType";
 import type { AxiosResponse, AxiosStatic } from "axios";
-import { ERROR_CODES } from "@/widgets/ErrorExceptionCore/constants/ERROR_CODES.enum";
+import { PROZORRO_PDF_ERROR_CODES } from "@/widgets/ErrorExceptionCore/constants/ERROR_CODES.enum";
 
-export abstract class AbstractLoaderStrategy
-  implements LoaderStrategyInterface
-{
+export abstract class AbstractLoaderStrategy implements LoaderStrategyInterface {
   constructor(
     protected readonly base64: IBase64,
     private readonly axios: AxiosStatic
@@ -25,30 +23,19 @@ export abstract class AbstractLoaderStrategy
       return await this.base64.encode(data);
     } catch {
       throw new ErrorExceptionCore({
-        code: ERROR_CODES.INVALID_SIGNATURE,
+        code: PROZORRO_PDF_ERROR_CODES.INVALID_SIGNATURE,
         message: ERROR_MESSAGES.INVALID_SIGNATURE.documentAccess,
       });
     }
   }
 
-  protected checkDateModified(
-    dateModified?: string,
-    documentDate?: string
-  ): boolean {
+  protected checkDateModified(dateModified?: string, documentDate?: string): boolean {
     return documentDate && dateModified ? documentDate === dateModified : true;
   }
 
-  protected approximateCheckDateModified(
-    dateModified?: string,
-    documentDate?: string
-  ): boolean {
-    return documentDate && dateModified
-      ? dateModified.slice(0, documentDate.length) === documentDate
-      : true;
+  protected approximateCheckDateModified(dateModified?: string, documentDate?: string): boolean {
+    return documentDate && dateModified ? dateModified.slice(0, documentDate.length) === documentDate : true;
   }
 
-  abstract load(
-    object: PdfObjectType,
-    config: PdfDocumentConfigType
-  ): Promise<P7SLoadResultType>;
+  abstract load(object: PdfObjectType, config: PdfDocumentConfigType): Promise<P7SLoadResultType>;
 }

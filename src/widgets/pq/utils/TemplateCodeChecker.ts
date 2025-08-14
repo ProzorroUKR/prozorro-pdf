@@ -1,15 +1,18 @@
-import { TemplateCodesEnum } from "@/widgets/pq/types/TemplateCodes.enum";
+import { PROZORRO_TEMPLATE_CODES } from "@/widgets/pq/types/TemplateCodes.enum";
 import { TemplateVersionsMap } from "@/widgets/pq/configs/TemplateVersions.map";
 import { TemplateVersionsEnum } from "@/widgets/pq/types/TemplateVersions.enum";
 
 export class TemplateCodeChecker {
   static isExistingTemplateName(templateName: string): boolean {
-    return Object.values(TemplateCodesEnum).includes(templateName as TemplateCodesEnum);
+    return Object.values(PROZORRO_TEMPLATE_CODES).includes(templateName as PROZORRO_TEMPLATE_CODES);
   }
 
-  static validatedTemplateName(templateName: string, fallbackTemplate = TemplateCodesEnum.GENERIC): TemplateCodesEnum {
+  static validatedTemplateName(
+    templateName: string,
+    fallbackTemplate = PROZORRO_TEMPLATE_CODES.GENERIC
+  ): PROZORRO_TEMPLATE_CODES {
     return TemplateCodeChecker.isExistingTemplateName(templateName)
-      ? (templateName as TemplateCodesEnum)
+      ? (templateName as PROZORRO_TEMPLATE_CODES)
       : fallbackTemplate;
   }
 

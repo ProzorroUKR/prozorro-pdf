@@ -10,14 +10,8 @@ import { ENCODING } from "@/constants/encoding";
 import { PdfTemplateTypes } from "@/services/PDF/PdfTemplateTypes.ts";
 import type { PdfDocumentConfigType } from "@/types/pdf/PdfDocumentConfigType";
 
-export class ConclusionLoader
-  extends AbstractLoaderStrategy
-  implements LoaderStrategyInterface
-{
-  public async load(
-    object: MonitoringType,
-    config: PdfDocumentConfigType
-  ): Promise<P7SLoadResultType> {
+export class ConclusionLoader extends AbstractLoaderStrategy implements LoaderStrategyInterface {
+  public async load(object: MonitoringType, config: PdfDocumentConfigType): Promise<P7SLoadResultType> {
     const url = this.getDocumentUrl(object, config);
     const file = await this.getData(url);
 
@@ -29,31 +23,17 @@ export class ConclusionLoader
     };
   }
 
-  private getDocumentUrl(
-    object: MonitoringType,
-    { title, date }: PdfDocumentConfigType
-  ): string {
-    Assert.isDefined(
-      object.conclusion,
-      ERROR_MESSAGES.VALIDATION_FAILED.undefinedConclusion
-    );
-    Assert.isDefined(
-      object.conclusion.documents,
-      ERROR_MESSAGES.VALIDATION_FAILED.undefinedConclusionOfDocs
-    );
+  private getDocumentUrl(object: MonitoringType, { title, date }: PdfDocumentConfigType): string {
+    Assert.isDefined(object.conclusion, ERROR_MESSAGES.VALIDATION_FAILED.undefinedConclusion);
+    Assert.isDefined(object.conclusion.documents, ERROR_MESSAGES.VALIDATION_FAILED.undefinedConclusionOfDocs);
 
     const documents: DocumentType[] = object.conclusion.documents.filter(
-      (doc: DocumentType) =>
-        doc.title === title && this.checkDateModified(doc.dateModified, date)
+      (doc: DocumentType) => doc.title === title && this.checkDateModified(doc.dateModified, date)
     );
 
-    const document: DocumentType | undefined =
-      ArrayHandler.getLastElement<DocumentType>(documents);
+    const document: DocumentType | undefined = ArrayHandler.getLastElement<DocumentType>(documents);
 
-    Assert.isDefined(
-      document,
-      ERROR_MESSAGES.VALIDATION_FAILED.undefinedDocumentTitle
-    );
+    Assert.isDefined(document, ERROR_MESSAGES.VALIDATION_FAILED.undefinedDocumentTitle);
 
     return document.url;
   }

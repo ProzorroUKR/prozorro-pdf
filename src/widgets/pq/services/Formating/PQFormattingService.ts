@@ -15,12 +15,12 @@ import { CompoundTextAdapter } from "@/widgets/pq/services/Formating/CompoundTex
 import { TemplateToPqTitlesMap } from "@/widgets/pq/configs/TemplateToPqTitles.map";
 import { generalTitlesConfig } from "@/widgets/pq/configs/pqTitles";
 import { pqBase } from "@/widgets/pq/configs/pqTexts";
-import { TemplateCodesEnum } from "@/widgets/pq/types/TemplateCodes.enum";
+import { PROZORRO_TEMPLATE_CODES } from "@/widgets/pq/types/TemplateCodes.enum";
 import { LINE_HEIGHT_20 } from "@/constants/pdf/pdfHelperConstants";
 import type { TenderOfferType } from "@/types/TenderOffer/Tender";
 
 export class PQFormattingService {
-  static getLocationTitle(contractTemplateParam: TemplateCodesEnum): Record<string, any> {
+  static getLocationTitle(contractTemplateParam: PROZORRO_TEMPLATE_CODES): Record<string, any> {
     const titles = TemplateToPqTitlesMap.get(contractTemplateParam) || generalTitlesConfig;
     const index = Object.keys(titles).length;
 

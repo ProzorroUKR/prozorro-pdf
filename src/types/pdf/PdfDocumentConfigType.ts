@@ -5,5 +5,5 @@ export type PdfDocumentConfigType = {
   date?: string;
   encoding?: ENCODING;
   tender?: string;
-  contractTemplateName?: string; // TemplateCodesEnum
+  contractTemplateName?: string; // PROZORRO_TEMPLATE_CODES
 };

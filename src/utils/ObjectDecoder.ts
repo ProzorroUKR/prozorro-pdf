@@ -1,7 +1,7 @@
 import { Base64 } from "@/utils/Base64";
 import { ENCODING } from "@/constants/encoding";
 import { ErrorExceptionCore } from "@/widgets/ErrorExceptionCore/ErrorExceptionCore";
-import { ERROR_CODES } from "@/widgets/ErrorExceptionCore/constants/ERROR_CODES.enum";
+import { PROZORRO_PDF_ERROR_CODES } from "@/widgets/ErrorExceptionCore/constants/ERROR_CODES.enum";
 import { ERROR_MESSAGES } from "@/widgets/ErrorExceptionCore/configs/messages";
 
 /**
@@ -43,7 +43,7 @@ export class ObjectDecoder {
     } catch {
       throw new ErrorExceptionCore({
         message: ERROR_MESSAGES.INVALID_SIGNATURE.documentEncoding,
-        code: ERROR_CODES.INVALID_SIGNATURE,
+        code: PROZORRO_PDF_ERROR_CODES.INVALID_SIGNATURE,
       });
     }
   }

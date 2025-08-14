@@ -14,14 +14,9 @@ import type { EdrDataType, EdrFounderType, EdrType } from "@/types/Edr/EdrType";
 import { MARGIN_TOP_10 } from "@/config/pdf/conclusionOfMonitoringConstants";
 import { ERROR_MESSAGES } from "@/widgets/ErrorExceptionCore/configs/messages";
 import { ErrorExceptionCore } from "@/widgets/ErrorExceptionCore/ErrorExceptionCore";
-import { ERROR_CODES } from "@/widgets/ErrorExceptionCore/constants/ERROR_CODES.enum";
+import { PROZORRO_PDF_ERROR_CODES } from "@/widgets/ErrorExceptionCore/constants/ERROR_CODES.enum";
 import { AbstractDocumentStrategy } from "@/services/PDF/document/AbstractDocumentStrategy";
-import {
-  LINE_LENGTH,
-  ROW_ALL_WIDTH,
-  ROW_WIDTH_100,
-  ROW_WIDTH_150,
-} from "@/constants/pdf/pdfHelperConstants";
+import { LINE_LENGTH, ROW_ALL_WIDTH, ROW_WIDTH_100, ROW_WIDTH_150 } from "@/constants/pdf/pdfHelperConstants";
 import { ClassificationTransformer } from "@/widgets/pq/services/Classification/ClassificationTransformer";
 import {
   ANNOUNCEMENT_PAGE_MARGIN,
@@ -40,7 +35,7 @@ export class EdrDataMaker extends AbstractDocumentStrategy {
 
     if (error || !data) {
       throw new ErrorExceptionCore({
-        code: ERROR_CODES.VALIDATION_FAILED,
+        code: PROZORRO_PDF_ERROR_CODES.VALIDATION_FAILED,
         message: ERROR_MESSAGES.VALIDATION_FAILED.wrongEdrFile,
       });
     }
@@ -61,17 +56,11 @@ export class EdrDataMaker extends AbstractDocumentStrategy {
   }
 
   createFooter(_?: SignerType[], link?: string): Record<string, any>[] {
-    Assert.isDefined(
-      link,
-      ERROR_MESSAGES.INVALID_PARAMS.undefinedUrl,
-      ERROR_CODES.INVALID_PARAMS
-    );
+    Assert.isDefined(link, ERROR_MESSAGES.INVALID_PARAMS.undefinedUrl, PROZORRO_PDF_ERROR_CODES.INVALID_PARAMS);
 
     return [
       {
-        canvas: [
-          { type: "line", x1: 0, y1: 0, x2: LINE_LENGTH, y2: 0, lineWidth: 1 },
-        ],
+        canvas: [{ type: "line", x1: 0, y1: 0, x2: LINE_LENGTH, y2: 0, lineWidth: 1 }],
       },
       {
         margin: FOOTER_MARGIN,
@@ -109,34 +98,15 @@ export class EdrDataMaker extends AbstractDocumentStrategy {
       table: {
         widths: [ROW_WIDTH_150, ROW_ALL_WIDTH],
         body: [
-          this._getIdentificationTableRow(
-            EDR.legal_name,
-            this.getField(data, "identification.legalName")
-          ),
-          this._getIdentificationTableRow(
-            EDR.scheme,
-            this.getField(data, "identification.scheme")
-          ),
-          this._getIdentificationTableRow(
-            EDR.identification_id,
-            this.getField(data, "identification.id", STRING.DASH)
-          ),
+          this._getIdentificationTableRow(EDR.legal_name, this.getField(data, "identification.legalName")),
+          this._getIdentificationTableRow(EDR.scheme, this.getField(data, "identification.scheme")),
+          this._getIdentificationTableRow(EDR.identification_id, this.getField(data, "identification.id", STRING.DASH)),
           this._getIdentificationTableRow(EDR.name, data.name || STRING.DASH),
-          this._getIdentificationTableRow(
-            EDR.registration_status,
-            this.getField(data, "registrationStatusDetails")
-          ),
-          this._getIdentificationTableRow(
-            EDR.management,
-            data.management || STRING.DASH
-          ),
+          this._getIdentificationTableRow(EDR.registration_status, this.getField(data, "registrationStatusDetails")),
+          this._getIdentificationTableRow(EDR.management, data.management || STRING.DASH),
           this._getIdentificationTableRow(
             EDR.address,
-            StringHandler.customerLocation(
-              this.getField(data, "address"),
-              STRING.DASH,
-              ADDRESS_ORDER.EDR_LOCATION
-            )
+            StringHandler.customerLocation(this.getField(data, "address"), STRING.DASH, ADDRESS_ORDER.EDR_LOCATION)
           ),
         ],
       },
@@ -145,18 +115,12 @@ export class EdrDataMaker extends AbstractDocumentStrategy {
   }
 
   private _getFoundersTable(founders: EdrFounderType[]): Record<string, any> {
-    const foundersColumnsList = (
-      founders.length ? founders : [PDF_HELPER_CONST.EMPTY_FIELD]
-    ).map(founder => [
+    const foundersColumnsList = (founders.length ? founders : [PDF_HELPER_CONST.EMPTY_FIELD]).map(founder => [
       this._getTableCell(this.getField(founder, "name", STRING.DASH)),
       this._getTableCell(this.getField(founder, "code", STRING.DASH)),
       this._getTableCell(this.getField(founder, "capital", STRING.DASH)),
       this._getTableCell(
-        StringHandler.customerLocation(
-          this.getField(founder, "address"),
-          STRING.DASH,
-          ADDRESS_ORDER.EDR_LOCATION
-        )
+        StringHandler.customerLocation(this.getField(founder, "address"), STRING.DASH, ADDRESS_ORDER.EDR_LOCATION)
       ),
     ]);
 
@@ -201,10 +165,7 @@ export class EdrDataMaker extends AbstractDocumentStrategy {
             },
             PDF_HELPER_CONST.EMPTY_FIELD,
           ],
-          [
-            this._getTableCell(EDR.main_kind, true),
-            this._getTableCell(this._getFormatedKind(data.activityKind)),
-          ],
+          [this._getTableCell(EDR.main_kind, true), this._getTableCell(this._getFormatedKind(data.activityKind))],
           ...this._getAdditionalActivityKindRows(data.additionalActivityKinds),
         ],
       },
@@ -219,22 +180,15 @@ export class EdrDataMaker extends AbstractDocumentStrategy {
     return [this._getTableCell(left, leftBold), this._getTableCell(right)];
   }
 
-  private _getTableCell(
-    text: string | Record<string, any>,
-    bold = false
-  ): Record<string, any> {
+  private _getTableCell(text: string | Record<string, any>, bold = false): Record<string, any> {
     return {
       style: bold ? PDF_STYLES.table_head : PDF_STYLES.table_data,
       text,
     };
   }
 
-  private _getAdditionalActivityKindRows(
-    kinds?: ClassificationType[]
-  ): Record<string, any>[][] {
-    const list: Array<ClassificationType | undefined> = kinds?.length
-      ? kinds
-      : [undefined];
+  private _getAdditionalActivityKindRows(kinds?: ClassificationType[]): Record<string, any>[][] {
+    const list: Array<ClassificationType | undefined> = kinds?.length ? kinds : [undefined];
     return list.map((kind: ClassificationType | undefined, index: number) => [
       index
         ? PDF_HELPER_CONST.EMPTY_FIELD
@@ -248,8 +202,6 @@ export class EdrDataMaker extends AbstractDocumentStrategy {
   }
 
   private _getFormatedKind(kind?: ClassificationType): string {
-    return kind
-      ? ClassificationTransformer.formatClassification(kind)
-      : STRING.DASH;
+    return kind ? ClassificationTransformer.formatClassification(kind) : STRING.DASH;
   }
 }

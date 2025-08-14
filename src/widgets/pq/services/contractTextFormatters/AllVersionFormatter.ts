@@ -15,7 +15,7 @@ import { DateHandler } from "@/utils/DateHandler";
 import { DocumentExtractionService } from "@/services/PDF/document/DocumentExtractionService";
 import { DEFAULT_TEXT_FIELDS } from "@/constants/string";
 import { TABLE_COLUMN_LEFT_MARGIN } from "@/config/pdf/announcementConstants";
-import { TemplateCodesEnum } from "@/widgets/pq/types/TemplateCodes.enum";
+import { PROZORRO_TEMPLATE_CODES } from "@/widgets/pq/types/TemplateCodes.enum";
 import { TemplateToPqTitlesMap } from "@/widgets/pq/configs/TemplateToPqTitles.map";
 import { genericContractConfig } from "@/widgets/pq/templates/generic/configs/genericContract.config";
 import { TemplateToTextMap } from "@/widgets/pq/configs/TemplateToText.map";
@@ -29,7 +29,7 @@ import { TemplateVersionsEnum } from "@/widgets/pq/types/TemplateVersions.enum";
 export class AllVersionFormatter {
   static additionHeader(
     contractObject: PQContractType | Record<any, any>,
-    contractTemplateParam: TemplateCodesEnum,
+    contractTemplateParam: PROZORRO_TEMPLATE_CODES,
     additionId: string,
     contractIdLabel: string,
     additionTitle: string,
@@ -87,7 +87,7 @@ export class AllVersionFormatter {
 
   static createContractText(
     contractObject: PQContractType | Record<string, never>,
-    contractTemplateParam: TemplateCodesEnum,
+    contractTemplateParam: PROZORRO_TEMPLATE_CODES,
     tender: TenderOfferType | Record<string, any>
   ): Record<string, any>[] {
     const listText: Record<string, any>[] = [];
@@ -116,7 +116,10 @@ export class AllVersionFormatter {
     return listText;
   }
 
-  static createTitle(contractObject: PQContractType, contractTemplateParam: TemplateCodesEnum): Record<string, any>[] {
+  static createTitle(
+    contractObject: PQContractType,
+    contractTemplateParam: PROZORRO_TEMPLATE_CODES
+  ): Record<string, any>[] {
     const isVersion2 = TemplateCodeChecker.isVersionTemplate(contractTemplateParam, TemplateVersionsEnum.VERSION_2);
     const subtitleStyle = isVersion2 ? PDF_FILED_KEYS.BOLD_TEXT : PDF_FILED_KEYS.REGULAR_TEXT;
 

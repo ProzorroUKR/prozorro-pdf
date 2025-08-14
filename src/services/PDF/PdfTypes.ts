@@ -1,4 +1,4 @@
-export enum PdfTypes {
+export enum PROZORRO_PDF_TYPES {
   PQ = "pq",
   EDR = "EDR",
   NAZK = "nazk",

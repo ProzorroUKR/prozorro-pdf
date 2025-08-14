@@ -10,25 +10,19 @@ import { AwardStatus } from "@/types/Tender/AwardType";
 import type { AwardType } from "@/types/Tender/AwardType";
 import { ErrorExceptionCore } from "@/widgets/ErrorExceptionCore/ErrorExceptionCore";
 import type { DocumentType } from "@/types/Tender/DocumentType";
-import { ERROR_CODES } from "@/widgets/ErrorExceptionCore/constants/ERROR_CODES.enum";
+import { PROZORRO_PDF_ERROR_CODES } from "@/widgets/ErrorExceptionCore/constants/ERROR_CODES.enum";
 
-export class DeterminingWinnerOfProcurementLoader
-  extends AbstractLoaderStrategy
-  implements LoaderStrategyInterface
-{
+export class DeterminingWinnerOfProcurementLoader extends AbstractLoaderStrategy implements LoaderStrategyInterface {
   public async load(
     { documents, status, qualified, eligible }: AwardType,
     config: PdfDocumentConfigType
   ): Promise<P7SLoadResultType> {
     Assert.isDefined(status, ERROR_MESSAGES.VALIDATION_FAILED.undefinedStatus);
-    Assert.isDefined(
-      documents,
-      ERROR_MESSAGES.VALIDATION_FAILED.documentListUndefined
-    );
+    Assert.isDefined(documents, ERROR_MESSAGES.VALIDATION_FAILED.documentListUndefined);
 
     if (![AwardStatus.ACTIVE, AwardStatus.CANCELLED].includes(status)) {
       throw new ErrorExceptionCore({
-        code: ERROR_CODES.VALIDATION_FAILED,
+        code: PROZORRO_PDF_ERROR_CODES.VALIDATION_FAILED,
         message: ERROR_MESSAGES.VALIDATION_FAILED.awardStatusNotFind,
       });
     }
@@ -36,14 +30,14 @@ export class DeterminingWinnerOfProcurementLoader
     if (status === AwardStatus.CANCELLED) {
       if (eligible === false) {
         throw new ErrorExceptionCore({
-          code: ERROR_CODES.VALIDATION_FAILED,
+          code: PROZORRO_PDF_ERROR_CODES.VALIDATION_FAILED,
           message: ERROR_MESSAGES.VALIDATION_FAILED.wrongEligible,
         });
       }
 
       if (qualified !== true) {
         throw new ErrorExceptionCore({
-          code: ERROR_CODES.VALIDATION_FAILED,
+          code: PROZORRO_PDF_ERROR_CODES.VALIDATION_FAILED,
           message: ERROR_MESSAGES.VALIDATION_FAILED.wrongQualified,
         });
       }
@@ -59,21 +53,14 @@ export class DeterminingWinnerOfProcurementLoader
     };
   }
 
-  private getDocumentUrl(
-    documentList: DocumentType[],
-    { date }: PdfDocumentConfigType
-  ): string {
+  private getDocumentUrl(documentList: DocumentType[], { date }: PdfDocumentConfigType): string {
     const documents = documentList.filter(
       (doc: Record<string, any>) =>
-        doc.documentType === "notice" &&
-        this.approximateCheckDateModified(doc.dateModified, date)
+        doc.documentType === "notice" && this.approximateCheckDateModified(doc.dateModified, date)
     );
     const document = ArrayHandler.getLastElement(documents);
 
-    Assert.isDefined(
-      document,
-      ERROR_MESSAGES.VALIDATION_FAILED.undefinedDocumentTitle
-    );
+    Assert.isDefined(document, ERROR_MESSAGES.VALIDATION_FAILED.undefinedDocumentTitle);
 
     return document.url;
   }

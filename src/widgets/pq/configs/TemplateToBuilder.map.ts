@@ -1,5 +1,5 @@
 import type { IPQBuilder } from "@/widgets/pq/PQBuilderInterface";
-import { TemplateCodesEnum } from "@/widgets/pq/types/TemplateCodes.enum";
+import { PROZORRO_TEMPLATE_CODES } from "@/widgets/pq/types/TemplateCodes.enum";
 import { ComputersBuilder } from "@/widgets/pq/templates/computers/ComputerBuilder";
 import { FoodBuilder } from "@/widgets/pq/templates/food/FoodBuilder";
 import { FruitBuilder } from "@/widgets/pq/templates/fruit/FruitBuilder";
@@ -15,16 +15,16 @@ import { SoftwareBuilder } from "@/widgets/pq/templates/software/SoftwareBuilder
 import { Fruit2Builder } from "@/widgets/pq/templates/fruit2/Fruit2Builder";
 
 export const TEMPLATE_TO_BUILDER = new Map<string, IPQBuilder>()
-  .set(TemplateCodesEnum.COMPUTER, new ComputersBuilder())
-  .set(TemplateCodesEnum.SOFTWARE, new SoftwareBuilder())
-  .set(TemplateCodesEnum.FOOD, new FoodBuilder())
-  .set(TemplateCodesEnum.FRUIT, new FruitBuilder())
-  .set(TemplateCodesEnum.FRUIT2, new Fruit2Builder())
-  .set(TemplateCodesEnum.GAS, new FuelBuilder())
-  .set(TemplateCodesEnum.GAS2, new Fuel2Builder())
-  .set(TemplateCodesEnum.GENERIC, new GenericBuilder())
-  .set(TemplateCodesEnum.MEDICINE, new MedicineBuilder())
-  .set(TemplateCodesEnum.MEDICINE2, new Medicine2Builder())
-  .set(TemplateCodesEnum.OTHER, new OtherBuilder())
-  .set(TemplateCodesEnum.PHARM, new PharmBuilder())
-  .set(TemplateCodesEnum.PHARM2, new Pharm2Builder());
+  .set(PROZORRO_TEMPLATE_CODES.COMPUTER, new ComputersBuilder())
+  .set(PROZORRO_TEMPLATE_CODES.SOFTWARE, new SoftwareBuilder())
+  .set(PROZORRO_TEMPLATE_CODES.FOOD, new FoodBuilder())
+  .set(PROZORRO_TEMPLATE_CODES.FRUIT, new FruitBuilder())
+  .set(PROZORRO_TEMPLATE_CODES.FRUIT2, new Fruit2Builder())
+  .set(PROZORRO_TEMPLATE_CODES.GAS, new FuelBuilder())
+  .set(PROZORRO_TEMPLATE_CODES.GAS2, new Fuel2Builder())
+  .set(PROZORRO_TEMPLATE_CODES.GENERIC, new GenericBuilder())
+  .set(PROZORRO_TEMPLATE_CODES.MEDICINE, new MedicineBuilder())
+  .set(PROZORRO_TEMPLATE_CODES.MEDICINE2, new Medicine2Builder())
+  .set(PROZORRO_TEMPLATE_CODES.OTHER, new OtherBuilder())
+  .set(PROZORRO_TEMPLATE_CODES.PHARM, new PharmBuilder())
+  .set(PROZORRO_TEMPLATE_CODES.PHARM2, new Pharm2Builder());

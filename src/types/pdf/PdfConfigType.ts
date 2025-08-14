@@ -1,6 +1,6 @@
-import type { PdfTypes } from "@/services/PDF/PdfTypes";
+import type { PROZORRO_PDF_TYPES } from "@/services/PDF/PdfTypes";
 
 export type PdfConfigType = {
   url: string;
-  type?: PdfTypes;
+  type?: PROZORRO_PDF_TYPES;
 };

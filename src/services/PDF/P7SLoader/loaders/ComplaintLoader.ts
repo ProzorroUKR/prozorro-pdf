@@ -10,23 +10,11 @@ import type { DocumentType } from "@/types/Tender/DocumentType";
 import { SIGNATURE_FILE_NAME, STRING } from "@/constants/string";
 import { DateHandler } from "@/utils/DateHandler";
 
-export class ComplaintLoader
-  extends AbstractLoaderStrategy
-  implements LoaderStrategyInterface
-{
-  async load(
-    object: ComplaintType,
-    config: PdfDocumentConfigType
-  ): Promise<P7SLoadResultType> {
-    Assert.isDefined(
-      object && object.documents.length,
-      ERROR_MESSAGES.VALIDATION_FAILED.documentListUndefined
-    );
+export class ComplaintLoader extends AbstractLoaderStrategy implements LoaderStrategyInterface {
+  async load(object: ComplaintType, config: PdfDocumentConfigType): Promise<P7SLoadResultType> {
+    Assert.isDefined(object && object.documents.length, ERROR_MESSAGES.VALIDATION_FAILED.documentListUndefined);
 
-    const url =
-      object && object.documents.length
-        ? this.getDocumentUrl(object)
-        : STRING.EMPTY;
+    const url = object && object.documents.length ? this.getDocumentUrl(object) : STRING.EMPTY;
     const file = await this.getData(this.getDocumentUrl(object));
 
     return {
@@ -43,10 +31,7 @@ export class ComplaintLoader
       .sort((...args) => DateHandler.dateModifiedDiff(...args))
       .slice(-1);
 
-    Assert.isDefined(
-      document,
-      ERROR_MESSAGES.VALIDATION_FAILED.undefinedDocumentTitle
-    );
+    Assert.isDefined(document, ERROR_MESSAGES.VALIDATION_FAILED.undefinedDocumentTitle);
 
     return document.url;
   }

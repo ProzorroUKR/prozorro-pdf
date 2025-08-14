@@ -34,7 +34,7 @@ import { ADDRESS_ORDER } from "@/config/pdf/addressOrder";
 import type { TenderOfferType } from "@/types/TenderOffer/Tender";
 import { ContractEnsuring } from "@/widgets/pq/services/ContractEnsuring/ContractEnsuring";
 import type { AddressType } from "@/types/Tender/AddressType";
-import { TemplateCodesEnum } from "@/widgets/pq/types/TemplateCodes.enum";
+import { PROZORRO_TEMPLATE_CODES } from "@/widgets/pq/types/TemplateCodes.enum";
 
 export class SecondVersionFormatter {
   static createGenericHeader(
@@ -118,7 +118,7 @@ export class SecondVersionFormatter {
 
   static createGenericAddition1(
     contractObject: PQContractType | Record<any, any>,
-    contractTemplateParam: TemplateCodesEnum
+    contractTemplateParam: PROZORRO_TEMPLATE_CODES
   ): Record<string, any>[] {
     const header = AllVersionFormatter.additionHeader(
       contractObject,
@@ -175,7 +175,7 @@ export class SecondVersionFormatter {
 
   static createGenericTableItemsBody(
     contractObject: PQContractType | Record<any, any>,
-    contractTemplateName: TemplateCodesEnum
+    contractTemplateName: PROZORRO_TEMPLATE_CODES
   ): PDFTableBodyType {
     const { items = [] } = contractObject;
     const tableItemsBody: PDFTableBodyType = [];
@@ -269,7 +269,7 @@ export class SecondVersionFormatter {
 
   static createGenericAddition2(
     contractObject: PQContractType | Record<any, any>,
-    contractTemplateParam: TemplateCodesEnum,
+    contractTemplateParam: PROZORRO_TEMPLATE_CODES,
     tenderObject: TenderOfferType | Record<any, any>
   ): Record<string, any>[] {
     const header = AllVersionFormatter.additionHeader(

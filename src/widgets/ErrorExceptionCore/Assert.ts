@@ -1,6 +1,6 @@
 import { ErrorExceptionCore } from "@/widgets/ErrorExceptionCore/ErrorExceptionCore";
 import { TypeChecker } from "@/utils/checker/TypeChecker";
-import { ERROR_CODES } from "@/widgets/ErrorExceptionCore/constants/ERROR_CODES.enum";
+import { PROZORRO_PDF_ERROR_CODES } from "@/widgets/ErrorExceptionCore/constants/ERROR_CODES.enum";
 
 export class Assert {
   /**
@@ -11,7 +11,7 @@ export class Assert {
   static isDefined<T>(
     value: T,
     message: string,
-    code: ERROR_CODES = ERROR_CODES.VALIDATION_FAILED
+    code: PROZORRO_PDF_ERROR_CODES = PROZORRO_PDF_ERROR_CODES.VALIDATION_FAILED
   ): asserts value is NonNullable<T> {
     const typeChecker = new TypeChecker();
 

@@ -1,5 +1,5 @@
 import type { TextConfigType } from "@/widgets/pq/types/TextConfigType";
-import { TemplateCodesEnum } from "@/widgets/pq/types/TemplateCodes.enum";
+import { PROZORRO_TEMPLATE_CODES } from "@/widgets/pq/types/TemplateCodes.enum";
 import { fruitContractConfig } from "@/widgets/pq/templates/fruit/configs/fruitContract.config";
 import { computersContractConfig } from "@/widgets/pq/templates/computers/configs/computersContract.config";
 import { fuelContractConfig } from "@/widgets/pq/templates/fuel/configs/fuelContract.config";
@@ -14,16 +14,16 @@ import { medicineV2ContractConfig } from "@/widgets/pq/templates/medicine2/confi
 import { fruit2ContractConfig } from "@/widgets/pq/templates/fruit2/configs/fruit2Contract.config";
 
 export const TemplateToTextMap = new Map<string, TextConfigType>()
-  .set(TemplateCodesEnum.FRUIT, fruitContractConfig)
-  .set(TemplateCodesEnum.FRUIT2, fruit2ContractConfig)
-  .set(TemplateCodesEnum.COMPUTER, computersContractConfig)
-  .set(TemplateCodesEnum.SOFTWARE, softwareContractConfig)
-  .set(TemplateCodesEnum.OTHER, computersContractConfig)
-  .set(TemplateCodesEnum.MEDICINE, medicineContractConfig)
-  .set(TemplateCodesEnum.PHARM, pharmContractConfig)
-  .set(TemplateCodesEnum.GAS, fuelContractConfig)
-  .set(TemplateCodesEnum.GAS2, fuel2ContractConfig)
-  .set(TemplateCodesEnum.GENERIC, genericContractConfig)
-  .set(TemplateCodesEnum.FOOD, foodContractConfig)
-  .set(TemplateCodesEnum.MEDICINE2, medicineV2ContractConfig)
-  .set(TemplateCodesEnum.PHARM2, pharm2ContractConfig);
+  .set(PROZORRO_TEMPLATE_CODES.FRUIT, fruitContractConfig)
+  .set(PROZORRO_TEMPLATE_CODES.FRUIT2, fruit2ContractConfig)
+  .set(PROZORRO_TEMPLATE_CODES.COMPUTER, computersContractConfig)
+  .set(PROZORRO_TEMPLATE_CODES.SOFTWARE, softwareContractConfig)
+  .set(PROZORRO_TEMPLATE_CODES.OTHER, computersContractConfig)
+  .set(PROZORRO_TEMPLATE_CODES.MEDICINE, medicineContractConfig)
+  .set(PROZORRO_TEMPLATE_CODES.PHARM, pharmContractConfig)
+  .set(PROZORRO_TEMPLATE_CODES.GAS, fuelContractConfig)
+  .set(PROZORRO_TEMPLATE_CODES.GAS2, fuel2ContractConfig)
+  .set(PROZORRO_TEMPLATE_CODES.GENERIC, genericContractConfig)
+  .set(PROZORRO_TEMPLATE_CODES.FOOD, foodContractConfig)
+  .set(PROZORRO_TEMPLATE_CODES.MEDICINE2, medicineV2ContractConfig)
+  .set(PROZORRO_TEMPLATE_CODES.PHARM2, pharm2ContractConfig);

@@ -1,54 +1,45 @@
-import { ERROR_CODES } from "@/widgets/ErrorExceptionCore/constants/ERROR_CODES.enum";
+import { PROZORRO_PDF_ERROR_CODES } from "@/widgets/ErrorExceptionCore/constants/ERROR_CODES.enum";
 
 export const ERROR_MESSAGES = {
-  [ERROR_CODES.INVALID_SIGNATURE]: {
+  [PROZORRO_PDF_ERROR_CODES.INVALID_SIGNATURE]: {
     documentAccess: "Не вдалося отримати доступ до файлу підпису",
     documentEncoding: "Не вдалося розшифрувати файл підпису",
   },
-  [ERROR_CODES.INVALID_PARAMS]: {
+  [PROZORRO_PDF_ERROR_CODES.INVALID_PARAMS]: {
     libraryInit: "Бібліотека не була ініціалізована",
     incorrectInputFormat: "Неправильний формат вхідних даних",
     undefinedUrl: "Відсутнє посилання на об'єкт ЦБД",
   },
-  [ERROR_CODES.VALIDATION_FAILED]: {
+  [PROZORRO_PDF_ERROR_CODES.VALIDATION_FAILED]: {
     undefinedObject: "Дані об'єкта ЦБД відсутні",
     undefinedAwards: 'Відсутнє поле "awards" об\'єкта з ЦБД',
     undefinedStatus: 'Відсутнє поле "status" об\'єкта "award"',
     undefinedConclusion: 'Відсутнє поле "conclusion" об\'єкта з ЦБД',
-    undefinedConclusionOfDocs:
-      'Відсутнє поле "document" в об\'єкті "conclusion"',
+    undefinedConclusionOfDocs: 'Відсутнє поле "document" в об\'єкті "conclusion"',
     undefinedDocumentTitle: "Не вдалося знайти ім'я документу в об'єкті",
     wrongDocumentType: "Не вдалося визначити тип документу",
-    signersObjectUnavailable:
-      "Виникла помилка при формуванні колонтитулу з підписом",
-    documentListUndefined:
-      "Відсутній список документів для отримання посилання файлу підпису",
+    signersObjectUnavailable: "Виникла помилка при формуванні колонтитулу з підписом",
+    documentListUndefined: "Відсутній список документів для отримання посилання файлу підпису",
     wrongDocumentTypeStatus: "Неправильний тип документу",
     wrongDocumentTitle: "Неправильний заголовок документу",
     wrongURL: "Неправильне посилання на документ",
-    tenderLoader:
-      'Виникла помилка при завантаженні документу закупівлі. Не передано "config.tender"',
+    tenderLoader: 'Виникла помилка при завантаженні документу закупівлі. Не передано "config.tender"',
     undefinedCancellationStatus: "Статус відміни закупівлі відсутній",
     awardStatusNotFind: 'Статус в "award" не відповідає заданим умовам',
-    wrongDocumentDate:
-      "Неправильна дата документу (dateModified не відповідає переданій даті)",
+    wrongDocumentDate: "Неправильна дата документу (dateModified не відповідає переданій даті)",
     wrongQualified: 'Поле "qualified" не "true"',
     wrongEligible: 'Поле "eligible" не "true"',
     wrongEligibleOrQualified: 'Поле "eligible" або "qualified" не "false"',
-    awardNotFound:
-      "Відсутня інформація про закупівлю та переможця в файлі підпису ",
+    awardNotFound: "Відсутня інформація про закупівлю та переможця в файлі підпису ",
     suppliersIsNotDefined: "Відсутня інформація про постачальників",
-    cancellationNotFound:
-      "Відсутня інформація про закупівлю та/або відміну закупівлі/лоту в файлі підпису ",
+    cancellationNotFound: "Відсутня інформація про закупівлю та/або відміну закупівлі/лоту в файлі підпису ",
     participantsIsNotDefined: "Відсутня інформація про учасників",
-    tenderersIsNotDefined:
-      "Відсутня інформація про учасника в даних пропозиції",
+    tenderersIsNotDefined: "Відсутня інформація про учасника в даних пропозиції",
     wrongEdrDocumentType: 'Поле "documentType" не "registerExtract"',
     wrongEdrFile: "На жаль, за вказаним кодом нічого не знайдено",
   },
-  [ERROR_CODES.SERVICE_UNAVAILABLE]: {
+  [PROZORRO_PDF_ERROR_CODES.SERVICE_UNAVAILABLE]: {
     typeIsNotDefined: "Неможливо отримати стратегію обробки типів",
-    loaderTypeIsNotDefined:
-      "Не вдається отримати стратегію типу завантажувача pdf",
+    loaderTypeIsNotDefined: "Не вдається отримати стратегію типу завантажувача pdf",
   },
 };

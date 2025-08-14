@@ -1,7 +1,7 @@
 import type { AxiosStatic } from "axios";
 import { LoaderFactory } from "@/services/PDF/P7SLoader/LoaderFactory";
 import { loaderStrategyMap } from "@/services/PDF/P7SLoader/LoaderStrategyMap";
-import { PdfTypes } from "@/services/PDF/PdfTypes";
+import { PROZORRO_PDF_TYPES } from "@/services/PDF/PdfTypes";
 import type { P7SLoadResultType } from "@/types/pdf/P7SLoadResultType";
 import type { PdfDocumentConfigType } from "@/types/pdf/PdfDocumentConfigType";
 import type { PdfObjectType } from "@/types/pdf/PdfObjectType";
@@ -21,7 +21,7 @@ export class LoaderManager implements ILoaderManager {
     private readonly axios: AxiosStatic
   ) {
     this.loaderFactory = new LoaderFactory(loaderStrategyMap, this.base64, this.axios);
-    this.dataGenerator = this.loaderFactory.create(PdfTypes.TICKET);
+    this.dataGenerator = this.loaderFactory.create(PROZORRO_PDF_TYPES.TICKET);
   }
 
   setLoaderType(type: string): void {

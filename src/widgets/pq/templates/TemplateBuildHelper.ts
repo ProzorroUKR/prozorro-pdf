@@ -3,13 +3,13 @@ import type { PQContractType } from "@/widgets/pq/types/PQTypes";
 import { FirstVersionFormatter } from "@/widgets/pq/services/contractTextFormatters/FirstVersionFormatter";
 import { PQFormattingService } from "@/widgets/pq/services/Formating/PQFormattingService";
 import { MedicineFormatter } from "@/widgets/pq/services/contractTextFormatters/MedicineFormatter";
-import { TemplateCodesEnum } from "@/widgets/pq/types/TemplateCodes.enum";
+import { PROZORRO_TEMPLATE_CODES } from "@/widgets/pq/types/TemplateCodes.enum";
 import { SecondVersionFormatter } from "@/widgets/pq/services/contractTextFormatters/SecondVersionFormatter";
 
 export class TemplateBuildHelper {
   static pharmBuild(
     contractObject: PQContractType | Record<string, never>,
-    contractTemplate: TemplateCodesEnum,
+    contractTemplate: PROZORRO_TEMPLATE_CODES,
     _tender: any
   ): Record<string, any>[] {
     return [
@@ -27,7 +27,7 @@ export class TemplateBuildHelper {
 
   static fruitBuilder(
     contractObject: PQContractType | Record<string, never>,
-    contractTemplate: TemplateCodesEnum,
+    contractTemplate: PROZORRO_TEMPLATE_CODES,
     _tender: any
   ): Record<string, any>[] {
     return [
@@ -43,7 +43,7 @@ export class TemplateBuildHelper {
 
   static fruit2Builder(
     contractObject: PQContractType | Record<string, never>,
-    contractTemplate: TemplateCodesEnum,
+    contractTemplate: PROZORRO_TEMPLATE_CODES,
     tender: any
   ): Record<string, any>[] {
     return [
@@ -59,7 +59,7 @@ export class TemplateBuildHelper {
 
   static foodBuilder(
     contractObject: PQContractType | Record<string, never>,
-    contractTemplate: TemplateCodesEnum,
+    contractTemplate: PROZORRO_TEMPLATE_CODES,
     tender: any
   ): Record<string, any>[] {
     return [

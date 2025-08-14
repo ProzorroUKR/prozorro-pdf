@@ -9,14 +9,8 @@ import { ArrayHandler } from "@/utils/ArrayHandler";
 import type { AnnouncementType } from "@/types/Announcement/AnnouncementTypes";
 import { SIGNATURE_FILE_NAME } from "@/constants/string";
 
-export class AnnouncementLoader
-  extends AbstractLoaderStrategy
-  implements LoaderStrategyInterface
-{
-  async load(
-    object: AnnouncementType,
-    config: PdfDocumentConfigType
-  ): Promise<P7SLoadResultType> {
+export class AnnouncementLoader extends AbstractLoaderStrategy implements LoaderStrategyInterface {
+  async load(object: AnnouncementType, config: PdfDocumentConfigType): Promise<P7SLoadResultType> {
     const url = this.getDocumentUrl(object, config);
     const file = await this.getData(url);
     return {
@@ -27,27 +21,17 @@ export class AnnouncementLoader
     };
   }
 
-  private getDocumentUrl(
-    { documents }: AnnouncementType,
-    { date }: PdfDocumentConfigType
-  ): string {
-    Assert.isDefined(
-      documents,
-      ERROR_MESSAGES.VALIDATION_FAILED.documentListUndefined
-    );
+  private getDocumentUrl({ documents }: AnnouncementType, { date }: PdfDocumentConfigType): string {
+    Assert.isDefined(documents, ERROR_MESSAGES.VALIDATION_FAILED.documentListUndefined);
 
     const list = documents.filter(
       (doc: Record<string, any>) =>
-        doc.title === SIGNATURE_FILE_NAME &&
-        this.approximateCheckDateModified(doc.dateModified, date)
+        doc.title === SIGNATURE_FILE_NAME && this.approximateCheckDateModified(doc.dateModified, date)
     );
 
     const document = ArrayHandler.getLastElement(list);
 
-    Assert.isDefined(
-      document,
-      ERROR_MESSAGES.VALIDATION_FAILED.undefinedDocumentTitle
-    );
+    Assert.isDefined(document, ERROR_MESSAGES.VALIDATION_FAILED.undefinedDocumentTitle);
 
     return document.url as string;
   }
