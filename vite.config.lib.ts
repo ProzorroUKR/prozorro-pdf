@@ -1,9 +1,15 @@
 /// <reference types="vitest" />
 import path from "path";
 import { defineConfig } from "vite";
+import dtsPlugin from "vite-plugin-dts";
 
 export default defineConfig({
   base: "./",
+  plugins: [
+    dtsPlugin({
+      insertTypesEntry: true,
+    }),
+  ],
   build: {
     outDir: "./dist/lib",
     lib: {
