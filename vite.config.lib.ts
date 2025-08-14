@@ -1,5 +1,5 @@
 /// <reference types="vitest" />
-import path from "path";
+import { resolve } from "path";
 import { defineConfig } from "vite";
 import dtsPlugin from "vite-plugin-dts";
 
@@ -8,12 +8,14 @@ export default defineConfig({
   plugins: [
     dtsPlugin({
       insertTypesEntry: true,
+      rollupTypes: true,
     }),
   ],
   build: {
-    outDir: "./dist/lib",
+    sourcemap: true,
+    outDir: "./dist",
     lib: {
-      entry: path.resolve(__dirname, "src/main.ts"),
+      entry: resolve(__dirname, "src/main.ts"),
       name: "ProzorroPdf",
       formats: ["es", "iife", "cjs", "umd"],
       fileName: format => `prozorro-pdf.${format}.js`,
@@ -26,7 +28,7 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "src"),
+      "@": resolve(__dirname, "src"),
     },
   },
 });

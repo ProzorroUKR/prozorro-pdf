@@ -5,26 +5,26 @@
   "description": "PDF generation service",
   "author": "Dmytro Rybachek",
   "license": "MIT",
-  "main": "./dist/lib/prozorro-pdf.cjs.js",
-  "module": "./dist/lib/prozorro-pdf.es.js",
-  "types": "./dist/lib/prozorro-pdf.d.ts",
+  "main": "./dist/prozorro-pdf.cjs.js",
+  "module": "./dist/prozorro-pdf.es.js",
+  "types": "./dist/prozorro-pdf.d.ts",
   "type": "module",
   "exports": {
     ".": {
-      "import": "./dist/lib/prozorro-pdf.es.js",
-      "require": "./dist/lib/prozorro-pdf.cjs.js",
-      "types": "./dist/lib/prozorro-pdf.d.ts"
+      "import": "./dist/prozorro-pdf.es.js",
+      "require": "./dist/prozorro-pdf.cjs.js",
+      "types": "./dist/prozorro-pdf.d.ts"
     },
     "./dist/": {
-      "import": "./dist/lib"
+      "import": "./dist"
     }
   },
   "files": [
-    "dist/lib"
+    "dist"
   ],
   "scripts": {
     "dev": "vite --config vite.config.lib.ts",
-    "build:lib": "tsc && vite build --config vite.config.lib.ts && npm run types && copyfiles ./package.json dist/lib && npm run removeFromBuild:lib",
+    "build:lib": "tsc && vite build --config vite.config.lib.ts && npm run types && copyfiles ./package.json dist && npm run removeFromBuild:lib",
     "build:app": "vite build --config vite.config.app.ts",
     "build": "npm run clean && npm run build:lib && npm run build:app",
     "test": "vitest",
@@ -34,9 +34,16 @@
     "format:scripts": "prettier . --write",
     "format": "npm run format:scripts && npm run format:styles",
     "types": "tsc --project tsconfig.types.json",
-    "removeFromBuild:lib": "rimraf ./dist/lib/robots.txt ./dist/lib/test-data",
+    "removeFromBuild:lib": "rimraf ./dist/robots.txt ./dist/test-data",
     "clean": "rimraf dist"
   },
+  "keywords": [
+    "typescript",
+    "library",
+    "prozorro",
+    "sign",
+    "pdf"
+  ],
   "devDependencies": {
     "@types/lodash": "^4.17.17",
     "@types/node": "^22.15.29",

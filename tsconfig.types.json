@@ -1,12 +1,12 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-    "emitDeclarationOnly": true,         // ✅ Only generate .d.ts files
-    "outDir": "./dist/lib",              // ✅ Where to emit the types
+    "emitDeclarationOnly": true,
+    "outDir": "./dist",
     "declaration": true,
     "declarationMap": true,
     "stripInternal": true,
-    "noEmit": false                      // ✅ Must be false to emit anything
+    "noEmit": false
   },
   "include": ["src"]
 }
