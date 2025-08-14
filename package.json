@@ -20,7 +20,7 @@
     }
   },
   "files": [
-    "dist"
+    "dist/lib"
   ],
   "scripts": {
     "dev": "vite --config vite.config.lib.ts",
