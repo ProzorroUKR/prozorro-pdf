@@ -9,17 +9,25 @@ import type { DocumentType } from "@/types/Tender/DocumentType";
 import { ENCODING } from "@/constants/encoding";
 import { PdfTemplateTypes } from "@/services/PDF/PdfTemplateTypes.ts";
 import type { PdfDocumentConfigType } from "@/types/pdf/PdfDocumentConfigType";
+import { ObjectDecoder } from "@/utils/ObjectDecoder";
 
-export class ConclusionLoader extends AbstractLoaderStrategy implements LoaderStrategyInterface {
-  public async load(object: MonitoringType, config: PdfDocumentConfigType): Promise<P7SLoadResultType> {
+export class ConclusionLoader
+  extends AbstractLoaderStrategy<Record<any, any>>
+  implements LoaderStrategyInterface<Record<any, any>>
+{
+  public async load(
+    object: MonitoringType,
+    config: PdfDocumentConfigType
+  ): Promise<P7SLoadResultType<Record<any, any>>> {
     const url = this.getDocumentUrl(object, config);
     const file = await this.getData(url);
+    const { data, signers } = await this.getDataFromSign(file, ENCODING.UTF_8 || config.encoding);
 
     return {
-      file,
-      type: PdfTemplateTypes.MONITORING,
-      encoding: ENCODING.UTF_8,
       url,
+      signers: signers || [],
+      type: PdfTemplateTypes.MONITORING,
+      file: this.unwrapTender(ObjectDecoder.decode<Record<any, any>>(data)),
     };
   }
 

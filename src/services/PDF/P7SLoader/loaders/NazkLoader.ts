@@ -1,29 +1,23 @@
-import type { LoaderStrategyInterface } from "@/services/PDF/P7SLoader/LoaderStrategyInterface";
-import { AbstractLoaderStrategy } from "@/services/PDF/P7SLoader/AbstractLoaderStrategy";
+import { ArrayHandler } from "@/utils/ArrayHandler";
+import type { AwardType } from "@/types/Tender/AwardType";
+import { Assert } from "@/widgets/ErrorExceptionCore/Assert";
+import { NAZK_DOCUMENT_TYPE, NAZK_TITLE } from "@/constants/nazk";
+import { PdfTemplateTypes } from "@/services/PDF/PdfTemplateTypes";
 import type { P7SLoadResultType } from "@/types/pdf/P7SLoadResultType";
 import { ERROR_MESSAGES } from "@/widgets/ErrorExceptionCore/configs/messages";
-import { Assert } from "@/widgets/ErrorExceptionCore/Assert";
-import type { PdfDocumentConfigType } from "@/types/pdf/PdfDocumentConfigType";
-import { PdfTemplateTypes } from "@/services/PDF/PdfTemplateTypes";
-import { ArrayHandler } from "@/utils/ArrayHandler";
-import { NAZK_DOCUMENT_TYPE, NAZK_TITLE } from "@/constants/nazk";
-import type { AwardType } from "@/types/Tender/AwardType";
+import { AbstractLoaderStrategy } from "@/services/PDF/P7SLoader/AbstractLoaderStrategy";
+import type { LoaderStrategyInterface } from "@/services/PDF/P7SLoader/LoaderStrategyInterface";
 
-export class NazkLoader
-  extends AbstractLoaderStrategy
-  implements LoaderStrategyInterface
-{
-  public async load(
-    object: AwardType,
-    config: PdfDocumentConfigType
-  ): Promise<P7SLoadResultType> {
+export class NazkLoader extends AbstractLoaderStrategy<string> implements LoaderStrategyInterface<string> {
+  public async load(object: AwardType): Promise<P7SLoadResultType<string>> {
     const url = this.getDocumentUrl(object);
-    const file = await this.getData(url);
+    const { data } = await this.axios.get(url);
+
     return {
       url,
-      file,
+      file: data,
+      signers: [],
       type: PdfTemplateTypes.NAZK,
-      encoding: config.encoding,
     };
   }
 
@@ -31,22 +25,15 @@ export class NazkLoader
     if (award) {
       const { documents } = award;
 
-      Assert.isDefined(
-        documents,
-        ERROR_MESSAGES.VALIDATION_FAILED.documentListUndefined
-      );
+      Assert.isDefined(documents, ERROR_MESSAGES.VALIDATION_FAILED.documentListUndefined);
 
       const awardDocuments = documents.filter(
-        (doc: Record<string, any>) =>
-          doc.title === NAZK_TITLE && doc.documentType === NAZK_DOCUMENT_TYPE
+        (doc: Record<string, any>) => doc.title === NAZK_TITLE && doc.documentType === NAZK_DOCUMENT_TYPE
       );
 
       const document = ArrayHandler.getLastElement(awardDocuments);
 
-      Assert.isDefined(
-        document,
-        ERROR_MESSAGES.VALIDATION_FAILED.undefinedDocumentTitle
-      );
+      Assert.isDefined(document, ERROR_MESSAGES.VALIDATION_FAILED.undefinedDocumentTitle);
 
       return document.hasOwnProperty("url") ? document.url : "";
     }

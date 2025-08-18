@@ -9,11 +9,20 @@ import type { DocumentType } from "@/types/Tender/DocumentType";
 import { ErrorExceptionCore } from "@/widgets/ErrorExceptionCore/ErrorExceptionCore";
 import { SIGNATURE_FILE_NAME } from "@/constants/string";
 import { PROZORRO_PDF_ERROR_CODES } from "@/widgets/ErrorExceptionCore/constants/ERROR_CODES.enum";
+import { ObjectDecoder } from "@/utils/ObjectDecoder";
+import type { ProtocolConsiderationTenderOffers } from "@/types/ProtocolConsiderationTenderOffers/Tender";
 
-export class ProtocolConsiderationTenderOffersLoader extends AbstractLoaderStrategy implements LoaderStrategyInterface {
-  public async load(document: DocumentType, config: PdfDocumentConfigType): Promise<P7SLoadResultType> {
+export class ProtocolConsiderationTenderOffersLoader
+  extends AbstractLoaderStrategy<ProtocolConsiderationTenderOffers>
+  implements LoaderStrategyInterface<ProtocolConsiderationTenderOffers>
+{
+  public async load(
+    document: DocumentType,
+    { date, encoding }: PdfDocumentConfigType
+  ): Promise<P7SLoadResultType<ProtocolConsiderationTenderOffers>> {
+    Assert.isDefined(document, ERROR_MESSAGES.VALIDATION_FAILED.undefinedDocumentTitle);
+
     const { title, documentType, url, dateModified } = document;
-    const { date } = config;
 
     Assert.isDefined(title, ERROR_MESSAGES.VALIDATION_FAILED.documentListUndefined);
     Assert.isDefined(documentType, ERROR_MESSAGES.VALIDATION_FAILED.wrongDocumentType);
@@ -39,14 +48,16 @@ export class ProtocolConsiderationTenderOffersLoader extends AbstractLoaderStrat
       });
     }
 
-    Assert.isDefined(document, ERROR_MESSAGES.VALIDATION_FAILED.undefinedDocumentTitle);
-
     const file = await this.getData(url);
+    const { data, signers } = await this.getDataFromSign(file, encoding);
+
     return {
       url,
-      file,
-      encoding: config.encoding,
+      signers: signers || [],
       type: PdfTemplateTypes.PROTOCOL_CONSIDERATION_TENDER_OFFERS_TEMPLATE,
+      file: this.unwrapTender<ProtocolConsiderationTenderOffers>(
+        ObjectDecoder.decode<Record<any, any>>(data)
+      ) as ProtocolConsiderationTenderOffers,
     };
   }
 }

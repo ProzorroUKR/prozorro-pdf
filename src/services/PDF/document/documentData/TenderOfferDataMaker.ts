@@ -1,10 +1,7 @@
 import { AbstractDocumentStrategy } from "@/services/PDF/document/AbstractDocumentStrategy";
 import { v4 as uuid } from "uuid";
 import { PDF_FILED_KEYS } from "@/constants/pdf/pdfFieldKeys";
-import {
-  ANNOUNCEMENT_PAGE_MARGIN,
-  TIME_NAMES,
-} from "@/config/pdf/announcementConstants";
+import { ANNOUNCEMENT_PAGE_MARGIN, TIME_NAMES } from "@/config/pdf/announcementConstants";
 import { TENDER_OFFER } from "@/config/pdf/texts/TENDER_OFFER";
 import * as PDF_HELPER_CONST from "@/constants/pdf/pdfHelperConstants";
 import type { SignerType } from "@/types/sign/SignerType";
@@ -45,6 +42,7 @@ import {
   criterionTenderTablesConfig,
 } from "@/widgets/TenderOffer/configs/criterionTables.config";
 import { CriteriaRequirementDataSchema } from "@/utils/CriteriaRequirementDataSchema";
+import type { PdfDocumentConfigType } from "@/types/pdf/PdfDocumentConfigType";
 
 export class TenderOfferDataMaker extends AbstractDocumentStrategy {
   private readonly HUNDRED_PERCENT: number = 100;
@@ -54,47 +52,25 @@ export class TenderOfferDataMaker extends AbstractDocumentStrategy {
   private dictionaries: Map<string, Record<string, any>> = new Map();
 
   create(
-    file: string,
+    { tender, bidData }: { tender: TenderOfferType; bidData?: BidType },
+    _config: PdfDocumentConfigType,
     _signers: SignerType[],
     dictionaries: Map<string, Record<string, any>>
   ): Record<string, any>[] {
-    if (!this.unwrapTender(file, true)) {
-      return [];
-    }
+    Assert.isDefined(bidData?.tenderers, ERROR_MESSAGES.VALIDATION_FAILED.tenderersIsNotDefined);
 
-    const tender: TenderOfferType = this.unwrapTender(file) as TenderOfferType;
     const { criteria, features } = tender;
-    const bidData = this.unwrapTender(file, true) as BidType;
-
-    Assert.isDefined(
-      bidData?.tenderers,
-      ERROR_MESSAGES.VALIDATION_FAILED.tenderersIsNotDefined
-    );
-
     const hasLots = Boolean(bidData?.lotValues?.length);
     this.dictionaries = dictionaries;
-    const mainInfoBuilder = new MainInformationBuilder(
-      tender,
-      bidData,
-      dictionaries
-    );
+    const mainInfoBuilder = new MainInformationBuilder(tender, bidData, dictionaries);
 
     return [
-      ...mainInfoBuilder.setTitle.setTenderId.setName.setIdentifier.setAddress
-        .setContactPoint.setScale.setValue.setWeightedValue
-        .setSubcontractingDetails.getResult,
-      hasLots
-        ? [PDF_HELPER_CONST.EMPTY_FIELD]
-        : this.escoTable(tender, bidData),
+      ...mainInfoBuilder.setTitle.setTenderId.setName.setIdentifier.setAddress.setContactPoint.setScale.setValue
+        .setWeightedValue.setSubcontractingDetails.getResult,
+      hasLots ? [PDF_HELPER_CONST.EMPTY_FIELD] : this.escoTable(tender, bidData),
       this.buildParametersTable(bidData.parameters, features),
-      ...[
-        criteria?.length
-          ? this.resolveCriterionTables(criteria, bidData)
-          : PDF_HELPER_CONST.EMPTY_FIELD,
-      ],
-      hasLots
-        ? [PDF_HELPER_CONST.EMPTY_FIELD]
-        : this.resolveSpecificationTable(tender, bidData),
+      ...[criteria?.length ? this.resolveCriterionTables(criteria, bidData) : PDF_HELPER_CONST.EMPTY_FIELD],
+      hasLots ? [PDF_HELPER_CONST.EMPTY_FIELD] : this.resolveSpecificationTable(tender, bidData),
       this.getTenderDocumentsTable(bidData),
       ...this.lotResolvesTable(tender, bidData),
     ];
@@ -105,10 +81,7 @@ export class TenderOfferDataMaker extends AbstractDocumentStrategy {
   }
 
   prepareQuantity(item: ItemType): string {
-    if (
-      !item.hasOwnProperty("quantity") ||
-      this.emptyChecker.isEmptyString(item.quantity)
-    ) {
+    if (!item.hasOwnProperty("quantity") || this.emptyChecker.isEmptyString(item.quantity)) {
       return STRING.DASH;
     }
 
@@ -133,11 +106,7 @@ export class TenderOfferDataMaker extends AbstractDocumentStrategy {
     return `${quantity}`;
   }
 
-  private resolveSpecificationTable(
-    tender: TenderOfferType,
-    bid: BidType,
-    lot?: LotValueType
-  ): Record<string, any> {
+  private resolveSpecificationTable(tender: TenderOfferType, bid: BidType, lot?: LotValueType): Record<string, any> {
     const { items: bidItems, requirementResponses } = bid;
     const { items: tenderItems, criteria } = tender;
 
@@ -160,15 +129,9 @@ export class TenderOfferDataMaker extends AbstractDocumentStrategy {
     }
 
     const criterionList = criteria?.filter(
-      criterion =>
-        criterion.hasOwnProperty("relatedItem") &&
-        items.find(item => criterion.relatedItem === item.id)
+      criterion => criterion.hasOwnProperty("relatedItem") && items.find(item => criterion.relatedItem === item.id)
     );
-    return this.createSpecificationTable(
-      items,
-      criterionList,
-      requirementResponses
-    );
+    return this.createSpecificationTable(items, criterionList, requirementResponses);
   }
 
   /**
@@ -190,8 +153,11 @@ export class TenderOfferDataMaker extends AbstractDocumentStrategy {
     /**
      * Основна частина таблиці, де вказується назва товару, кількість та ціна за одиницю
      */
-    const mainTableAllRawRows: ItemTableRowType[] =
-      this.getAllTableRowsFromItems(items, criteria, requirementResponses);
+    const mainTableAllRawRows: ItemTableRowType[] = this.getAllTableRowsFromItems(
+      items,
+      criteria,
+      requirementResponses
+    );
 
     if (!mainTableAllRawRows.length) {
       return [PDF_HELPER_CONST.EMPTY_FIELD];
@@ -226,16 +192,8 @@ export class TenderOfferDataMaker extends AbstractDocumentStrategy {
        * Рядок з надписом "Технічні характеристики" та додатковими характеристиками
        */
       if (additional) {
-        this.addAdditionalRows(
-          bodyRowsFinalTable,
-          additional,
-          CRITERION_TECHNICAL_FEATURES
-        );
-        this.addAdditionalRows(
-          bodyRowsFinalTable,
-          additional,
-          CRITERION_LOCAL_ORIGIN_LEVEL
-        );
+        this.addAdditionalRows(bodyRowsFinalTable, additional, CRITERION_TECHNICAL_FEATURES);
+        this.addAdditionalRows(bodyRowsFinalTable, additional, CRITERION_LOCAL_ORIGIN_LEVEL);
       }
     });
 
@@ -244,11 +202,7 @@ export class TenderOfferDataMaker extends AbstractDocumentStrategy {
         table: {
           headerRows: 0,
           dontBreakRows: false,
-          widths: [
-            PDF_HELPER_CONST.ROW_AUTO_WIDTH,
-            PDF_HELPER_CONST.ROW_WIDTH_125,
-            PDF_HELPER_CONST.ROW_WIDTH_125,
-          ],
+          widths: [PDF_HELPER_CONST.ROW_AUTO_WIDTH, PDF_HELPER_CONST.ROW_WIDTH_125, PDF_HELPER_CONST.ROW_WIDTH_125],
           body: bodyRowsFinalTable,
         },
         margin: MARGIN_TOP_10__BOTTOM_15,
@@ -265,9 +219,7 @@ export class TenderOfferDataMaker extends AbstractDocumentStrategy {
     additional: SubCriteriaFieldsType[],
     criterionId: string
   ): Record<string, any>[][] {
-    const filteredAdditional = additional?.filter(
-      additionalItem => additionalItem.classificationId === criterionId
-    );
+    const filteredAdditional = additional?.filter(additionalItem => additionalItem.classificationId === criterionId);
     if (filteredAdditional.length === 0) {
       return bodyRowsFinalTable;
     }
@@ -294,9 +246,7 @@ export class TenderOfferDataMaker extends AbstractDocumentStrategy {
     /**
      * Додаткові рядки з характеристиками товару
      */
-    bodyRowsFinalTable.push(
-      ...this.prepareAdditionalSpecificationFields(filteredAdditional)
-    );
+    bodyRowsFinalTable.push(...this.prepareAdditionalSpecificationFields(filteredAdditional));
     // відступ після рядків з додатковими характеристиками товару
     bodyRowsFinalTable.push([
       {
@@ -353,19 +303,14 @@ export class TenderOfferDataMaker extends AbstractDocumentStrategy {
     });
   }
 
-  private prepareAdditionalSpecificationFields(
-    specFields: SubCriteriaFieldsType[]
-  ): Record<string, any>[][] {
+  private prepareAdditionalSpecificationFields(specFields: SubCriteriaFieldsType[]): Record<string, any>[][] {
     if (!specFields || specFields.length === 0) {
       return [[PDF_HELPER_CONST.EMPTY_FIELD]];
     }
     const res: Record<string, any>[][] = [];
     specFields.forEach(field => {
       const { title, unit, value, values } = field;
-      const unitName =
-        unit === undefined
-          ? STRING.EMPTY
-          : this.getField(unit, "name", STRING.EMPTY);
+      const unitName = unit === undefined ? STRING.EMPTY : this.getField(unit, "name", STRING.EMPTY);
       let fullTitle = `${title}`;
       if (unitName.length > 0) {
         fullTitle = `${fullTitle} (${unitName})`;
@@ -374,11 +319,7 @@ export class TenderOfferDataMaker extends AbstractDocumentStrategy {
         ? StringConversionHelper.yesNoStringConversion(value)
         : STRING.DASH;
       const valuesText = this.emptyChecker.isNotEmptyArray(values)
-        ? values
-            ?.map((val: string) =>
-              StringConversionHelper.yesNoStringConversion(val)
-            )
-            .join(", ")
+        ? values?.map((val: string) => StringConversionHelper.yesNoStringConversion(val)).join(", ")
         : STRING.EMPTY;
       res.push([
         {
@@ -399,10 +340,7 @@ export class TenderOfferDataMaker extends AbstractDocumentStrategy {
     return res;
   }
 
-  private resolveCriterionTables(
-    criteria: CriterionType[],
-    bidType: BidType
-  ): Record<string, any>[] {
+  private resolveCriterionTables(criteria: CriterionType[], bidType: BidType): Record<string, any>[] {
     return criterionTenderTablesConfig.map(criterionData =>
       this.createCriterionTable(criterionData, criteria, bidType)
     );
@@ -418,8 +356,7 @@ export class TenderOfferDataMaker extends AbstractDocumentStrategy {
     }
 
     const tableRows: Record<string, any>[] = [];
-    const filteredCriterias: CriterionType[] =
-      CriteriaTransformer.filterCriteriaByRelatesTo(criteria, isLot);
+    const filteredCriterias: CriterionType[] = CriteriaTransformer.filterCriteriaByRelatesTo(criteria, isLot);
 
     types.forEach(type => {
       (bid?.requirementResponses || []).forEach(requirementResponse => {
@@ -496,10 +433,7 @@ export class TenderOfferDataMaker extends AbstractDocumentStrategy {
         table: {
           headerRows: 0,
           dontBreakRows: false,
-          widths: [
-            PDF_HELPER_CONST.ROW_WIDTH_250,
-            PDF_HELPER_CONST.ROW_ALL_WIDTH,
-          ],
+          widths: [PDF_HELPER_CONST.ROW_WIDTH_250, PDF_HELPER_CONST.ROW_ALL_WIDTH],
           body: tableRows,
         },
         margin: MARGIN_TOP_10__BOTTOM_15,
@@ -517,20 +451,14 @@ export class TenderOfferDataMaker extends AbstractDocumentStrategy {
     dataSchema?: DataSchemaType
   ): Record<string, any>[] {
     const dictionary = this.dictionaries?.get("recommended") || {};
-    const dataSchemaHandler = new CriteriaRequirementDataSchema(
-      this.dictionaries
+    const dataSchemaHandler = new CriteriaRequirementDataSchema(this.dictionaries);
+    const translatedValues = dataSchemaHandler.translateValues(values, dataSchema);
+    const response: Record<string, any>[] = EvidenceFormatter.formatEvidenceValue(
+      dictionary,
+      value,
+      translatedValues,
+      unit
     );
-    const translatedValues = dataSchemaHandler.translateValues(
-      values,
-      dataSchema
-    );
-    const response: Record<string, any>[] =
-      EvidenceFormatter.formatEvidenceValue(
-        dictionary,
-        value,
-        translatedValues,
-        unit
-      );
 
     evidences?.forEach(({ type, title, description, relatedDocument }) => {
       // todo refactor with convertion of object to map or using object keys  + extract formatting to separate function
@@ -580,10 +508,7 @@ export class TenderOfferDataMaker extends AbstractDocumentStrategy {
       }
 
       if (relatedDocument) {
-        const documents = EvidenceFormatter.findEvidenceDocumentTitle(
-          relatedDocument,
-          bid
-        );
+        const documents = EvidenceFormatter.findEvidenceDocumentTitle(relatedDocument, bid);
 
         response.push({
           text: [
@@ -626,24 +551,15 @@ export class TenderOfferDataMaker extends AbstractDocumentStrategy {
     }
 
     const bidEntity: BidType | LotValueType = lot ?? bidType;
-    const bidValueObject: BidsValueType | undefined = bidEntity.hasOwnProperty(
-      "value"
-    )
-      ? bidEntity.value
-      : undefined;
+    const bidValueObject: BidsValueType | undefined = bidEntity.hasOwnProperty("value") ? bidEntity.value : undefined;
 
     if (!bidValueObject || this.emptyChecker.isEmptyObject(bidValueObject)) {
       return [PDF_HELPER_CONST.EMPTY_FIELD];
     }
 
     const body: Record<string, any>[][] = [];
-    const {
-      contractDuration,
-      amountPerformance,
-      currency,
-      yearlyPaymentsPercentage,
-      annualCostsReduction,
-    } = bidValueObject;
+    const { contractDuration, amountPerformance, currency, yearlyPaymentsPercentage, annualCostsReduction } =
+      bidValueObject;
 
     if (undefined !== contractDuration) {
       const { years, days } = contractDuration;
@@ -694,10 +610,7 @@ export class TenderOfferDataMaker extends AbstractDocumentStrategy {
           style: PDF_FILED_KEYS.TABLE_HEAD,
         },
         {
-          text: this.prepareAnnualCostsReduction(
-            annualCostsReduction,
-            this.getStartYear(tender)
-          ),
+          text: this.prepareAnnualCostsReduction(annualCostsReduction, this.getStartYear(tender)),
           style: PDF_FILED_KEYS.TABLE_DATA,
         },
       ]);
@@ -708,10 +621,7 @@ export class TenderOfferDataMaker extends AbstractDocumentStrategy {
         table: {
           headerRows: 0,
           dontBreakRows: false,
-          widths: [
-            PDF_HELPER_CONST.ROW_WIDTH_250,
-            PDF_HELPER_CONST.ROW_ALL_WIDTH,
-          ],
+          widths: [PDF_HELPER_CONST.ROW_WIDTH_250, PDF_HELPER_CONST.ROW_ALL_WIDTH],
           body,
         },
         margin: MARGIN_TOP_10__BOTTOM_15,
@@ -731,25 +641,17 @@ export class TenderOfferDataMaker extends AbstractDocumentStrategy {
       return 0;
     }
 
-    const year = tenderID
-      .split("-")
-      .find(el => el.length === this.NUMBER_LENGTH_OF_YEAR);
+    const year = tenderID.split("-").find(el => el.length === this.NUMBER_LENGTH_OF_YEAR);
     return year ? parseInt(year, 10) : 0;
   }
 
   // TODO to utils
-  private prepareAnnualCostsReduction(
-    annualCostsReduction: number[],
-    startYear: number
-  ): string {
+  private prepareAnnualCostsReduction(annualCostsReduction: number[], startYear: number): string {
     if (annualCostsReduction.length === 0) {
       return STRING.DASH;
     }
     return annualCostsReduction
-      .map(
-        cost =>
-          `${startYear++} ${STRING.MINUS} ${UnitHelper.currencyFormatting(cost)}`
-      )
+      .map(cost => `${startYear++} ${STRING.MINUS} ${UnitHelper.currencyFormatting(cost)}`)
       .join(STRING.DELIMITER.NEW_LINE);
   }
 
@@ -757,26 +659,17 @@ export class TenderOfferDataMaker extends AbstractDocumentStrategy {
     parameters: BidParametersType[] | undefined,
     features: FeatureType[] | undefined
   ): Record<string, any> {
-    if (
-      !parameters ||
-      parameters.length === 0 ||
-      !features ||
-      features.length === 0
-    ) {
+    if (!parameters || parameters.length === 0 || !features || features.length === 0) {
       return [PDF_HELPER_CONST.EMPTY_FIELD];
     }
 
     const body: Record<string, any>[][] = [];
     parameters.forEach((parameter: BidParametersType) => {
-      const feature = features.find(
-        (feature: FeatureType) => feature.code === parameter.code
-      );
+      const feature = features.find((feature: FeatureType) => feature.code === parameter.code);
       if (!feature) {
         return;
       }
-      const titleEnum = feature.enum.find(
-        (enumItem: EnumType) => enumItem.value === parameter.value
-      );
+      const titleEnum = feature.enum.find((enumItem: EnumType) => enumItem.value === parameter.value);
       const title = titleEnum ? titleEnum.title : STRING.DASH;
       body.push([
         {
@@ -795,10 +688,7 @@ export class TenderOfferDataMaker extends AbstractDocumentStrategy {
         table: {
           headerRows: 0,
           dontBreakRows: false,
-          widths: [
-            PDF_HELPER_CONST.ROW_WIDTH_250,
-            PDF_HELPER_CONST.ROW_ALL_WIDTH,
-          ],
+          widths: [PDF_HELPER_CONST.ROW_WIDTH_250, PDF_HELPER_CONST.ROW_ALL_WIDTH],
           body,
         },
         margin: MARGIN_TOP_10__BOTTOM_15,
@@ -810,16 +700,8 @@ export class TenderOfferDataMaker extends AbstractDocumentStrategy {
     );
   }
 
-  private getTenderDocumentsTable(
-    bidType: BidType,
-    lot: LotValueType | undefined = undefined
-  ): Record<string, any> {
-    const {
-      documents,
-      financialDocuments,
-      eligibilityDocuments,
-      qualificationDocuments,
-    } = bidType;
+  private getTenderDocumentsTable(bidType: BidType, lot: LotValueType | undefined = undefined): Record<string, any> {
+    const { documents, financialDocuments, eligibilityDocuments, qualificationDocuments } = bidType;
     const allDocuments = [
       ...(documents ?? []),
       ...(financialDocuments ?? []),
@@ -829,15 +711,10 @@ export class TenderOfferDataMaker extends AbstractDocumentStrategy {
       .filter(document => {
         if (lot && lot.hasOwnProperty("id")) {
           return (
-            document.documentOf === "lot" &&
-            document.title !== SIGNATURE_FILE_NAME &&
-            document.relatedItem === lot.id
+            document.documentOf === "lot" && document.title !== SIGNATURE_FILE_NAME && document.relatedItem === lot.id
           );
         }
-        return (
-          document.documentOf === "tender" &&
-          document.title !== SIGNATURE_FILE_NAME
-        );
+        return document.documentOf === "tender" && document.title !== SIGNATURE_FILE_NAME;
       })
       .map(document => ({
         text: `${StringHandler.cutLongString(this.getField(document, "title", STRING.DASH), this.MAX_TITLE_LENGTH)}\n`,
@@ -865,10 +742,7 @@ export class TenderOfferDataMaker extends AbstractDocumentStrategy {
         table: {
           headerRows: 0,
           dontBreakRows: false,
-          widths: [
-            PDF_HELPER_CONST.ROW_WIDTH_245,
-            PDF_HELPER_CONST.ROW_WIDTH_245,
-          ],
+          widths: [PDF_HELPER_CONST.ROW_WIDTH_245, PDF_HELPER_CONST.ROW_WIDTH_245],
           body,
         },
         margin: MARGIN_TOP_10__BOTTOM_15,
@@ -880,10 +754,7 @@ export class TenderOfferDataMaker extends AbstractDocumentStrategy {
     );
   }
 
-  private lotResolvesTable(
-    tender: TenderOfferType,
-    bidType: BidType
-  ): Record<string, any>[] {
+  private lotResolvesTable(tender: TenderOfferType, bidType: BidType): Record<string, any>[] {
     const { lotValues } = bidType;
     const { lots, criteria } = tender;
 
@@ -898,16 +769,8 @@ export class TenderOfferDataMaker extends AbstractDocumentStrategy {
         return [PDF_HELPER_CONST.EMPTY_FIELD];
       }
 
-      const criterionList = criteria?.filter(
-        criterion => criterion.relatedItem === lot.id
-      );
-      return this.createBidLotTables(
-        lot,
-        lotValue,
-        bidType,
-        criterionList,
-        tender
-      );
+      const criterionList = criteria?.filter(criterion => criterion.relatedItem === lot.id);
+      return this.createBidLotTables(lot, lotValue, bidType, criterionList, tender);
     });
   }
 
@@ -918,11 +781,7 @@ export class TenderOfferDataMaker extends AbstractDocumentStrategy {
     criterionList: CriterionType[] | undefined,
     tender: TenderOfferType
   ): Record<string, any>[] {
-    const mainInfoBuilder = new MainInformationBuilder(
-      lot,
-      lotValueBid,
-      this.dictionaries
-    );
+    const mainInfoBuilder = new MainInformationBuilder(lot, lotValueBid, this.dictionaries);
     const criterionTables = criterionLotTablesConfig.map(criterionData =>
       this.createCriterionTable(criterionData, criterionList || [], bid)
     );
@@ -932,8 +791,7 @@ export class TenderOfferDataMaker extends AbstractDocumentStrategy {
         style: PDF_FILED_KEYS.TITLE_LARGE_TENDER_OFFER,
         text: `Лот - ${lot.title}`,
       },
-      ...mainInfoBuilder.setValue.setWeightedValue.setSubcontractingDetails
-        .getResult,
+      ...mainInfoBuilder.setValue.setWeightedValue.setSubcontractingDetails.getResult,
       this.escoTable(tender, bid, lotValueBid),
       ...criterionTables,
       this.resolveSpecificationTable(tender, bid, lot),

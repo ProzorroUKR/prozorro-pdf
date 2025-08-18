@@ -6,8 +6,8 @@ import {
   FOOTER_QR_MARGIN,
   TABLE_COLUMN_RIGHT_MARGIN,
 } from "@/config/pdf/announcementConstants";
-import type { SignerType } from "@/types/sign/SignerType";
 import { ArrayHandler } from "@/utils/ArrayHandler";
+import type { SignerType } from "@/types/sign/SignerType";
 import { Assert } from "@/widgets/ErrorExceptionCore/Assert";
 import { NAZK_DOCUMENT_TYPE, NAZK_TITLE } from "@/constants/nazk";
 import { LINE_LENGTH } from "@/constants/pdf/pdfHelperConstants";
@@ -16,19 +16,19 @@ import { NAZK_TEXTS_LISTS } from "@/config/pdf/texts/NAZK";
 import { ANNOUNCEMENT_TEXTS_LIST } from "@/config/pdf/texts/ANNOUNCEMENT";
 import { ERROR_MESSAGES } from "@/widgets/ErrorExceptionCore/configs/messages";
 import { PDFTablesHandler } from "@/services/PDF/Formatting/PDFTablesHandler";
+import type { PdfDocumentConfigType } from "@/types/pdf/PdfDocumentConfigType";
 
 export class NazkDataMaker extends AbstractDocumentStrategy {
   public create(
-    file: string,
-    _?: SignerType[],
-    __?: Map<string, Record<string, any>>,
+    nazkReport: Record<any, any>,
+    _config: PdfDocumentConfigType,
+    _signers?: SignerType[],
+    _dictionaries?: Map<string, Record<string, any>>,
     award?: Record<string, any>
   ): Record<string, any>[] {
     if (!award) {
       return [];
     }
-
-    const nazkReport = JSON.parse(file);
 
     const currentDocuments = (award.documents as []).filter(
       (doc: Record<string, any>) => doc.title === NAZK_TITLE && doc.documentType === NAZK_DOCUMENT_TYPE
@@ -68,11 +68,9 @@ export class NazkDataMaker extends AbstractDocumentStrategy {
     ];
   }
 
-  public createFooter(_?: SignerType[], link?: string): Record<string, any>[] {
+  public createFooter(signers?: SignerType[], link?: string): Record<string, any>[] {
     return [
-      {
-        canvas: [{ type: "line", x1: 0, y1: 0, x2: LINE_LENGTH, y2: 0, lineWidth: 1 }],
-      },
+      { canvas: [{ type: "line", x1: 0, y1: 0, x2: LINE_LENGTH, y2: 0, lineWidth: 1 }] },
       {
         margin: FOOTER_MARGIN,
         columns: [

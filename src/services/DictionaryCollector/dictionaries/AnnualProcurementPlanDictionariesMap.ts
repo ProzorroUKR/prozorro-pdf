@@ -10,4 +10,5 @@ export const annualProcurementPlanDictionaries = new Map<string, string>()
   .set("dk015", "dk015_uk")
   .set("dk003", "dk003_uk")
   .set("units", "recommended")
-  .set("classifier_dk", "dk021_uk");
+  .set("classifier_dk", "dk021_uk")
+  .set("katottg_categories", "katottg_categories");

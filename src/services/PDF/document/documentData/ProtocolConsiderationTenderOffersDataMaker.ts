@@ -4,28 +4,23 @@ import * as CONCLUSION_OF_MONITORING_CONST from "@/config/pdf/conclusionOfMonito
 import { PROTOCOL_CONSIDERATION_TENDER_OFFERS } from "@/config/pdf/texts/PROTOCOL_CONSIDERATION_TENDER_OFFERS";
 import * as PDF_HELPER_CONST from "@/constants/pdf/pdfHelperConstants";
 import type { SignerType } from "@/types/sign/SignerType";
-import {
-  MARGIN_TOP_10__BOTTOM_15,
-  MARGIN_TOP_3,
-} from "@/config/pdf/protocolConsiderationTenderOffersConstants";
+import { MARGIN_TOP_10__BOTTOM_15, MARGIN_TOP_3 } from "@/config/pdf/protocolConsiderationTenderOffersConstants";
 import { STRING } from "@/constants/string";
 import { QualificationsStatusType } from "@/types/ProtocolConsiderationTenderOffers/Qualifications";
 import type { QualificationsType } from "@/types/ProtocolConsiderationTenderOffers/Qualifications";
 import { DictionaryHelper } from "@/services/Common/DictionaryHelper";
-import type {
-  LotsType,
-  ProtocolConsiderationTenderOffers,
-} from "@/types/ProtocolConsiderationTenderOffers/Tender";
+import type { LotsType, ProtocolConsiderationTenderOffers } from "@/types/ProtocolConsiderationTenderOffers/Tender";
 import type { DocumentType } from "@/types/Tender/DocumentType";
 import { StringHandler } from "@/utils/StringHandler";
 import { ANNOUNCEMENT_PAGE_MARGIN } from "@/config/pdf/announcementConstants";
+import type { PdfDocumentConfigType } from "@/types/pdf/PdfDocumentConfigType";
 
 export class ProtocolConsiderationTenderOffersDataMaker extends AbstractDocumentStrategy {
-  private readonly dictionaryHelper: DictionaryHelper = new DictionaryHelper(
-    this
-  );
-  public create(
-    file: string,
+  private readonly dictionaryHelper: DictionaryHelper = new DictionaryHelper(this);
+
+  create(
+    tender: ProtocolConsiderationTenderOffers,
+    _config: PdfDocumentConfigType,
     _signers: SignerType[],
     dictionaries: Map<string, Record<string, any>>,
     document?: DocumentType
@@ -34,18 +29,13 @@ export class ProtocolConsiderationTenderOffersDataMaker extends AbstractDocument
       return [];
     }
 
-    const tender: ProtocolConsiderationTenderOffers = this.unwrapTender(
-      file
-    ) as ProtocolConsiderationTenderOffers;
     const { procuringEntity } = tender;
     const customerCategory = this.getCustomerCategory(
       procuringEntity,
       dictionaries.get("organisation"),
       PROTOCOL_CONSIDERATION_TENDER_OFFERS.customer_category
     );
-    const tenderId = this.emptyChecker.isNotEmptyString(
-      this.getField(tender, "tenderID")
-    )
+    const tenderId = this.emptyChecker.isNotEmptyString(this.getField(tender, "tenderID"))
       ? this.getField(tender, "tenderID", "")
       : STRING.DASH;
 
@@ -64,8 +54,7 @@ export class ProtocolConsiderationTenderOffersDataMaker extends AbstractDocument
         style: PDF_FILED_KEYS.TITLE_MEDIUM,
       },
       this.showWithDefault(
-        this.getField(procuringEntity, "identifier.legalName") ||
-          this.getField(procuringEntity, "name"),
+        this.getField(procuringEntity, "identifier.legalName") || this.getField(procuringEntity, "name"),
         PROTOCOL_CONSIDERATION_TENDER_OFFERS.customer_info
       ),
       customerCategory,
@@ -75,9 +64,7 @@ export class ProtocolConsiderationTenderOffersDataMaker extends AbstractDocument
       ),
 
       this.showWithDefault(
-        StringHandler.customerLocation(
-          this.getField(procuringEntity, "address")
-        ),
+        StringHandler.customerLocation(this.getField(procuringEntity, "address")),
         PROTOCOL_CONSIDERATION_TENDER_OFFERS.customer_location,
         Boolean(this.getField(procuringEntity, "address"))
       ),
@@ -86,10 +73,7 @@ export class ProtocolConsiderationTenderOffersDataMaker extends AbstractDocument
         dictionaries.get("tender_procurement_method_type"),
         PROTOCOL_CONSIDERATION_TENDER_OFFERS.type_of_purchase
       ),
-      this.showWithDefault(
-        this.getField(tender, "title"),
-        PROTOCOL_CONSIDERATION_TENDER_OFFERS.procuring_entity_title
-      ),
+      this.showWithDefault(this.getField(tender, "title"), PROTOCOL_CONSIDERATION_TENDER_OFFERS.procuring_entity_title),
       ...this.resolveTables(tender),
       this.showWithDefault(
         PROTOCOL_CONSIDERATION_TENDER_OFFERS.has_been_resolved_text,
@@ -102,9 +86,7 @@ export class ProtocolConsiderationTenderOffersDataMaker extends AbstractDocument
     return ANNOUNCEMENT_PAGE_MARGIN;
   }
 
-  private resolveTables(
-    tender: ProtocolConsiderationTenderOffers
-  ): Record<string, any>[] {
+  private resolveTables(tender: ProtocolConsiderationTenderOffers): Record<string, any>[] {
     const { lots, qualifications } = tender;
     return Array.isArray(lots) && lots.length
       ? this.prepareLotsTable(tender, qualifications, lots)
@@ -119,17 +101,10 @@ export class ProtocolConsiderationTenderOffersDataMaker extends AbstractDocument
     const res: Record<string, any>[] = [];
     lots.map(lot => {
       const qualificationsItems = qualifications.filter(
-        qualification =>
-          this.getField(qualification, "lotID") === this.getField(lot, "id")
+        qualification => this.getField(qualification, "lotID") === this.getField(lot, "id")
       );
       if (qualificationsItems.length > 0) {
-        res.push(
-          this.createItemTable(
-            tender,
-            qualificationsItems,
-            this.getField(lot, "title", STRING.EMPTY)
-          )
-        );
+        res.push(this.createItemTable(tender, qualificationsItems, this.getField(lot, "title", STRING.EMPTY)));
       }
     });
     return res;
@@ -188,11 +163,7 @@ export class ProtocolConsiderationTenderOffersDataMaker extends AbstractDocument
       table: {
         headerRows: 0,
         dontBreakRows: false,
-        widths: [
-          PDF_HELPER_CONST.ROW_AUTO_WIDTH,
-          PDF_HELPER_CONST.ROW_AUTO_WIDTH,
-          PDF_HELPER_CONST.ROW_AUTO_WIDTH,
-        ],
+        widths: [PDF_HELPER_CONST.ROW_AUTO_WIDTH, PDF_HELPER_CONST.ROW_AUTO_WIDTH, PDF_HELPER_CONST.ROW_AUTO_WIDTH],
         body,
       },
       margin: MARGIN_TOP_10__BOTTOM_15,
@@ -200,30 +171,21 @@ export class ProtocolConsiderationTenderOffersDataMaker extends AbstractDocument
     return resultOutputCollection;
   }
 
-  private resolveBidsData(
-    tender: ProtocolConsiderationTenderOffers,
-    qualification: QualificationsType
-  ): string {
+  private resolveBidsData(tender: ProtocolConsiderationTenderOffers, qualification: QualificationsType): string {
     const { bids } = tender;
     if (!Array.isArray(bids) || !qualification.hasOwnProperty("bidID")) {
       return STRING.DASH;
     }
-    const bid = bids.find(
-      bid => this.getField(bid, "id") === this.getField(qualification, "bidID")
-    );
+    const bid = bids.find(bid => this.getField(bid, "id") === this.getField(qualification, "bidID"));
     return bid
-      ? this.getField(bid, "tenderers.0.identifier.legalName", "") ||
-          this.getField(bid, "tenderers.0.name", "")
+      ? this.getField(bid, "tenderers.0.identifier.legalName", "") || this.getField(bid, "tenderers.0.name", "")
       : STRING.DASH;
   }
 
-  private prepareGroundsRorRejecting(
-    qualification: QualificationsType
-  ): string {
+  private prepareGroundsRorRejecting(qualification: QualificationsType): string {
     const title = this.getField(qualification, "title", "");
     const description = this.getField(qualification, "description", "");
-    return this.emptyChecker.isEmptyString(title) &&
-      this.emptyChecker.isEmptyString(description)
+    return this.emptyChecker.isEmptyString(title) && this.emptyChecker.isEmptyString(description)
       ? STRING.DASH
       : `${title}\n\n${description}`;
   }

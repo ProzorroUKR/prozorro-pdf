@@ -6,21 +6,19 @@ import type { P7SLoadResultType } from "@/types/pdf/P7SLoadResultType";
 import type { PdfDocumentConfigType } from "@/types/pdf/PdfDocumentConfigType";
 import type { PdfObjectType } from "@/types/pdf/PdfObjectType";
 import type { IBase64 } from "@/utils/Base64";
+import type { EdsInterface } from "services/EdsInterface";
 
-export interface ILoaderManager {
+export interface ILoaderManager<DataType> {
   setLoaderType(type: string): void;
-  getData(object: PdfObjectType, config: PdfDocumentConfigType): Promise<P7SLoadResultType>;
+  getData(object: PdfObjectType, config: PdfDocumentConfigType): Promise<P7SLoadResultType<DataType>>;
 }
 
-export class LoaderManager implements ILoaderManager {
+export class LoaderManager<DataType> implements ILoaderManager<DataType> {
   private readonly loaderFactory;
   private dataGenerator;
 
-  constructor(
-    private readonly base64: IBase64,
-    private readonly axios: AxiosStatic
-  ) {
-    this.loaderFactory = new LoaderFactory(loaderStrategyMap, this.base64, this.axios);
+  constructor(base64: IBase64, axios: AxiosStatic, eds: EdsInterface) {
+    this.loaderFactory = new LoaderFactory(loaderStrategyMap, base64, axios, eds);
     this.dataGenerator = this.loaderFactory.create(PROZORRO_PDF_TYPES.TICKET);
   }
 
@@ -28,7 +26,7 @@ export class LoaderManager implements ILoaderManager {
     this.dataGenerator = this.loaderFactory.create(type);
   }
 
-  async getData(object: PdfObjectType, config: PdfDocumentConfigType): Promise<P7SLoadResultType> {
+  async getData(object: PdfObjectType, config: PdfDocumentConfigType): Promise<P7SLoadResultType<DataType>> {
     return this.dataGenerator.load(object, config);
   }
 }

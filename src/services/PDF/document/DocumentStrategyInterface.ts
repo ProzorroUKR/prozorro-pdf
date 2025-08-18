@@ -1,12 +1,14 @@
 import type { SignerType } from "@/types/sign/SignerType";
+import type { PdfDocumentConfigType } from "@/types/pdf/PdfDocumentConfigType";
 
 export interface DocumentStrategyInterface {
   create(
-    file: string,
+    data: any,
+    config: PdfDocumentConfigType,
     signers?: SignerType[],
     dictionaries?: Map<string, Record<string, any>>,
     tender?: Record<string, any>
-  ): Record<string, any>[];
+  ): Record<string, any>[] | Promise<Record<string, any>[]>;
   createFooter(signers?: SignerType[], link?: string): Record<string, any>[];
   getPageMargins(): number[];
   pageBreakBefore(): (

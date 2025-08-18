@@ -15,6 +15,7 @@ import { DEFAULT_PAGE_MARGIN } from "@/config/pdf/announcementConstants";
 import { afterXDate, afterYDate, beforeXDate } from "@/config/pdf/conclusionOfMonitoringConstants";
 import { CONCLUSION_OF_MONITORING_TEXTS_LIST } from "@/config/pdf/texts/CONCLUSION_OF_MONITORING";
 import { PDFTablesHandler } from "@/services/PDF/Formatting/PDFTablesHandler";
+import type { PdfDocumentConfigType } from "@/types/pdf/PdfDocumentConfigType";
 import { CONCLUSION_X_DATE, CONCLUSION_Y_DATE } from "@/constants/env.ts";
 
 export class ConclusionOfMonitoringDataMaker extends AbstractDocumentStrategy {
@@ -26,8 +27,11 @@ export class ConclusionOfMonitoringDataMaker extends AbstractDocumentStrategy {
     return DEFAULT_PAGE_MARGIN;
   }
 
-  public create(file: string, signers: SignerType[]): Record<string, any>[] {
-    const { tender, monitoring } = JSON.parse(file);
+  public create(
+    { tender, monitoring }: Record<any, any>,
+    _config: PdfDocumentConfigType,
+    signers: SignerType[]
+  ): Record<string, any>[] {
     const conclusionDateCreated = this.getField<string>(monitoring, "conclusion-date-created");
     const firstSigner: SignerType = ArrayHandler.getFirstElement(signers) as SignerType;
     const lastSigner: SignerType = ArrayHandler.getLastElement(signers) as SignerType;
@@ -282,6 +286,7 @@ export class ConclusionOfMonitoringDataMaker extends AbstractDocumentStrategy {
   private getCurrentKey(key: string, date: string): string | Record<string, any> {
     const dateSize = 10; // replace with date from tender
     const currentDate = date.slice(0, dateSize);
+
     if (currentDate > CONCLUSION_Y_DATE) {
       return afterYDate.get(key) || STRING.EMPTY;
     }

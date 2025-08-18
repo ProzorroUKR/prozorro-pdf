@@ -16,8 +16,12 @@ import { ProtocolConsiderationTenderOffersLoader } from "@/services/PDF/P7SLoade
 import { ProtocolOnExtensionOfReviewPeriodLoader } from "@/services/PDF/P7SLoader/loaders/ProtocolOnExtensionOfReviewPeriodLoader";
 import { TenderOfferLoader } from "@/services/PDF/P7SLoader/loaders/TenderOfferLoader";
 import { EdrLoader } from "@/services/PDF/P7SLoader/loaders/EdrLoader";
+import type { EdsInterface } from "services/EdsInterface";
 
-export const loaderStrategyMap = new Map<string, new (base64: IBase64, axios: AxiosStatic) => LoaderStrategyInterface>()
+export const loaderStrategyMap = new Map<
+  string,
+  new (base64: IBase64, axios: AxiosStatic, eds: EdsInterface) => LoaderStrategyInterface<any>
+>()
   .set(PROZORRO_PDF_TYPES.TICKET, TicketLoader)
   .set(PROZORRO_PDF_TYPES.CONCLUSION, ConclusionLoader)
   .set(PROZORRO_PDF_TYPES.ANNOUNCEMENT, AnnouncementLoader)

@@ -6,10 +6,7 @@ import { PURCHASE_CANCELLATION_PROTOCOL } from "@/config/pdf/texts/PURCHASE_CANC
 import * as PDF_HELPER_CONST from "@/constants/pdf/pdfHelperConstants";
 import type { SignerType } from "@/types/sign/SignerType";
 import type { AnnouncementItem } from "@/types/Announcement/AnnouncementTypes";
-import {
-  MARGIN_TOP_10__BOTTOM_15,
-  MARGIN_TOP_3,
-} from "@/config/pdf/purchaseCancellationProtocolConstants";
+import { MARGIN_TOP_10__BOTTOM_15, MARGIN_TOP_3 } from "@/config/pdf/purchaseCancellationProtocolConstants";
 import { STRING } from "@/constants/string";
 import { CancellationOfStatuses } from "@/types/PurchaseCancellation/PurchaseCancellationTypes";
 import type { CancellationType } from "@/types/PurchaseCancellation/PurchaseCancellationTypes";
@@ -20,16 +17,16 @@ import { StringHandler } from "@/utils/StringHandler";
 import { Assert } from "@/widgets/ErrorExceptionCore/Assert";
 import { ERROR_MESSAGES } from "@/widgets/ErrorExceptionCore/configs/messages";
 import { PDFTablesHandler } from "@/services/PDF/Formatting/PDFTablesHandler";
+import type { PdfDocumentConfigType } from "@/types/pdf/PdfDocumentConfigType";
 
 export class PurchaseCancellationProtocolDataMaker extends AbstractDocumentStrategy {
-  private readonly dictionaryHelper: DictionaryHelper = new DictionaryHelper(
-    this
-  );
   private readonly unitHelper: UnitHelper = new UnitHelper(this);
   private readonly deliveryHelper: DeliveryHelper = new DeliveryHelper(this);
+  private readonly dictionaryHelper: DictionaryHelper = new DictionaryHelper(this);
 
   public create(
-    file: string,
+    tender: Record<string, any>,
+    _config: PdfDocumentConfigType,
     _signers: SignerType[],
     dictionaries: Map<string, Record<string, any>>,
     originalCancellation?: CancellationType
@@ -38,46 +35,37 @@ export class PurchaseCancellationProtocolDataMaker extends AbstractDocumentStrat
       return [];
     }
 
-    const tender: Record<string, any> = this.unwrapTender(file);
     const { cancellations, procuringEntity, buyers } = tender;
 
     let cancellation = null;
 
     if (Array.isArray(cancellations)) {
-      cancellation = cancellations.find(
-        (c: CancellationType) => c.id === originalCancellation.id
-      );
+      cancellation = cancellations.find((c: CancellationType) => c.id === originalCancellation.id);
     } else if (tender.hasOwnProperty("id")) {
       cancellation = tender;
     }
 
-    Assert.isDefined(
-      cancellation,
-      ERROR_MESSAGES.VALIDATION_FAILED.cancellationNotFound
-    );
+    Assert.isDefined(cancellation, ERROR_MESSAGES.VALIDATION_FAILED.cancellationNotFound);
 
     const customerCategory = this.getCustomerCategory(
       procuringEntity,
       dictionaries.get("organisation"),
       PURCHASE_CANCELLATION_PROTOCOL.customer_category
     );
-    const tenderId = this.emptyChecker.isNotEmptyString(
-      this.getField(tender, "tenderID")
-    )
+    const tenderId = this.emptyChecker.isNotEmptyString(this.getField(tender, "tenderID"))
       ? this.getField(tender, "tenderID", "")
       : STRING.DASH;
 
     const reason = this.getField(cancellation, "reason", STRING.EMPTY);
-    const descriptionGroundsForRejectingTender =
-      PDFTablesHandler.createTableLayout(
-        [
-          PDFTablesHandler.createTableRow({
-            head: PURCHASE_CANCELLATION_PROTOCOL.description_grounds_for_rejecting_tender,
-            data: reason.length ? reason : STRING.DASH,
-          }),
-        ],
-        false
-      );
+    const descriptionGroundsForRejectingTender = PDFTablesHandler.createTableLayout(
+      [
+        PDFTablesHandler.createTableRow({
+          head: PURCHASE_CANCELLATION_PROTOCOL.description_grounds_for_rejecting_tender,
+          data: reason.length ? reason : STRING.DASH,
+        }),
+      ],
+      false
+    );
 
     return [
       {
@@ -94,8 +82,7 @@ export class PurchaseCancellationProtocolDataMaker extends AbstractDocumentStrat
         style: PDF_FILED_KEYS.TITLE_MEDIUM,
       },
       this.showWithDefault(
-        this.getField(procuringEntity, "identifier.legalName") ||
-          this.getField(procuringEntity, "name"),
+        this.getField(procuringEntity, "identifier.legalName") || this.getField(procuringEntity, "name"),
         PURCHASE_CANCELLATION_PROTOCOL.customer_info
       ),
       customerCategory,
@@ -105,9 +92,7 @@ export class PurchaseCancellationProtocolDataMaker extends AbstractDocumentStrat
       ),
 
       this.showWithDefault(
-        StringHandler.customerLocation(
-          this.getField(procuringEntity, "address")
-        ),
+        StringHandler.customerLocation(this.getField(procuringEntity, "address")),
         PURCHASE_CANCELLATION_PROTOCOL.customer_location,
         Boolean(this.getField(procuringEntity, "address"))
       ),
@@ -116,16 +101,10 @@ export class PurchaseCancellationProtocolDataMaker extends AbstractDocumentStrat
         dictionaries.get("tender_procurement_method_type"),
         PURCHASE_CANCELLATION_PROTOCOL.type_of_purchase
       ),
-      this.showWithDefault(
-        this.getField(tender, "title"),
-        PURCHASE_CANCELLATION_PROTOCOL.procuring_entity_title
-      ),
+      this.showWithDefault(this.getField(tender, "title"), PURCHASE_CANCELLATION_PROTOCOL.procuring_entity_title),
       ...this.buyersTables(buyers),
       ...this.resolveTables(tender, cancellation, dictionaries),
-      this.getCancellationReasonType(
-        cancellation,
-        dictionaries.get("cancellation_reason_type")
-      ),
+      this.getCancellationReasonType(cancellation, dictionaries.get("cancellation_reason_type")),
       descriptionGroundsForRejectingTender,
       this.showWithDefault(
         PURCHASE_CANCELLATION_PROTOCOL.has_been_resolved_text,
@@ -170,17 +149,8 @@ export class PurchaseCancellationProtocolDataMaker extends AbstractDocumentStrat
        */
       lots.forEach(lot => {
         const title = `Лот — ${lot.title}`;
-        const selectedLotItems = items.filter(
-          (item: { relatedLot: string }) => item.relatedLot === lot.id
-        );
-        res.push(
-          this.createItemTable(
-            selectedLotItems,
-            cancellation,
-            dictionaries,
-            title
-          )
-        );
+        const selectedLotItems = items.filter((item: { relatedLot: string }) => item.relatedLot === lot.id);
+        res.push(this.createItemTable(selectedLotItems, cancellation, dictionaries, title));
       });
       return res;
     }
@@ -195,14 +165,9 @@ export class PurchaseCancellationProtocolDataMaker extends AbstractDocumentStrat
 
     const selectedLotItems =
       cancellationOf === CancellationOfStatuses.LOT
-        ? items.filter(
-            (item: { relatedLot: string }) =>
-              item.relatedLot === cancellation.relatedLot
-          )
+        ? items.filter((item: { relatedLot: string }) => item.relatedLot === cancellation.relatedLot)
         : [];
-    res.push(
-      this.createItemTable(selectedLotItems, cancellation, dictionaries, title)
-    );
+    res.push(this.createItemTable(selectedLotItems, cancellation, dictionaries, title));
 
     return res;
   }
@@ -302,9 +267,7 @@ export class PurchaseCancellationProtocolDataMaker extends AbstractDocumentStrat
     return resultOutputCollection;
   }
 
-  private buyersTables(
-    buyers: Record<string, any>[] | undefined
-  ): Record<string, any>[] {
+  private buyersTables(buyers: Record<string, any>[] | undefined): Record<string, any>[] {
     if (!Array.isArray(buyers) || buyers.length === 0) {
       return [PDF_HELPER_CONST.EMPTY_FIELD];
     }
@@ -328,9 +291,7 @@ export class PurchaseCancellationProtocolDataMaker extends AbstractDocumentStrat
     buyers.forEach(buyer =>
       body.push([
         {
-          text:
-            this.getField(buyer, "identifier.legalName") ||
-            this.getField(buyer, "name", STRING.DASH),
+          text: this.getField(buyer, "identifier.legalName") || this.getField(buyer, "name", STRING.DASH),
           style: PDF_FILED_KEYS.TABLE_DATA,
         },
         {
@@ -338,10 +299,7 @@ export class PurchaseCancellationProtocolDataMaker extends AbstractDocumentStrat
           style: PDF_FILED_KEYS.TABLE_DATA,
         },
         {
-          text: StringHandler.customerLocation(
-            this.getField(buyer, "address"),
-            STRING.DASH
-          ),
+          text: StringHandler.customerLocation(this.getField(buyer, "address"), STRING.DASH),
           style: PDF_FILED_KEYS.TABLE_DATA,
         },
       ])
@@ -350,11 +308,7 @@ export class PurchaseCancellationProtocolDataMaker extends AbstractDocumentStrat
       table: {
         headerRows: 0,
         dontBreakRows: false,
-        widths: [
-          PDF_HELPER_CONST.ROW_AUTO_WIDTH,
-          PDF_HELPER_CONST.ROW_AUTO_WIDTH,
-          PDF_HELPER_CONST.ROW_AUTO_WIDTH,
-        ],
+        widths: [PDF_HELPER_CONST.ROW_AUTO_WIDTH, PDF_HELPER_CONST.ROW_AUTO_WIDTH, PDF_HELPER_CONST.ROW_AUTO_WIDTH],
         body,
       },
       margin: MARGIN_TOP_10__BOTTOM_15,
@@ -371,10 +325,7 @@ export class PurchaseCancellationProtocolDataMaker extends AbstractDocumentStrat
       cancellationReasonTypeDictionary === undefined ||
       this.emptyChecker.isEmptyObject(cancellationReasonTypeDictionary)
     ) {
-      return this.showWithDefault(
-        STRING.DASH,
-        PURCHASE_CANCELLATION_PROTOCOL.grounds_for_rejecting_tender
-      );
+      return this.showWithDefault(STRING.DASH, PURCHASE_CANCELLATION_PROTOCOL.grounds_for_rejecting_tender);
     }
 
     const reason = this.getField(

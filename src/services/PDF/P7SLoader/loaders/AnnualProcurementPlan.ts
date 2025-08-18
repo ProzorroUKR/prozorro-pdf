@@ -8,22 +8,24 @@ import { Assert } from "@/widgets/ErrorExceptionCore/Assert";
 import { ERROR_MESSAGES } from "@/widgets/ErrorExceptionCore/configs/messages";
 import { ArrayHandler } from "@/utils/ArrayHandler";
 import { SIGNATURE_FILE_NAME } from "@/constants/string";
+import { ObjectDecoder } from "@/utils/ObjectDecoder";
 
-export class AnnualProcurementPlan extends AbstractLoaderStrategy implements LoaderStrategyInterface {
-  public async load(
-    { documents }: any,
-
-    config: PdfDocumentConfigType
-  ): Promise<P7SLoadResultType> {
+export class AnnualProcurementPlan
+  extends AbstractLoaderStrategy<Record<any, any>>
+  implements LoaderStrategyInterface<Record<any, any>>
+{
+  public async load({ documents }: any, config: PdfDocumentConfigType): Promise<P7SLoadResultType<Record<any, any>>> {
     Assert.isDefined(documents, ERROR_MESSAGES.VALIDATION_FAILED.documentListUndefined);
 
     const url = this.getDocumentUrl(documents, config);
     const file = await this.getData(url);
+    const { data, signers } = await this.getDataFromSign(file, config.encoding);
+
     return {
       url,
-      file,
-      encoding: config.encoding,
+      signers: signers || [],
       type: PdfTemplateTypes.ANNUAL_PROCUREMENT_PLAN,
+      file: this.unwrapTender(ObjectDecoder.decode<Record<any, any>>(data)),
     };
   }
 

@@ -7,13 +7,17 @@ import type { PdfDocumentConfigType } from "@/types/pdf/PdfDocumentConfigType";
 import { PdfTemplateTypes } from "@/services/PDF/PdfTemplateTypes";
 import { ArrayHandler } from "@/utils/ArrayHandler";
 import type { DocumentType } from "@/types/Tender/DocumentType";
-import { AwardStatus } from "@/types/Tender/AwardType";
 import type { AwardType } from "@/types/Tender/AwardType";
+import { AwardStatus } from "@/types/Tender/AwardType";
 import { ErrorExceptionCore } from "@/widgets/ErrorExceptionCore/ErrorExceptionCore";
 import { PROZORRO_PDF_ERROR_CODES } from "@/widgets/ErrorExceptionCore/constants/ERROR_CODES.enum";
+import { ObjectDecoder } from "@/utils/ObjectDecoder";
 
-export class TenderRejectionProtocolLoader extends AbstractLoaderStrategy implements LoaderStrategyInterface {
-  public async load(object: AwardType, config: PdfDocumentConfigType): Promise<P7SLoadResultType> {
+export class TenderRejectionProtocolLoader
+  extends AbstractLoaderStrategy<Record<any, any>>
+  implements LoaderStrategyInterface<Record<any, any>>
+{
+  public async load(object: AwardType, config: PdfDocumentConfigType): Promise<P7SLoadResultType<Record<any, any>>> {
     const { documents, status, eligible, qualified } = object;
 
     Assert.isDefined(status, ERROR_MESSAGES.VALIDATION_FAILED.undefinedStatus);
@@ -34,13 +38,16 @@ export class TenderRejectionProtocolLoader extends AbstractLoaderStrategy implem
         });
       }
     }
+
     const url = this.getDocumentUrl(documents, config);
     const file = await this.getData(url);
+    const { data, signers } = await this.getDataFromSign(file, config.encoding);
+
     return {
       url,
-      file,
-      encoding: config.encoding,
+      signers: signers || [],
       type: PdfTemplateTypes.TENDER_REJECTION_PROTOCOL_TEMPLATE,
+      file: this.unwrapTender(ObjectDecoder.decode<Record<any, any>>(data)),
     };
   }
 

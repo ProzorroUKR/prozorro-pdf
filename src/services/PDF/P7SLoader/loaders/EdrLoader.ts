@@ -1,7 +1,7 @@
+import YAML from "yaml";
 import type { LoaderStrategyInterface } from "@/services/PDF/P7SLoader/LoaderStrategyInterface";
 import { AbstractLoaderStrategy } from "@/services/PDF/P7SLoader/AbstractLoaderStrategy";
 import type { P7SLoadResultType } from "@/types/pdf/P7SLoadResultType";
-import { ENCODING } from "@/constants/encoding";
 import type { PdfDocumentConfigType } from "@/types/pdf/PdfDocumentConfigType";
 import { PdfTemplateTypes } from "@/services/PDF/PdfTemplateTypes";
 import type { DocumentType } from "@/types/Tender/DocumentType";
@@ -11,19 +11,20 @@ import { ERROR_MESSAGES } from "@/widgets/ErrorExceptionCore/configs/messages";
 import { EDR_DOCUMENT_TYPE, EDR_TITLE } from "@/constants/edr";
 import { ErrorExceptionCore } from "@/widgets/ErrorExceptionCore/ErrorExceptionCore";
 import { PROZORRO_PDF_ERROR_CODES } from "@/widgets/ErrorExceptionCore/constants/ERROR_CODES.enum";
+import type { EdrType } from "@/types/Edr/EdrType";
 
-export class EdrLoader extends AbstractLoaderStrategy implements LoaderStrategyInterface {
-  async load({ documents }: AwardType, config: PdfDocumentConfigType): Promise<P7SLoadResultType> {
+export class EdrLoader extends AbstractLoaderStrategy<EdrType> implements LoaderStrategyInterface<EdrType> {
+  async load({ documents }: AwardType, config: PdfDocumentConfigType): Promise<P7SLoadResultType<EdrType>> {
     Assert.isDefined(documents, ERROR_MESSAGES.VALIDATION_FAILED.documentListUndefined);
 
     const url = this._getDocumentUrl(documents, config);
-    const file = await this.getData(url);
+    const { data } = await this.axios.get(url);
 
     return {
       url,
-      file,
+      signers: [],
       type: PdfTemplateTypes.EDR,
-      encoding: ENCODING.UTF_16,
+      file: YAML.parse(data) as EdrType,
     };
   }
 

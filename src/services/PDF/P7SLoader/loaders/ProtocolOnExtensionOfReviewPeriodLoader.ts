@@ -8,45 +8,37 @@ import { PdfTemplateTypes } from "@/services/PDF/PdfTemplateTypes";
 import { ArrayHandler } from "@/utils/ArrayHandler";
 import type { DocumentType } from "@/types/Tender/DocumentType";
 import type { AwardType } from "@/types/Tender/AwardType";
+import { ObjectDecoder } from "@/utils/ObjectDecoder";
 
 export class ProtocolOnExtensionOfReviewPeriodLoader
-  extends AbstractLoaderStrategy
-  implements LoaderStrategyInterface
+  extends AbstractLoaderStrategy<Record<any, any>>
+  implements LoaderStrategyInterface<Record<any, any>>
 {
   public async load(
     { documents }: AwardType,
     config: PdfDocumentConfigType
-  ): Promise<P7SLoadResultType> {
-    Assert.isDefined(
-      documents,
-      ERROR_MESSAGES.VALIDATION_FAILED.documentListUndefined
-    );
+  ): Promise<P7SLoadResultType<Record<any, any>>> {
+    Assert.isDefined(documents, ERROR_MESSAGES.VALIDATION_FAILED.documentListUndefined);
 
     const url = this.getDocumentUrl(documents, config);
     const file = await this.getData(url);
+    const { data, signers } = await this.getDataFromSign(file, config.encoding);
 
     return {
       url,
-      file,
-      encoding: config.encoding,
+      signers: signers || [],
+      file: this.unwrapTender(ObjectDecoder.decode<Record<any, any>>(data)),
       type: PdfTemplateTypes.PROTOCOL_ON_EXTENSION_OF_REVIEW_PERIOD_TEMPLATE,
     };
   }
 
-  private getDocumentUrl(
-    documentList: DocumentType[],
-    { date }: PdfDocumentConfigType
-  ): string {
+  private getDocumentUrl(documentList: DocumentType[], { date }: PdfDocumentConfigType): string {
     const documents = documentList.filter(
       (doc: Record<string, any>) =>
-        doc.documentType === "extensionReport" &&
-        this.approximateCheckDateModified(doc.dateModified, date)
+        doc.documentType === "extensionReport" && this.approximateCheckDateModified(doc.dateModified, date)
     );
     const document = ArrayHandler.getLastElement(documents);
-    Assert.isDefined(
-      document,
-      ERROR_MESSAGES.VALIDATION_FAILED.undefinedDocumentTitle
-    );
+    Assert.isDefined(document, ERROR_MESSAGES.VALIDATION_FAILED.undefinedDocumentTitle);
 
     return document.url;
   }

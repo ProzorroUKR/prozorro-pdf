@@ -2,10 +2,7 @@ import { AbstractDocumentStrategy } from "@/services/PDF/document/AbstractDocume
 import { PDF_FILED_KEYS } from "@/constants/pdf/pdfFieldKeys";
 import { ANNOUNCEMENT_PAGE_MARGIN } from "@/config/pdf/announcementConstants";
 import * as CONCLUSION_OF_MONITORING_CONST from "@/config/pdf/conclusionOfMonitoringConstants";
-import {
-  MARGIN_TOP_10__BOTTOM_15,
-  MARGIN_TOP_3,
-} from "@/config/pdf/conclusionOfMonitoringConstants";
+import { MARGIN_TOP_10__BOTTOM_15, MARGIN_TOP_3 } from "@/config/pdf/conclusionOfMonitoringConstants";
 import { TENDER_REJECTION_PROTOCOL } from "@/config/pdf/texts/TENDER_REJECTION_PROTOCOL";
 import * as PDF_HELPER_CONST from "@/constants/pdf/pdfHelperConstants";
 import type { SignerType } from "types/sign/SignerType";
@@ -19,11 +16,10 @@ import { DeliveryHelper } from "@/services/Common/DeliveryHelper";
 import { UnitHelper } from "@/services/Common/UnitHelper";
 import { StringHandler } from "@/utils/StringHandler";
 import { ERROR_MESSAGES } from "@/widgets/ErrorExceptionCore/configs/messages";
+import type { PdfDocumentConfigType } from "@/types/pdf/PdfDocumentConfigType";
 
 export class TenderRejectionProtocolDataMaker extends AbstractDocumentStrategy {
-  private readonly dictionaryHelper: DictionaryHelper = new DictionaryHelper(
-    this
-  );
+  private readonly dictionaryHelper: DictionaryHelper = new DictionaryHelper(this);
   private readonly awardHelper: AwardHelper = new AwardHelper(this);
   private readonly deliveryHelper: DeliveryHelper = new DeliveryHelper(this);
   private readonly unitHelper: UnitHelper = new UnitHelper(this);
@@ -31,7 +27,8 @@ export class TenderRejectionProtocolDataMaker extends AbstractDocumentStrategy {
   private isTenderLoaded = false;
 
   public create(
-    file: string,
+    tender: Record<string, any>,
+    _config: PdfDocumentConfigType,
     _signers: SignerType[],
     dictionaries: Map<string, Record<string, any>>,
     originalAward?: AwardType
@@ -40,7 +37,6 @@ export class TenderRejectionProtocolDataMaker extends AbstractDocumentStrategy {
       return [];
     }
 
-    const tender: Record<string, any> = this.unwrapTender(file);
     const { awards, procuringEntity } = tender;
 
     let award = null;
@@ -56,10 +52,7 @@ export class TenderRejectionProtocolDataMaker extends AbstractDocumentStrategy {
 
     const { suppliers } = award;
 
-    Assert.isDefined(
-      suppliers,
-      ERROR_MESSAGES.VALIDATION_FAILED.suppliersIsNotDefined
-    );
+    Assert.isDefined(suppliers, ERROR_MESSAGES.VALIDATION_FAILED.suppliersIsNotDefined);
 
     const [supplier] = suppliers;
     const customerCategory = this.getCustomerCategory(
@@ -67,9 +60,7 @@ export class TenderRejectionProtocolDataMaker extends AbstractDocumentStrategy {
       dictionaries.get("organisation"),
       TENDER_REJECTION_PROTOCOL.customer_category
     );
-    const tenderId: string = this.emptyChecker.isNotEmptyString(
-      this.getField(tender, "tenderID")
-    )
+    const tenderId: string = this.emptyChecker.isNotEmptyString(this.getField(tender, "tenderID"))
       ? this.getField(tender, "tenderID")
       : STRING.DASH;
 
@@ -88,21 +79,14 @@ export class TenderRejectionProtocolDataMaker extends AbstractDocumentStrategy {
         style: PDF_FILED_KEYS.TITLE_MEDIUM,
       },
       this.showWithDefault(
-        this.getField(procuringEntity, "identifier.legalName") ||
-          this.getField(procuringEntity, "name"),
+        this.getField(procuringEntity, "identifier.legalName") || this.getField(procuringEntity, "name"),
         TENDER_REJECTION_PROTOCOL.customer_info
       ),
       customerCategory,
-      this.showWithDefault(
-        this.getField(procuringEntity, "identifier.id"),
-        TENDER_REJECTION_PROTOCOL.customer_edrpou
-      ),
+      this.showWithDefault(this.getField(procuringEntity, "identifier.id"), TENDER_REJECTION_PROTOCOL.customer_edrpou),
 
       this.showWithDefault(
-        StringHandler.customerLocation(
-          this.getField(procuringEntity, "address"),
-          STRING.DASH
-        ),
+        StringHandler.customerLocation(this.getField(procuringEntity, "address"), STRING.DASH),
         TENDER_REJECTION_PROTOCOL.customer_location,
         Boolean(this.getField(procuringEntity, "address"))
       ),
@@ -118,8 +102,7 @@ export class TenderRejectionProtocolDataMaker extends AbstractDocumentStrategy {
       ),
       ...this.resolveTables(tender, award, dictionaries),
       this.showWithDefault(
-        this.getField(supplier, "identifier.legalName") ||
-          this.getField(supplier, "name"),
+        this.getField(supplier, "identifier.legalName") || this.getField(supplier, "name"),
         TENDER_REJECTION_PROTOCOL.participants_name
       ),
       this.showWithDefault(
@@ -127,19 +110,11 @@ export class TenderRejectionProtocolDataMaker extends AbstractDocumentStrategy {
         TENDER_REJECTION_PROTOCOL.id_code
       ),
       this.showIfAvailable(
-        this.awardHelper.showAwardWithTax(
-          award,
-          "value",
-          TENDER_REJECTION_PROTOCOL.with_tax
-        ),
+        this.awardHelper.showAwardWithTax(award, "value", TENDER_REJECTION_PROTOCOL.with_tax),
         TENDER_REJECTION_PROTOCOL.awards_value_amount
       ),
       this.showIfAvailable(
-        this.awardHelper.showAwardWithTax(
-          award,
-          "weightedValue",
-          TENDER_REJECTION_PROTOCOL.with_tax
-        ),
+        this.awardHelper.showAwardWithTax(award, "weightedValue", TENDER_REJECTION_PROTOCOL.with_tax),
         TENDER_REJECTION_PROTOCOL.awards_weighted_value
       ),
       this.awardHelper.showAwardPerformance(
@@ -148,10 +123,7 @@ export class TenderRejectionProtocolDataMaker extends AbstractDocumentStrategy {
         TENDER_REJECTION_PROTOCOL.with_tax,
         false
       ),
-      this.showWithDefault(
-        this.getField(award, "title"),
-        TENDER_REJECTION_PROTOCOL.grounds_for_rejecting_tender
-      ),
+      this.showWithDefault(this.getField(award, "title"), TENDER_REJECTION_PROTOCOL.grounds_for_rejecting_tender),
       this.showWithDefault(
         this.getField(award, "description"),
         TENDER_REJECTION_PROTOCOL.description_grounds_for_rejecting_tender
@@ -195,9 +167,7 @@ export class TenderRejectionProtocolDataMaker extends AbstractDocumentStrategy {
     const title = `Лот — ${lot.title}`;
     const { items } = tender;
     const selectedLotItems = Array.isArray(items)
-      ? items.filter(
-          (item: { relatedLot: string }) => item.relatedLot === lot.id
-        )
+      ? items.filter((item: { relatedLot: string }) => item.relatedLot === lot.id)
       : [];
 
     res.push(this.createItemTable(selectedLotItems, dictionaries, title));

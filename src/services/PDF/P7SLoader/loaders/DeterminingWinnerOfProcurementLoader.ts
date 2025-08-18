@@ -11,12 +11,16 @@ import type { AwardType } from "@/types/Tender/AwardType";
 import { ErrorExceptionCore } from "@/widgets/ErrorExceptionCore/ErrorExceptionCore";
 import type { DocumentType } from "@/types/Tender/DocumentType";
 import { PROZORRO_PDF_ERROR_CODES } from "@/widgets/ErrorExceptionCore/constants/ERROR_CODES.enum";
+import { ObjectDecoder } from "@/utils/ObjectDecoder";
 
-export class DeterminingWinnerOfProcurementLoader extends AbstractLoaderStrategy implements LoaderStrategyInterface {
+export class DeterminingWinnerOfProcurementLoader
+  extends AbstractLoaderStrategy<Record<any, any>>
+  implements LoaderStrategyInterface<Record<any, any>>
+{
   public async load(
     { documents, status, qualified, eligible }: AwardType,
     config: PdfDocumentConfigType
-  ): Promise<P7SLoadResultType> {
+  ): Promise<P7SLoadResultType<Record<any, any>>> {
     Assert.isDefined(status, ERROR_MESSAGES.VALIDATION_FAILED.undefinedStatus);
     Assert.isDefined(documents, ERROR_MESSAGES.VALIDATION_FAILED.documentListUndefined);
 
@@ -45,11 +49,13 @@ export class DeterminingWinnerOfProcurementLoader extends AbstractLoaderStrategy
 
     const url = this.getDocumentUrl(documents, config);
     const file = await this.getData(url);
+    const { data, signers } = await this.getDataFromSign(file, config.encoding);
+
     return {
       url,
-      file,
-      encoding: config.encoding,
+      signers: signers || [],
       type: PdfTemplateTypes.DETERMINING_WINNER_OF_PROCUREMENT_TEMPLATE,
+      file: this.unwrapTender(ObjectDecoder.decode<Record<any, any>>(data)),
     };
   }
 

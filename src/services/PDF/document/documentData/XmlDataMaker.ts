@@ -6,12 +6,12 @@ import { StringHandler } from "@/utils/StringHandler";
 import * as PDF_HELPER_CONST from "@/constants/pdf/pdfHelperConstants";
 import { DEFAULT_PAGE_MARGIN } from "@/config/pdf/announcementConstants";
 import { XML_RESULT_TESTS_LIST, XML_TEXTS_LIST } from "@/config/pdf/texts/XML";
+import { XMLParser } from "@/services/Dom/XMLParser";
 
 export class XmlDataMaker extends AbstractDocumentStrategy {
-  private static calculateRowSpan(
-    data: Record<string, string>,
-    isIndividual: boolean
-  ): number {
+  private readonly xmlParser = new XMLParser();
+
+  private static calculateRowSpan(data: Record<string, string>, isIndividual: boolean): number {
     let quantity = PDF_HELPER_CONST.ROW_COUNT_10;
 
     if (isIndividual) {
@@ -30,15 +30,10 @@ export class XmlDataMaker extends AbstractDocumentStrategy {
     return quantity;
   }
 
-  public create(file: string): Record<string, any>[] {
-    const data: Record<string, string> = this.xmlParser.getData(
-      file,
-      XML_SELECTORS_LIST
-    );
+  create(file: string): Record<string, any>[] {
+    const data: Record<string, string> = this.xmlParser.getData(file, XML_SELECTORS_LIST);
     const date = StringHandler.formatToDate(data.HFILL);
-    const isIndividual: boolean = REGEX.NUMBER.EIGHT_SYMBOLS.test(
-      data.R0201G1S
-    );
+    const isIndividual: boolean = REGEX.NUMBER.EIGHT_SYMBOLS.test(data.R0201G1S);
     const rowSpan: number = XmlDataMaker.calculateRowSpan(data, isIndividual);
     const debtMark: string =
       data.R0301G1S === PDF_HELPER_CONST.REQUEST_RESULT_IS_INFORMATION_PROVIDED
@@ -62,11 +57,7 @@ export class XmlDataMaker extends AbstractDocumentStrategy {
           PDF_HELPER_CONST.MARGIN_0,
         ],
         table: {
-          widths: [
-            PDF_HELPER_CONST.ROW_WIDTH_150,
-            PDF_HELPER_CONST.ROW_AUTO_WIDTH,
-            PDF_HELPER_CONST.ROW_ALL_WIDTH,
-          ],
+          widths: [PDF_HELPER_CONST.ROW_WIDTH_150, PDF_HELPER_CONST.ROW_AUTO_WIDTH, PDF_HELPER_CONST.ROW_ALL_WIDTH],
           body: [
             [
               {
@@ -141,10 +132,7 @@ export class XmlDataMaker extends AbstractDocumentStrategy {
           PDF_HELPER_CONST.MARGIN_0,
         ],
         table: {
-          widths: [
-            PDF_HELPER_CONST.ROW_WIDTH_150,
-            PDF_HELPER_CONST.ROW_ALL_WIDTH,
-          ],
+          widths: [PDF_HELPER_CONST.ROW_WIDTH_150, PDF_HELPER_CONST.ROW_ALL_WIDTH],
           body: [
             [
               {
@@ -262,10 +250,7 @@ export class XmlDataMaker extends AbstractDocumentStrategy {
           PDF_HELPER_CONST.MARGIN_0,
         ],
         table: {
-          widths: [
-            PDF_HELPER_CONST.ROW_WIDTH_150,
-            PDF_HELPER_CONST.ROW_ALL_WIDTH,
-          ],
+          widths: [PDF_HELPER_CONST.ROW_WIDTH_150, PDF_HELPER_CONST.ROW_ALL_WIDTH],
           body: [
             [
               XML_TEXTS_LIST.R0301G1S,
@@ -285,10 +270,7 @@ export class XmlDataMaker extends AbstractDocumentStrategy {
           PDF_HELPER_CONST.MARGIN_0,
         ],
         table: {
-          widths: [
-            PDF_HELPER_CONST.ROW_WIDTH_150,
-            PDF_HELPER_CONST.ROW_ALL_WIDTH,
-          ],
+          widths: [PDF_HELPER_CONST.ROW_WIDTH_150, PDF_HELPER_CONST.ROW_ALL_WIDTH],
           body: [
             [
               XML_TEXTS_LIST.R0401G1S,
@@ -326,6 +308,7 @@ export class XmlDataMaker extends AbstractDocumentStrategy {
   createFooter(): Record<string, any>[] {
     return [PDF_HELPER_CONST.EMPTY_FIELD];
   }
+
   getPageMargins(): number[] {
     return DEFAULT_PAGE_MARGIN;
   }

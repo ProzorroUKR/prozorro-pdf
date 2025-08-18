@@ -3,17 +3,6 @@ import * as PDF_HELPER_CONST from "@/constants/pdf/pdfHelperConstants";
 import { MILESTONE_EVENT } from "@/widgets/TenderAnnouncement/constants/milestone";
 import { PAYMENT_TYPE } from "@/widgets/TenderAnnouncement/constants/paymentType";
 import { DURATION_TYPE } from "@/widgets/TenderAnnouncement/constants/durationType";
-import type {
-  AnnouncementItem,
-  AnnouncementItemAdditionalClassification,
-  Milestone,
-} from "@/types/Announcement/AnnouncementTypes";
-import {
-  closeFrame,
-  noAuction,
-  noSecurement,
-  procurementMethodTypes,
-} from "@/widgets/TenderAnnouncement/constants/conditions";
 import { AbstractDocumentStrategy } from "@/services/PDF/document/AbstractDocumentStrategy";
 import { additionalClassifications } from "@/widgets/TenderAnnouncement/constants/additionalClassifications";
 import type { SignerType } from "types/sign/SignerType";
@@ -27,12 +16,28 @@ import { PDFTablesHandler } from "@/services/PDF/Formatting/PDFTablesHandler";
 import { CriterionValues } from "@/constants/tender/criterion.enum";
 import { AnnouncementMainInformationBuilder } from "./services/AnnouncementMainInformation.builder";
 import { ESCO_TYPE } from "@/constants/string";
+import type { PdfDocumentConfigType } from "@/types/pdf/PdfDocumentConfigType";
+import type {
+  AnnouncementItem,
+  AnnouncementItemAdditionalClassification,
+  Milestone,
+} from "@/types/Announcement/AnnouncementTypes";
+import {
+  closeFrame,
+  noAuction,
+  noSecurement,
+  procurementMethodTypes,
+} from "@/widgets/TenderAnnouncement/constants/conditions";
 
 const nbuRateConverter = 100;
 
 export class AnnouncementDataMaker extends AbstractDocumentStrategy {
-  create(file: string, _signers: SignerType[], dictionaries: Map<string, Record<string, any>>): Record<string, any>[] {
-    const tender: Record<string, any> = this.unwrapTender(file);
+  create(
+    tender: Record<any, any>,
+    _config: PdfDocumentConfigType,
+    _signers: SignerType[],
+    dictionaries: Map<string, Record<string, any>>
+  ): Record<string, any>[] {
     const hasLots = Boolean(tender?.lots?.length);
     const builder = new AnnouncementMainInformationBuilder(tender, dictionaries);
 

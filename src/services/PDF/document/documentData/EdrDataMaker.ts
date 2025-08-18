@@ -1,4 +1,3 @@
-import YAML from "yaml";
 import { STRING } from "@/constants/string";
 import { EDR } from "@/config/pdf/texts/EDR";
 import { DateHandler } from "@/utils/DateHandler";
@@ -14,7 +13,6 @@ import type { EdrDataType, EdrFounderType, EdrType } from "@/types/Edr/EdrType";
 import { MARGIN_TOP_10 } from "@/config/pdf/conclusionOfMonitoringConstants";
 import { ERROR_MESSAGES } from "@/widgets/ErrorExceptionCore/configs/messages";
 import { ErrorExceptionCore } from "@/widgets/ErrorExceptionCore/ErrorExceptionCore";
-import { PROZORRO_PDF_ERROR_CODES } from "@/widgets/ErrorExceptionCore/constants/ERROR_CODES.enum";
 import { AbstractDocumentStrategy } from "@/services/PDF/document/AbstractDocumentStrategy";
 import { LINE_LENGTH, ROW_ALL_WIDTH, ROW_WIDTH_100, ROW_WIDTH_150 } from "@/constants/pdf/pdfHelperConstants";
 import { ClassificationTransformer } from "@/widgets/pq/services/Classification/ClassificationTransformer";
@@ -25,12 +23,13 @@ import {
   FOOTER_QR_MARGIN,
 } from "@/config/pdf/announcementConstants";
 import { ANNOUNCEMENT_TEXTS_LIST } from "@/config/pdf/texts/ANNOUNCEMENT";
+import type { PdfDocumentConfigType } from "@/types/pdf/PdfDocumentConfigType";
+import { PROZORRO_PDF_ERROR_CODES } from "@/widgets/ErrorExceptionCore/constants/ERROR_CODES.enum.ts";
 
 export class EdrDataMaker extends AbstractDocumentStrategy {
   private _metaSourceDate = "";
 
-  create(file: string): Record<string, any>[] {
-    const { data, error, meta }: EdrType = YAML.parse(file) as EdrType;
+  create({ data, error, meta }: EdrType, _: PdfDocumentConfigType): Record<string, any>[] {
     this._metaSourceDate = meta.sourceDate;
 
     if (error || !data) {
@@ -59,9 +58,7 @@ export class EdrDataMaker extends AbstractDocumentStrategy {
     Assert.isDefined(link, ERROR_MESSAGES.INVALID_PARAMS.undefinedUrl, PROZORRO_PDF_ERROR_CODES.INVALID_PARAMS);
 
     return [
-      {
-        canvas: [{ type: "line", x1: 0, y1: 0, x2: LINE_LENGTH, y2: 0, lineWidth: 1 }],
-      },
+      { canvas: [{ type: "line", x1: 0, y1: 0, x2: LINE_LENGTH, y2: 0, lineWidth: 1 }] },
       {
         margin: FOOTER_MARGIN,
         columns: [

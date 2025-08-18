@@ -3,25 +3,17 @@ import { ANNOUNCEMENT_PAGE_MARGIN } from "@/config/pdf/announcementConstants";
 import type { SignerType } from "types/sign/SignerType";
 import { PDF_FILED_KEYS } from "@/constants/pdf/pdfFieldKeys";
 import { COMPLAINT_TEXTS_LISTS } from "@/config/pdf/texts/COMPLAINT";
-import {
-  ROW_WIDTH_110,
-  ROW_WIDTH_200,
-} from "@/constants/pdf/pdfHelperConstants";
+import { ROW_WIDTH_110, ROW_WIDTH_200 } from "@/constants/pdf/pdfHelperConstants";
 import { PDF_STYLES } from "@/config/pdf/pdfStyles";
 import { HEADING_MARGIN } from "@/widgets/pq/configs/margins";
 import { MARGIN_TOP_10 } from "@/config/pdf/conclusionOfMonitoringConstants";
-import type {
-  Argument,
-  ComplaintType,
-  Evidence,
-  Objection,
-  RequestedRemedy,
-} from "@/types/complaints";
+import type { Argument, ComplaintType, Evidence, Objection, RequestedRemedy } from "@/types/complaints";
 import type { DocumentType } from "@/types/Tender/DocumentType";
 import { SIGNATURE_FILE_NAME, STRING } from "@/constants/string";
 import { ArrayHandler } from "@/utils/ArrayHandler";
 import { objectionClassificationScheme } from "@/config/pdf/complaintConstants";
 import { StringHandler } from "@/utils/StringHandler";
+import type { PdfDocumentConfigType } from "@/types/pdf/PdfDocumentConfigType";
 
 export class ComplaintDataMaker extends AbstractDocumentStrategy {
   getPageMargins(): number[] {
@@ -29,13 +21,12 @@ export class ComplaintDataMaker extends AbstractDocumentStrategy {
   }
 
   create(
-    file: string,
+    complaint: ComplaintType,
+    _config: PdfDocumentConfigType,
     _signers: SignerType[],
     dictionaries: Map<string, Record<string, any>>,
     tender?: Record<string, any>
   ): Record<string, any>[] {
-    const complaint: any = this.unwrapTender(file);
-
     return [
       {
         style: PDF_FILED_KEYS.SPECIFICATION_HEADING,
@@ -51,26 +42,19 @@ export class ComplaintDataMaker extends AbstractDocumentStrategy {
         text: this.getField(complaint, "title"),
         margin: HEADING_MARGIN,
       },
-      this.getObjectionTable(
-        this.getField(complaint, "objections"),
-        dictionaries
-      ),
+      this.getObjectionTable(this.getField(complaint, "objections"), dictionaries),
       this.getDocumentList(this.getField(complaint, "documents")),
     ];
   }
 
-  getAuthorTable(
-    complaint: ComplaintType,
-    tender: Record<string, any>
-  ): Record<string, any> {
+  getAuthorTable(complaint: ComplaintType, tender: Record<string, any>): Record<string, any> {
     return {
       table: {
         widths: [ROW_WIDTH_200, "auto"],
         body: [
           this.formatTableRow(
             COMPLAINT_TEXTS_LISTS.author_identifier,
-            this.getField(complaint, "author.identifier.legalName") ||
-              this.getField(complaint, "author.name")
+            this.getField(complaint, "author.identifier.legalName") || this.getField(complaint, "author.name")
           ),
           this.formatTableRow(
             COMPLAINT_TEXTS_LISTS.author_scheme,
@@ -79,9 +63,7 @@ export class ComplaintDataMaker extends AbstractDocumentStrategy {
           ),
           this.formatTableRow(
             COMPLAINT_TEXTS_LISTS.author_address,
-            StringHandler.customerLocation(
-              this.getField(complaint, "author.address")
-            ),
+            StringHandler.customerLocation(this.getField(complaint, "author.address")),
             false
           ),
           this.formatTableRow(
@@ -93,24 +75,15 @@ export class ComplaintDataMaker extends AbstractDocumentStrategy {
             `${this.getField(tender, "procuringEntity.identifier.id")} (${this.getField(tender, "procuringEntity.identifier.scheme")})`,
             false
           ),
-          this.formatTableRow(
-            COMPLAINT_TEXTS_LISTS.tender_id,
-            this.getField(tender, "tenderID")
-          ),
-          this.formatTableRow(
-            COMPLAINT_TEXTS_LISTS.complaint_id,
-            this.getField(complaint, "complaintID")
-          ),
+          this.formatTableRow(COMPLAINT_TEXTS_LISTS.tender_id, this.getField(tender, "tenderID")),
+          this.formatTableRow(COMPLAINT_TEXTS_LISTS.complaint_id, this.getField(complaint, "complaintID")),
         ],
       },
       margin: MARGIN_TOP_10,
     };
   }
 
-  getObjectionTable(
-    objections: Objection[],
-    dictionary: Map<string, Record<string, any>>
-  ): Record<string, any>[] {
+  getObjectionTable(objections: Objection[], dictionary: Map<string, Record<string, any>>): Record<string, any>[] {
     if (!objections.length) {
       return [];
     }
@@ -132,10 +105,7 @@ export class ComplaintDataMaker extends AbstractDocumentStrategy {
             style: PDF_STYLES.table_cell_title_complaint,
             text: COMPLAINT_TEXTS_LISTS.requested_remedies,
           },
-          this.formatRequestedRemedies(
-            this.getField(objection, "requestedRemedies"),
-            dictionary.get("remedies_type")
-          ),
+          this.formatRequestedRemedies(this.getField(objection, "requestedRemedies"), dictionary.get("remedies_type")),
         ],
       ];
 
@@ -171,9 +141,7 @@ export class ComplaintDataMaker extends AbstractDocumentStrategy {
     return documentListTitle.concat(
       documents
         .filter(
-          (document: DocumentType) =>
-            document.author === "complaint_owner" &&
-            document.title !== SIGNATURE_FILE_NAME
+          (document: DocumentType) => document.author === "complaint_owner" && document.title !== SIGNATURE_FILE_NAME
         )
         .map(
           ({ title }: DocumentType): Record<string, any> => ({
@@ -186,9 +154,7 @@ export class ComplaintDataMaker extends AbstractDocumentStrategy {
 
   getClassificationDescription(objection: Objection): Record<string, any>[] {
     return [
-      {
-        text: `${this.getField(objectionClassificationScheme, this.getField(objection, "classification.scheme"))} \n`,
-      },
+      { text: `${this.getField(objectionClassificationScheme, this.getField(objection, "classification.scheme"))} \n` },
       { text: this.getField(objection, "classification.description") },
     ];
   }
@@ -205,20 +171,13 @@ export class ComplaintDataMaker extends AbstractDocumentStrategy {
       .map((remedy, index, array) => [
         {
           style: PDF_STYLES.table_data,
-          text: this.getField(
-            remediesDictionary || {},
-            `${this.getField(remedy, "type")}.title`
-          ),
+          text: this.getField(remediesDictionary || {}, `${this.getField(remedy, "type")}.title`),
         },
         {
           style: PDF_STYLES.table_data,
           text: this.getField(remedy, "description"),
         },
-        {
-          text: ArrayHandler.isLastIndex(index, array)
-            ? STRING.EMPTY
-            : STRING.WHITESPACE,
-        },
+        { text: ArrayHandler.isLastIndex(index, array) ? STRING.EMPTY : STRING.WHITESPACE },
       ])
       .flat();
   }
@@ -237,29 +196,23 @@ export class ComplaintDataMaker extends AbstractDocumentStrategy {
     ];
     const argumentList: Argument[] = this.getField(objection, "arguments");
 
-    argumentList.forEach(
-      (
-        { description = STRING.EMPTY, evidences = [] }: Argument,
-        index,
-        array
-      ) => {
+    argumentList.forEach(({ description = STRING.EMPTY, evidences = [] }: Argument, index, array) => {
+      descriptionList.push({
+        style: PDF_STYLES.table_data,
+        text: description,
+      });
+
+      evidences.forEach(({ title = STRING.EMPTY }: Evidence) =>
         descriptionList.push({
           style: PDF_STYLES.table_data,
-          text: description,
-        });
+          text: title,
+        })
+      );
 
-        evidences.forEach(({ title = STRING.EMPTY }: Evidence) =>
-          descriptionList.push({
-            style: PDF_STYLES.table_data,
-            text: title,
-          })
-        );
-
-        if (!ArrayHandler.isLastIndex(index, array)) {
-          descriptionList.push({ text: STRING.WHITESPACE });
-        }
+      if (!ArrayHandler.isLastIndex(index, array)) {
+        descriptionList.push({ text: STRING.WHITESPACE });
       }
-    );
+    });
 
     return descriptionList;
   }
@@ -299,16 +252,10 @@ export class ComplaintDataMaker extends AbstractDocumentStrategy {
     ];
   }
 
-  formatTableRow(
-    left: string,
-    right: string | Record<string, any>,
-    leftBold = true
-  ): Record<string, any>[] {
+  formatTableRow(left: string, right: string | Record<string, any>, leftBold = true): Record<string, any>[] {
     return [
       {
-        style: leftBold
-          ? PDF_STYLES.table_cell_title_complaint
-          : PDF_STYLES.table_data,
+        style: leftBold ? PDF_STYLES.table_cell_title_complaint : PDF_STYLES.table_data,
         text: left,
       },
       {

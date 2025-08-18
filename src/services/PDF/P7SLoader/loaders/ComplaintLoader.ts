@@ -1,3 +1,4 @@
+import axios from "axios";
 import type { LoaderStrategyInterface } from "@/services/PDF/P7SLoader/LoaderStrategyInterface";
 import { AbstractLoaderStrategy } from "@/services/PDF/P7SLoader/AbstractLoaderStrategy";
 import type { P7SLoadResultType } from "@/types/pdf/P7SLoadResultType";
@@ -7,21 +8,39 @@ import type { ComplaintType } from "@/types/complaints";
 import { Assert } from "@/widgets/ErrorExceptionCore/Assert";
 import { ERROR_MESSAGES } from "@/widgets/ErrorExceptionCore/configs/messages";
 import type { DocumentType } from "@/types/Tender/DocumentType";
-import { SIGNATURE_FILE_NAME, STRING } from "@/constants/string";
+import { SIGNATURE_FILE_NAME } from "@/constants/string";
 import { DateHandler } from "@/utils/DateHandler";
+import { ObjectDecoder } from "@/utils/ObjectDecoder";
+import type { TenderResponseType } from "@/types/Tender/TenderResponseType";
 
-export class ComplaintLoader extends AbstractLoaderStrategy implements LoaderStrategyInterface {
-  async load(object: ComplaintType, config: PdfDocumentConfigType): Promise<P7SLoadResultType> {
+export class ComplaintLoader
+  extends AbstractLoaderStrategy<Record<any, any>>
+  implements LoaderStrategyInterface<Record<any, any>>
+{
+  async load(
+    object: ComplaintType,
+    { encoding, tender }: PdfDocumentConfigType
+  ): Promise<P7SLoadResultType<Record<any, any>>> {
     Assert.isDefined(object && object.documents.length, ERROR_MESSAGES.VALIDATION_FAILED.documentListUndefined);
 
-    const url = object && object.documents.length ? this.getDocumentUrl(object) : STRING.EMPTY;
-    const file = await this.getData(this.getDocumentUrl(object));
+    let additionalData = null;
+    const url = this.getDocumentUrl(object);
+    const file = await this.getData(url);
+    const { data, signers } = await this.getDataFromSign(file, encoding);
+
+    if (tender) {
+      const {
+        data: { data: payload },
+      }: TenderResponseType = await axios.get(tender);
+      additionalData = payload;
+    }
 
     return {
       url,
-      file,
-      encoding: config.encoding,
+      additionalData,
+      signers: signers || [],
       type: PdfTemplateTypes.COMPLAINT,
+      file: this.unwrapTender(ObjectDecoder.decode<Record<any, any>>(data)),
     };
   }
 

@@ -8,16 +8,22 @@ import { PdfTemplateTypes } from "@/services/PDF/PdfTemplateTypes";
 import { ArrayHandler } from "@/utils/ArrayHandler";
 import type { AnnouncementType } from "@/types/Announcement/AnnouncementTypes";
 import { SIGNATURE_FILE_NAME } from "@/constants/string";
+import { ObjectDecoder } from "@/utils/ObjectDecoder";
 
-export class AnnouncementLoader extends AbstractLoaderStrategy implements LoaderStrategyInterface {
-  async load(object: AnnouncementType, config: PdfDocumentConfigType): Promise<P7SLoadResultType> {
+export class AnnouncementLoader
+  extends AbstractLoaderStrategy<Record<any, any>>
+  implements LoaderStrategyInterface<Record<any, any>>
+{
+  async load(object: AnnouncementType, config: PdfDocumentConfigType): Promise<P7SLoadResultType<Record<any, any>>> {
     const url = this.getDocumentUrl(object, config);
     const file = await this.getData(url);
+    const { data, signers } = await this.getDataFromSign(file, config.encoding);
+
     return {
       url,
-      file,
-      encoding: config.encoding,
+      signers: signers || [],
       type: PdfTemplateTypes.ANNOUNCEMENT,
+      file: this.unwrapTender(ObjectDecoder.decode<Record<any, any>>(data)),
     };
   }
 

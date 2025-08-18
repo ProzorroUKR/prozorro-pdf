@@ -2,10 +2,7 @@ import { AbstractDocumentStrategy } from "@/services/PDF/document/AbstractDocume
 import { PDF_FILED_KEYS } from "@/constants/pdf/pdfFieldKeys";
 import { ANNOUNCEMENT_PAGE_MARGIN } from "@/config/pdf/announcementConstants";
 import * as CONCLUSION_OF_MONITORING_CONST from "@/config/pdf/conclusionOfMonitoringConstants";
-import {
-  MARGIN_TOP_10__BOTTOM_15,
-  MARGIN_TOP_3,
-} from "@/config/pdf/conclusionOfMonitoringConstants";
+import { MARGIN_TOP_10__BOTTOM_15, MARGIN_TOP_3 } from "@/config/pdf/conclusionOfMonitoringConstants";
 import { PROTOCOL_ON_EXTENSION_OF_REVIEW_PERIOD } from "@/config/pdf/texts/PROTOCOL_ON_EXTENSION_OF_REVIEW_PERIOD";
 import * as PDF_HELPER_CONST from "@/constants/pdf/pdfHelperConstants";
 import type { SignerType } from "types/sign/SignerType";
@@ -17,15 +14,15 @@ import { AwardHelper } from "@/services/Common/AwardHelper";
 import type { OrganizationType } from "@/types/Tender/OrganizationType";
 import { StringHandler } from "@/utils/StringHandler";
 import { ERROR_MESSAGES } from "@/widgets/ErrorExceptionCore/configs/messages";
+import type { PdfDocumentConfigType } from "@/types/pdf/PdfDocumentConfigType";
 
 export class ProtocolOnExtensionOfReviewPeriodDataMaker extends AbstractDocumentStrategy {
-  private readonly dictionaryHelper: DictionaryHelper = new DictionaryHelper(
-    this
-  );
+  private readonly dictionaryHelper: DictionaryHelper = new DictionaryHelper(this);
   private readonly awardHelper = new AwardHelper(this);
 
   public create(
-    file: string,
+    tender: Record<string, any>,
+    _config: PdfDocumentConfigType,
     _signers: SignerType[],
     dictionaries: Map<string, Record<string, any>>,
     awardType?: AwardType
@@ -34,9 +31,7 @@ export class ProtocolOnExtensionOfReviewPeriodDataMaker extends AbstractDocument
       return [];
     }
 
-    const tender: Record<string, any> = this.unwrapTender(file);
     const { awards, procuringEntity } = tender;
-
     let award = null;
 
     if (Array.isArray(awards)) {
@@ -52,9 +47,7 @@ export class ProtocolOnExtensionOfReviewPeriodDataMaker extends AbstractDocument
       dictionaries.get("organisation"),
       PROTOCOL_ON_EXTENSION_OF_REVIEW_PERIOD.customer_category
     );
-    const tenderId: string = this.emptyChecker.isNotEmptyString(
-      this.getField(tender, "tenderID")
-    )
+    const tenderId: string = this.emptyChecker.isNotEmptyString(this.getField(tender, "tenderID"))
       ? this.getField(tender, "tenderID")
       : STRING.DASH;
     const [extensionMilestone] = award.milestones?.filter(
@@ -75,8 +68,7 @@ export class ProtocolOnExtensionOfReviewPeriodDataMaker extends AbstractDocument
         style: PDF_FILED_KEYS.TITLE_MEDIUM,
       },
       this.showWithDefault(
-        this.getField(procuringEntity, "identifier.legalName") ||
-          this.getField(procuringEntity, "name"),
+        this.getField(procuringEntity, "identifier.legalName") || this.getField(procuringEntity, "name"),
         PROTOCOL_ON_EXTENSION_OF_REVIEW_PERIOD.customer_info
       ),
       customerCategory,
@@ -86,9 +78,7 @@ export class ProtocolOnExtensionOfReviewPeriodDataMaker extends AbstractDocument
       ),
 
       this.showWithDefault(
-        StringHandler.customerLocation(
-          this.getField(procuringEntity, "address")
-        ),
+        StringHandler.customerLocation(this.getField(procuringEntity, "address")),
         PROTOCOL_ON_EXTENSION_OF_REVIEW_PERIOD.customer_location,
         Boolean(this.getField(procuringEntity, "address"))
       ),
@@ -118,28 +108,17 @@ export class ProtocolOnExtensionOfReviewPeriodDataMaker extends AbstractDocument
     return ANNOUNCEMENT_PAGE_MARGIN;
   }
 
-  private createAwardTables(
-    award: AwardType,
-    tender: Record<string, any>
-  ): Record<string, any>[] {
+  private createAwardTables(award: AwardType, tender: Record<string, any>): Record<string, any>[] {
     const resultOutputTable: Record<string, any>[] = [];
     const { suppliers } = award;
 
-    Assert.isDefined(
-      suppliers,
-      ERROR_MESSAGES.VALIDATION_FAILED.suppliersIsNotDefined
-    );
+    Assert.isDefined(suppliers, ERROR_MESSAGES.VALIDATION_FAILED.suppliersIsNotDefined);
 
     const [supplier] = suppliers;
 
-    if (
-      award.hasOwnProperty("lotID") &&
-      STRING.EMPTY !== this.getField(award, "lotID", STRING.EMPTY)
-    ) {
+    if (award.hasOwnProperty("lotID") && STRING.EMPTY !== this.getField(award, "lotID", STRING.EMPTY)) {
       const { lots } = tender;
-      const lot = lots?.find(
-        (lotItem: Record<string, any>) => lotItem.id === award.lotID
-      );
+      const lot = lots?.find((lotItem: Record<string, any>) => lotItem.id === award.lotID);
       let title = STRING.DASH;
       if (lot) {
         title = this.getField(lot, "title");
@@ -160,28 +139,12 @@ export class ProtocolOnExtensionOfReviewPeriodDataMaker extends AbstractDocument
 
     const bodyMap: string[] = [
       this.getParticipantsName(supplier),
-      this.awardHelper.showAwardWithTax(
-        award,
-        "value",
-        PROTOCOL_ON_EXTENSION_OF_REVIEW_PERIOD.with_tax
-      ),
-      this.awardHelper.showAwardWithTax(
-        award,
-        "weightedValue",
-        PROTOCOL_ON_EXTENSION_OF_REVIEW_PERIOD.with_tax
-      ),
-      this.awardHelper.showAwardWithTax(
-        award,
-        "amountPerformance",
-        PROTOCOL_ON_EXTENSION_OF_REVIEW_PERIOD.with_tax
-      ),
+      this.awardHelper.showAwardWithTax(award, "value", PROTOCOL_ON_EXTENSION_OF_REVIEW_PERIOD.with_tax),
+      this.awardHelper.showAwardWithTax(award, "weightedValue", PROTOCOL_ON_EXTENSION_OF_REVIEW_PERIOD.with_tax),
+      this.awardHelper.showAwardWithTax(award, "amountPerformance", PROTOCOL_ON_EXTENSION_OF_REVIEW_PERIOD.with_tax),
     ];
 
-    const preparedBody: ({
-      key: number;
-      text: string;
-      style: string;
-    } | null)[] = bodyMap
+    const preparedBody: ({ key: number; text: string; style: string } | null)[] = bodyMap
       .map((value, index) => {
         if (!value) {
           return null;
@@ -230,13 +193,10 @@ export class ProtocolOnExtensionOfReviewPeriodDataMaker extends AbstractDocument
   }
 
   private getParticipantsName(supplier: OrganizationType): string {
-    const name =
-      this.getField(supplier, "identifier.legalName") ||
-      this.getField(supplier, "name");
+    const name = this.getField(supplier, "identifier.legalName") || this.getField(supplier, "name");
     const scheme = this.getField(supplier, "identifier.scheme") || STRING.EMPTY;
     return (
-      `${name} \n ${this.getField(supplier, "identifier.id")} ${scheme ? `(${scheme})` : ""}`.trim() ||
-      STRING.DASH
+      `${name} \n ${this.getField(supplier, "identifier.id")} ${scheme ? `(${scheme})` : ""}`.trim() || STRING.DASH
     );
   }
 }

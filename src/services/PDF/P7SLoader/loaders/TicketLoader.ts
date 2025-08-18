@@ -11,65 +11,43 @@ import type { PdfDocumentConfigType } from "@/types/pdf/PdfDocumentConfigType";
 import type { DocumentType } from "@/types/Tender/DocumentType";
 import { PdfTemplateTypes } from "@/services/PDF/PdfTemplateTypes";
 
-export class TicketLoader
-  extends AbstractLoaderStrategy
-  implements LoaderStrategyInterface
-{
-  public async load(
-    object: TenderType,
-    config: PdfDocumentConfigType
-  ): Promise<P7SLoadResultType> {
+export class TicketLoader extends AbstractLoaderStrategy<string> implements LoaderStrategyInterface<string> {
+  public async load(object: TenderType, config: PdfDocumentConfigType): Promise<P7SLoadResultType<string>> {
     const url = this.getDocumentUrl(object, config);
     const file = await this.getData(url);
+    const { data, signers } = await this.getDataFromSign(file, ENCODING.WINDOWS_1251);
 
     return {
-      file,
-      type: this.getDocumentType(config.title),
-      encoding: ENCODING.WINDOWS_1251,
       url,
+      file: data,
+      signers: signers || [],
+      type: this.getDocumentType(config.title),
     };
   }
 
-  private getDocumentUrl(
-    object: TenderType,
-    { date, title }: PdfDocumentConfigType
-  ): string {
-    Assert.isDefined(
-      object.awards,
-      ERROR_MESSAGES.VALIDATION_FAILED.undefinedAwards
-    );
+  private getDocumentUrl(object: TenderType, { date, title }: PdfDocumentConfigType): string {
+    Assert.isDefined(object.awards, ERROR_MESSAGES.VALIDATION_FAILED.undefinedAwards);
 
     const regexp = new RegExp(title);
     const documents = object.awards
       .map(award => award.documents)
       .filter(excludeFalsy)
       .flat()
-      .filter((doc: DocumentType) =>
-        this.checkDateModified(doc.dateModified, date)
-      );
+      .filter((doc: DocumentType) => this.checkDateModified(doc.dateModified, date));
 
     const document = documents.find(doc => regexp.test(doc.title));
 
-    Assert.isDefined(
-      document,
-      ERROR_MESSAGES.VALIDATION_FAILED.undefinedDocumentTitle
-    );
+    Assert.isDefined(document, ERROR_MESSAGES.VALIDATION_FAILED.undefinedDocumentTitle);
 
     return document.url;
   }
 
-  private getDocumentType(documentTitle: string): PdfTemplateTypes {
+  private getDocumentType(documentTitle: string): PdfTemplateTypes.XML | PdfTemplateTypes.KVT {
     const result = REGEX.FILE.TYPE.INVOICE.exec(documentTitle);
 
-    Assert.isDefined(
-      result,
-      ERROR_MESSAGES.VALIDATION_FAILED.wrongDocumentType
-    );
-    Assert.isDefined(
-      result.groups,
-      ERROR_MESSAGES.VALIDATION_FAILED.wrongDocumentType
-    );
+    Assert.isDefined(result, ERROR_MESSAGES.VALIDATION_FAILED.wrongDocumentType);
+    Assert.isDefined(result.groups, ERROR_MESSAGES.VALIDATION_FAILED.wrongDocumentType);
 
-    return result.groups.type as PdfTemplateTypes;
+    return result.groups.type as PdfTemplateTypes.XML | PdfTemplateTypes.KVT;
   }
 }

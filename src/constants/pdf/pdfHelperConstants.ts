@@ -1,6 +1,7 @@
 export const MARGIN_0 = 0;
 export const MARGIN_3 = 3;
 export const MARGIN_5 = 5;
+export const MARGIN_MINUS_5 = -5;
 export const MARGIN_10 = 10;
 export const MARGIN_15 = 15;
 export const MARGIN_20 = 20;

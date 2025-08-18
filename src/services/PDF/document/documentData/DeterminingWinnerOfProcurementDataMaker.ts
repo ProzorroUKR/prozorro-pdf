@@ -7,10 +7,7 @@ import * as PDF_HELPER_CONST from "@/constants/pdf/pdfHelperConstants";
 import type { SignerType } from "@/types/sign/SignerType";
 import type { AnnouncementItem } from "@/types/Announcement/AnnouncementTypes";
 import type { AwardType } from "@/types/Tender/AwardType";
-import {
-  MARGIN_TOP_10__BOTTOM_15,
-  MARGIN_TOP_3,
-} from "@/config/pdf/determiningWinnerOfProcurementConstants";
+import { MARGIN_TOP_10__BOTTOM_15, MARGIN_TOP_3 } from "@/config/pdf/determiningWinnerOfProcurementConstants";
 import { STRING } from "@/constants/string";
 import { Assert } from "@/widgets/ErrorExceptionCore/Assert";
 import { DictionaryHelper } from "@/services/Common/DictionaryHelper";
@@ -19,17 +16,17 @@ import { UnitHelper } from "@/services/Common/UnitHelper";
 import { DeliveryHelper } from "@/services/Common/DeliveryHelper";
 import { StringHandler } from "@/utils/StringHandler";
 import { ERROR_MESSAGES } from "@/widgets/ErrorExceptionCore/configs/messages";
+import type { PdfDocumentConfigType } from "@/types/pdf/PdfDocumentConfigType";
 
 export class DeterminingWinnerOfProcurementDataMaker extends AbstractDocumentStrategy {
-  protected readonly dictionaryHelper: DictionaryHelper = new DictionaryHelper(
-    this
-  );
+  protected readonly dictionaryHelper: DictionaryHelper = new DictionaryHelper(this);
   protected readonly awardHelper: AwardHelper = new AwardHelper(this);
   protected readonly unitHelper: UnitHelper = new UnitHelper(this);
   protected readonly deliveryHelper: DeliveryHelper = new DeliveryHelper(this);
 
   create(
-    file: string,
+    tender: Record<any, any>,
+    _config: PdfDocumentConfigType,
     _signers: SignerType[],
     dictionaries: Map<string, Record<string, any>>,
     originalAward?: AwardType
@@ -38,7 +35,6 @@ export class DeterminingWinnerOfProcurementDataMaker extends AbstractDocumentStr
       return [];
     }
 
-    const tender: Record<string, any> = this.unwrapTender(file);
     const { awards, procuringEntity } = tender;
 
     let award = null;
@@ -53,10 +49,7 @@ export class DeterminingWinnerOfProcurementDataMaker extends AbstractDocumentStr
 
     const { suppliers, lotID } = award;
 
-    Assert.isDefined(
-      suppliers,
-      ERROR_MESSAGES.VALIDATION_FAILED.participantsIsNotDefined
-    );
+    Assert.isDefined(suppliers, ERROR_MESSAGES.VALIDATION_FAILED.participantsIsNotDefined);
 
     const [supplier] = suppliers;
     const customerCategory = this.getCustomerCategory(
@@ -64,9 +57,7 @@ export class DeterminingWinnerOfProcurementDataMaker extends AbstractDocumentStr
       dictionaries.get("organisation"),
       DETERMINING_WINNER_OF_PROCUREMENT.customer_category
     );
-    const tenderId = this.emptyChecker.isNotEmptyString(
-      this.getField(tender, "tenderID")
-    )
+    const tenderId = this.emptyChecker.isNotEmptyString(this.getField(tender, "tenderID"))
       ? this.getField(tender, "tenderID", "")
       : STRING.DASH;
     return [
@@ -84,8 +75,7 @@ export class DeterminingWinnerOfProcurementDataMaker extends AbstractDocumentStr
         style: PDF_FILED_KEYS.TITLE_MEDIUM,
       },
       this.showWithDefault(
-        this.getField(procuringEntity, "identifier.legalName") ||
-          this.getField(procuringEntity, "name"),
+        this.getField(procuringEntity, "identifier.legalName") || this.getField(procuringEntity, "name"),
         DETERMINING_WINNER_OF_PROCUREMENT.customer_info
       ),
       customerCategory,
@@ -95,10 +85,7 @@ export class DeterminingWinnerOfProcurementDataMaker extends AbstractDocumentStr
       ),
 
       this.showWithDefault(
-        StringHandler.customerLocation(
-          this.getField(procuringEntity, "address"),
-          STRING.DASH
-        ),
+        StringHandler.customerLocation(this.getField(procuringEntity, "address"), STRING.DASH),
         DETERMINING_WINNER_OF_PROCUREMENT.customer_location,
         Boolean(this.getField(procuringEntity, "address"))
       ),
@@ -107,14 +94,10 @@ export class DeterminingWinnerOfProcurementDataMaker extends AbstractDocumentStr
         dictionaries.get("tender_procurement_method_type"),
         DETERMINING_WINNER_OF_PROCUREMENT.type_of_purchase
       ),
-      this.showWithDefault(
-        this.getField(tender, "title"),
-        DETERMINING_WINNER_OF_PROCUREMENT.procuring_entity_title
-      ),
+      this.showWithDefault(this.getField(tender, "title"), DETERMINING_WINNER_OF_PROCUREMENT.procuring_entity_title),
       ...this.resolveTables(tender, dictionaries, lotID),
       this.showWithDefault(
-        this.getField(supplier, "identifier.legalName") ||
-          this.getField(supplier, "name"),
+        this.getField(supplier, "identifier.legalName") || this.getField(supplier, "name"),
         DETERMINING_WINNER_OF_PROCUREMENT.participants_name
       ),
       this.showWithDefault(
@@ -122,19 +105,11 @@ export class DeterminingWinnerOfProcurementDataMaker extends AbstractDocumentStr
         DETERMINING_WINNER_OF_PROCUREMENT.id_code
       ),
       this.showIfAvailable(
-        this.awardHelper.showAwardWithTax(
-          award,
-          "value",
-          DETERMINING_WINNER_OF_PROCUREMENT.with_tax
-        ),
+        this.awardHelper.showAwardWithTax(award, "value", DETERMINING_WINNER_OF_PROCUREMENT.with_tax),
         DETERMINING_WINNER_OF_PROCUREMENT.awards_value_amount
       ),
       this.showIfAvailable(
-        this.awardHelper.showAwardWithTax(
-          award,
-          "weightedValue",
-          DETERMINING_WINNER_OF_PROCUREMENT.with_tax
-        ),
+        this.awardHelper.showAwardWithTax(award, "weightedValue", DETERMINING_WINNER_OF_PROCUREMENT.with_tax),
         DETERMINING_WINNER_OF_PROCUREMENT.awards_weighted_value
       ),
       this.awardHelper.showAwardPerformance(
@@ -176,13 +151,11 @@ export class DeterminingWinnerOfProcurementDataMaker extends AbstractDocumentStr
   ): Record<string, any>[] {
     const res: Record<string, any>[] = [];
 
-    lots.map((lot, index) => {
-      const title = `Лот ${index + 1} — ${lot.title}`;
+    lots.map(lot => {
+      const title = `Лот — ${lot.title}`;
       const { items } = tender;
       const selectedLotItems = Array.isArray(items)
-        ? items.filter(
-            (item: { relatedLot: string }) => item.relatedLot === lot.id
-          )
+        ? items.filter((item: { relatedLot: string }) => item.relatedLot === lot.id)
         : [];
 
       res.push(this.createItemTable(selectedLotItems, dictionaries, title));

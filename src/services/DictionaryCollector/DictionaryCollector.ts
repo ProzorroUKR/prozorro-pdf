@@ -1,71 +1,64 @@
+import { stringify } from "qs";
 import axios from "axios";
 import type { AxiosResponse } from "axios";
+import { STATIC_DATA_URL } from "@/constants/env";
 import { pdfDictionaryMap } from "@/services/PDF/pdfDictionaryMap";
-import type { DictionaryCollectorInterface } from "@/services/DictionaryCollector/DictionaryCollectorInterface";
-import { STATIC_DATA_URL } from "@/constants/env.ts";
-import { PdfTemplateTypes } from "@/services/PDF/PdfTemplateTypes.ts";
+import { PdfTemplateTypes } from "@/services/PDF/PdfTemplateTypes";
+
+const paramsSerializer: any = (query: Record<string, any>): string => stringify(query);
+
+export interface DictionaryCollectorInterface {
+  loadByType(type: string): Promise<Map<string, Record<string, any>>>;
+  loadByDictionary(dictionariesMap: Map<string, string>, filters: Record<string, string[]>): Promise<Map<string, any>>;
+}
 
 export class DictionaryCollector implements DictionaryCollectorInterface {
-  async load(documentType: PdfTemplateTypes): Promise<Map<string, Record<string, any>>> {
-    let loadedDictionaries = new Map<string, Record<string, any>>();
-    const dictionariesMap = pdfDictionaryMap.get(documentType);
-    if (dictionariesMap && dictionariesMap?.size) {
-      loadedDictionaries = await this.loadDictionaries(dictionariesMap, false);
-      const en = Array.from(dictionariesMap.keys()).reduce(
-        (accumulator, currentValue) => accumulator || currentValue.search("_en") !== -1,
-        false
-      );
+  async loadByType(documentType: string): Promise<Map<string, Record<string, any>>> {
+    const dictionariesMap = pdfDictionaryMap.get(documentType as PdfTemplateTypes);
 
-      if (en) {
-        const enDictionaries = new Map([...dictionariesMap].filter(([k]) => k.search("_en") !== -1));
-        loadedDictionaries = new Map([...loadedDictionaries, ...(await this.loadDictionaries(enDictionaries, true))]);
-      }
+    if (!dictionariesMap?.size) {
+      return new Map<string, Record<string, any>>();
     }
-    return loadedDictionaries;
+
+    return await this.loadByDictionary(dictionariesMap, {});
   }
 
-  private async loadDictionaries(dictionariesMap: Map<string, string>, language: boolean): Promise<Map<string, any>> {
-    const query = this.createQuery(dictionariesMap, language);
-    const { data: rawDictionaries }: AxiosResponse = await axios.get(query.url, query.config);
-    return this.formatDictionaries(rawDictionaries, dictionariesMap);
+  async loadByDictionary(
+    dictionariesMap: Map<string, string>,
+    filters: Record<string, string[]>
+  ): Promise<Map<string, any>> {
+    const params = this._createQuery(dictionariesMap, filters);
+    const { data: rawDictionaries }: AxiosResponse = await axios.get(STATIC_DATA_URL, {
+      params,
+      paramsSerializer,
+    });
+    return this._formatDictionaries(rawDictionaries, dictionariesMap);
   }
 
-  private createQuery(
-    dictionaries: Map<string, string>,
-    language: boolean
-  ): { url: string; config: Record<string, any> } {
-    const config = language ? { headers: { "Accept-Language": "en" } } : {};
+  private _createQuery(dictionaries: Map<string, string>, filters: Record<string, string[]>): Record<any, any> {
+    const cache = Array.from(dictionaries.values()).reduce<Record<any, any>[]>((acc, key) => {
+      acc.push({
+        key,
+        filters: filters[key],
+        timestamp: localStorage.getItem(`${key}Timestamp`) ?? undefined,
+      });
 
-    const url = Array.from(dictionaries.values()).reduce(
-      (accumulator, currentValue, currentIndex, array) =>
-        accumulator.concat(
-          `cache[${currentIndex}][key]=`,
-          currentValue,
-          localStorage.getItem(`${currentValue}Timestamp`)
-            ? `&cache[${currentIndex}][timestamp]=${localStorage.getItem(`${currentValue}Timestamp`)}`
-            : "",
-          currentIndex < array.length - 1 ? "&" : ""
-        ),
-      ""
-    );
+      return acc;
+    }, []);
 
-    return { url: `${STATIC_DATA_URL}?${url}`, config };
+    return { cache };
   }
 
-  private formatDictionaries(
+  private _formatDictionaries(
     rawDictionaries: Record<string, { data: Record<string, any>; date_modified: string }>,
     dictionariesMap: Map<string, string>
   ): Map<string, any> {
     const formattedDictionaries = new Map<string, any>();
+
     dictionariesMap.forEach((value, key) => {
-      if (rawDictionaries[value]["data"] && rawDictionaries[value]["data"].length !== 0) {
-        formattedDictionaries.set(key, rawDictionaries[value]["data"]);
-        localStorage.setItem(key, JSON.stringify(rawDictionaries[value]["data"]));
-        localStorage.setItem(`${key}Timestamp`, rawDictionaries[value]["date_modified"]);
-      } else if (localStorage.getItem(key)) {
-        formattedDictionaries.set(key, JSON.parse(<string>localStorage.getItem(key)));
-      }
+      formattedDictionaries.set(key, rawDictionaries[value]["data"]);
     });
+
     return formattedDictionaries;
   }
 }

@@ -1,22 +1,17 @@
-import type { XMLParserInterface } from "@/services/Dom/XMLParserInterface";
-import { DocumentFactory } from "@/services/PDF/document/DocumentFactory";
-import { documentStrategyMap } from "@/services/PDF/document/DocumentStrategyMap";
-import { PdfTemplateTypes } from "@/services/PDF/PdfTemplateTypes.ts";
 import { PDF_STYLES } from "@/config/pdf/pdfStyles";
 import type { SignerType } from "@/types/sign/SignerType";
+import { PdfTemplateTypes } from "@/services/PDF/PdfTemplateTypes";
+import { DocumentFactory } from "@/services/PDF/document/DocumentFactory";
+import type { PdfDocumentConfigType } from "@/types/pdf/PdfDocumentConfigType";
+import { documentStrategyMap } from "@/services/PDF/document/DocumentStrategyMap";
+import type { DocumentStrategyInterface } from "@/services/PDF/document/DocumentStrategyInterface";
 
-export interface DocumentManagerInterface {
-  setDocumentType(type: string): void;
-  getDocumentData(file: string, signers: SignerType[]): Record<string, any>;
-}
-
-export class DocumentManager implements DocumentManagerInterface {
-  private readonly documentFactory;
-  private documentGenerator;
+export class DocumentManager {
   private readonly minPageHeight = 650;
+  private documentGenerator: DocumentStrategyInterface;
+  private readonly documentFactory = new DocumentFactory(documentStrategyMap);
 
-  constructor(private readonly xmlParser: XMLParserInterface) {
-    this.documentFactory = new DocumentFactory(documentStrategyMap, this.xmlParser);
+  constructor() {
     this.documentGenerator = this.documentFactory.create(PdfTemplateTypes.XML);
   }
 
@@ -24,28 +19,35 @@ export class DocumentManager implements DocumentManagerInterface {
     this.documentGenerator = this.documentFactory.create(type);
   }
 
-  getDocumentData(
-    file: string,
+  async getDocumentData<T>(
+    file: any,
+    config: PdfDocumentConfigType,
     signers: SignerType[],
     dictionaries?: Map<string, Record<string, any>>,
     link?: string,
-    tender?: Record<string, any>
-  ): Record<string, any> {
-    const content: Record<string, any>[] = this.documentGenerator.create(file, signers, dictionaries, tender);
+    data?: Record<string, any>
+  ): Promise<any> {
+    const content: Record<string, any>[] = await this.documentGenerator.create(
+      file,
+      config,
+      signers,
+      dictionaries,
+      data
+    );
     const footer: Record<string, any>[] = this.documentGenerator.createFooter(signers, link);
 
     return {
-      pageMargins: this.documentGenerator.getPageMargins(),
+      footer,
       content,
+      styles: PDF_STYLES,
+      pageMargins: this.documentGenerator.getPageMargins(),
       pageBreakBefore: (currentNode?: Record<string, any>) =>
         currentNode?.headlineLevel === 1 && currentNode.startPosition?.top > this.minPageHeight,
-      footer,
       defaultStyle: {
-        font: "Times",
+        font: "Tinos",
         fontSize: 12,
         alignment: "justify",
       },
-      styles: PDF_STYLES,
     };
   }
 }
