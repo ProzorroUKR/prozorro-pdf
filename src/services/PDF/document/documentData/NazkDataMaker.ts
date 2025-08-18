@@ -68,7 +68,7 @@ export class NazkDataMaker extends AbstractDocumentStrategy {
     ];
   }
 
-  public createFooter(signers?: SignerType[], link?: string): Record<string, any>[] {
+  createFooter(_?: SignerType[], link?: string): Record<string, any>[] {
     return [
       { canvas: [{ type: "line", x1: 0, y1: 0, x2: LINE_LENGTH, y2: 0, lineWidth: 1 }] },
       {

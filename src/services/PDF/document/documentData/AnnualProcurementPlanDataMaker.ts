@@ -223,7 +223,7 @@ export class AnnualProcurementPlanDataMaker extends AbstractDocumentStrategy {
         },
         {
           text:
-            `${UnitHelper.currencyFormatting(this.getField(item, "value.amount" || "0"))} ${this.getField(item, "value.currency")}`.trim() ??
+            `${UnitHelper.currencyFormatting(this.getField(item, "value.amount") || "0")} ${this.getField(item, "value.currency")}`.trim() ??
             STRING.DASH,
           style: PDF_FILED_KEYS.TABLE_DATA,
         },

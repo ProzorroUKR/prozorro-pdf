@@ -19,7 +19,7 @@ export class DocumentManager {
     this.documentGenerator = this.documentFactory.create(type);
   }
 
-  async getDocumentData<T>(
+  async getDocumentData(
     file: any,
     config: PdfDocumentConfigType,
     signers: SignerType[],

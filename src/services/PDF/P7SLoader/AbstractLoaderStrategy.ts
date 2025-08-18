@@ -48,8 +48,8 @@ export abstract class AbstractLoaderStrategy<DataType> implements LoaderStrategy
       return await this.eds.verify(file, encoding);
     } catch (error) {
       throw new ErrorExceptionCore({
-        code: ERROR_CODES.INVALID_SIGNATURE,
-        message: error?.message,
+        code: PROZORRO_PDF_ERROR_CODES.INVALID_SIGNATURE,
+        message: (error as Error).message,
         originalError: error,
       });
     }
