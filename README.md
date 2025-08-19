@@ -129,20 +129,20 @@ onMounted(async () => {
 ## Типи документів
 
 Бібліотека підтримує різні типи документів через константу `PROZORRO_PDF_TYPES`:
-
-- `TICKET` — квитанція ДФС
+- `TICKET` — запит до ДПС/довідка ДПС
 - `CONCLUSION` — висновок про результати моніторингу
-- `ANNOUNCEMENT` — оголошення про відкриті торги
-- `NAZK` — висновок НАЗК
-- `PQ` — договір PQ
-- `COMPLAINT` — скарга
-- `DETERMINING_WINNER_OF_PROCUREMENT` — протокол визначення переможця
-- `TENDER_REJECTION_PROTOCOL` — протокол відхилення пропозиції
-- `PURCHASE_CANCELLATION_PROTOCOL` — протокол відміни закупівлі/лоту
-- `ANNUAL_PROCUREMENT_PLAN` — річний план закупівель
-- `PROTOCOL_CONSIDERATION_TENDER_OFFERS` — протокол розгляду тендерних пропозицій
-- `PROTOCOL_ON_EXTENSION_OF_REVIEW_PERIOD` — протокол продовження строку розгляду
-- `TENDER_OFFER` — тендерна пропозиція
+- `ANNOUNCEMENT` — оголошення про проведення закупівлі
+- `NAZK` — довідка НАЗК
+- `PQ` — шаблони договорів
+- `COMPLAINT` — скарга до органу оскарження
+- `DETERMINING_WINNER_OF_PROCUREMENT` — еПротокол визначення переможця та намір укласти договір
+- `TENDER_REJECTION_PROTOCOL` — еПротокол відхилення пропозиції
+- `PURCHASE_CANCELLATION_PROTOCOL` — еПротокол відміни закупівлі/лоту
+- `ANNUAL_PROCUREMENT_PLAN` — еПротокол затвердження річного плану закупівель
+- `PROTOCOL_CONSIDERATION_TENDER_OFFERS` — еПротокол розгляду тендерних пропозицій
+- `PROTOCOL_ON_EXTENSION_OF_REVIEW_PERIOD` — еПротокол продовження строку розгляду пропозиції
+- `TENDER_OFFER` — еПропозиція
+- `EDR` - Довідка ЄДР
 
 ---
 
