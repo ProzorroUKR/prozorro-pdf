@@ -1,4 +1,9 @@
-import { PQ_GENERIC_TITLE_MARGIN } from "@/widgets/pq//configs/margins";
+import {
+  COMPLAINT_POST_HEADER_MARGIN,
+  POST_HEADING_ADDRESS_MARGIN,
+  PQ_GENERIC_TITLE_MARGIN,
+  PQ_TESTING_GROUNDS_MARGIN,
+} from "@/widgets/pq/configs/margins";
 
 export const PDF_STYLES: Record<string, Record<string, string | number | boolean | (string | number)[]>> = {
   heading: {
@@ -28,6 +33,7 @@ export const PDF_STYLES: Record<string, Record<string, string | number | boolean
   complaint_subheading: {
     alignment: "right",
     fontSize: 12,
+    margin: POST_HEADING_ADDRESS_MARGIN,
   },
   date: {
     decoration: "underline",
@@ -99,7 +105,6 @@ export const PDF_STYLES: Record<string, Record<string, string | number | boolean
   table_data: {
     fontSize: 11,
     alignment: "left",
-    bold: false,
   },
   table_data_bold: {
     fontSize: 11,
@@ -151,5 +156,20 @@ export const PDF_STYLES: Record<string, Record<string, string | number | boolean
     bold: false,
     fontSize: 12,
     alignment: "left",
+  },
+  complaint_post_heading: {
+    bold: true,
+    fontSize: 12,
+    alignment: "right",
+    margin: COMPLAINT_POST_HEADER_MARGIN,
+  },
+  table_margin: {
+    margin: PQ_TESTING_GROUNDS_MARGIN,
+  },
+  complaint_post: {
+    fontSize: 12,
+    alignment: "center",
+    bold: true,
+    margin: COMPLAINT_POST_HEADER_MARGIN,
   },
 };

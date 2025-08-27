@@ -37,6 +37,7 @@ export const ERROR_MESSAGES = {
     tenderersIsNotDefined: "Відсутня інформація про учасника в даних пропозиції",
     wrongEdrDocumentType: 'Поле "documentType" не "registerExtract"',
     wrongEdrFile: "На жаль, за вказаним кодом нічого не знайдено",
+    undefinedPosts: "в скарзі відсутні не пусті об'єкти objections:posts.",
   },
   [PROZORRO_PDF_ERROR_CODES.SERVICE_UNAVAILABLE]: {
     typeIsNotDefined: "Неможливо отримати стратегію обробки типів",

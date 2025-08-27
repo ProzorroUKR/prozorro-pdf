@@ -1,18 +1,14 @@
-import type {
-  PDFTableBodyType,
-  TableConfigType,
-  TableWidthType,
-} from "@/widgets/pq/types/TextConfigType";
 import { STRING } from "@/constants/string";
 import * as PDF_HELPER_CONST from "@/constants/pdf/pdfHelperConstants";
 import { PDF_FILED_KEYS } from "@/constants/pdf/pdfFieldKeys";
+import * as CONCLUSION_OF_MONITORING_CONST from "@/config/pdf/conclusionOfMonitoringConstants";
+import type { TableRow, TableRowTitleValueConditional } from "@/types/pdfFormatting/tableFormatting";
+import type { PDFTableBodyType, TableConfigType, TableWidthType } from "@/widgets/pq/types/TextConfigType";
 import {
   TABLE_COLUMN_LEFT_MARGIN,
   TABLE_COLUMN_MARGIN,
   TABLE_COLUMN_RIGHT_MARGIN,
 } from "@/config/pdf/announcementConstants";
-import * as CONCLUSION_OF_MONITORING_CONST from "@/config/pdf/conclusionOfMonitoringConstants";
-import type { TableRowTitleValueConditional } from "@/types/pdfFormatting/tableFormatting";
 
 export class PDFTablesHandler {
   static createTable(
@@ -20,13 +16,14 @@ export class PDFTablesHandler {
     widths: TableWidthType = [PDF_HELPER_CONST.ROW_AUTO_WIDTH],
     style = PDF_FILED_KEYS.TABLE_DATA,
     heights = PDF_HELPER_CONST.LINE_HEIGHT_40,
-    headerRows = 1
+    headerRows = 1,
+    dontBreakRows = true
   ): TableConfigType {
     return {
       headerRows,
       style,
       table: {
-        dontBreakRows: true,
+        dontBreakRows,
         heights,
         widths,
         body,
@@ -34,11 +31,7 @@ export class PDFTablesHandler {
     };
   }
   // TODO add test
-  static showIfAvailable({
-    value,
-    title,
-    conditional = true,
-  }: TableRowTitleValueConditional): Record<string, any> {
+  static showIfAvailable({ value, title, conditional = true }: TableRowTitleValueConditional): Record<string, any> {
     return conditional && value
       ? this.createTableLayout([
           this.createTableRow({
@@ -53,7 +46,9 @@ export class PDFTablesHandler {
   static createTableLayout(
     body: Record<string, any>[][],
     dontBreakRows = false,
-    tableMargin: number[] = []
+    tableMargin: number[] = [],
+    tableLayout: string = PDF_HELPER_CONST.TABLE_LAYOUT_NO_BORDERS,
+    rowWidth = [PDF_HELPER_CONST.ROW_WIDTH_250, PDF_HELPER_CONST.ROW_ALL_WIDTH]
   ): Record<string, any> {
     const addedLeftColPadding = body.map(value => [
       {
@@ -67,13 +62,10 @@ export class PDFTablesHandler {
     ]);
 
     const table: Record<string, any> = {
-      layout: PDF_HELPER_CONST.TABLE_LAYOUT_NO_BORDERS,
+      layout: tableLayout,
       table: {
         dontBreakRows,
-        widths: [
-          PDF_HELPER_CONST.ROW_WIDTH_250,
-          PDF_HELPER_CONST.ROW_ALL_WIDTH,
-        ],
+        widths: rowWidth,
         body: addedLeftColPadding,
       },
     };
@@ -83,27 +75,22 @@ export class PDFTablesHandler {
     return table;
   }
 
+  // pass table head style as props
   static createTableRow({
     head,
     data,
     hasMargin = true,
     marginTop = false,
-  }: {
-    head: string;
-    data: string;
-    hasMargin?: boolean;
-    marginTop?: boolean;
-  }): Record<string, any>[] {
+    headStyle = PDF_FILED_KEYS.TABLE_HEAD,
+  }: TableRow): Record<string, any>[] {
     const margin = hasMargin
       ? {
-          margin: marginTop
-            ? CONCLUSION_OF_MONITORING_CONST.MARGIN_TOP_10
-            : TABLE_COLUMN_MARGIN,
+          margin: marginTop ? CONCLUSION_OF_MONITORING_CONST.MARGIN_TOP_10 : TABLE_COLUMN_MARGIN,
         }
       : {};
     return [
       {
-        style: PDF_FILED_KEYS.TABLE_HEAD,
+        style: headStyle, // hasBoldHead ? PDF_FILED_KEYS.TABLE_HEAD : PDF_FILED_KEYS.TABLE_DATA,
         text: head,
         ...margin,
       },
@@ -115,10 +102,33 @@ export class PDFTablesHandler {
     ];
   }
 
-  static resolveTableBug(
-    table: Record<string, any>,
-    title: Record<string, any>
-  ): Record<string, any> {
+  static createTableRowNoText({
+    head,
+    data,
+    hasMargin = true,
+    marginTop = false,
+  }: {
+    head: string;
+    data: Record<string, any>;
+    hasMargin?: boolean;
+    marginTop?: boolean;
+  }): Record<string, any>[] {
+    const margin = hasMargin
+      ? {
+          margin: marginTop ? CONCLUSION_OF_MONITORING_CONST.MARGIN_TOP_10 : TABLE_COLUMN_MARGIN,
+        }
+      : {};
+    return [
+      {
+        style: PDF_FILED_KEYS.TABLE_HEAD,
+        text: head,
+        ...margin,
+      },
+      data,
+    ];
+  }
+
+  static resolveTableBug(table: Record<string, any>, title: Record<string, any>): Record<string, any> {
     return {
       layout: {
         hLineColor: (): string => "white",

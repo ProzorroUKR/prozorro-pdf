@@ -17,7 +17,7 @@ import { DataTypeValidator } from "@/services/DataTypeValidator/DataTypeValidato
 import { ValidationTypes } from "@/services/DataTypeValidator/ValidationTypes";
 import type { EdsInterface } from "services/EdsInterface";
 import { DictionaryCollector } from "@/services/DictionaryCollector/DictionaryCollector";
-import { SIGN_TO_DOC_FRAME_ID } from "@/constants/string";
+import { SIGN_TO_DOC_FRAME_ID, STRING } from "@/constants/string";
 import { PROZORRO_TEMPLATE_CODES } from "@/widgets/pq/types/TemplateCodes.enum";
 import { PROZORRO_PDF_ERROR_CODES } from "@/widgets/ErrorExceptionCore/constants/ERROR_CODES.enum";
 
@@ -48,6 +48,10 @@ export class ProzorroPdf implements IProzorroPdf {
 
   async setConfig({ url, type }: PdfConfigType): Promise<void | ErrorExceptionCore> {
     try {
+      if (type === PROZORRO_PDF_TYPES.PQ && url === STRING.EMPTY) {
+        return;
+      }
+
       this.dataTypeValidator.validate(url, ValidationTypes.STRING, ERROR_MESSAGES.INVALID_PARAMS.undefinedUrl);
 
       const {

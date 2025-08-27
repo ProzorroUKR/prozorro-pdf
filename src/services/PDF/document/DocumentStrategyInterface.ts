@@ -9,7 +9,10 @@ export interface DocumentStrategyInterface {
     dictionaries?: Map<string, Record<string, any>>,
     tender?: Record<string, any>
   ): Record<string, any>[] | Promise<Record<string, any>[]>;
-  createFooter(signers?: SignerType[], link?: string): Record<string, any>[];
+  createFooter(
+    signers?: SignerType[],
+    link?: string
+  ): ((currentPage: number) => Record<string, any>[]) | Record<string, any>[];
   getPageMargins(): number[];
   pageBreakBefore(): (
     currentNode?: Record<string, any>,

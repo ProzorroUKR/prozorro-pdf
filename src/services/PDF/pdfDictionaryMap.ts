@@ -23,4 +23,5 @@ export const pdfDictionaryMap = new Map<PdfTemplateTypes, Map<string, string>>()
   .set(PdfTemplateTypes.PROTOCOL_CONSIDERATION_TENDER_OFFERS_TEMPLATE, protocolConsiderationTenderOffersDictionaries)
   .set(PdfTemplateTypes.PROTOCOL_ON_EXTENSION_OF_REVIEW_PERIOD_TEMPLATE, protocolOnExtensionOfReviewPeriodDictionaries)
   .set(PdfTemplateTypes.TENDER_OFFER_TEMPLATE, tenderOfferDictionaries)
-  .set(PdfTemplateTypes.COMPLAINT, complaintDictionaries);
+  .set(PdfTemplateTypes.COMPLAINT, complaintDictionaries)
+  .set(PdfTemplateTypes.COMPLAINT_POST, new Map());

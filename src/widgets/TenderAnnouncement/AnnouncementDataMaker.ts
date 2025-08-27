@@ -41,9 +41,6 @@ export class AnnouncementDataMaker extends AbstractDocumentStrategy {
     const hasLots = Boolean(tender?.lots?.length);
     const builder = new AnnouncementMainInformationBuilder(tender, dictionaries);
 
-    console.log("tender", tender);
-    console.log("dictionaries", dictionaries);
-
     return [
       builder.setTitle.setSubTitle.setTenderId.setName.setCustomerCategory.setIdentifier.setAddress.setContactPoint
         .setMainProcurementCategory.setTenderTitle.setClassificationId.getResult,

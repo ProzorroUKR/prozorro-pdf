@@ -17,6 +17,7 @@ import { ProtocolOnExtensionOfReviewPeriodLoader } from "@/services/PDF/P7SLoade
 import { TenderOfferLoader } from "@/services/PDF/P7SLoader/loaders/TenderOfferLoader";
 import { EdrLoader } from "@/services/PDF/P7SLoader/loaders/EdrLoader";
 import type { EdsInterface } from "services/EdsInterface";
+import { ComplaintPostLoader } from "@/services/PDF/P7SLoader/loaders/ComplaintPostLoader";
 
 export const loaderStrategyMap = new Map<
   string,
@@ -35,4 +36,5 @@ export const loaderStrategyMap = new Map<
   .set(PROZORRO_PDF_TYPES.PROTOCOL_ON_EXTENSION_OF_REVIEW_PERIOD, ProtocolOnExtensionOfReviewPeriodLoader)
   .set(PROZORRO_PDF_TYPES.TENDER_OFFER, TenderOfferLoader)
   .set(PROZORRO_PDF_TYPES.COMPLAINT, ComplaintLoader)
-  .set(PROZORRO_PDF_TYPES.EDR, EdrLoader);
+  .set(PROZORRO_PDF_TYPES.EDR, EdrLoader)
+  .set(PROZORRO_PDF_TYPES.COMPLAINT_POST, ComplaintPostLoader);

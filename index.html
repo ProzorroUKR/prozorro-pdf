@@ -435,6 +435,20 @@
             hideDateInputGroup: true,
             showTenderUrlGroup: true,
           },
+          {
+            type: window.signToDoc.TYPES.COMPLAINT_POST,
+            title: "Друкована форма запитів/пояснень до скарги",
+            urlLabel: "Complaint link",
+            urlValue: "https://lb-api-sandbox-2.prozorro.gov.ua/api/2.5/tenders/33ba9c24b30b4198a2c6c76a90ec1778/complaints/35666aa0e3d44883b6a152207cfd18ad",
+            documentLabel: "File title",
+            documentValue: "sign.p7s",
+            hideDateInputGroup: true,
+            showTenderUrlGroup: true,
+            description: `
+                Щоб сформувати документ потрібно передати лінку на document зі в якому є поле evaluationReport. <code>{"documentType":"registerExtract"}</code>
+                <br>У полі <span class="badge text-bg-dark">File title</span> має бути підпис, за замовчуванням це файл edr_identification.yaml. Сюди має бути вложено весь об'єкт тендеру
+            `,
+          },
         ];
 
         createCardList(DATA_COLLECTION);

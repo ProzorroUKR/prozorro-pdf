@@ -30,4 +30,8 @@ export const PDF_FILED_KEYS = {
   CENTERED_CAPITALISED: "centered_capitalised",
   CONTACTS_TABLE_CONTENT: "contacts_table_content",
   REGULAR_CONTENT: "regular_content",
+  COMPLAINT_POST_HEADING: "complaint_post_heading",
+  COMPLAINT_POST_HEADING_ADDRESS: "complaint_post_heading_address",
+  TABLE_MARGIN: "table_margin",
+  COMPLAINT_POST: "complaint_post",
 };

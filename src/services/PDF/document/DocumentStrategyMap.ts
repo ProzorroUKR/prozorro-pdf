@@ -15,6 +15,7 @@ import { ProtocolConsiderationTenderOffersDataMaker } from "@/services/PDF/docum
 import { ProtocolOnExtensionOfReviewPeriodDataMaker } from "@/services/PDF/document/documentData/ProtocolOnExtensionOfReviewPeriodDataMaker";
 import { TenderOfferDataMaker } from "@/services/PDF/document/documentData/TenderOfferDataMaker";
 import { EdrDataMaker } from "@/services/PDF/document/documentData/EdrDataMaker";
+import { ComplaintPostDataMaker } from "@/widgets/ComplaintPost/ComplaintPostDataMaker";
 
 export const documentStrategyMap = new Map<PdfTemplateTypes, new () => DocumentStrategyInterface>()
   .set(PdfTemplateTypes.XML, XmlDataMaker)
@@ -31,4 +32,5 @@ export const documentStrategyMap = new Map<PdfTemplateTypes, new () => DocumentS
   .set(PdfTemplateTypes.PROTOCOL_ON_EXTENSION_OF_REVIEW_PERIOD_TEMPLATE, ProtocolOnExtensionOfReviewPeriodDataMaker)
   .set(PdfTemplateTypes.TENDER_OFFER_TEMPLATE, TenderOfferDataMaker)
   .set(PdfTemplateTypes.COMPLAINT, ComplaintDataMaker)
-  .set(PdfTemplateTypes.EDR, EdrDataMaker);
+  .set(PdfTemplateTypes.EDR, EdrDataMaker)
+  .set(PdfTemplateTypes.COMPLAINT_POST, ComplaintPostDataMaker);
