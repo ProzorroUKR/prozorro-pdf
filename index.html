@@ -271,7 +271,15 @@
             urlValue: "/test-data/tender.json",
             documentLabel: "Документ",
             documentValue: "document.XML.p7s",
-            description: `Квитанція створюється з першого посилання на об'єкт, який вказаний в полі <span class='badge text-bg-info'>URL</span>, додатково можливо вказати тип шаблону в полі <span class='badge text-bg-info'>TYPE</span> <br>в секції <span class='badge badge-secondary'>Об'єкти ЦБД</span> <br>У полі <span class='badge text-bg-info'>Документ</span> має бути вказаний <samp>title</samp> документу з масиву <samp>documents</samp> у полі <samp>awards</samp> <br>Підтримуються документи, що мають розширення <samp>*.XML.p7s</samp> та <samp>*.KVT.p7s</samp>`,
+            description: `
+                Квитанція створюється з першого посилання на об'єкт, який вказаний в полі
+                <span class="badge text-bg-info">URL</span>, додатково можливо вказати
+                тип шаблону в полі <span class="badge text-bg-info">TYPE</span>
+                <br>в секції <span class="badge text-bg-info">Об'єкти ЦБД</span>
+                <br>У полі <span class="badge text-bg-info">Документ</span>
+                має бути вказаний <samp>title</samp> документу з масиву <samp>documents</samp> у полі <samp>awards</samp>
+                <br>Підтримуються документи, що мають розширення <samp>*.XML.p7s</samp> та <samp>*.KVT.p7s</samp>
+            `,
             hideDateInputGroup: true,
           },
           {
@@ -444,10 +452,6 @@
             documentValue: "sign.p7s",
             hideDateInputGroup: true,
             showTenderUrlGroup: true,
-            description: `
-                Щоб сформувати документ потрібно передати лінку на document зі в якому є поле evaluationReport. <code>{"documentType":"registerExtract"}</code>
-                <br>У полі <span class="badge text-bg-dark">File title</span> має бути підпис, за замовчуванням це файл edr_identification.yaml. Сюди має бути вложено весь об'єкт тендеру
-            `,
           },
         ];
 
