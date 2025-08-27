@@ -48,6 +48,8 @@ export class ProzorroPdf implements IProzorroPdf {
 
   async setConfig({ url, type }: PdfConfigType): Promise<void | ErrorExceptionCore> {
     try {
+      this.documentType = type;
+
       if (type === PROZORRO_PDF_TYPES.PQ && url === STRING.EMPTY) {
         return;
       }
@@ -59,7 +61,6 @@ export class ProzorroPdf implements IProzorroPdf {
       }: TenderResponseType = await axios.get(url);
 
       this.object = payload;
-      this.documentType = type;
     } catch (error) {
       throw new ErrorExceptionCore(error as Error);
     }
@@ -120,12 +121,16 @@ export class ProzorroPdf implements IProzorroPdf {
 
   private async create(config: PdfDocumentConfigType): Promise<Record<string, any>> {
     try {
-      Assert.isDefined(this.object, ERROR_MESSAGES.VALIDATION_FAILED.undefinedObject);
+      // TODO
+      if (this.documentType !== PROZORRO_PDF_TYPES.PQ) {
+        Assert.isDefined(this.object, ERROR_MESSAGES.VALIDATION_FAILED.undefinedObject);
+      }
+
       Assert.isDefined(this.eds, ERROR_MESSAGES.INVALID_PARAMS.libraryInit, PROZORRO_PDF_ERROR_CODES.INVALID_PARAMS);
 
       const loaderManager = new LoaderManager(this.base64, axios, this.eds);
       loaderManager.setLoaderType(this.documentType);
-      const { file, type, signers, url, additionalData } = await loaderManager.getData(this.object, config);
+      const { file, type, signers, url, additionalData } = await loaderManager.getData(this.object as any, config);
 
       Assert.isDefined(
         file,

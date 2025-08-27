@@ -6,14 +6,14 @@ import { API_TENDER_URL } from "@/constants/env.ts";
 
 export class FetchTender {
   static async load(tenderID: string): Promise<TenderOfferType> {
-    if (!tenderID) {
-      return {} as TenderOfferType;
-    }
-    const url = `${API_TENDER_URL}/${tenderID}`;
     try {
+      if (!tenderID) {
+        return {} as TenderOfferType;
+      }
+
       const {
         data: { data },
-      }: AxiosResponse = await axios.get(url);
+      }: AxiosResponse = await axios.get(`${API_TENDER_URL}/${tenderID}`);
       return data as TenderOfferType;
     } catch (e) {
       return {} as TenderOfferType;
