@@ -1,132 +1,178 @@
-import { POST_HEADING } from "@/widgets/ComplaintPost/config/COMPLAINT_POST";
-import { StringHandler } from "@/utils/StringHandler";
-import { DocumentExtractionService } from "@/services/PDF/document/DocumentExtractionService";
+import { complaintPostPerson, POST_TITLES } from "@/widgets/ComplaintPost/config/COMPLAINT_POST";
 import { PDFTablesHandler } from "@/services/PDF/Formatting/PDFTablesHandler";
-import type { TableRow } from "@/types/pdfFormatting/tableFormatting";
-import { STRING } from "@/constants/string";
-import type { AddressType } from "@/types/Tender/AddressType";
 import * as PDF_HELPER_CONST from "@/constants/pdf/pdfHelperConstants";
 import { PDF_FILED_KEYS } from "@/constants/pdf/pdfFieldKeys";
+import { DATE_FORMAT } from "@/constants/date.ts";
 
-interface IComplaintPostHeader {
-  getResult: Record<string, any>;
-  setName: IComplaintPostHeader;
-  setEdrpou: IComplaintPostHeader;
-  setAddress: IComplaintPostHeader;
-  setProcurringName: IComplaintPostHeader;
-  setProccurringEdrpou: IComplaintPostHeader;
-  setTenderId: IComplaintPostHeader;
-  setComplaintId: IComplaintPostHeader;
+interface IComplaintPostBuilder {
+  getResult: Record<string, any>[];
+  setSequenceNumber: IComplaintPostBuilder;
+  setAuthor: IComplaintPostBuilder;
+  setRecipient: IComplaintPostBuilder;
+  setDatePublished: IComplaintPostBuilder;
+  setTitle: IComplaintPostBuilder;
+  setDescription: IComplaintPostBuilder;
 }
 
-export class ComplaintPostHeaderBuilder implements IComplaintPostHeader {
-  private readonly _tenderId: any;
+export class ComplaintPostPostBuilder implements IComplaintPostBuilder {
   private readonly _complaint: Record<string, any>;
-  private readonly _procuringEntity: Record<string, any> = {};
-  private readonly _data: TableRow[] = [];
+  private readonly _objections: string[] = [];
+  private readonly _postData: Record<string, any> = {};
 
-  constructor(tender: Record<string, any>, complaint: Record<string, any>) {
-    this._tenderId = tender.tenderID;
+  constructor(complaint: Record<string, any>) {
     this._complaint = complaint;
-    this._procuringEntity = tender.procuringEntity;
+    complaint.objections.forEach((objection: { id: any; sequenceNumber: any }): void => {
+      this._objections[objection.sequenceNumber - 1] = objection.id;
+    });
   }
 
-  get setName(): IComplaintPostHeader {
-    this._data.push({
-      head: POST_HEADING.complaintName,
-      data: DocumentExtractionService.getField(
-        this._complaint,
-        "author.identifier.legalName",
-        DocumentExtractionService.getField(this._complaint, "author.name", STRING.DASH)
-      ),
-      headStyle: PDF_FILED_KEYS.TABLE_DATA_BOLD,
+  get setSequenceNumber(): IComplaintPostBuilder {
+    this._objections.forEach((key: string, index: number) => {
+      if (
+        this._complaint.posts.reduce(
+          (accum: boolean, post: Record<string, any>) => accum || key === post.relatedObjection,
+          false
+        )
+      ) {
+        this._postData[key] = {};
+        this._postData[key]["header"] = {
+          text: `${POST_TITLES.sequenceNumber}  ${index + 1}`,
+          style: PDF_FILED_KEYS.COMPLAINT_POST,
+        };
+      }
     });
     return this;
   }
 
-  get setEdrpou(): IComplaintPostHeader {
-    const id = DocumentExtractionService.getField(this._complaint, "author.identifier.id", STRING.EMPTY);
-    const scheme = DocumentExtractionService.getField(this._complaint, "author.identifier.scheme", STRING.EMPTY);
-    const formattedScheme = scheme ? `(${scheme})` : STRING.EMPTY;
-    const edrpou = id || scheme ? `${id} ${formattedScheme}` : STRING.DASH;
-    this._data.push({
-      head: POST_HEADING.edrpou,
-      data: edrpou,
-      headStyle: PDF_FILED_KEYS.TABLE_DATA,
+  get setAuthor(): IComplaintPostBuilder {
+    this._complaint.posts.forEach((post: Record<string, any>) => {
+      this._postData[post.relatedObjection][post.id] = [];
+      this._postData[post.relatedObjection][post.id].push({
+        head: POST_TITLES.author,
+        data: complaintPostPerson.get(post.author),
+      });
     });
     return this;
   }
 
-  get setAddress(): IComplaintPostHeader {
-    const address = DocumentExtractionService.getField(this._complaint, "author.address", {} as AddressType);
-    this._data.push({
-      head: POST_HEADING.location,
-      data: StringHandler.customerLocation(address, STRING.DASH),
-      headStyle: PDF_FILED_KEYS.TABLE_DATA,
+  get setRecipient(): IComplaintPostBuilder {
+    this._complaint.posts.forEach((post: Record<string, any>) => {
+      this._postData[post.relatedObjection][post.id].push({
+        head: POST_TITLES.receiver,
+        data: complaintPostPerson.get(post.recipient),
+      });
     });
     return this;
   }
 
-  get setProcurringName(): IComplaintPostHeader {
-    this._data.push({
-      head: POST_HEADING.legalName,
-      data: DocumentExtractionService.getField(
-        this._procuringEntity,
-        "identifier.legalName",
-        DocumentExtractionService.getField(this._procuringEntity, "name", "—")
-      ),
-      headStyle: PDF_FILED_KEYS.TABLE_DATA_BOLD,
+  get setDatePublished(): IComplaintPostBuilder {
+    this._complaint.posts.forEach((post: Record<string, any>) => {
+      const dateCurrent = new Date(post.datePublished);
+      const dateString = dateCurrent.toLocaleString("uk-UA", DATE_FORMAT).replace(",", "");
+
+      this._postData[post.relatedObjection][post.id].push({
+        head: POST_TITLES.date,
+        data: dateString,
+      });
     });
     return this;
   }
 
-  get setProccurringEdrpou(): IComplaintPostHeader {
-    const id = DocumentExtractionService.getField(this._procuringEntity, "identifier.id", STRING.EMPTY);
-    const scheme = DocumentExtractionService.getField(this._procuringEntity, "identifier.scheme", STRING.EMPTY);
-    const formattedScheme = scheme ? `(${scheme})` : STRING.EMPTY;
-    const edrpou = id || scheme ? `${id} ${formattedScheme}` : STRING.DASH;
-
-    this._data.push({
-      head: POST_HEADING.edrpouProcuring,
-      data: edrpou,
-      headStyle: PDF_FILED_KEYS.TABLE_DATA,
+  get setTitle(): IComplaintPostBuilder {
+    this._complaint.posts.forEach((post: Record<string, any>) => {
+      this._postData[post.relatedObjection][post.id].push({
+        head: POST_TITLES.heading,
+        data: post.title,
+      });
     });
     return this;
   }
 
-  get setTenderId(): IComplaintPostHeader {
-    this._data.push({
-      head: POST_HEADING.tenderId,
-      data: this._tenderId,
-      headStyle: PDF_FILED_KEYS.TABLE_DATA_BOLD,
+  get setDescription(): IComplaintPostBuilder {
+    this._complaint.posts.forEach((post: Record<string, any>) => {
+      this._postData[post.relatedObjection][post.id].push({
+        head: POST_TITLES.content,
+        data: post.description,
+      });
     });
     return this;
   }
 
-  get setComplaintId(): IComplaintPostHeader {
-    this._data.push({
-      head: POST_HEADING.complaintId,
-      data: DocumentExtractionService.getField(this._complaint, "complaintID", "—"),
-      headStyle: PDF_FILED_KEYS.TABLE_DATA_BOLD,
+  setDocuments(
+    postKey: string
+  ): { head: string; data: Record<string, any>; hasMargin?: boolean; marginTop?: boolean } | undefined {
+    const documentsIds = new Map<string, string>();
+    this._complaint.documents.forEach((document: Record<string, any>) => {
+      if (!Object.keys(documentsIds).includes(document.id)) {
+        documentsIds.set(document.id, document.datePublished);
+      } else if ((documentsIds.get(document.id) || "") > document.datePublished) {
+        documentsIds.delete(document.id);
+        documentsIds.set(document.id, document.datePublished);
+      }
     });
-    return this;
+
+    const documents = this._complaint.documents
+      .filter(
+        (document: Record<string, any>) =>
+          document.documentOf === "post" && document.relatedItem === postKey && document.title !== "sign.p7s"
+      )
+      .filter((document: Record<string, any>) => documentsIds.get(document.id) === document.datePublished)
+      .map((document: Record<string, any>) => ({
+        text: document.title,
+        link: document.url,
+        style: { color: "#185acd", decoration: "underline" },
+      }));
+
+    return documents.length
+      ? {
+          head: POST_TITLES.documents,
+          data: { ul: documents },
+          hasMargin: false,
+        }
+      : undefined;
   }
 
-  get getResult(): Record<string, any> {
-    return PDFTablesHandler.resolveTableBug(
-      PDFTablesHandler.createTable(
-        this._data.map(item =>
-          PDFTablesHandler.createTableRow({
-            head: item.head,
-            data: item.data,
-            headStyle: item.headStyle ?? undefined,
-          })
-        ),
-        [PDF_HELPER_CONST.ROW_WIDTH_198, PDF_HELPER_CONST.ROW_AUTO_WIDTH],
-        "",
-        PDF_HELPER_CONST.LINE_HEIGHT_15
-      ),
-      {}
-    );
+  get getResult(): Record<string, any>[] {
+    const posts: Record<string, any>[] = [];
+
+    this._objections.forEach(objectionKey => {
+      if (!this._postData[objectionKey]) {
+        return;
+      }
+      posts.push(this._postData[objectionKey].header);
+
+      Object.keys(this._postData[objectionKey])
+        .reverse()
+        .forEach(postKey => {
+          if (postKey !== "header") {
+            const body = this._postData[objectionKey][postKey].map((item: Record<string, any>) =>
+              PDFTablesHandler.createTableRow({
+                head: item.head,
+                data: item.data,
+                hasMargin: false,
+              })
+            );
+            if (this.setDocuments(postKey)) {
+              body.push(PDFTablesHandler.createTableRowNoText(this.setDocuments(postKey) as any));
+            }
+
+            posts.push(
+              PDFTablesHandler.resolveTableBug(
+                PDFTablesHandler.createTable(
+                  body,
+                  [PDF_HELPER_CONST.ROW_WIDTH_75, PDF_HELPER_CONST.ROW_WIDTH_423],
+                  "",
+                  PDF_HELPER_CONST.LINE_HEIGHT_15,
+                  1,
+                  false
+                ),
+                {}
+              )
+            );
+          }
+        });
+    });
+
+    return posts;
   }
 }

@@ -46,7 +46,7 @@ export const ROW_WIDTH_250 = 250;
 export const ROW_WIDTH_270 = 270;
 export const ROW_WIDTH_300 = 300;
 export const ROW_WIDTH_340 = 340;
-export const ROW_WIDTH_440 = 440;
+export const ROW_WIDTH_423 = 423;
 export const ROW_ALL_WIDTH = "*";
 export const ROW_AUTO_WIDTH = "auto";
 

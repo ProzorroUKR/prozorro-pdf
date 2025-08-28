@@ -2,7 +2,7 @@ import { complaintPostPerson, POST_TITLES } from "@/widgets/ComplaintPost/config
 import { PDFTablesHandler } from "@/services/PDF/Formatting/PDFTablesHandler";
 import * as PDF_HELPER_CONST from "@/constants/pdf/pdfHelperConstants";
 import { PDF_FILED_KEYS } from "@/constants/pdf/pdfFieldKeys";
-import { DATE_FORMAT } from "@/constants/date";
+import { DATE_FORMAT } from "@/constants/date.ts";
 
 interface IComplaintPostBuilder {
   getResult: Record<string, any>[];
@@ -101,11 +101,22 @@ export class ComplaintPostPostBuilder implements IComplaintPostBuilder {
   setDocuments(
     postKey: string
   ): { head: string; data: Record<string, any>; hasMargin?: boolean; marginTop?: boolean } | undefined {
+    const documentsIds = new Map<string, string>();
+    this._complaint.documents.forEach((document: Record<string, any>) => {
+      if (!Object.keys(documentsIds).includes(document.id)) {
+        documentsIds.set(document.id, document.datePublished);
+      } else if ((documentsIds.get(document.id) || "") > document.datePublished) {
+        documentsIds.delete(document.id);
+        documentsIds.set(document.id, document.datePublished);
+      }
+    });
+
     const documents = this._complaint.documents
       .filter(
         (document: Record<string, any>) =>
           document.documentOf === "post" && document.relatedItem === postKey && document.title !== "sign.p7s"
       )
+      .filter((document: Record<string, any>) => documentsIds.get(document.id) === document.datePublished)
       .map((document: Record<string, any>) => ({
         text: document.title,
         link: document.url,
@@ -149,7 +160,7 @@ export class ComplaintPostPostBuilder implements IComplaintPostBuilder {
               PDFTablesHandler.resolveTableBug(
                 PDFTablesHandler.createTable(
                   body,
-                  [PDF_HELPER_CONST.ROW_WIDTH_75, PDF_HELPER_CONST.ROW_ALL_WIDTH],
+                  [PDF_HELPER_CONST.ROW_WIDTH_75, PDF_HELPER_CONST.ROW_WIDTH_423],
                   "",
                   PDF_HELPER_CONST.LINE_HEIGHT_15,
                   1,
