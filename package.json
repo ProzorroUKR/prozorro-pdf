@@ -1,7 +1,7 @@
 {
   "name": "@prozorro/prozorro-pdf",
   "private": false,
-  "version": "0.1.12",
+  "version": "1.0.0",
   "description": "PDF generation service",
   "author": "Dmytro Rybachek",
   "license": "MIT",
@@ -19,7 +19,9 @@
       "import": "./dist"
     }
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "vite --config vite.config.lib.ts",
     "build:lib": "tsc && vite build --config vite.config.lib.ts && npm run types && copyfiles ./package.json dist && npm run removeFromBuild:lib",
