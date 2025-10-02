@@ -67,12 +67,24 @@ export class ProzorroPdf implements IProzorroPdf {
   }
 
   async open(config: PdfDocumentConfigType): Promise<void | ErrorExceptionCore> {
-    this.dataTypeValidator.validate(config.title, ValidationTypes.STRING);
-
-    const document = await this.create(config);
+    const { data } = await this.create(config);
 
     try {
-      (pdfMake as Pdfmake).createPdf(document).open();
+      (pdfMake as Pdfmake).createPdf(data).open();
+    } catch (error) {
+      throw new ErrorExceptionCore({
+        originalError: error,
+        message: (error as any)?.message,
+        code: PROZORRO_PDF_ERROR_CODES.PDF_GENERATION_FAILED,
+      });
+    }
+  }
+
+  async save(config: PdfDocumentConfigType): Promise<void | ErrorExceptionCore> {
+    const { data, title } = await this.create(config);
+
+    try {
+      (pdfMake as Pdfmake).createPdf(data).download(`${title}.pdf`);
     } catch (error) {
       throw new ErrorExceptionCore({
         originalError: error,
@@ -83,10 +95,10 @@ export class ProzorroPdf implements IProzorroPdf {
   }
 
   async getIframe(config: PdfDocumentConfigType): Promise<void | ErrorExceptionCore> {
-    const documentFile = await this.create(config);
+    const { data } = await this.create(config);
 
     try {
-      (pdfMake as Pdfmake).createPdf(documentFile).getDataUrl(dataUrl => {
+      (pdfMake as Pdfmake).createPdf(data).getDataUrl(dataUrl => {
         const targetElement: HTMLElement = document.getElementById(SIGN_TO_DOC_FRAME_ID) as HTMLElement;
         const iframe = document.createElement("iframe");
         iframe.src = dataUrl;
@@ -103,23 +115,10 @@ export class ProzorroPdf implements IProzorroPdf {
     }
   }
 
-  async save(config: PdfDocumentConfigType): Promise<void | ErrorExceptionCore> {
-    this.dataTypeValidator.validate(config.title, ValidationTypes.STRING);
-
-    const document = await this.create(config);
-
-    try {
-      (pdfMake as Pdfmake).createPdf(document).download(`${config.title}.pdf`);
-    } catch (error) {
-      throw new ErrorExceptionCore({
-        originalError: error,
-        message: (error as any)?.message,
-        code: PROZORRO_PDF_ERROR_CODES.PDF_GENERATION_FAILED,
-      });
-    }
-  }
-
-  private async create(config: PdfDocumentConfigType): Promise<Record<string, any>> {
+  private async create(config: PdfDocumentConfigType): Promise<{
+    title: string;
+    data: Record<string, any>;
+  }> {
     try {
       // TODO
       if (this.documentType !== PROZORRO_PDF_TYPES.PQ) {
@@ -130,7 +129,10 @@ export class ProzorroPdf implements IProzorroPdf {
 
       const loaderManager = new LoaderManager(this.base64, axios, this.eds);
       loaderManager.setLoaderType(this.documentType);
-      const { file, type, signers, url, additionalData } = await loaderManager.getData(this.object as any, config);
+      const { file, type, signers, url, additionalData, title } = await loaderManager.getData(
+        this.object as any,
+        config
+      );
 
       Assert.isDefined(
         file,
@@ -141,7 +143,7 @@ export class ProzorroPdf implements IProzorroPdf {
       const dictionaries = await new DictionaryCollector().loadByType(type);
 
       this.documentManager.setDocumentType(type);
-      return await this.documentManager.getDocumentData(
+      const data = await this.documentManager.getDocumentData(
         file,
         config,
         signers,
@@ -149,6 +151,8 @@ export class ProzorroPdf implements IProzorroPdf {
         url,
         additionalData || this.object
       );
+
+      return { data, title };
     } catch (error) {
       throw new ErrorExceptionCore(error as Error);
     }

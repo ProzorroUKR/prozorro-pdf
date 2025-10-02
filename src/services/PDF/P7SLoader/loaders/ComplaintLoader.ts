@@ -24,7 +24,7 @@ export class ComplaintLoader
     Assert.isDefined(object && object.documents.length, ERROR_MESSAGES.VALIDATION_FAILED.documentListUndefined);
 
     let additionalData = null;
-    const url = this.getDocumentUrl(object);
+    const { url, title } = this.getDocument(object);
     const file = await this.getData(url);
     const { data, signers } = await this.getDataFromSign(file, encoding);
 
@@ -37,6 +37,7 @@ export class ComplaintLoader
 
     return {
       url,
+      title,
       additionalData,
       signers: signers || [],
       type: PdfTemplateTypes.COMPLAINT,
@@ -44,14 +45,14 @@ export class ComplaintLoader
     };
   }
 
-  private getDocumentUrl({ documents: documentList }: ComplaintType): string {
-    const [document] = documentList
+  private getDocument({ documents }: ComplaintType): DocumentType {
+    const [document] = documents
       .filter((doc: DocumentType) => doc.title === SIGNATURE_FILE_NAME)
       .sort((...args) => DateHandler.dateModifiedDiff(...args))
       .slice(-1);
 
     Assert.isDefined(document, ERROR_MESSAGES.VALIDATION_FAILED.undefinedDocumentTitle);
 
-    return document.url;
+    return document;
   }
 }

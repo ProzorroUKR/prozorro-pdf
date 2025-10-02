@@ -67,7 +67,7 @@ export class ErrorExceptionCore extends Error implements IPrzorroPdfErrorExcepti
 
   logWithTrace(): void {
     console.error(
-      "--- SIGN TO DOC: Error Details ---",
+      "--- PROZORRO PDF: Error Details ---",
       "\nCode: ",
       this.code,
       "\nMessage: ",

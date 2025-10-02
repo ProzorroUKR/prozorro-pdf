@@ -11,17 +11,15 @@
   "type": "module",
   "exports": {
     ".": {
+      "types": "./dist/prozorro-pdf.d.ts",
       "import": "./dist/prozorro-pdf.es.js",
-      "require": "./dist/prozorro-pdf.cjs.js",
-      "types": "./dist/prozorro-pdf.d.ts"
+      "require": "./dist/prozorro-pdf.cjs.js"
     },
     "./dist/": {
       "import": "./dist"
     }
   },
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "scripts": {
     "dev": "vite --config vite.config.lib.ts",
     "build:lib": "tsc && vite build --config vite.config.lib.ts && npm run types && copyfiles ./package.json dist && npm run removeFromBuild:lib",

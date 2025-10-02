@@ -9,29 +9,31 @@ import { ArrayHandler } from "@/utils/ArrayHandler";
 import type { AnnouncementType } from "@/types/Announcement/AnnouncementTypes";
 import { SIGNATURE_FILE_NAME } from "@/constants/string";
 import { ObjectDecoder } from "@/utils/ObjectDecoder";
+import type { DocumentType } from "@/types/Tender/DocumentType.ts";
 
 export class AnnouncementLoader
   extends AbstractLoaderStrategy<Record<any, any>>
   implements LoaderStrategyInterface<Record<any, any>>
 {
   async load(object: AnnouncementType, config: PdfDocumentConfigType): Promise<P7SLoadResultType<Record<any, any>>> {
-    const url = this.getDocumentUrl(object, config);
-    const file = await this.getData(url);
+    const document = this.getDocument(object, config);
+    const file = await this.getData(document.url);
     const { data, signers } = await this.getDataFromSign(file, config.encoding);
 
     return {
-      url,
+      url: document.url,
+      title: document.title,
       signers: signers || [],
       type: PdfTemplateTypes.ANNOUNCEMENT,
       file: this.unwrapTender(ObjectDecoder.decode<Record<any, any>>(data)),
     };
   }
 
-  private getDocumentUrl({ documents }: AnnouncementType, { date }: PdfDocumentConfigType): string {
+  private getDocument({ documents }: AnnouncementType, { date }: PdfDocumentConfigType): DocumentType {
     Assert.isDefined(documents, ERROR_MESSAGES.VALIDATION_FAILED.documentListUndefined);
 
     const list = documents.filter(
-      (doc: Record<string, any>) =>
+      (doc: DocumentType) =>
         doc.title === SIGNATURE_FILE_NAME && this.approximateCheckDateModified(doc.dateModified, date)
     );
 
@@ -39,6 +41,6 @@ export class AnnouncementLoader
 
     Assert.isDefined(document, ERROR_MESSAGES.VALIDATION_FAILED.undefinedDocumentTitle);
 
-    return document.url as string;
+    return document;
   }
 }

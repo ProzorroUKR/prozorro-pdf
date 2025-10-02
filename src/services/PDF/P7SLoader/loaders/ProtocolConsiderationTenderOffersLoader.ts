@@ -53,6 +53,7 @@ export class ProtocolConsiderationTenderOffersLoader
 
     return {
       url,
+      title,
       signers: signers || [],
       type: PdfTemplateTypes.PROTOCOL_CONSIDERATION_TENDER_OFFERS_TEMPLATE,
       file: this.unwrapTender<ProtocolConsiderationTenderOffers>(

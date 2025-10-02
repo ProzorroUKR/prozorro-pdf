@@ -9,6 +9,8 @@ export const ERROR_MESSAGES = {
     libraryInit: "Бібліотека не була ініціалізована",
     incorrectInputFormat: "Неправильний формат вхідних даних",
     undefinedUrl: "Відсутнє посилання на об'єкт ЦБД",
+    undefinedTitle: 'Відсутній параметр "Document title"',
+    undefinedDate: 'Відсутній параметр "Date modified"',
   },
   [PROZORRO_PDF_ERROR_CODES.VALIDATION_FAILED]: {
     undefinedObject: "Дані об'єкта ЦБД відсутні",

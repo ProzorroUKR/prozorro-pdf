@@ -32,6 +32,7 @@ export class ComplaintPostLoader
       signers: [],
       file: object,
       additionalData,
+      title: "complaint-post",
       type: PdfTemplateTypes.COMPLAINT_POST,
     };
   }

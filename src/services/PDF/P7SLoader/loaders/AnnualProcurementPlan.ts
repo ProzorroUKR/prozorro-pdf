@@ -17,27 +17,28 @@ export class AnnualProcurementPlan
   public async load({ documents }: any, config: PdfDocumentConfigType): Promise<P7SLoadResultType<Record<any, any>>> {
     Assert.isDefined(documents, ERROR_MESSAGES.VALIDATION_FAILED.documentListUndefined);
 
-    const url = this.getDocumentUrl(documents, config);
-    const file = await this.getData(url);
+    const document = this.getDocument(documents, config);
+    const file = await this.getData(document.url);
     const { data, signers } = await this.getDataFromSign(file, config.encoding);
 
     return {
-      url,
+      url: document.url,
+      title: document.title,
       signers: signers || [],
       type: PdfTemplateTypes.ANNUAL_PROCUREMENT_PLAN,
       file: this.unwrapTender(ObjectDecoder.decode<Record<any, any>>(data)),
     };
   }
 
-  private getDocumentUrl(documentList: Array<DocumentType>, { date }: PdfDocumentConfigType): string {
+  private getDocument(documentList: Array<DocumentType>, { date }: PdfDocumentConfigType): DocumentType {
     const documents = documentList.filter(
-      (doc: Record<string, any>) =>
+      (doc: DocumentType) =>
         doc.title === SIGNATURE_FILE_NAME && this.approximateCheckDateModified(doc.dateModified, date)
     );
     const document = ArrayHandler.getLastElement(documents);
 
     Assert.isDefined(document, ERROR_MESSAGES.VALIDATION_FAILED.undefinedDocumentTitle);
 
-    return document.url;
+    return document;
   }
 }

@@ -1,7 +1,8 @@
 import { MILESTONE_TYPE } from "@/constants/tender/milestones";
+import type { DocumentType } from "@/types/Tender/DocumentType.ts";
 
 export type AnnouncementType = {
-  documents: Record<string, any>[];
+  documents: DocumentType[];
 };
 
 export type Milestone = {

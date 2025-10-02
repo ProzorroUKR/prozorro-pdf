@@ -17,18 +17,19 @@ export class EdrLoader extends AbstractLoaderStrategy<EdrType> implements Loader
   async load({ documents }: AwardType, config: PdfDocumentConfigType): Promise<P7SLoadResultType<EdrType>> {
     Assert.isDefined(documents, ERROR_MESSAGES.VALIDATION_FAILED.documentListUndefined);
 
-    const url = this._getDocumentUrl(documents, config);
+    const { url, title } = this._getDocument(documents, config);
     const { data } = await this.axios.get(url);
 
     return {
       url,
+      title,
       signers: [],
       type: PdfTemplateTypes.EDR,
       file: YAML.parse(data) as EdrType,
     };
   }
 
-  private _getDocumentUrl(documents: DocumentType[], { date, title }: PdfDocumentConfigType): string {
+  private _getDocument(documents: DocumentType[], { date, title }: PdfDocumentConfigType): DocumentType {
     const documentsFilteredByDateModified = documents.filter(({ dateModified }: DocumentType) =>
       this.approximateCheckDateModified(dateModified, date)
     );
@@ -57,6 +58,6 @@ export class EdrLoader extends AbstractLoaderStrategy<EdrType> implements Loader
       Assert.isDefined(document, ERROR_MESSAGES.VALIDATION_FAILED.undefinedDocumentTitle);
     }
 
-    return document.url;
+    return document;
   }
 }

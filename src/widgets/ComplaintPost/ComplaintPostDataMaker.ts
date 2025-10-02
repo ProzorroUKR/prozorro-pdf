@@ -13,7 +13,7 @@ export class ComplaintPostDataMaker extends AbstractDocumentStrategy {
     return ANNOUNCEMENT_PAGE_MARGIN;
   }
 
-  createFooter(_signers?: SignerType[], _link?: string): Record<string, any>[] {
+  createFooter(): Record<string, any>[] {
     return [{ text: STRING.EMPTY }];
   }
 

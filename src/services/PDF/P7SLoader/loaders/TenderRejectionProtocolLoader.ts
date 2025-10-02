@@ -30,28 +30,27 @@ export class TenderRejectionProtocolLoader
       });
     }
 
-    if (status === AwardStatus.CANCELLED) {
-      if (!(eligible === false || qualified === false)) {
-        throw new ErrorExceptionCore({
-          code: PROZORRO_PDF_ERROR_CODES.VALIDATION_FAILED,
-          message: ERROR_MESSAGES.VALIDATION_FAILED.wrongEligibleOrQualified,
-        });
-      }
+    if (status === AwardStatus.CANCELLED && eligible && qualified) {
+      throw new ErrorExceptionCore({
+        code: PROZORRO_PDF_ERROR_CODES.VALIDATION_FAILED,
+        message: ERROR_MESSAGES.VALIDATION_FAILED.wrongEligibleOrQualified,
+      });
     }
 
-    const url = this.getDocumentUrl(documents, config);
-    const file = await this.getData(url);
+    const document = this.getDocument(documents, config);
+    const file = await this.getData(document.url);
     const { data, signers } = await this.getDataFromSign(file, config.encoding);
 
     return {
-      url,
+      url: document.url,
+      title: document.title,
       signers: signers || [],
       type: PdfTemplateTypes.TENDER_REJECTION_PROTOCOL_TEMPLATE,
       file: this.unwrapTender(ObjectDecoder.decode<Record<any, any>>(data)),
     };
   }
 
-  private getDocumentUrl(documentList: DocumentType[], { date }: PdfDocumentConfigType): string {
+  private getDocument(documentList: DocumentType[], { date }: PdfDocumentConfigType): DocumentType {
     const documents = documentList.filter(
       (doc: Record<string, any>) =>
         doc.documentType === "notice" && this.approximateCheckDateModified(doc.dateModified, date)
@@ -60,6 +59,6 @@ export class TenderRejectionProtocolLoader
 
     Assert.isDefined(document, ERROR_MESSAGES.VALIDATION_FAILED.undefinedDocumentTitle);
 
-    return document.url;
+    return document;
   }
 }

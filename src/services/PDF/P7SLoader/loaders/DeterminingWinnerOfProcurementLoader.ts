@@ -47,27 +47,27 @@ export class DeterminingWinnerOfProcurementLoader
       }
     }
 
-    const url = this.getDocumentUrl(documents, config);
-    const file = await this.getData(url);
+    const document = this.getDocument(documents, config);
+    const file = await this.getData(document.url);
     const { data, signers } = await this.getDataFromSign(file, config.encoding);
 
     return {
-      url,
+      url: document.url,
+      title: document.title,
       signers: signers || [],
       type: PdfTemplateTypes.DETERMINING_WINNER_OF_PROCUREMENT_TEMPLATE,
       file: this.unwrapTender(ObjectDecoder.decode<Record<any, any>>(data)),
     };
   }
 
-  private getDocumentUrl(documentList: DocumentType[], { date }: PdfDocumentConfigType): string {
+  private getDocument(documentList: DocumentType[], { date }: PdfDocumentConfigType): DocumentType {
     const documents = documentList.filter(
-      (doc: Record<string, any>) =>
-        doc.documentType === "notice" && this.approximateCheckDateModified(doc.dateModified, date)
+      (doc: DocumentType) => doc.documentType === "notice" && this.approximateCheckDateModified(doc.dateModified, date)
     );
     const document = ArrayHandler.getLastElement(documents);
 
     Assert.isDefined(document, ERROR_MESSAGES.VALIDATION_FAILED.undefinedDocumentTitle);
 
-    return document.url;
+    return document;
   }
 }

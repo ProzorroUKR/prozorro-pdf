@@ -10,8 +10,11 @@ import { PROZORRO_PDF_ERROR_CODES } from "@/widgets/ErrorExceptionCore/constants
 import type { EdsInterface } from "services/EdsInterface";
 import { ENCODING } from "@/constants/encoding";
 import { Assert } from "@/widgets/ErrorExceptionCore/Assert";
+import { DataTypeValidator } from "@/services/DataTypeValidator/DataTypeValidator.ts";
 
 export abstract class AbstractLoaderStrategy<DataType> implements LoaderStrategyInterface<DataType> {
+  readonly _dataTypeValidator = new DataTypeValidator();
+
   constructor(
     protected readonly base64: IBase64,
     protected readonly axios: AxiosStatic,
@@ -31,10 +34,6 @@ export abstract class AbstractLoaderStrategy<DataType> implements LoaderStrategy
         message: ERROR_MESSAGES.INVALID_SIGNATURE.documentAccess,
       });
     }
-  }
-
-  protected checkDateModified(dateModified?: string, documentDate?: string): boolean {
-    return documentDate && dateModified ? documentDate === dateModified : true;
   }
 
   protected approximateCheckDateModified(dateModified?: string, documentDate?: string): boolean {
