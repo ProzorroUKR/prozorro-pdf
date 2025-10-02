@@ -20,26 +20,27 @@ export class ProtocolOnExtensionOfReviewPeriodLoader
   ): Promise<P7SLoadResultType<Record<any, any>>> {
     Assert.isDefined(documents, ERROR_MESSAGES.VALIDATION_FAILED.documentListUndefined);
 
-    const url = this.getDocumentUrl(documents, config);
+    const { url, title } = this.getDocument(documents, config);
     const file = await this.getData(url);
     const { data, signers } = await this.getDataFromSign(file, config.encoding);
 
     return {
       url,
+      title,
       signers: signers || [],
       file: this.unwrapTender(ObjectDecoder.decode<Record<any, any>>(data)),
       type: PdfTemplateTypes.PROTOCOL_ON_EXTENSION_OF_REVIEW_PERIOD_TEMPLATE,
     };
   }
 
-  private getDocumentUrl(documentList: DocumentType[], { date }: PdfDocumentConfigType): string {
+  private getDocument(documentList: DocumentType[], { date }: PdfDocumentConfigType): DocumentType {
     const documents = documentList.filter(
-      (doc: Record<string, any>) =>
+      (doc: DocumentType) =>
         doc.documentType === "extensionReport" && this.approximateCheckDateModified(doc.dateModified, date)
     );
     const document = ArrayHandler.getLastElement(documents);
     Assert.isDefined(document, ERROR_MESSAGES.VALIDATION_FAILED.undefinedDocumentTitle);
 
-    return document.url;
+    return document;
   }
 }

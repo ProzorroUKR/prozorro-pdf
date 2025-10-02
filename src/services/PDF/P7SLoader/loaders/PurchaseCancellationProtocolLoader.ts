@@ -9,6 +9,7 @@ import { ArrayHandler } from "@/utils/ArrayHandler";
 import type { CancellationType } from "@/types/PurchaseCancellation/PurchaseCancellationTypes";
 import { SIGNATURE_FILE_NAME } from "@/constants/string";
 import { ObjectDecoder } from "@/utils/ObjectDecoder";
+import type { DocumentType } from "@/types/Tender/DocumentType.ts";
 
 export class PurchaseCancellationProtocolLoader
   extends AbstractLoaderStrategy<Record<any, any>>
@@ -20,29 +21,30 @@ export class PurchaseCancellationProtocolLoader
   ): Promise<P7SLoadResultType<Record<any, any>>> {
     Assert.isDefined(documents, ERROR_MESSAGES.VALIDATION_FAILED.documentListUndefined);
 
-    const url = this.getDocumentUrl(documents, config);
+    const { url, title } = this.getDocument(documents, config);
     const file = await this.getData(url);
     const { data, signers } = await this.getDataFromSign(file, config.encoding);
 
     return {
       url,
+      title,
       signers: signers || [],
       type: PdfTemplateTypes.PURCHASE_CANCELLATION_PROTOCOL_TEMPLATE,
       file: this.unwrapTender(ObjectDecoder.decode<Record<any, any>>(data)),
     };
   }
 
-  private getDocumentUrl(documents: Record<string, any>, { date }: PdfDocumentConfigType): string {
+  private getDocument(documents: DocumentType[], { date }: PdfDocumentConfigType): DocumentType {
     Assert.isDefined(documents, ERROR_MESSAGES.VALIDATION_FAILED.documentListUndefined);
 
     const list = documents.filter(
-      (doc: Record<string, string>) =>
+      (doc: DocumentType) =>
         doc.title === SIGNATURE_FILE_NAME && this.approximateCheckDateModified(doc.dateModified, date)
     );
-    const document: Record<string, any> | undefined = ArrayHandler.getLastElement(list);
+    const document = ArrayHandler.getLastElement(list);
 
     Assert.isDefined(document, ERROR_MESSAGES.VALIDATION_FAILED.undefinedDocumentTitle);
 
-    return document.url as string;
+    return document;
   }
 }

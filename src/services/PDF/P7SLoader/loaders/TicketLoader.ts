@@ -10,22 +10,30 @@ import { ENCODING } from "@/constants/encoding";
 import type { PdfDocumentConfigType } from "@/types/pdf/PdfDocumentConfigType";
 import type { DocumentType } from "@/types/Tender/DocumentType";
 import { PdfTemplateTypes } from "@/services/PDF/PdfTemplateTypes";
+import { ValidationTypes } from "@/services/DataTypeValidator/ValidationTypes.ts";
 
 export class TicketLoader extends AbstractLoaderStrategy<string> implements LoaderStrategyInterface<string> {
   public async load(object: TenderType, config: PdfDocumentConfigType): Promise<P7SLoadResultType<string>> {
-    const url = this.getDocumentUrl(object, config);
-    const file = await this.getData(url);
+    this._dataTypeValidator.validate(
+      config.title,
+      ValidationTypes.STRING,
+      ERROR_MESSAGES.INVALID_PARAMS.undefinedTitle
+    );
+
+    const document = this.getDocument(object, config);
+    const file = await this.getData(document.url);
     const { data, signers } = await this.getDataFromSign(file, ENCODING.WINDOWS_1251);
 
     return {
-      url,
       file: data,
+      url: document.url,
+      title: document.title,
       signers: signers || [],
       type: this.getDocumentType(config.title),
     };
   }
 
-  private getDocumentUrl(object: TenderType, { date, title }: PdfDocumentConfigType): string {
+  private getDocument(object: TenderType, { date, title }: PdfDocumentConfigType): DocumentType {
     Assert.isDefined(object.awards, ERROR_MESSAGES.VALIDATION_FAILED.undefinedAwards);
 
     const regexp = new RegExp(title);
@@ -33,13 +41,13 @@ export class TicketLoader extends AbstractLoaderStrategy<string> implements Load
       .map(award => award.documents)
       .filter(excludeFalsy)
       .flat()
-      .filter((doc: DocumentType) => this.checkDateModified(doc.dateModified, date));
+      .filter((doc: DocumentType) => this.approximateCheckDateModified(doc.dateModified, date));
 
     const document = documents.find(doc => regexp.test(doc.title));
 
     Assert.isDefined(document, ERROR_MESSAGES.VALIDATION_FAILED.undefinedDocumentTitle);
 
-    return document.url;
+    return document;
   }
 
   private getDocumentType(documentTitle: string): PdfTemplateTypes.XML | PdfTemplateTypes.KVT {

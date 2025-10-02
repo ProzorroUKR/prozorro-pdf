@@ -13,7 +13,7 @@ export type AwardType = {
   lotID?: string;
   suppliers?: OrganizationType[];
   items?: AwardItemType[];
-  documents?: DocumentType[];
+  documents: DocumentType[];
   qualified?: boolean;
   eligible?: boolean;
   bid_id?: string;
