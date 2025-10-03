@@ -1,0 +1,39 @@
+data:
+  activityKind:
+    description: Комп'ютерне програмування
+    id: '62.01'
+    scheme: КВЕД
+  additionalActivityKinds:
+  - description: Веб-портали
+    id: '63.12'
+    scheme: КВЕД
+  - description: Оброблення даних, розміщення інформації на веб-вузлах і пов'язана
+      з ними діяльність
+    id: '63.11'
+    scheme: КВЕД
+  - description: Інша діяльність у сфері інформаційних технологій і комп'ютерних систем
+    id: '62.09'
+    scheme: КВЕД
+  - description: Діяльність із керування комп'ютерним устаткованням
+    id: '62.03'
+    scheme: КВЕД
+  - description: Консультування з питань інформатизації
+    id: '62.02'
+    scheme: КВЕД
+  address:
+    countryName: Україна
+    postalCode: 03148
+    streetAddress: Україна, 03148, місто Київ, ПРОСПЕКТ ЛЕСЯ КУРБАСА, будинок 2/13,
+      квартира 94
+  identification:
+    legalName: ЛІСНИЧИЙ ВІТАЛІЙ ВОЛОДИМИРОВИЧ
+    scheme: UA-EDR
+  registrationStatus: registered
+  registrationStatusDetails: зареєстровано
+meta:
+  author: IdentificationBot
+  id: 20891b1f9b9d462f838a9f37fc0c2620
+  sourceDate: '2023-05-30T13:23:08+00:00'
+  sourceRequests:
+  - req-d4d75cb6-d4c9-4f5e-8254-4b1af98e145b
+  version: 2.0.0

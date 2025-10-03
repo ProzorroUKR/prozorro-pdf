@@ -51,7 +51,7 @@
         "hash": "md5:7c4d793987f682c3c44e0bebd775cd40",
         "title": "edr_identification.yaml",
         "format": "application/yaml",
-        "url": "/test-data/edr/edr_identification.yaml",
+        "url": "/test-data/edr/edr_identification_2.yaml",
         "documentOf": "tender",
         "dateModified": "2025-03-03T22:03:24",
         "author": "bots",
