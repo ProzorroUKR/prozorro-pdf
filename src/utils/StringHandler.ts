@@ -18,13 +18,9 @@ export class StringHandler {
     return `${day}.${month}.${year}`;
   }
 
-  static customerLocation(
-    address: AddressType,
-    defaultValue = "",
-    parts = ADDRESS_ORDER.COUNTRY_TO_STREET
-  ): string {
+  static customerLocation(address?: AddressType, defaultValue = "", parts = ADDRESS_ORDER.COUNTRY_TO_STREET): string {
     const collectedAddress = parts
-      .map(key => address[key]?.trim())
+      .map(key => (address || {})[key]?.toString()?.trim())
       .filter(Boolean)
       .join(", ");
     return collectedAddress || defaultValue;
