@@ -57,6 +57,10 @@ export class ComplaintPostPostBuilder implements IComplaintPostBuilder {
 
   get setRecipient(): IComplaintPostBuilder {
     this._complaint.posts.forEach((post: Record<string, any>) => {
+      if (!post.recipient) {
+        return;
+      }
+
       this._postData[post.relatedObjection][post.id].push({
         head: POST_TITLES.receiver,
         data: complaintPostPerson.get(post.recipient),
