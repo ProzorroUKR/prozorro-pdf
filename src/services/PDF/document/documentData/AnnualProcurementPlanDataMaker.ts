@@ -63,7 +63,7 @@ export class AnnualProcurementPlanDataMaker extends AbstractDocumentStrategy {
     if (katottgIdsList.length > 0) {
       const dictionary = new Map<string, string>().set("katottg", "katottg");
 
-      const responce = await new DictionaryCollector().loadByDictionary(dictionary, {
+      const responce = await new DictionaryCollector(this.envVars.staticDataUrl).loadByDictionary(dictionary, {
         katottg: [...new Set(katottgIdsList)], // remove duplicates
       });
 

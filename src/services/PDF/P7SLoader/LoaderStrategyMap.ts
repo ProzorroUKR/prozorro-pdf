@@ -1,9 +1,7 @@
-import type { AxiosStatic } from "axios";
 import { PROZORRO_PDF_TYPES } from "@/services/PDF/PdfTypes";
 import { ConclusionLoader } from "@/services/PDF/P7SLoader/loaders/ConclusionLoader.ts";
 import { TicketLoader } from "@/services/PDF/P7SLoader/loaders/TicketLoader.ts";
 import type { LoaderStrategyInterface } from "@/services/PDF/P7SLoader/LoaderStrategyInterface";
-import type { IBase64 } from "@/utils/Base64";
 import { AnnouncementLoader } from "@/services/PDF/P7SLoader/loaders/AnouncementLoader";
 import { NazkLoader } from "@/services/PDF/P7SLoader/loaders/NazkLoader";
 import { PQLoader } from "@/services/PDF/P7SLoader/loaders/PQLoader";
@@ -16,13 +14,10 @@ import { ProtocolConsiderationTenderOffersLoader } from "@/services/PDF/P7SLoade
 import { ProtocolOnExtensionOfReviewPeriodLoader } from "@/services/PDF/P7SLoader/loaders/ProtocolOnExtensionOfReviewPeriodLoader";
 import { TenderOfferLoader } from "@/services/PDF/P7SLoader/loaders/TenderOfferLoader";
 import { EdrLoader } from "@/services/PDF/P7SLoader/loaders/EdrLoader";
-import type { EdsInterface } from "services/EdsInterface";
 import { ComplaintPostLoader } from "@/services/PDF/P7SLoader/loaders/ComplaintPostLoader";
+import type { EnvironmentType } from "@/types/pdf/EnvironmentType.ts";
 
-export const loaderStrategyMap = new Map<
-  string,
-  new (base64: IBase64, axios: AxiosStatic, eds: EdsInterface) => LoaderStrategyInterface<any>
->()
+export const loaderStrategyMap = new Map<string, new (envVars: EnvironmentType) => LoaderStrategyInterface<any>>()
   .set(PROZORRO_PDF_TYPES.TICKET, TicketLoader)
   .set(PROZORRO_PDF_TYPES.CONCLUSION, ConclusionLoader)
   .set(PROZORRO_PDF_TYPES.ANNOUNCEMENT, AnnouncementLoader)

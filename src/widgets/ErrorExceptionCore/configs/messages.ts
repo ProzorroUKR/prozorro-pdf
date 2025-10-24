@@ -6,7 +6,6 @@ export const ERROR_MESSAGES = {
     documentEncoding: "Не вдалося розшифрувати файл підпису",
   },
   [PROZORRO_PDF_ERROR_CODES.INVALID_PARAMS]: {
-    libraryInit: "Бібліотека не була ініціалізована",
     incorrectInputFormat: "Неправильний формат вхідних даних",
     undefinedUrl: "Відсутнє посилання на об'єкт ЦБД",
     undefinedTitle: 'Відсутній параметр "Document title"',

@@ -39,7 +39,6 @@ yarn add @prozorro/prozorro-pdf
 <script setup lang="ts">
 import { onMounted, ref } from "vue";
 import { useRoute } from "vue-router";
-import { ProzorroEds } from "@prozorro/prozorro-eds";
 import {
   PROZORRO_PDF_TYPES,
   ProzorroPdfService,
@@ -54,11 +53,7 @@ onMounted(async () => {
   const { params: { type }, query: { dateModified, url, tenderUrl, contractTemplateName, title } } = route;
 
   try {
-    await ProzorroEds.init({
-      debug: true,
-    });
-
-    ProzorroPdfService.init(ProzorroEds);
+    ProzorroPdfService.init("development");
 
     await ProzorroPdfService.setConfig({
       type: type as PROZORRO_PDF_TYPES,
@@ -89,10 +84,10 @@ onMounted(async () => {
 
 ## API
 
-### `init(eds: EdsInterface): void`
+### `init(environment: EnvironmentModeType): void`
 Ініціалізація та початок роботи з бібліотекою.  
 Аргументи:
-- `eds: EdsInterface` — екземпляр ProzorroEds.
+- `environment: EnvironmentModeType` — тип середовища "production" або "development"
 
 ---
 
@@ -145,6 +140,14 @@ onMounted(async () => {
 | `EDR`                                    | Довідка ЄДР                                             | Get all sign files from `award.documents` or `qualification.documents`.<br>`document.documentType` must be `"registerExtract"`.<br>Optional file title (default: `edr_identification.yaml`).<br>Optional validation by `document.dateModified`.<br>If not set → take last document.                       | • **url** – Awards / Qualification URL *(required, string)*<br>• **title** – Document title *(string)*<br>• **date** – Date modified *(string)* |
 | `COMPLAINT`                              | Скарга до органу оскарження                             | Get all sign files from `complaint.documents`.<br>`document.title` must be `"sign.p7s"`.<br>Newest document is chosen by `dateModified`.                                                                                                                                                                  | • **url** – Complaint URL *(required, string)*<br>• **tender** – Tender URL *(string)*                                                          |
 | `COMPLAINT_POST`                         | Запити/пояснення до скарги                              | Field `complaint.post` mustn’t be empty.                                                                                                                                                                                                                                                                  | • **url** – Complaint URL *(required, string)*<br>• **tender** – Tender URL *(string)*                                                          |
+
+---
+
+## Release notes
+
+- **24.10.2025**
+  - Removed environment dependency from `-beta` library tag;
+  - Changed the arguments of `init` method;
 
 ---
 

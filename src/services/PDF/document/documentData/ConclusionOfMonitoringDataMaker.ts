@@ -16,7 +16,6 @@ import { afterXDate, afterYDate, beforeXDate } from "@/config/pdf/conclusionOfMo
 import { CONCLUSION_OF_MONITORING_TEXTS_LIST } from "@/config/pdf/texts/CONCLUSION_OF_MONITORING";
 import { PDFTablesHandler } from "@/services/PDF/Formatting/PDFTablesHandler";
 import type { PdfDocumentConfigType } from "@/types/pdf/PdfDocumentConfigType";
-import { CONCLUSION_X_DATE, CONCLUSION_Y_DATE } from "@/constants/env.ts";
 
 export class ConclusionOfMonitoringDataMaker extends AbstractDocumentStrategy {
   createFooter(): Record<string, any>[] {
@@ -287,10 +286,12 @@ export class ConclusionOfMonitoringDataMaker extends AbstractDocumentStrategy {
     const dateSize = 10; // replace with date from tender
     const currentDate = date.slice(0, dateSize);
 
-    if (currentDate > CONCLUSION_Y_DATE) {
+    if (currentDate > this.envVars.conclusion.yDate) {
       return afterYDate.get(key) || STRING.EMPTY;
     }
 
-    return currentDate > CONCLUSION_X_DATE ? afterXDate.get(key) || STRING.EMPTY : beforeXDate.get(key) || STRING.EMPTY;
+    return currentDate > this.envVars.conclusion.xDate
+      ? afterXDate.get(key) || STRING.EMPTY
+      : beforeXDate.get(key) || STRING.EMPTY;
   }
 }

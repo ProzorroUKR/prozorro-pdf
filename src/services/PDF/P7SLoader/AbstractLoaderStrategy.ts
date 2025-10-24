@@ -1,33 +1,30 @@
-import type { LoaderStrategyInterface } from "@/services/PDF/P7SLoader/LoaderStrategyInterface";
-import type { IBase64 } from "@/utils/Base64";
+import axios, { type AxiosResponse } from "axios";
+import { ProzorroEds } from "@prozorro/prozorro-eds";
+import { Base64 } from "@/utils/Base64";
+import { ENCODING } from "@/constants/encoding";
+import type { PdfObjectType } from "@/types/pdf/PdfObjectType";
+import type { EnvironmentType } from "@/types/pdf/EnvironmentType";
 import type { P7SLoadResultType } from "@/types/pdf/P7SLoadResultType";
 import type { PdfDocumentConfigType } from "@/types/pdf/PdfDocumentConfigType";
-import { ErrorExceptionCore } from "@/widgets/ErrorExceptionCore/ErrorExceptionCore";
 import { ERROR_MESSAGES } from "@/widgets/ErrorExceptionCore/configs/messages";
-import type { PdfObjectType } from "@/types/pdf/PdfObjectType";
-import type { AxiosResponse, AxiosStatic } from "axios";
+import { DataTypeValidator } from "@/services/DataTypeValidator/DataTypeValidator";
+import { ErrorExceptionCore } from "@/widgets/ErrorExceptionCore/ErrorExceptionCore";
+import type { LoaderStrategyInterface } from "@/services/PDF/P7SLoader/LoaderStrategyInterface";
 import { PROZORRO_PDF_ERROR_CODES } from "@/widgets/ErrorExceptionCore/constants/ERROR_CODES.enum";
-import type { EdsInterface } from "services/EdsInterface";
-import { ENCODING } from "@/constants/encoding";
-import { Assert } from "@/widgets/ErrorExceptionCore/Assert";
-import { DataTypeValidator } from "@/services/DataTypeValidator/DataTypeValidator.ts";
 
 export abstract class AbstractLoaderStrategy<DataType> implements LoaderStrategyInterface<DataType> {
+  readonly _base64 = new Base64();
   readonly _dataTypeValidator = new DataTypeValidator();
 
-  constructor(
-    protected readonly base64: IBase64,
-    protected readonly axios: AxiosStatic,
-    protected readonly eds: EdsInterface
-  ) {}
+  constructor(protected readonly envVars: EnvironmentType) {}
 
   protected async getData(url: string): Promise<string> {
     try {
-      const { data }: AxiosResponse = await this.axios.get(url, {
+      const { data }: AxiosResponse = await axios.get(url, {
         responseType: "blob",
       });
 
-      return await this.base64.encode(data);
+      return await this._base64.encode(data);
     } catch {
       throw new ErrorExceptionCore({
         code: PROZORRO_PDF_ERROR_CODES.INVALID_SIGNATURE,
@@ -41,10 +38,8 @@ export abstract class AbstractLoaderStrategy<DataType> implements LoaderStrategy
   }
 
   protected async getDataFromSign(file: string, encoding: ENCODING | undefined): Promise<{ data: any; signers: any }> {
-    Assert.isDefined(this.eds, ERROR_MESSAGES.INVALID_PARAMS.libraryInit, PROZORRO_PDF_ERROR_CODES.INVALID_PARAMS);
-
     try {
-      return await this.eds.verify(file, encoding);
+      return await ProzorroEds.verify(file, encoding);
     } catch (error) {
       throw new ErrorExceptionCore({
         code: PROZORRO_PDF_ERROR_CODES.INVALID_SIGNATURE,

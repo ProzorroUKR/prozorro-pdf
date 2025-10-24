@@ -1,11 +1,12 @@
 import axios from "axios";
 import type { Pdfmake } from "@/vite-env";
 import pdfMake from "pdfmake/build/pdfmake";
-import { fonts } from "@/config/fonts";
+import { ProzorroEds } from "@prozorro/prozorro-eds";
+import { ENV_CONFIG } from "@/config/ENV.config";
+import { FONTS_CONFIG } from "@/config/FONTS.config";
 import { ErrorExceptionCore } from "@/widgets/ErrorExceptionCore/ErrorExceptionCore";
 import type { TenderResponseType } from "@/types/Tender/TenderResponseType";
 import { DocumentManager } from "@/services/PDF/document/DocumentManager";
-import { Base64 } from "@/utils/Base64";
 import { Assert } from "@/widgets/ErrorExceptionCore/Assert";
 import { ERROR_MESSAGES } from "@/widgets/ErrorExceptionCore/configs/messages";
 import { PROZORRO_PDF_TYPES } from "@/services/PDF/PdfTypes";
@@ -15,16 +16,17 @@ import type { PdfDocumentConfigType } from "@/types/pdf/PdfDocumentConfigType";
 import type { PdfObjectType } from "@/types/pdf/PdfObjectType";
 import { DataTypeValidator } from "@/services/DataTypeValidator/DataTypeValidator";
 import { ValidationTypes } from "@/services/DataTypeValidator/ValidationTypes";
-import type { EdsInterface } from "services/EdsInterface";
 import { DictionaryCollector } from "@/services/DictionaryCollector/DictionaryCollector";
 import { SIGN_TO_DOC_FRAME_ID, STRING } from "@/constants/string";
 import { PROZORRO_TEMPLATE_CODES } from "@/widgets/pq/types/TemplateCodes.enum";
 import { PROZORRO_PDF_ERROR_CODES } from "@/widgets/ErrorExceptionCore/constants/ERROR_CODES.enum";
+import type { EnvironmentModeType } from "@/types/pdf/EnvironmentModeType";
+import type { EnvironmentType } from "@/types/pdf/EnvironmentType";
 
 export interface IProzorroPdf {
   TYPES: typeof PROZORRO_PDF_TYPES;
   TEMPLATES: typeof PROZORRO_TEMPLATE_CODES;
-  init(eds: any): void;
+  init(environment?: EnvironmentModeType): Promise<void>;
   setConfig(config: PdfConfigType): Promise<void | ErrorExceptionCore>;
   open(config: PdfDocumentConfigType): Promise<void | ErrorExceptionCore>;
   getIframe(config: PdfDocumentConfigType): Promise<void | ErrorExceptionCore>;
@@ -34,16 +36,15 @@ export interface IProzorroPdf {
 export class ProzorroPdf implements IProzorroPdf {
   readonly TYPES = PROZORRO_PDF_TYPES;
   readonly TEMPLATES = PROZORRO_TEMPLATE_CODES;
-  private readonly base64 = new Base64();
-  private readonly documentManager = new DocumentManager();
   private readonly dataTypeValidator = new DataTypeValidator();
-  private eds?: EdsInterface;
   private object?: PdfObjectType;
   private documentType = PROZORRO_PDF_TYPES.TICKET;
+  private envVars: EnvironmentType = ENV_CONFIG.development;
 
-  init(eds: EdsInterface): void {
-    this.eds = eds;
-    pdfMake.fonts = fonts;
+  async init(environment: EnvironmentModeType = "development"): Promise<void> {
+    await ProzorroEds.init({ environment });
+    this.envVars = ENV_CONFIG[environment];
+    pdfMake.fonts = FONTS_CONFIG;
   }
 
   async setConfig({ url, type }: PdfConfigType): Promise<void | ErrorExceptionCore> {
@@ -125,9 +126,7 @@ export class ProzorroPdf implements IProzorroPdf {
         Assert.isDefined(this.object, ERROR_MESSAGES.VALIDATION_FAILED.undefinedObject);
       }
 
-      Assert.isDefined(this.eds, ERROR_MESSAGES.INVALID_PARAMS.libraryInit, PROZORRO_PDF_ERROR_CODES.INVALID_PARAMS);
-
-      const loaderManager = new LoaderManager(this.base64, axios, this.eds);
+      const loaderManager = new LoaderManager(this.envVars);
       loaderManager.setLoaderType(this.documentType);
       const { file, type, signers, url, additionalData, title } = await loaderManager.getData(
         this.object as any,
@@ -140,10 +139,12 @@ export class ProzorroPdf implements IProzorroPdf {
         PROZORRO_PDF_ERROR_CODES.INVALID_SIGNATURE
       );
 
-      const dictionaries = await new DictionaryCollector().loadByType(type);
+      const dictionaries = await new DictionaryCollector(this.envVars.staticDataUrl).loadByType(type);
 
-      this.documentManager.setDocumentType(type);
-      const data = await this.documentManager.getDocumentData(
+      const documentManager = new DocumentManager(this.envVars);
+
+      documentManager.setDocumentType(type);
+      const data = await documentManager.getDocumentData(
         file,
         config,
         signers,

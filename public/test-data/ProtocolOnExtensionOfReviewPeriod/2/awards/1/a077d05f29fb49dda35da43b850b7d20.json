@@ -75,6 +75,7 @@
         "hash": "md5:d7a85a09b568eb99c9aa5ceac008968d",
         "title": "sign.p7s",
         "format": "application/pkcs7-signature",
+        "documentType": "extensionReport",
         "url": "test-data/ProtocolOnExtensionOfReviewPeriod/2/awards/1/sign.p7s",
         "datePublished": "2022-10-26T12:02:21.829114+03:00",
         "dateModified": "2022-10-26T12:02:21.829114+03:00",
