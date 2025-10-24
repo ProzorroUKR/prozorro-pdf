@@ -1,5 +1,6 @@
 import { PDF_STYLES } from "@/config/pdf/pdfStyles";
 import type { SignerType } from "@/types/sign/SignerType";
+import type { EnvironmentType } from "@/types/pdf/EnvironmentType";
 import { PdfTemplateTypes } from "@/services/PDF/PdfTemplateTypes";
 import { DocumentFactory } from "@/services/PDF/document/DocumentFactory";
 import type { PdfDocumentConfigType } from "@/types/pdf/PdfDocumentConfigType";
@@ -11,9 +12,10 @@ export class DocumentManager {
   private documentType = "";
   private readonly minPageHeight = 650;
   private documentGenerator: DocumentStrategyInterface;
-  private readonly documentFactory = new DocumentFactory(documentStrategyMap);
+  private readonly documentFactory;
 
-  constructor() {
+  constructor(envVars: EnvironmentType) {
+    this.documentFactory = new DocumentFactory(documentStrategyMap, envVars);
     this.documentGenerator = this.documentFactory.create(PdfTemplateTypes.XML);
   }
 

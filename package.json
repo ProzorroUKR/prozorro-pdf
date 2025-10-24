@@ -66,6 +66,7 @@
     "vitest": "^3.2.1"
   },
   "dependencies": {
+    "@prozorro/prozorro-eds": "^1.0.0",
     "axios": "^1.9.0",
     "lodash": "^4.17.21",
     "pdfmake": "^0.2.20",
@@ -73,5 +74,8 @@
     "uuid": "^11.1.0",
     "vite-plugin-dts": "^4.5.4",
     "yaml": "^2.8.0"
+  },
+  "peerDependencies": {
+    "@prozorro/prozorro-eds": ">=1.0.0"
   }
 }

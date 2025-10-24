@@ -1,7 +1,6 @@
 import { stringify } from "qs";
 import axios from "axios";
 import type { AxiosResponse } from "axios";
-import { STATIC_DATA_URL } from "@/constants/env";
 import { pdfDictionaryMap } from "@/services/PDF/pdfDictionaryMap";
 import { PdfTemplateTypes } from "@/services/PDF/PdfTemplateTypes";
 
@@ -13,6 +12,8 @@ export interface DictionaryCollectorInterface {
 }
 
 export class DictionaryCollector implements DictionaryCollectorInterface {
+  constructor(private readonly staticDataUrl: string) {}
+
   async loadByType(documentType: string): Promise<Map<string, Record<string, any>>> {
     const dictionariesMap = pdfDictionaryMap.get(documentType as PdfTemplateTypes);
 
@@ -28,7 +29,7 @@ export class DictionaryCollector implements DictionaryCollectorInterface {
     filters: Record<string, string[]>
   ): Promise<Map<string, any>> {
     const params = this._createQuery(dictionariesMap, filters);
-    const { data: rawDictionaries }: AxiosResponse = await axios.get(STATIC_DATA_URL, {
+    const { data: rawDictionaries }: AxiosResponse = await axios.get(this.staticDataUrl, {
       params,
       paramsSerializer,
     });

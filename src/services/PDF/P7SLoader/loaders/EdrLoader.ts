@@ -1,4 +1,5 @@
 import YAML from "yaml";
+import axios from "axios";
 import type { LoaderStrategyInterface } from "@/services/PDF/P7SLoader/LoaderStrategyInterface";
 import { AbstractLoaderStrategy } from "@/services/PDF/P7SLoader/AbstractLoaderStrategy";
 import type { P7SLoadResultType } from "@/types/pdf/P7SLoadResultType";
@@ -18,7 +19,7 @@ export class EdrLoader extends AbstractLoaderStrategy<EdrType> implements Loader
     Assert.isDefined(documents, ERROR_MESSAGES.VALIDATION_FAILED.documentListUndefined);
 
     const { url, title } = this._getDocument(documents, config);
-    const { data } = await this.axios.get(url);
+    const { data } = await axios.get(url);
 
     return {
       url,

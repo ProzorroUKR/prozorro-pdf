@@ -16,8 +16,12 @@ import { ProtocolOnExtensionOfReviewPeriodDataMaker } from "@/services/PDF/docum
 import { TenderOfferDataMaker } from "@/services/PDF/document/documentData/TenderOfferDataMaker";
 import { EdrDataMaker } from "@/services/PDF/document/documentData/EdrDataMaker";
 import { ComplaintPostDataMaker } from "@/widgets/ComplaintPost/ComplaintPostDataMaker";
+import type { EnvironmentType } from "@/types/pdf/EnvironmentType.ts";
 
-export const documentStrategyMap = new Map<PdfTemplateTypes, new () => DocumentStrategyInterface>()
+export const documentStrategyMap = new Map<
+  PdfTemplateTypes,
+  new (envVars: EnvironmentType) => DocumentStrategyInterface
+>()
   .set(PdfTemplateTypes.XML, XmlDataMaker)
   .set(PdfTemplateTypes.KVT, KvtDataMaker)
   .set(PdfTemplateTypes.MONITORING, ConclusionOfMonitoringDataMaker)

@@ -1,7 +1,5 @@
 import { get } from "lodash";
 import { STRING } from "@/constants/string";
-import { DEFAULT_QR_LINK } from "@/constants/env";
-import type { TimeType } from "types/sign/TimeType";
 import { MONTHS_LIST } from "@/constants/monthList";
 import type { SignerType } from "@/types/sign/SignerType";
 import { TypeChecker } from "@/utils/checker/TypeChecker";
@@ -15,10 +13,14 @@ import { ERROR_MESSAGES } from "@/widgets/ErrorExceptionCore/configs/messages";
 import type { DocumentStrategyInterface } from "@/services/PDF/document/DocumentStrategyInterface";
 import { FOOTER_COLUMN_MARGIN, FOOTER_MARGIN, FOOTER_QR_MARGIN } from "@/config/pdf/announcementConstants";
 import type { PdfDocumentConfigType } from "@/types/pdf/PdfDocumentConfigType";
+import type { TimeType } from "@prozorro/prozorro-eds";
+import type { EnvironmentType } from "@/types/pdf/EnvironmentType";
 
 export abstract class AbstractDocumentStrategy implements DocumentStrategyInterface {
   readonly typeChecker = new TypeChecker();
   readonly emptyChecker = new EmptyChecker();
+
+  constructor(protected readonly envVars: EnvironmentType) {}
 
   getSignerDate({ day, month, year }: TimeType): string {
     const leadingZeroMonth = month.toString().length > 1 ? `${month}` : `0${month}`;
@@ -53,7 +55,7 @@ export abstract class AbstractDocumentStrategy implements DocumentStrategyInterf
           },
           {
             margin: FOOTER_QR_MARGIN,
-            qr: link || DEFAULT_QR_LINK,
+            qr: link || this.envVars.defaultQrLink,
             version: 9,
             fit: 100,
           },
