@@ -63,8 +63,6 @@ export const ANNOUNCEMENT_TEXTS_LIST: Record<string, string> = {
   missing_they: "відсутні",
   e_guarantee: "Електронна гарантія",
   dk_2015: "ДК 021:2015",
-  dk_2015_en: "ДК 021:2015",
-  dk_not_set: "Код ДК 021:2015 не вказаний",
   before: "до",
   after_auction_finish: "після завершення аукціону",
   signer: "Підписант:",

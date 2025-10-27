@@ -1,6 +1,6 @@
+import type { SignerType } from "@prozorro/prozorro-eds";
 import * as PDF_HELPER_CONST from "@/constants/pdf/pdfHelperConstants";
 import { AbstractDocumentStrategy } from "@/services/PDF/document/AbstractDocumentStrategy";
-import type { SignerType } from "types/sign/SignerType";
 import { DEFAULT_PAGE_MARGIN } from "@/config/pdf/announcementConstants";
 import type { PQContractType, PQDataComplexType } from "@/widgets/pq/types/PQTypes";
 import { STRING } from "@/constants/string";

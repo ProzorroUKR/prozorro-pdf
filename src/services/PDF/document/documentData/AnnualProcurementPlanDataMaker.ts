@@ -1,10 +1,10 @@
+import type { SignerType } from "@prozorro/prozorro-eds";
 import { AbstractDocumentStrategy } from "@/services/PDF/document/AbstractDocumentStrategy";
 import { PDF_FILED_KEYS } from "@/constants/pdf/pdfFieldKeys";
 import { ANNOUNCEMENT_PAGE_MARGIN } from "@/config/pdf/announcementConstants";
 import { MARGIN_TOP_3, MARGIN_TOP_5__BOTTOM_5__LEFT_MINUS_5 } from "@/config/pdf/conclusionOfMonitoringConstants";
 import { ANNOUNCEMENT_TEXTS_LIST } from "@/config/pdf/texts/ANNUAL_PROCUREMENT_PLAN";
 import * as PDF_HELPER_CONST from "@/constants/pdf/pdfHelperConstants";
-import type { SignerType } from "types/sign/SignerType";
 import type {
   AnnouncementItem,
   AnnouncementItemAdditionalClassification,

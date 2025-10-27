@@ -1,3 +1,4 @@
+import type { SignerType } from "@prozorro/prozorro-eds";
 import { AbstractDocumentStrategy } from "@/services/PDF/document/AbstractDocumentStrategy";
 import { PDF_FILED_KEYS } from "@/constants/pdf/pdfFieldKeys";
 import { ANNOUNCEMENT_PAGE_MARGIN } from "@/config/pdf/announcementConstants";
@@ -5,7 +6,6 @@ import * as CONCLUSION_OF_MONITORING_CONST from "@/config/pdf/conclusionOfMonito
 import { MARGIN_TOP_10__BOTTOM_15, MARGIN_TOP_3 } from "@/config/pdf/conclusionOfMonitoringConstants";
 import { PROTOCOL_ON_EXTENSION_OF_REVIEW_PERIOD } from "@/config/pdf/texts/PROTOCOL_ON_EXTENSION_OF_REVIEW_PERIOD";
 import * as PDF_HELPER_CONST from "@/constants/pdf/pdfHelperConstants";
-import type { SignerType } from "types/sign/SignerType";
 import type { AwardType } from "@/types/Tender/AwardType";
 import { Assert } from "@/widgets/ErrorExceptionCore/Assert";
 import { STRING } from "@/constants/string";

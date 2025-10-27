@@ -4,7 +4,6 @@
 Працює у зв’язці з бібліотекою електронного підпису [@prozorro/prozorro-eds](https://www.npmjs.com/package/@prozorro/prozorro-eds).
 
 Основні можливості:
-- ініціалізація через ProzorroEds;
 - відкриття документа у новій вкладці;
 - завантаження документа;
 - вставка документа у сторінку у вигляді `iframe`;
@@ -27,7 +26,7 @@ yarn add @prozorro/prozorro-pdf
 
 ## Швидкий старт
 
-Бібліотека незалежна від конкретного фреймворку — ви можете використовувати її у Vue.js, React, Angular чи будь-якому іншому середовищі.
+Бібліотека незалежна від конкретного фреймворку — ви можете використовувати її у Vue.js, React, Angular чи будь-яким іншим середовищем.
 
 ### Приклад використання (Vue.js + TypeScript)
 
@@ -146,11 +145,15 @@ onMounted(async () => {
 ## Release notes
 
 - **24.10.2025**
-  - Removed environment dependency from `-beta` library tag;
-  - Changed the arguments of `init` method;
+    - Removed environment dependency from `-beta` library tag;
+    - Changed the arguments of `init` method;
+- **27.10.2025**
+    - Remove ProzorroEds manual dependency from documentation
+    - Fix bugs in the `Announcement` type
 
 ---
 
 ## Ліцензія
 
 © Prozorro. Усі права захищені.
+
