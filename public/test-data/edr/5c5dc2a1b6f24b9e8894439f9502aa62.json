@@ -1,0 +1,156 @@
+{
+  "data": {
+    "milestones": [
+      {
+        "id": "7ed389828f3844a6953c46dc83d7de84",
+        "dueDate": "2025-03-03T22:20:34.438560+02:00",
+        "description": "1.1. Перелік виявлених невідповідностей: Учасником в складі тендерної пропозиції надана довідка про виконання аналогічного договору від 09.08.2022 №8, в якій відсутня інформація про адресу контрагента та контактну особу із зазначенням номеру телефону. \r\n1.2. Вимога тендерної документації та посилання на неї, щодо якої виявлені невідповідності:  пп.1.1 п. 1 Таблиці 1 Додатку 6.1 до тендерної документації.\r\n1.3. Перелік інформації та/або документів, які повинен подати учасник для усунення виявлених невідповідностей: Учасник повинен оновити довідку про виконання аналогічного договору з урахуванням встановлених невідповідностей, зокрема додати інформацію про адресу контрагента,  контактну особу контрагента із зазначенням номеру телефону, відповідно до вказаного в довідці договору.",
+        "date": "2025-03-03T22:20:25.798560+02:00",
+        "code": "24h"
+      }
+    ],
+    "id": "5c5dc2a1b6f24b9e8894439f9502aa62",
+    "status": "active",
+    "date": "2025-03-03T22:31:21.310721+02:00",
+    "value": {
+      "amount": 500,
+      "currency": "UAH",
+      "valueAddedTaxIncluded": true
+    },
+    "suppliers": [
+      {
+        "name": "Тестове підприємство",
+        "identifier": {
+          "scheme": "UA-EDR",
+          "id": "00137256",
+          "uri": "http://factory.example.com"
+        },
+        "address": {
+          "streetAddress": "вул. Тестова, 33",
+          "locality": "м. Київ",
+          "region": "м. Київ",
+          "postalCode": "21100",
+          "countryName": "Україна"
+        },
+        "contactPoint": {
+          "name": "Нейменко Нейм Неймович",
+          "email": "factory@example.com",
+          "telephone": "+380000000000"
+        },
+        "scale": "micro"
+      }
+    ],
+    "bid_id": "486720daa8364a44823e14bb43421b68",
+    "lotID": "dd22c9c085f64e019f943999b5b41fe5",
+    "documents": [
+      {
+        "confidentiality": "public",
+        "documentType": "registerExtract",
+        "id": "20cfde8f71354d53af211a12fd60e3c7",
+        "datePublished": "2025-03-03T22:03:24.106166+02:00",
+        "hash": "md5:7c4d793987f682c3c44e0bebd775cd40",
+        "title": "edr_identification.yaml",
+        "format": "application/yaml",
+        "url": "/test-data/edr/edr_identification_2.yaml",
+        "documentOf": "tender",
+        "dateModified": "2025-03-03T22:03:24",
+        "author": "bots",
+        "language": "uk"
+      },
+      {
+        "confidentiality": "public",
+        "documentType": "notice",
+        "id": "6be8d42835a04388a6e850da49afb456",
+        "datePublished": "2025-03-03T22:03:12.030321+02:00",
+        "hash": "md5:d41d8cd98f00b204e9800998ecf8427e",
+        "title": "award_patch_0_0_1_document_file.p7s",
+        "format": "text/plain",
+        "url": "https://public-docs-staging.prozorro.gov.ua/get/e3a125e8edc24b9a9af0b2983c25fc78?Signature=J769apzV4aK%2BzFkfHmwW6%2Fy5t47uG9Zzl96kfZygiXfgTve4xUoFYN4sE2LlRAOJqs5B%2FFILddJuDKKuZTzWCQ%3D%3D&KeyID=01b985cf",
+        "documentOf": "tender",
+        "dateModified": "2025-03-03T22:03:12.030321+02:00",
+        "author": "tender_owner",
+        "language": "uk"
+      },
+      {
+        "confidentiality": "public",
+        "documentType": "winningBid",
+        "id": "35ea8222906649adbe501d7d487f25d2",
+        "datePublished": "2025-03-03T22:16:25.523400+02:00",
+        "hash": "md5:ac6b0c30cb279091921657d796d3fbf5",
+        "title": "Визначити переможця",
+        "format": "application/pkcs7-signature",
+        "url": "https://public-docs-staging.prozorro.gov.ua/get/8cde2828128d41969860f3828e0266ce?Signature=LmIqu58nW4m6b32RMCFKkkm%2B%2BZgztf6QB0EJ9BfRovOFO4gMuYd%2BMy7tw1JhXzl1oUhZHOz%2FF64xyFCpxvsoBg%3D%3D&KeyID=01b985cf",
+        "documentOf": "tender",
+        "dateModified": "2025-03-03T22:16:25.523400+02:00",
+        "author": "tender_owner",
+        "language": "uk"
+      },
+      {
+        "confidentiality": "public",
+        "documentType": "winningBid",
+        "id": "d1f693faccc446638a38bfd406fbdfa9",
+        "datePublished": "2025-03-03T22:16:31.499425+02:00",
+        "hash": "md5:ac6b0c30cb279091921657d796d3fbf5",
+        "title": "Новий Документ до визначення переможця ЩЕ Документ до визначення переможця",
+        "format": "application/pkcs7-signature",
+        "url": "https://public-docs-staging.prozorro.gov.ua/get/8cde2828128d41969860f3828e0266ce?Signature=LmIqu58nW4m6b32RMCFKkkm%2B%2BZgztf6QB0EJ9BfRovOFO4gMuYd%2BMy7tw1JhXzl1oUhZHOz%2FF64xyFCpxvsoBg%3D%3D&KeyID=01b985cf",
+        "documentOf": "tender",
+        "dateModified": "2025-03-03T22:16:31.499425+02:00",
+        "author": "tender_owner",
+        "language": "uk"
+      },
+      {
+        "confidentiality": "public",
+        "documentType": "winningBid",
+        "id": "09b5a37a632a4fc38db9dfa0bc0cec6b",
+        "datePublished": "2025-03-03T22:16:39.557098+02:00",
+        "hash": "md5:ac6b0c30cb279091921657d796d3fbf5",
+        "title": "Новий 2 Документ до визначення переможця ЩЕ Документ до визначення переможця",
+        "format": "application/pkcs7-signature",
+        "url": "https://public-docs-staging.prozorro.gov.ua/get/8cde2828128d41969860f3828e0266ce?Signature=LmIqu58nW4m6b32RMCFKkkm%2B%2BZgztf6QB0EJ9BfRovOFO4gMuYd%2BMy7tw1JhXzl1oUhZHOz%2FF64xyFCpxvsoBg%3D%3D&KeyID=01b985cf",
+        "documentOf": "tender",
+        "dateModified": "2025-03-03T22:16:39.557098+02:00",
+        "author": "tender_owner",
+        "language": "uk"
+      },
+      {
+        "confidentiality": "public",
+        "documentType": "extensionReport",
+        "id": "4615c1ca85b444a5a3bc182e1d56179d",
+        "datePublished": "2025-03-03T22:25:23.820028+02:00",
+        "hash": "md5:060b92c5024896ab0c2440108ea52acd",
+        "title": "sign.p7s",
+        "format": "application/pkcs7-signature",
+        "url": "https://public-docs-staging.prozorro.gov.ua/get/fe2bde33c09e431fbfa503b693dbf0a1?Signature=MkP98a1xjPkyuBEptBmVA%2FBQgUmxwmuF7I75PKXZpY%2B7esQnIAXXUSsRfqfrHNuymvL1uAULYswBHBBZihefAg%3D%3D&KeyID=01b985cf",
+        "documentOf": "tender",
+        "dateModified": "2025-03-03T22:25:23.820028+02:00",
+        "author": "tender_owner",
+        "language": "uk"
+      },
+      {
+        "confidentiality": "public",
+        "documentType": "notice",
+        "id": "6be8d42835a04388a6e850da49afb456",
+        "datePublished": "2025-03-03T22:28:21.101722+02:00",
+        "hash": "md5:45efddcaee3673176242d48d43c96a40",
+        "title": "sign.p7s",
+        "format": "text/plain",
+        "url": "https://public-docs-staging.prozorro.gov.ua/get/0909d7b3eb9c4f9d8e2fc5f64b593a98?Signature=Vpfq7cyv6gzgNMbKD5hJbpj0EfUlAUc%2FL%2BUoUze35zkfiPU7vM3wY%2FCC92o%2Bwz3SrtslmWHCnOU2j5R05qJhBg%3D%3D&KeyID=01b985cf",
+        "documentOf": "tender",
+        "dateModified": "2025-03-03T22:28:21.101722+02:00",
+        "author": "tender_owner",
+        "language": "uk"
+      }
+    ],
+    "period": {
+      "startDate": "2025-03-03T22:03:11.427299+02:00",
+      "endDate": "2025-03-03T22:03:54.627299+02:00"
+    },
+    "qualified": true,
+    "eligible": true,
+    "complaintPeriod": {
+      "startDate": "2025-03-03T22:31:21.310721+02:00",
+      "endDate": "2025-03-03T22:32:47.710721+02:00"
+    }
+  }
+}

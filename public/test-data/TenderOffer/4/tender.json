@@ -1,0 +1,244 @@
+{
+  "data": {
+    "description": "Товар поставляється талонами номіналом 10 літрів\r\nПостачальник зобов'язаний:\r\nЗабезпечити наявність не менш ніж однієї з власних чи то партнерських АЗС на території міста Кременець Тернопільської області, де автотранспорт Замовника має можливість цілодобової заправки на відстані:\r\n- до 3 (трьох) кілометрів від місця стоянки автомобілів КП «Міськводгосп» місто Кременець (вул. Шевченка – кут. вул. Потік Ірва ). Відстань від місця розташування Замовника до АЗС Учасника визначається на підставі даних спідометру транспортного засобу.",
+    "plans": [
+      {
+        "id": "c1929e80ed774d93af5f3ee363400550"
+      }
+    ],
+    "date": "2024-05-16T13:28:25.571088+03:00",
+    "dateModified": "2024-05-16T13:28:25.571088+03:00",
+    "dateCreated": "2024-05-13T12:00:36.999822+03:00",
+    "tenderID": "UA-2024-05-13-004111-a",
+    "documents": [
+      {
+        "documentType": "contractProforma",
+        "id": "4aaec27c5c394c5ead5f3087f9800c7c",
+        "datePublished": "2024-05-13T12:00:37.658122+03:00",
+        "hash": "md5:c7c7ac1f33554b0beb054f1e1703836c",
+        "title": "ДОГОВІР газ.docx",
+        "format": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "url": "https://public-api.prozorro.gov.ua/api/2.5/tenders/cba7c1bd14aa4e0f9d44ec568d928321/documents/4aaec27c5c394c5ead5f3087f9800c7c?download=225a2a8cd3604ee5962f9d4054cc9603",
+        "documentOf": "tender",
+        "dateModified": "2024-05-13T12:00:37.658122+03:00",
+        "author": "tender_owner",
+        "language": "uk"
+      },
+      {
+        "documentType": "notice",
+        "id": "029957291fe54e6cb6473d6cc96b4139",
+        "datePublished": "2024-05-13T12:02:15.252547+03:00",
+        "hash": "md5:28f9f7827451083b1523ce5b39b9b024",
+        "title": "sign.p7s",
+        "format": "application/pkcs7-signature",
+        "url": "https://public-api.prozorro.gov.ua/api/2.5/tenders/cba7c1bd14aa4e0f9d44ec568d928321/documents/029957291fe54e6cb6473d6cc96b4139?download=565e95e69fba496db325a44fac27a3b0",
+        "documentOf": "tender",
+        "dateModified": "2024-05-13T12:02:15.252547+03:00",
+        "author": "tender_owner",
+        "language": "uk"
+      }
+    ],
+    "owner": "playtender.com.ua",
+    "title": "09130000-9 Нафта і дистиляти",
+    "mainProcurementCategory": "goods",
+    "procurementMethod": "selective",
+    "procurementMethodType": "priceQuotation",
+    "awardCriteria": "lowestCost",
+    "status": "complete",
+    "agreement": {
+      "id": "67298ddab2a5414e9f288fe53ada7ba7"
+    },
+    "value": {
+      "amount": 33600,
+      "currency": "UAH",
+      "valueAddedTaxIncluded": true
+    },
+    "tenderPeriod": {
+      "startDate": "2024-05-13T12:02:15.389910+03:00",
+      "endDate": "2024-05-16T07:00:00+03:00"
+    },
+    "procuringEntity": {
+      "name": "КОМУНАЛЬНЕ ПІДПРИЄМСТВО КРЕМЕНЕЦЬКОЇ МІСЬКОЇ РАДИ \"МІСЬКВОДГОСП\"",
+      "identifier": {
+        "scheme": "UA-EDR",
+        "id": "32291616",
+        "legalName": "КОМУНАЛЬНЕ ПІДПРИЄМСТВО КРЕМЕНЕЦЬКОЇ МІСЬКОЇ РАДИ \"МІСЬКВОДГОСП\""
+      },
+      "address": {
+        "streetAddress": "вулиця Словацького, 6",
+        "locality": "місто Кременець",
+        "region": "Тернопільська область",
+        "postalCode": "47003",
+        "countryName": "Україна"
+      },
+      "contactPoint": {
+        "name": "Черняк Валентин",
+        "email": "vodosov@ukr.net",
+        "telephone": "+380354622618"
+      },
+      "kind": "special"
+    },
+    "items": [
+      {
+        "id": "1816c95d6eccffaffb2b63a5b77b0d0d",
+        "description": "Газ скраплений",
+        "quantity": 1200,
+        "classification": {
+          "description": "Нафта і дистиляти",
+          "scheme": "ДК021",
+          "id": "09130000-9"
+        },
+        "deliveryDate": {
+          "endDate": "2024-12-31T00:00:00+02:00"
+        },
+        "deliveryAddress": {
+          "locality": "місто Кременець",
+          "region": "Тернопільська область",
+          "countryName": "Україна"
+        },
+        "unit": {
+          "name": "літр",
+          "code": "LTR"
+        },
+        "profile": "000148-09130000-748108-40996564"
+      }
+    ],
+    "criteria": [],
+    "noticePublicationDate": "2024-05-13T12:02:15.389910+03:00",
+    "bids": [
+      {
+        "status": "deleted",
+        "id": "d9ee440825454c1bb8a61fa0cdd389ba"
+      },
+      {
+        "id": "8de6e1d04cdf4a4fbb06aa1e496b2821",
+        "date": "2024-05-14T10:30:41.448792+03:00",
+        "documents": [
+          {
+            "documentType": "technicalSpecifications",
+            "id": "39a488c64cbe4c6baceb9e7a10946dbd",
+            "datePublished": "2024-05-14T10:30:44.134619+03:00",
+            "hash": "md5:873af2191ab5fe9b37217eae8daddaad",
+            "title": "Технічна специфікація.pdf",
+            "format": "application/octet-stream",
+            "url": "https://public-docs.prozorro.gov.ua/get/da7a75ce9b74488f88bcc225b7d1f90e?Signature=wnNXj9kIDOSRT3PQk5e9e6v5kLDrLlvUaaMknGgjRA9aUNqTBtc5mt4DtfnWL3uv%2BulE4oLL2rRm24Jagz%2FPCQ%3D%3D&KeyID=52462340",
+            "documentOf": "tender",
+            "dateModified": "2024-05-14T10:30:44.134619+03:00",
+            "language": "uk",
+            "confidentiality": "public"
+          },
+          {
+            "id": "0e5972809f304cce9cd23b09f794d18c",
+            "datePublished": "2024-05-14T10:36:16.807406+03:00",
+            "hash": "md5:f21cf28a0f6e93a2b63ae0eff75a09f9",
+            "title": "sign.p7s",
+            "format": "application/pkcs7-signature",
+            "url": "https://public-docs.prozorro.gov.ua/get/3b604e70b9064030b267776eff12f8e0?Signature=TI7ZJt4A2P8%2Be0HFWZP6%2F3bg8PcEeKvm5sawgXdPI%2FkjYDyDoYZDgpvBH7ab1HehsHQLt%2Fqtvo43lmXuzMBCCQ%3D%3D&KeyID=52462340",
+            "documentOf": "tender",
+            "dateModified": "2024-05-14T10:36:16.807406+03:00",
+            "language": "uk",
+            "confidentiality": "public"
+          }
+        ],
+        "tenderers": [],
+        "value": {},
+        "requirementResponses": [],
+        "status": "active",
+        "items": [
+          {
+            "id": "1816c95d6eccffaffb2b63a5b77b0d0d",
+            "description": "Газ нафтовий скраплений, АЗС WOG, талон",
+            "unit": {
+              "name": "літр",
+              "code": "LTR"
+            },
+            "quantity": 1200
+          }
+        ]
+      }
+    ],
+    "awardPeriod": {
+      "startDate": "2024-05-16T07:04:04.093294+03:00",
+      "endDate": "2024-05-16T08:25:09.732470+03:00"
+    },
+    "awards": [
+      {
+        "id": "2e0d16bab2714dae8172c4f47ee20d75",
+        "status": "active",
+        "date": "2024-05-16T08:25:09.732470+03:00",
+        "value": {
+          "amount": 31776,
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        },
+        "suppliers": [
+          {
+            "name": "ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ \"ПЕТРОЛ ПАРТНЕР\"",
+            "identifier": {
+              "scheme": "UA-EDR",
+              "id": "44763104",
+              "legalName": "ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ \"ПЕТРОЛ ПАРТНЕР\""
+            },
+            "address": {
+              "streetAddress": "вул.Яремчука Назарія,  будинок 1",
+              "locality": "Луцьк",
+              "region": "Волинська область",
+              "postalCode": "43023",
+              "countryName": "Україна"
+            },
+            "contactPoint": {
+              "name": "Михайловська Любов Орестівна",
+              "email": "Luba.Myhajlovska.zakupivli@wog.ua",
+              "telephone": "380673610312"
+            },
+            "scale": "micro"
+          }
+        ],
+        "bid_id": "8de6e1d04cdf4a4fbb06aa1e496b2821",
+        "documents": [
+          {
+            "id": "675cf21ee7c94132a1d71786d10de722",
+            "datePublished": "2024-05-16T08:25:01.380905+03:00",
+            "hash": "md5:f2fbab2aa7b5795b34a9849593b67a5f",
+            "title": "sign.p7s",
+            "format": "application/pkcs7-signature",
+            "url": "https://public-docs.prozorro.gov.ua/get/1344308835fc4c7db229c997763538c9?Signature=iBx%2F%2FIVXm%2FjiObuCnuwhHqHWXZvUvrgvHKrUAulTXN090WFGkkqmKwjYDd3vNqduI5TNsBr3uoQ2loJ1N8uKAQ%3D%3D&KeyID=52462340",
+            "documentOf": "tender",
+            "dateModified": "2024-05-16T08:25:01.380905+03:00",
+            "author": "tender_owner",
+            "language": "uk"
+          }
+        ]
+      }
+    ],
+    "contracts": [
+      {
+        "id": "92295f81c900479d818b72525c806668",
+        "status": "active",
+        "awardID": "2e0d16bab2714dae8172c4f47ee20d75",
+        "date": "2024-05-16T13:28:25.571088+03:00",
+        "contractID": "UA-2024-05-13-004111-a-b1",
+        "value": {
+          "amount": 31776,
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true,
+          "amountNet": 26480
+        }
+      }
+    ],
+    "id": "cba7c1bd14aa4e0f9d44ec568d928321"
+  },
+  "config": {
+    "hasAuction": false,
+    "hasAwardingOrder": true,
+    "hasValueRestriction": true,
+    "valueCurrencyEquality": true,
+    "hasPrequalification": false,
+    "minBidsNumber": 1,
+    "hasPreSelectionAgreement": true,
+    "hasTenderComplaints": false,
+    "hasAwardComplaints": false,
+    "hasCancellationComplaints": false,
+    "restricted": false
+  }
+}

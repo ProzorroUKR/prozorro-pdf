@@ -1,0 +1,163 @@
+{
+  "data": {
+    "status": "complete",
+    "procuringEntity": {
+      "id": "a4d8e3eda8744908a3acc078e80c8546",
+      "name": "Test Division Organization (AUTOMATION)",
+      "name_en": "Test Division Organization (AUTOMATION) EN",
+      "identifier": {
+        "scheme": "UA-EDR",
+        "id": "60100000",
+        "legalName": "Test Division Organization (AUTOMATION)",
+        "legalName_en": "Test Division Organization (AUTOMATION) EN"
+      },
+      "address": {
+        "streetAddress": "Вулиця, будинок, квартира",
+        "locality": "",
+        "region": "м. Київ",
+        "postalCode": "00601",
+        "countryName": "Україна"
+      },
+      "kind": "special"
+    },
+    "tender": {
+      "procurementMethod": "open",
+      "procurementMethodType": "aboveThreshold",
+      "tenderPeriod": {
+        "startDate": "2024-06-01T00:00:00+03:00"
+      }
+    },
+    "budget": {
+      "id": "2ef8c90715cd4446800d1f67fec3fdcf44111400-5",
+      "description": "Nobis provident minus molestiae dolorem nisi quos.",
+      "amount": 159893.52,
+      "currency": "UAH",
+      "amountNet": 0,
+      "project": {
+        "id": "2ef8c90715cd4446800d1f67fec3fdcf",
+        "name": "Nobis provident minus molestiae dolorem nisi quos."
+      },
+      "period": {
+        "startDate": "2024-06-01T00:00:00+03:00",
+        "endDate": "2024-06-30T23:59:00+03:00"
+      },
+      "notes": "Repudiandae cupiditate blanditiis officia ea earum.",
+      "breakdown": [
+        {
+          "id": "84a1e995c7614e50ba98e4b52d364412",
+          "title": "crimea",
+          "value": {
+            "amount": 38460,
+            "currency": "UAH"
+          }
+        },
+        {
+          "id": "b2ea3d60a08242558a620b60f93d2418",
+          "title": "other",
+          "description": "Erlang був цілеспрямовано розроблений для застосування в розподілених, відмовостійких, паралельних системах реального часу, для яких є стандартна бібліотека модулів і бібліотека шаблонних рішень (так званих поводжень) - фреймворк OTP.",
+          "value": {
+            "amount": 121433,
+            "currency": "UAH"
+          }
+        }
+      ]
+    },
+    "classification": {
+      "description": "Фарби та шпалери",
+      "scheme": "ДК021",
+      "id": "44111400-5"
+    },
+    "additionalClassifications": [
+      {
+        "scheme": "ДК003",
+        "id": "1120",
+        "description": "Вищі посадові особи державних органів влади"
+      },
+      {
+        "scheme": "КЕКВ",
+        "id": "2110",
+        "description": "Оплата праці"
+      }
+    ],
+    "planID": "UA-P-2024-05-06-000312-a",
+    "mode": "test",
+    "items": [
+      {
+        "id": "0698c12043bc40fbb8cd0828cdaffd91",
+        "classification": {
+          "description": "Сходові підіймачі",
+          "scheme": "ДК021",
+          "id": "44115600-5"
+        },
+        "unit": {
+          "name": "метр на секунду в квадраті",
+          "code": "MSK"
+        },
+        "quantity": 4.72,
+        "deliveryDate": {
+          "endDate": "2024-07-05T00:00:00+03:00"
+        },
+        "description": "i-d1bbab29 Eaque tempora illum ab modi sed nulla."
+      },
+      {
+        "id": "f3bc409470c34b4db7c71b8ce7a1d08e",
+        "classification": {
+          "description": "Плитняк",
+          "scheme": "ДК021",
+          "id": "44113200-7"
+        },
+        "unit": {
+          "name": "кубічний метр на годину",
+          "code": "MQH"
+        },
+        "quantity": 11.12,
+        "deliveryDate": {
+          "endDate": "2024-07-05T00:00:00+03:00"
+        },
+        "description": "i-ebe0830c Id ab labore dolore nobis aspernatur."
+      }
+    ],
+    "buyers": [
+      {
+        "id": "75c36ef65dcd42618b29de25e473b471",
+        "name": "Test Division Organization (AUTOMATION)",
+        "identifier": {
+          "scheme": "UA-EDR",
+          "id": "60100000",
+          "legalName": "Test Division Organization (AUTOMATION)"
+        },
+        "address": {
+          "streetAddress": "Вулиця, будинок, квартира",
+          "locality": "",
+          "region": "м. Київ",
+          "postalCode": "00601",
+          "countryName": "Україна"
+        },
+        "kind": "special",
+        "contactPoint": {
+          "name": "divisionAdminSNOrg divisionAdminFNOrg ",
+          "email": "divisionAdmin@division.com",
+          "telephone": "380630300000"
+        }
+      }
+    ],
+    "owner": "e-tender.biz",
+    "dateCreated": "2024-05-06T11:34:35.315921+03:00",
+    "dateModified": "2024-05-06T11:34:43.605105+03:00",
+    "datePublished": "2024-05-06T11:34:35.315921+03:00",
+    "documents": [
+      {
+        "hash": "md5:cae592a89e21b76d7f12a2e887dea095",
+        "title": "sign.p7s",
+        "format": "application/pkcs7-signature",
+        "url": "/test-data/AnnualProcurementPlan/4/sign.p7s",
+        "language": "uk",
+        "id": "d5e332fe1fba4139b193c3b6c8344ab7",
+        "datePublished": "2024-05-06T11:34:38.370577+03:00",
+        "dateModified": "2024-05-06T11:34:38.370577+03:00"
+      }
+    ],
+    "tender_id": "5566365f81264afeb9f4c180ef0f1738",
+    "id": "b4f0b9d4de05435cad9fa7000b4d98fc"
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "data": {
+    "status": "complete",
+    "procuringEntity": {
+      "id": "5522c7d43c134c8fac477555c7604ae0",
+      "name": "\u0426\u0435\u043d\u0442\u0440\u0430\u043b\u044c\u043d\u0435 \u0443\u043f\u0440\u0430\u0432\u043b\u0456\u043d\u043d\u044f \u0441\u043f\u0440\u0430\u0432\u0430\u043c\u0438 \u041c\u0456\u043d\u0456\u0441\u0442\u0435\u0440\u0441\u0442\u0432\u0430 \u043e\u0431\u043e\u0440\u043e\u043d\u0438 \u0423\u043a\u0440\u0430\u0457\u043d\u0438",
+      "name_en": "Ministry of Defence and General Staff of the Armed Forces of Ukraine Official Activities Support Centre",
+      "name_ru": "\u0426\u0435\u043d\u0442\u0440\u0430\u043b\u044c\u043d\u0435 \u0443\u043f\u0440\u0430\u0432\u043b\u0456\u043d\u043d\u044f \u0441\u043f\u0440\u0430\u0432\u0430\u043c\u0438 \u041c\u0456\u043d\u0456\u0441\u0442\u0435\u0440\u0441\u0442\u0432\u0430 \u043e\u0431\u043e\u0440\u043e\u043d\u0438 \u0423\u043a\u0440\u0430\u0457\u043d\u0438",
+      "identifier": {
+        "scheme": "UA-EDR",
+        "id": "24978319",
+        "legalName": "\u0426\u0435\u043d\u0442\u0440\u0430\u043b\u044c\u043d\u0435 \u0443\u043f\u0440\u0430\u0432\u043b\u0456\u043d\u043d\u044f \u0441\u043f\u0440\u0430\u0432\u0430\u043c\u0438 \u041c\u0456\u043d\u0456\u0441\u0442\u0435\u0440\u0441\u0442\u0432\u0430 \u043e\u0431\u043e\u0440\u043e\u043d\u0438 \u0423\u043a\u0440\u0430\u0457\u043d\u0438",
+        "legalName_en": "Ministry of Defence and General Staff of the Armed Forces of Ukraine Official Activities Support Centre",
+        "legalName_ru": "\u0426\u0435\u043d\u0442\u0440\u0430\u043b\u044c\u043d\u0435 \u0443\u043f\u0440\u0430\u0432\u043b\u0456\u043d\u043d\u044f \u0441\u043f\u0440\u0430\u0432\u0430\u043c\u0438 \u041c\u0456\u043d\u0456\u0441\u0442\u0435\u0440\u0441\u0442\u0432\u0430 \u043e\u0431\u043e\u0440\u043e\u043d\u0438 \u0423\u043a\u0440\u0430\u0457\u043d\u0438"
+      },
+      "address": {
+        "streetAddress": "\u043f\u0440\u043e\u0441\u043f\u0435\u043a\u0442 \u041f\u043e\u0432\u0456\u0442\u0440\u043e\u0444\u043b\u043e\u0442\u0441\u044c\u043a\u0438\u0439 6",
+        "locality": "\u041a\u0438\u0457\u0432",
+        "region": "\u041a\u0438\u0457\u0432\u0441\u044c\u043a\u0430 \u043e\u0431\u043b\u0430\u0441\u0442\u044c",
+        "postalCode": "03168",
+        "countryName": "\u0423\u043a\u0440\u0430\u0457\u043d\u0430"
+      },
+      "kind": "defense"
+    },
+    "tender": {
+      "procurementMethod": "open",
+      "procurementMethodType": "aboveThresholdUA",
+      "tenderPeriod": {
+        "startDate": "2024-03-01T00:00:00+02:00"
+      }
+    },
+    "budget": {
+      "id": "d41d8cd98f00b204e9800998ecf8427e",
+      "description": "\u041a\u0430\u0432\u0430 \u0432 \u0437\u0435\u0440\u043d\u0430\u0445",
+      "amount": 60000.0,
+      "currency": "UAH",
+      "period": {
+        "startDate": "2024-01-01T00:00:00+02:00",
+        "endDate": "2024-12-31T23:59:59+02:00"
+      },
+      "breakdown": [
+        {
+          "id": "81423af8cca24aa39cb26ddb518b4716",
+          "title": "state",
+          "value": {
+            "amount": 60000.0,
+            "currency": "UAH"
+          }
+        }
+      ]
+    },
+    "classification": {
+      "description": "\u041a\u0430\u0432\u0430, \u0447\u0430\u0439 \u0442\u0430 \u0441\u0443\u043f\u0443\u0442\u043d\u044f \u043f\u0440\u043e\u0434\u0443\u043a\u0446\u0456\u044f",
+      "scheme": "\u0414\u041a021",
+      "id": "15860000-4"
+    },
+    "additionalClassifications": [
+      {
+        "scheme": "\u041a\u0415\u041a\u0412",
+        "id": "2230",
+        "description": "\u041f\u0440\u043e\u0434\u0443\u043a\u0442\u0438 \u0445\u0430\u0440\u0447\u0443\u0432\u0430\u043d\u043d\u044f"
+      }
+    ],
+    "planID": "UA-P-2024-03-15-012966-a",
+    "items": [
+      {
+        "id": "9d6c0fac8bd9a47c052b0384670e492e",
+        "classification": {
+          "description": "\u041a\u0430\u0432\u0430, \u0447\u0430\u0439 \u0442\u0430 \u0441\u0443\u043f\u0443\u0442\u043d\u044f \u043f\u0440\u043e\u0434\u0443\u043a\u0446\u0456\u044f",
+          "scheme": "\u0414\u041a021",
+          "id": "15860000-4"
+        },
+        "unit": {
+          "name": "\u043a\u0456\u043b\u043e\u0433\u0440\u0430\u043c",
+          "code": "KGM"
+        },
+        "quantity": 80.0,
+        "deliveryDate": {
+          "endDate": "2024-05-27T16:00:00+03:00"
+        },
+        "description": "\u043a\u0430\u0432\u0430 Lavazza Oro \u0432 \u0437\u0435\u0440\u043d\u0430\u0445, \u0444\u0430\u0441\u043e\u0432\u0430\u043d\u0430 \u043f\u043e 1 \u043a\u0433"
+      }
+    ],
+    "buyers": [
+      {
+        "id": "30eadeb611b143be8a20a34d11950545",
+        "name": "\u0426\u0435\u043d\u0442\u0440\u0430\u043b\u044c\u043d\u0435 \u0443\u043f\u0440\u0430\u0432\u043b\u0456\u043d\u043d\u044f \u0441\u043f\u0440\u0430\u0432\u0430\u043c\u0438 \u041c\u0456\u043d\u0456\u0441\u0442\u0435\u0440\u0441\u0442\u0432\u0430 \u043e\u0431\u043e\u0440\u043e\u043d\u0438 \u0423\u043a\u0440\u0430\u0457\u043d\u0438",
+        "name_en": "Ministry of Defence and General Staff of the Armed Forces of Ukraine Official Activities Support Centre",
+        "identifier": {
+          "scheme": "UA-EDR",
+          "id": "24978319",
+          "legalName": "\u0426\u0435\u043d\u0442\u0440\u0430\u043b\u044c\u043d\u0435 \u0443\u043f\u0440\u0430\u0432\u043b\u0456\u043d\u043d\u044f \u0441\u043f\u0440\u0430\u0432\u0430\u043c\u0438 \u041c\u0456\u043d\u0456\u0441\u0442\u0435\u0440\u0441\u0442\u0432\u0430 \u043e\u0431\u043e\u0440\u043e\u043d\u0438 \u0423\u043a\u0440\u0430\u0457\u043d\u0438",
+          "legalName_en": "Ministry of Defence and General Staff of the Armed Forces of Ukraine Official Activities Support Centre"
+        },
+        "address": {
+          "streetAddress": "\u043f\u0440\u043e\u0441\u043f\u0435\u043a\u0442 \u041f\u043e\u0432\u0456\u0442\u0440\u043e\u0444\u043b\u043e\u0442\u0441\u044c\u043a\u0438\u0439 6",
+          "locality": "\u041a\u0438\u0457\u0432",
+          "region": "\u041a\u0438\u0457\u0432\u0441\u044c\u043a\u0430 \u043e\u0431\u043b\u0430\u0441\u0442\u044c",
+          "postalCode": "03168",
+          "countryName": "\u0423\u043a\u0440\u0430\u0457\u043d\u0430"
+        },
+        "kind": "defense"
+      }
+    ],
+    "documents": [
+      {
+        "title_en": "sign.p7s",
+        "title_ru": "sign.p7s",
+        "description": "SHA1: 4e2a476ec5f8382dd682a7b8418e388973d77141",
+        "id": "2c2f7d0766df4b29a421fd303374ab49",
+        "datePublished": "2024-03-15T15:51:37.199925+02:00",
+        "hash": "md5:3d31ead85e7f0b5927f6b1e28c173693",
+        "title": "sign.p7s",
+        "format": "application/pkcs7-signature",
+        "url": "https://public-api.prozorro.gov.ua/api/2.5/plans/1be8a5cd63bb47e6ac69f3e7b7b551f4/documents/2c2f7d0766df4b29a421fd303374ab49?download=89733f5f5c3e4b4eb65150a701c49da6",
+        "dateModified": "2024-03-15T15:51:37.199925+02:00",
+        "language": "uk"
+      },
+      {
+        "title_en": "sign.p7s",
+        "title_ru": "sign.p7s",
+        "description": "SHA1: 57745de94095448f5997e389505736f7cf7c57d8",
+        "id": "2c2f7d0766df4b29a421fd303374ab49",
+        "datePublished": "2024-03-15T16:36:18.790929+02:00",
+        "hash": "md5:382b69aa6fd24a785301251f2f3b13dc",
+        "title": "sign.p7s",
+        "format": "application/pkcs7-signature",
+        "url": "/test-data/AnnualProcurementPlan/sign.p7s",
+        "dateModified": "2024-03-15T16:36:18.790929+02:00",
+        "language": "uk"
+      }
+    ],
+    "owner": "netcast.com.ua",
+    "dateCreated": "2024-03-15T15:50:15.138186+02:00",
+    "dateModified": "2024-03-15T17:19:55.954918+02:00",
+    "datePublished": "2024-03-15T15:50:15.138186+02:00",
+    "tender_id": "2eb49384064a48d69efad83765ac008f",
+    "id": "1be8a5cd63bb47e6ac69f3e7b7b551f4"
+  }
+}

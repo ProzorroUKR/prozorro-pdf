@@ -1,0 +1,128 @@
+{
+  "data": {
+    "tender_id": "2e98288c07e245a3bc386314ea25198c",
+    "monitoring_id": "UA-M-2021-02-24-000005",
+    "status": "declined",
+    "reasons": [
+      "authorities",
+      "media"
+    ],
+    "procuringStages": [
+      "planning",
+      "awarding"
+    ],
+    "monitoringPeriod": {
+      "startDate": "2021-02-24T18:06:20.166884+02:00",
+      "endDate": "2021-03-18T00:00:00+02:00"
+    },
+    "eliminationPeriod": {
+      "startDate": "2021-02-26T10:28:39.182721+02:00",
+      "endDate": "2021-03-04T00:00:00+02:00"
+    },
+    "parties": [
+      {
+        "id": "815ae70a03e14ffc824c32d9424391ff",
+        "name": "ДАСУ (Київська обл.)",
+        "datePublished": "2021-02-24T15:17:47.884556+02:00",
+        "identifier": {
+          "scheme": "UA-EDR",
+          "id": "81553209",
+          "legalName": "ДАСУ",
+          "uri": "http://www.dkrs.gov.ua"
+        },
+        "address": {
+          "streetAddress": "Бульварно-Кудрявська, 20",
+          "locality": "Київ",
+          "region": "Київська",
+          "countryName": "Ukraine"
+        },
+        "contactPoint": {
+          "email": "smithers@dasu.prozorro.gov.ua",
+          "telephone": "+4736430741362",
+          "name": "ДАСУ (Київська обл.)"
+        },
+        "roles": [
+          "sas"
+        ]
+      },
+      {
+        "id": "db01cd4ed1384708af15739764a51221",
+        "name": "ДАСУ (Київська обл.)",
+        "datePublished": "2021-02-26T13:04:47.557774+02:00",
+        "identifier": {
+          "scheme": "UA-EDR",
+          "id": "90315242",
+          "legalName": "ДАСУ",
+          "uri": "http://www.dkrs.gov.ua"
+        },
+        "address": {
+          "streetAddress": "Бульварно-Кудрявська, 33",
+          "locality": "Київ",
+          "region": "Київська",
+          "countryName": "Ukraine"
+        },
+        "contactPoint": {
+          "email": "skinner@dasu.prozorro.gov.ua",
+          "telephone": "+7644535424176",
+          "name": "ДАСУ (Київська обл.)"
+        },
+        "roles": [
+          "sas"
+        ]
+      }
+    ],
+    "dateModified": "2021-02-26T13:04:47.565872+02:00",
+    "endDate": "2021-03-18T00:00:00+02:00",
+    "dateCreated": "2021-02-24T15:17:47.709239+02:00",
+    "id": "f6b5694c94f44b93af6f54213987cd65",
+    "decision": {
+      "description": "Опис рішення",
+      "documents": [
+        {
+          "id": "e2770bc9c22947dd901b067e2ea8c33e",
+          "hash": "md5:4f2ceee330314b5bcb22fa07ebf68180",
+          "title": "sign.p7s",
+          "format": "application/pkcs7-signature",
+          "url": "https://public-docs-sandbox-2.prozorro.gov.ua/get/4cfec87ed342457a89710b7097361fdf?Signature=Vxr%2FpriU5NmhkxuH0QLu9dmYSIA0blMjjYVS710UNb8ogdAYlcWF%2FJotv8ZPNdfrznihkF5yTEj0YpG7Rg1qCw%253D%253D&KeyID=1331dc52",
+          "datePublished": "2021-02-24T18:06:20.152907+02:00",
+          "dateModified": "2021-02-24T18:06:20.152939+02:00",
+          "author": "monitoring_owner"
+        }
+      ],
+      "dateCreated": "2021-02-24T18:06:20.153098+02:00",
+      "datePublished": "2021-02-24T18:06:20.166884+02:00",
+      "date": "2021-02-24T00:00:00+02:00",
+      "relatedParty": "815ae70a03e14ffc824c32d9424391ff"
+    },
+    "conclusion": {
+      "documents": [
+        {
+          "id": "a2e916638ce14cc3ac041daa9d1611ec",
+          "hash": "md5:aa7cc835b957fbc36710a77b18e1239f",
+          "title": "conclusion.sign.p7s",
+          "format": "application/pkcs7-signature",
+          "url": "https://public-docs.prozorro.gov.ua/get/cc72eae33d224baba5869e6d3c8f104e?Signature=Pzk8U0mrRduWWLBeGVuO0lncNpA7oF%252BvjsInd4dMUDDLUJn4kpkoYz26MDGXjpz8tQD52J%2FBdIBfzLBfW4XpBQ%253D%253D&KeyID=52462340",
+          "datePublished": "2020-10-27T11:25:37.062211+02:00",
+          "dateModified": "2020-10-27T11:25:37.062268+02:00",
+          "author": "monitoring_owner"
+        },
+        {
+          "id": "dc87f8b0480d402d9be75dd72bdee9ac",
+          "hash": "md5:8247d7daa2cb68e69ac59fd1fe35d19d",
+          "title": "conclusion.sign.p7s",
+          "format": "application/pkcs7-signature",
+          "url": "/test-data/conclusion.sign.p7s",
+          "datePublished": "2021-02-26T10:28:39.167586+02:00",
+          "dateModified": "2021-02-26T10:28:39.167597+02:00"
+        }
+      ],
+      "dateCreated": "2021-02-26T10:28:39.167697+02:00",
+      "datePublished": "2021-02-26T10:28:39.182721+02:00",
+      "violationOccurred": false,
+      "auditFinding": "Інформація про результати моніторингу закупівлі у розрізі стадій проведення процедури закупівлі",
+      "stringsAttached": "Зобов’язання щодо усунення порушення (порушень) законодавства у сфері публічних закупівель",
+      "description": "Висновок про наявність або відсутність порушень законодавства",
+      "date": "2021-02-26T00:00:00+02:00"
+    }
+  }
+}

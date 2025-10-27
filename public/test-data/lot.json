@@ -1,0 +1,960 @@
+{
+  "plans": [
+    {
+      "id": "d414967d90a04615b112455311581eba"
+    }
+  ],
+  "criteria": [
+    {
+      "id": "6e309edf5d044989998f98d6ec81fb92",
+      "title": "Вчинення злочинів, учинених з корисливих мотивів",
+      "description": "Службова (посадова) особа учасника процедури закупівлі, яка підписала тендерну пропозицію (або уповноважена на підписання договору в разі переговорної процедури закупівлі) або фізична особа, яка є учасником процедури закупівлі, не була засуджена за кримінальне правопорушення, вчинене з корисливих мотивів (зокрема, пов’язане з хабарництвом та відмиванням коштів), судимість з якої знято або погашено у встановленому законом порядку",
+      "source": "tenderer",
+      "relatesTo": "tenderer",
+      "classification": {
+        "scheme": "ESPD211",
+        "id": "CRITERION.EXCLUSION.CONVICTIONS.PARTICIPATION_IN_CRIMINAL_ORGANISATION"
+      },
+      "legislation": [
+        {
+          "version": "2020-04-19",
+          "identifier": {
+            "id": "922-VIII",
+            "legalName": "Закон України \"Про публічні закупівлі\"",
+            "uri": "https://zakon.rada.gov.ua/laws/show/922-19"
+          },
+          "type": "NATIONAL_LEGISLATION",
+          "article": "17.1.5"
+        },
+        {
+          "version": "2020-04-19",
+          "identifier": {
+            "id": "922-VIII",
+            "legalName": "Закон України \"Про публічні закупівлі\"",
+            "uri": "https://zakon.rada.gov.ua/laws/show/922-19"
+          },
+          "type": "NATIONAL_LEGISLATION",
+          "article": "17.1.6"
+        }
+      ],
+      "requirementGroups": [
+        {
+          "id": "803b57e445614a059c05f9b9a73f973d",
+          "description": "Учасник фізична особа підтверджує, що",
+          "requirements": [
+            {
+              "id": "a139efb4096f484aadedbe2efb9688e2",
+              "title": "Фізична особа, яка є учасником процедури закупівлі, не була засуджена за кримінальне правопорушення, вчинене з корисливих мотивів (зокрема, пов’язане з хабарництвом та відмиванням коштів), судимість з якої знято або погашено у встановленому законом порядку",
+              "dataType": "boolean",
+              "expectedValue": "true",
+              "status": "active",
+              "datePublished": "2022-10-25T14:24:28.895993+03:00"
+            }
+          ]
+        },
+        {
+          "id": "0b04c5ebeb6d4071886833e5d0b1ec3b",
+          "description": "Учасник юридична особа підтверджує, що",
+          "requirements": [
+            {
+              "id": "db13276ce55246f1bf404c29b1145605",
+              "title": "Службова (посадова) особа учасника процедури закупівлі, яка підписала тендерну пропозицію (або уповноважена на підписання договору в разі переговорної процедури закупівлі), не була засуджена за кримінальне правопорушення, вчинене з корисливих мотивів (зокрема, пов’язане з хабарництвом, шахрайством та відмиванням коштів), судимість з якої знято або погашено у встановленому законом порядку",
+              "dataType": "boolean",
+              "expectedValue": "true",
+              "status": "active",
+              "datePublished": "2022-10-25T14:24:28.896137+03:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "60dcd66ee83c4833a7f37040af2e3417",
+      "title": "Вчинення економічних правопорушень",
+      "description": "Суб'єкт господарювання (учасник) протягом останніх трьох років не притягувався до відповідальності за порушення, передбачене пунктом 4 частини другої статті 6, пунктом 1 статті 50 Закону України \"Про захист економічної конкуренції\", у вигляді вчинення антиконкурентних узгоджених дій, що стосуються спотворення результатів тендерів",
+      "source": "tenderer",
+      "relatesTo": "tenderer",
+      "classification": {
+        "scheme": "ESPD211",
+        "id": "CRITERION.EXCLUSION.CONVICTIONS.FRAUD"
+      },
+      "legislation": [
+        {
+          "version": "2020-04-19",
+          "identifier": {
+            "id": "922-VIII",
+            "legalName": "Закон України \"Про публічні закупівлі\"",
+            "uri": "https://zakon.rada.gov.ua/laws/show/922-19"
+          },
+          "type": "NATIONAL_LEGISLATION",
+          "article": "17.1.4"
+        },
+        {
+          "version": "2020-02-13",
+          "identifier": {
+            "id": "2210-III",
+            "legalName": "Закон України \"Про захист економічної конкуренції\"",
+            "uri": "https://zakon.rada.gov.ua/laws/show/2210-14"
+          },
+          "type": "NATIONAL_LEGISLATION",
+          "article": "6.2.4"
+        },
+        {
+          "version": "2020-02-13",
+          "identifier": {
+            "id": "2210-III",
+            "legalName": "Закон України \"Про захист економічної конкуренції\"",
+            "uri": "https://zakon.rada.gov.ua/laws/show/2210-14"
+          },
+          "type": "NATIONAL_LEGISLATION",
+          "article": "50.1"
+        }
+      ],
+      "requirementGroups": [
+        {
+          "id": "6b68c01d886144a59180cd2cdd8f17d7",
+          "description": "Учасник підтверджує, що",
+          "requirements": [
+            {
+              "id": "6ba8273556714232b06ee9d1ee186d4c",
+              "title": "Суб'єкт господарювання (учасник) протягом останніх трьох років не притягувався до відповідальності за порушення, передбачене пунктом 4 частини другої статті 6, пунктом 1 статті 50 Закону України \"Про захист економічної конкуренції\", у вигляді вчинення антиконкурентних узгоджених дій, що стосуються спотворення результатів тендерів",
+              "dataType": "boolean",
+              "expectedValue": "true",
+              "status": "active",
+              "datePublished": "2022-10-25T14:24:28.899273+03:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "793b3bb26d4547e8afa1c742a84d25df",
+      "title": "Вчинення корупційних правопорушень",
+      "description": "Відомості про юридичну особу, яка є учасником процедури закупівлі, не внесено до Єдиного державного реєстру осіб, які вчинили корупційні або пов'язані з корупцією правопорушення. Службову (посадову) особу учасника процедури закупівлі, яку уповноважено учасником представляти його інтереси під час проведення процедури закупівлі, фізичну особу, яка є учасником, не було притягнуто згідно із законом до відповідальності за вчинення корупційного правопорушення або правопорушення, пов'язаного з корупцією",
+      "source": "tenderer",
+      "relatesTo": "tenderer",
+      "classification": {
+        "scheme": "ESPD211",
+        "id": "CRITERION.EXCLUSION.CONVICTIONS.CORRUPTION"
+      },
+      "legislation": [
+        {
+          "version": "2020-04-19",
+          "identifier": {
+            "id": "922-VIII",
+            "legalName": "Закон України \"Про публічні закупівлі\"",
+            "uri": "https://zakon.rada.gov.ua/laws/show/922-19"
+          },
+          "type": "NATIONAL_LEGISLATION",
+          "article": "17.1.2"
+        },
+        {
+          "version": "2020-04-19",
+          "identifier": {
+            "id": "922-VIII",
+            "legalName": "Закон України \"Про публічні закупівлі\"",
+            "uri": "https://zakon.rada.gov.ua/laws/show/922-19"
+          },
+          "type": "NATIONAL_LEGISLATION",
+          "article": "17.1.3"
+        }
+      ],
+      "requirementGroups": [
+        {
+          "id": "cb7d9bec2b9046188c2bd0701aa81ab8",
+          "description": "Учасник підтверджує, що",
+          "requirements": [
+            {
+              "id": "8f52189f2bea4b7785b8f4608d5d98e3",
+              "title": "Відомості про юридичну особу, яка є учасником процедури закупівлі, не внесено до Єдиного державного реєстру осіб, які вчинили корупційні або пов'язані з корупцією правопорушення",
+              "dataType": "boolean",
+              "expectedValue": "true",
+              "status": "active",
+              "datePublished": "2022-10-25T14:24:28.902842+03:00"
+            },
+            {
+              "id": "93c108b25b2c4ed59dfa7e79378742ba",
+              "title": "Службову (посадову) особу учасника процедури закупівлі, яку уповноважено учасником представляти його інтереси під час проведення процедури закупівлі, фізичну особу, яка є учасником, не було притягнуто згідно із законом до відповідальності за вчинення корупційного правопорушення або правопорушення, пов'язаного з корупцією",
+              "dataType": "boolean",
+              "expectedValue": "true",
+              "status": "active",
+              "datePublished": "2022-10-25T14:24:28.902944+03:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3d967ca5581d45a68aeb4f65dda2a2bf",
+      "title": "Вчинення правопорушень, пов'язаних з використанням дитячої праці чи будь-якими формами торгівлі людьми",
+      "description": "Службова (посадова) особа учасника процедури закупівлі, яку уповноважено учасником представляти його інтереси під час проведення процедури закупівлі, фізичну особу, яка є учасником, не було притягнуто згідно із законом до відповідальності за вчинення правопорушення, пов'язаного з використанням дитячої праці чи будь-якими формами торгівлі людьми",
+      "source": "tenderer",
+      "relatesTo": "tenderer",
+      "classification": {
+        "scheme": "ESPD211",
+        "id": "CRITERION.EXCLUSION.CONVICTIONS.CHILD_LABOUR-HUMAN_TRAFFICKING"
+      },
+      "legislation": [
+        {
+          "version": "2020-04-19",
+          "identifier": {
+            "id": "922-VIII",
+            "legalName": "Закон України \"Про публічні закупівлі\"",
+            "uri": "https://zakon.rada.gov.ua/laws/show/922-19"
+          },
+          "type": "NATIONAL_LEGISLATION",
+          "article": "17.1.12"
+        }
+      ],
+      "requirementGroups": [
+        {
+          "id": "fe22d1017d094575b61ff3b316071526",
+          "description": "Учасник підтверджує, що",
+          "requirements": [
+            {
+              "id": "8cb3e8a1ef1c4a138693bca17b018291",
+              "title": "Службова (посадова) особа учасника процедури закупівлі, яку уповноважено учасником представляти його інтереси під час проведення процедури закупівлі, фізичну особу, яка є учасником, не було притягнуто згідно із законом до відповідальності за вчинення правопорушення, пов'язаного з використанням дитячої праці чи будь-якими формами торгівлі людьми",
+              "dataType": "boolean",
+              "expectedValue": "true",
+              "status": "active",
+              "datePublished": "2022-10-25T14:24:28.905363+03:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7c1df7df3db84386bc83e957600d3e7c",
+      "title": "Заборгованість зі сплати податків і зборів (обов'язкових платежів)",
+      "description": "Учасник процедури закупівлі не має заборгованості зі сплати податків і зборів (обов'язкових платежів)",
+      "source": "tenderer",
+      "relatesTo": "tenderer",
+      "classification": {
+        "scheme": "ESPD211",
+        "id": "CRITERION.EXCLUSION.CONTRIBUTIONS.PAYMENT_OF_TAXES"
+      },
+      "legislation": [
+        {
+          "version": "2020-04-19",
+          "identifier": {
+            "id": "922-VIII",
+            "legalName": "Закон України \"Про публічні закупівлі\"",
+            "uri": "https://zakon.rada.gov.ua/laws/show/922-19"
+          },
+          "type": "NATIONAL_LEGISLATION",
+          "article": "17.1.13"
+        }
+      ],
+      "requirementGroups": [
+        {
+          "id": "505849c4f042406b9daac3a4f2b0bc74",
+          "description": "Учасник підтверджує, що",
+          "requirements": [
+            {
+              "id": "07242b0a49454c258cc743c7b91ef957",
+              "title": "Він не має заборгованості зі сплати податків і зборів (обов'язкових платежів)",
+              "dataType": "boolean",
+              "expectedValue": "true",
+              "status": "active",
+              "datePublished": "2022-10-25T14:24:28.911634+03:00"
+            }
+          ]
+        },
+        {
+          "id": "75478ac9ca7f479199ba60c9f11f360c",
+          "description": "Учасник підтверджує, що",
+          "requirements": [
+            {
+              "id": "dca2af922dc8470a957ac740b5c9861d",
+              "title": "Він має заборгованість зі сплати податків і зборів (обов'язкових платежів)",
+              "dataType": "boolean",
+              "expectedValue": "true",
+              "status": "active",
+              "datePublished": "2022-10-25T14:24:28.911785+03:00"
+            },
+            {
+              "id": "2cb9a477489a497285237aa7d33de222",
+              "title": "Сума існуючої заборгованості",
+              "dataType": "number",
+              "status": "active",
+              "datePublished": "2022-10-25T14:24:28.911894+03:00"
+            },
+            {
+              "id": "72fbfac53f934580a2b1832805ce9172",
+              "title": "Характер існуючої заборгованості",
+              "dataType": "string",
+              "status": "active",
+              "datePublished": "2022-10-25T14:24:28.912002+03:00"
+            },
+            {
+              "id": "fb7b1e36b00e42b892c226c681fd4256",
+              "title": "Причина виникнення існуючої заборгованості",
+              "dataType": "string",
+              "status": "active",
+              "datePublished": "2022-10-25T14:24:28.912103+03:00"
+            },
+            {
+              "id": "fcc868fa4f61446fbbcd7d1cc1e01afd",
+              "title": "Учасник здійснив заходи щодо розстрочення і відстрочення такої заборгованості у порядку та на умовах, визначених законодавством країни реєстрації такого учасника",
+              "dataType": "boolean",
+              "expectedValue": "true",
+              "status": "active",
+              "datePublished": "2022-10-25T14:24:28.912219+03:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dc5c1117424e42a290ccaef5794b6dbe",
+      "title": "Порушення справ про банкрутство",
+      "description": "Учасник процедури закупівлі не визнаний у встановленому законом порядку банкрутом та стосовно нього не відкрита ліквідаційна процедура",
+      "source": "tenderer",
+      "relatesTo": "tenderer",
+      "classification": {
+        "scheme": "ESPD211",
+        "id": "CRITERION.EXCLUSION.BUSINESS.BANKRUPTCY"
+      },
+      "legislation": [
+        {
+          "version": "2020-04-19",
+          "identifier": {
+            "id": "922-VIII",
+            "legalName": "Закон України \"Про публічні закупівлі\"",
+            "uri": "https://zakon.rada.gov.ua/laws/show/922-19"
+          },
+          "type": "NATIONAL_LEGISLATION",
+          "article": "17.1.8"
+        }
+      ],
+      "requirementGroups": [
+        {
+          "id": "a3354b18c3ef49098ff79458e316f155",
+          "description": "Учасник підтверджує, що",
+          "requirements": [
+            {
+              "id": "114bd1abe86342eb907b2352ba679e07",
+              "title": "Учасник процедури закупівлі не визнаний у встановленому законом порядку банкрутом та стосовно нього не відкрита ліквідаційна процедура",
+              "dataType": "boolean",
+              "expectedValue": "true",
+              "status": "active",
+              "datePublished": "2022-10-25T14:24:28.914616+03:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0dc8f76f954245d8bd582e21983f09c0",
+      "title": "Виявлення факту зв'язку учасника з іншими учасниками процедури або замовником",
+      "description": "Тендерна пропозиція подана учасником конкурентної процедури закупівлі або участь у переговорній процедурі бере учасник, який є пов'язаною особою з іншими учасниками процедури закупівлі та/або з уповноваженою особою (особами), та/або з керівником замовника",
+      "source": "procuringEntity",
+      "relatesTo": "tenderer",
+      "classification": {
+        "scheme": "ESPD211",
+        "id": "CRITERION.EXCLUSION.MISCONDUCT.MARKET_DISTORTION"
+      },
+      "legislation": [
+        {
+          "version": "2020-04-19",
+          "identifier": {
+            "id": "922-VIII",
+            "legalName": "Закон України \"Про публічні закупівлі\"",
+            "uri": "https://zakon.rada.gov.ua/laws/show/922-19"
+          },
+          "type": "NATIONAL_LEGISLATION",
+          "article": "17.1.7"
+        }
+      ],
+      "requirementGroups": [
+        {
+          "id": "1f9273956f4e44568fa8b4be2f5c135b",
+          "description": "Замовник підтверджує, що",
+          "requirements": [
+            {
+              "id": "707db37596674e669369890e09bb0fa6",
+              "title": "Тендерна пропозиція подана учасником конкурентної процедури закупівлі або участь у переговорній процедурі бере учасник, який є пов'язаною особою з іншими учасниками процедури закупівлі та/або з уповноваженою особою (особами), та/або з керівником замовника",
+              "dataType": "boolean",
+              "status": "active",
+              "datePublished": "2022-10-25T14:24:28.916827+03:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c87744f06fd847649820430d5444c9c6",
+      "title": "Виявлення факту наміру впливу на прийняття рішення замовника",
+      "description": "Замовник має незаперечні докази того, що учасник процедури закупівлі пропонує, дає або погоджується дати прямо чи опосередковано будь-якій службовій (посадовій) особі замовника, іншого державного органу винагороду в будь-якій формі (пропозиція щодо найму на роботу, цінна річ, послуга тощо) з метою вплинути на прийняття рішення щодо визначення переможця процедури закупівлі або застосування замовником певної процедури закупівлі",
+      "source": "procuringEntity",
+      "relatesTo": "tenderer",
+      "classification": {
+        "scheme": "ESPD211",
+        "id": "CRITERION.EXCLUSION.CONFLICT_OF_INTEREST.MISINTERPRETATION"
+      },
+      "legislation": [
+        {
+          "version": "2020-04-19",
+          "identifier": {
+            "id": "922-VIII",
+            "legalName": "Закон України \"Про публічні закупівлі\"",
+            "uri": "https://zakon.rada.gov.ua/laws/show/922-19"
+          },
+          "type": "NATIONAL_LEGISLATION",
+          "article": "17.1.1"
+        }
+      ],
+      "requirementGroups": [
+        {
+          "id": "3955cf5e64bb4c1e80aed5aa6bddbd55",
+          "description": "Замовник підтверджує, що",
+          "requirements": [
+            {
+              "id": "6df411eb112749dd8328c6c337ac43b2",
+              "title": "Замовник має незаперечні докази того, що учасник процедури закупівлі пропонує, дає або погоджується дати прямо чи опосередковано будь-якій службовій (посадовій) особі замовника, іншого державного органу винагороду в будь-якій формі (пропозиція щодо найму на роботу, цінна річ, послуга тощо) з метою вплинути на прийняття рішення щодо визначення переможця процедури закупівлі або застосування замовником певної процедури закупівлі",
+              "dataType": "boolean",
+              "status": "active",
+              "datePublished": "2022-10-25T14:24:28.919842+03:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "f3edac2f038a4e9588a6539a70ec5c5e",
+      "title": "Наявність інших підстав для відмови в участі у процедурі закупівлі",
+      "description": "У Єдиному державному реєстрі юридичних осіб, фізичних осіб - підприємців та громадських формувань присутня інформація, передбачена пунктом 9 частини другої статті 9 Закону України \"Про державну реєстрацію юридичних осіб, фізичних осіб - підприємців та громадських формувань\" (крім нерезидентів)",
+      "source": "tenderer",
+      "relatesTo": "tenderer",
+      "classification": {
+        "scheme": "ESPD211",
+        "id": "CRITERION.EXCLUSION.NATIONAL.OTHER"
+      },
+      "legislation": [
+        {
+          "version": "2020-04-19",
+          "identifier": {
+            "id": "922-VIII",
+            "legalName": "Закон України \"Про публічні закупівлі\"",
+            "uri": "https://zakon.rada.gov.ua/laws/show/922-19"
+          },
+          "type": "NATIONAL_LEGISLATION",
+          "article": "17.1.9"
+        },
+        {
+          "version": "2020-03-16",
+          "identifier": {
+            "id": "755-IV",
+            "legalName": "Закон України \"Про державну реєстрацію юридичних осіб, фізичних осіб - підприємців та громадських формувань\"",
+            "uri": "https://zakon.rada.gov.ua/laws/show/755-15"
+          },
+          "type": "NATIONAL_LEGISLATION",
+          "article": "9.2.9"
+        },
+        {
+          "version": "2020-04-19",
+          "identifier": {
+            "id": "922-VIII",
+            "legalName": "Закон України \"Про публічні закупівлі\"",
+            "uri": "https://zakon.rada.gov.ua/laws/show/922-19"
+          },
+          "type": "NATIONAL_LEGISLATION",
+          "article": "17.1.10"
+        },
+        {
+          "version": "2020-04-19",
+          "identifier": {
+            "id": "922-VIII",
+            "legalName": "Закон України \"Про публічні закупівлі\"",
+            "uri": "https://zakon.rada.gov.ua/laws/show/922-19"
+          },
+          "type": "NATIONAL_LEGISLATION",
+          "article": "17.1.11"
+        },
+        {
+          "version": "2020-04-19",
+          "identifier": {
+            "id": "1644-VII",
+            "legalName": "Закон України \"Про санкції\"",
+            "uri": "https://zakon.rada.gov.ua/laws/show/1644-18"
+          },
+          "type": "NATIONAL_LEGISLATION"
+        }
+      ],
+      "requirementGroups": [
+        {
+          "id": "1af7b82e2f68414ebe224041b6a5b3c6",
+          "description": "Учасник підтверджує, що",
+          "requirements": [
+            {
+              "id": "b1ca1b64e62e49bcba08745c9fd77129",
+              "title": "У Єдиному державному реєстрі юридичних осіб, фізичних осіб - підприємців та громадських формувань присутня інформація, передбачена пунктом 9 частини другої статті 9 Закону України \"Про державну реєстрацію юридичних осіб, фізичних осіб - підприємців та громадських формувань\" (крім нерезидентів)",
+              "dataType": "boolean",
+              "expectedValue": "true",
+              "status": "active",
+              "datePublished": "2022-10-25T14:24:28.924544+03:00"
+            },
+            {
+              "id": "d09cc676aa4c45df91da0a9ce1e9b0ea",
+              "title": "Учасник процедури закупівлі не є особою, до якої застосовано санкцію у вигляді заборони на здійснення у неї публічних закупівель товарів, робіт і послуг згідно із Законом України \"Про санкції\"",
+              "dataType": "boolean",
+              "expectedValue": "true",
+              "status": "active",
+              "datePublished": "2022-10-25T14:24:28.924648+03:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ee42996b5b7242ffa5400e739c29b4a5",
+      "title": "Мова (мови), якою (якими) повинні готуватися тендерні пропозиції",
+      "source": "tenderer",
+      "relatesTo": "tender",
+      "classification": {
+        "scheme": "ESPD211",
+        "id": "CRITERION.OTHER.BID.LANGUAGE"
+      },
+      "legislation": [
+        {
+          "version": "2020-04-19",
+          "identifier": {
+            "id": "922-VIII",
+            "legalName": "Закон України \"Про публічні закупівлі\"",
+            "uri": "https://zakon.rada.gov.ua/laws/show/922-19"
+          },
+          "type": "NATIONAL_LEGISLATION"
+        }
+      ],
+      "requirementGroups": [
+        {
+          "id": "d7d4c4d3b04d4947a1c40d6189aa0419",
+          "description": "Учасник підтверджує, що",
+          "requirements": [
+            {
+              "id": "fc467f7f4245411b9bef8f371f3a536b",
+              "title": "Мова тендерної пропозиції українська",
+              "dataType": "boolean",
+              "expectedValue": "true",
+              "status": "active",
+              "datePublished": "2022-10-25T14:24:28.926694+03:00"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "date": "2022-10-25T14:24:35.250278+03:00",
+  "dateModified": "2022-10-25T14:24:35.250278+03:00",
+  "dateCreated": "2022-10-25T14:22:15.703338+03:00",
+  "tenderID": "UA-2022-10-25-007560-a",
+  "documents": [
+    {
+      "documentType": "biddingDocuments",
+      "id": "660d3191ea4b46f18de5bdf8a3a1acbe",
+      "datePublished": "2022-10-25T14:23:45.021215+03:00",
+      "hash": "md5:46383acf0aa12bb8a20cf3ca18e76fd4",
+      "title": "Тендерна документація.docx",
+      "format": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "url": "https://public-docs.prozorro.gov.ua/get/f67cbd4572464688874b6ae2af9c2e9a?Signature=cv6Tp8mOzzY%2BEj39G3jTL1u3xDyLeA48PCYFybVnIw4BeV8d1YyRh1I%2Bg3bGweC4S%2B48dJw9o6OFFFZgHjyFDw%3D%3D&KeyID=52462340",
+      "documentOf": "tender",
+      "dateModified": "2022-10-25T14:23:45.021215+03:00",
+      "author": "tender_owner"
+    },
+    {
+      "documentType": "contractProforma",
+      "id": "42ba50c8ba57444094c2973599d4ec25",
+      "datePublished": "2022-10-25T14:23:59.580028+03:00",
+      "hash": "md5:a0c0dbf5308a60968f427bf95430077d",
+      "title": "ПРОЕКТ ДОГОВОРУ 2022.doc",
+      "format": "application/msword",
+      "url": "https://public-docs.prozorro.gov.ua/get/f6e5ddf2364c436e88c361593acf6a80?Signature=zj2g5wRRWexpCnJXD0xdN5Tq6J9Fs27T7dI2xhkpnPg%2FKduczqYP1NRDaLGtsNQU8gaA561vpTRMJC%2BLgEAZAA%3D%3D&KeyID=52462340",
+      "documentOf": "tender",
+      "dateModified": "2022-10-25T14:23:59.580028+03:00",
+      "author": "tender_owner"
+    }
+  ],
+  "owner": "e-tender.biz",
+  "title": "Лот № 1 Меропенем/ Meropenem; Колістеметат натрію / Colistin; Даптоміцин/ Daptomycin; Іміпенем/Циластатин/ Imipenem+Cilastatin. Лот № 2 Лактулоза / Lactulose; Кальцію глюконат / Calcium gluconate; Тардиферон (заліза сульфат)/ Ferrous sulfate; Холекальциферол (Вітамін Д3)/ Colecalciferol",
+  "mainProcurementCategory": "goods",
+  "submissionMethod": "electronicAuction",
+  "procurementMethod": "open",
+  "value": {
+    "amount": 99000,
+    "currency": "UAH",
+    "valueAddedTaxIncluded": true
+  },
+  "minimalStep": {
+    "amount": 35,
+    "currency": "UAH",
+    "valueAddedTaxIncluded": true
+  },
+  "lots": [
+    {
+      "title": "ЛОТ № 1 Меропенем/ Meropenem; Колістеметат натрію / Colistin; Даптоміцин/ Daptomycin; Іміпенем/Циластатин/ Imipenem+Cilastatin",
+      "status": "active",
+      "id": "6134ba7268da4cd8a21a4d973a453211",
+      "date": "2022-10-25T14:22:15.703338+03:00",
+      "value": {
+        "amount": 92000,
+        "currency": "UAH",
+        "valueAddedTaxIncluded": true
+      },
+      "minimalStep": {
+        "amount": 460,
+        "currency": "UAH",
+        "valueAddedTaxIncluded": true
+      },
+      "auctionPeriod": {
+        "shouldStartAfter": "2022-11-16T00:00:00+02:00"
+      }
+    },
+    {
+      "title": "ЛОТ № 2 Лактулоза / Lactulose; Кальцію глюконат / Calcium gluconate; Тардиферон (заліза сульфат)/ Ferrous sulfate; Холекальциферол (Вітамін Д3)/ Colecalciferol",
+      "status": "active",
+      "id": "c5212a469e9348e48b7fc5b1c4b818a6",
+      "date": "2022-10-25T14:22:15.703338+03:00",
+      "value": {
+        "amount": 7000,
+        "currency": "UAH",
+        "valueAddedTaxIncluded": true
+      },
+      "minimalStep": {
+        "amount": 35,
+        "currency": "UAH",
+        "valueAddedTaxIncluded": true
+      },
+      "auctionPeriod": {
+        "shouldStartAfter": "2022-11-16T00:00:00+02:00"
+      }
+    }
+  ],
+  "milestones": [
+    {
+      "id": "42b90a9592b04de1b128202e9d5cc5a5",
+      "title": "deliveryOfGoods",
+      "type": "financing",
+      "code": "postpayment",
+      "percentage": 100,
+      "duration": {
+        "days": 7,
+        "type": "banking"
+      },
+      "sequenceNumber": 1,
+      "relatedLot": "6134ba7268da4cd8a21a4d973a453211"
+    },
+    {
+      "id": "63f42764359044b89ad71f6abcc98282",
+      "title": "deliveryOfGoods",
+      "type": "financing",
+      "code": "postpayment",
+      "percentage": 100,
+      "duration": {
+        "days": 7,
+        "type": "banking"
+      },
+      "sequenceNumber": 1,
+      "relatedLot": "c5212a469e9348e48b7fc5b1c4b818a6"
+    }
+  ],
+  "procuringEntity": {
+    "name": "Комунальне некомерційне підприємство \"Міська клінічна дитяча лікарня №16\" Харківської міської ради",
+    "name_en": "Komunalne nekomerciine pidpriyemstvo \"Miska klinichna dityacha likarnya №16\" Harkivskoyi miskoyi radi",
+    "identifier": {
+      "scheme": "UA-EDR",
+      "id": "24660907",
+      "legalName": "Комунальне некомерційне підприємство \"Міська клінічна дитяча лікарня №16\" Харківської міської ради",
+      "legalName_en": "Komunalne nekomerciine pidpriyemstvo \"Miska klinichna dityacha likarnya №16\" Harkivskoyi miskoyi radi"
+    },
+    "address": {
+      "streetAddress": "вулиця Луї Пастера буд. 2",
+      "locality": "Харків",
+      "region": "Харківська область",
+      "postalCode": "61075",
+      "countryName": "Україна"
+    },
+    "contactPoint": {
+      "email": "kharkivdetlik16@ukr.net",
+      "telephone": "380935721028",
+      "name": "Судакова Дарина Дмитрівна"
+    },
+    "kind": "general"
+  },
+  "status": "active.tendering",
+  "procurementMethodType": "aboveThresholdUA",
+  "awardCriteria": "lowestCost",
+  "enquiryPeriod": {
+    "startDate": "2022-10-25T14:24:35.080765+03:00",
+    "endDate": "2022-11-05T00:00:00+02:00",
+    "clarificationsUntil": "2022-11-10T00:00:00+02:00",
+    "invalidationDate": "2022-10-25T14:24:35.250278+03:00"
+  },
+  "tenderPeriod": {
+    "startDate": "2022-10-25T14:24:35.080765+03:00",
+    "endDate": "2022-11-15T12:00:00+02:00"
+  },
+  "items": [
+    {
+      "id": "73c4ef6bad04413ba499ebdd88c1b041",
+      "description": "Меропенем порошок для приготування розчину для ін`єкцій по 1000 мг у флаконі",
+      "classification": {
+        "description": "Фармацевтична продукція",
+        "scheme": "ДК021",
+        "id": "33600000-6"
+      },
+      "additionalClassifications": [
+        {
+          "scheme": "INN",
+          "id": "meropenem",
+          "description": "Meropenem"
+        }
+      ],
+      "unit": {
+        "name": "Флакон",
+        "code": "VI"
+      },
+      "quantity": 100,
+      "relatedLot": "6134ba7268da4cd8a21a4d973a453211",
+      "deliveryDate": {
+        "endDate": "2022-12-31T00:00:00+02:00"
+      },
+      "deliveryAddress": {
+        "streetAddress": "вул.Луї Пастера,2",
+        "locality": "Харків",
+        "region": "Харківська область",
+        "postalCode": "61075",
+        "countryName": "Україна"
+      }
+    },
+    {
+      "id": "56d3c481fb9b40cb93f9a826ac523cea",
+      "description": "Колістеметат натрію порошок для розчину для ін’єкцій або інфузій 1 000 000 МО",
+      "classification": {
+        "description": "Фармацевтична продукція",
+        "scheme": "ДК021",
+        "id": "33600000-6"
+      },
+      "additionalClassifications": [
+        {
+          "scheme": "INN",
+          "id": "colistin",
+          "description": "Colistin"
+        }
+      ],
+      "unit": {
+        "name": "Флакон",
+        "code": "VI"
+      },
+      "quantity": 100,
+      "relatedLot": "6134ba7268da4cd8a21a4d973a453211",
+      "deliveryDate": {
+        "endDate": "2022-12-31T00:00:00+02:00"
+      },
+      "deliveryAddress": {
+        "streetAddress": "вул.Луї Пастера,2",
+        "locality": "Харків",
+        "region": "Харківська область",
+        "postalCode": "61075",
+        "countryName": "Україна"
+      }
+    },
+    {
+      "id": "6b99bca7a8054b65acbd05f8281da5f9",
+      "description": "Даптоміцин ліофілізований порошок для розчину для ін'єкцій або інфузій по 350 мг",
+      "classification": {
+        "description": "Фармацевтична продукція",
+        "scheme": "ДК021",
+        "id": "33600000-6"
+      },
+      "additionalClassifications": [
+        {
+          "scheme": "INN",
+          "id": "colistin",
+          "description": "Colistin"
+        }
+      ],
+      "unit": {
+        "name": "Флакон",
+        "code": "VI"
+      },
+      "quantity": 5,
+      "relatedLot": "6134ba7268da4cd8a21a4d973a453211",
+      "deliveryDate": {
+        "endDate": "2022-12-31T00:00:00+02:00"
+      },
+      "deliveryAddress": {
+        "streetAddress": "вул.Луї Пастера,2",
+        "locality": "Харків",
+        "region": "Харківська область",
+        "postalCode": "61075",
+        "countryName": "Україна"
+      }
+    },
+    {
+      "id": "2ade9551e4094313af051c3132c72fea",
+      "description": "Іміпенем/Циластатин- порошок для приготування розчину для інфузій 500 мг/500 мг",
+      "classification": {
+        "description": "Фармацевтична продукція",
+        "scheme": "ДК021",
+        "id": "33600000-6"
+      },
+      "additionalClassifications": [
+        {
+          "scheme": "INN",
+          "id": "imipenem and cilastatin",
+          "description": "Imipenem and cilastatin"
+        }
+      ],
+      "unit": {
+        "name": "Флакон",
+        "code": "VI"
+      },
+      "quantity": 70,
+      "relatedLot": "6134ba7268da4cd8a21a4d973a453211",
+      "deliveryDate": {
+        "endDate": "2022-12-31T00:00:00+02:00"
+      },
+      "deliveryAddress": {
+        "streetAddress": "вул.Луї Пастера,2",
+        "locality": "Харків",
+        "region": "Харківська область",
+        "postalCode": "61075",
+        "countryName": "Україна"
+      }
+    },
+    {
+      "id": "797fb2a1390e46ddaedd1378303f317b",
+      "description": "Лактулоза сироп для перорального застосування: 670 мг/мл по 200 мл №1",
+      "classification": {
+        "description": "Фармацевтична продукція",
+        "scheme": "ДК021",
+        "id": "33600000-6"
+      },
+      "additionalClassifications": [
+        {
+          "scheme": "INN",
+          "id": "lactulose",
+          "description": "Lactulose"
+        }
+      ],
+      "unit": {
+        "name": "упаковка",
+        "code": "PK"
+      },
+      "quantity": 15,
+      "relatedLot": "c5212a469e9348e48b7fc5b1c4b818a6",
+      "deliveryDate": {
+        "endDate": "2022-12-31T00:00:00+02:00"
+      },
+      "deliveryAddress": {
+        "streetAddress": "вул.Луї Пастера,2",
+        "locality": "Харків",
+        "region": "Харківська область",
+        "postalCode": "61075",
+        "countryName": "Україна"
+      }
+    },
+    {
+      "id": "4e563d2a590341fc9875c37cedbfc56b",
+      "description": "Кальцію глюконат розчин для ін'єкцій, 100 мг/мл, по 5 мл в ампулі",
+      "classification": {
+        "description": "Фармацевтична продукція",
+        "scheme": "ДК021",
+        "id": "33600000-6"
+      },
+      "additionalClassifications": [
+        {
+          "scheme": "INN",
+          "id": "calcium gluconate",
+          "description": "Calcium gluconate"
+        }
+      ],
+      "unit": {
+        "name": "упаковка",
+        "code": "PK"
+      },
+      "quantity": 10,
+      "relatedLot": "c5212a469e9348e48b7fc5b1c4b818a6",
+      "deliveryDate": {
+        "endDate": "2022-12-31T00:00:00+02:00"
+      },
+      "deliveryAddress": {
+        "streetAddress": "вул.Луї Пастера,2",
+        "locality": "Харків",
+        "region": "Харківська область",
+        "postalCode": "61075",
+        "countryName": "Україна"
+      }
+    },
+    {
+      "id": "9c859e600e154f8bb4aab75584b6f561",
+      "description": "Тардиферон (заліза сульфат) таблетки, вкриті оболонкою, пролонгованої дії по 80 мг №30 (10х3)",
+      "classification": {
+        "description": "Фармацевтична продукція",
+        "scheme": "ДК021",
+        "id": "33600000-6"
+      },
+      "additionalClassifications": [
+        {
+          "scheme": "INN",
+          "id": "ferrous sulfate",
+          "description": "Ferrous sulfate"
+        }
+      ],
+      "unit": {
+        "name": "упаковка",
+        "code": "PK"
+      },
+      "quantity": 10,
+      "relatedLot": "c5212a469e9348e48b7fc5b1c4b818a6",
+      "deliveryDate": {
+        "endDate": "2022-12-31T00:00:00+02:00"
+      },
+      "deliveryAddress": {
+        "streetAddress": "вул.Луї Пастера,2",
+        "locality": "Харків",
+        "region": "Харківська область",
+        "postalCode": "61075",
+        "countryName": "Україна"
+      }
+    },
+    {
+      "id": "de2ec068830f427dac9d4c0bd59f467d",
+      "description": "Холекальциферол  Відеїн (вітаміну D3 – 1000 МО) капсули м'які по 25 мкг (1000 МО) № 60 (10х6)",
+      "classification": {
+        "description": "Фармацевтична продукція",
+        "scheme": "ДК021",
+        "id": "33600000-6"
+      },
+      "additionalClassifications": [
+        {
+          "scheme": "INN",
+          "id": "colecalciferol",
+          "description": "Colecalciferol"
+        }
+      ],
+      "unit": {
+        "name": "упаковка",
+        "code": "PK"
+      },
+      "quantity": 20,
+      "relatedLot": "c5212a469e9348e48b7fc5b1c4b818a6",
+      "deliveryDate": {
+        "endDate": "2022-12-31T00:00:00+02:00"
+      },
+      "deliveryAddress": {
+        "streetAddress": "вул.Луї Пастера,2",
+        "locality": "Харків",
+        "region": "Харківська область",
+        "postalCode": "61075",
+        "countryName": "Україна"
+      }
+    }
+  ],
+  "complaintPeriod": {
+    "startDate": "2022-10-25T14:24:35.080765+03:00",
+    "endDate": "2022-11-11T00:00:00+02:00"
+  },
+  "next_check": "2022-11-15T12:00:00+02:00",
+  "id": "a82faec7b1aa48edbe2f46edb8c78ec6"
+}

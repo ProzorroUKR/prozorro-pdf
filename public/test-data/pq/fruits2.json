@@ -1,0 +1,141 @@
+{
+  "data": {
+    "awardID": "375b86d9ec3c41cf9a2a8db4e5f2867d",
+    "contractID": "UA-2023-11-15-000026-a-a1",
+    "contractNumber": "72",
+    "period": {
+      "startDate": "2023-11-15T00:00:00+02:00",
+      "endDate": "2023-12-31T00:00:00+02:00"
+    },
+    "dateSigned": "2023-11-15T13:48:42.122858+02:00",
+    "dateModified": "2023-11-15T14:09:07.362922+02:00",
+    "dateCreated": "2023-11-15T13:48:42.122858+02:00",
+    "tender_id": "ad01c72006d24eb9b4b358c20fa40b81",
+    "owner": "broker",
+    "value": {
+      "amount": 10.0,
+      "currency": "UAH",
+      "valueAddedTaxIncluded": false,
+      "amountNet": 10.0
+    },
+    "status": "active",
+    "buyer": {
+      "name": "\u041a\u043e\u043c\u0443\u043d\u0430\u043b\u044c\u043d\u0430 \u0443\u0441\u0442\u0430\u043d\u043e\u0432\u0430 \u0425\u0430\u0440\u043a\u0456\u0432\u0441\u044c\u043a\u0438\u0439 \u0433\u0435\u0440\u0456\u0430\u0442\u0440\u0438\u0447\u043d\u0438\u0439 \u043f\u0430\u043d\u0441\u0456\u043e\u043d\u0430\u0442 \u0432\u0435\u0442\u0435\u0440\u0430\u043d\u0456\u0432 \u043f\u0440\u0430\u0446\u0456 \u0425\u0430\u0440\u043a\u0456\u0432\u0441\u044c\u043a\u043e\u0457 \u043e\u0431\u043b\u0430\u0441\u043d\u043e\u0457 \u0440\u0430\u0434\u0438",
+      "name_en": "Municipal institution Kharkiv Geriatric Nursing Home for Labor Veterans of the Kharkiv Regional Council",
+      "identifier": {
+        "scheme": "UA-EDR",
+        "id": "78787878",
+        "legalName": " legalName \u041a\u043e\u043c\u0443\u043d\u0430\u043b\u044c\u043d\u0430 \u0443\u0441\u0442\u0430\u043d\u043e\u0432\u0430 \u0425\u0430\u0440\u043a\u0456\u0432\u0441\u044c\u043a\u0438\u0439 \u0433\u0435\u0440\u0456\u0430\u0442\u0440\u0438\u0447\u043d\u0438\u0439 \u043f\u0430\u043d\u0441\u0456\u043e\u043d\u0430\u0442 \u0432\u0435\u0442\u0435\u0440\u0430\u043d\u0456\u0432 \u043f\u0440\u0430\u0446\u0456 \u0425\u0430\u0440\u043a\u0456\u0432\u0441\u044c\u043a\u043e\u0457 \u043e\u0431\u043b\u0430\u0441\u043d\u043e\u0457 \u0440\u0430\u0434\u0438",
+        "legalName_en": "legalName Municipal institution Kharkiv Geriatric Nursing Home for Labor Veterans of the Kharkiv Regional Council"
+      },
+      "address": {
+        "streetAddress": "\u0432\u0443\u043b. \u0406\u0433\u043e\u0440\u044f \u041c\u0443\u0440\u0430\u0442\u043e\u0432\u0430, \u0431\u0443\u0434. 7",
+        "locality": "\u043c. \u0425\u0430\u0440\u043a\u0456\u0432",
+        "region": "\u0425\u0430\u0440\u043a\u0456\u0432\u0441\u044c\u043a\u0430 \u043e\u0431\u043b\u0430\u0441\u0442\u044c",
+        "postalCode": "03323",
+        "countryName": "\u0423\u043a\u0440\u0430\u0457\u043d\u0430"
+      },
+      "signerInfo": {
+        "name": "name1",
+        "email": "m.peptyuk@gmail.com",
+        "telephone": "0441111111, +0441111111, 0961111111",
+        "iban": "UA67322669000000UA673226690000001",
+        "basisOf": "\u041f\u043e\u0441\u0442\u0430\u043d\u043e\u0432\u0430",
+        "position": "\u0414\u0435\u0440\u0436\u0430\u0432\u043d\u0435 \u043f\u0456\u0434\u043f\u0440\u0438\u0454\u043c\u0441\u0442\u0432\u043e"
+      }
+    },
+    "suppliers": [
+      {
+        "name": "\u0414\u0435\u0440\u0436\u0430\u0432\u043d\u0435 \u0443\u043f\u0440\u0430\u0432\u043b\u0456\u043d\u043d\u044f \u0441\u043f\u0440\u0430\u0432\u0430\u043c\u0438",
+        "identifier": {
+          "scheme": "UA-EDR",
+          "id": "00007",
+          "uri": "http://www.dus.gov.ua/"
+        },
+        "address": {
+          "streetAddress": "\u0432\u0443\u043b. \u0411\u0430\u043d\u043a\u043e\u0432\u0430, 11, \u043a\u043e\u0440\u043f\u0443\u0441 1",
+          "locality": "\u043c. \u041a\u0438\u0457\u0432",
+          "region": "\u043c. \u041a\u0438\u0457\u0432",
+          "postalCode": "01220",
+          "countryName": "\u0423\u043a\u0440\u0430\u0457\u043d\u0430"
+        },
+        "signerInfo": {
+          "name": "name1",
+          "email": "m.peptyuk@gmail.com",
+          "telephone": "0441111111, +0441111111, 0961111111",
+          "iban": "UA67322669000000UA673226690000001",
+          "basisOf": "\u041f\u043e\u0441\u0442\u0430\u043d\u043e\u0432\u0430",
+          "position": "\u0414\u0435\u0440\u0436\u0430\u0432\u043d\u0435 \u043f\u0456\u0434\u043f\u0440\u0438\u0454\u043c\u0441\u0442\u0432\u043e"
+        }
+      }
+    ],
+    "items": [
+      {
+        "id": "03acb7b150534dce86c581d3879a2001",
+        "description": "\u041a\u0430\u043f\u0443\u0441\u0442\u0430 \u0431\u0456\u043b\u043e\u0433\u043e\u043b\u043e\u0432\u0430 \u0441\u0432\u0456\u0436\u0430, \u043f\u0456\u0437\u043d\u044c\u043e\u0441\u0442\u0438\u0433\u043b\u0430, \u043f\u0435\u0440\u0448\u043e\u0433\u043e \u0442\u043e\u0432\u0430\u0440\u043d\u043e\u0433\u043e \u0441\u043e\u0440\u0442\u0443, \u0414\u0421\u0422\u0423 7037, 1 \u043a\u0433",
+        "quantity": 321312.0,
+        "deliveryDate": {
+          "endDate": "2023-12-31T00:00:00+02:00"
+        },
+        "classification": {
+          "description": "\u041e\u0432\u043e\u0447\u0456, \u0444\u0440\u0443\u043a\u0442\u0438 \u0442\u0430 \u0433\u043e\u0440\u0456\u0445\u0438",
+          "scheme": "\u0414\u041a021",
+          "id": "03220000-9"
+        },
+        "unit": {
+          "name": "\u043a\u0456\u043b\u043e\u0433\u0440\u0430\u043c",
+          "code": "KGM"
+        },
+        "deliveryAddress": {
+          "streetAddress": "\u0412\u0423\u041b\u0418\u0426\u042f \u0406\u0413\u041e\u0420\u042f \u041c\u0423\u0420\u0410\u0422\u041e\u0412\u0410, \u0431\u0443\u0434\u0438\u043d\u043e\u043a 7",
+          "locality": "\u043c\u0456\u0441\u0442\u043e \u0425\u0430\u0440\u043a\u0456\u0432",
+          "region": "\u0425\u0430\u0440\u043a\u0456\u0432\u0441\u044c\u043a\u0430 \u043e\u0431\u043b\u0430\u0441\u0442\u044c",
+          "postalCode": "61177",
+          "countryName": "\u0423\u043a\u0440\u0430\u0457\u043d\u0430"
+        },
+        "attributes": [
+          {
+            "name": "\u0421\u0442\u0440\u043e\u043a \u0434\u043e\u0441\u0442\u0438\u0433\u0430\u043d\u043d\u044f",
+            "values": [
+              "\u043f\u0456\u0437\u043d\u044c\u043e\u0441\u0442\u0438\u0433\u043b\u0430"
+            ]
+          },
+          {
+            "name": "\u0422\u043e\u0432\u0430\u0440\u043d\u0438\u0439 \u0441\u043e\u0440\u0442",
+            "values": [
+              "\u043f\u0435\u0440\u0448\u0438\u0439"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "03acb7b150534dce86c581d3879a200c",
+        "description": "\u041c\u043e\u0440\u043a\u0432\u0430 \u0441\u0432\u0456\u0436\u0430, \u043f\u0435\u0440\u0448\u043e\u0433\u043e \u0442\u043e\u0432\u0430\u0440\u043d\u043e\u0433\u043e \u0441\u043e\u0440\u0442\u0443, \u0414\u0421\u0422\u0423 7035, 1 \u043a\u0433",
+        "quantity": 321312.0,
+        "deliveryDate": {
+          "endDate": "2023-12-31T00:00:00+02:00"
+        },
+        "classification": {
+          "description": "\u041e\u0432\u043e\u0447\u0456, \u0444\u0440\u0443\u043a\u0442\u0438 \u0442\u0430 \u0433\u043e\u0440\u0456\u0445\u0438",
+          "scheme": "\u0414\u041a021",
+          "id": "03220000-9"
+        },
+        "unit": {
+          "name": "\u0448\u0442\u0443\u043a\u0438",
+          "code": "H87"
+        },
+        "deliveryAddress": {
+          "streetAddress": "\u0412\u0423\u041b\u0418\u0426\u042f \u0406\u0413\u041e\u0420\u042f \u041c\u0423\u0420\u0410\u0422\u041e\u0412\u0410, \u0431\u0443\u0434\u0438\u043d\u043e\u043a 7",
+          "locality": "\u043c\u0456\u0441\u0442\u043e \u0425\u0430\u0440\u043a\u0456\u0432",
+          "region": "\u0425\u0430\u0440\u043a\u0456\u0432\u0441\u044c\u043a\u0430 \u043e\u0431\u043b\u0430\u0441\u0442\u044c",
+          "postalCode": "61177",
+          "countryName": "\u0423\u043a\u0440\u0430\u0457\u043d\u0430"
+        }
+      }
+    ],
+    "contractTemplateName": "03220000-9.0002.01",
+    "bid_owner": "test.quintagroup.com",
+    "date": "2023-11-15T14:09:07.362922+02:00",
+    "id": "5d13c41683764979b54f61b5ab4c9835"
+  }
+}

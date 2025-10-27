@@ -1,0 +1,41 @@
+{
+  "data": [
+    {
+      "id": "ff9fe68cab8f44b49fc09636e625464b",
+      "status": "pending",
+      "date": "2022-02-24T12:27:38.441538+02:00",
+      "value": {
+        "amount": 635126.01,
+        "currency": "UAH",
+        "valueAddedTaxIncluded": true
+      },
+      "suppliers": [
+        {
+          "name": "ТОВ \" Медичний центр \"М.Т.К.\"",
+          "identifier": {
+            "legalName": "ТОВ \" Медичний центр \"М.Т.К.\"",
+            "scheme": "UA-EDR",
+            "id": "21633086"
+          },
+          "address": {
+            "streetAddress": "вул. Миколи Амосова, 10",
+            "locality": "Київ",
+            "region": "Київська область",
+            "postalCode": "03110",
+            "countryName": "Україна"
+          },
+          "contactPoint": {
+            "email": "ANDRII.DYMNICH@UF.UA",
+            "telephone": "380952834833",
+            "name": "Димніч Андрій"
+          },
+          "scale": "large"
+        }
+      ],
+      "bid_id": "a15b858dff76468e9426b9821a2329b7",
+      "lotID": "20c384c64c2149558f4023987c90ecdc",
+      "qualified": false,
+      "eligible": false
+    }
+  ]
+}

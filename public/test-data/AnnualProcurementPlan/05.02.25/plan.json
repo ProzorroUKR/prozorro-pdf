@@ -1,0 +1,105 @@
+{
+  "data": {
+    "status": "complete",
+    "procuringEntity": {
+      "id": "292fb005e7c84ec2b315fd0a8cb832ce",
+      "name": "\u041a\u041e\u041c\u0423\u041d\u0410\u041b\u042c\u041d\u0418\u0419 \u0417\u0410\u041a\u041b\u0410\u0414 \"\u0420\u0406\u0412\u041d\u0415\u041d\u0421\u042c\u041a\u0410 \u0414\u0418\u0422\u042f\u0427\u0410 \u041c\u0423\u0417\u0418\u0427\u041d\u0410 \u0428\u041a\u041e\u041b\u0410 \u21162\" \u0420\u0406\u0412\u041d\u0415\u041d\u0421\u042c\u041a\u041e\u0407 \u041c\u0406\u0421\u042c\u041a\u041e\u0407 \u0420\u0410\u0414\u0418",
+      "identifier": {
+        "scheme": "UA-EDR",
+        "id": "13991713",
+        "legalName": "\u041a\u041e\u041c\u0423\u041d\u0410\u041b\u042c\u041d\u0418\u0419 \u0417\u0410\u041a\u041b\u0410\u0414 \"\u0420\u0406\u0412\u041d\u0415\u041d\u0421\u042c\u041a\u0410 \u0414\u0418\u0422\u042f\u0427\u0410 \u041c\u0423\u0417\u0418\u0427\u041d\u0410 \u0428\u041a\u041e\u041b\u0410 \u21162\" \u0420\u0406\u0412\u041d\u0415\u041d\u0421\u042c\u041a\u041e\u0407 \u041c\u0406\u0421\u042c\u041a\u041e\u0407 \u0420\u0410\u0414\u0418"
+      },
+      "address": {
+        "streetAddress": "\u0432\u0443\u043b. \u041f\u043e\u043a\u0440\u043e\u0432\u0441\u044c\u043a\u0430  \u0431\u0443\u0434. 13 \u0410",
+        "locality": "\u0420\u0456\u0432\u043d\u0435",
+        "region": "\u0420\u0456\u0432\u043d\u0435\u043d\u0441\u044c\u043a\u0430 \u043e\u0431\u043b\u0430\u0441\u0442\u044c",
+        "postalCode": "33023",
+        "countryName": "\u0423\u043a\u0440\u0430\u0457\u043d\u0430"
+      },
+      "kind": "general"
+    },
+    "tender": {
+      "procurementMethod": "limited",
+      "procurementMethodType": "reporting",
+      "tenderPeriod": {
+        "startDate": "2024-12-01T00:00:00+02:00"
+      }
+    },
+    "budget": {
+      "id": "baf1fbb40b8543fb93d9c19e6d92ed7f38550000-5",
+      "description": "\u041b\u0456\u0447\u0438\u043b\u044c\u043d\u0438\u043a MTX 3G \u0431\u0430\u0433\u0430\u0442\u043e \u0442\u0430\u0440\u0438\u0444\u043d\u0438\u0439 Telec \u2e3a 2 \u0448\u0442 (\u041a\u043e\u0434 \u0437\u0430 \u0414\u041a 021:2015 (CPV) \u0404\u0414\u0418\u041d\u0418\u0419 \u0417\u0410\u041a\u0423\u041f\u0406\u0412\u0415\u041b\u042c\u041d\u0418\u0419 \u0421\u041b\u041e\u0412\u041d\u0418\u041a \u2014 38550000-5 \u041b\u0456\u0447\u0438\u043b\u044c\u043d\u0438\u043a\u0438)",
+      "amount": 21000.0,
+      "currency": "UAH",
+      "amountNet": 0.0,
+      "project": {
+        "id": "baf1fbb40b8543fb93d9c19e6d92ed7f",
+        "name": "\u041b\u0456\u0447\u0438\u043b\u044c\u043d\u0438\u043a MTX 3G \u0431\u0430\u0433\u0430\u0442\u043e \u0442\u0430\u0440\u0438\u0444\u043d\u0438\u0439 Telec \u2e3a 2 \u0448\u0442 (\u041a\u043e\u0434 \u0437\u0430 \u0414\u041a 021:2015 (CPV) \u0404\u0414\u0418\u041d\u0418\u0419 \u0417\u0410\u041a\u0423\u041f\u0406\u0412\u0415\u041b\u042c\u041d\u0418\u0419 \u0421\u041b\u041e\u0412\u041d\u0418\u041a \u2014 38550000-5 \u041b\u0456\u0447\u0438\u043b\u044c\u043d\u0438\u043a\u0438)"
+      },
+      "period": {
+        "startDate": "2024-01-01T00:00:00+02:00",
+        "endDate": "2024-12-31T23:59:00+02:00"
+      },
+      "notes": "\u0412\u0438\u0434 \u043f\u0440\u0435\u0434\u043c\u0435\u0442\u0430 \u0437\u0430\u043a\u0443\u043f\u0456\u0432\u043b\u0456 \u2013 \u0442\u043e\u0432\u0430\u0440\u0438",
+      "breakdown": [
+        {
+          "id": "7ef43c09aae3442ab6a7744b4196c62d",
+          "title": "local",
+          "value": {
+            "amount": 21000.0,
+            "currency": "UAH"
+          }
+        }
+      ]
+    },
+    "classification": {
+      "description": "\u041b\u0456\u0447\u0438\u043b\u044c\u043d\u0438\u043a\u0438",
+      "scheme": "\u0414\u041a021",
+      "id": "38550000-5"
+    },
+    "additionalClassifications": [
+      {
+        "scheme": "\u041a\u0415\u041a\u0412",
+        "id": "2210",
+        "description": "\u041f\u0440\u0435\u0434\u043c\u0435\u0442\u0438, \u043c\u0430\u0442\u0435\u0440\u0456\u0430\u043b\u0438, \u043e\u0431\u043b\u0430\u0434\u043d\u0430\u043d\u043d\u044f \u0442\u0430 \u0456\u043d\u0432\u0435\u043d\u0442\u0430\u0440"
+      }
+    ],
+    "planID": "UA-P-2024-12-05-012871-a",
+    "buyers": [
+      {
+        "id": "29e3faf7a75b46a2b757352c6a05b88b",
+        "name": "\u041a\u041e\u041c\u0423\u041d\u0410\u041b\u042c\u041d\u0418\u0419 \u0417\u0410\u041a\u041b\u0410\u0414 \"\u0420\u0406\u0412\u041d\u0415\u041d\u0421\u042c\u041a\u0410 \u0414\u0418\u0422\u042f\u0427\u0410 \u041c\u0423\u0417\u0418\u0427\u041d\u0410 \u0428\u041a\u041e\u041b\u0410 \u21162\" \u0420\u0406\u0412\u041d\u0415\u041d\u0421\u042c\u041a\u041e\u0407 \u041c\u0406\u0421\u042c\u041a\u041e\u0407 \u0420\u0410\u0414\u0418",
+        "identifier": {
+          "scheme": "UA-EDR",
+          "id": "13991713",
+          "legalName": "\u041a\u041e\u041c\u0423\u041d\u0410\u041b\u042c\u041d\u0418\u0419 \u0417\u0410\u041a\u041b\u0410\u0414 \"\u0420\u0406\u0412\u041d\u0415\u041d\u0421\u042c\u041a\u0410 \u0414\u0418\u0422\u042f\u0427\u0410 \u041c\u0423\u0417\u0418\u0427\u041d\u0410 \u0428\u041a\u041e\u041b\u0410 \u21162\" \u0420\u0406\u0412\u041d\u0415\u041d\u0421\u042c\u041a\u041e\u0407 \u041c\u0406\u0421\u042c\u041a\u041e\u0407 \u0420\u0410\u0414\u0418"
+        },
+        "address": {
+          "streetAddress": "\u0432\u0443\u043b. \u041f\u043e\u043a\u0440\u043e\u0432\u0441\u044c\u043a\u0430  \u0431\u0443\u0434. 13 \u0410",
+          "locality": "\u0420\u0456\u0432\u043d\u0435",
+          "region": "\u0420\u0456\u0432\u043d\u0435\u043d\u0441\u044c\u043a\u0430 \u043e\u0431\u043b\u0430\u0441\u0442\u044c",
+          "postalCode": "33023",
+          "countryName": "\u0423\u043a\u0440\u0430\u0457\u043d\u0430"
+        },
+        "kind": "general"
+      }
+    ],
+    "owner": "e-tender.biz",
+    "dateCreated": "2024-12-05T13:32:59.189779+02:00",
+    "dateModified": "2024-12-05T15:17:15.093603+02:00",
+    "datePublished": "2024-12-05T13:32:59.189779+02:00",
+    "documents": [
+      {
+        "hash": "md5:bf0c70a20707822680c55ab76afeacf9",
+        "title": "sign.p7s",
+        "format": "application/pkcs7-signature",
+        "url": "test-data/AnnualProcurementPlan/sign.p7s",
+        "language": "uk",
+        "id": "dad75f33019b4c60a31d08b457ce560d",
+        "datePublished": "2024-12-05T13:33:22.544498+02:00",
+        "dateModified": "2024-12-05T13:33:22.544498+02:00"
+      }
+    ],
+    "tender_id": "23596740257149bbaa64d396c07a465f",
+    "id": "605f89eedaf84087a09c070fcd0f6c60"
+  }
+}

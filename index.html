@@ -1,0 +1,715 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Prozorro-PDF | Testing Page</title>
+    <link rel="icon" type="image/x-icon" href="https://prozorro.gov.ua/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+
+    <style>
+      .content {
+          display: contents;
+      }
+
+      #signToDocFrameID {
+          width: 100%;
+          height: 90vh;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar bg-light border-bottom border-body bg-gradient">
+      <div class="container">
+        <div class="row w-100 align-items-center">
+          <div class="col col-6 col-xl-2 p-2">
+            <span class="navbar-brand">
+              <img src="/prozorro_logo.png" alt="Prozorro" width="160px" height="100%" />
+            </span>
+          </div>
+
+          <div class="col col-6 col-xl-8 p-2">
+            <div class="input-group input-group-lg">
+              <input
+                type="text"
+                class="form-control"
+                aria-label="Sizing example input"
+                aria-describedby="Search"
+                placeholder="Назва документу або тип"
+                id="searchInput"
+              >
+            </div>
+          </div>
+
+          <div class="col col-12 col-xl-2 p-2 d-none d-xl-block">
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" id="layoutSwitchSimple">
+              <label class="form-check-label" for="layoutSwitchSimple">Vertical layout</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid my-3">
+      <div class="row" id="layoutRow">
+        <div class="col col-12 col-xl-6">
+          <div class="accordion p-3" id="accordionList"></div>
+        </div>
+
+        <div class="col col-12 col-xl-6">
+          <div class="p-3">
+            <div id="signToDocFrameID"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <template id="app-card-template">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapse}"
+            aria-expanded="true"
+            aria-controls="collapse"
+          ></button>
+        </h2>
+
+        <div
+          id="collapse"
+          class="accordion-collapse collapse"
+          data-bs-parent="#accordionList"
+        >
+          <form class="accordion-body">
+            <div id="input-group-list"></div>
+
+            <p class="card-text mt-3">
+              <span class="btn-group" role="group" aria-label="Navigation">
+                <button type="button" class="btn btn-primary">Open in frame</button>
+                <button type="button" class="btn btn-info">Open in new window</button>
+                <button type="button" class="btn btn-dark">Download</button>
+              </span>
+            </p>
+
+            <p class="card-text">
+              <small id="card-description" class="text-muted"></small>
+            </p>
+          </form>
+        </div>
+      </div>
+    </template>
+
+    <template id="app-field-template">
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text h-100"></span>
+        </div>
+
+        <textarea class="form-control" rows="2" aria-label="" hidden></textarea>
+
+        <input class="form-control" type="datetime-local" aria-label="Date" hidden>
+      </div>
+    </template>
+
+    <template id="app-spinner-template">
+      <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+      <span role="status">Generating...</span>
+    </template>
+
+    <template id="app-error-template">
+      <div class="alert alert-danger" role="alert">
+        <strong id="message"></strong>
+        <pre class="mb-0" id="description" style="white-space: pre-wrap;"></pre>
+      </div>
+    </template>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script type="module" src="/src/main.ts"></script>
+
+    <script>
+      const STORAGE_ACTIVE_ACCORDION_KEY = "ACTIVE_ACCORDION";
+
+      customElements.define("app-card", class extends HTMLElement {
+        connectedCallback() {
+          const store = { inputsRef: {} };
+          const template = document.getElementById("app-card-template").content.cloneNode(true);
+
+          // Generate dynamic IDs to avoid conflicts
+          const type = this.getAttribute("type") || "card";
+          const collapseId = `collapse-${type}-${Math.random().toString(36).substring(2, 8)}`;
+          const button = template.querySelector(".accordion-button");
+
+          // Bind collapse ID
+          button.setAttribute("data-bs-target", `#${collapseId}`);
+          button.setAttribute("aria-controls", collapseId);
+          button.innerHTML = `<b class="content">#${type}</b> – ${this.getAttribute("title")}`;
+
+          template.querySelector(".accordion-collapse").setAttribute("id", collapseId);
+          template.querySelector(".accordion-collapse").classList.add(this.getAttribute("classList") || "-");
+
+          template.getElementById("card-description").innerHTML = this.getAttribute("description") || "";
+
+          /** @type {AppCardField[]} */
+          const fieldsConfig = JSON.parse(this.getAttribute("fields"));
+          fieldsConfig.forEach(field => {
+            const fieldTemplate = document.getElementById("app-field-template").content.cloneNode(true);
+            const requitedLabel = `<sup class=\"text-${ field.required ? "danger" : "primary"}\">(${ field.required ? "required" : "optional"})</sup>`;
+            fieldTemplate.querySelector(".input-group-text").innerHTML = `${field.label} ${requitedLabel}`;
+
+            const selector = field.type === "date" ? "input[type=\"datetime-local\"]" : "textarea";
+            const input = fieldTemplate.querySelector(selector);
+            input.value = field.defaultValue;
+            input.name = field.key;
+            input.required = field.required;
+            input.hidden = false;
+
+            store.inputsRef[field.key] = input;
+
+            template.getElementById("input-group-list").appendChild(fieldTemplate);
+          });
+
+          const btnGroup = template.querySelectorAll("button.btn");
+          const [btnOpenInFrame, btnOpenInNewWindow, btnDownload] = btnGroup;
+          btnOpenInFrame?.addEventListener("click", async () => await btnActionWrapper(openInFramePdfFile, btnOpenInFrame));
+          btnOpenInNewWindow?.addEventListener("click", async () => await btnActionWrapper(openInNewWindowPdfFile, btnOpenInNewWindow));
+          btnDownload?.addEventListener("click", async () => await btnActionWrapper(downloadPdfFile, btnDownload));
+
+          const btnActionWrapper = async (cb, btn) => {
+            const text = btn.textContent;
+            // Clear error message or previous PDF
+            document.getElementById("signToDocFrameID").innerHTML = "";
+
+            try {
+              btnGroup.forEach(btn => btn.disabled = true);
+              btn.innerHTML = "";
+              btn.appendChild(document.getElementById("app-spinner-template").content.cloneNode(true));
+
+              const fields = fieldsConfig.reduce((acc, curr) => {
+                acc[curr.key] = store.inputsRef[curr.key].value;
+                return acc;
+              }, {});
+
+              await cb({ type, ...fields });
+            } catch (error) {
+             errorExceptionHandler(error);
+            } finally {
+              btnGroup.forEach(btn => btn.disabled = false);
+              btn.innerHTML = text;
+            }
+          };
+
+          this.appendChild(template);
+        }
+      });
+
+      window.onload = async () => {
+        await window.signToDoc.init("development");
+
+        /**
+         * @typedef {Object} AppCardField
+         * @property {string} key
+         * @property {string} label
+         * @property {string} defaultValue
+         * @property {boolean} [required=false]
+         * @property {"string" | "date"} [type="string"]
+         */
+
+        /**
+         * @typedef {Object} AppCardData
+         * @property {string} type - PDF type (e.g. window.signToDoc.TYPES.*)
+         * @property {string} title - The title displayed in the accordion header
+         * @property {string} [description] - HTML string shown as description/help text
+         * @property {AppCardField[]} fields - Document fields list
+         */
+
+        /** @type {AppCardData[]} */
+        const DATA_COLLECTION = [
+          {
+            type: window.signToDoc.TYPES.TICKET,
+            title: "Запит до ДПС / Довідка ДПС",
+            description: `
+                <h6>Validations:</h6>
+                <ul>
+                    <li>Get all sign files from <code>tender.awards[N].documents</code></li>
+                    <li>File title must have extensions <code>*.XML.p7s</code> or <code>*.KVT.p7s</code></li>
+                    <li>Optional validation by <code>document.dateModified</code> field</li>
+                </ul>
+            `,
+            fields: [
+              {
+                key: "url",
+                label: "Tender URL",
+                required: true,
+                defaultValue: "/test-data/tender.json",
+              },
+              {
+                key: "title",
+                label: "Document title",
+                required: true,
+                defaultValue: "document.XML.p7s",
+              },
+              {
+                key: "date",
+                label: "Date modified",
+                defaultValue: "",
+                type: "date",
+              },
+            ],
+          },
+          {
+            type: window.signToDoc.TYPES.CONCLUSION,
+            title: "Висновок про результати моніторингу",
+            description: `
+                <h6>Validations:</h6>
+                <ul>
+                    <li>Get all sign files from <code>monitoring.conclusion[N].documents</code></li>
+                    <li>File title must have extension <code>*.p7s</code></li>
+                    <li>Optional validation by <code>document.dateModified</code> field</li>
+                    <li>If document.dateModified isn't set, after validating it gets the last document from the list</li>
+                </ul>
+            `,
+            fields: [
+              {
+                key: "url",
+                label: "Monitoring URL",
+                defaultValue: "/test-data/m-test/m1.json",
+                required: true,
+              },
+              {
+                key: "title",
+                label: "Document title",
+                required: true,
+                defaultValue: "sign.p7s",
+              },
+              {
+                key: "date",
+                label: "Date modified",
+                defaultValue: "",
+                type: "date",
+              },
+            ],
+          },
+          {
+            type: window.signToDoc.TYPES.NAZK,
+            title: "Довідка НАЗК",
+            description: `
+                <h6>Validations:</h6>
+                <ul>
+                    <li>Get all sign files from <code>award.documents</code></li>
+                    <li>File title must have extension <code>*.p7s</code></li>
+                    <li>Field <code>document.title</code> must be <code>"napc"</code></li>
+                    <li>Field <code>document.documentType</code> must be <code>"register"</code></li>
+                    <li>After validating it gets the last document from the list</li>
+                </ul>
+            `,
+            fields: [
+              {
+                label: "Award URL",
+                key: "url",
+                defaultValue: "https://lb-api-staging.prozorro.gov.ua/api/2.5/tenders/368cd29f789c4e23a21bef898511ca0c/awards/33d6ea831cc3493b84cde918d838e00a",
+                required: true,
+              }
+            ],
+          },
+          {
+            type: window.signToDoc.TYPES.ANNOUNCEMENT,
+            title: "Оголошення про проведення закупівлі",
+            description: `
+                <h6>Validations:</h6>
+                <ul>
+                    <li>Get all sign files from <code>tender.documents</code></li>
+                    <li>File title must be <code>sign.p7s</code></li>
+                    <li>Optional validation by <code>document.dateModified</code> field</li>
+                    <li>If document.dateModified isn't set, after validating it gets the last document from the list</li>
+                </ul>
+            `,
+            fields: [
+              {
+                key: "url",
+                label: "Tender URL",
+                defaultValue: "/test-data/announcement_documents.json",
+                required: true,
+              },
+              {
+                key: "date",
+                label: "Date modified",
+                defaultValue: "",
+                type: "date",
+              },
+            ],
+          },
+          {
+            type: window.signToDoc.TYPES.PQ,
+            title: "Шаблони договорів",
+            description: `
+                <h6>2 options are supported:</h6>
+                <ul>
+                    <li>Сreating an empty contract template - for this, in <code>Contract template name</code> field, you need to specify one of the <a href="https://github.com/ProzorroUKR/standards/blob/master/templates/contract_templates.json">valid codes</a></li>
+                    <li>Creating a filled contract template - for this, in the Tender URL field, you need to specify the corresponding procurement using <code>Contract template name</code>.</li>
+                </ul>
+            `,
+            fields: [
+              {
+                key: "url",
+                label: "Tender URL",
+                defaultValue: "/test-data/pq/generic.json",
+              },
+              {
+                key: "contractTemplateName",
+                label: "Contract template name",
+                defaultValue: "",
+              },
+            ],
+          },
+          {
+            type: window.signToDoc.TYPES.ANNUAL_PROCUREMENT_PLAN,
+            title: "еПротокол затвердження річного плану закупівель",
+            description: `
+                <h6>Validations:</h6>
+                <ul>
+                    <li>Get all sign files from <code>plan.documents</code></li>
+                    <li>File title must be <code>sign.p7s</code></li>
+                    <li>Optional validation by <code>document.dateModified</code> field</li>
+                    <li>If document.dateModified isn't set, after validating it gets the last document from the list</li>
+                </ul>
+            `,
+            fields: [
+              {
+                key: "url",
+                label: "Рlan URL",
+                defaultValue: "/test-data/AnnualProcurementPlan/1/tender.json",
+                required: true,
+              },
+              {
+                key: "date",
+                label: "Date modified",
+                defaultValue: "",
+                type: "date",
+              },
+            ],
+          },
+          {
+            type: window.signToDoc.TYPES.TENDER_REJECTION_PROTOCOL,
+            title: "еПротокол відхилення пропозиції",
+            description: `
+                <h6>Validations:</h6>
+                <ul>
+                    <li>Get all sign files from <code>award.documents</code></li>
+                    <li>Field <code>document.documentType</code> must be <code>"notice"</code></li>
+                    <li>Field <code>award.status</code> must be <code>"unsuccessful"</code> or <code>"cancelled"</code></li>
+                    <li>If field <code>award.status</code> is <code>"cancelled"</code> than <code>award.eligible</code> or <code>award.qualified</code> must be <code>false</code></li>
+                    <li>Optional validation by <code>document.dateModified</code> field</li>
+                    <li>If document.dateModified isn't set, after validating it gets the last document from the list</li>
+                </ul>
+            `,
+            fields: [
+              {
+                key: "url",
+                label: "Award URL",
+                defaultValue: "/test-data/TenderRejectionProtocol/1/awards/b776595b01bf4d14a57e717d4083e295.json",
+                required: true,
+              },
+              {
+                key: "date",
+                label: "Date modified",
+                defaultValue: "",
+                type: "date",
+              },
+            ],
+          },
+          {
+            type: window.signToDoc.TYPES.DETERMINING_WINNER_OF_PROCUREMENT,
+            title: "еПротокол визначення переможця та намір укласти договір",
+            description: `
+                <h6>Validations:</h6>
+                <ul>
+                    <li>Get all sign files from <code>award.documents</code></li>
+                    <li>Field <code>document.documentType</code> must be <code>"notice"</code></li>
+                    <li>Field <code>award.status</code> must be <code>"active"</code> or <code>"cancelled"</code></li>
+                    <li>If field <code>award.status</code> is <code>"cancelled"</code> than <code>award.qualified</code> must be <code>true</code> and <code>award.eligible</code> must be <code>true</code> or <code>undefined</code></li>
+                    <li>Optional validation by <code>document.dateModified</code> field</li>
+                    <li>If document.dateModified isn't set, after validating it gets the last document from the list</li>
+                </ul>
+            `,
+            fields: [
+              {
+                key: "url",
+                label: "Award URL",
+                defaultValue: "/test-data/determining_winner_of_procurement/1/awards/97f325d5ccef4cf88ddb16e84a1fe43a.json",
+                required: true,
+              },
+              {
+                key: "date",
+                label: "Date modified",
+                defaultValue: "",
+                type: "date",
+              },
+            ],
+          },
+          {
+            type: window.signToDoc.TYPES.PROTOCOL_ON_EXTENSION_OF_REVIEW_PERIOD,
+            title: "еПротокол продовження строку розгляду пропозиції",
+            description: `
+                <h6>Validations:</h6>
+                <ul>
+                    <li>Get all sign files from <code>award.documents</code></li>
+                    <li>Field <code>document.documentType</code> must be <code>"extensionReport"</code></li>
+                    <li>Optional validation by <code>document.dateModified</code> field</li>
+                    <li>If document.dateModified isn't set, after validating it gets the last document from the list</li>
+                </ul>
+            `,
+            fields: [
+              {
+                key: "url",
+                label: "Award URL",
+                defaultValue: "/test-data/ProtocolOnExtensionOfReviewPeriod/2/awards/1/a077d05f29fb49dda35da43b850b7d20.json",
+                required: true,
+              },
+              {
+                key: "date",
+                label: "Date modified",
+                defaultValue: "",
+                type: "date",
+              },
+            ],
+          },
+          {
+            type: window.signToDoc.TYPES.PURCHASE_CANCELLATION_PROTOCOL,
+            title: "еПротокол відміни закупівлі/лоту",
+            description: `
+                <h6>Validations:</h6>
+                <ul>
+                    <li>Get all sign files from <code>cancellation.documents</code></li>
+                    <li>Field <code>document.title</code> must be <code>"sign.p7s"</code></li>
+                    <li>Optional validation by <code>document.dateModified</code> field</li>
+                    <li>If document.dateModified isn't set, after validating it gets the last document from the list</li>
+                </ul>
+            `,
+            fields: [
+              {
+                key: "url",
+                label: "Cancellation URL",
+                defaultValue: "/test-data/purchase_cancellation_protocol/1/cancellation/9529d4bf7a0b44c9bfdd6c34d23b0a1d.json",
+                required: true,
+              },
+              {
+                key: "date",
+                label: "Date modified",
+                defaultValue: "",
+                type: "date",
+              },
+            ],
+          },
+          {
+            type: window.signToDoc.TYPES.PROTOCOL_CONSIDERATION_TENDER_OFFERS,
+            title: "еПротокол розгляду тендерних пропозицій",
+            description: `
+                <h6>Validations:</h6>
+                <ul>
+                    <li>Field <code>document.documentType</code> must be <code>"evaluationReports"</code></li>
+                    <li>Field <code>document.title</code> must be <code>"sign.p7s"</code></li>
+                    <li>Optional validation by <code>document.dateModified</code> field</li>
+                    <li>If document.dateModified isn't set, after validating it gets the last document from the list</li>
+                </ul>
+            `,
+            fields: [
+              {
+                key: "url",
+                label: "Document URL",
+                defaultValue: "/test-data/protocol_consideration_tender/1/documents/55dd9f06ea8b4c8c8679de9c532f18e8.json",
+                required: true,
+              },
+              {
+                key: "date",
+                label: "Date modified",
+                defaultValue: "",
+                type: "date",
+              },
+            ],
+          },
+          {
+            type: window.signToDoc.TYPES.TENDER_OFFER,
+            title: "еПропозиція",
+            description: `
+                <h6>Validations:</h6>
+                <ul>
+                    <li>Get all sign files from <code>bid.documents</code> or <code>bid.financialDocuments</code></li>
+                    <li>Field <code>document.documentType</code> must be <code>"proposal"</code></li>
+                </ul>
+            `,
+            fields: [
+              {
+                key: "url",
+                label: "Bid URL",
+                defaultValue: "/test-data/TenderOffer/1/bids/1/76c896bde4b047c6aebddd3325e70b63.json",
+                required: true,
+              },
+              {
+                key: "date",
+                label: "Date modified",
+                defaultValue: "2021-08-19T13:12",
+                required: true,
+              },
+            ],
+          },
+          {
+            type: window.signToDoc.TYPES.EDR,
+            title: "Довідка ЄДР",
+            description: `
+                <h6>Validations:</h6>
+                <ul>
+                    <li>Get all sign files from <code>award.documents</code> or <code>qualification.documents</code></li>
+                    <li>Field <code>document.documentType</code> must be <code>"registerExtract"</code></li>
+                    <li>Optional set file title, by default is value <code>edr_identification.yaml</code></li>
+                    <li>Optional validation by <code>document.dateModified</code> field</li>
+                    <li>If document.dateModified isn't set, after validating it gets the last document from the list</li>
+                </ul>
+            `,
+            fields: [
+              {
+                key: "url",
+                label: "Award / Qualification URL",
+                defaultValue: "/test-data/edr/5c5dc2a1b6f24b9e8894439f9502aa62.json",
+                required: true,
+              },
+              {
+                key: "title",
+                label: "Document title",
+                defaultValue: "",
+              },
+              {
+                key: "date",
+                label: "Date modified",
+                defaultValue: "",
+                type: "date",
+              },
+            ],
+          },
+          {
+            type: window.signToDoc.TYPES.COMPLAINT,
+            title: "Скарга до органу оскарження",
+            description: `
+                <h6>Validations:</h6>
+                <ul>
+                    <li>Get all sign files from <code>complaint.documents</code></li>
+                    <li>Field <code>document.title</code> must be <code>"sign.p7s"</code></li>
+                    <li>After validation, the newest document from the list is automatically taken according to the field "dateModified"</li>
+                </ul>
+            `,
+            fields: [
+              {
+                key: "url",
+                label: "Complaint URL",
+                defaultValue: "/test-data/complaints/complaint.json",
+                required: true,
+              },
+              {
+                key: "tender",
+                label: "Tender URL",
+                defaultValue: "/test-data/complaints/tender.json",
+              },
+            ],
+          },
+          {
+            type: window.signToDoc.TYPES.COMPLAINT_POST,
+            title: "Запити/пояснення до скарги",
+            description: `
+                <h6>Validations:</h6>
+                <ul>
+                    <li>Field <code>complaint.post</code> mustn't be empty</li>
+                </ul>
+            `,
+            fields: [
+              {
+                key: "url",
+                label: "Complaint URL",
+                defaultValue: "https://lb-api-sandbox-2.prozorro.gov.ua/api/2.5/tenders/33ba9c24b30b4198a2c6c76a90ec1778/complaints/35666aa0e3d44883b6a152207cfd18ad",
+                required: true,
+              },
+              {
+                key: "tender",
+                label: "Tender URL",
+                defaultValue: "/test-data/complaints/tender.json",
+              },
+            ],
+          },
+        ];
+
+        createCardList(DATA_COLLECTION);
+
+        document.getElementById("layoutSwitchSimple").addEventListener("change", function () {
+          const rows = document.querySelectorAll("#layoutRow .col");
+          rows.forEach((row) => row.classList.value =  this.checked ? "col col-12" : "col col-12 col-xl-6");
+        });
+
+        document.getElementById("searchInput").addEventListener("input", ({ target: { value } }) => {
+          if (value.length < 3) {
+            createCardList(DATA_COLLECTION);
+            return;
+          }
+
+          const filteredList = DATA_COLLECTION.filter(({ type, title }) => `#${type} – ${title}`.toLowerCase().includes(value.toLowerCase()));
+          createCardList(filteredList);
+        });
+
+        document.querySelectorAll("#accordionList .accordion-button").forEach((element) => {
+          element.addEventListener("click", ({ target }) => {
+            localStorage.setItem(STORAGE_ACTIVE_ACCORDION_KEY, target.closest("app-card").getAttribute("type"))
+          });
+        })
+      }
+
+      /**
+       * @param {AppCardData[]} config
+       */
+      const createCardList = (config) => {
+        document.getElementById("accordionList").innerHTML = "";
+        const defaultActiveAccordion = localStorage.getItem(STORAGE_ACTIVE_ACCORDION_KEY);
+
+        config.forEach((data, index) => {
+          const card = document.createElement("app-card");
+          card.setAttribute("type", data.type);
+          card.setAttribute("title", data.title);
+          card.setAttribute("description", data.description);
+          card.setAttribute("fields", JSON.stringify(data.fields));
+
+          if (defaultActiveAccordion) {
+            card.setAttribute("classList", defaultActiveAccordion === data.type ? "show" : "");
+          } else {
+            card.setAttribute("classList", index ? "" : "show");
+          }
+
+          document.getElementById("accordionList").appendChild(card);
+        });
+      }
+
+      const errorExceptionHandler = (error) => {
+        const component = document.getElementById("app-error-template").content.cloneNode(true);
+        component.getElementById("message").innerHTML = error.message || String(error);
+        component.getElementById("description").innerHTML = `--- SIGN TO DOC: Error Details ---
+              Code: ${error.code}
+              Message: ${error.message}
+              Timestamp: ${error.timestamp}
+              Original Error: ${error.originalError || error.stack}`;
+        document.getElementById("signToDocFrameID").appendChild(component);
+      }
+
+      const downloadPdfFile = async ({ url, title, type, date, contractTemplateName, tender }) => {
+          await window.signToDoc.setConfig({url, type});
+          await window.signToDoc.save({title, date, contractTemplateName, tender});
+      }
+
+      const openInNewWindowPdfFile = async ({ url, title, type, date, contractTemplateName, tender }) => {
+          await window.signToDoc.setConfig({url, type});
+          await window.signToDoc.open({title, date, contractTemplateName, tender});
+      }
+
+      const openInFramePdfFile = async ({ url, title, type, date, contractTemplateName, tender }) => {
+          await window.signToDoc.setConfig({url, type});
+          await window.signToDoc.getIframe({title, date, contractTemplateName, tender});
+      }
+    </script>
+  </body>
+</html>

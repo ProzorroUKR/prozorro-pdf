@@ -1,0 +1,142 @@
+import { pqBase, pqTexts } from "@/widgets/pq/configs/pqTexts";
+import { PdfItemEnum } from "@/widgets/pq/types/TextConfigType";
+import type { TextConfigType } from "@/widgets/pq/types/TextConfigType";
+import { STRING } from "@/constants/string";
+
+export const medicineContractConfig: TextConfigType = {
+  subject: [pqTexts.subject.medicalObligation, pqTexts.subject.suplierGuarantee],
+  price: [pqTexts.price.currencyPharm],
+  paymentOrder: [
+    pqTexts.paymentOrder.totalPriceReview,
+    pqTexts.paymentOrder.priceNoIncrease,
+    pqTexts.paymentOrder.priceIncludes,
+    pqTexts.paymentOrder.pharmCashless,
+    pqTexts.paymentOrder.paymentPeriod,
+    pqTexts.paymentOrder.paymentHold,
+    pqTexts.paymentOrder.prePayment,
+  ],
+  deliveryTerms: [
+    pqTexts.deliveryTerms.pharmDueDate,
+    pqTexts.deliveryTerms.pharmDeliveryPlace,
+    pqTexts.deliveryTerms.pharmOwnership,
+    pqTexts.deliveryTerms.pharmSafety,
+    pqTexts.deliveryTerms.pharmDeliveryPeriod,
+    pqTexts.deliveryTerms.pharmDeliveryMessage,
+    pqTexts.deliveryTerms.medicineDocumentList,
+    pqTexts.deliveryTerms.pharmCopiesCheck,
+  ],
+  guarantee: [
+    pqTexts.guarantee.medicineQualityGuarantee,
+    pqTexts.guarantee.medicineDueDate,
+    pqTexts.guarantee.unqualifiedMedicine,
+    pqTexts.guarantee.claim,
+    pqTexts.guarantee.nonArrival,
+    pqTexts.guarantee.utilizationMedicine,
+  ],
+  acceptanceOrder: [
+    pqTexts.acceptanceOrder.specialRights,
+    pqTexts.acceptanceOrder.acceptance,
+    pqTexts.acceptanceOrder.propperPaking,
+    pqTexts.acceptanceOrder.customerInspection,
+    pqTexts.acceptanceOrder.customerRefusal,
+    pqTexts.acceptanceOrder.acompanyingDocs,
+  ],
+  responsibilities: [
+    pqTexts.responsibilities.improperExecution,
+    pqTexts.responsibilities.violationDelivery,
+    pqTexts.responsibilities.untimelyTransfer,
+    pqTexts.responsibilities.penaltyAmount,
+  ],
+  disputes: [pqTexts.disputes.communication, pqTexts.disputes.court],
+  forceMajeure: [
+    pqTexts.forceMajeure.deadlinePostpone,
+    pqTexts.forceMajeure.postponeMesage,
+    pqTexts.forceMajeure.postponeDocument,
+    pqTexts.forceMajeure.defectNotQualified,
+    pqTexts.forceMajeure.dismissalGrounds,
+  ],
+  anticorruption: [
+    pqTexts.anticorruption.noStimulation,
+    pqTexts.anticorruption.immediateNotification,
+    pqTexts.anticorruption.anticorruptionLaw,
+    pqTexts.anticorruption.confidentiality,
+    pqTexts.anticorruption.supplierGuarantees,
+    pqTexts.anticorruption.affiliatedPersons,
+    pqTexts.anticorruption.suspicion,
+    pqTexts.anticorruption.controlAnticorruption,
+    pqTexts.anticorruption.consideration,
+    pqTexts.anticorruption.fullConfidelity,
+    pqTexts.anticorruption.familyIssues,
+  ],
+  messaging: [
+    pqTexts.messaging.electronic,
+    pqTexts.messaging.addresses,
+    {
+      text: [pqTexts.messaging.fromSupplier, 0, STRING.DELIMITER.DOUBLE_NEWLINE],
+      paths: ["suppliers[0].signerInfo.email"],
+      defaults: [pqBase.eAddress],
+      pdfType: PdfItemEnum.TEXT,
+    },
+    {
+      text: [pqTexts.messaging.fromCustomer, 0, STRING.DELIMITER.DOUBLE_NEWLINE],
+      paths: ["buyer.signerInfo.email"],
+      defaults: [pqBase.eAddress],
+      pdfType: PdfItemEnum.TEXT,
+    },
+  ],
+  contractAction: [
+    pqTexts.contractAction.takesEffectPharm,
+    pqTexts.contractAction.postponedPharm,
+    pqTexts.contractAction.changes,
+  ],
+  finalStatements: [
+    pqTexts.finalStatements.groundsTermination,
+    pqTexts.finalStatements.phaximile,
+    pqTexts.finalStatements.sideEffects,
+    pqTexts.finalStatements.fullResponsibility,
+    pqTexts.finalStatements.additionalTasks,
+    pqTexts.finalStatements.allCorrections,
+    pqTexts.finalStatements.fullUnderstanding,
+  ],
+};
+
+export const labAnalysisTexts: Record<string, string | string[]> = {
+  addition2: "Додаток №2",
+  toContract: "до договору про закупівлю № ________________\n\n",
+  from: "від «___»_________ 202_ р.\n",
+  list: "Перелік\nпідстав для проведення лабораторного аналізу серії  лікарських засобів",
+  groundsList: [
+    "Підставами для лабораторного аналізу серії продукції є: *",
+    "- виявлення невідповідності продукції вимогам методів контролю якості та/або специфікації якості продукції за результатами візуального огляду;",
+    "- виявлення розбіжностей у супровідних документах до серій продукції;",
+    "- виявлення під час візуального огляду ознак фальсифікації серії або серій продукції;",
+    "- наявність інформації про непередбачувані побічні реакції внаслідок застосування серії або серій продукції та/або відсутності ефективності при застосуванні такої продукції;",
+    "- встановлення факту невключення у повному обсязі показників якості, передбачених методами контролю якості і які є частиною реєстраційного досьє до сертифікату якості власника реєстраційного посвідчення продукції та/або відсутності сертифіката якості, виданого виробником;",
+    "- виявлення продукції, яка не належать до лікарських засобів, підприємства з виробництва яких розташовані в державах, уповноважений орган у сфері контролю якості лікарських засобів яких є членом міжнародної Системи співробітництва фармацевтичних інспекцій (Pharmaceutical Inspection Cooperation Scheme, PIC/S);",
+    "- виявлення невідповідності упаковки продукції графічному зображенню упаковки, яке надане власником реєстраційного посвідчення;",
+    "- виявлення пошкодження упаковки, якщо таке пошкодження може негативно вплинути на відповідність якості серії продукції вимогам методів контролю якості продукції. Зазначене не стосується деформації індивідуальної упаковки обмеженої кількості одиниць товару, що могла виникнути під час транспортування (такі упаковки відбраковуються під час приймання продукції на склад і підлягають поверненню або знищенню, у порядку, визначеному згідно із законодавством та умовами Договору);",
+    "- порушення загальних та специфічних умов зберігання продукції, визначених її виробником (заявлених в методах контролю якості продукції, інструкції про застосування продукції та зазначених на її упаковці) (зокрема, але не виключно із дотриманням умов, що забезпечують збереження їх належної якості, схоронності та цілісності, недопущення попадання на них пилу, атмосферних опадів і впливу сторонніх запахів, захищення контамінації іншою продукцією або речовинами з одночасним забезпеченням захисту продукції від ушкодження, фальсифікації та крадіжки, уникнення їх пошкодження (розливання, розсипання, розбиття), а також із дотриманням особливих температурних умов зберігання (температурного режиму), зокрема дотримання «холодового ланцюга», використання спеціально обладнаного транспорту, оснащеного рефрижераторними установками, які обладнуються пристроями для постійного моніторингу температури (термоіндикаторами, термотестерами) або термоконтейнерами із відповідними картками-індикаторами, індикаторами заморожування) на усіх етапах постачання, у тому числі під час транспортування, що могло негативно вплинути на якість продукції;",
+    "- наявність інформації про заборону обігу інших серій продукції, які було вилучено з обігу в установленому порядку;",
+    "- отримання офіційної інформації про неналежну якість продукції від компетентних регуляторних органів інших держав;",
+    "- встановлення невідповідності переліку показників або вимогам до них у сертифікаті якості виробника тим, що зазначені в специфікації якості методів контролю якості продукції до реєстраційного посвідчення.",
+  ],
+};
+
+export const testingGroundsTexts: Record<string, string | string[]> = {
+  addition2: "Додаток №2",
+  toContract: "до договору про закупівлю № ________________\n\n",
+  from: "від «___»_________ 202_ р.\n",
+  list: "Перелік\nпідстав для проведення випробувань медичних виробів",
+  groundsList: [
+    "Підставами для випробувань продукції є:",
+    "- виявлення за результатами візуального огляду невідповідності продукції декларації про відповідність та/або сертифікату відповідності продукції встановленим вимогам;",
+    "- виявлення розбіжностей у супровідних документах до серій продукції, що впливають на її безпеку та якість;",
+    "- виявлення під час візуального огляду ознак фальсифікації серії або серій продукції;",
+    "- наявність інформації про непередбачувані побічні реакції внаслідок застосування серії або серій продукції та/або відсутності ефективності при застосуванні такої продукції;",
+    "- виявлення невідповідності комплектності та/або маркування та/або упаковки та/або етикетки та/або інструкції та/або інформації щодо ввезеної продукції;",
+    "- виявлення пошкодження (деформації) упаковок, що виникло під час транспортування, якщо таке пошкодження (деформація) може негативно вплинути на якість та безпечність серії продукції;",
+    "- порушення загальних та специфічних умов зберігання продукції, визначених її виробником в документації щодо системи управління якістю та/або технічному файлі, інструкції про застосування продукції та зазначених на упаковці та/або етикетці та/або маркуванні на усіх етапах постачання, у тому числі під час транспортування, що могло негативно вплинути на якість та безпеку продукції, зокрема, але не виключно: недотримання умов, що забезпечують збереження належної якості, схоронності та цілісності продукції; допущення попадання на продукцію пилу, атмосферних опадів і впливу сторонніх запахів; не захищення від контамінації речовинами; не забезпечення захисту продукції від ушкодження, фальсифікації, крадіжки,  розсипання та/або розбиття; недотримання особливих температурних умов зберігання (температурного режиму), зокрема недотримання «холодового ланцюга», невикористання спеціально обладнаного транспорту, оснащеного рефрижераторними установками, які обладнуються пристроями для постійного моніторингу температури (термоіндикаторами, термотестерами) або термоконтейнерами із відповідними картками-індикаторами, індикаторами заморожування;",
+    "- наявність інформації про заборону обігу інших серій продукції, які було вилучено з обігу в установленому порядку;",
+    "- отримання офіційної інформації про неналежну якість продукції від компетентних регуляторних органів інших держав.",
+  ],
+};

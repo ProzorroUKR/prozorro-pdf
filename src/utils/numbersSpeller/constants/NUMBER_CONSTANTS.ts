@@ -1,0 +1,11 @@
+export const NUMBER_CONSTANTS = {
+  ONE: 1,
+  TWO: 2,
+  THREE: 3,
+  FOUR: 4,
+  TEN: 10,
+  ELEVEN: 11,
+  TWENTY: 20,
+  HUNDRED: 100,
+  THOUSAND: 1000,
+};

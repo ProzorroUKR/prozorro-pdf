@@ -1,0 +1,38 @@
+{
+  "data": {
+    "id": "9529d4bf7a0b44c9bfdd6c34d23b0a1d",
+    "status": "active",
+    "date": "2024-01-09T00:00:15.108653+02:00",
+    "reasonType": "unFixable",
+    "reason": "Лист Закарпатьської митниці від 29.12.2023 №7.7-2/7.7-21-01/10009",
+    "cancellationOf": "tender",
+    "documents": [
+      {
+        "hash": "md5:0fa19e8370778f3088b4b564fbb5895d",
+        "title": "Відмова Закарпаття митниця.pdf",
+        "format": "application/pdf",
+        "url": "https://public-docs.prozorro.gov.ua/get/819b59a705354c68bd380c1983890501?Signature=KBEmkWa5kZ1XqTNx3fVhEFheMMuzV%2FbCuu9X%2B%2FZ1Zps2DQRITeDsVXhLKs3KzQCxF2H91aV5bJ%2Bxu5zhO0EgAg%3D%3D&KeyID=52462340",
+        "documentOf": "tender",
+        "language": "uk",
+        "id": "d612848df8114fbf96c11143d65ed2e1",
+        "datePublished": "2023-12-29T17:12:26.782617+02:00",
+        "dateModified": "2023-12-29T17:12:26.782617+02:00"
+      },
+      {
+        "hash": "md5:341f268eed39d3d71713c8e76cd2ba69",
+        "title": "sign.p7s",
+        "format": "application/pkcs7-signature",
+        "url": "/test-data/purchase_cancellation_protocol/1/cancellation/sign.p7s",
+        "documentOf": "tender",
+        "language": "uk",
+        "id": "d7d720b1a3b4458b985fb59821cfb803",
+        "datePublished": "2023-12-29T17:12:31.952980+02:00",
+        "dateModified": "2023-12-29T17:12:31.952980+02:00"
+      }
+    ],
+    "complaintPeriod": {
+      "startDate": "2023-12-29T17:12:32.356271+02:00",
+      "endDate": "2024-01-09T00:00:00+02:00"
+    }
+  }
+}

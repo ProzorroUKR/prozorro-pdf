@@ -1,0 +1,1276 @@
+{
+  "data": {
+    "procurementMethod": "open",
+    "awardPeriod": {
+      "startDate": "2020-02-19T15:07:36.357222+02:00",
+      "endDate": "2020-02-24T16:25:07.431604+02:00"
+    },
+    "mainProcurementCategory": "goods",
+    "complaintPeriod": {
+      "startDate": "2020-01-20T11:34:07.497077+02:00",
+      "endDate": "2020-02-14T00:00:00+02:00"
+    },
+    "auctionUrl": "https://auction.openprocurement.org/tenders/b2fcffa9b61e4717894a8a656e3edd07",
+    "enquiryPeriod": {
+      "startDate": "2020-01-20T11:34:07.497077+02:00",
+      "clarificationsUntil": "2020-02-13T00:00:00+02:00",
+      "endDate": "2020-02-08T22:00:00+02:00",
+      "invalidationDate": "2020-02-11T16:50:56.056066+02:00"
+    },
+    "submissionMethod": "electronicAuction",
+    "procuringEntity": {
+      "kind": "general",
+      "name": "\u041a\u041e\u041c\u0423\u041d\u0410\u041b\u042c\u041d\u0415 \u041d\u0415\u041a\u041e\u041c\u0415\u0420\u0426\u0406\u0419\u041d\u0415 \u041f\u0406\u0414\u041f\u0420\u0418\u0404\u041c\u0421\u0422\u0412\u041e \"\u041c\u0406\u0421\u042c\u041a\u0410 \u0414\u0418\u0422\u042f\u0427\u0410 \u041a\u041b\u0406\u041d\u0406\u0427\u041d\u0410 \u041b\u0406\u041a\u0410\u0420\u041d\u042f \u041c.\u041b\u042c\u0412\u041e\u0412\u0410\"",
+      "address": {
+        "postalCode": "79059",
+        "countryName": "\u0423\u043a\u0440\u0430\u0457\u043d\u0430",
+        "streetAddress": "\u041f.\u041e\u0420\u041b\u0418\u041a\u0410, \u0431\u0443\u0434\u0438\u043d\u043e\u043a 4",
+        "region": "\u041b\u044c\u0432\u0456\u0432\u0441\u044c\u043a\u0430 \u043e\u0431\u043b\u0430\u0441\u0442\u044c",
+        "locality": "\u041b\u044c\u0432\u0456\u0432"
+      },
+      "contactPoint": {
+        "telephone": "380322917651",
+        "name": "\u0413\u043e\u043d\u0442\u0430\u0440\u0435\u0432\u0430 \u0414\u0430\u0440\u0456\u044f \u041c\u0438\u0440\u043e\u0441\u043b\u0430\u0432\u0456\u0432\u043d\u0430",
+        "email": "buhg_mdkl@ukr.net"
+      },
+      "identifier": {
+        "scheme": "UA-EDR",
+        "legalName_en": "KOMUNALNE NEKOMERTsIINE PIDPRIYeMSTVO \"MISKA DITYaChA KLINIChNA LIKARNYa M.LVOVA\"",
+        "id": "22331468",
+        "legalName": "\u041a\u041e\u041c\u0423\u041d\u0410\u041b\u042c\u041d\u0415 \u041d\u0415\u041a\u041e\u041c\u0415\u0420\u0426\u0406\u0419\u041d\u0415 \u041f\u0406\u0414\u041f\u0420\u0418\u0404\u041c\u0421\u0422\u0412\u041e \"\u041c\u0406\u0421\u042c\u041a\u0410 \u0414\u0418\u0422\u042f\u0427\u0410 \u041a\u041b\u0406\u041d\u0406\u0427\u041d\u0410 \u041b\u0406\u041a\u0410\u0420\u041d\u042f \u041c.\u041b\u042c\u0412\u041e\u0412\u0410\""
+      },
+      "name_en": "KOMUNALNE NEKOMERTsIINE PIDPRIYeMSTVO \"MISKA DITYaChA KLINIChNA LIKARNYa M.LVOVA\""
+    },
+    "owner": "e-tender.biz",
+    "plans": [
+      {
+        "id": "5fde1d89c2e44854ba37b9606808effd"
+      }
+    ],
+    "documents": [
+      {
+        "hash": "md5:8c9e6e6f43e9f2a9cd7b2e6b436d5d52",
+        "author": "tender_owner",
+        "format": "text/plain",
+        "url": "https://public.docs.openprocurement.org/get/babf5f84ce77488098ec00df4a0b113e?KeyID=52462340&Signature=LQAbths4XLZRU8zveM%2FrEMzAm4Mppayc51PLNM2CpcOpdzxr%2Ffw0fHF9GR0xDLm7zQVZUM0BiXx7E40VLRcCAg%253D%253D",
+        "title": "\u0422\u0435\u043d\u0434\u0435\u0440\u043d\u0430 \u0434\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u0446\u0456\u044f.docx",
+        "documentOf": "tender",
+        "datePublished": "2020-01-20T11:35:08.809004+02:00",
+        "documentType": "biddingDocuments",
+        "dateModified": "2020-01-20T11:35:08.809044+02:00",
+        "id": "044e5299f0f94d09b98b2856e6822cf5"
+      },
+      {
+        "hash": "md5:9f0e8257b396cbdb39b6878b6ca8ba82",
+        "author": "tender_owner",
+        "format": "text/plain",
+        "url": "https://public.docs.openprocurement.org/get/02e29c14472a4a48ac1c6e47a66976f0?KeyID=52462340&Signature=fs8AYl%2FF%2FI%252BrtQ1QHyIatdX6R5NfMmeaHuiYarzr3phKXYybvTijwO8PSfhH6VIzFRUMKFUKwvvJ0R2TPXlgBQ%253D%253D",
+        "title": "\u0422\u0435\u0445\u043d\u0456\u0447\u043d\u0456 \u0432\u0438\u043c\u043e\u0433\u0438.docx",
+        "documentOf": "tender",
+        "datePublished": "2020-01-20T11:35:25.076660+02:00",
+        "documentType": "technicalSpecifications",
+        "dateModified": "2020-01-20T11:35:25.076698+02:00",
+        "id": "95b187d17925479cbfb77d0d84189d7f"
+      },
+      {
+        "hash": "md5:f217a5de1bfddd31ca91ca980dbcd7e4",
+        "author": "tender_owner",
+        "format": "text/plain",
+        "url": "https://public.docs.openprocurement.org/get/1052d7606dab49019440a0c320636c31?KeyID=52462340&Signature=iJfcfqoMJ%252B5aMWP9pJT4bJF6QAZgnVagShENe8kcvSmHdOq2cp6lo2rIN4ZjmjjGyQgRBtmRQxjXeLx1Fc8VCQ%253D%253D",
+        "title": "\u043f\u0440\u043e\u0435\u043a\u0442 \u0434\u043e\u0433\u043e\u0432\u043e\u0440\u0443.docx",
+        "documentOf": "tender",
+        "datePublished": "2020-01-20T11:35:47.517824+02:00",
+        "documentType": "contractProforma",
+        "dateModified": "2020-01-20T11:35:47.517862+02:00",
+        "id": "2dd58bd8572a48aaa92851d9e4751dcb"
+      },
+      {
+        "hash": "md5:8e44ca2b60c532f2839490f8b2ff2f7b",
+        "author": "tender_owner",
+        "format": "application/pkcs7-signature",
+        "url": "test-data/announcement/sign_securement.p7s",
+        "title": "sign.p7s",
+        "documentOf": "tender",
+        "datePublished": "2020-01-20T11:41:32.050904+02:00",
+        "dateModified": "2020-01-20T11:41:32.050934+02:00",
+        "id": "f02bde2966014227b8de2a0559f68b78"
+      },
+      {
+        "hash": "md5:88eaa2c844f9f63142c527bdc181be5b",
+        "author": "tender_owner",
+        "format": "text/plain",
+        "url": "https://public.docs.openprocurement.org/get/879449278f9c4a75b92628f4b4f91367?KeyID=52462340&Signature=Ot8k6%2FWyE2fdhAQa3shYQJAYnrVW324XNt6r%252B3FaoA2M5n1HsDexAHbpjHmMj8yQCiXS%2FW1ou5r3ih2EdkF9CQ%253D%253D",
+        "title": "\u0422\u0435\u043d\u0434\u0435\u0440\u043d\u0430 \u0434\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u0446\u0456\u044f.docx",
+        "documentOf": "tender",
+        "datePublished": "2020-01-20T11:35:08.809004+02:00",
+        "documentType": "biddingDocuments",
+        "dateModified": "2020-02-05T15:42:44.891546+02:00",
+        "id": "044e5299f0f94d09b98b2856e6822cf5"
+      },
+      {
+        "hash": "md5:fb028ec53fc3299a17dd2b083cd74580",
+        "author": "tender_owner",
+        "format": "text/plain",
+        "url": "https://public.docs.openprocurement.org/get/d294cb42d4474a999d82f6901089a0dc?KeyID=52462340&Signature=JQ5rRZBZ6T09poFSZFCSZehQ4tczp7xzR6aVNytBCmCtp3ENA1pCHNJxHNDFidmyMRgCsxwFh6QQBc0rDB%252BsAw%253D%253D",
+        "title": "\u0422\u0435\u0445\u043d\u0456\u0447\u043d\u0456 \u0432\u0438\u043c\u043e\u0433\u0438.docx",
+        "documentOf": "tender",
+        "datePublished": "2020-01-20T11:35:25.076660+02:00",
+        "documentType": "technicalSpecifications",
+        "dateModified": "2020-02-05T15:43:51.575869+02:00",
+        "id": "95b187d17925479cbfb77d0d84189d7f"
+      },
+      {
+        "hash": "md5:8af12f2126dfaad85daa5dbf2634178c",
+        "author": "tender_owner",
+        "format": "text/plain",
+        "url": "https://public.docs.openprocurement.org/get/ef48af3bbbbd48649d6df277dc5afd0a?KeyID=52462340&Signature=aydg3j4lNZV%2FwP5xE%2FJef88y%2FcZJq67GAbWyC6Q2ruyQEc505ZcPYQ%252BlWuj5DeNrNyoL6DgkBQUIS2b0%2F8BWCQ%253D%253D",
+        "title": "\u0420\u0456\u0448\u0435\u043d\u043d\u044f \u043f\u0440\u043e \u0432\u043d\u0435\u0441\u0435\u043d\u043d\u044f \u0437\u043c\u0456\u043d.doc",
+        "documentOf": "tender",
+        "datePublished": "2020-02-05T15:44:05.270108+02:00",
+        "dateModified": "2020-02-05T15:44:05.270130+02:00",
+        "id": "24980a8dce9d42ffa5e42752846ae495"
+      },
+      {
+        "hash": "md5:a56b620d901608a31efcaaba7b42cda2",
+        "author": "tender_owner",
+        "format": "application/pkcs7-signature",
+        "url": "https://public.docs.openprocurement.org/get/73a11e76991241b780e907ea94325241?KeyID=52462340&Signature=ptiErdirtUrjm2Ad3j3RFzE05vdH7kMRlgjeRqpXw6m4OavMtz1Mi5SZLOsIwP73Zr7YHDLJWLN54ctEaH0TCA%253D%253D",
+        "title": "sign.p7s",
+        "documentOf": "tender",
+        "datePublished": "2020-01-20T11:41:32.050904+02:00",
+        "dateModified": "2020-02-05T19:52:01.457925+02:00",
+        "id": "f02bde2966014227b8de2a0559f68b78"
+      },
+      {
+        "hash": "md5:470880e2861e7dc21f47db8a7a3b5e54",
+        "author": "tender_owner",
+        "format": "text/plain",
+        "url": "https://public.docs.openprocurement.org/get/669eed3bce424422844c658cd0297cf9?KeyID=52462340&Signature=qDvwuXq3AqitKXt47EI35Q7k%2Fe%252Bd%2FethJ6VKlLfQ2M0Qvf47%2FX2HhjEzQsv80wzbtagg8hGAUk0uTNR3oeb3Dw%253D%253D",
+        "title": "\u0422\u0435\u043d\u0434\u0435\u0440\u043d\u0430 \u0434\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u0446\u0456\u044f.docx",
+        "documentOf": "tender",
+        "datePublished": "2020-01-20T11:35:08.809004+02:00",
+        "documentType": "biddingDocuments",
+        "dateModified": "2020-02-11T14:59:47.857941+02:00",
+        "id": "044e5299f0f94d09b98b2856e6822cf5"
+      },
+      {
+        "hash": "md5:6a1cd6b4411d29e899c6ebc2f1f5139d",
+        "author": "tender_owner",
+        "format": "text/plain",
+        "url": "https://public.docs.openprocurement.org/get/6058b9a61a694d9ba2f775040d4f2c4a?KeyID=52462340&Signature=NkD2ik3O4gJD%2FjOMHtJAPTYs5yoPB%252BJi2lQHVWa44PqUFNY57hCzUV7BHz1D39coVF7fE5Inv7Y7unlJByScAA%253D%253D",
+        "title": "\u0422\u0435\u0445\u043d\u0456\u0447\u043d\u0456 \u0432\u0438\u043c\u043e\u0433\u0438.docx",
+        "documentOf": "tender",
+        "datePublished": "2020-01-20T11:35:25.076660+02:00",
+        "documentType": "technicalSpecifications",
+        "dateModified": "2020-02-11T15:00:08.810805+02:00",
+        "id": "95b187d17925479cbfb77d0d84189d7f"
+      },
+      {
+        "hash": "md5:b9fb4165b639078dc6af4f642e1bffb9",
+        "author": "tender_owner",
+        "format": "text/plain",
+        "url": "https://public.docs.openprocurement.org/get/0a8ce46063304f779694199c5e48aed1?KeyID=52462340&Signature=aIPD2aVcCWv%2FFPqljUulcDysa7zdiWFxJvvm%2FxMLS%2FL1tZNqcc81na4PaTUdqqonBMX8I7z5CGmfgKcRCHlECg%253D%253D",
+        "title": "\u043f\u0440\u043e\u0435\u043a\u0442 \u0434\u043e\u0433\u043e\u0432\u043e\u0440\u0443.docx",
+        "documentOf": "tender",
+        "datePublished": "2020-01-20T11:35:47.517824+02:00",
+        "documentType": "contractProforma",
+        "dateModified": "2020-02-11T15:00:46.125290+02:00",
+        "id": "2dd58bd8572a48aaa92851d9e4751dcb"
+      },
+      {
+        "hash": "md5:283717dc4df6b9e6f018930a924cc152",
+        "author": "tender_owner",
+        "format": "text/plain",
+        "url": "https://public.docs.openprocurement.org/get/5998556d32724aa995015aaac73d5dc2?KeyID=52462340&Signature=RXmuMtsSadL99Z3HaoyrDr25YlOosvwLUKRhJkxSIPTGHBjxh3I3uSTD%252BEnp6DyypmUwofU4jBTHbBKYxYcMCw%253D%253D",
+        "title": "\u0420\u0456\u0448\u0435\u043d\u043d\u044f \u043f\u0440\u043e \u0432\u043d\u0435\u0441\u0435\u043d\u043d\u044f \u0437\u043c\u0456\u043d.doc",
+        "documentOf": "tender",
+        "datePublished": "2020-02-11T15:02:52.825846+02:00",
+        "dateModified": "2020-02-11T15:02:52.825894+02:00",
+        "id": "1a12f6c53dda4c8a9e2991502a14bae5"
+      },
+      {
+        "hash": "md5:e3e93a2a94fabaf0f11648241b68e9de",
+        "author": "tender_owner",
+        "format": "text/plain",
+        "url": "https://public.docs.openprocurement.org/get/21f2c2b85cac4058ae1227edcb333ee4?KeyID=52462340&Signature=mkn8z5rySPwOTrP6Z4y1z2s0gdtjZaLJhmVaKYnfMlAP4vTedLlGsfi%2F6yfTwUcq448Lr%2Fi17K3KIZxR1khJDw%253D%253D",
+        "title": "\u0422\u0435\u043d\u0434\u0435\u0440\u043d\u0430 \u0434\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u0446\u0456\u044f.docx",
+        "documentOf": "tender",
+        "datePublished": "2020-01-20T11:35:08.809004+02:00",
+        "documentType": "biddingDocuments",
+        "dateModified": "2020-02-11T16:47:12.057890+02:00",
+        "id": "044e5299f0f94d09b98b2856e6822cf5"
+      },
+      {
+        "hash": "md5:c9b40fd4b80dcdc92a1ef7feaa51ff5d",
+        "author": "tender_owner",
+        "format": "text/plain",
+        "url": "https://public.docs.openprocurement.org/get/907b1fe11f3443c4b5a4747c146fb096?KeyID=52462340&Signature=hqeUrbVxkVCBf43Vt7WE6DuCkp5gkszvvJMLKiD71uCLFrPszB0hs%252BfvHg0Zipcz8eWBzxitwqEZjc7rfix9Bg%253D%253D",
+        "title": "\u0422\u0435\u0445\u043d\u0456\u0447\u043d\u0456 \u0432\u0438\u043c\u043e\u0433\u0438.docx",
+        "documentOf": "tender",
+        "datePublished": "2020-01-20T11:35:25.076660+02:00",
+        "documentType": "technicalSpecifications",
+        "dateModified": "2020-02-11T16:47:30.858254+02:00",
+        "id": "95b187d17925479cbfb77d0d84189d7f"
+      },
+      {
+        "hash": "md5:2d4cc1898bac492bc576c281993afc0e",
+        "author": "tender_owner",
+        "format": "text/plain",
+        "url": "https://public.docs.openprocurement.org/get/8b1222ed61eb40a699ac78afd1b2876d?KeyID=52462340&Signature=YgeMMwAcUtHoec%252BHJ85xnCb3WNnd3tpVN%2FyifFIRnlEOKoSxrFxve6wdMg9tSbDvHZObfMTUt%2FuRebwJ8SSVBQ%253D%253D",
+        "title": "\u043f\u0440\u043e\u0435\u043a\u0442 \u0434\u043e\u0433\u043e\u0432\u043e\u0440\u0443.docx",
+        "documentOf": "tender",
+        "datePublished": "2020-01-20T11:35:47.517824+02:00",
+        "documentType": "contractProforma",
+        "dateModified": "2020-02-11T16:47:52.153479+02:00",
+        "id": "2dd58bd8572a48aaa92851d9e4751dcb"
+      },
+      {
+        "hash": "md5:a6c6291a6b2d9a2878fe2fbb808ef541",
+        "author": "tender_owner",
+        "format": "application/pkcs7-signature",
+        "url": "https://public.docs.openprocurement.org/get/4d96055e56934b66a70c4c8dfad4b1be?KeyID=52462340&Signature=84SGcAq3wfNEQVB5hpbXS5oxi5%2F009vMBBtklZG11Z0uOYY%2FaRinGW3K0Yk6vq17aPmANWV28DcKKoGfcYKSCg%253D%253D",
+        "title": "sign.p7s",
+        "documentOf": "tender",
+        "datePublished": "2020-01-20T11:41:32.050904+02:00",
+        "dateModified": "2020-02-11T16:50:56.053842+02:00",
+        "id": "f02bde2966014227b8de2a0559f68b78"
+      },
+      {
+        "hash": "md5:dfd35380ca37f855fef92fe0b0141dff",
+        "author": "auction",
+        "format": "text/plain",
+        "url": "https://public.docs.openprocurement.org/get/7ddd36f2c14344aa969fb25871e1f9ca?KeyID=52462340&Signature=OxYsHA3l%252BmHSHDj9hhEbUpt8IVQ2DFTgp9pchvTaELZVl%252B71CdObzmUbUJSEv3Yp9K4%2FS7glWtbPsNJyoz65Bg%253D%253D",
+        "title": "audit_b2fcffa9b61e4717894a8a656e3edd07.yaml",
+        "documentOf": "tender",
+        "datePublished": "2020-02-19T15:07:35.187729+02:00",
+        "dateModified": "2020-02-19T15:07:35.187751+02:00",
+        "id": "8ca6007978db4f53beec44963b205959"
+      },
+      {
+        "hash": "md5:a142a5d519eaf5dac7153a7acbca9da0",
+        "author": "auction",
+        "format": "text/plain",
+        "url": "https://public.docs.openprocurement.org/get/847853c99d13439c8d2408f866b9300c?KeyID=52462340&Signature=rnIAZdrUUVwB5be1oTF7qfM7YjsREM1U5gX%2FCeIXds400smxTjUgw%2FcF3iFad2ta2laUw5x4NRioJNXVpL97BQ%253D%253D",
+        "title": "audit_b2fcffa9b61e4717894a8a656e3edd07.yaml",
+        "documentOf": "tender",
+        "datePublished": "2020-02-19T15:07:35.187729+02:00",
+        "dateModified": "2020-02-19T15:07:37.244504+02:00",
+        "id": "8ca6007978db4f53beec44963b205959"
+      }
+    ],
+    "title": "\u041f\u0440\u0438\u0434\u0431\u0430\u043d\u043d\u044f \u043c\u0435\u0434\u0438\u0447\u043d\u043e\u0433\u043e \u043e\u0431\u043b\u0430\u0434\u043d\u0430\u043d\u043d\u044f \u0434\u043b\u044f \u043e\u0440\u0442\u043e\u043f\u0435\u0434\u0438\u0447\u043d\u043e\u0457 \u043e\u043f\u0435\u0440\u0430\u0446\u0456\u0439\u043d\u043e\u0457 \u0430\u043d\u0435\u0441\u0442\u0435\u0437\u0456\u043e\u043b\u043e\u0433\u0456\u0447\u043d\u043e\u0433\u043e \u0432\u0456\u0434\u0434\u0456\u043b\u0435\u043d\u043d\u044f \u041a\u041d\u041f \"\u041c\u0456\u0441\u044c\u043a\u0430 \u0434\u0438\u0442\u044f\u0447\u0430 \u043a\u043b\u0456\u043d\u0456\u0447\u043d\u0430 \u043b\u0456\u043a\u0430\u0440\u043d\u044f \u043c. \u041b\u044c\u0432\u043e\u0432\u0430\" \u0437\u0430 \u0430\u0434\u0440\u0435\u0441\u043e\u044e \u0432\u0443\u043b. \u041f.\u041e\u0440\u043b\u0438\u043a\u0430, 4: \u0421\u0432\u0456\u0442\u0438\u043b\u044c\u043d\u0438\u043a \u043e\u043f\u0435\u0440\u0430\u0446\u0456\u0439\u043d\u0438\u0439, \u041a\u043e\u043d\u0441\u043e\u043b\u044c \u0441\u0442\u0435\u043b\u044c\u043e\u0432\u0430, \u041a\u043e\u043c\u043f\u0440\u0435\u0441\u043e\u0440, \u0411\u0456\u043d\u043e\u043a\u0443\u043b\u044f\u0440\u043d\u0438\u0439 \u0437\u0431\u0456\u043b\u044c\u0448\u0443\u0432\u0430\u0447, \u041d\u0435\u0433\u0430\u0442\u043e\u0441\u043a\u043e\u043f, \u041a\u043e\u0430\u0433\u0443\u043b\u044f\u0442\u043e\u0440, \u0412\u0456\u0434\u0441\u043c\u043e\u043a\u0442\u0443\u0432\u0430\u0447, \u041c\u043e\u043d\u0456\u0442\u043e\u0440 \u043f\u0430\u0446\u0456\u0454\u043d\u0442\u0430, \u0421\u0435\u043a\u0446\u0456\u0439\u043d\u0438\u0439 \u043f\u0440\u043e\u0442\u0438\u043f\u0440\u043e\u043b\u0435\u0436\u043d\u0435\u0432\u0438\u0439 \u043c\u0430\u0442\u0440\u0430\u0446, \u0421\u0442\u0438\u043c\u0443\u043b\u044f\u0442\u043e\u0440 \u043d\u0435\u0440\u0432\u0456\u0432, \u0428\u0430\u0444\u0430 \u043c\u0435\u0434\u0438\u0447\u043d\u0430 \u0434\u0432\u043e\u0445\u0434\u0432\u0435\u0440\u043d\u0430,  \u041c\u043e\u043d\u0456\u0442\u043e\u0440 \u043f\u0430\u0446\u0456\u0454\u043d\u0442\u0430 \u0437 \u0434\u043e\u0434\u0430\u0442\u043a\u043e\u0432\u0438\u043c\u0438 \u0444\u0443\u043d\u043a\u0446\u0456\u044f\u043c\u0438 \u0434\u043b\u044f \u0430\u043d\u0430\u0441\u0442\u0435\u0437\u0456\u043e\u043b\u043e\u0433\u0456\u0457, \u041a\u043e\u043d\u0441\u043e\u043b\u044c \u043f\u0440\u0438\u043b\u0456\u0436\u043a\u043e\u0432\u0430, \u0422\u0443\u043c\u0431\u0430 \u043f\u0440\u0438\u043b\u0456\u0436\u043a\u043e\u0432\u0430 \u043f\u043b\u0430\u0441\u0442\u0438\u043a\u043e\u0432\u0430,  \u0421\u0442\u043e\u043b\u0438\u043a \u0430\u043d\u0435\u0441\u0442\u0435\u0437\u0456\u043e\u043b\u043e\u0433\u0430, \u0437\u0456 \u0448\u0442\u0443\u0447\u043d\u0438\u043c \u043a\u0430\u043c\u0456\u043d\u043d\u044f\u043c \u0442\u0430 \u0432\u0438\u0441\u0443\u0432\u043d\u043e\u044e \u043f\u043b\u043e\u0441\u043a\u0456\u0441\u0442\u044e, \u0412\u0456\u0437\u043e\u043a \u043c\u0435\u0434\u0438\u0447\u043d\u0438\u0439,  \u0421\u0442\u043e\u043b\u0438\u043a \u0456\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442\u0430\u043b\u044c\u043d\u0438\u0439 \u0417\u043e\u043c\u0431\u0435\u0440\u0433\u0430, \u0421\u0438\u0441\u0442\u0435\u043c\u0430 \u043a\u043e\u043b\u044c\u043e\u0440\u043e\u0432\u043e\u0457 \u0432\u0456\u0437\u0443\u0430\u043b\u0456\u0437\u0430\u0446\u0456\u0457 \u0432\u0435\u043d\u00bb\n\u041d\u041a 024:2019 \u00ab\u041a\u043b\u0430\u0441\u0438\u0444\u0456\u043a\u0430\u0442\u043e\u0440 \u043c\u0435\u0434\u0438\u0447\u043d\u0438\u0445 \u0432\u0438\u0440\u043e\u0431\u0456\u0432\u00bb: 12282 - \u041e\u043f\u0435\u0440\u0430\u0446\u0456\u0439\u043d\u0438\u0439 \u0441\u0432\u0456\u0442\u0438\u043b\u044c\u043d\u0438\u043a; 36810 - \u041a\u043e\u043d\u0441\u043e\u043b\u044c \u0437 \u043f\u0456\u0434\u0432\u043e\u0434\u0430\u043c\u0438 \u043a\u043e\u043c\u0443\u043d\u0456\u043a\u0430\u0446\u0456\u0439 \u0443\u043d\u0456\u0432\u0435\u0440\u0441\u0430\u043b\u044c\u043d\u0430, \u0437 \u043d\u0430\u0441\u0442\u0456\u043d\u043d\u0438\u043c \u043a\u0440\u0456\u043f\u043b\u0435\u043d\u043d\u044f\u043c; 31253 - \u041a\u043e\u043c\u043f\u0440\u0435\u0441\u043e\u0440 \u043f\u043e\u0432\u0456\u0442\u0440\u044f\u043d\u0438\u0439 \u0434\u043b\u044f \u043c\u0435\u0434\u0438\u0447\u043d\u0438\u0445 \u0432\u0438\u0440\u043e\u0431\u0456\u0432; 32692 - \u041b\u0443\u043f\u0430 \u0445\u0456\u0440\u0443\u0440\u0433\u0456\u0447\u043d\u0430 \u0431\u0456\u043d\u043e\u043a\u0443\u043b\u044f\u0440\u043d\u0430, \u0431\u0430\u0433\u0430\u0442\u043e\u0440\u0430\u0437\u043e\u0432\u043e\u0433\u043e \u0432\u0438\u043a\u043e\u0440\u0438\u0441\u0442\u0430\u043d\u043d\u044f; 35823 - \u041d\u0435\u0433\u0430\u0442\u043e\u0441\u043a\u043e\u043f \u043c\u0435\u0434\u0438\u0447\u043d\u0438\u0439, \u0437 \u0435\u043b\u0435\u043a\u0442\u0440\u043e\u0436\u0438\u0432\u043b\u0435\u043d\u043d\u044f\u043c; 33602 - \u0415\u043d\u0434\u043e\u0441\u043a\u043e\u043f\u0456\u0447\u043d\u0438\u0439 \u0433\u0435\u043d\u0435\u0440\u0430\u0442\u043e\u0440 \u0435\u043b\u0435\u043a\u0442\u0440\u043e\u0445\u0456\u0440\u0443\u0440\u0433\u0456\u0447\u043d\u043e\u0457 \u0434\u0456\u0430\u0442\u0435\u0440\u043c\u0456\u0447\u043d\u043e\u0457 \u0441\u0438\u0441\u0442\u0435\u043c\u0438; 10223 - \u0415\u043b\u0435\u043a\u0442\u0440\u0438\u0447\u043d\u0430 \u0441\u0438\u0441\u0442\u0435\u043c\u0430 \u0432\u0441\u043c\u043e\u043a\u0442\u0443\u0432\u0430\u043d\u043d\u044f \u0434\u043b\u044f \u0440\u0430\u043d; 33586 - \u0421\u0438\u0441\u0442\u0435\u043c\u0430 \u043c\u043e\u043d\u0456\u0442\u043e\u0440\u0438\u043d\u0433\u0443 \u0444\u0456\u0437\u0456\u043e\u043b\u043e\u0433\u0456\u0447\u043d\u0438\u0445 \u043f\u043e\u043a\u0430\u0437\u043d\u0438\u043a\u0456\u0432 \u043e\u0434\u043d\u043e\u0433\u043e \u043f\u0430\u0446\u0456\u0454\u043d\u0442\u0430; 41900 - \u041c\u0430\u0442\u0440\u0430\u0446 \u043f\u0440\u043e\u0442\u0438\u043f\u0440\u043e\u043b\u0435\u0436\u043d\u0435\u0432\u0438\u0439 \u043d\u0430\u0434\u0443\u0432\u043d\u0438\u0439 \u0437 \u0440\u0435\u0433\u0443\u043b\u044c\u043e\u0432\u0430\u043d\u0438\u043c \u0442\u0438\u0441\u043a\u043e\u043c, \u0431\u0430\u0433\u0430\u0442\u043e\u0440\u0430\u0437\u043e\u0432\u043e\u0433\u043e \u0432\u0438\u043a\u043e\u0440\u0438\u0441\u0442\u0430\u043d\u043d\u044f; 17908 - \u0423\u043b\u044c\u0442\u0440\u0430\u0437\u0432\u0443\u043a\u043e\u0432\u0430 / \u043d\u0435\u0439\u0440\u043e\u043c'\u044f\u0437\u043e\u0432\u0430 \u0441\u0438\u0441\u0442\u0435\u043c\u0430 \u0441\u0442\u0438\u043c\u0443\u043b\u044f\u0446\u0456\u0457 \u0444\u0456\u0437\u0438\u0447\u043d\u043e\u0457 \u0442\u0435\u0440\u0430\u043f\u0456\u0457; 10535 - \u041c\u0435\u0434\u0438\u0447\u043d\u0430 \u0448\u0430\u0444\u0430; 35395 - \u0421\u0442\u043e\u043b\u0438\u043a \u043f\u0440\u0438\u043b\u0456\u0436\u043a\u043e\u0432\u0438\u0439; 13951 - \u0421\u0442\u0456\u043b \u043d\u0430 \u0430\u043d\u0435\u0441\u0442\u0435\u0437\u0456\u043e\u043b\u043e\u0433\u0456\u0447\u043d\u0456 \u0456\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442\u0438; 34909 -  \u0412\u0456\u0437\u043e\u043a \u0434\u043b\u044f \u043c\u0435\u0434\u0438\u0447\u043d\u0438\u0445 \u0456\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442\u0456\u0432; 13959 - \u0421\u0442\u0456\u043b \u0434\u043b\u044f \u0445\u0456\u0440\u0443\u0440\u0433\u0456\u0447\u043d\u0438\u0445 \u0456\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442\u0456\u0432; 48039 - \u041b\u043e\u043a\u0430\u0442\u043e\u0440 \u0432\u0435\u043d \u0456\u043d\u0444\u0440\u0430\u0447\u0435\u0440\u0432\u043e\u043d\u0438\u0439",
+    "tenderID": "UA-2020-01-20-001169-c",
+    "dateModified": "2020-03-06T14:44:28.860823+02:00",
+    "status": "complete",
+    "tenderPeriod": {
+      "startDate": "2020-01-20T11:34:07.497077+02:00",
+      "endDate": "2020-02-18T22:00:00+02:00"
+    },
+    "description": "\u041f\u0456\u0434 \u043a\u0456\u043b\u044c\u043a\u0456\u0441\u0442\u044e 18 \u043e\u0434\u0438\u043d\u0438\u0446\u044c \u0441\u043b\u0456\u0434 \u0440\u043e\u0437\u0443\u043c\u0456\u0442\u0438 \u043a\u0456\u043b\u044c\u043a\u0456\u0441\u0442\u044c \u0442\u0430 \u043e\u0431\u0441\u044f\u0433\u0438 \u043d\u0430\u0439\u043c\u0435\u043d\u0443\u0432\u0430\u043d\u044c \u0437\u0433\u0456\u0434\u043d\u043e \u043c\u0435\u0434\u0438\u043a\u043e-\u0442\u0435\u0445\u043d\u0456\u0447\u043d\u0438\u0445 \u0432\u0438\u043c\u043e\u0433",
+    "contracts": [
+      {
+        "status": "active",
+        "documents": [
+          {
+            "hash": "md5:b3c7042d198bd517b259ecffa8da3d9d",
+            "format": "text/plain",
+            "url": "https://public.docs.openprocurement.org/get/a1fa572655954979bf14f3dc31e8cfaf?KeyID=52462340&Signature=RGx4NuGdqq%252BosVZ68aLt4JGUH%252Byj2cO%252BIbu8NAQDnzB4c2p%252BAj24%252BxKgK8eI1Q2iP5qOaSbYBJdzzQZh%2FGS%2FCA%253D%253D",
+            "title": "\u0414\u043e\u0433\u043e\u0432\u0456\u0440 \u0423\u0441\u0442\u0430\u0442\u043a\u0443\u0432\u0430\u043d\u043d\u044f \u0434\u043b\u044f \u043e\u043f\u0435\u0440. \u0431\u043b\u043e\u043a\u0456\u0432.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-03-06T14:33:51.866238+02:00",
+            "documentType": "contractSigned",
+            "dateModified": "2020-03-06T14:33:51.866258+02:00",
+            "id": "a1e89e14b16843aa9ea238c53a48b321"
+          },
+          {
+            "hash": "md5:8e52e102153b2a90f349e267c2f1aa15",
+            "format": "application/pkcs7-signature",
+            "url": "https://public.docs.openprocurement.org/get/67f337df234b403caf2f68aa2804298b?KeyID=52462340&Signature=Kn0apsJYLeFLbFtcWbJ8aKjDyDfV38Xun0vJYC1EATvSTLS9EqeLrySExigqpkm9gbDirOgvDSXog5FXAXheCQ%253D%253D",
+            "title": "sign.p7s",
+            "documentOf": "tender",
+            "datePublished": "2020-03-06T14:43:58.492754+02:00",
+            "dateModified": "2020-03-06T14:43:58.492793+02:00",
+            "id": "ef26ce072dbc4255a30ba412d1d8310a"
+          }
+        ],
+        "items": [
+          {
+            "description": "\u041f\u0440\u0438\u0434\u0431\u0430\u043d\u043d\u044f \u043c\u0435\u0434\u0438\u0447\u043d\u043e\u0433\u043e \u043e\u0431\u043b\u0430\u0434\u043d\u0430\u043d\u043d\u044f \u0434\u043b\u044f \u043e\u0440\u0442\u043e\u043f\u0435\u0434\u0438\u0447\u043d\u043e\u0457 \u043e\u043f\u0435\u0440\u0430\u0446\u0456\u0439\u043d\u043e\u0457 \u0430\u043d\u0435\u0441\u0442\u0435\u0437\u0456\u043e\u043b\u043e\u0433\u0456\u0447\u043d\u043e\u0433\u043e \u0432\u0456\u0434\u0434\u0456\u043b\u0435\u043d\u043d\u044f \u041a\u041d\u041f \"\u041c\u0456\u0441\u044c\u043a\u0430 \u0434\u0438\u0442\u044f\u0447\u0430 \u043a\u043b\u0456\u043d\u0456\u0447\u043d\u0430 \u043b\u0456\u043a\u0430\u0440\u043d\u044f \u043c. \u041b\u044c\u0432\u043e\u0432\u0430\" \u0437\u0430 \u0430\u0434\u0440\u0435\u0441\u043e\u044e \u0432\u0443\u043b. \u041f.\u041e\u0440\u043b\u0438\u043a\u0430, 4 : \u0421\u0432\u0456\u0442\u0438\u043b\u044c\u043d\u0438\u043a \u043e\u043f\u0435\u0440\u0430\u0446\u0456\u0439\u043d\u0438\u0439, \u041a\u043e\u043d\u0441\u043e\u043b\u044c \u0441\u0442\u0435\u043b\u044c\u043e\u0432\u0430, \u041a\u043e\u043c\u043f\u0440\u0435\u0441\u043e\u0440, \u0411\u0456\u043d\u043e\u043a\u0443\u043b\u044f\u0440\u043d\u0438\u0439 \u0437\u0431\u0456\u043b\u044c\u0448\u0443\u0432\u0430\u0447, \u041d\u0435\u0433\u0430\u0442\u043e\u0441\u043a\u043e\u043f, \u041a\u043e\u0430\u0433\u0443\u043b\u044f\u0442\u043e\u0440, \u0412\u0456\u0434\u0441\u043c\u043e\u043a\u0442\u0443\u0432\u0430\u0447, \u041c\u043e\u043d\u0456\u0442\u043e\u0440 \u043f\u0430\u0446\u0456\u0454\u043d\u0442\u0430, \u0421\u0435\u043a\u0446\u0456\u0439\u043d\u0438\u0439 \u043f\u0440\u043e\u0442\u0438\u043f\u0440\u043e\u043b\u0435\u0436\u043d\u0435\u0432\u0438\u0439 \u043c\u0430\u0442\u0440\u0430\u0446, \u0421\u0442\u0438\u043c\u0443\u043b\u044f\u0442\u043e\u0440 \u043d\u0435\u0440\u0432\u0456\u0432, \u0428\u0430\u0444\u0430 \u043c\u0435\u0434\u0438\u0447\u043d\u0430 \u0434\u0432\u043e\u0445\u0434\u0432\u0435\u0440\u043d\u0430,  \u041c\u043e\u043d\u0456\u0442\u043e\u0440 \u043f\u0430\u0446\u0456\u0454\u043d\u0442\u0430 \u0437 \u0434\u043e\u0434\u0430\u0442\u043a\u043e\u0432\u0438\u043c\u0438 \u0444\u0443\u043d\u043a\u0446\u0456\u044f\u043c\u0438 \u0434\u043b\u044f \u0430\u043d\u0430\u0441\u0442\u0435\u0437\u0456\u043e\u043b\u043e\u0433\u0456\u0457, \u041a\u043e\u043d\u0441\u043e\u043b\u044c \u043f\u0440\u0438\u043b\u0456\u0436\u043a\u043e\u0432\u0430, \u0422\u0443\u043c\u0431\u0430 \u043f\u0440\u0438\u043b\u0456\u0436\u043a\u043e\u0432\u0430 \u043f\u043b\u0430\u0441\u0442\u0438\u043a\u043e\u0432\u0430,  \u0421\u0442\u043e\u043b\u0438\u043a \u0430\u043d\u0435\u0441\u0442\u0435\u0437\u0456\u043e\u043b\u043e\u0433\u0430, \u0437\u0456 \u0448\u0442\u0443\u0447\u043d\u0438\u043c \u043a\u0430\u043c\u0456\u043d\u043d\u044f\u043c \u0442\u0430 \u0432\u0438\u0441\u0443\u0432\u043d\u043e\u044e \u043f\u043b\u043e\u0441\u043a\u0456\u0441\u0442\u044e, \u0412\u0456\u0437\u043e\u043a \u043c\u0435\u0434\u0438\u0447\u043d\u0438\u0439,  \u0421\u0442\u043e\u043b\u0438\u043a \u0456\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442\u0430\u043b\u044c\u043d\u0438\u0439 \u0417\u043e\u043c\u0431\u0435\u0440\u0433\u0430, \u0421\u0438\u0441\u0442\u0435\u043c\u0430 \u043a\u043e\u043b\u044c\u043e\u0440\u043e\u0432\u043e\u0457 \u0432\u0456\u0437\u0443\u0430\u043b\u0456\u0437\u0430\u0446\u0456\u0457 \u0432\u0435\u043d\u00bb\n\u041d\u041a 024:2019 \u00ab\u041a\u043b\u0430\u0441\u0438\u0444\u0456\u043a\u0430\u0442\u043e\u0440 \u043c\u0435\u0434\u0438\u0447\u043d\u0438\u0445 \u0432\u0438\u0440\u043e\u0431\u0456\u0432\u00bb: 12282 - \u041e\u043f\u0435\u0440\u0430\u0446\u0456\u0439\u043d\u0438\u0439 \u0441\u0432\u0456\u0442\u0438\u043b\u044c\u043d\u0438\u043a; 36810 - \u041a\u043e\u043d\u0441\u043e\u043b\u044c \u0437 \u043f\u0456\u0434\u0432\u043e\u0434\u0430\u043c\u0438 \u043a\u043e\u043c\u0443\u043d\u0456\u043a\u0430\u0446\u0456\u0439 \u0443\u043d\u0456\u0432\u0435\u0440\u0441\u0430\u043b\u044c\u043d\u0430, \u0437 \u043d\u0430\u0441\u0442\u0456\u043d\u043d\u0438\u043c \u043a\u0440\u0456\u043f\u043b\u0435\u043d\u043d\u044f\u043c; 31253 - \u041a\u043e\u043c\u043f\u0440\u0435\u0441\u043e\u0440 \u043f\u043e\u0432\u0456\u0442\u0440\u044f\u043d\u0438\u0439 \u0434\u043b\u044f \u043c\u0435\u0434\u0438\u0447\u043d\u0438\u0445 \u0432\u0438\u0440\u043e\u0431\u0456\u0432; 32692 - \u041b\u0443\u043f\u0430 \u0445\u0456\u0440\u0443\u0440\u0433\u0456\u0447\u043d\u0430 \u0431\u0456\u043d\u043e\u043a\u0443\u043b\u044f\u0440\u043d\u0430, \u0431\u0430\u0433\u0430\u0442\u043e\u0440\u0430\u0437\u043e\u0432\u043e\u0433\u043e \u0432\u0438\u043a\u043e\u0440\u0438\u0441\u0442\u0430\u043d\u043d\u044f; 35823 - \u041d\u0435\u0433\u0430\u0442\u043e\u0441\u043a\u043e\u043f \u043c\u0435\u0434\u0438\u0447\u043d\u0438\u0439, \u0437 \u0435\u043b\u0435\u043a\u0442\u0440\u043e\u0436\u0438\u0432\u043b\u0435\u043d\u043d\u044f\u043c; 33602 - \u0415\u043d\u0434\u043e\u0441\u043a\u043e\u043f\u0456\u0447\u043d\u0438\u0439 \u0433\u0435\u043d\u0435\u0440\u0430\u0442\u043e\u0440 \u0435\u043b\u0435\u043a\u0442\u0440\u043e\u0445\u0456\u0440\u0443\u0440\u0433\u0456\u0447\u043d\u043e\u0457 \u0434\u0456\u0430\u0442\u0435\u0440\u043c\u0456\u0447\u043d\u043e\u0457 \u0441\u0438\u0441\u0442\u0435\u043c\u0438; 10223 - \u0415\u043b\u0435\u043a\u0442\u0440\u0438\u0447\u043d\u0430 \u0441\u0438\u0441\u0442\u0435\u043c\u0430 \u0432\u0441\u043c\u043e\u043a\u0442\u0443\u0432\u0430\u043d\u043d\u044f \u0434\u043b\u044f \u0440\u0430\u043d; 33586 - \u0421\u0438\u0441\u0442\u0435\u043c\u0430 \u043c\u043e\u043d\u0456\u0442\u043e\u0440\u0438\u043d\u0433\u0443 \u0444\u0456\u0437\u0456\u043e\u043b\u043e\u0433\u0456\u0447\u043d\u0438\u0445 \u043f\u043e\u043a\u0430\u0437\u043d\u0438\u043a\u0456\u0432 \u043e\u0434\u043d\u043e\u0433\u043e \u043f\u0430\u0446\u0456\u0454\u043d\u0442\u0430; 41900 - \u041c\u0430\u0442\u0440\u0430\u0446 \u043f\u0440\u043e\u0442\u0438\u043f\u0440\u043e\u043b\u0435\u0436\u043d\u0435\u0432\u0438\u0439 \u043d\u0430\u0434\u0443\u0432\u043d\u0438\u0439 \u0437 \u0440\u0435\u0433\u0443\u043b\u044c\u043e\u0432\u0430\u043d\u0438\u043c \u0442\u0438\u0441\u043a\u043e\u043c, \u0431\u0430\u0433\u0430\u0442\u043e\u0440\u0430\u0437\u043e\u0432\u043e\u0433\u043e \u0432\u0438\u043a\u043e\u0440\u0438\u0441\u0442\u0430\u043d\u043d\u044f; 17908 - \u0423\u043b\u044c\u0442\u0440\u0430\u0437\u0432\u0443\u043a\u043e\u0432\u0430 / \u043d\u0435\u0439\u0440\u043e\u043c'\u044f\u0437\u043e\u0432\u0430 \u0441\u0438\u0441\u0442\u0435\u043c\u0430 \u0441\u0442\u0438\u043c\u0443\u043b\u044f\u0446\u0456\u0457 \u0444\u0456\u0437\u0438\u0447\u043d\u043e\u0457 \u0442\u0435\u0440\u0430\u043f\u0456\u0457; 10535 - \u041c\u0435\u0434\u0438\u0447\u043d\u0430 \u0448\u0430\u0444\u0430; 35395 - \u0421\u0442\u043e\u043b\u0438\u043a \u043f\u0440\u0438\u043b\u0456\u0436\u043a\u043e\u0432\u0438\u0439; 13951 - \u0421\u0442\u0456\u043b \u043d\u0430 \u0430\u043d\u0435\u0441\u0442\u0435\u0437\u0456\u043e\u043b\u043e\u0433\u0456\u0447\u043d\u0456 \u0456\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442\u0438; 34909 -  \u0412\u0456\u0437\u043e\u043a \u0434\u043b\u044f \u043c\u0435\u0434\u0438\u0447\u043d\u0438\u0445 \u0456\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442\u0456\u0432; 13959 - \u0421\u0442\u0456\u043b \u0434\u043b\u044f \u0445\u0456\u0440\u0443\u0440\u0433\u0456\u0447\u043d\u0438\u0445 \u0456\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442\u0456\u0432; 48039 - \u041b\u043e\u043a\u0430\u0442\u043e\u0440 \u0432\u0435\u043d \u0456\u043d\u0444\u0440\u0430\u0447\u0435\u0440\u0432\u043e\u043d\u0438\u0439",
+            "classification": {
+              "scheme": "\u0414\u041a021",
+              "description": "\u0423\u0441\u0442\u0430\u0442\u043a\u0443\u0432\u0430\u043d\u043d\u044f \u0434\u043b\u044f \u043e\u043f\u0435\u0440\u0430\u0446\u0456\u0439\u043d\u0438\u0445 \u0431\u043b\u043e\u043a\u0456\u0432",
+              "id": "33160000-9"
+            },
+            "additionalClassifications": [
+              {
+                "scheme": "GMDN",
+                "id": "12282",
+                "description": "\u041e\u043f\u0435\u0440\u0430\u0446\u0456\u0439\u043d\u0438\u0439 \u0441\u0432\u0456\u0442\u0438\u043b\u044c\u043d\u0438\u043a"
+              }
+            ],
+            "deliveryAddress": {
+              "postalCode": "79059",
+              "countryName": "\u0423\u043a\u0440\u0430\u0457\u043d\u0430",
+              "streetAddress": "\u0432\u0443\u043b. \u041f. \u041e\u0440\u043b\u0438\u043a\u0430, 4",
+              "region": "\u041b\u044c\u0432\u0456\u0432\u0441\u044c\u043a\u0430 \u043e\u0431\u043b\u0430\u0441\u0442\u044c",
+              "locality": "\u041b\u044c\u0432\u0456\u0432"
+            },
+            "deliveryDate": {
+              "endDate": "2020-12-31T00:00:00+02:00"
+            },
+            "id": "30450f45ceb14f7e909b3a9c8323c924",
+            "unit": {
+              "code": "E50",
+              "name": "\u041e\u0434\u0438\u043d\u0438\u0446\u044f"
+            },
+            "quantity": 18.0
+          }
+        ],
+        "suppliers": [
+          {
+            "scale": "micro",
+            "name": "\u0422\u043e\u0432\u0430\u0440\u0438\u0441\u0442\u0432\u043e \u0437 \u043e\u0431\u043c\u0435\u0436\u0435\u043d\u043e\u044e \u0432\u0456\u0434\u043f\u043e\u0432\u0456\u0434\u0430\u043b\u044c\u043d\u0456\u0441\u0442\u044e \u041c\u0435\u0434\u0438\u0447\u043d\u0430 \u0444\u0456\u0440\u043c\u0430 \"\u0410\u0432\u0456\u0446\u0435\u043d\u0430\"",
+            "address": {
+              "postalCode": "79044",
+              "countryName": "\u0423\u043a\u0440\u0430\u0457\u043d\u0430",
+              "streetAddress": "\u0432\u0443\u043b.\u041a\u043e\u043d\u043e\u0432\u0430\u043b\u044c\u0446\u044f,54\\7",
+              "region": "\u041b\u044c\u0432\u0456\u0432\u0441\u044c\u043a\u0430 \u043e\u0431\u043b\u0430\u0441\u0442\u044c",
+              "locality": "\u041b\u044c\u0432\u0456\u0432"
+            },
+            "contactPoint": {
+              "telephone": "380676721528, 380676721528",
+              "name": "\u0422\u0438\u0440\u0430\u0432\u0441\u044c\u043a\u0430 \u041b\u0456\u0434\u0456\u044f",
+              "email": "avicena.lviv@ukr.net"
+            },
+            "identifier": {
+              "scheme": "UA-EDR",
+              "legalName_en": "Tovaristvo z obmezhenoyu vidpovidalnistyu Medichna firma \"Avicena\"",
+              "id": "32126702",
+              "legalName": "\u0422\u043e\u0432\u0430\u0440\u0438\u0441\u0442\u0432\u043e \u0437 \u043e\u0431\u043c\u0435\u0436\u0435\u043d\u043e\u044e \u0432\u0456\u0434\u043f\u043e\u0432\u0456\u0434\u0430\u043b\u044c\u043d\u0456\u0441\u0442\u044e \u041c\u0435\u0434\u0438\u0447\u043d\u0430 \u0444\u0456\u0440\u043c\u0430 \"\u0410\u0432\u0456\u0446\u0435\u043d\u0430\""
+            },
+            "name_en": "Tovaristvo z obmezhenoyu vidpovidalnistyu Medichna firma \"Avicena\""
+          }
+        ],
+        "contractNumber": "24",
+        "period": {
+          "endDate": "2020-12-31T00:00:00+02:00"
+        },
+        "dateSigned": "2020-03-06T10:00:00+02:00",
+        "value": {
+          "currency": "UAH",
+          "amount": 1765229.0,
+          "amountNet": 1642700.0,
+          "valueAddedTaxIncluded": true
+        },
+        "date": "2020-03-06T14:44:28.860823+02:00",
+        "awardID": "e9fc3c62b45b49d984219dd6cd3ad605",
+        "id": "850194f60e9c4e0783e72aa14fc9357e",
+        "contractID": "UA-2020-01-20-001169-c-a1"
+      }
+    ],
+    "auctionPeriod": {
+      "startDate": "2020-02-19T14:46:34+02:00",
+      "endDate": "2020-02-19T15:07:36.264267+02:00"
+    },
+    "procurementMethodType": "aboveThresholdUA",
+    "awards": [
+      {
+        "status": "active",
+        "documents": [
+          {
+            "hash": "md5:01e57488712fa9f1f4f8b6d44d04cf54",
+            "author": "bots",
+            "format": "application/yaml",
+            "url": "https://public.docs.openprocurement.org/get/7dd2aa20d7034bd7b59360f41cefc56e?KeyID=52462340&Signature=Sng%252BI6G9f%2Fd2Wuo6eTXZQYH%252BzSua2qwDPt7YIXySnTQncwEzeD5yJEolwZ16dWuA5ruwmgLiFcDnxEx395YoAA%253D%253D",
+            "title": "edr_identification.yaml",
+            "documentOf": "tender",
+            "datePublished": "2020-02-19T15:07:40.768998+02:00",
+            "documentType": "registerExtract",
+            "dateModified": "2020-02-19T15:07:40.769031+02:00",
+            "id": "ad015755c1ba406abfe4ae34a4693e1e"
+          },
+          {
+            "hash": "md5:f2ae0bc2c112bab1fc766b1dd25c6e69",
+            "author": "tender_owner",
+            "format": "text/plain",
+            "url": "https://public.docs.openprocurement.org/get/ee21581a13df467584c4ebe1a32a253e?KeyID=52462340&Signature=4lIgEEhfPluH%2FGBWFBHQbsNYJeYRnUgGB%252B%2FvJJOu6YjCc7y%2F%252B4%2FQvAve7mhikTXHKVD0esq3enGnK0wN3MeJBQ%253D%253D",
+            "title": "sndt2e7c \u041a\u0432\u0430\u043b\u0456\u0444\u0456\u043a\u0430\u0446\u0456\u044f \u0423\u0441\u0442\u0430\u0442\u043a\u0443\u0432\u0430\u043d\u043d\u044f \u0434\u043b\u044f \u041e\u043f\u0435\u0440\u0430\u0446\u0456\u0439\u043d\u0438\u0445 \u0431\u043b\u043e\u043a\u0456\u0432.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-02-24T15:11:15.593670+02:00",
+            "documentType": "awardNotice",
+            "dateModified": "2020-02-24T15:11:15.593701+02:00",
+            "id": "aedaa6b0338d4ccc9d73e1898c3ec623"
+          },
+          {
+            "hash": "md5:ab355796e2d69d7456082771aa54a402",
+            "author": "tender_owner",
+            "format": "application/pkcs7-signature",
+            "url": "https://public.docs.openprocurement.org/get/cb146046b68544949b5522613bc5d44a?KeyID=52462340&Signature=k%252B5luxp5eXQwXXGtXZVRy48z10uy9zKK%2F%252BgT5D%2FXnHztILtLH0q7WrEjAdxVbt5Ff21LAsf0bb6kilsJ84JACQ%253D%253D",
+            "title": "sign.p7s",
+            "documentOf": "tender",
+            "datePublished": "2020-02-24T16:06:46.150238+02:00",
+            "dateModified": "2020-02-24T16:06:46.150278+02:00",
+            "id": "9e56fd6241294853b75b884341ae2815"
+          },
+          {
+            "hash": "md5:440853b77b6a2a289d7ce47a59a9080e",
+            "author": "bots",
+            "format": "text/plain",
+            "url": "https://public.docs.openprocurement.org/get/460be817bfb44c9cae86a9cd35d72e9d?KeyID=52462340&Signature=65Obm6RoRCvboCbKi1kqccZGZFEFgVkVGBJZTL8z2sy87BooMJ6TAJnv%2FKMAzGwMK8Z2%2F09dcgo1p9PIQLe9Ag%253D%253D",
+            "title": "26590002426097J1603102100001082910220202659.KVT.p7s",
+            "documentOf": "tender",
+            "datePublished": "2020-02-24T16:25:58.817711+02:00",
+            "documentType": "registerFiscal",
+            "dateModified": "2020-02-24T16:25:58.817734+02:00",
+            "id": "98c80ad918234ff4b029df02153f8704"
+          },
+          {
+            "hash": "md5:96120082979b15b74df7f1b03086b39e",
+            "author": "bots",
+            "format": "text/plain",
+            "url": "https://public.docs.openprocurement.org/get/ea198b05ed284f0caf84ed8eb5fe3a1f?KeyID=52462340&Signature=n1NgqNdVNGAsLvrympA4adRhPjcGh1rbR%2FSHceii32tIRIj%252BguQON1S6%2FVPgNj9DRFVi9hAYs2n%252BNWdYX0UNCA%253D%253D",
+            "title": "26590002426097J1703102100001082910220202659.XML.p7s",
+            "documentOf": "tender",
+            "datePublished": "2020-02-25T18:09:08.530742+02:00",
+            "documentType": "registerFiscal",
+            "dateModified": "2020-02-25T18:09:08.530778+02:00",
+            "id": "e46704a86d094bdda98c777b7344003f"
+          }
+        ],
+        "complaintPeriod": {
+          "startDate": "2020-02-19T15:07:36.357839+02:00",
+          "endDate": "2020-03-06T00:00:00+02:00"
+        },
+        "suppliers": [
+          {
+            "scale": "micro",
+            "name": "\u0422\u043e\u0432\u0430\u0440\u0438\u0441\u0442\u0432\u043e \u0437 \u043e\u0431\u043c\u0435\u0436\u0435\u043d\u043e\u044e \u0432\u0456\u0434\u043f\u043e\u0432\u0456\u0434\u0430\u043b\u044c\u043d\u0456\u0441\u0442\u044e \u041c\u0435\u0434\u0438\u0447\u043d\u0430 \u0444\u0456\u0440\u043c\u0430 \"\u0410\u0432\u0456\u0446\u0435\u043d\u0430\"",
+            "address": {
+              "postalCode": "79044",
+              "countryName": "\u0423\u043a\u0440\u0430\u0457\u043d\u0430",
+              "streetAddress": "\u0432\u0443\u043b.\u041a\u043e\u043d\u043e\u0432\u0430\u043b\u044c\u0446\u044f,54\\7",
+              "region": "\u041b\u044c\u0432\u0456\u0432\u0441\u044c\u043a\u0430 \u043e\u0431\u043b\u0430\u0441\u0442\u044c",
+              "locality": "\u041b\u044c\u0432\u0456\u0432"
+            },
+            "contactPoint": {
+              "telephone": "380676721528, 380676721528",
+              "name": "\u0422\u0438\u0440\u0430\u0432\u0441\u044c\u043a\u0430 \u041b\u0456\u0434\u0456\u044f",
+              "email": "avicena.lviv@ukr.net"
+            },
+            "identifier": {
+              "scheme": "UA-EDR",
+              "legalName_en": "Tovaristvo z obmezhenoyu vidpovidalnistyu Medichna firma \"Avicena\"",
+              "id": "32126702",
+              "legalName": "\u0422\u043e\u0432\u0430\u0440\u0438\u0441\u0442\u0432\u043e \u0437 \u043e\u0431\u043c\u0435\u0436\u0435\u043d\u043e\u044e \u0432\u0456\u0434\u043f\u043e\u0432\u0456\u0434\u0430\u043b\u044c\u043d\u0456\u0441\u0442\u044e \u041c\u0435\u0434\u0438\u0447\u043d\u0430 \u0444\u0456\u0440\u043c\u0430 \"\u0410\u0432\u0456\u0446\u0435\u043d\u0430\""
+            },
+            "name_en": "Tovaristvo z obmezhenoyu vidpovidalnistyu Medichna firma \"Avicena\""
+          }
+        ],
+        "eligible": true,
+        "bid_id": "9164d6f68098403f878cec8d013795bb",
+        "value": {
+          "currency": "UAH",
+          "amount": 1765229.0,
+          "valueAddedTaxIncluded": true
+        },
+        "qualified": true,
+        "date": "2020-02-24T16:25:07.470337+02:00",
+        "id": "e9fc3c62b45b49d984219dd6cd3ad605"
+      }
+    ],
+    "date": "2020-03-06T14:44:28.860823+02:00",
+    "milestones": [
+      {
+        "code": "postpayment",
+        "description": "\u0414\u0436\u0435\u0440\u0435\u043b\u043e \u0444\u0456\u043d\u0430\u043d\u0441\u0443\u0432\u0430\u043d\u043d\u044f. \u0433\u0440\u043e\u043c\u0430\u0434\u0441\u044c\u043a\u0438\u0439 \u0431\u044e\u0434\u0436\u0435\u0442 \u043c. \u041b\u044c\u0432\u043e\u0432\u0430",
+        "sequenceNumber": 1,
+        "title": "deliveryOfGoods",
+        "duration": {
+          "type": "calendar",
+          "days": 30
+        },
+        "percentage": 100.0,
+        "type": "financing",
+        "id": "268b968d66a143caaba85c5670a4ca81"
+      }
+    ],
+    "minimalStep": {
+      "currency": "UAH",
+      "amount": 1780.0,
+      "valueAddedTaxIncluded": true
+    },
+    "items": [
+      {
+        "description": "\u041f\u0440\u0438\u0434\u0431\u0430\u043d\u043d\u044f \u043c\u0435\u0434\u0438\u0447\u043d\u043e\u0433\u043e \u043e\u0431\u043b\u0430\u0434\u043d\u0430\u043d\u043d\u044f \u0434\u043b\u044f \u043e\u0440\u0442\u043e\u043f\u0435\u0434\u0438\u0447\u043d\u043e\u0457 \u043e\u043f\u0435\u0440\u0430\u0446\u0456\u0439\u043d\u043e\u0457 \u0430\u043d\u0435\u0441\u0442\u0435\u0437\u0456\u043e\u043b\u043e\u0433\u0456\u0447\u043d\u043e\u0433\u043e \u0432\u0456\u0434\u0434\u0456\u043b\u0435\u043d\u043d\u044f \u041a\u041d\u041f \"\u041c\u0456\u0441\u044c\u043a\u0430 \u0434\u0438\u0442\u044f\u0447\u0430 \u043a\u043b\u0456\u043d\u0456\u0447\u043d\u0430 \u043b\u0456\u043a\u0430\u0440\u043d\u044f \u043c. \u041b\u044c\u0432\u043e\u0432\u0430\" \u0437\u0430 \u0430\u0434\u0440\u0435\u0441\u043e\u044e \u0432\u0443\u043b. \u041f.\u041e\u0440\u043b\u0438\u043a\u0430, 4 : \u0421\u0432\u0456\u0442\u0438\u043b\u044c\u043d\u0438\u043a \u043e\u043f\u0435\u0440\u0430\u0446\u0456\u0439\u043d\u0438\u0439, \u041a\u043e\u043d\u0441\u043e\u043b\u044c \u0441\u0442\u0435\u043b\u044c\u043e\u0432\u0430, \u041a\u043e\u043c\u043f\u0440\u0435\u0441\u043e\u0440, \u0411\u0456\u043d\u043e\u043a\u0443\u043b\u044f\u0440\u043d\u0438\u0439 \u0437\u0431\u0456\u043b\u044c\u0448\u0443\u0432\u0430\u0447, \u041d\u0435\u0433\u0430\u0442\u043e\u0441\u043a\u043e\u043f, \u041a\u043e\u0430\u0433\u0443\u043b\u044f\u0442\u043e\u0440, \u0412\u0456\u0434\u0441\u043c\u043e\u043a\u0442\u0443\u0432\u0430\u0447, \u041c\u043e\u043d\u0456\u0442\u043e\u0440 \u043f\u0430\u0446\u0456\u0454\u043d\u0442\u0430, \u0421\u0435\u043a\u0446\u0456\u0439\u043d\u0438\u0439 \u043f\u0440\u043e\u0442\u0438\u043f\u0440\u043e\u043b\u0435\u0436\u043d\u0435\u0432\u0438\u0439 \u043c\u0430\u0442\u0440\u0430\u0446, \u0421\u0442\u0438\u043c\u0443\u043b\u044f\u0442\u043e\u0440 \u043d\u0435\u0440\u0432\u0456\u0432, \u0428\u0430\u0444\u0430 \u043c\u0435\u0434\u0438\u0447\u043d\u0430 \u0434\u0432\u043e\u0445\u0434\u0432\u0435\u0440\u043d\u0430,  \u041c\u043e\u043d\u0456\u0442\u043e\u0440 \u043f\u0430\u0446\u0456\u0454\u043d\u0442\u0430 \u0437 \u0434\u043e\u0434\u0430\u0442\u043a\u043e\u0432\u0438\u043c\u0438 \u0444\u0443\u043d\u043a\u0446\u0456\u044f\u043c\u0438 \u0434\u043b\u044f \u0430\u043d\u0430\u0441\u0442\u0435\u0437\u0456\u043e\u043b\u043e\u0433\u0456\u0457, \u041a\u043e\u043d\u0441\u043e\u043b\u044c \u043f\u0440\u0438\u043b\u0456\u0436\u043a\u043e\u0432\u0430, \u0422\u0443\u043c\u0431\u0430 \u043f\u0440\u0438\u043b\u0456\u0436\u043a\u043e\u0432\u0430 \u043f\u043b\u0430\u0441\u0442\u0438\u043a\u043e\u0432\u0430,  \u0421\u0442\u043e\u043b\u0438\u043a \u0430\u043d\u0435\u0441\u0442\u0435\u0437\u0456\u043e\u043b\u043e\u0433\u0430, \u0437\u0456 \u0448\u0442\u0443\u0447\u043d\u0438\u043c \u043a\u0430\u043c\u0456\u043d\u043d\u044f\u043c \u0442\u0430 \u0432\u0438\u0441\u0443\u0432\u043d\u043e\u044e \u043f\u043b\u043e\u0441\u043a\u0456\u0441\u0442\u044e, \u0412\u0456\u0437\u043e\u043a \u043c\u0435\u0434\u0438\u0447\u043d\u0438\u0439,  \u0421\u0442\u043e\u043b\u0438\u043a \u0456\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442\u0430\u043b\u044c\u043d\u0438\u0439 \u0417\u043e\u043c\u0431\u0435\u0440\u0433\u0430, \u0421\u0438\u0441\u0442\u0435\u043c\u0430 \u043a\u043e\u043b\u044c\u043e\u0440\u043e\u0432\u043e\u0457 \u0432\u0456\u0437\u0443\u0430\u043b\u0456\u0437\u0430\u0446\u0456\u0457 \u0432\u0435\u043d\u00bb\n\u041d\u041a 024:2019 \u00ab\u041a\u043b\u0430\u0441\u0438\u0444\u0456\u043a\u0430\u0442\u043e\u0440 \u043c\u0435\u0434\u0438\u0447\u043d\u0438\u0445 \u0432\u0438\u0440\u043e\u0431\u0456\u0432\u00bb: 12282 - \u041e\u043f\u0435\u0440\u0430\u0446\u0456\u0439\u043d\u0438\u0439 \u0441\u0432\u0456\u0442\u0438\u043b\u044c\u043d\u0438\u043a; 36810 - \u041a\u043e\u043d\u0441\u043e\u043b\u044c \u0437 \u043f\u0456\u0434\u0432\u043e\u0434\u0430\u043c\u0438 \u043a\u043e\u043c\u0443\u043d\u0456\u043a\u0430\u0446\u0456\u0439 \u0443\u043d\u0456\u0432\u0435\u0440\u0441\u0430\u043b\u044c\u043d\u0430, \u0437 \u043d\u0430\u0441\u0442\u0456\u043d\u043d\u0438\u043c \u043a\u0440\u0456\u043f\u043b\u0435\u043d\u043d\u044f\u043c; 31253 - \u041a\u043e\u043c\u043f\u0440\u0435\u0441\u043e\u0440 \u043f\u043e\u0432\u0456\u0442\u0440\u044f\u043d\u0438\u0439 \u0434\u043b\u044f \u043c\u0435\u0434\u0438\u0447\u043d\u0438\u0445 \u0432\u0438\u0440\u043e\u0431\u0456\u0432; 32692 - \u041b\u0443\u043f\u0430 \u0445\u0456\u0440\u0443\u0440\u0433\u0456\u0447\u043d\u0430 \u0431\u0456\u043d\u043e\u043a\u0443\u043b\u044f\u0440\u043d\u0430, \u0431\u0430\u0433\u0430\u0442\u043e\u0440\u0430\u0437\u043e\u0432\u043e\u0433\u043e \u0432\u0438\u043a\u043e\u0440\u0438\u0441\u0442\u0430\u043d\u043d\u044f; 35823 - \u041d\u0435\u0433\u0430\u0442\u043e\u0441\u043a\u043e\u043f \u043c\u0435\u0434\u0438\u0447\u043d\u0438\u0439, \u0437 \u0435\u043b\u0435\u043a\u0442\u0440\u043e\u0436\u0438\u0432\u043b\u0435\u043d\u043d\u044f\u043c; 33602 - \u0415\u043d\u0434\u043e\u0441\u043a\u043e\u043f\u0456\u0447\u043d\u0438\u0439 \u0433\u0435\u043d\u0435\u0440\u0430\u0442\u043e\u0440 \u0435\u043b\u0435\u043a\u0442\u0440\u043e\u0445\u0456\u0440\u0443\u0440\u0433\u0456\u0447\u043d\u043e\u0457 \u0434\u0456\u0430\u0442\u0435\u0440\u043c\u0456\u0447\u043d\u043e\u0457 \u0441\u0438\u0441\u0442\u0435\u043c\u0438; 10223 - \u0415\u043b\u0435\u043a\u0442\u0440\u0438\u0447\u043d\u0430 \u0441\u0438\u0441\u0442\u0435\u043c\u0430 \u0432\u0441\u043c\u043e\u043a\u0442\u0443\u0432\u0430\u043d\u043d\u044f \u0434\u043b\u044f \u0440\u0430\u043d; 33586 - \u0421\u0438\u0441\u0442\u0435\u043c\u0430 \u043c\u043e\u043d\u0456\u0442\u043e\u0440\u0438\u043d\u0433\u0443 \u0444\u0456\u0437\u0456\u043e\u043b\u043e\u0433\u0456\u0447\u043d\u0438\u0445 \u043f\u043e\u043a\u0430\u0437\u043d\u0438\u043a\u0456\u0432 \u043e\u0434\u043d\u043e\u0433\u043e \u043f\u0430\u0446\u0456\u0454\u043d\u0442\u0430; 41900 - \u041c\u0430\u0442\u0440\u0430\u0446 \u043f\u0440\u043e\u0442\u0438\u043f\u0440\u043e\u043b\u0435\u0436\u043d\u0435\u0432\u0438\u0439 \u043d\u0430\u0434\u0443\u0432\u043d\u0438\u0439 \u0437 \u0440\u0435\u0433\u0443\u043b\u044c\u043e\u0432\u0430\u043d\u0438\u043c \u0442\u0438\u0441\u043a\u043e\u043c, \u0431\u0430\u0433\u0430\u0442\u043e\u0440\u0430\u0437\u043e\u0432\u043e\u0433\u043e \u0432\u0438\u043a\u043e\u0440\u0438\u0441\u0442\u0430\u043d\u043d\u044f; 17908 - \u0423\u043b\u044c\u0442\u0440\u0430\u0437\u0432\u0443\u043a\u043e\u0432\u0430 / \u043d\u0435\u0439\u0440\u043e\u043c'\u044f\u0437\u043e\u0432\u0430 \u0441\u0438\u0441\u0442\u0435\u043c\u0430 \u0441\u0442\u0438\u043c\u0443\u043b\u044f\u0446\u0456\u0457 \u0444\u0456\u0437\u0438\u0447\u043d\u043e\u0457 \u0442\u0435\u0440\u0430\u043f\u0456\u0457; 10535 - \u041c\u0435\u0434\u0438\u0447\u043d\u0430 \u0448\u0430\u0444\u0430; 35395 - \u0421\u0442\u043e\u043b\u0438\u043a \u043f\u0440\u0438\u043b\u0456\u0436\u043a\u043e\u0432\u0438\u0439; 13951 - \u0421\u0442\u0456\u043b \u043d\u0430 \u0430\u043d\u0435\u0441\u0442\u0435\u0437\u0456\u043e\u043b\u043e\u0433\u0456\u0447\u043d\u0456 \u0456\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442\u0438; 34909 -  \u0412\u0456\u0437\u043e\u043a \u0434\u043b\u044f \u043c\u0435\u0434\u0438\u0447\u043d\u0438\u0445 \u0456\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442\u0456\u0432; 13959 - \u0421\u0442\u0456\u043b \u0434\u043b\u044f \u0445\u0456\u0440\u0443\u0440\u0433\u0456\u0447\u043d\u0438\u0445 \u0456\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442\u0456\u0432; 48039 - \u041b\u043e\u043a\u0430\u0442\u043e\u0440 \u0432\u0435\u043d \u0456\u043d\u0444\u0440\u0430\u0447\u0435\u0440\u0432\u043e\u043d\u0438\u0439",
+        "classification": {
+          "scheme": "\u0414\u041a021",
+          "description": "\u0423\u0441\u0442\u0430\u0442\u043a\u0443\u0432\u0430\u043d\u043d\u044f \u0434\u043b\u044f \u043e\u043f\u0435\u0440\u0430\u0446\u0456\u0439\u043d\u0438\u0445 \u0431\u043b\u043e\u043a\u0456\u0432",
+          "id": "33160000-9"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "GMDN",
+            "id": "12282",
+            "description": "\u041e\u043f\u0435\u0440\u0430\u0446\u0456\u0439\u043d\u0438\u0439 \u0441\u0432\u0456\u0442\u0438\u043b\u044c\u043d\u0438\u043a"
+          }
+        ],
+        "deliveryAddress": {
+          "postalCode": "79059",
+          "countryName": "\u0423\u043a\u0440\u0430\u0457\u043d\u0430",
+          "streetAddress": "\u0432\u0443\u043b. \u041f. \u041e\u0440\u043b\u0438\u043a\u0430, 4",
+          "region": "\u041b\u044c\u0432\u0456\u0432\u0441\u044c\u043a\u0430 \u043e\u0431\u043b\u0430\u0441\u0442\u044c",
+          "locality": "\u041b\u044c\u0432\u0456\u0432"
+        },
+        "deliveryDate": {
+          "endDate": "2020-12-31T00:00:00+02:00"
+        },
+        "id": "30450f45ceb14f7e909b3a9c8323c924",
+        "unit": {
+          "code": "E50",
+          "name": "\u041e\u0434\u0438\u043d\u0438\u0446\u044f"
+        },
+        "quantity": 18.0
+      }
+    ],
+    "bids": [
+      {
+        "status": "deleted",
+        "id": "64aac95a04a3471abacc3c04d26e77b6"
+      },
+      {
+        "status": "deleted",
+        "id": "2568f950d29f4478a0048e598f9b6100"
+      },
+      {
+        "status": "active",
+        "documents": [
+          {
+            "hash": "md5:6be8bb9195d25cb6d021ef6c733b1656",
+            "format": "text/plain",
+            "url": "https://public.docs.openprocurement.org/get/d664df2f9f544754a78dd3b7fa69d5e5?KeyID=52462340&Signature=oRuHnu3KkJtZ%2Fk9WOkNCxR40ioiZ24mLYMNUXl7bArQX%252BImcKkOB%252BVSR9pe%2F5Bm7k3lXYGID5DsNB0G9CpCuDQ%253D%253D",
+            "title": "\u0426\u0456\u043d\u043e\u0432\u0430 \u043f\u0440\u043e\u043f\u043e\u0437\u0438\u0446\u0456\u044f.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-02-14T10:08:15.112514+02:00",
+            "documentType": "commercialProposal",
+            "dateModified": "2020-02-14T10:08:15.112533+02:00",
+            "id": "1aaf39b6270045f886e346f4a28c286a"
+          },
+          {
+            "hash": "md5:88b0bfced563bb22322907194d14166d",
+            "format": "text/plain",
+            "url": "https://public.docs.openprocurement.org/get/2c932436cbc44e9e9580c0851f877908?KeyID=52462340&Signature=ATjHIUqVwlZSC37jhVTqRTbBT9Lg8AqOAGzcN50dKBeaTZTHjf%2Fb1ytN3eHVWax%252B4O9RRpWqOe6PPAX1GC26DQ%253D%253D",
+            "title": "\u041a\u0432\u0430\u043b\u0456\u0444\u0456\u043a\u0430\u0446\u0456\u044f.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-02-14T10:08:46.741088+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2020-02-14T10:08:46.741109+02:00",
+            "id": "a20c3e92742e4649b17ed2f6641c49a0"
+          },
+          {
+            "hash": "md5:bebc68f6dbce153ee8414ffabf3c46a7",
+            "format": "text/plain",
+            "url": "https://public.docs.openprocurement.org/get/f689c9f8e7eb45b5acfde23a74a64167?KeyID=52462340&Signature=lk8tENJp5q7EPzAt4RsM1%252BgC9WnKXHScvGULmmJOmEA2oU5XFRHieQFJrODwB2a6bBvb520uGg3PkKvDa2fLAQ%253D%253D",
+            "title": "\u041a\u043e\u043f\u0456\u044f \u0421\u0442\u0430\u0442\u0443\u0442\u0443.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-02-14T10:09:05.967362+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2020-02-14T10:09:05.967381+02:00",
+            "id": "4c1898b51732463dbcd48f60aa5f9082"
+          },
+          {
+            "hash": "md5:e9597649e0208ead380e5c51950aa967",
+            "format": "text/plain",
+            "url": "https://public.docs.openprocurement.org/get/50fb69a73927479e8e9a5ff5ee3fb2d3?KeyID=52462340&Signature=EhN0G7GE8G4yXptnrQ5NiA5UdudVg3JHcRS4NrPk%252BCru1yGFJm61GG9nAXVdf0DKzgVCKjG1AdZOUINgysHgBQ%253D%253D",
+            "title": "\u0412\u0456\u0434\u043f\u043e\u0432\u0456\u0434\u043d\u0456\u0441\u0442\u044c.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-02-14T10:15:26.949749+02:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2020-02-14T10:15:26.949794+02:00",
+            "id": "9178cb077d3940aab10d66a4cce90e77"
+          },
+          {
+            "hash": "md5:cbe567e6ae9471f981ee2304645f0146",
+            "format": "text/plain",
+            "url": "https://public.docs.openprocurement.org/get/cf032913121c45e5b1013ac56dc2accc?KeyID=52462340&Signature=W4plpPnhDZE7GjrNqy2GzhaokZfWrlMTefi6rXOIy46rRAjH17zjg1AN1x5%252Bx2R0RfXzGzoBkgDwB%2FpKyHs%252BDg%253D%253D",
+            "title": "\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0438 \u043d\u0430 \u0441\u0432\u0456\u0442\u0438\u043b\u044c\u043d\u0438\u043a.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-02-14T13:04:02.717566+02:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2020-02-14T13:04:02.717650+02:00",
+            "id": "4e06bf0b49674ffa853126498652127f"
+          },
+          {
+            "hash": "md5:00bda1ee05ef36d9ae1d3b46c658dab3",
+            "format": "text/plain",
+            "url": "https://public.docs.openprocurement.org/get/349d14e1fa55445fa4526e1178d3b557?KeyID=52462340&Signature=o5J4UK7TSjCJSUSF4pZRC4g6gBCOGAYg4jpYL7WBgIIbYC7k1ZUacnLqqpUwLh30ORd9Hg75xEDNsQdcxdH%2FBg%253D%253D",
+            "title": "\u0411\u0440\u043e\u0448\u0443\u0440\u0430 Sim.FLEX The revolutionary support arm system.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-02-14T13:04:22.921173+02:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2020-02-14T13:04:22.921200+02:00",
+            "id": "538916d2847746739c3a2268b26bb1a6"
+          },
+          {
+            "hash": "md5:ad148536d5887d51321e470f2e0b6c74",
+            "format": "text/plain",
+            "url": "https://public.docs.openprocurement.org/get/60281dd2da8d458e89ebffb883cd9710?KeyID=52462340&Signature=Dxc%252BnJ%252B3Q4YcKFPYfpOJ46x2gq1y%252BAwrQkkCz0PiXQRwM3astz%2FQVs9Ga%2FePimVQc7jdGfm9w90piHhS%252BZciBw%253D%253D",
+            "title": "\u0411\u0440\u043e\u0448\u0443\u0440\u0430 SIMEON BusinessLine.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-02-14T13:04:35.514177+02:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2020-02-14T13:04:35.514213+02:00",
+            "id": "69fea1f7f9bd4aedb315eea5be029042"
+          },
+          {
+            "hash": "md5:f6c11d6b1950a91b1cee31cfa8d130b2",
+            "format": "text/plain",
+            "url": "https://public.docs.openprocurement.org/get/e6993687a53844888c0031847a257233?KeyID=52462340&Signature=kLql9RW%2FnFseWd%252BCnIy3MbiA78TA9Fb45Yfx6QbbCSLbGwJvjsAOxJCbe0BoM9%2Fb3U1T23vS72EUtXe6F%2FkXCA%253D%253D",
+            "title": "\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0438 \u043d\u0430 \u043a\u043e\u043d\u0441\u043e\u043b\u0456.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-02-14T13:05:25.950968+02:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2020-02-14T13:05:25.951003+02:00",
+            "id": "aaa94afc288a4ff799366b5d85fbf101"
+          },
+          {
+            "hash": "md5:6780fa45037a85b77c9d7d402655ba81",
+            "format": "text/plain",
+            "url": "https://public.docs.openprocurement.org/get/059597b55bc247f3af99c915d4094831?KeyID=52462340&Signature=MYgTtE5y%2FkJuVF%2FcnWcsWHOEnzZXO%252BFP0kWKPM6%252BXxyw%2F444pDwiLwlmOtj348BqQ2INAt1bzTg6ky08MYJ2CQ%253D%253D",
+            "title": "\u0411\u0440\u043e\u0448\u0443\u0440\u0430 OKI ISOLA 17 W ENG.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-02-14T13:05:58.941821+02:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2020-02-14T13:05:58.941855+02:00",
+            "id": "52f9bdc1f6ce4a9498a843a0184e8bff"
+          },
+          {
+            "hash": "md5:819ab3d0ff56d8e6a5c74f00d63b97a2",
+            "format": "text/plain",
+            "url": "https://public.docs.openprocurement.org/get/54216ea08ed84d85baf0d9a283ec5674?KeyID=52462340&Signature=KQY7r%2FMGVosZPI6RJDYpsHhJtUiRBAWoMjhUXbSPv%252BhqCCFyS2tC1SNa4uWkTenI0TY5x13YTRIxu4KVwvT7AQ%253D%253D",
+            "title": "\u0411\u0440\u043e\u0448\u0443\u0440\u0430 OKI FANTASY 19 W.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-02-14T13:06:09.745317+02:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2020-02-14T13:06:09.745366+02:00",
+            "id": "7d2b1671858e43d39bb37dfbeaf48038"
+          },
+          {
+            "hash": "md5:f2d290763c7c6aa62178fb84bf9c0f32",
+            "format": "text/plain",
+            "url": "https://public.docs.openprocurement.org/get/6c25ac53dbe54ed298338e75f7ed851a?KeyID=52462340&Signature=VWS4nC2xnWnNIQzFVMqhXnw%2FZIYFRrEx6TkFsBge3VDAYVRIiPvoQiC5Bnq02rv8szmt62AdjRvcjLtBK%2F8uDA%253D%253D",
+            "title": "\u041a\u0440\u0435\u0441\u043b\u0435\u043d\u043d\u044f OKI FANTASY.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-02-14T13:06:22.298252+02:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2020-02-14T13:06:22.298272+02:00",
+            "id": "34dfb2a689b54c41ac9030c527f797ce"
+          },
+          {
+            "hash": "md5:e0dcca4fa5a362318a100d5a5b33d43a",
+            "format": "text/plain",
+            "url": "https://public.docs.openprocurement.org/get/3c39579cd6f24e7d8aa5cc41dd30c17b?KeyID=52462340&Signature=M1iFvtPVTBDtCmvh6ZKmbOw5DaZuKQOm%252Blo1wbTZ4DBFQe6FiMZqAQrUfz8Q1PrbyCvUyq1RLpHpNvcHf36rAg%253D%253D",
+            "title": "\u041a\u0440\u0435\u0441\u043b\u0435\u043d\u043d\u044f OKI ISOLA.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-02-14T13:06:46.977527+02:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2020-02-14T13:06:46.977549+02:00",
+            "id": "9a804101e65141e680843b5c044bf99a"
+          },
+          {
+            "hash": "md5:7c55d58e48e0f514b407551f0eb4dfe8",
+            "format": "text/plain",
+            "url": "https://public.docs.openprocurement.org/get/ae8e09ad5be14c2e970e56f2d1c07b34?KeyID=52462340&Signature=ZqqQYWd3hnXb4RnejmjXXjfKufdY0RyF%252BZlUTtFg10sQ5svTNGaM%252BvYOyV%2F6DZWlU3FjptDhxi%2FKSm6rVNx2DA%253D%253D",
+            "title": "\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0438 \u043d\u0430 \u043a\u043e\u043c\u043f\u0440\u0435\u0441\u043e\u0440.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-02-14T13:07:00.930579+02:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2020-02-14T13:07:00.930645+02:00",
+            "id": "309754b94086439bbb9fbc45f5911499"
+          },
+          {
+            "hash": "md5:7bfe9f3aaf225f1cfdd086221bd1ba0f",
+            "format": "text/plain",
+            "url": "https://public.docs.openprocurement.org/get/1657c6e82bf0447180216c496b60fa80?KeyID=52462340&Signature=Lm6vHw0uJk628Yl1e9TNmUKqx3uFJnm5mKlg9AyLT5Xuhff6tdzKn%252BpBzm6DflJYf2NQJ7namPptPb%2FI2dIWBg%253D%253D",
+            "title": "\u041a\u0430\u0442\u0430\u043b\u043e\u0433 \u043e\u0431\u043b\u0430\u0434\u043d\u0430\u043d\u043d\u044f ALUP.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-02-14T13:07:30.530678+02:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2020-02-14T13:07:30.530713+02:00",
+            "id": "b56d551d4bba436eb70616e508a3fcf0"
+          },
+          {
+            "hash": "md5:dd879b85532b66e9874a1a0590842de6",
+            "format": "text/plain",
+            "url": "https://public.docs.openprocurement.org/get/379928c9b88c4c53ab94de68bf285727?KeyID=52462340&Signature=X0YDMxDHUYNzLjRNsY1rYoiW4Ylvru%2FFve%2FVCWbMRB8XjeR4YpvgQoajD0dsv8Xt3iQMDz3ljWdZUtjZ%2F1BEDg%253D%253D",
+            "title": "\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0438 \u043d\u0430 \u0431\u0456\u043d\u043e\u043a\u0443\u043b\u044f\u0440\u043d\u0438\u0439 \u0437\u0431\u0456\u043b\u044c\u0448\u0443\u0432\u0430\u0447.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-02-14T13:08:46.171916+02:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2020-02-14T13:08:46.171938+02:00",
+            "id": "05bfa6ef0ce8454aac47d473783979bf"
+          },
+          {
+            "hash": "md5:723ef05e10a21afd71ed8a49d0d75dc8",
+            "format": "text/plain",
+            "url": "https://public.docs.openprocurement.org/get/8f39c9ed1126494b8f11af28fbcf4d64?KeyID=52462340&Signature=MxT9oThJcbipZo%252BhYF2JRkajMsCK1rMvG7uzVu86W9M%2FtfL2m802o4rPk4%2FraHPqotpemlxKPS4gRvcUZq6lCA%253D%253D",
+            "title": "\u0406\u043d\u0441\u0442\u0440\u0443\u043a\u0446\u0456\u044f \u0431\u0456\u043d\u043e\u043a\u0443\u043b\u044f\u0440\u043d\u0438\u0439 \u0437\u0431\u0456\u043b\u044c\u0448\u0443\u0432\u0430\u0447.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-02-14T13:09:13.950161+02:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2020-02-14T13:09:13.950182+02:00",
+            "id": "fff44ada92904699a7c5adbd590d8318"
+          },
+          {
+            "hash": "md5:15980af94b2961dfc6715ae47d84d66f",
+            "format": "text/plain",
+            "url": "https://public.docs.openprocurement.org/get/ec1465c052564818b98406616358f207?KeyID=52462340&Signature=1cCYiYhh9I%2Fv93VyGkOypf%2FcnmBGA8hLRdKg7qn1wYRaceUmI5VAHZXzNTpHLZ9%252BnYZa%252BAXChapbMAJQu4gKBQ%253D%253D",
+            "title": "\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0438 \u043d\u0430 \u041e\u0421\u0414 \u043f.5,9,14.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-02-14T13:15:25.053909+02:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2020-02-14T13:15:25.053929+02:00",
+            "id": "fbd139f1986544df85ca337ea08b7d63"
+          },
+          {
+            "hash": "md5:bba72004bf1586d8e714c7190504aee5",
+            "format": "text/plain",
+            "url": "https://public.docs.openprocurement.org/get/b024f67e2c3c4dec87ba1f28a175b3dd?KeyID=52462340&Signature=5rCLYMmzHmhWMrAUMVuZp6%252B4A3emYMf6ZMiqEmPFSyfMPZGXjiCN4FEP%252BoDgYbLtqJZvY031Wl6YUYEdwymXBg%253D%253D",
+            "title": "\u0406\u043d\u0441\u0442\u0440\u0443\u043a\u0446\u0456\u044f \u043d\u0435\u0433\u0430\u0442\u043e\u0441\u043a\u043e\u043f OSD-HD011.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-02-14T13:15:44.230859+02:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2020-02-14T13:15:44.230900+02:00",
+            "id": "562e1f993b9e4111b5161e7cbfff1b7a"
+          },
+          {
+            "hash": "md5:d68927f04053bb36929a4b0a4aaafe37",
+            "format": "text/plain",
+            "url": "https://public.docs.openprocurement.org/get/184e8a1c1b16420fb23e94d5d880172b?KeyID=52462340&Signature=NihSOvcp3Sv8Au0%2F1F9I8lXuNevsYnPL%2FP%2Fee51yJQPWSOOKQ%252BQp2fJdbnWCTRcqsz334yL4kUPr2r6YsPSGAg%253D%253D",
+            "title": "\u0406\u043d\u0441\u0442\u0440\u0443\u043a\u0446\u0456\u044f \u043c\u0430\u0442\u0440\u0430\u0446 OSD-QDC-505.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-02-14T13:16:19.465344+02:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2020-02-14T13:16:19.465366+02:00",
+            "id": "0837aa5b90ab4372b2836fbf7af24548"
+          },
+          {
+            "hash": "md5:8dbd9a6a45c117e1a68ff0b437861a65",
+            "format": "text/plain",
+            "url": "https://public.docs.openprocurement.org/get/696a5388b2c843d9928503d484a5a0bd?KeyID=52462340&Signature=MP%2FQf6ooubodImP7uuHb1fRGmNlHeS8J%2FMmYOvn02GntVLz8kyGaehqlx%2FrFV3cdG%252BE7Nps9yH5YWbZl73xkBA%253D%253D",
+            "title": "\u041f\u0430\u0441\u043f\u043e\u0440\u0442 \u0442\u0443\u043c\u0431\u0430 \u043f\u0440\u0438\u043b\u0456\u0436\u043a\u043e\u0432\u0430 9100-BS.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-02-14T13:16:33.868490+02:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2020-02-14T13:16:33.868523+02:00",
+            "id": "a7033da00f7b402ca63ddb8e81c0c3c8"
+          },
+          {
+            "hash": "md5:877f3f545786f30bb642cae3b79f8dbd",
+            "format": "text/plain",
+            "url": "https://public.docs.openprocurement.org/get/fac49b0445fb405297207e61da305ce4?KeyID=52462340&Signature=k8DmeRMsyrmsivoJIx7P1qhOJluDzl6hR284bm939aEtlgm%2FaTg2Kq1zieTGgjLvMj5x2cErNF0mMV1wchw%2FAQ%253D%253D",
+            "title": "\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0438 \u0435\u043b\u0435\u043a\u0442\u0440\u043e\u0445\u0456\u0440\u0443\u0440\u0433\u0456\u0447\u043d\u0438\u0439 \u0430\u043f\u0430\u0440\u0430\u0442.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-02-14T13:16:34.561383+02:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2020-02-14T13:16:34.561405+02:00",
+            "id": "1d6a2c52d44a41968b530289cacb1384"
+          },
+          {
+            "hash": "md5:dd50c9ceb7c2e6654aad99fed71342f8",
+            "format": "text/plain",
+            "url": "https://public.docs.openprocurement.org/get/7cbcba63b9c44446aa331f9b2a077fd5?KeyID=52462340&Signature=v%2Fs8O6Eyyw8dUkqOq87m4xjhTHDhiQPE8xO9hOc626FbFYr0S6kl5pFXo8xc1lMEZG%2FeFwnY7a27AuSq5reODg%253D%253D",
+            "title": "\u0406\u043d\u0441\u0442\u0440\u0443\u043a\u0446\u0456\u044f ZEUS -400,200.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-02-14T13:16:49.477139+02:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2020-02-14T13:16:49.477159+02:00",
+            "id": "89e88c08246a42dab086c5ba48dd8a31"
+          },
+          {
+            "hash": "md5:12f61868ab6bac821d714589d1f5543e",
+            "format": "text/plain",
+            "url": "https://public.docs.openprocurement.org/get/50aa07a9fefd40f8aa50d14be6cecab4?KeyID=52462340&Signature=E%2FuCR2LIkSaALsrU0n6IbjX9GVCouwleGps9qjDQelxWIT2LWdbMzAMuJsHeLVedtRTCt5bWq0Ek%2FH8K6I0MDg%253D%253D",
+            "title": "\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0438 \u043d\u0430 \u0432\u0456\u0434\u0441\u043c\u043e\u043a\u0442\u0443\u0432\u0430\u0447.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-02-14T13:17:05.173733+02:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2020-02-14T13:17:05.173756+02:00",
+            "id": "6956d25a24134d7e898e4ee3c1fc7bab"
+          },
+          {
+            "hash": "md5:5f657b0314b87e13d52b148dab64bc24",
+            "format": "text/plain",
+            "url": "https://public.docs.openprocurement.org/get/245f1766f60a466faeaa3785cfa868f3?KeyID=52462340&Signature=7CEh01Edsuzn6lB1k%2F5rIzongKnLMjY38aLDg1GfidJ50JxetZvpIN87KKfKAStSdQqvHG2Bm93ZmBxxHG4sAw%253D%253D",
+            "title": "\u0406\u043d\u0441\u0442\u0440\u0443\u043a\u0446\u0456\u044f 7A-23B  20_40 \u043b.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-02-14T13:17:16.789334+02:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2020-02-14T13:17:16.789372+02:00",
+            "id": "968f64b2616f4305af887906b3190894"
+          },
+          {
+            "hash": "md5:9b2ab312e6e08779f2d6f33677a53afc",
+            "format": "text/plain",
+            "url": "https://public.docs.openprocurement.org/get/953f0fd182284205a77c5ee2c8612db6?KeyID=52462340&Signature=vCN5CzCMiiMSq1k2YSkvO6yjZ9hihg4e%252BxVbIG5mvqzdZ7xvdGmkuD2eH78ZwpniX%2FfyOBpDuOkXi6Ppjx%252B9Ag%253D%253D",
+            "title": "\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0438 \u043d\u0430 \u043c\u043e\u043d\u0456\u0442\u043e\u0440\u0438.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-02-14T13:17:50.733241+02:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2020-02-14T13:17:50.733263+02:00",
+            "id": "0e9cc306920e446ebe8a3800d8fed685"
+          },
+          {
+            "hash": "md5:086de31fd389e69a3301a423d1e04065",
+            "format": "text/plain",
+            "url": "https://public.docs.openprocurement.org/get/6f724be98d314d73abdca4ba59179264?KeyID=52462340&Signature=0y5KOwyl4s9TSOpvMjYnlKrrzmXnV27w5LLtxaPXgI2y8KHRbcPGrYND06l%252BJd5p4dgJplnhULRChCKh%2FoM6AQ%253D%253D",
+            "title": "\u0406\u043d\u0441\u0442\u0440\u0443\u043a\u0446\u0456\u044f \u043a\u043e\u0440\u0438\u0441\u0442\u0443\u0432\u0430\u0447\u0430 uMEC12.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-02-14T13:17:57.406760+02:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2020-02-14T13:17:57.406787+02:00",
+            "id": "2a78ad52088746adaa84e8313f68c0ab"
+          },
+          {
+            "hash": "md5:be4aa65e64e7cdb14bf426c52c7e7d3e",
+            "format": "text/plain",
+            "url": "https://public.docs.openprocurement.org/get/f6975c57a0c547fab4bbe0d17bb1a1e0?KeyID=52462340&Signature=GlENIFQN1LEXcMWQKMxDR599wOtLteRsUwgVTfcXpSk5uIYiTELV75y2AIEaHPI9XVa6a0hiBZgmLZ6NAM%2FsAw%253D%253D",
+            "title": "\u0406\u043d\u0441\u0442\u0440\u0443\u043a\u0446\u0456\u044f \u043a\u043e\u0440\u0438\u0441\u0442\u0443\u0432\u0430\u0447\u0430 \u0446\u0435\u043d\u0442\u0440\u0430\u043b\u044c\u043d\u0430 \u0441\u0442\u0430\u043d\u0446\u0456\u044f HYPERVISOR VIS.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-02-14T13:19:52.979551+02:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2020-02-14T13:19:52.979575+02:00",
+            "id": "ca136879b40144da84aba8625db4719d"
+          },
+          {
+            "hash": "md5:599330d2c3b196fca1fdb25ea42cfba2",
+            "format": "text/plain",
+            "url": "https://public.docs.openprocurement.org/get/926a735a93654ce988b7253800a40f1d?KeyID=52462340&Signature=G1Rdpafp6KvIJRbC8tfU0w5CmsID4%252BkmFhz4ypLCqdgWXY%252Bt4e3Uk2cX8MxkD3RWD53fMX6mDjyqKCXA6Yc%252BCA%253D%253D",
+            "title": "\u0422\u0430\u0431\u043b\u0438\u0446\u044f \u0442\u0435\u0445\u043d\u0456\u0447\u043d\u0438\u0445 \u0445\u0430\u0440\u0430\u043a\u0442\u0435\u0440\u0438\u0441\u0442\u0438\u043a \u0441\u0432\u0456\u0442\u0438\u043b\u044c\u043d\u0438\u043a.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-02-14T13:21:05.440045+02:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2020-02-14T13:21:05.440065+02:00",
+            "id": "199f9c46179c4cd3bc650cbb52ca501a"
+          },
+          {
+            "hash": "md5:6b041ac72251ea01526a7c9d667de5d4",
+            "format": "text/plain",
+            "url": "https://public.docs.openprocurement.org/get/0b719da7a21145c6b7d39522cb443074?KeyID=52462340&Signature=DJBVKDmjqwQUTN9e6eS3RShoH48v472jqbhXjK1cI4CSpRBE0Q2VJAv4Nuq5LIgXATuTlI9jvwYq2%2FbYlhupBg%253D%253D",
+            "title": "\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0438 \u043d\u0430 \u0441\u0442\u0438\u043c\u0443\u043b\u044f\u0442\u043e\u0440 \u043d\u0435\u0440\u0432\u0456\u0432.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-02-14T13:21:10.352850+02:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2020-02-14T13:21:10.352876+02:00",
+            "id": "f3cd38055ccd4750b74443073e8b2e53"
+          },
+          {
+            "hash": "md5:73d9412306bacb953af41f727a41de88",
+            "format": "text/plain",
+            "url": "https://public.docs.openprocurement.org/get/2758bc2db76f4420b409d7d9a2a18a4b?KeyID=52462340&Signature=frAgp3vY%252BdkcRSZdUCeVm1YEd%2FGm%252BUqrUfxfsirv6yEKFdQ0fPI8UdoZxyQZSbzh2kGeLgm7eXOGMv0znETGDQ%253D%253D",
+            "title": "\u0406\u043d\u0441\u0442\u0440\u0443\u043a\u0446\u0456\u044f \u0441\u0442\u0438\u043c\u0443\u043b\u044f\u0442\u043e\u0440 \u043d\u0435\u0440\u0432\u0456\u0432.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-02-14T13:21:24.835133+02:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2020-02-14T13:21:24.835154+02:00",
+            "id": "6f9bab1c36c84848a3c1284ba8c4e656"
+          },
+          {
+            "hash": "md5:17f80cfd4b8f32d9ab1cf26dbe65a43b",
+            "format": "text/plain",
+            "url": "https://public.docs.openprocurement.org/get/01b9c3a64ffd4c10aa9a5bfe73e4c5d5?KeyID=52462340&Signature=18XPTE%2F9u%252BAlUSKRerjEmtBbN1fFwkniO1czO9rMXmzSmzmsIAM%2FFnmmHgp81vQAmQoqguKnqS9uDF9lCslcCQ%253D%253D",
+            "title": "\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0438 \u043d\u0430 \u0448\u0430\u0444\u0443.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-02-14T13:21:51.856956+02:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2020-02-14T13:21:51.857003+02:00",
+            "id": "86387c13fc274939847f08aa5dddb9ec"
+          },
+          {
+            "hash": "md5:dffe9b5b98568a432daea0ff2eda4147",
+            "format": "text/plain",
+            "url": "https://public.docs.openprocurement.org/get/ac50cafbd63a4a8fa1e44d34e1301028?KeyID=52462340&Signature=X%252BoKdP4YsrW6yEArL9G95ylG1NFGpl31ckxJKfYs5DLXHkansnG8n3R73q6OjsHTuiTyPszH30AeUHvScJDaDA%253D%253D",
+            "title": "\u041f\u0430\u0441\u043f\u043e\u0440\u0442 \u0448\u0430\u0444\u0430.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-02-14T13:21:56.330315+02:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2020-02-14T13:21:56.330351+02:00",
+            "id": "d6197bacebb74540a92f69876ab2b004"
+          },
+          {
+            "hash": "md5:eedbd75f038c418e8119e1618de5e5c0",
+            "format": "text/plain",
+            "url": "https://public.docs.openprocurement.org/get/67b24b2d16cc4980a6aa0df2ba3cc578?KeyID=52462340&Signature=GJdB4siVuoHIe0B05q%252BvwgbTRl9kn1nCWbhal58OfMWThmeWHma%252BUtAsRVVlKsRGkqDUGjP9KpMFYFlFVv1NCA%253D%253D",
+            "title": "\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0438 \u043d\u0430 \u0441\u0442\u043e\u043b\u0438\u043a \u0430\u043d\u0435\u0441\u0442\u0435\u0437\u0456\u043e\u043b\u043e\u0433\u0430.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-02-14T13:22:29.240783+02:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2020-02-14T13:22:29.240811+02:00",
+            "id": "96d24299ed5a4b119462b0f63bf391c8"
+          },
+          {
+            "hash": "md5:c6a64251968266657b6f8a7eee0d3ee4",
+            "format": "text/plain",
+            "url": "https://public.docs.openprocurement.org/get/fbbf561be0b14bae92087513bdd9374e?KeyID=52462340&Signature=GLdmx9IZmYxtu1wQDGgiFCjhXyE4brl4fJ77QeSqA93UHJoCNt8lAXvdJwZk4ddAJYq%252BcjbDB41HFG%252Bu1vjTBA%253D%253D",
+            "title": "\u041f\u0430\u0441\u043f\u043e\u0440\u0442 \u0441\u0442\u0456\u043b \u0430\u043d\u0435\u0441\u0442\u0435\u0437\u0456\u043e\u043b\u043e\u0433\u0430.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-02-14T13:22:47.065052+02:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2020-02-14T13:22:47.065081+02:00",
+            "id": "a90ba7250b134d4a9339d57ea374b133"
+          },
+          {
+            "hash": "md5:e89c895565c4a37b55f82b9dd38cd446",
+            "format": "text/plain",
+            "url": "https://public.docs.openprocurement.org/get/2390fe90704e473f82d939408d8475db?KeyID=52462340&Signature=ZauS3ak3PirBuJvJ%252BEZ9KnNpfFZBiNUhfphRPI7%2FB0MJYqOHRQO3kTB1c9FLk7Pg9HcFXx8VY7M2uDcsr2RuAw%253D%253D",
+            "title": "\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0438 \u043d\u0430 \u0432\u0456\u0437\u043e\u043a \u043c\u0435\u0434\u0438\u0447\u043d\u0438\u0439.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-02-14T13:23:05.281012+02:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2020-02-14T13:23:05.281034+02:00",
+            "id": "96bab6cc2e8744c396bc5cd7794bfc4c"
+          },
+          {
+            "hash": "md5:9c17f9d6dff71538b7fa74bdb9966ee0",
+            "format": "text/plain",
+            "url": "https://public.docs.openprocurement.org/get/3ffb999b7143476e84f05b97d740d2a2?KeyID=52462340&Signature=UHmI5w46vgJk1BDhV4ujl8XAWW98Boj4X4d0%252Bj%252B3aGXzccjmVrfRc1MImupWU4AMEaxzIkBb3qf3oA36xjnIDw%253D%253D",
+            "title": "\u041f\u0430\u0441\u043f\u043e\u0440\u0442 \u0432\u0456\u0437\u043e\u043a \u043c\u0435\u0434\u0438\u0447\u043d\u0438\u0439.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-02-14T13:23:19.119845+02:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2020-02-14T13:23:19.119876+02:00",
+            "id": "020ec3b393474973b0df5d5dfd891f6e"
+          },
+          {
+            "hash": "md5:14ce1cbaf64f3f65530c665522b7dcda",
+            "format": "text/plain",
+            "url": "https://public.docs.openprocurement.org/get/06bf975cd70e452c831cab34c5f8efea?KeyID=52462340&Signature=tVOXPNw9LF7QZ5jm9m1Fj61FhrHEglXYig0HAPHT1nxYO6%2FjnBWf3ykooduFg7A%2FVQvyxfuzmb5kB7ue3igCAg%253D%253D",
+            "title": "\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0438 \u043d\u0430 \u0441\u0442\u043e\u043b\u0438\u043a \u0417\u043e\u043c\u0431\u0435\u0440\u0433\u0430.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-02-14T13:23:32.188068+02:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2020-02-14T13:23:32.188099+02:00",
+            "id": "26b40246fe4e41a68ec8993250c7d0c2"
+          },
+          {
+            "hash": "md5:49b2174fb95cb86ac952385b22566276",
+            "format": "text/plain",
+            "url": "https://public.docs.openprocurement.org/get/2ceac9f34c714fc08635a2a56b202ce6?KeyID=52462340&Signature=NOUohR%2F5u86cJKPdoE2P5uEjTJohUkUTTzbfFRzuLs3IO1FLCEn7QzQ5Ng1ZzODSjubpNtlI8q0d42Y6epcPAQ%253D%253D",
+            "title": "\u041a\u0435\u0440\u0456\u0432\u043d\u0438\u0446\u0442\u0432\u043e \u0441\u0442\u043e\u043b\u0438\u043a \u0417\u043e\u043c\u0431\u0435\u0440\u0433\u0430.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-02-14T13:23:55.360934+02:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2020-02-14T13:23:55.360972+02:00",
+            "id": "4824728be9e14e36a500be039fce6dee"
+          },
+          {
+            "hash": "md5:0211fef1fe5f5bc43d29fe22c914fef3",
+            "format": "text/plain",
+            "url": "https://public.docs.openprocurement.org/get/b677d79b999c48299044cf315887bd9b?KeyID=52462340&Signature=NAKmDBKfXO0JAKrSYcEo6pqhdSmxCgZnj5oBNwFtvygjzuhDKPVWETojA6liTN10ygwY%252BUFDqDZCWsdIgGmcCQ%253D%253D",
+            "title": "\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0438 \u0441\u0438\u0441\u0442\u0435\u043c\u0430 \u0432\u0456\u0437\u0443\u0430\u043b\u0456\u0437\u0430\u0446\u0456\u0457.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-02-14T13:24:13.623085+02:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2020-02-14T13:24:13.623116+02:00",
+            "id": "e5c71c808ec747bb9bcd08fb1067a242"
+          },
+          {
+            "hash": "md5:54e3d06d8b31242064473ade584a157c",
+            "format": "text/plain",
+            "url": "https://public.docs.openprocurement.org/get/bbf9678b18c3422283cb17de1408dd3d?KeyID=52462340&Signature=IAPpWpbv4ONmozlVcBXp6rxXuNvZNgfKk0Yeu%2FdabrhYyOaFHM4uDya1P3Uoywt6fnK92o8COak9sJkdyJyrAA%253D%253D",
+            "title": "\u0406\u043d\u0441\u0442\u0440\u0443\u043a\u0446\u0456\u044f \u0441\u0438\u0441\u0442\u0435\u043c\u0430 \u0432\u0456\u0437\u0443\u0430\u043b\u0456\u0437\u0430\u0446\u0456\u0457.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-02-14T13:24:37.834960+02:00",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2020-02-14T13:24:37.834997+02:00",
+            "id": "8337c3c98cdb4c21a5ab29fe141eb34f"
+          },
+          {
+            "hash": "md5:2a8d6692f307a0763e0b27172d39384b",
+            "format": "text/plain",
+            "url": "https://public.docs.openprocurement.org/get/d1f6406ab0b04aa694f9d145ece2bc4c?KeyID=52462340&Signature=UTrnphU50g19Gtc%2FoyPJte%2FiPGmJm%252BQW8kVZNoe2l0Ld0xxrRiEpqdLzcrcCfWNY7j69rc6JMNecaKd0gx%2FVAw%253D%253D",
+            "title": "\u0426\u0456\u043d\u043e\u0432\u0430 \u043f\u0456\u0441\u043b\u044f \u0430\u0443\u043a\u0446\u0456\u043e\u043d\u0443.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-02-19T15:13:48.625865+02:00",
+            "documentType": "commercialProposal",
+            "dateModified": "2020-02-19T15:13:48.625897+02:00",
+            "id": "0d18b13178324dd2a9f9d4f4e160c7fc"
+          },
+          {
+            "hash": "md5:4ffaaac142b338c2d6e0cc7061eb25fd",
+            "format": "text/plain",
+            "url": "https://public.docs.openprocurement.org/get/85c3b239c35e41f2a95a1c8639a0a884?KeyID=52462340&Signature=JW2gwOFM9RW19grkIkG67GSbKvaRZRbtENEw0mpJFHQP7suTRHKpAl1e5nn8SK5udxpPCPJh3UVXh%2FBOBCz7Cg%253D%253D",
+            "title": "\u0414\u043e\u0432\u0456\u0434\u043a\u0430 \u041c\u0412\u0421.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-02-24T16:46:25.934399+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2020-02-24T16:46:25.934435+02:00",
+            "id": "52292b64dcee4637a473f1d864c8f229"
+          },
+          {
+            "hash": "md5:97f5a5ca64590630f8de5bbeff23d297",
+            "format": "text/plain",
+            "url": "https://public.docs.openprocurement.org/get/58deeeca343b44e685fe5a93fea693ce?KeyID=52462340&Signature=%252BftfdPH6KhOJXW2uA77f0W%2F%252BgrhXWVR8MtBie7Bq5PiofsGvzLPER5QajCkxNeJZLcfa%252B7b3%2FPzMEp9nR4IXAg%253D%253D",
+            "title": "\u041b\u0438\u0441\u0442 \u0449\u043e\u0434\u043e \u043b\u0456\u0446\u0435\u043d\u0437\u0456\u0457.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-02-24T16:46:49.409871+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2020-02-24T16:46:49.409892+02:00",
+            "id": "ecdf7cf9d836400d943718f45674ee3f"
+          },
+          {
+            "hash": "md5:6711b4a63d34a7775c0dfab122b4613f",
+            "format": "text/plain",
+            "url": "https://public.docs.openprocurement.org/get/d855754fcb694a13b1d7e5cb481c5ddf?KeyID=52462340&Signature=OQuI4VNun6F62nYQmNNn2g%2F8heMZX7jXRJJjkvp4fUr8Vadn3PwecGrjawzESBT4E5QrXRC%252BmsolwkPsVI97Bw%253D%253D",
+            "title": "\u0414\u043e\u0432\u0456\u0434\u043a\u0430 \u043f\u043e\u0434\u0430\u0442\u043a\u043e\u0432\u0430.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-02-25T11:35:04.360826+02:00",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2020-02-25T11:35:04.360861+02:00",
+            "id": "e16c4267d3024195b392d858a3e2cb8c"
+          }
+        ],
+        "selfEligible": true,
+        "value": {
+          "currency": "UAH",
+          "amount": 1765229.0,
+          "valueAddedTaxIncluded": true
+        },
+        "selfQualified": true,
+        "tenderers": [
+          {
+            "scale": "micro",
+            "name": "\u0422\u043e\u0432\u0430\u0440\u0438\u0441\u0442\u0432\u043e \u0437 \u043e\u0431\u043c\u0435\u0436\u0435\u043d\u043e\u044e \u0432\u0456\u0434\u043f\u043e\u0432\u0456\u0434\u0430\u043b\u044c\u043d\u0456\u0441\u0442\u044e \u041c\u0435\u0434\u0438\u0447\u043d\u0430 \u0444\u0456\u0440\u043c\u0430 \"\u0410\u0432\u0456\u0446\u0435\u043d\u0430\"",
+            "address": {
+              "postalCode": "79044",
+              "countryName": "\u0423\u043a\u0440\u0430\u0457\u043d\u0430",
+              "streetAddress": "\u0432\u0443\u043b.\u041a\u043e\u043d\u043e\u0432\u0430\u043b\u044c\u0446\u044f,54\\7",
+              "region": "\u041b\u044c\u0432\u0456\u0432\u0441\u044c\u043a\u0430 \u043e\u0431\u043b\u0430\u0441\u0442\u044c",
+              "locality": "\u041b\u044c\u0432\u0456\u0432"
+            },
+            "contactPoint": {
+              "telephone": "380676721528, 380676721528",
+              "name": "\u0422\u0438\u0440\u0430\u0432\u0441\u044c\u043a\u0430 \u041b\u0456\u0434\u0456\u044f",
+              "email": "avicena.lviv@ukr.net"
+            },
+            "identifier": {
+              "scheme": "UA-EDR",
+              "legalName_en": "Tovaristvo z obmezhenoyu vidpovidalnistyu Medichna firma \"Avicena\"",
+              "id": "32126702",
+              "legalName": "\u0422\u043e\u0432\u0430\u0440\u0438\u0441\u0442\u0432\u043e \u0437 \u043e\u0431\u043c\u0435\u0436\u0435\u043d\u043e\u044e \u0432\u0456\u0434\u043f\u043e\u0432\u0456\u0434\u0430\u043b\u044c\u043d\u0456\u0441\u0442\u044e \u041c\u0435\u0434\u0438\u0447\u043d\u0430 \u0444\u0456\u0440\u043c\u0430 \"\u0410\u0432\u0456\u0446\u0435\u043d\u0430\""
+            },
+            "name_en": "Tovaristvo z obmezhenoyu vidpovidalnistyu Medichna firma \"Avicena\""
+          }
+        ],
+        "date": "2020-02-19T14:51:49.618994+02:00",
+        "id": "9164d6f68098403f878cec8d013795bb",
+        "participationUrl": "https://auction.openprocurement.org/tenders/b2fcffa9b61e4717894a8a656e3edd07/login?bidder_id=9164d6f68098403f878cec8d013795bb&hash=d80ab8d16a8ac7d2da1f94c3c76f3f5c64beaa82"
+      },
+      {
+        "status": "active",
+        "documents": [
+          {
+            "hash": "md5:031ee7ae73ed84e40ac13ff1d1919080",
+            "description": "SHA1: b4113e950e5376556d19d59d8cfa5aef853885bf; SHA2-384: 339b03f3e369d1e093a9e4ec17300b38c5b19d57a30f935ce8150d99972c995cfc9eca00d54789d275f64f28f4cfacee; Antivirus: ESET Antivirus",
+            "title": "1. \u0420\u0435\u0454\u0441\u0442\u0440 \u0434\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0456\u0432.pdf",
+            "url": "https://public.docs.openprocurement.org/get/180f1715a38c428190413399ae40573e?KeyID=52462340&Signature=D8xv6P6SQXdStEQyxcRC0bOU0SvSeRseK1V42D6CF%2FLztRM0Uar%252BvF8a4FlkBtdR%2FMPpKpuBFBfBxLhz0V%252BNCg%253D%253D",
+            "format": "application/pdf",
+            "title_en": "1. \u0420\u0435\u0454\u0441\u0442\u0440 \u0434\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0456\u0432.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-02-13T11:16:21.634813+02:00",
+            "title_ru": "1. \u0420\u0435\u0454\u0441\u0442\u0440 \u0434\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0456\u0432.pdf",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2020-02-13T11:16:21.634851+02:00",
+            "id": "4f0c43c1f5a94abc95231dcf71d2eb96"
+          },
+          {
+            "hash": "md5:2cc3cd56d2e9f3709e2a6ee4516464f6",
+            "description": "SHA1: 7511077f4e0a9a21eb2250d3ac0b17499588d8fe; SHA2-384: 5266c915ac5c3c937d5549d6792232e53b9b7c201c2e85418168c09db0714970d713a14df6c8127925d15b850e173602; Antivirus: ESET Antivirus",
+            "title": "2. \u0426\u0456\u043d\u043e\u0432\u0430 \u043f\u0440\u043e\u043f\u043e\u0437\u0438\u0446\u0456\u044f.pdf",
+            "url": "https://public.docs.openprocurement.org/get/26a242ce77864321b9fa6b1cea43f51e?KeyID=52462340&Signature=nmeKtJ9zoh559mBNP0AHLYlJhM44thLsfZA4nrODn74L8c3n%252Bp6%2F5tzH3u%2FFs2uZRPfad6A1Dv9uw2jgBz3jBw%253D%253D",
+            "format": "application/pdf",
+            "title_en": "2. \u0426\u0456\u043d\u043e\u0432\u0430 \u043f\u0440\u043e\u043f\u043e\u0437\u0438\u0446\u0456\u044f.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-02-13T11:16:21.942107+02:00",
+            "title_ru": "2. \u0426\u0456\u043d\u043e\u0432\u0430 \u043f\u0440\u043e\u043f\u043e\u0437\u0438\u0446\u0456\u044f.pdf",
+            "documentType": "commercialProposal",
+            "dateModified": "2020-02-13T11:16:21.942144+02:00",
+            "id": "865ee026937e424cb0a6339964ab559f"
+          },
+          {
+            "hash": "md5:a7f872383aa8325a5fe68b830bb03da7",
+            "description": "SHA1: 7904bb03e5f2961cd2049934bb214676647d4deb; SHA2-384: 355b1ea8e99d33c2f8087ec3dfb269ba52499029613f837ea6a528a7f30d1899a5093e50ddac38cd486c4328e05f5b3a; Antivirus: ESET Antivirus",
+            "title": "3. \u041f\u043e\u0441\u0430\u0434\u043e\u0432\u0430 \u043e\u0441\u043e\u0431\u0430. \u0443\u0441\u0442\u0430\u043d\u043e\u0432\u0447\u0456 \u0434\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0438.pdf",
+            "url": "https://public.docs.openprocurement.org/get/30bfa6ae619c4b8f98551d01daf6dd74?KeyID=52462340&Signature=1Qm2a4Uu5fZbxUEW3vThNVdyQ13o0rScgABxtAAwQ6N%2FSya5E%252BqKG87q24AEFQBQ8e4VG48ZZD40UyZHeCs%252BBA%253D%253D",
+            "format": "application/pdf",
+            "title_en": "3. \u041f\u043e\u0441\u0430\u0434\u043e\u0432\u0430 \u043e\u0441\u043e\u0431\u0430. \u0443\u0441\u0442\u0430\u043d\u043e\u0432\u0447\u0456 \u0434\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0438.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-02-13T11:16:22.300285+02:00",
+            "title_ru": "3. \u041f\u043e\u0441\u0430\u0434\u043e\u0432\u0430 \u043e\u0441\u043e\u0431\u0430. \u0443\u0441\u0442\u0430\u043d\u043e\u0432\u0447\u0456 \u0434\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0438.pdf",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2020-02-13T11:16:22.300308+02:00",
+            "id": "9c3b9b84f25a45e0bb2d5994adfc085d"
+          },
+          {
+            "hash": "md5:271bbd7e19e385350ee2c436ad99dc2f",
+            "description": "SHA1: 706140b81c96adfc1daeb2ca79929384347cfe57; SHA2-384: 7a00678983413ae8fa9a586d02eefafaeaac66732ab12836fa02352da09db9b60cf603271bfa984603b93817f80a3f72; Antivirus: ESET Antivirus",
+            "title": "4. \u041a\u0432\u0430\u043b\u0456\u0444\u0456\u043a\u0430\u0446\u0456\u044f \u0442\u0430 \u0432\u0456\u0434\u043f\u043e\u0432\u0456\u0434\u043d\u0456\u0441\u0442\u044c.pdf",
+            "url": "https://public.docs.openprocurement.org/get/6169d48065404df7852e5c32db55be71?KeyID=52462340&Signature=XXIo7MHc9qm0JASJW%252B7aFq6pJy%2FTPid72WrzykKJXRZQBY1iJ15KS%252Bs%252B5KmkX0iWL5CWP8v6Bjg2OkhOt%252BVaBg%253D%253D",
+            "format": "application/pdf",
+            "title_en": "4. \u041a\u0432\u0430\u043b\u0456\u0444\u0456\u043a\u0430\u0446\u0456\u044f \u0442\u0430 \u0432\u0456\u0434\u043f\u043e\u0432\u0456\u0434\u043d\u0456\u0441\u0442\u044c.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-02-13T11:16:22.856687+02:00",
+            "title_ru": "4. \u041a\u0432\u0430\u043b\u0456\u0444\u0456\u043a\u0430\u0446\u0456\u044f \u0442\u0430 \u0432\u0456\u0434\u043f\u043e\u0432\u0456\u0434\u043d\u0456\u0441\u0442\u044c.pdf",
+            "documentType": "qualificationDocuments",
+            "dateModified": "2020-02-13T11:16:22.856726+02:00",
+            "id": "61b0260a8d57441399dd3428655211c3"
+          },
+          {
+            "hash": "md5:91a4c6e5ddd5b209415111e497c370d9",
+            "description": "SHA1: ea9e9384afa43380fac915bbd8c17f6e42055526; SHA2-384: 0190ffe686d7564ed48bd5e4a03566463ec5849085d012dcda60f013eaa5a65a5b4ed02ff983da39e8a26d7fe0735952; Antivirus: ESET Antivirus",
+            "title": "5. \u0422\u0435\u0445\u043d\u0456\u0447\u043d\u0430 \u0447\u0430\u0441\u0442\u0438\u043d\u0430 1.pdf",
+            "url": "https://public.docs.openprocurement.org/get/0597ca91e2d44ae8ac31437ec490bb1b?KeyID=52462340&Signature=P2yvQkujBfs5Hvk6C70hxAxq%252BP0%2FAqCpMDp%2F2YYQsHSYd4laKUHB7mptJ8yxMAzzROfejQnvrJk1l72A%252BtpoBw%253D%253D",
+            "format": "application/pdf",
+            "title_en": "5. \u0422\u0435\u0445\u043d\u0456\u0447\u043d\u0430 \u0447\u0430\u0441\u0442\u0438\u043d\u0430 1.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-02-13T11:16:23.277021+02:00",
+            "title_ru": "5. \u0422\u0435\u0445\u043d\u0456\u0447\u043d\u0430 \u0447\u0430\u0441\u0442\u0438\u043d\u0430 1.pdf",
+            "documentType": "technicalSpecifications",
+            "dateModified": "2020-02-13T11:16:23.277040+02:00",
+            "id": "22324b033dd14593a01da018ec01300b"
+          },
+          {
+            "hash": "md5:0fc789d99b2107ab2262d7e9dd8a1227",
+            "description": "SHA1: 6ea3d6a369a0414bb5e3d0285a038bcd86a90ff8; SHA2-384: 195d244e362942657cdca8d42ab3ef386a64e4a71f7ea0660a6dafffc82f2aed5b273e923151d0e2bce11012ca23fa9e; Antivirus: ESET Antivirus",
+            "title": "6. \u0422\u0435\u0445\u043d\u0456\u0447\u043d\u0430 \u0447\u0430\u0441\u0442\u0438\u043d\u0430 2.pdf",
+            "url": "https://public.docs.openprocurement.org/get/0b7560a325994572b69f4a2782599211?KeyID=52462340&Signature=IhuN%252B1iQcuCk48s6Wt7%252BqJp7Jji5EBF8sOQQkXjLmXCZh1ktFY%252B9c19ItYAL18b2YE3e51Ouyu0E5pbZ2EV3DA%253D%253D",
+            "format": "application/pdf",
+            "title_en": "6. \u0422\u0435\u0445\u043d\u0456\u0447\u043d\u0430 \u0447\u0430\u0441\u0442\u0438\u043d\u0430 2.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-02-13T11:16:23.838162+02:00",
+            "title_ru": "6. \u0422\u0435\u0445\u043d\u0456\u0447\u043d\u0430 \u0447\u0430\u0441\u0442\u0438\u043d\u0430 2.pdf",
+            "documentType": "technicalSpecifications",
+            "dateModified": "2020-02-13T11:16:23.838205+02:00",
+            "id": "457842eebc03453da79e77bc609cf804"
+          },
+          {
+            "hash": "md5:1fac2511085214f39661f9a22d00f7c4",
+            "description": "SHA1: 9f6790a978cc78681c3ebac4af954588e0728fb0; SHA2-384: 7638f24569c71bd55a276346816fc29971d0e031576ae05ee3270b06d3ba8313b0ac8bbd0b2cba1f1f99c52dac2c562e; Antivirus: ESET Antivirus",
+            "title": "7. \u0422\u0435\u0445\u043d\u0456\u0447\u043d\u0430 \u0447\u0430\u0441\u0442\u0438\u043d\u0430 3.pdf",
+            "url": "https://public.docs.openprocurement.org/get/1bbb20f0a3504ce38c8042e10ef18a85?KeyID=52462340&Signature=BXfs7nIF%252BCmOrIKcJIyzes6dLCXZ4o%2F27S3Hsu89PRMYbJ3fFi%2FkOVbF%252BJvcbeZQRg%252BxN2FxV2R%2FDLZEn%252B5wAQ%253D%253D",
+            "format": "application/pdf",
+            "title_en": "7. \u0422\u0435\u0445\u043d\u0456\u0447\u043d\u0430 \u0447\u0430\u0441\u0442\u0438\u043d\u0430 3.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-02-13T11:16:24.573713+02:00",
+            "title_ru": "7. \u0422\u0435\u0445\u043d\u0456\u0447\u043d\u0430 \u0447\u0430\u0441\u0442\u0438\u043d\u0430 3.pdf",
+            "documentType": "technicalSpecifications",
+            "dateModified": "2020-02-13T11:16:24.573735+02:00",
+            "id": "4d7897cb459e4f18a8a5dcf8093147c1"
+          },
+          {
+            "hash": "md5:89829823e27b2a54d725f8688aed17e3",
+            "description": "SHA1: 9f411de4fe9ab828e1d7412ddc2c819a0cc4fb79; SHA2-384: 7b723f6b1a1fbb95223631ffd54c43365624b78e05caea6960e99b372f37eb4934a701c7dd072559d98efcbe56a2f08f; Antivirus: ESET Antivirus",
+            "title": "8. \u0422\u0435\u0445\u043d\u0456\u0447\u043d\u0430 \u0447\u0430\u0441\u0442\u0438\u043d\u0430 4.pdf",
+            "url": "https://public.docs.openprocurement.org/get/b31fdee250844e18aa55732f5aba9672?KeyID=52462340&Signature=RkzTbiOWoelldWFfeU9SqyW9bpuaMjeluXFOUBVX%252Bv%2FlvlDkcao%2FWfN1FMOSXknsNBdVAvnDniaAyqvnTMyfCw%253D%253D",
+            "format": "application/pdf",
+            "title_en": "8. \u0422\u0435\u0445\u043d\u0456\u0447\u043d\u0430 \u0447\u0430\u0441\u0442\u0438\u043d\u0430 4.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-02-13T11:16:25.148601+02:00",
+            "title_ru": "8. \u0422\u0435\u0445\u043d\u0456\u0447\u043d\u0430 \u0447\u0430\u0441\u0442\u0438\u043d\u0430 4.pdf",
+            "documentType": "technicalSpecifications",
+            "dateModified": "2020-02-13T11:16:25.148637+02:00",
+            "id": "c5b0b9c7f97343e39f0d7355140a9394"
+          },
+          {
+            "hash": "md5:9dbeead3cb08b78ce2f7b7b7f8b5a7bb",
+            "description": "SHA1: fa20aedeb065931d35f7d8eb743b16f343acc899; SHA2-384: 14320e549166c03fb91277c5cdb480d3847b52252970e28f27f50efe7732dcaa7c6798c82b913407ea72e9bb0aa4da76; Antivirus: ESET Antivirus",
+            "title": "9. \u0422\u0435\u0445\u043d\u0456\u0447\u043d\u0430 \u0447\u0430\u0441\u0442\u0438\u043d\u0430 5.pdf",
+            "url": "https://public.docs.openprocurement.org/get/274e5cbf68c144e4b2cde52f5f6ecf67?KeyID=52462340&Signature=dOF3y5kar2VK5Ps%252B7YJvCp5ak7KmE5KBR5Urf%2F9OKj5y5ZW841SgZS6fopaMtdbvtiIIINERP5FXoH3BV1LiDg%253D%253D",
+            "format": "application/pdf",
+            "title_en": "9. \u0422\u0435\u0445\u043d\u0456\u0447\u043d\u0430 \u0447\u0430\u0441\u0442\u0438\u043d\u0430 5.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-02-13T11:16:25.677637+02:00",
+            "title_ru": "9. \u0422\u0435\u0445\u043d\u0456\u0447\u043d\u0430 \u0447\u0430\u0441\u0442\u0438\u043d\u0430 5.pdf",
+            "documentType": "technicalSpecifications",
+            "dateModified": "2020-02-13T11:16:25.677671+02:00",
+            "id": "50a7177b6f6a45f3b1be82195618a546"
+          },
+          {
+            "hash": "md5:98c62365242e8685605275c10acab16f",
+            "description": "SHA1: 292a7e0f67292c69452729ad6462d6dbab1debc0; SHA2-384: 1f5b8967e385eaf827651c2b2f0921ff04cee3a09220cea47053d69196a8fe52b7627f8bce64f74f47b8eeb5502a6f16; Antivirus: ESET Antivirus",
+            "title": "10. \u041f\u0440\u043e\u0435\u043a\u0442 \u0434\u043e\u0433\u043e\u0432\u043e\u0440\u0443. \u0406\u043d\u0448\u0456 \u0433\u0430\u0440\u0430\u043d\u0442\u0456\u0439\u043d\u0456 \u043b\u0438\u0441\u0442\u0438.pdf",
+            "url": "https://public.docs.openprocurement.org/get/4b6ef0a65deb418e9b249a0eede1a762?KeyID=52462340&Signature=ZDO2FW4E0evUwlRIbnYu0phaCkv82KpcpyluJY1zH3pSoEFl%2FNejqG5MQ5ACJz4HGsHxvUv6kK%252BpCMigbZ2QCA%253D%253D",
+            "format": "application/pdf",
+            "title_en": "10. \u041f\u0440\u043e\u0435\u043a\u0442 \u0434\u043e\u0433\u043e\u0432\u043e\u0440\u0443. \u0406\u043d\u0448\u0456 \u0433\u0430\u0440\u0430\u043d\u0442\u0456\u0439\u043d\u0456 \u043b\u0438\u0441\u0442\u0438.pdf",
+            "documentOf": "tender",
+            "datePublished": "2020-02-13T11:16:26.495153+02:00",
+            "title_ru": "10. \u041f\u0440\u043e\u0435\u043a\u0442 \u0434\u043e\u0433\u043e\u0432\u043e\u0440\u0443. \u0406\u043d\u0448\u0456 \u0433\u0430\u0440\u0430\u043d\u0442\u0456\u0439\u043d\u0456 \u043b\u0438\u0441\u0442\u0438.pdf",
+            "documentType": "eligibilityDocuments",
+            "dateModified": "2020-02-13T11:16:26.495174+02:00",
+            "id": "ae6ffeb6e98b4155b32c007260df9cd4"
+          },
+          {
+            "hash": "md5:18ab9fe776bb2e6a4249847985985bc3",
+            "description": "SHA1: 65c9f009ffd9f42315c645f5c5d85af48febf503; SHA2-384: 517e7279a11d558ed31bc0d76a3ba60a08101384cd473be0a3051787667f14469100c03d86f63defcccfe5725bc4eb20; Antivirus: ESET Antivirus",
+            "title": "sign.p7s",
+            "url": "https://public.docs.openprocurement.org/get/131a7f9dabfd4795bebbb791979fbd28?KeyID=52462340&Signature=ENlnuQucn7i5ozW9Bx2cAlOEi%252BE7u8ktQu7pkanqX4sHaFtuxKfUYJFB64frWs6v8IBn9ecq8rFcmY4gyEkECg%253D%253D",
+            "format": "application/pkcs7-signature",
+            "title_en": "sign.p7s",
+            "documentOf": "tender",
+            "datePublished": "2020-02-13T11:17:30.790800+02:00",
+            "title_ru": "sign.p7s",
+            "dateModified": "2020-02-13T11:17:30.790823+02:00",
+            "id": "1919841ce1ba40a4a6aab34f849b67ad"
+          }
+        ],
+        "selfEligible": true,
+        "value": {
+          "currency": "UAH",
+          "amount": 1778225.0,
+          "valueAddedTaxIncluded": true
+        },
+        "subcontractingDetails": "\u043d\u0435  \u0437\u0430\u043b\u0443\u0447\u0430\u0454\u0442\u044c\u0441\u044f",
+        "selfQualified": true,
+        "tenderers": [
+          {
+            "scale": "sme",
+            "contactPoint": {
+              "name_ru": "  ",
+              "name_en": "  ",
+              "telephone": "+380442214941",
+              "name": "\u041a\u0430\u043f\u0430\u0441\u044c \u042e\u043b\u0456\u044f \u0421\u0435\u0440\u0433\u0456\u0457\u0432\u043d\u0430",
+              "email": "medivei@ukr.net"
+            },
+            "identifier": {
+              "scheme": "UA-EDR",
+              "id": "41728863",
+              "legalName": "\u0422\u041e\u0412 \"\u041c\u0415\u0414\u0406\u0412\u0415\u0419\""
+            },
+            "name": "\u0422\u041e\u0412 \"\u041c\u0415\u0414\u0406\u0412\u0415\u0419\"",
+            "address": {
+              "postalCode": "03081",
+              "countryName": "\u0423\u043a\u0440\u0430\u0457\u043d\u0430",
+              "streetAddress": "\u0432\u0443\u043b. \u041f\u0438\u0440\u043e\u0433\u0456\u0432\u0441\u044c\u043a\u0438\u0439 \u0448\u043b\u044f\u0445, \u0431\u0443\u0434. 34, \u043e\u0444\u0456\u0441 11",
+              "region": "\u043c. \u041a\u0438\u0457\u0432",
+              "locality": "\u041a\u0438\u0457\u0432"
+            }
+          }
+        ],
+        "date": "2020-02-13T11:15:46.336573+02:00",
+        "id": "944fb7d25dd0434893e88392c40125c1",
+        "participationUrl": "https://auction.openprocurement.org/tenders/b2fcffa9b61e4717894a8a656e3edd07/login?bidder_id=944fb7d25dd0434893e88392c40125c1&hash=07ef2b481a8ac40a09408da2652d0778fdadb2cb"
+      }
+    ],
+    "value": {
+      "currency": "UAH",
+      "amount": 1780000.0,
+      "valueAddedTaxIncluded": true
+    },
+    "guarantee": {
+      "currency": "UAH",
+      "amount": 0.0
+    },
+    "awardCriteria": "lowestCost",
+    "dateCreated": "2020-01-20T11:34:07.688794+02:00",
+    "id": "b2fcffa9b61e4717894a8a656e3edd07"
+  }
+}

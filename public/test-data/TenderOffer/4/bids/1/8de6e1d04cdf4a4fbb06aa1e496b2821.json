@@ -1,0 +1,111 @@
+{
+  "data": {
+    "id": "8de6e1d04cdf4a4fbb06aa1e496b2821",
+    "date": "2024-05-14T10:30:41.448792+03:00",
+    "documents": [
+      {
+        "documentType": "technicalSpecifications",
+        "id": "39a488c64cbe4c6baceb9e7a10946dbd",
+        "datePublished": "2024-05-14T10:30:44.134619+03:00",
+        "hash": "md5:873af2191ab5fe9b37217eae8daddaad",
+        "title": "Технічна специфікація.pdf",
+        "format": "application/octet-stream",
+        "url": "https://public-docs.prozorro.gov.ua/get/da7a75ce9b74488f88bcc225b7d1f90e?Signature=wnNXj9kIDOSRT3PQk5e9e6v5kLDrLlvUaaMknGgjRA9aUNqTBtc5mt4DtfnWL3uv%2BulE4oLL2rRm24Jagz%2FPCQ%3D%3D&KeyID=52462340",
+        "documentOf": "tender",
+        "dateModified": "2024-05-14T10:30:44.134619+03:00",
+        "language": "uk",
+        "confidentiality": "public"
+      },
+      {
+        "id": "0e5972809f304cce9cd23b09f794d18c",
+        "datePublished": "2024-05-14T10:36:16.807406+03:00",
+        "hash": "md5:f21cf28a0f6e93a2b63ae0eff75a09f9",
+        "title": "sign.p7s",
+        "format": "application/pkcs7-signature",
+        "url": "/test-data/TenderOffer/4/bids/1/sign.p7s",
+        "documentOf": "tender",
+        "dateModified": "2024-05-14T10:36:16.807406+03:00",
+        "language": "uk",
+        "confidentiality": "public"
+      }
+    ],
+    "tenderers": [
+      {
+        "name": "ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ \"ПЕТРОЛ ПАРТНЕР\"",
+        "identifier": {
+          "scheme": "UA-EDR",
+          "id": "44763104",
+          "legalName": "ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ \"ПЕТРОЛ ПАРТНЕР\""
+        },
+        "address": {
+          "streetAddress": "вул.Яремчука Назарія,  будинок 1",
+          "locality": "Луцьк",
+          "region": "Волинська область",
+          "postalCode": "43023",
+          "countryName": "Україна"
+        },
+        "contactPoint": {
+          "name": "Михайловська Любов Орестівна",
+          "email": "Luba.Myhajlovska.zakupivli@wog.ua",
+          "telephone": "380673610312"
+        },
+        "scale": "micro"
+      }
+    ],
+    "value": {
+      "amount": 31776,
+      "currency": "UAH",
+      "valueAddedTaxIncluded": true
+    },
+    "requirementResponses": [
+      {
+        "id": "ae4632ec9f8b451fa3bdcd8617dbdebe",
+        "requirement": {
+          "id": "3526ac1763a346a293c6f12a0c61f526"
+        },
+        "values": [
+          89
+        ]
+      },
+      {
+        "id": "de122c5bf7dc417788164bb0905cca91",
+        "requirement": {
+          "id": "b03610975fa3428d99f6b3c7cae829bc"
+        },
+        "values": [
+          true
+        ]
+      },
+      {
+        "id": "c2e858aa4eb44972aefae066b4f6bae8",
+        "requirement": {
+          "id": "976be731c0cb48c5a7cf9c2cfd4396ac"
+        },
+        "values": [
+          "талон"
+        ]
+      },
+      {
+        "id": "a7e634119a3e4fc19c7aca5696bb4719",
+        "requirement": {
+          "id": "37e88240b0c44e3684973ff92305681a"
+        },
+        "values": [
+          "WOG"
+        ]
+      }
+    ],
+    "status": "active",
+    "items": [
+      {
+        "id": "1816c95d6eccffaffb2b63a5b77b0d0d",
+        "description": "Газ нафтовий скраплений, АЗС WOG, талон",
+        "unit": {
+          "name": "літр",
+          "code": "LTR"
+        },
+        "quantity": 1200
+      }
+    ]
+  }
+}

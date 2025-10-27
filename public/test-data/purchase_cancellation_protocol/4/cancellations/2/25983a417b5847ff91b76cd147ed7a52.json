@@ -1,0 +1,39 @@
+{
+  "data": {
+    "id": "25983a417b5847ff91b76cd147ed7a52",
+    "status": "active",
+    "date": "2024-01-12T18:05:32.867299+02:00",
+    "reasonType": "unFixable",
+    "reason": "вмавмавмавмавмавмавмав",
+    "cancellationOf": "lot",
+    "relatedLot": "7f5a9528bc4b4e4d9efba5d9766610fb",
+    "documents": [
+      {
+        "hash": "md5:44f16f0b9164fb52a64a53ea6e713a52",
+        "title": "2023-11-22_16-50.png",
+        "format": "image/png",
+        "url": "https://public-docs-staging.prozorro.gov.ua/get/a46d9fbccff4429c8d3ab76c96b4180d?Signature=d%2Bml8CuynxY72L5nELisbitdcEJCOL%2BgVJNBw3TrAI4p1UBX3WFazx4N6YpSx%2FclKOf%2Fo6RS64gKYa2nTm04BA%3D%3D&KeyID=01b985cf",
+        "documentOf": "tender",
+        "language": "uk",
+        "id": "bbeb7908cd9e4eafbd84a1c04820a014",
+        "datePublished": "2024-01-12T17:51:42.957714+02:00",
+        "dateModified": "2024-01-12T17:51:42.957714+02:00"
+      },
+      {
+        "hash": "md5:806586478f7ff19a700c0b6bbaa3ecd5",
+        "title": "sign.p7s",
+        "format": "application/pkcs7-signature",
+        "url": "/test-data/purchase_cancellation_protocol/4/cancellations/2/sign.p7s",
+        "documentOf": "tender",
+        "language": "uk",
+        "id": "93fa3d48416a42ec92647a7d4891ca73",
+        "datePublished": "2024-01-12T17:52:09.500540+02:00",
+        "dateModified": "2024-01-12T17:52:09.500540+02:00"
+      }
+    ],
+    "complaintPeriod": {
+      "startDate": "2024-01-12T17:52:11.083154+02:00",
+      "endDate": "2024-01-12T18:05:31.083154+02:00"
+    }
+  }
+}

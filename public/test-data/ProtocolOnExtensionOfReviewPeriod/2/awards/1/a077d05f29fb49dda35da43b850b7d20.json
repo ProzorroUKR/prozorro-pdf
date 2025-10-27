@@ -1,0 +1,237 @@
+{
+  "data": {
+    "id": "a077d05f29fb49dda35da43b850b7d20",
+    "title": "Тендерна пропозиція учасника не відповідає умовам технічної специфікації та іншим вимогам щодо предмета закупівлі тендерної документації",
+    "description": "Тендерна пропозиція учасника не відповідає умовам технічної специфікації та іншим вимогам щодо предмета закупівлі тендерної документації",
+    "status": "cancelled",
+    "date": "2022-12-08T11:54:10.130104+02:00",
+    "value": {
+      "amount": 167733,
+      "currency": "UAH",
+      "valueAddedTaxIncluded": true
+    },
+    "suppliers": [
+      {
+        "name": "Фізична особа-підприємець Клеменков Сергій Миколайович",
+        "identifier": {
+          "scheme": "UA-EDR",
+          "id": "2938104138",
+          "legalName": "Фізична особа-підприємець Клеменков Сергій Миколайович"
+        },
+        "address": {
+          "streetAddress": "мікрорайон Індустріальний, буд. 76, кв.53",
+          "locality": "м. Кривий Ріг",
+          "region": "Дніпропетровська область",
+          "postalCode": "50078",
+          "countryName": "Україна"
+        },
+        "contactPoint": {
+          "name": "Сергій Клеменков",
+          "email": "fopklemenkov@gmail.com",
+          "telephone": "+380987140966"
+        },
+        "scale": "not specified"
+      }
+    ],
+    "documents": [
+      {
+        "id": "a51d2ef523204e929d1c6b213ced31c1",
+        "hash": "md5:424a562cbbb853cf3a293d706e00bae6",
+        "documentType": "registerExtract",
+        "title": "edr_identification.yaml",
+        "format": "application/yaml",
+        "url": "https://public-docs.prozorro.gov.ua/get/9415e8a3af554ab2a76449d1e5a1ff4d?Signature=UI%2Fds5ZRyPUPhv2aFTcxsuz7NXxnvfP%2B0Ey1tMKPjLe4BuUGMj%2Bfk%2BY52J0f0Qx8v9DscvTPWHkN1r%2FUXV06CA%3D%3D&KeyID=52462340",
+        "datePublished": "2022-10-20T14:44:10.277974+03:00",
+        "dateModified": "2022-10-20T14:44:10.277974+03:00",
+        "author": "bots",
+        "documentOf": "tender"
+      },
+      {
+        "id": "2058e2ce3bce46b19ed2897d07d57697",
+        "hash": "md5:f3436f44fdbf99c014fb3059338aff29",
+        "documentType": "registerExtract",
+        "title": "edr_identification.yaml",
+        "format": "application/yaml",
+        "url": "https://public-docs.prozorro.gov.ua/get/a3ecfe8ee0264883987e7e519943706c?Signature=1vuwJhQAl0zlQxHaE8AwR9XcrXhz64vhzUnNA0rhNx6FZ4fTEcwn4UU2wrD%2Bz3WMfRYdE6bB6eeKPU16XJDBAQ%3D%3D&KeyID=52462340",
+        "datePublished": "2022-10-20T14:44:10.383622+03:00",
+        "dateModified": "2022-10-20T14:44:10.383622+03:00",
+        "author": "bots",
+        "documentOf": "tender"
+      },
+      {
+        "id": "2c3cfa8480484c9a84d6bf2136785159",
+        "hash": "md5:a15744a443f011b55731d259e46ab7e5",
+        "title": "Рішення про відхилення ФОП Клеменков Сергій Миколайович .docx",
+        "description": "SHA1:2f6b5e0c2e1ed7a9598efbd2b4471d576dbe420d;SHA2-384:efbbb7f855f7ab5add68bd0828e5480639d960144c155f75ab2a384edeb4a932f315dbd76a229a4cbc30db1e5eb1b071;Antivirus: ESET Antivirus",
+        "format": "text/plain",
+        "url": "https://public-docs.prozorro.gov.ua/get/3f517a41a4a34f3cb88b867dfd3eba7b?Signature=gSLpF6x%2FmiE1j%2FFjdUaJYbCqik0L%2FkiIK7OZnkuqTkIRLY0ETQafNlMkwF0DzEnXOleYyzMReP2NYm2xRO4eBw%3D%3D&KeyID=52462340",
+        "datePublished": "2022-10-26T12:01:31.451881+03:00",
+        "dateModified": "2022-10-26T12:01:31.665007+03:00",
+        "author": "tender_owner",
+        "documentOf": "tender"
+      },
+      {
+        "id": "f768154d63254207b3b094d8144133df",
+        "hash": "md5:d7a85a09b568eb99c9aa5ceac008968d",
+        "title": "sign.p7s",
+        "format": "application/pkcs7-signature",
+        "documentType": "extensionReport",
+        "url": "test-data/ProtocolOnExtensionOfReviewPeriod/2/awards/1/sign.p7s",
+        "datePublished": "2022-10-26T12:02:21.829114+03:00",
+        "dateModified": "2022-10-26T12:02:21.829114+03:00",
+        "author": "tender_owner",
+        "documentOf": "tender"
+      }
+    ],
+    "bid_id": "fc2f876d751746b7b55bff833d98ae1a",
+    "complaintPeriod": {
+      "startDate": "2022-10-26T12:02:22.055696+03:00",
+      "endDate": "2022-11-06T00:00:00+03:00"
+    },
+    "complaints": [
+      {
+        "id": "99370df8f0ad462498d64173b5b25f8c",
+        "complaintID": "UA-2022-10-04-011233-a.a2",
+        "date": "2022-11-14T12:31:05.498326+02:00",
+        "documents": [
+          {
+            "id": "faadedf3598247b9a17e90e10fa474e8",
+            "hash": "md5:97a50d9b55b6918004b5c24c736cd20e",
+            "title": "СКАРГА 31.10.2022 - ФОП Клеменков.pdf",
+            "format": "application/pdf",
+            "url": "https://public-docs.prozorro.gov.ua/get/08cc6274954943f99ca6c1fcedc03231?Signature=vChB9g7ecW1iLhUSlVlF%2F21kahQoBrko6ruZAK4gEfLG8eKgbBF02YZIhKs7JsRdWgy%2FzxHsSqO22IVtPNZ8Cg%3D%3D&KeyID=52462340",
+            "datePublished": "2022-11-01T11:37:05.677497+02:00",
+            "dateModified": "2022-11-01T11:37:05.677513+02:00",
+            "author": "complaint_owner",
+            "documentOf": "tender"
+          },
+          {
+            "id": "972108d4395b40dc91a2158458c5a356",
+            "hash": "md5:f620571ffda38ed6e9a4d05882cd4817",
+            "title": "СКАРГА 31.10.2022 - ФОП Клеменков.docx",
+            "format": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "url": "https://public-docs.prozorro.gov.ua/get/80ab542a44ec4df39f39195123a0440d?Signature=cFKwMVIacW9leXUu8aSMj3sDYqPtUzL2g90YIO0n8Gt4uEiWyivWu9Yww14VrNf5vXbEMZn2tAPFfsqz82A3Bg%3D%3D&KeyID=52462340",
+            "datePublished": "2022-11-01T11:37:10.438366+02:00",
+            "dateModified": "2022-11-01T11:37:10.438378+02:00",
+            "author": "complaint_owner",
+            "documentOf": "tender"
+          },
+          {
+            "id": "4d4832dde080430d8fc8c69ba8cb4af8",
+            "hash": "md5:c55c500c4b9bb4081b7b654be7a2e0ca",
+            "title": "Рішення від 03.11.2022 № 6568.pdf",
+            "format": "application/pdf",
+            "url": "https://public-docs.prozorro.gov.ua/get/7da8a5a973df42c9bb48c8df4d5efad9?Signature=IaXdRQWNZD2LHyh8Hfb5qxQCP%2BBoxrmzeRsYJnktYJ8ElMoJdwDtCHERWz2W59G%2FTu3s1sTiuH70Z5AdY7HqAw%3D%3D&KeyID=52462340",
+            "datePublished": "2022-11-03T14:19:24.568497+02:00",
+            "dateModified": "2022-11-03T14:19:24.568514+02:00",
+            "author": "aboveThresholdReviewers",
+            "documentOf": "tender"
+          },
+          {
+            "id": "00d337d7362c47e98796c5a302bc37a4",
+            "hash": "md5:188fe9f9aaf0221014d88147864daf12",
+            "title": "IMG_8403.jpeg",
+            "format": "image/jpeg",
+            "url": "https://public-docs.prozorro.gov.ua/get/10179025c979427bbdec5965d9503567?Signature=62l4gclhFsXLhAs%2FuJUt2QFOrsM4cTa%2B67rXUT%2B%2FMMxWgGUs5ws0VGTI%2FS3JkY5TeYVjB68dpDggeEntEyzQAA%3D%3D&KeyID=52462340",
+            "datePublished": "2022-11-07T15:32:03.014259+02:00",
+            "dateModified": "2022-11-07T15:32:03.014281+02:00",
+            "author": "tender_owner",
+            "documentOf": "tender"
+          },
+          {
+            "id": "0b045acae255462ea7a8859df64af3b2",
+            "hash": "md5:c924c67a8591198ac83713851dc28bfd",
+            "title": "IMG_8405.jpeg",
+            "format": "image/jpeg",
+            "url": "https://public-docs.prozorro.gov.ua/get/62afd6a3303e4efd85c702d66f648f32?Signature=LXKHlK6E8GW%2FrmzgyYQ6R5r53DR8S0ZdLUfLn1VstG1WBgE%2FCUi45B9MCjNToYe7SfV2XHDOGCbzFcDsaNyPDA%3D%3D&KeyID=52462340",
+            "datePublished": "2022-11-07T15:32:03.878226+02:00",
+            "dateModified": "2022-11-07T15:32:03.878246+02:00",
+            "author": "tender_owner",
+            "documentOf": "tender"
+          },
+          {
+            "id": "4367417f67ea439b99d40fd088f95d9e",
+            "hash": "md5:a72350bf191a1dbfbb2ab27d64cb59ef",
+            "title": "Відповідь на скаргу UA-2022-10-04-011233-a.docx",
+            "format": "text/plain",
+            "url": "https://public-docs.prozorro.gov.ua/get/b97270b3dfab46bdbdba7b1b76129f06?Signature=gjyPLWCEsxJi3pjFB80D2%2FjKWY3kK8rNYiYClAjNriKPufvLIm74i6OwomRaVLlOD66QmcvHmVQGoNjp5RctBA%3D%3D&KeyID=52462340",
+            "datePublished": "2022-11-07T15:32:04.688074+02:00",
+            "dateModified": "2022-11-07T15:32:04.688096+02:00",
+            "author": "tender_owner",
+            "documentOf": "tender"
+          },
+          {
+            "id": "4e9da84c1b714c0090814f63cf984464",
+            "hash": "md5:20504b4d5743517643ec4eba25cf2268",
+            "title": "IMG_8404.jpeg",
+            "format": "image/jpeg",
+            "url": "https://public-docs.prozorro.gov.ua/get/65918f29b9e54637a9762c8e38f73686?Signature=%2F3qZsz1sXgDZuFrb1C9hgWjljQ%2F6mVcY01kUKOckIVa9IBlQFf7n4mN%2BrHdoM2h9qieAWNyUdp80TfUjiANvCg%3D%3D&KeyID=52462340",
+            "datePublished": "2022-11-07T15:32:05.543379+02:00",
+            "dateModified": "2022-11-07T15:32:05.543390+02:00",
+            "author": "tender_owner",
+            "documentOf": "tender"
+          },
+          {
+            "id": "cdd75f58f4114d44a0cadc4f1b8b4605",
+            "hash": "md5:3dc0ea7c0eecf9f05738a636a1c460bb",
+            "title": "Інформація про резолютивну частину рішення від 10.11.2022 № 6682.pdf",
+            "format": "application/pdf",
+            "url": "https://public-docs.prozorro.gov.ua/get/aa325aa61cb44f0f86bd61ec3806e31b?Signature=zoIg%2BJLvFqIjldI2sjOsQhi%2BXXkYRjiuMhfapuS4%2BHpLilk6Le84wbqx9FAyMmcSOSIhJXKD51RPjjBaqudeAg%3D%3D&KeyID=52462340",
+            "datePublished": "2022-11-11T10:46:13.495794+02:00",
+            "dateModified": "2022-11-11T10:46:13.495813+02:00",
+            "author": "aboveThresholdReviewers",
+            "documentOf": "tender"
+          },
+          {
+            "id": "df63640780434a7293f64a83245c1a82",
+            "hash": "md5:5ce8e4a9c9f9b832a2d25a31311fca66",
+            "title": "Рішення від 10.11.2022 № 6682.pdf",
+            "format": "application/pdf",
+            "url": "https://public-docs.prozorro.gov.ua/get/bbb81696d8ad4850bc13a550d9f6ff92?Signature=bFrySO2JeYnI3MPWcLECGzDV3GP%2FKOKj8pe55j2J%2FO%2FuTKUBzFP1l9BRtM3BWaBNL3n5UlxrqjyhmhGvoaHvDQ%3D%3D&KeyID=52462340",
+            "datePublished": "2022-11-14T12:30:38.087576+02:00",
+            "dateModified": "2022-11-14T12:30:38.087590+02:00",
+            "author": "aboveThresholdReviewers",
+            "documentOf": "tender"
+          }
+        ],
+        "type": "complaint",
+        "author": {
+          "name": "Фізична особа-підприємець Клеменков Сергій Миколайович",
+          "address": {
+            "streetAddress": "мікрорайон Індустріальний, буд. 76, кв.53",
+            "locality": "м. Кривий Ріг",
+            "region": "Дніпропетровська область",
+            "postalCode": "50078",
+            "countryName": "Україна"
+          },
+          "contactPoint": {
+            "name": "Сергій Клеменков",
+            "email": "fopklemenkov@gmail.com",
+            "telephone": "+380987140966"
+          },
+          "identifier": {
+            "scheme": "UA-EDR",
+            "id": "2938104138",
+            "legalName": "Фізична особа-підприємець Клеменков Сергій Миколайович"
+          }
+        },
+        "title": "Скарга",
+        "description": "За результатами розгляду та оцінки тендерної документації замовник визначає переможця та приймає рішення про намір укласти договір згідно з Законом. Враховуючи зазначене, відхиливши пропозицію Скаржника з найменшою ціною, без достатніх правових підстав, Замовником було вчинено дії, що суперечать законодавству у сфері публічних закупівель, внаслідок яких було порушено право Скаржника/Учасника бути визнаним переможцем по процедурі закупівлі з послідуючим наміром укласти договір згідно з Законом.",
+        "dateSubmitted": "2022-11-01T14:49:28.158112+02:00",
+        "dateDecision": "2022-11-14T12:31:05.474224+02:00",
+        "value": {
+          "amount": 3000,
+          "currency": "UAH"
+        },
+        "status": "declined",
+        "acceptance": true,
+        "dateAccepted": "2022-11-03T14:19:46.769952+02:00",
+        "reviewDate": "2022-11-10T13:00:00+02:00",
+        "reviewPlace": "Антимонопольний комітет України",
+        "bid_id": "fc2f876d751746b7b55bff833d98ae1a"
+      }
+    ],
+    "qualified": false,
+    "eligible": false
+  }
+}

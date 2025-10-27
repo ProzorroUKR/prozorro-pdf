@@ -1,0 +1,172 @@
+{
+  "data": {
+    "id": "62721b2c95494df4928ce92b1f0645f7",
+    "complaintID": "UA-2024-05-13-000019-a.a14",
+    "date": "2024-05-17T12:13:39.654861+03:00",
+    "status": "pending",
+    "documents": [
+      {
+        "id": "799eb76a694044aca5eaf4763f5286e1",
+        "datePublished": "2024-05-17T12:09:37.132047+03:00",
+        "hash": "md5:0d1f14feb8550010ae1cc53d83f727a0",
+        "title": "\u0422\u0435\u043d\u0434\u0435\u0440\u043d\u0430 \u0434\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u0446\u0456\u044f.odt",
+        "format": "application/vnd.oasis.opendocument.text",
+        "url": "https://public-docs-sandbox-2.prozorro.gov.ua/get/edc85c3defb7448dbcc9323ac06a6b0b?Signature=C9wTdC20NDKs33xAXv9C%2BmzDPKx9SG98FnOM4nU%2F8%2Bid04JKmyfpYJ8f1cKxFG4gKGiMmmVoCYcjWbt9ZZ6aDA%3D%3D&KeyID=1331dc52",
+        "documentOf": "tender",
+        "dateModified": "2024-05-17T12:09:37.132047+03:00",
+        "author": "complaint_owner",
+        "language": "uk"
+      },
+      {
+        "id": "79cf8e588e1e4062a27431b999102250",
+        "datePublished": "2024-05-17T12:11:34.150121+03:00",
+        "hash": "md5:af823f8a75ef21ebd1c67e4642b582a4",
+        "title": "sign.json.p7s",
+        "format": "application/pkcs7-signature",
+        "url": "https://public-docs-sandbox-2.prozorro.gov.ua/get/f236dfd7d8964da4b3fd25bd87f06bf3?Signature=K6ocKlWXwJZT0t7oJIfhEtx50zywvvzRhqlnRKNVKLZIeU6cQL%2BTxs4mLS4QuIvTiPCIMgH3EUiEqcjKzeJYCg%3D%3D&KeyID=1331dc52",
+        "documentOf": "tender",
+        "dateModified": "2024-05-17T12:11:34.150121+03:00",
+        "author": "complaint_owner",
+        "language": "uk"
+      },
+      {
+        "hash": "md5:2fa239473f60daaaa368cad387cb36af",
+        "title": "sign2.json.p7s",
+        "format": "application/pkcs7-signature",
+        "url": "https://public-docs-sandbox-2.prozorro.gov.ua/get/cafe32e1dab24ee6ad4156d5b09a32d7?Signature=1I%2Bhkxx%2BnQuUFujKlp45CsSmDOZCw7XmRnfjKIDp9mI%2Fl9DsWYYcznsIqTNPC0y3Xo7rRkGiIvLcKMguNAAGAw%3D%3D&KeyID=1331dc52",
+        "documentOf": "tender",
+        "language": "uk",
+        "id": "801f4ce8b12c4b21adb403337f4109ca",
+        "datePublished": "2024-05-17T12:28:01.136997+03:00",
+        "dateModified": "2024-05-17T12:28:01.136997+03:00",
+        "author": "complaint_owner"
+      },
+      {
+        "hash": "md5:2fa239473f60daaaa368cad387cb36af",
+        "title": "sign.p7s",
+        "format": "application/pkcs7-signature",
+        "url": "test-data/complaints/c4_updated/sign.p7s",
+        "documentOf": "tender",
+        "language": "uk",
+        "id": "66fd83a824bb47de8297cc2c22eb512f",
+        "datePublished": "2024-05-17T12:28:36.900486+03:00",
+        "dateModified": "2024-05-17T12:28:36.900486+03:00",
+        "author": "complaint_owner"
+      }
+    ],
+    "type": "complaint",
+    "author": {
+      "name": "\u0414\u041a\u041f \u00ab\u0428\u043a\u043e\u043b\u044f\u0440\u00bb",
+      "address": {
+        "streetAddress": "\u0432\u0443\u043b. \u041e\u0441\u0442\u0440\u043e\u0432\u0441\u044c\u043a\u043e\u0433\u043e, 33",
+        "locality": "\u043c. \u0412\u0456\u043d\u043d\u0438\u0446\u044f",
+        "region": "\u0412\u0456\u043d\u043d\u0438\u0446\u044c\u043a\u0430 \u043e\u0431\u043b\u0430\u0441\u0442\u044c",
+        "postalCode": "21100",
+        "countryName": "\u0423\u043a\u0440\u0430\u0457\u043d\u0430"
+      },
+      "contactPoint": {
+        "name": "\u0421\u0435\u0440\u0433\u0456\u0439 \u041e\u043b\u0435\u043a\u0441\u044e\u043a",
+        "email": "soleksuk@gmail.com",
+        "telephone": "+380254788"
+      },
+      "identifier": {
+        "scheme": "UA-EDR",
+        "uri": "http://www.sc.gov.ua/",
+        "id": "00137256",
+        "legalName": "\u0414\u041a\u041f \u00ab\u0428\u043a\u043e\u043b\u044f\u0440\u00bb"
+      }
+    },
+    "title": "\u041d\u0435\u0434\u043e\u0441\u0442\u0430\u0442\u043d\u044c\u043e \u0456\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0456\u0457",
+    "objections": [
+      {
+        "id": "a73cddda8cad4f2683c151cbf4708479",
+        "title": "My objection1",
+        "description": "description",
+        "relatesTo": "tender",
+        "relatedItem": "d8743019e8d640ccbf630970558b7703",
+        "classification": {
+          "scheme": "violation_amcu",
+          "id": "corruptionContracting",
+          "description": "\u041a\u0432\u0430\u043b\u0456\u0444\u0456\u043a\u0430\u0446\u0456\u0439\u043d\u0456 \u043a\u0440\u0438\u0442\u0435\u0440\u0456\u0457 \u0443\u0447\u0430\u0441\u043d\u0438\u043a\u0456\u0432"
+        },
+        "requestedRemedies": [
+          {
+            "id": "2dbee17ea8a442b3ab7c83f831b89fd6",
+            "type": "setAsideAward",
+            "description": "test"
+          },
+          {
+            "id": "25c94e147b2a44888e50cfb15459aebb",
+            "type": "setAsideAward",
+            "description": "test"
+          }
+        ],
+        "arguments": [
+          {
+            "id": "552027263a9d44b889d4467f97aa9b32",
+            "description": "test argument1",
+            "evidences": [
+              {
+                "id": "5cba0a5a15e84bbe8fc655e5e9794362",
+                "title": "title",
+                "description": "description",
+                "relatedDocument": "799eb76a694044aca5eaf4763f5286e1"
+              },
+              {
+                "id": "b187c02531874a53965d335c88ad22dc",
+                "title": "title",
+                "description": "description",
+                "relatedDocument": "799eb76a694044aca5eaf4763f5286e1"
+              }
+            ]
+          }
+        ],
+        "sequenceNumber": 1
+      },
+      {
+        "id": "9272c73b380149f793fca2b418107637",
+        "title": "My objection1",
+        "description": "description",
+        "relatesTo": "tender",
+        "relatedItem": "d8743019e8d640ccbf630970558b7703",
+        "classification": {
+          "scheme": "violation_amcu",
+          "id": "corruptionDescription",
+          "description": "\u041a\u0432\u0430\u043b\u0456\u0444\u0456\u043a\u0430\u0446\u0456\u0439\u043d\u0456 \u043a\u0440\u0438\u0442\u0435\u0440\u0456\u0457 \u0443\u0447\u0430\u0441\u043d\u0438\u043a\u0456\u0432"
+        },
+        "requestedRemedies": [
+          {
+            "id": "eb5a58a8aea54c8b824d72aa0ed00136",
+            "type": "setAsideAward",
+            "description": "test"
+          },
+          {
+            "id": "f25e214929384619be2c4ea319101570",
+            "type": "setAsideAward",
+            "description": "test"
+          }
+        ],
+        "arguments": [
+          {
+            "id": "0296f150d22a4cb08ea2d915edcd59ef",
+            "description": "test argument1",
+            "evidences": [
+              {
+                "id": "5f8d08d8d06e4e51917b9c59252cf540",
+                "title": "title",
+                "description": "description",
+                "relatedDocument": "799eb76a694044aca5eaf4763f5286e1"
+              }
+            ]
+          }
+        ],
+        "sequenceNumber": 2
+      }
+    ],
+    "value": {
+      "amount": 2000.0,
+      "currency": "UAH"
+    },
+    "dateSubmitted": "2024-05-17T12:13:39.654861+03:00"
+  }
+}

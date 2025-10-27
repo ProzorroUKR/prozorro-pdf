@@ -1,0 +1,228 @@
+{
+  "data": {
+    "description": "description: Ошпарити хлястор жидел клаптик недоношениця грун.",
+    "plans": [
+      {
+        "id": "9acc681478d64562b793c53613ba26c5"
+      }
+    ],
+    "date": "2024-05-13T14:23:50.994891+03:00",
+    "dateModified": "2024-05-13T14:23:50.994891+03:00",
+    "dateCreated": "2024-05-13T14:12:03.331701+03:00",
+    "tenderID": "UA-2024-05-13-000771-a",
+    "documents": [
+      {
+        "documentType": "technicalSpecifications",
+        "id": "556013397629453c825a083a7ba0249a",
+        "datePublished": "2024-05-13T14:12:04.377664+03:00",
+        "hash": "md5:0293f2ae8a7959977e8694ec2da079c9",
+        "title": "d-цвірінь-57e0942e-f17c-4743-8eb9-06155a95c621.docx",
+        "format": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "url": "https://lb-api-staging.prozorro.gov.ua/api/2.5/tenders/8bc6dd06766145b9ac1a68876443ac7e/documents/556013397629453c825a083a7ba0249a?download=0bd2ccfeadc14eb596353655cee3e8ca",
+        "documentOf": "tender",
+        "dateModified": "2024-05-13T14:12:04.377664+03:00",
+        "author": "tender_owner",
+        "language": "uk"
+      },
+      {
+        "documentType": "technicalSpecifications",
+        "relatedItem": "b5ab5baddbe74e7a841618fb2a6f4152",
+        "id": "530600e081ff49d8a77d4892ceccf369",
+        "datePublished": "2024-05-13T14:12:04.377664+03:00",
+        "hash": "md5:84ed2aed7a9a6d8c4d636d18bceaf2c3",
+        "title": "d-людиний-f9e3e13d-8df9-49f8-a9cc-52a8af416585.docx",
+        "format": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "url": "https://lb-api-staging.prozorro.gov.ua/api/2.5/tenders/8bc6dd06766145b9ac1a68876443ac7e/documents/530600e081ff49d8a77d4892ceccf369?download=c96fe71ca5854078a85adbb4798043c1",
+        "documentOf": "lot",
+        "dateModified": "2024-05-13T14:12:04.377664+03:00",
+        "author": "tender_owner",
+        "language": "uk"
+      },
+      {
+        "documentType": "notice",
+        "id": "9655d244f21149ec88fe8633682e5599",
+        "datePublished": "2024-05-13T14:12:33.466442+03:00",
+        "hash": "md5:c203f95bb67b9b18a62e3cd94ec76cd5",
+        "title": "sign.p7s",
+        "format": "application/pkcs7-signature",
+        "url": "https://lb-api-staging.prozorro.gov.ua/api/2.5/tenders/8bc6dd06766145b9ac1a68876443ac7e/documents/9655d244f21149ec88fe8633682e5599?download=8ab709389b354e1c8326e3e79e3dfbcd",
+        "documentOf": "tender",
+        "dateModified": "2024-05-13T14:12:33.466442+03:00",
+        "author": "tender_owner",
+        "language": "uk"
+      },
+      {
+        "documentType": "notice",
+        "id": "9655d244f21149ec88fe8633682e5599",
+        "datePublished": "2024-05-13T14:13:17.162757+03:00",
+        "hash": "md5:618dd433825459792fb3b186817567b2",
+        "title": "sign.p7s",
+        "format": "application/pkcs7-signature",
+        "url": "https://lb-api-staging.prozorro.gov.ua/api/2.5/tenders/8bc6dd06766145b9ac1a68876443ac7e/documents/9655d244f21149ec88fe8633682e5599?download=7449dfc151fe4a06b3e34dfe27fd90fb",
+        "documentOf": "tender",
+        "dateModified": "2024-05-13T14:13:17.162757+03:00",
+        "author": "tender_owner",
+        "language": "uk"
+      }
+    ],
+    "status": "cancelled",
+    "owner": "it.ua",
+    "title": "[ТЕСТУВАННЯ] Золотокрилий карасір зціліти роґлик привіт людино.",
+    "mainProcurementCategory": "goods",
+    "procurementMethod": "open",
+    "procurementMethodDetails": "quick, accelerator=1440",
+    "submissionMethod": "electronicAuction",
+    "submissionMethodDetails": "quick(mode:no-auction)",
+    "awardCriteria": "lowestCost",
+    "value": {
+      "amount": 10000,
+      "currency": "UAH",
+      "valueAddedTaxIncluded": true
+    },
+    "minimalStep": {
+      "amount": 200,
+      "currency": "UAH",
+      "valueAddedTaxIncluded": true
+    },
+    "tenderPeriod": {
+      "startDate": "2024-05-13T14:19:00+03:00",
+      "endDate": "2024-08-21T14:10:00+03:00"
+    },
+    "items": [
+      {
+        "id": "1cfde942e76e41f8b1716d8a61c07cf5",
+        "description": "item_description: Показниками грун дрова рівець весілчанин вичухатися.",
+        "unit": {
+          "name": "штука",
+          "code": "H87"
+        },
+        "quantity": 82,
+        "classification": {
+          "description": "Газетний папір, папір ручного виготовлення та інший некрейдований папір або картон для графічних цілей",
+          "scheme": "ДК021",
+          "id": "22990000-6"
+        },
+        "deliveryDate": {
+          "endDate": "2026-04-13T00:00:00+03:00"
+        },
+        "deliveryAddress": {
+          "streetAddress": "7ab4539d-1831-4400-af30-8cc1d95c45c5",
+          "locality": "Київ",
+          "region": "Київська область",
+          "postalCode": "28257",
+          "countryName": "Україна"
+        },
+        "relatedLot": "b5ab5baddbe74e7a841618fb2a6f4152"
+      }
+    ],
+    "lots": [
+      {
+        "title": "Потріпки убраний убраний стереження.",
+        "description": "Вадко пороспорюватися клятьба утинок багатолотовий обліплювання атака галаснути іконний обгуркати четверговий гаїр горіський мовляти прочолок тандита чисто намаврати помер чортячий.",
+        "status": "active",
+        "id": "b5ab5baddbe74e7a841618fb2a6f4152",
+        "date": "2024-05-13T14:12:03.331701+03:00",
+        "value": {
+          "amount": 10000,
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        },
+        "minimalStep": {
+          "amount": 200,
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        }
+      }
+    ],
+    "milestones": [
+      {
+        "id": "a0f803b001e048c7a6f25c3739577506",
+        "title": "executionOfWorks",
+        "type": "financing",
+        "code": "postpayment",
+        "percentage": 100,
+        "duration": {
+          "days": 13,
+          "type": "banking"
+        },
+        "sequenceNumber": 0,
+        "relatedLot": "b5ab5baddbe74e7a841618fb2a6f4152"
+      }
+    ],
+    "procurementMethodType": "belowThreshold",
+    "procuringEntity": {
+      "name": "ТОВ \"Загальний замовник (тест)\"",
+      "identifier": {
+        "scheme": "UA-EDR",
+        "id": "88446633",
+        "legalName": "ТОВ \"Загальний замовник (тест)\""
+      },
+      "address": {
+        "streetAddress": "Тестова департамента 404",
+        "locality": "Київ",
+        "region": "Київська область",
+        "postalCode": "111111",
+        "countryName": "Україна"
+      },
+      "contactPoint": {
+        "name": "Організатор Загальний",
+        "email": "tenderownergeneral@gmail.com",
+        "telephone": "380998887766"
+      },
+      "kind": "defense"
+    },
+    "enquiryPeriod": {
+      "startDate": "2024-05-13T14:12:03.333000+03:00",
+      "endDate": "2024-05-13T14:18:00+03:00",
+      "clarificationsUntil": "2024-05-13T14:19:00+03:00"
+    },
+    "cancellations": [
+      {
+        "id": "b49e5e0a0a154087aae36769727d8687",
+        "status": "active",
+        "date": "2024-05-13T14:23:28.511955+03:00",
+        "reasonType": "noDemand",
+        "reason": "Робак людиний поросль перетлівати.",
+        "cancellationOf": "tender",
+        "documents": [
+          {
+            "hash": "md5:8448697af63b4c3c62588703a3799500",
+            "title": "d-мнишки-65ee6bf1-1a5c-4ebf-ba65-ff5775162e65.docx",
+            "format": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "url": "https://public-docs-staging.prozorro.gov.ua/get/23cf38a5c10e446a81dbf3425dec6f6f?Signature=kaYdSUU0hbqbsYGwSWGWPA7NfM2oEJKUb%2FpQf7d6z%2Bd8hKbrXWO4QLU7jGFSHovx2jyq44%2BHBij68lnQQSZ2Dw%3D%3D&KeyID=01b985cf",
+            "documentOf": "tender",
+            "language": "uk",
+            "id": "01e37eb5dff04b949017a614cb0e2e3b",
+            "datePublished": "2024-05-13T14:23:28.723520+03:00",
+            "dateModified": "2024-05-13T14:23:28.723520+03:00"
+          },
+          {
+            "hash": "md5:8da68b458074f3a12bd3d74efb264417",
+            "title": "sign.p7s",
+            "format": "application/pkcs7-signature",
+            "url": "https://public-docs-staging.prozorro.gov.ua/get/a28afbef9a6d40d38dc0e7b8ff347359?Signature=LLRIO6ceTxCCga3JLcdYX%2BJf2KUCaDFBhgEOlDTcF8J7FyYsywn34FTGi0xpLRVymXdWa5ey1qpJu5dc8zNgAA%3D%3D&KeyID=01b985cf",
+            "documentOf": "tender",
+            "language": "uk",
+            "id": "63a14cf74d2846eba003c46e5ca583fe",
+            "datePublished": "2024-05-13T14:23:50.171425+03:00",
+            "dateModified": "2024-05-13T14:23:50.171425+03:00"
+          }
+        ]
+      }
+    ],
+    "id": "8bc6dd06766145b9ac1a68876443ac7e"
+  },
+  "config": {
+    "hasAuction": true,
+    "hasAwardingOrder": true,
+    "hasValueRestriction": true,
+    "valueCurrencyEquality": true,
+    "hasPrequalification": false,
+    "minBidsNumber": 1,
+    "hasPreSelectionAgreement": false,
+    "hasTenderComplaints": false,
+    "hasAwardComplaints": false,
+    "hasCancellationComplaints": false,
+    "restricted": false
+  }
+}

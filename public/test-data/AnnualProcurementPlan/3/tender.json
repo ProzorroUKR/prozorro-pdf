@@ -1,0 +1,97 @@
+{
+  "data": {
+    "status": "complete",
+    "procuringEntity": {
+      "id": "8ad303faa4a7405db8dfafc17221a101",
+      "name": "Львівське міське комунальне підприємство \"Львівводоканал\"",
+      "identifier": {
+        "scheme": "UA-EDR",
+        "id": "03348471",
+        "legalName": "Львівське міське комунальне підприємство \"Львівводоканал\""
+      },
+      "address": {
+        "streetAddress": "м.Львів, вул.Зелена,64",
+        "locality": "Львів",
+        "region": "Львівська область",
+        "postalCode": "79017",
+        "countryName": "Україна"
+      },
+      "kind": "special"
+    },
+    "tender": {
+      "procurementMethod": "open",
+      "procurementMethodType": "aboveThreshold",
+      "tenderPeriod": {
+        "startDate": "2024-04-01T00:00:00+03:00"
+      }
+    },
+    "budget": {
+      "id": "71240000-2",
+      "description": "Виготовлення техніко-економічного обґрунтування по об`єкту: «Каналізування сіл Лисиничі, Підбірці та мікрорайону Тракт Глинянський»",
+      "amount": 2000000,
+      "currency": "UAH",
+      "period": {
+        "startDate": "2024-01-01T00:00:00+02:00",
+        "endDate": "2024-01-01T00:00:00+02:00"
+      },
+      "notes": "Річний план Категорія Замовника: Замовник здійснює діяльність в окремих сферах господарювання згідно п.4 ч.1 ст.2 Закону Місцезнаходження Замовника: вул. Зелена 64, м. Львів, Україна, 79017 Код ЄДРПОУ Замовника: 03348471",
+      "breakdown": [
+        {
+          "id": "2be18040936d4f48b02ea0c80d95510e",
+          "title": "own",
+          "value": {
+            "amount": 2000000,
+            "currency": "UAH"
+          }
+        }
+      ]
+    },
+    "classification": {
+      "description": "Архітектурні, інженерні та планувальні послуги",
+      "scheme": "ДК021",
+      "id": "71240000-2"
+    },
+    "planID": "UA-P-2024-04-22-006948-a",
+    "buyers": [
+      {
+        "id": "aec0c1e2c6c34e56af540c51111d84b8",
+        "name": "Львівське міське комунальне підприємство \"Львівводоканал\"",
+        "identifier": {
+          "scheme": "UA-EDR",
+          "id": "03348471",
+          "legalName": "Львівське міське комунальне підприємство \"Львівводоканал\""
+        },
+        "address": {
+          "streetAddress": "м.Львів, вул.Зелена,64",
+          "locality": "Львів",
+          "region": "Львівська область",
+          "postalCode": "79017",
+          "countryName": "Україна"
+        },
+        "kind": "special"
+      }
+    ],
+    "documents": [
+      {
+        "id": "d67087d6d3ff4c1aad6fd1bcf66e4cc0",
+        "datePublished": "2024-04-22T12:23:25.317713+03:00",
+        "hash": "md5:774367f82f3f522e5b904ad73fde4bad",
+        "title": "sign.p7s",
+        "format": "application/pkcs7-signature",
+        "url": "/test-data/AnnualProcurementPlan/3/sign.p7s",
+        "dateModified": "2024-04-22T12:23:25.317713+03:00",
+        "language": "uk"
+      }
+    ],
+    "rationale": {
+      "description": "Необхідність закупівлі: на виконання Рішення Виконавчого комітету Львівської міської ради від 30.05.2023 року №515.",
+      "date": "2024-04-22T12:23:08.020664+03:00"
+    },
+    "owner": "it.ua",
+    "dateCreated": "2024-04-22T12:23:08.020664+03:00",
+    "dateModified": "2024-04-22T12:39:05.014604+03:00",
+    "datePublished": "2024-04-22T12:23:08.020664+03:00",
+    "tender_id": "04a15dac695847c2a1b679ca8d488c5e",
+    "id": "6b3b7fd1b9594e2e9249a1c3a1ee0142"
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "data": {
+    "id": "b776595b01bf4d14a57e717d4083e295",
+    "status": "unsuccessful",
+    "date": "2024-02-26T16:44:20.057785+02:00",
+    "value": {
+      "amount": 591400,
+      "currency": "UAH",
+      "valueAddedTaxIncluded": true
+    },
+    "suppliers": [
+      {
+        "name": "ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ \"ТОРГОВИЙ ДІМ \"УКРКАБЕЛЬ-КИЇВ\"",
+        "identifier": {
+          "scheme": "UA-EDR",
+          "id": "43926510",
+          "legalName": "ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ \"ТОРГОВИЙ ДІМ \"УКРКАБЕЛЬ-КИЇВ\""
+        },
+        "address": {
+          "streetAddress": "08298, Київська обл., місто Ірпінь(з), селище міського типу Коцюбинське(з), пров.Будівельний, будинок 9/11",
+          "locality": "смт  Коцюбинське",
+          "region": "Київська область",
+          "postalCode": "08298",
+          "countryName": "Україна"
+        },
+        "contactPoint": {
+          "email": "s.maslakov@ukrcable.net",
+          "telephone": "380999178051",
+          "name": "Сергій Парфенюк"
+        },
+        "scale": "sme"
+      }
+    ],
+    "bid_id": "5b894ad9dd244ff6b5af81274bdc893c",
+    "documents": [
+      {
+        "documentType": "registerExtract",
+        "id": "5d2feeb6f0ae4ae5a15ad9a53aac34a8",
+        "datePublished": "2024-02-22T13:28:37.001305+02:00",
+        "hash": "md5:c7c6939787f1b6698a8f2515ce28ffe9",
+        "title": "edr_identification.yaml",
+        "format": "application/yaml",
+        "url": "https://public-docs.prozorro.gov.ua/get/e29a716f1d0d4e7387a8b04d217489f3?Signature=sLUmk7DHGdAi%2BBGmBBAq90fUon8ETjrNeWcVonhIwOOkez%2BfaEkbib9ruZAXM2gK%2FntkaTmyj4G3wxiq1CDABw%3D%3D&KeyID=52462340",
+        "documentOf": "tender",
+        "dateModified": "2024-02-22T13:28:37.001305+02:00",
+        "author": "bots",
+        "language": "uk"
+      },
+      {
+        "documentType": "notice",
+        "title_en": "протокол.pdf",
+        "title_ru": "протокол.pdf",
+        "description": "SHA1: 03f8ec53828675c00afa7a500384d0914a540102; SHA2-384: f00a0986034034b14ecbe6d43172025ab45e0e88a5f1856275b04997ff7f36d14ba192d52a823250cb3a8de2347b32a8",
+        "id": "0105d0af0f9f49ef8d2fd3db57ad9cf8",
+        "datePublished": "2024-02-26T16:42:10.477025+02:00",
+        "hash": "md5:053bb314a146d0c42917789948fcbd77",
+        "title": "Протокол",
+        "format": "application/pdf",
+        "url": "https://public-docs.prozorro.gov.ua/get/67cae8cf6db2427e948300c4fe3d9819?Signature=qHmTDEzMLnAGO1XN1llmdjYcPFx2hfol4bacEKeMgQ27g6LdH2km%2BSVI8x8%2Fer7nYW7PF5%2B9mY6DPdytWT0LBQ%3D%3D&KeyID=52462340",
+        "documentOf": "tender",
+        "dateModified": "2024-02-26T16:42:10.477025+02:00",
+        "author": "tender_owner",
+        "language": "uk"
+      },
+      {
+        "title_en": "sign.p7s",
+        "title_ru": "sign.p7s",
+        "description": "SHA1: 02479df2ba62a9cc5780ee6a60ee01478a4ffdb7; SHA2-384: 0c88bfce777553371fcdb31cf15f41775ac913124cf38ab1ac2824707aab182607c9a24ad91b452bb54dffa73f9518f7",
+        "id": "20a75896be094b519a8b386090dd5118",
+        "datePublished": "2024-02-26T16:44:17.268495+02:00",
+        "hash": "md5:86ac53dc283fa981fe9e7bbb5c01b422",
+        "title": "sign.p7s",
+        "format": "application/pkcs7-signature",
+        "url": "/test-data/TenderRejectionProtocol/1/awards/sign.p7s",
+        "documentOf": "tender",
+        "dateModified": "2024-02-26T16:44:17.268495+02:00",
+        "author": "tender_owner",
+        "language": "uk"
+      }
+    ],
+    "title": "Тендерна пропозиція не відповідає вимогам тендерної документації",
+    "title_en": "",
+    "title_ru": "",
+    "description": "Тендерна пропозиція учасника не відповідає умовам технічної специфікації та іншим вимогам",
+    "description_en": "",
+    "description_ru": "",
+    "qualified": false,
+    "eligible": false,
+    "complaintPeriod": {
+      "startDate": "2024-02-26T16:44:20.057785+02:00",
+      "endDate": "2024-03-08T00:00:00+02:00"
+    }
+  }
+}

@@ -1,0 +1,2051 @@
+{
+  "data": {
+    "title": "33600000-6 Фармацевтична продукція (Лот 1 - 33692100-8 Інфузійні розчини; Лот 2 - 33696000-5 Реактиви та контрастні речовини)",
+    "documents": [
+      {
+        "id": "35baa9387261482b8931749d08154525",
+        "hash": "md5:da99af3b3e468234b94bebd079e511e9",
+        "title": "sign.p7s",
+        "format": "application/pkcs7-signature",
+        "url": "https://public-docs.prozorro.gov.ua/get/b9aa1d579926461dbd8bd00d051bc88a?Signature=qwRiKlnuNIbALeElWuD5vpstJDRs0Mijf239FkA%2BB2eDK1i4rpoaWcvAk%2Ftwmhm0vOlqPsFQYeBZidgLmgOEDg%3D%3D&KeyID=52462340",
+        "datePublished": "2022-02-08T09:22:23.630005+02:00",
+        "dateModified": "2022-02-08T09:22:23.630024+02:00",
+        "author": "tender_owner",
+        "documentOf": "tender"
+      },
+      {
+        "id": "90c45dd821b84e94ae0218ade91e7b79",
+        "hash": "md5:48aade66cd2463ba1b6b24aeb8c4717d",
+        "documentType": "biddingDocuments",
+        "title": "Дод 1 форма тенд проп.docx",
+        "format": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "url": "https://public-docs.prozorro.gov.ua/get/8b02b01fc7b3452fafde02012562af91?Signature=4l444NS%2FJ%2BrFQK0fQcdjYmphfDCAFiSOFpU5Tk5vPzSnFY%2B0BhaWeTol2f0%2BoECc7GeMQg0l5ChMILladFrkDw%3D%3D&KeyID=52462340",
+        "datePublished": "2022-02-08T09:34:18.074652+02:00",
+        "dateModified": "2022-02-08T09:34:18.074673+02:00",
+        "author": "tender_owner",
+        "documentOf": "tender"
+      },
+      {
+        "id": "aef05be64f13495a92e238ef18db499b",
+        "hash": "md5:1d758ac97e0608064d37ef7adc47830e",
+        "documentType": "biddingDocuments",
+        "title": "Дод 2 ст. 16.doc",
+        "format": "application/msword",
+        "url": "https://public-docs.prozorro.gov.ua/get/405c338d3eeb4d7c80a3bfa879248b73?Signature=IOlA%2F2qbFL8oGkTJgoXfC54S31VXx8FjFPgkbJNY4alGehTom3uwZINJI%2Bfe7jS18uOa9KpG3JtiDq7QbQ2nCw%3D%3D&KeyID=52462340",
+        "datePublished": "2022-02-08T09:34:18.665035+02:00",
+        "dateModified": "2022-02-08T09:34:18.665054+02:00",
+        "author": "tender_owner",
+        "documentOf": "tender"
+      },
+      {
+        "id": "a95f3c2cfb674d029b34e903c0440dce",
+        "hash": "md5:a9ca36c9de4ce7429da962717effa51c",
+        "documentType": "biddingDocuments",
+        "title": "Дод 3 підтв відсутн підстав по ст.17.doc",
+        "format": "application/msword",
+        "url": "https://public-docs.prozorro.gov.ua/get/44dcb099a63844eb96ca616bbccf0de9?Signature=ZMp4X5tOReuP4mUHb%2FbZAw%2FFC7697beubAhcDCN9HgXR3wzo53LLkpHFPOmKpcNz%2FiyO0Vv9B1creArPfYQ8Dw%3D%3D&KeyID=52462340",
+        "datePublished": "2022-02-08T09:35:49.306338+02:00",
+        "dateModified": "2022-02-08T09:35:49.306356+02:00",
+        "author": "tender_owner",
+        "documentOf": "tender"
+      },
+      {
+        "id": "5a1b1c41216d47a4a83e936b28e13931",
+        "hash": "md5:d9595e4291ade95008a5f889aae06f24",
+        "documentType": "biddingDocuments",
+        "title": "Дод_6 форма аналог_дог.doc",
+        "format": "application/msword",
+        "url": "https://public-docs.prozorro.gov.ua/get/976293c933e642fca3260ec8e1ea20c8?Signature=RfL%2Fnad9MbJn6f%2BVjXZZWlET%2Fui60pe57lF%2FsE9fbTfS4N7VaUsMvp5heRW3ls9E1qehBcZ60bKwujlO3JxsDg%3D%3D&KeyID=52462340",
+        "datePublished": "2022-02-08T09:36:44.129714+02:00",
+        "dateModified": "2022-02-08T09:36:44.129734+02:00",
+        "author": "tender_owner",
+        "documentOf": "tender"
+      },
+      {
+        "id": "5c8f78ee587f47e289b27d552d42c2c8",
+        "hash": "md5:61c221a07a7ae27217b0d4427e14be06",
+        "documentType": "biddingDocuments",
+        "title": "Дод 7 кваліф вимоги.docx",
+        "format": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "url": "https://public-docs.prozorro.gov.ua/get/a9233ed4ea474407904ae0981bf17e3d?Signature=8nC2PZIVKVVz1Pj63KDpLveYxmK5cO8pcrlY6Y7eaTPKiex8sczu5VzKY6QT6bReN6tq1fXJuXn0D7i%2FqtGTCg%3D%3D&KeyID=52462340",
+        "datePublished": "2022-02-08T09:37:15.112867+02:00",
+        "dateModified": "2022-02-08T09:37:15.112893+02:00",
+        "author": "tender_owner",
+        "documentOf": "tender"
+      },
+      {
+        "id": "f11c3954edaa4628b36bb48992989704",
+        "hash": "md5:9e7c8056afb6275c44a8788990541350",
+        "documentType": "contractProforma",
+        "title": "Дод 5 договір.docx",
+        "format": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "url": "https://public-docs.prozorro.gov.ua/get/8f0d00f6a62b42f4a32b8b401f2a83fc?Signature=juNPKtY0Y1BEbkZSWcsmRtouXE%2BGADglq1M0T4ayzk%2Fvs%2BGXVq0WGfyNTBoNcad1I8dcDUldFo%2FzacHNdyu0BA%3D%3D&KeyID=52462340",
+        "datePublished": "2022-02-08T09:37:51.254703+02:00",
+        "dateModified": "2022-02-08T09:37:51.254723+02:00",
+        "author": "tender_owner",
+        "documentOf": "tender"
+      },
+      {
+        "id": "c5111b88c9424157bf98fbc9381bb308",
+        "hash": "md5:d69b59e7a5dcc5a364ed77d170d47f52",
+        "documentType": "technicalSpecifications",
+        "title": "Дод 4 техн якіс та кільк хар предм закуп правл.docx",
+        "format": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "url": "https://public-docs.prozorro.gov.ua/get/d5c0b817f61d4a27a8b99b845795fb1a?Signature=B%2FJphALAeik7CMPsnUyrtI%2FEUa0a8ury5W2Te5k45B8YozuUOn5DZxeGhsRzML2krCQiQb73%2Bo34RhVwjNn%2FCg%3D%3D&KeyID=52462340",
+        "datePublished": "2022-02-08T09:38:26.391425+02:00",
+        "dateModified": "2022-02-08T09:38:26.391449+02:00",
+        "author": "tender_owner",
+        "documentOf": "tender"
+      },
+      {
+        "id": "dbd023d568fd4a9488ad0d224b56f033",
+        "hash": "md5:ed2d57ca7f41bd2d9505033d520158d4",
+        "documentType": "biddingDocuments",
+        "title": "ТД ВТ фарм  прод 2 лота 07.02.22.docx",
+        "format": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "url": "https://public-docs.prozorro.gov.ua/get/4c13a23c3a6547ff9a55807dd9cb3bf4?Signature=GHmOZMYJkud%2F%2BE%2F2UeYk8EeCE7obiSQ9xNc5LrVrHtyH9Ih339BqrV16Bzi5IMlJYE3rGHuzZLiEDsJHOhWWBQ%3D%3D&KeyID=52462340",
+        "datePublished": "2022-02-08T09:41:21.447846+02:00",
+        "dateModified": "2022-02-08T09:41:21.447863+02:00",
+        "author": "tender_owner",
+        "documentOf": "tender"
+      },
+      {
+        "id": "2b2de432ca354a628378ceb0d6bee759",
+        "hash": "md5:d69b59e7a5dcc5a364ed77d170d47f52",
+        "documentType": "technicalSpecifications",
+        "title": "Дод 4 техн якіс та кільк хар предм закуп правл.docx",
+        "format": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "url": "https://public-docs.prozorro.gov.ua/get/a09b457c7e3b4ad897b4959191560ad0?Signature=%2BPTubrXF6IhHfPQo7XjvarUhQmM0Zue4gF%2FnlHOWhFzL4RL%2B5XwFFeEvuBpbxKthHS4%2BKKrbAn1FvhCmeMl1AQ%3D%3D&KeyID=52462340",
+        "datePublished": "2022-02-08T09:43:56.918199+02:00",
+        "dateModified": "2022-02-08T09:43:56.918218+02:00",
+        "relatedItem": "20c384c64c2149558f4023987c90ecdc",
+        "author": "tender_owner",
+        "documentOf": "lot"
+      },
+      {
+        "id": "8335c0b9cd9343cb90f09da67c39f8cb",
+        "hash": "md5:d69b59e7a5dcc5a364ed77d170d47f52",
+        "documentType": "technicalSpecifications",
+        "title": "Дод 4 техн якіс та кільк хар предм закуп правл.docx",
+        "format": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "url": "https://public-docs.prozorro.gov.ua/get/952a2d24b183491caf3082f30857ea86?Signature=pckO7M0NytVKXa2sicaB7KZ%2FhifQW2p3kYd3JxP5FK3fNp%2Fz4xN17MnPJh11ttyoz4RxeDqhQk0J%2FmOTkzNPDg%3D%3D&KeyID=52462340",
+        "datePublished": "2022-02-08T09:44:19.144955+02:00",
+        "dateModified": "2022-02-08T09:44:19.144975+02:00",
+        "relatedItem": "4e7bf1b4e6b4434c923955abd2550456",
+        "author": "tender_owner",
+        "documentOf": "lot"
+      },
+      {
+        "id": "35baa9387261482b8931749d08154525",
+        "hash": "md5:d377570a6d66b94c648529aa83d78900",
+        "title": "sign.p7s",
+        "format": "application/pkcs7-signature",
+        "url": "https://public-docs.prozorro.gov.ua/get/d683e160b3b24638945504f0cafa1c92?Signature=m3ZAjyAwN4XG4m3tHx1AcbPRHtwlOS7iqpD9UIf7kx6cFjyDIMX1R2%2B7p9Kmb%2BvPISHYQ1FhDAdQvZ2KttQlCg%3D%3D&KeyID=52462340",
+        "datePublished": "2022-02-08T09:46:06.742664+02:00",
+        "dateModified": "2022-02-08T09:46:06.712695+02:00",
+        "author": "tender_owner",
+        "documentOf": "tender"
+      },
+      {
+        "id": "79790a060cd4489180bbac039839d94e",
+        "hash": "md5:93481b9050d57c1e71c08adac880ebb4",
+        "title": "audit_e4e66f5674f9449eb03340e4ca11e521_20c384c64c2149558f4023987c90ecdc.yaml",
+        "format": "application/octet-stream",
+        "url": "https://public-docs.prozorro.gov.ua/get/e2d88fd6a33c4da3baa281e18fc6a13f?Signature=wRJ44YTdaNrDNLxVa2YrltOZRk1z2G8bBO6QFcDr5EO6F%2BZny3xDOA4y%2BCtL7T9zPS36iu5PuFjdqXV4a6jqBA%3D%3D&KeyID=52462340",
+        "datePublished": "2022-02-24T12:27:37.983749+02:00",
+        "dateModified": "2022-02-24T12:27:37.983778+02:00",
+        "author": "auction",
+        "documentOf": "tender"
+      }
+    ],
+    "date": "2022-02-24T12:27:38.441538+02:00",
+    "dateModified": "2022-02-24T12:27:38.441538+02:00",
+    "tenderID": "UA-2022-02-08-001227-b",
+    "owner": "e-tender.biz",
+    "mainProcurementCategory": "goods",
+    "milestones": [
+      {
+        "id": "663f069d2860457eb8c3a811ec03f436",
+        "title": "deliveryOfGoods",
+        "type": "financing",
+        "code": "postpayment",
+        "percentage": 100,
+        "duration": {
+          "days": 30,
+          "type": "calendar"
+        },
+        "sequenceNumber": 1,
+        "relatedLot": "20c384c64c2149558f4023987c90ecdc"
+      },
+      {
+        "id": "30216f1687434639b4c937582bce2584",
+        "title": "deliveryOfGoods",
+        "type": "financing",
+        "code": "postpayment",
+        "percentage": 100,
+        "duration": {
+          "days": 30,
+          "type": "calendar"
+        },
+        "sequenceNumber": 1,
+        "relatedLot": "4e7bf1b4e6b4434c923955abd2550456"
+      }
+    ],
+    "plans": [
+      {
+        "id": "4e972894c2e24e899b9a3db1b197aae5"
+      }
+    ],
+    "procurementMethod": "open",
+    "submissionMethod": "electronicAuction",
+    "criteria": [
+      {
+        "id": "9039e1c1afb74ed8b013b9e89877b58c",
+        "title": "Вчинення злочинів, учинених з корисливих мотивів",
+        "description": "Службова (посадова) особа учасника процедури закупівлі, яка підписала тендерну пропозицію (або уповноважена на підписання договору в разі переговорної процедури закупівлі) або фізична особа, яка є учасником процедури закупівлі, не була засуджена за кримінальне правопорушення, вчинене з корисливих мотивів (зокрема, пов’язане з хабарництвом та відмиванням коштів), судимість з якої знято або погашено у встановленому законом порядку",
+        "source": "tenderer",
+        "relatesTo": "tenderer",
+        "classification": {
+          "scheme": "ESPD211",
+          "id": "CRITERION.EXCLUSION.CONVICTIONS.PARTICIPATION_IN_CRIMINAL_ORGANISATION"
+        },
+        "legislation": [
+          {
+            "version": "2020-04-19",
+            "identifier": {
+              "id": "922-VIII",
+              "legalName": "Закон України \"Про публічні закупівлі\"",
+              "uri": "https://zakon.rada.gov.ua/laws/show/922-19"
+            },
+            "type": "NATIONAL_LEGISLATION",
+            "article": "17.1.5"
+          },
+          {
+            "version": "2020-04-19",
+            "identifier": {
+              "id": "922-VIII",
+              "legalName": "Закон України \"Про публічні закупівлі\"",
+              "uri": "https://zakon.rada.gov.ua/laws/show/922-19"
+            },
+            "type": "NATIONAL_LEGISLATION",
+            "article": "17.1.6"
+          }
+        ],
+        "requirementGroups": [
+          {
+            "id": "04a0404ae350496ebb3c2ff4bca44b5a",
+            "description": "Учасник фізична особа підтверджує, що",
+            "requirements": [
+              {
+                "id": "5a3886fe969344539b7d8864d63e7b31",
+                "title": "Фізична особа, яка є учасником процедури закупівлі, не була засуджена за кримінальне правопорушення, вчинене з корисливих мотивів (зокрема, пов’язане з хабарництвом та відмиванням коштів), судимість з якої знято або погашено у встановленому законом порядку",
+                "dataType": "boolean",
+                "expectedValue": "true",
+                "status": "active",
+                "datePublished": "2022-02-08T09:21:35.908105+02:00"
+              }
+            ]
+          },
+          {
+            "id": "80c154d797104f71b4310ad7fad276d7",
+            "description": "Учасник юридична особа підтверджує, що",
+            "requirements": [
+              {
+                "id": "326a2ea2e0af4914bfb5e0f58cc36679",
+                "title": "Службова (посадова) особа учасника процедури закупівлі, яка підписала тендерну пропозицію (або уповноважена на підписання договору в разі переговорної процедури закупівлі), не була засуджена за кримінальне правопорушення, вчинене з корисливих мотивів (зокрема, пов’язане з хабарництвом, шахрайством та відмиванням коштів), судимість з якої знято або погашено у встановленому законом порядку",
+                "dataType": "boolean",
+                "expectedValue": "true",
+                "status": "active",
+                "datePublished": "2022-02-08T09:21:35.908376+02:00"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "04f0277313644ce0b7f5c029b5a65287",
+        "title": "Вчинення економічних правопорушень",
+        "description": "Суб'єкт господарювання (учасник) протягом останніх трьох років не притягувався до відповідальності за порушення, передбачене пунктом 4 частини другої статті 6, пунктом 1 статті 50 Закону України \"Про захист економічної конкуренції\", у вигляді вчинення антиконкурентних узгоджених дій, що стосуються спотворення результатів тендерів",
+        "source": "tenderer",
+        "relatesTo": "tenderer",
+        "classification": {
+          "scheme": "ESPD211",
+          "id": "CRITERION.EXCLUSION.CONVICTIONS.FRAUD"
+        },
+        "legislation": [
+          {
+            "version": "2020-04-19",
+            "identifier": {
+              "id": "922-VIII",
+              "legalName": "Закон України \"Про публічні закупівлі\"",
+              "uri": "https://zakon.rada.gov.ua/laws/show/922-19"
+            },
+            "type": "NATIONAL_LEGISLATION",
+            "article": "17.1.4"
+          },
+          {
+            "version": "2020-02-13",
+            "identifier": {
+              "id": "2210-III",
+              "legalName": "Закон України \"Про захист економічної конкуренції\"",
+              "uri": "https://zakon.rada.gov.ua/laws/show/2210-14"
+            },
+            "type": "NATIONAL_LEGISLATION",
+            "article": "6.2.4"
+          },
+          {
+            "version": "2020-02-13",
+            "identifier": {
+              "id": "2210-III",
+              "legalName": "Закон України \"Про захист економічної конкуренції\"",
+              "uri": "https://zakon.rada.gov.ua/laws/show/2210-14"
+            },
+            "type": "NATIONAL_LEGISLATION",
+            "article": "50.1"
+          }
+        ],
+        "requirementGroups": [
+          {
+            "id": "96180ac15b2947adae5e8bd4005289c2",
+            "description": "Учасник підтверджує, що",
+            "requirements": [
+              {
+                "id": "975347e16eac4ae5a23e33b836cdc115",
+                "title": "Суб'єкт господарювання (учасник) протягом останніх трьох років не притягувався до відповідальності за порушення, передбачене пунктом 4 частини другої статті 6, пунктом 1 статті 50 Закону України \"Про захист економічної конкуренції\", у вигляді вчинення антиконкурентних узгоджених дій, що стосуються спотворення результатів тендерів",
+                "dataType": "boolean",
+                "expectedValue": "true",
+                "status": "active",
+                "datePublished": "2022-02-08T09:21:35.913572+02:00"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "0cdd61c9dae14be785488ef7b243c5c9",
+        "title": "Вчинення корупційних правопорушень",
+        "description": "Відомості про юридичну особу, яка є учасником процедури закупівлі, не внесено до Єдиного державного реєстру осіб, які вчинили корупційні або пов'язані з корупцією правопорушення. Службову (посадову) особу учасника процедури закупівлі, яку уповноважено учасником представляти його інтереси під час проведення процедури закупівлі, фізичну особу, яка є учасником, не було притягнуто згідно із законом до відповідальності за вчинення корупційного правопорушення або правопорушення, пов'язаного з корупцією",
+        "source": "tenderer",
+        "relatesTo": "tenderer",
+        "classification": {
+          "scheme": "ESPD211",
+          "id": "CRITERION.EXCLUSION.CONVICTIONS.CORRUPTION"
+        },
+        "legislation": [
+          {
+            "version": "2020-04-19",
+            "identifier": {
+              "id": "922-VIII",
+              "legalName": "Закон України \"Про публічні закупівлі\"",
+              "uri": "https://zakon.rada.gov.ua/laws/show/922-19"
+            },
+            "type": "NATIONAL_LEGISLATION",
+            "article": "17.1.2"
+          },
+          {
+            "version": "2020-04-19",
+            "identifier": {
+              "id": "922-VIII",
+              "legalName": "Закон України \"Про публічні закупівлі\"",
+              "uri": "https://zakon.rada.gov.ua/laws/show/922-19"
+            },
+            "type": "NATIONAL_LEGISLATION",
+            "article": "17.1.3"
+          }
+        ],
+        "requirementGroups": [
+          {
+            "id": "578d0e545838499eb2237259913defd5",
+            "description": "Учасник підтверджує, що",
+            "requirements": [
+              {
+                "id": "9cd18d23eadd457fa5b6e5d1b9b3ec23",
+                "title": "Відомості про юридичну особу, яка є учасником процедури закупівлі, не внесено до Єдиного державного реєстру осіб, які вчинили корупційні або пов'язані з корупцією правопорушення",
+                "dataType": "boolean",
+                "expectedValue": "true",
+                "status": "active",
+                "datePublished": "2022-02-08T09:21:35.919806+02:00"
+              },
+              {
+                "id": "08adf6433375442d8b22c581b6d2b246",
+                "title": "Службову (посадову) особу учасника процедури закупівлі, яку уповноважено учасником представляти його інтереси під час проведення процедури закупівлі, фізичну особу, яка є учасником, не було притягнуто згідно із законом до відповідальності за вчинення корупційного правопорушення або правопорушення, пов'язаного з корупцією",
+                "dataType": "boolean",
+                "expectedValue": "true",
+                "status": "active",
+                "datePublished": "2022-02-08T09:21:35.920032+02:00"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "db34808bbc39450082bb8976bef05174",
+        "title": "Вчинення правопорушень, пов'язаних з використанням дитячої праці чи будь-якими формами торгівлі людьми",
+        "description": "Службова (посадова) особа учасника процедури закупівлі, яку уповноважено учасником представляти його інтереси під час проведення процедури закупівлі, фізичну особу, яка є учасником, не було притягнуто згідно із законом до відповідальності за вчинення правопорушення, пов'язаного з використанням дитячої праці чи будь-якими формами торгівлі людьми",
+        "source": "tenderer",
+        "relatesTo": "tenderer",
+        "classification": {
+          "scheme": "ESPD211",
+          "id": "CRITERION.EXCLUSION.CONVICTIONS.CHILD_LABOUR-HUMAN_TRAFFICKING"
+        },
+        "legislation": [
+          {
+            "version": "2020-04-19",
+            "identifier": {
+              "id": "922-VIII",
+              "legalName": "Закон України \"Про публічні закупівлі\"",
+              "uri": "https://zakon.rada.gov.ua/laws/show/922-19"
+            },
+            "type": "NATIONAL_LEGISLATION",
+            "article": "17.1.12"
+          }
+        ],
+        "requirementGroups": [
+          {
+            "id": "194038b91637475ab3b4c26834a6d31d",
+            "description": "Учасник підтверджує, що",
+            "requirements": [
+              {
+                "id": "ce40101e5c514510a720b71f9c00abf1",
+                "title": "Службова (посадова) особа учасника процедури закупівлі, яку уповноважено учасником представляти його інтереси під час проведення процедури закупівлі, фізичну особу, яка є учасником, не було притягнуто згідно із законом до відповідальності за вчинення правопорушення, пов'язаного з використанням дитячої праці чи будь-якими формами торгівлі людьми",
+                "dataType": "boolean",
+                "expectedValue": "true",
+                "status": "active",
+                "datePublished": "2022-02-08T09:21:35.923827+02:00"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "b5384d0b87ec41d9ba8b6fe99bbeb085",
+        "title": "Заборгованість зі сплати податків і зборів (обов'язкових платежів)",
+        "description": "Учасник процедури закупівлі не має заборгованості зі сплати податків і зборів (обов'язкових платежів)",
+        "source": "tenderer",
+        "relatesTo": "tenderer",
+        "classification": {
+          "scheme": "ESPD211",
+          "id": "CRITERION.EXCLUSION.CONTRIBUTIONS.PAYMENT_OF_TAXES"
+        },
+        "legislation": [
+          {
+            "version": "2020-04-19",
+            "identifier": {
+              "id": "922-VIII",
+              "legalName": "Закон України \"Про публічні закупівлі\"",
+              "uri": "https://zakon.rada.gov.ua/laws/show/922-19"
+            },
+            "type": "NATIONAL_LEGISLATION",
+            "article": "17.1.13"
+          }
+        ],
+        "requirementGroups": [
+          {
+            "id": "0fd22f84da3644afb3f874e09c3c303e",
+            "description": "Учасник підтверджує, що",
+            "requirements": [
+              {
+                "id": "7bc832a7e7004b20a0c7a410d570be56",
+                "title": "Він не має заборгованості зі сплати податків і зборів (обов'язкових платежів)",
+                "dataType": "boolean",
+                "expectedValue": "true",
+                "status": "active",
+                "datePublished": "2022-02-08T09:21:35.936046+02:00"
+              }
+            ]
+          },
+          {
+            "id": "97648b5179d34c039dac630b7f175aa8",
+            "description": "Учасник підтверджує, що",
+            "requirements": [
+              {
+                "id": "f86eb967e7ef4affb652d2d801cc6568",
+                "title": "Він має заборгованість зі сплати податків і зборів (обов'язкових платежів)",
+                "dataType": "boolean",
+                "expectedValue": "true",
+                "status": "active",
+                "datePublished": "2022-02-08T09:21:35.936323+02:00"
+              },
+              {
+                "id": "62593e2c3be346fc8685cde2030f16e6",
+                "title": "Сума існуючої заборгованості",
+                "dataType": "number",
+                "status": "active",
+                "datePublished": "2022-02-08T09:21:35.936528+02:00"
+              },
+              {
+                "id": "15a1e7fcf894439ea6ffa2a473fea486",
+                "title": "Характер існуючої заборгованості",
+                "dataType": "string",
+                "status": "active",
+                "datePublished": "2022-02-08T09:21:35.936738+02:00"
+              },
+              {
+                "id": "f357f9c11ea746cc89039cb8dbcd126e",
+                "title": "Причина виникнення існуючої заборгованості",
+                "dataType": "string",
+                "status": "active",
+                "datePublished": "2022-02-08T09:21:35.936941+02:00"
+              },
+              {
+                "id": "236b09ee373a484ba3f3d69e7b1c7bb7",
+                "title": "Учасник здійснив заходи щодо розстрочення і відстрочення такої заборгованості у порядку та на умовах, визначених законодавством країни реєстрації такого учасника",
+                "dataType": "boolean",
+                "expectedValue": "true",
+                "status": "active",
+                "datePublished": "2022-02-08T09:21:35.937166+02:00"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "7fee0eb5e28a4c5495935bc6f285a9ce",
+        "title": "Порушення справ про банкрутство",
+        "description": "Учасник процедури закупівлі не визнаний у встановленому законом порядку банкрутом та стосовно нього не відкрита ліквідаційна процедура",
+        "source": "tenderer",
+        "relatesTo": "tenderer",
+        "classification": {
+          "scheme": "ESPD211",
+          "id": "CRITERION.EXCLUSION.BUSINESS.BANKRUPTCY"
+        },
+        "legislation": [
+          {
+            "version": "2020-04-19",
+            "identifier": {
+              "id": "922-VIII",
+              "legalName": "Закон України \"Про публічні закупівлі\"",
+              "uri": "https://zakon.rada.gov.ua/laws/show/922-19"
+            },
+            "type": "NATIONAL_LEGISLATION",
+            "article": "17.1.8"
+          }
+        ],
+        "requirementGroups": [
+          {
+            "id": "5b0f04ebe4d54554839ff82131c1c812",
+            "description": "Учасник підтверджує, що",
+            "requirements": [
+              {
+                "id": "2b44e93b0825499c968a46411583b626",
+                "title": "Учасник процедури закупівлі не визнаний у встановленому законом порядку банкрутом та стосовно нього не відкрита ліквідаційна процедура",
+                "dataType": "boolean",
+                "expectedValue": "true",
+                "status": "active",
+                "datePublished": "2022-02-08T09:21:35.941027+02:00"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "f5d31c737e8f4682b1c664b4aae726b2",
+        "title": "Виявлення факту зв'язку учасника з іншими учасниками процедури або замовником",
+        "description": "Тендерна пропозиція подана учасником конкурентної процедури закупівлі або участь у переговорній процедурі бере учасник, який є пов'язаною особою з іншими учасниками процедури закупівлі та/або з уповноваженою особою (особами), та/або з керівником замовника",
+        "source": "procuringEntity",
+        "relatesTo": "tenderer",
+        "classification": {
+          "scheme": "ESPD211",
+          "id": "CRITERION.EXCLUSION.MISCONDUCT.MARKET_DISTORTION"
+        },
+        "legislation": [
+          {
+            "version": "2020-04-19",
+            "identifier": {
+              "id": "922-VIII",
+              "legalName": "Закон України \"Про публічні закупівлі\"",
+              "uri": "https://zakon.rada.gov.ua/laws/show/922-19"
+            },
+            "type": "NATIONAL_LEGISLATION",
+            "article": "17.1.7"
+          }
+        ],
+        "requirementGroups": [
+          {
+            "id": "4c145380c6dd4822a572aed41ab9bbde",
+            "description": "Замовник підтверджує, що",
+            "requirements": [
+              {
+                "id": "a6ceb37824614759b0f88844b631b4e6",
+                "title": "Тендерна пропозиція подана учасником конкурентної процедури закупівлі або участь у переговорній процедурі бере учасник, який є пов'язаною особою з іншими учасниками процедури закупівлі та/або з уповноваженою особою (особами), та/або з керівником замовника",
+                "dataType": "boolean",
+                "status": "active",
+                "datePublished": "2022-02-08T09:21:35.944803+02:00"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "7f058b74b7e1453c8c20c5dbde22955e",
+        "title": "Виявлення факту наміру впливу на прийняття рішення замовника",
+        "description": "Замовник має незаперечні докази того, що учасник процедури закупівлі пропонує, дає або погоджується дати прямо чи опосередковано будь-якій службовій (посадовій) особі замовника, іншого державного органу винагороду в будь-якій формі (пропозиція щодо найму на роботу, цінна річ, послуга тощо) з метою вплинути на прийняття рішення щодо визначення переможця процедури закупівлі або застосування замовником певної процедури закупівлі",
+        "source": "procuringEntity",
+        "relatesTo": "tenderer",
+        "classification": {
+          "scheme": "ESPD211",
+          "id": "CRITERION.EXCLUSION.CONFLICT_OF_INTEREST.MISINTERPRETATION"
+        },
+        "legislation": [
+          {
+            "version": "2020-04-19",
+            "identifier": {
+              "id": "922-VIII",
+              "legalName": "Закон України \"Про публічні закупівлі\"",
+              "uri": "https://zakon.rada.gov.ua/laws/show/922-19"
+            },
+            "type": "NATIONAL_LEGISLATION",
+            "article": "17.1.1"
+          }
+        ],
+        "requirementGroups": [
+          {
+            "id": "f5f3f52db434417bb55e1012aea8eb9f",
+            "description": "Замовник підтверджує, що",
+            "requirements": [
+              {
+                "id": "583a65e38c6e410ca4ea2a2de9926634",
+                "title": "Замовник має незаперечні докази того, що учасник процедури закупівлі пропонує, дає або погоджується дати прямо чи опосередковано будь-якій службовій (посадовій) особі замовника, іншого державного органу винагороду в будь-якій формі (пропозиція щодо найму на роботу, цінна річ, послуга тощо) з метою вплинути на прийняття рішення щодо визначення переможця процедури закупівлі або застосування замовником певної процедури закупівлі",
+                "dataType": "boolean",
+                "status": "active",
+                "datePublished": "2022-02-08T09:21:35.948558+02:00"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "fa1b5e23a80347259e005b6d4812be60",
+        "title": "Наявність інших підстав для відмови в участі у процедурі закупівлі",
+        "description": "У Єдиному державному реєстрі юридичних осіб, фізичних осіб - підприємців та громадських формувань присутня інформація, передбачена пунктом 9 частини другої статті 9 Закону України \"Про державну реєстрацію юридичних осіб, фізичних осіб - підприємців та громадських формувань\" (крім нерезидентів)",
+        "source": "tenderer",
+        "relatesTo": "tenderer",
+        "classification": {
+          "scheme": "ESPD211",
+          "id": "CRITERION.EXCLUSION.NATIONAL.OTHER"
+        },
+        "legislation": [
+          {
+            "version": "2020-04-19",
+            "identifier": {
+              "id": "922-VIII",
+              "legalName": "Закон України \"Про публічні закупівлі\"",
+              "uri": "https://zakon.rada.gov.ua/laws/show/922-19"
+            },
+            "type": "NATIONAL_LEGISLATION",
+            "article": "17.1.9"
+          },
+          {
+            "version": "2020-03-16",
+            "identifier": {
+              "id": "755-IV",
+              "legalName": "Закон України \"Про державну реєстрацію юридичних осіб, фізичних осіб - підприємців та громадських формувань\"",
+              "uri": "https://zakon.rada.gov.ua/laws/show/755-15"
+            },
+            "type": "NATIONAL_LEGISLATION",
+            "article": "9.2.9"
+          },
+          {
+            "version": "2020-04-19",
+            "identifier": {
+              "id": "922-VIII",
+              "legalName": "Закон України \"Про публічні закупівлі\"",
+              "uri": "https://zakon.rada.gov.ua/laws/show/922-19"
+            },
+            "type": "NATIONAL_LEGISLATION",
+            "article": "17.1.10"
+          },
+          {
+            "version": "2020-04-19",
+            "identifier": {
+              "id": "922-VIII",
+              "legalName": "Закон України \"Про публічні закупівлі\"",
+              "uri": "https://zakon.rada.gov.ua/laws/show/922-19"
+            },
+            "type": "NATIONAL_LEGISLATION",
+            "article": "17.1.11"
+          },
+          {
+            "version": "2020-04-19",
+            "identifier": {
+              "id": "1644-VII",
+              "legalName": "Закон України \"Про санкції\"",
+              "uri": "https://zakon.rada.gov.ua/laws/show/1644-18"
+            },
+            "type": "NATIONAL_LEGISLATION"
+          }
+        ],
+        "requirementGroups": [
+          {
+            "id": "bbfa170e27454ce489565c038da576d8",
+            "description": "Учасник підтверджує, що",
+            "requirements": [
+              {
+                "id": "b9d0dca5f3144154b3a333e14e19ad6d",
+                "title": "У Єдиному державному реєстрі юридичних осіб, фізичних осіб - підприємців та громадських формувань присутня інформація, передбачена пунктом 9 частини другої статті 9 Закону України \"Про державну реєстрацію юридичних осіб, фізичних осіб - підприємців та громадських формувань\" (крім нерезидентів)",
+                "dataType": "boolean",
+                "expectedValue": "true",
+                "status": "active",
+                "datePublished": "2022-02-08T09:21:35.956693+02:00"
+              },
+              {
+                "id": "827172e607094f36a4898fa155403661",
+                "title": "Учасник процедури закупівлі не є особою, до якої застосовано санкцію у вигляді заборони на здійснення у неї публічних закупівель товарів, робіт і послуг згідно із Законом України \"Про санкції\"",
+                "dataType": "boolean",
+                "expectedValue": "true",
+                "status": "active",
+                "datePublished": "2022-02-08T09:21:35.956909+02:00"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ff852f49e2df411a94703a0c286c35fb",
+        "title": "Мова (мови), якою (якими) повинні готуватися тендерні пропозиції",
+        "source": "tenderer",
+        "relatesTo": "tender",
+        "classification": {
+          "scheme": "ESPD211",
+          "id": "CRITERION.OTHER.BID.LANGUAGE"
+        },
+        "legislation": [
+          {
+            "version": "2020-04-19",
+            "identifier": {
+              "id": "922-VIII",
+              "legalName": "Закон України \"Про публічні закупівлі\"",
+              "uri": "https://zakon.rada.gov.ua/laws/show/922-19"
+            },
+            "type": "NATIONAL_LEGISLATION"
+          }
+        ],
+        "requirementGroups": [
+          {
+            "id": "734d3317fa2a45cc8a00be02cab877c2",
+            "description": "Учасник підтверджує, що",
+            "requirements": [
+              {
+                "id": "f4dd9bdce22040a9b9f4e9935c732aee",
+                "title": "Мова тендерної пропозиції українська",
+                "dataType": "boolean",
+                "expectedValue": "true",
+                "status": "active",
+                "datePublished": "2022-02-08T09:21:35.960932+02:00"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "value": {
+      "amount": 795000,
+      "currency": "UAH",
+      "valueAddedTaxIncluded": true
+    },
+    "procuringEntity": {
+      "name": "Комунальне некомерційне підприємство \"Волноваська центральна районна лікарня\"",
+      "name_en": "Community noncommercial enterprise \"Volnovaska Central District Hospital\"",
+      "identifier": {
+        "scheme": "UA-EDR",
+        "id": "01989763",
+        "legalName": "Комунальне некомерційне підприємство \"Волноваська центральна районна лікарня\"",
+        "legalName_en": "Community noncommercial enterprise \"Volnovaska Central District Hospital\""
+      },
+      "address": {
+        "streetAddress": "провулок Матросова, 5",
+        "locality": "Волноваха",
+        "region": "Донецька область",
+        "postalCode": "85700",
+        "countryName": "Україна"
+      },
+      "contactPoint": {
+        "name": "Саранов Віктор Федорович",
+        "email": "volnovcrb@ukr.net",
+        "telephone": "380624445170"
+      },
+      "kind": "general"
+    },
+    "minimalStep": {
+      "amount": 1550,
+      "currency": "UAH",
+      "valueAddedTaxIncluded": true
+    },
+    "guarantee": {
+      "amount": 0,
+      "currency": "UAH"
+    },
+    "awardCriteria": "lowestCost",
+    "enquiryPeriod": {
+      "startDate": "2022-02-08T09:21:23.643864+02:00",
+      "endDate": "2022-02-14T00:00:00+02:00",
+      "clarificationsUntil": "2022-02-17T00:00:00+02:00",
+      "invalidationDate": "2022-02-08T09:46:06.714830+02:00"
+    },
+    "tenderPeriod": {
+      "startDate": "2022-02-08T09:21:23.643864+02:00",
+      "endDate": "2022-02-24T00:00:00+02:00"
+    },
+    "bids": [
+      {
+        "tenderers": [
+          {
+            "name": "ТОВ \" Медичний центр \"М.Т.К.\"",
+            "identifier": {
+              "scheme": "UA-EDR",
+              "id": "21633086",
+              "legalName": "ТОВ \" Медичний центр \"М.Т.К.\""
+            },
+            "address": {
+              "streetAddress": "вул. Миколи Амосова, 10",
+              "locality": "Київ",
+              "region": "Київська область",
+              "postalCode": "03110",
+              "countryName": "Україна"
+            },
+            "contactPoint": {
+              "name": "Димніч Андрій",
+              "email": "ANDRII.DYMNICH@UF.UA",
+              "telephone": "380952834833"
+            },
+            "scale": "large"
+          }
+        ],
+        "date": "2022-02-21T14:57:06.785295+02:00",
+        "id": "a15b858dff76468e9426b9821a2329b7",
+        "requirementResponses": [
+          {
+            "id": "121e6454bc3246f889ddcb3633fc4f74",
+            "requirement": {
+              "id": "326a2ea2e0af4914bfb5e0f58cc36679",
+              "title": "Службова (посадова) особа учасника процедури закупівлі, яка підписала тендерну пропозицію (або уповноважена на підписання договору в разі переговорної процедури закупівлі), не була засуджена за кримінальне правопорушення, вчинене з корисливих мотивів (зокрема, пов’язане з хабарництвом, шахрайством та відмиванням коштів), судимість з якої знято або погашено у встановленому законом порядку"
+            },
+            "value": "True"
+          },
+          {
+            "id": "d12d71d0f57541818821c890a450481f",
+            "requirement": {
+              "id": "975347e16eac4ae5a23e33b836cdc115",
+              "title": "Суб'єкт господарювання (учасник) протягом останніх трьох років не притягувався до відповідальності за порушення, передбачене пунктом 4 частини другої статті 6, пунктом 1 статті 50 Закону України \"Про захист економічної конкуренції\", у вигляді вчинення антиконкурентних узгоджених дій, що стосуються спотворення результатів тендерів"
+            },
+            "value": "True"
+          },
+          {
+            "id": "aaf505e0152b46aabe36c701eb34d48f",
+            "requirement": {
+              "id": "08adf6433375442d8b22c581b6d2b246",
+              "title": "Службову (посадову) особу учасника процедури закупівлі, яку уповноважено учасником представляти його інтереси під час проведення процедури закупівлі, фізичну особу, яка є учасником, не було притягнуто згідно із законом до відповідальності за вчинення корупційного правопорушення або правопорушення, пов'язаного з корупцією"
+            },
+            "value": "True"
+          },
+          {
+            "id": "2e76e644983048a1ad0f8e62b983ca8c",
+            "requirement": {
+              "id": "9cd18d23eadd457fa5b6e5d1b9b3ec23",
+              "title": "Відомості про юридичну особу, яка є учасником процедури закупівлі, не внесено до Єдиного державного реєстру осіб, які вчинили корупційні або пов'язані з корупцією правопорушення"
+            },
+            "value": "True"
+          },
+          {
+            "id": "dd79b271363d414b97287847b9d0d579",
+            "requirement": {
+              "id": "ce40101e5c514510a720b71f9c00abf1",
+              "title": "Службова (посадова) особа учасника процедури закупівлі, яку уповноважено учасником представляти його інтереси під час проведення процедури закупівлі, фізичну особу, яка є учасником, не було притягнуто згідно із законом до відповідальності за вчинення правопорушення, пов'язаного з використанням дитячої праці чи будь-якими формами торгівлі людьми"
+            },
+            "value": "True"
+          },
+          {
+            "id": "61b26cb7782f49b792386bb845d989fb",
+            "requirement": {
+              "id": "7bc832a7e7004b20a0c7a410d570be56",
+              "title": "Він не має заборгованості зі сплати податків і зборів (обов'язкових платежів)"
+            },
+            "value": "True"
+          },
+          {
+            "id": "6e25b957bbea4f408c1faca00b840795",
+            "requirement": {
+              "id": "2b44e93b0825499c968a46411583b626",
+              "title": "Учасник процедури закупівлі не визнаний у встановленому законом порядку банкрутом та стосовно нього не відкрита ліквідаційна процедура"
+            },
+            "value": "True"
+          },
+          {
+            "id": "c6e0a6e6fa0f4924b5a0b1f0ca3e490d",
+            "requirement": {
+              "id": "b9d0dca5f3144154b3a333e14e19ad6d",
+              "title": "У Єдиному державному реєстрі юридичних осіб, фізичних осіб - підприємців та громадських формувань присутня інформація, передбачена пунктом 9 частини другої статті 9 Закону України \"Про державну реєстрацію юридичних осіб, фізичних осіб - підприємців та громадських формувань\" (крім нерезидентів)"
+            },
+            "value": "True"
+          },
+          {
+            "id": "80854a567dd34af1b7b16e5a874506dc",
+            "requirement": {
+              "id": "827172e607094f36a4898fa155403661",
+              "title": "Учасник процедури закупівлі не є особою, до якої застосовано санкцію у вигляді заборони на здійснення у неї публічних закупівель товарів, робіт і послуг згідно із Законом України \"Про санкції\""
+            },
+            "value": "True"
+          },
+          {
+            "id": "dccf7f0bb54f427c9c4935de02133eb5",
+            "requirement": {
+              "id": "f4dd9bdce22040a9b9f4e9935c732aee",
+              "title": "Мова тендерної пропозиції українська"
+            },
+            "value": "True"
+          }
+        ],
+        "lotValues": [
+          {
+            "value": {
+              "amount": 635126.01,
+              "currency": "UAH",
+              "valueAddedTaxIncluded": true
+            },
+            "relatedLot": "20c384c64c2149558f4023987c90ecdc",
+            "participationUrl": "https://auctions.prozorro.gov.ua/tenders/e4e66f5674f9449eb03340e4ca11e521_20c384c64c2149558f4023987c90ecdc/login?bidder_id=a15b858dff76468e9426b9821a2329b7&hash=6884e7c24e734562b2ee23fde39d6f95",
+            "date": "2022-02-21T14:57:06.785295+02:00"
+          }
+        ],
+        "status": "active",
+        "selfQualified": true,
+        "documents": [
+          {
+            "id": "8a4ce3492bec4c9e8c896adf0f7bf0a8",
+            "hash": "md5:9b27fe87856d0d192e4beac7cb923cf4",
+            "documentType": "eligibilityDocuments",
+            "title": "1. Реєстр наданих документів.pdf",
+            "format": "application/pdf",
+            "url": "https://public-docs.prozorro.gov.ua/get/76ac74abfdfd4292b0152b80fc067266?Signature=pZ83%2F7WdQH1PbS3zdEPRCc2IHlNv9pCwEAG4G%2B4cVe%2BdvIzqqFo4K9GY5Lqbb4gHGmEoRwWYTmBROaTwKkEOCA%3D%3D&KeyID=52462340",
+            "datePublished": "2022-02-21T14:57:06.785295+02:00",
+            "dateModified": "2022-02-21T14:57:06.785295+02:00",
+            "documentOf": "tender",
+            "confidentiality": "public"
+          },
+          {
+            "id": "30ed963e8d924c95a801199e7eda1119",
+            "hash": "md5:f96b7d4925a65ab3f7091ef1acf32527",
+            "documentType": "qualificationDocuments",
+            "title": "3. Кваліфікаційні вимоги.pdf",
+            "format": "application/pdf",
+            "url": "https://public-docs.prozorro.gov.ua/get/887972f526df4e54bfdcea7879c8e7a1?Signature=caodX809hFkGU8TiOf6OBWb1koaG8rhSl3WKTsADSybEosfo2bOTJK6PHAlGkj6XdmmAv4oTr7iEYSz7f6HpBw%3D%3D&KeyID=52462340",
+            "datePublished": "2022-02-21T14:57:06.785295+02:00",
+            "dateModified": "2022-02-21T14:57:06.785295+02:00",
+            "documentOf": "tender",
+            "confidentiality": "public"
+          },
+          {
+            "id": "2070e004909243fa98dd982c9b069102",
+            "hash": "md5:2a3327038cea7c0ecc7e0fec6db07189",
+            "documentType": "eligibilityDocuments",
+            "title": "4. Стаття 17.pdf",
+            "format": "application/pdf",
+            "url": "https://public-docs.prozorro.gov.ua/get/0f3f2633594f4fbeacf1fc9370e5ec4d?Signature=wD0KRy5cfASgqPiq4%2BOVGc%2BFcK2qNtx58%2FZp%2FhrwDMejjVgsDcvlqhzG5BEDNQJqrmbQPmajBT8IlITphdSgDQ%3D%3D&KeyID=52462340",
+            "datePublished": "2022-02-21T14:57:06.785295+02:00",
+            "dateModified": "2022-02-21T14:57:06.785295+02:00",
+            "documentOf": "tender",
+            "confidentiality": "public"
+          },
+          {
+            "id": "81f29889cded440785bd14d0ffbad095",
+            "hash": "md5:a433d741fa666c5c2a75bfc581cce216",
+            "documentType": "qualificationDocuments",
+            "title": "5.1 Медико-технічні вимоги частина 1.pdf",
+            "format": "application/pdf",
+            "url": "https://public-docs.prozorro.gov.ua/get/96e228b7af324ef59a27162e2bccbd3a?Signature=EzwOXrF0dp7C5afyYCC%2BLTmzjOFDDXCpmOchjSGYkth3oTxCQXQKyB8YGMqtTEs%2BTg54tskJ4i6r7%2B%2FahD%2BFAA%3D%3D&KeyID=52462340",
+            "datePublished": "2022-02-21T14:57:06.785295+02:00",
+            "dateModified": "2022-02-21T14:57:06.785295+02:00",
+            "documentOf": "tender",
+            "confidentiality": "public"
+          },
+          {
+            "id": "cd0d4917576e4d72a974b4544c3da198",
+            "hash": "md5:8a89bbf6421feb653312738c1ace63ba",
+            "documentType": "qualificationDocuments",
+            "title": "5.2 Медико-технічні вимоги частина 2.pdf",
+            "format": "application/pdf",
+            "url": "https://public-docs.prozorro.gov.ua/get/a81c7c6c917449a88c866c2e23c5ceee?Signature=FnGBDhCtMXdC%2B8mftPmFz7tI8BNOWesWs6bo1Nt2NDyRDv6H0pBBKj2UccChzCio9%2BcbYbr0SrmnaF6anVeLAQ%3D%3D&KeyID=52462340",
+            "datePublished": "2022-02-21T14:57:06.785295+02:00",
+            "dateModified": "2022-02-21T14:57:06.785295+02:00",
+            "documentOf": "tender",
+            "confidentiality": "public"
+          },
+          {
+            "id": "5ffbcbcd47e44b449c01d9b993e06342",
+            "hash": "md5:2017b6748ef60d590d7b8191d2144b7e",
+            "documentType": "eligibilityDocuments",
+            "title": "6. Інші документи.pdf",
+            "format": "application/pdf",
+            "url": "https://public-docs.prozorro.gov.ua/get/51aabd8472e245d18998caabebb34db9?Signature=kh5Lh3pwmsgBx0riNUmEOKnDJyEysm019e0kdH6Y7a8f0JogOZTwq25yK8v4Hktc5UV%2BbgF6hiLtuCOJMvxLDw%3D%3D&KeyID=52462340",
+            "datePublished": "2022-02-21T14:57:06.785295+02:00",
+            "dateModified": "2022-02-21T14:57:06.785295+02:00",
+            "documentOf": "tender",
+            "confidentiality": "public"
+          },
+          {
+            "id": "dc0319ee66c94397a752497fba8a2031",
+            "hash": "md5:173982b71d9c0cebb62345c6d97ebe48",
+            "documentType": "eligibilityDocuments",
+            "title": "7. Проект договору.pdf",
+            "format": "application/pdf",
+            "url": "https://public-docs.prozorro.gov.ua/get/a9c76e9305ea41c4b8b0ffdfa3dacdec?Signature=cty3COJUR%2BT8%2BjdNxI2t6Ohw5kVJw64LXT0DcTqaEe1Mj6w%2B4ityma1vExxyKdEJ9l1XumRPPG0TE6XrfrQLDg%3D%3D&KeyID=52462340",
+            "datePublished": "2022-02-21T14:57:06.785295+02:00",
+            "dateModified": "2022-02-21T14:57:06.785295+02:00",
+            "documentOf": "tender",
+            "confidentiality": "public"
+          },
+          {
+            "id": "4b8b6f95f40c45e3866597fd842ebcfd",
+            "hash": "md5:cf483460aa43efd50893020c0cc104b9",
+            "documentType": "commercialProposal",
+            "title": "2. Тендерна пропозиція.pdf",
+            "format": "application/pdf",
+            "url": "https://public-docs.prozorro.gov.ua/get/15d957cdc978465ba3314f6133ddcd7d?Signature=%2FvYCpSwGIicMfXnKqAw4ZYblD4F06%2BPsynEj%2FmW78f1nHomqslJz7or6MmvxwRz%2B2qRY9WhN7nqtx7tgoKKtBQ%3D%3D&KeyID=52462340",
+            "datePublished": "2022-02-21T14:57:06.785295+02:00",
+            "dateModified": "2022-02-21T14:57:06.785295+02:00",
+            "relatedItem": "20c384c64c2149558f4023987c90ecdc",
+            "documentOf": "lot",
+            "confidentiality": "public"
+          },
+          {
+            "id": "b898e36e55d64c10bdcfaca8459c5dde",
+            "hash": "md5:00091d8729901d9b6cc1a959bf8fdeef",
+            "title": "sign.p7s",
+            "format": "application/pkcs7-signature",
+            "url": "https://public-docs.prozorro.gov.ua/get/3201302b35724071ac2f465cb922fe94?Signature=QK90j1Y0Z3l0w5lK41YSVm5EyMtH9cuhoDfYcVMLXhJRu5EnW5CVXI36%2BPoRuygSVWfiurtZk6dwTM%2FbCtBBAQ%3D%3D&KeyID=52462340",
+            "datePublished": "2022-02-21T14:57:51.958645+02:00",
+            "dateModified": "2022-02-21T14:57:51.958645+02:00",
+            "documentOf": "tender",
+            "confidentiality": "public"
+          }
+        ]
+      },
+      {
+        "tenderers": [
+          {
+            "name": "ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ \"АВЕНТУСФАРМ\"",
+            "identifier": {
+              "scheme": "UA-EDR",
+              "id": "43891001",
+              "legalName": "ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ \"АВЕНТУСФАРМ\""
+            },
+            "address": {
+              "streetAddress": "вул.Франківська, будинок 14",
+              "locality": "Харків",
+              "region": "Харківська область",
+              "postalCode": "61001",
+              "countryName": "Україна"
+            },
+            "contactPoint": {
+              "name": "Бідило Андрій",
+              "name_en": "Bidylo",
+              "email": "aventusfarm@gmail.com",
+              "telephone": "380633809438"
+            },
+            "scale": "micro"
+          }
+        ],
+        "date": "2022-02-21T19:11:22.745169+02:00",
+        "id": "ff662077b6f84aefbe0a89d9867523df",
+        "requirementResponses": [
+          {
+            "id": "15fdb5d728634c778c981ae6c8635f6c",
+            "requirement": {
+              "id": "326a2ea2e0af4914bfb5e0f58cc36679",
+              "title": "Службова (посадова) особа учасника процедури закупівлі, яка підписала тендерну пропозицію (або уповноважена на підписання договору в разі переговорної процедури закупівлі), не була засуджена за кримінальне правопорушення, вчинене з корисливих мотивів (зокрема, пов’язане з хабарництвом, шахрайством та відмиванням коштів), судимість з якої знято або погашено у встановленому законом порядку"
+            },
+            "value": "true"
+          },
+          {
+            "id": "9c40f9b7e32e47ff8f564995b5ec9fa4",
+            "requirement": {
+              "id": "975347e16eac4ae5a23e33b836cdc115",
+              "title": "Суб'єкт господарювання (учасник) протягом останніх трьох років не притягувався до відповідальності за порушення, передбачене пунктом 4 частини другої статті 6, пунктом 1 статті 50 Закону України \"Про захист економічної конкуренції\", у вигляді вчинення антиконкурентних узгоджених дій, що стосуються спотворення результатів тендерів"
+            },
+            "value": "true"
+          },
+          {
+            "id": "36ec86a1fe8e4001806a453c9747d27f",
+            "requirement": {
+              "id": "9cd18d23eadd457fa5b6e5d1b9b3ec23",
+              "title": "Відомості про юридичну особу, яка є учасником процедури закупівлі, не внесено до Єдиного державного реєстру осіб, які вчинили корупційні або пов'язані з корупцією правопорушення"
+            },
+            "value": "true"
+          },
+          {
+            "id": "87a18b2d13f84794924333ebd107a998",
+            "requirement": {
+              "id": "08adf6433375442d8b22c581b6d2b246",
+              "title": "Службову (посадову) особу учасника процедури закупівлі, яку уповноважено учасником представляти його інтереси під час проведення процедури закупівлі, фізичну особу, яка є учасником, не було притягнуто згідно із законом до відповідальності за вчинення корупційного правопорушення або правопорушення, пов'язаного з корупцією"
+            },
+            "value": "true"
+          },
+          {
+            "id": "9ce78ac148bd4efe8fb3d5dd0096eb9e",
+            "requirement": {
+              "id": "ce40101e5c514510a720b71f9c00abf1",
+              "title": "Службова (посадова) особа учасника процедури закупівлі, яку уповноважено учасником представляти його інтереси під час проведення процедури закупівлі, фізичну особу, яка є учасником, не було притягнуто згідно із законом до відповідальності за вчинення правопорушення, пов'язаного з використанням дитячої праці чи будь-якими формами торгівлі людьми"
+            },
+            "value": "true"
+          },
+          {
+            "id": "c8fe01509a3b4491a110c9df78379da1",
+            "requirement": {
+              "id": "7bc832a7e7004b20a0c7a410d570be56",
+              "title": "Він не має заборгованості зі сплати податків і зборів (обов'язкових платежів)"
+            },
+            "value": "true"
+          },
+          {
+            "id": "144d211e43074399b299fbe62769a2b0",
+            "requirement": {
+              "id": "2b44e93b0825499c968a46411583b626",
+              "title": "Учасник процедури закупівлі не визнаний у встановленому законом порядку банкрутом та стосовно нього не відкрита ліквідаційна процедура"
+            },
+            "value": "true"
+          },
+          {
+            "id": "3210cca721e846f4b60b6600ee7bf6d6",
+            "requirement": {
+              "id": "b9d0dca5f3144154b3a333e14e19ad6d",
+              "title": "У Єдиному державному реєстрі юридичних осіб, фізичних осіб - підприємців та громадських формувань присутня інформація, передбачена пунктом 9 частини другої статті 9 Закону України \"Про державну реєстрацію юридичних осіб, фізичних осіб - підприємців та громадських формувань\" (крім нерезидентів)"
+            },
+            "value": "true"
+          },
+          {
+            "id": "b0c997b7c6d449d3b137300906a80c1d",
+            "requirement": {
+              "id": "827172e607094f36a4898fa155403661",
+              "title": "Учасник процедури закупівлі не є особою, до якої застосовано санкцію у вигляді заборони на здійснення у неї публічних закупівель товарів, робіт і послуг згідно із Законом України \"Про санкції\""
+            },
+            "value": "true"
+          },
+          {
+            "id": "8ed383e631e64f44a212d69e35d19464",
+            "requirement": {
+              "id": "f4dd9bdce22040a9b9f4e9935c732aee",
+              "title": "Мова тендерної пропозиції українська"
+            },
+            "value": "true"
+          }
+        ],
+        "lotValues": [
+          {
+            "value": {
+              "amount": 635934.32,
+              "currency": "UAH",
+              "valueAddedTaxIncluded": true
+            },
+            "relatedLot": "20c384c64c2149558f4023987c90ecdc",
+            "participationUrl": "https://auctions.prozorro.gov.ua/tenders/e4e66f5674f9449eb03340e4ca11e521_20c384c64c2149558f4023987c90ecdc/login?bidder_id=ff662077b6f84aefbe0a89d9867523df&hash=36576e4eee7f48e2947d25c289398257",
+            "date": "2022-02-21T19:11:22.745169+02:00"
+          }
+        ],
+        "status": "active",
+        "selfQualified": true,
+        "documents": [
+          {
+            "id": "89637c70008c4b06b9671a9779a4046a",
+            "hash": "md5:c281ea3a5af136b39890fc3c187e66f8",
+            "documentType": "eligibilityDocuments",
+            "title": "Стаття 17 Закону.pdf",
+            "format": "application/pdf",
+            "url": "https://public-docs.prozorro.gov.ua/get/4f4657210f5b45ca90d18d02a095504a?Signature=w822S%2F0W0cR9niNzVtumw3pnWrNVGmRhqeSRSOClkDqw8JpEYAap%2FFV%2FxoOPaAJehRIvc7kjDMuqPWtNvPnnDw%3D%3D&KeyID=52462340",
+            "datePublished": "2022-02-21T19:12:07.717493+02:00",
+            "dateModified": "2022-02-21T19:12:07.717493+02:00",
+            "documentOf": "tender",
+            "confidentiality": "public"
+          },
+          {
+            "id": "cf59c3dc9fe94f8ba285c3616a10a783",
+            "hash": "md5:bcb3b3069073e73998c53cbcc1aae33f",
+            "documentType": "commercialProposal",
+            "title": "Тендерна пропозиція лот 1.pdf",
+            "format": "application/pdf",
+            "url": "https://public-docs.prozorro.gov.ua/get/d2f781e414ba4636bd5d9aad4be4b628?Signature=%2BI%2Bm1ELEDpOdBabMvcxe7B3AL2RRBQeFoH8d6vCyvBpE8F3DMw4CM41onfAig4P%2Bx9rE1REeG2H4kNgFRxxWDQ%3D%3D&KeyID=52462340",
+            "datePublished": "2022-02-21T19:12:07.717493+02:00",
+            "dateModified": "2022-02-21T19:12:07.717493+02:00",
+            "documentOf": "tender",
+            "confidentiality": "public"
+          },
+          {
+            "id": "ce1b3d5ab90a401f8f18b7acd4a5d86d",
+            "hash": "md5:a688f42674719832ae455e8a577185c0",
+            "documentType": "eligibilityDocuments",
+            "title": "Кваліфікаційні.pdf",
+            "format": "application/pdf",
+            "url": "https://public-docs.prozorro.gov.ua/get/8e792c9e3f544d1e9b0f09efa86d58ca?Signature=tPCYkoaeNjYscpH%2Fxse0iMaesA4VuoSVfraQh%2FyF7ucyCQ%2Bdosb64zej6eg4Q%2BRv%2ByGlCtrr2qVCK5MfMH1ZAw%3D%3D&KeyID=52462340",
+            "datePublished": "2022-02-21T19:12:07.717493+02:00",
+            "dateModified": "2022-02-21T19:12:07.717493+02:00",
+            "documentOf": "tender",
+            "confidentiality": "public"
+          },
+          {
+            "id": "bc7b7f149e734e55aca8d33f9ff9fcc3",
+            "hash": "md5:8cdf04a7ec6c3f316d31f048396bd7f2",
+            "documentType": "eligibilityDocuments",
+            "title": "Технічні.pdf",
+            "format": "application/pdf",
+            "url": "https://public-docs.prozorro.gov.ua/get/27bb6facf46d44f1b399b33016f2779b?Signature=Hix2SKHyqEXM7hPGdno2tnGnUwRT1IqV8Iqiut9PCHvUBqSm1ChZjgDuxi4XsEiNhHYcKOOxrTMlKtkIrOnsAg%3D%3D&KeyID=52462340",
+            "datePublished": "2022-02-21T19:12:07.717493+02:00",
+            "dateModified": "2022-02-21T19:12:07.717493+02:00",
+            "documentOf": "tender",
+            "confidentiality": "public"
+          },
+          {
+            "id": "05b48422db8245aaa09a9a13f92c310d",
+            "hash": "md5:9d12e9761a3ddb8c1acff12bc9688ae0",
+            "documentType": "eligibilityDocuments",
+            "title": "Правоустановчі документи.pdf",
+            "format": "application/pdf",
+            "url": "https://public-docs.prozorro.gov.ua/get/d88a8686478c4d85b79fdf77bc82d0c9?Signature=JvO8DCj0jiFoaZ2E%2FxTAEFM1rYErDi082pX%2FZ1zxYfSd%2BzmiRRrJQJGR2pxXGywc0Y2sGBEWoBBDiLIfR0q0Bg%3D%3D&KeyID=52462340",
+            "datePublished": "2022-02-21T19:12:07.717493+02:00",
+            "dateModified": "2022-02-21T19:12:07.717493+02:00",
+            "documentOf": "tender",
+            "confidentiality": "public"
+          },
+          {
+            "id": "ebdfda3fd54941e48cf5f800e8855f15",
+            "hash": "md5:7b8384bb68870c37cc42ce0ddabb6f07",
+            "documentType": "eligibilityDocuments",
+            "title": "Інші матеріали.pdf",
+            "format": "application/pdf",
+            "url": "https://public-docs.prozorro.gov.ua/get/4878bfbdd28d425ab241ccedbf8adb10?Signature=y%2FSHXwAA85X77yaI2ZjZ7a%2F3lj8dzPIjpHHNgz7WdWYNdyee0OlXS%2BpSdOepO5pB9QmJJH0hVkj8IJqp4zywCg%3D%3D&KeyID=52462340",
+            "datePublished": "2022-02-21T19:12:07.717493+02:00",
+            "dateModified": "2022-02-21T19:12:07.717493+02:00",
+            "documentOf": "tender",
+            "confidentiality": "public"
+          },
+          {
+            "id": "7364ba2d767b42ee85dbdf7fb48a3431",
+            "hash": "md5:1d1132c9b5d7afd77c7f7faa0671bc70",
+            "title": "sign.p7s",
+            "format": "application/pkcs7-signature",
+            "url": "https://public-docs.prozorro.gov.ua/get/90ec38b18f8648b4a92713cb024dba99?Signature=P64zGSoxtJ0XFSK8iEqAlbFcNmHDKNG%2BTPrpDoJARq3qIRcX%2B8o%2FcWOLYaXU4JQ9X2gjVsrpOSA%2FhuXsoA8%2FBw%3D%3D&KeyID=52462340",
+            "datePublished": "2022-02-21T19:13:16.839985+02:00",
+            "dateModified": "2022-02-21T19:13:16.839985+02:00",
+            "documentOf": "tender",
+            "confidentiality": "public"
+          }
+        ]
+      }
+    ],
+    "procurementMethodType": "aboveThresholdUA",
+    "items": [
+      {
+        "id": "c94b17fb094c4a8bb1047a67448e4b38",
+        "description": "Інфулган р-н д/інфузій 1000мг/100мл",
+        "additionalClassifications": [
+          {
+            "scheme": "INN",
+            "id": "paracetamol",
+            "description": "Paracetamol"
+          }
+        ],
+        "quantity": 1000,
+        "relatedLot": "20c384c64c2149558f4023987c90ecdc",
+        "classification": {
+          "description": "Інфузійні розчини",
+          "scheme": "ДК021",
+          "id": "33692100-8"
+        },
+        "unit": {
+          "name": "Флакон",
+          "code": "VI"
+        },
+        "deliveryDate": {
+          "endDate": "2022-12-30T00:00:00+02:00"
+        },
+        "deliveryAddress": {
+          "streetAddress": "провулок Матросова, 5",
+          "locality": "Волноваха",
+          "region": "Донецька область",
+          "postalCode": "85700",
+          "countryName": "Україна"
+        }
+      },
+      {
+        "id": "5fcfc6e9192e4058959b919c9f1c7717",
+        "description": "Маніт розчин д/інф. 15 % по 200 мл у пляш.",
+        "additionalClassifications": [
+          {
+            "scheme": "INN",
+            "id": "mannitol",
+            "description": "Mannitol"
+          }
+        ],
+        "quantity": 200,
+        "relatedLot": "20c384c64c2149558f4023987c90ecdc",
+        "classification": {
+          "description": "Інфузійні розчини",
+          "scheme": "ДК021",
+          "id": "33692100-8"
+        },
+        "unit": {
+          "name": "упаковка",
+          "code": "PK"
+        },
+        "deliveryDate": {
+          "endDate": "2022-12-30T00:00:00+02:00"
+        },
+        "deliveryAddress": {
+          "streetAddress": "провулок Матросова, 5",
+          "locality": "Волноваха",
+          "region": "Донецька область",
+          "postalCode": "85700",
+          "countryName": "Україна"
+        }
+      },
+      {
+        "id": "eaf708afc3f64dc5bee513a5d53a693b",
+        "description": "Орнідазол розчин д/інф. 0.5 % по 100 мл у пляш.",
+        "additionalClassifications": [
+          {
+            "scheme": "INN",
+            "id": "ornidazole",
+            "description": "Ornidazole"
+          }
+        ],
+        "quantity": 100,
+        "relatedLot": "20c384c64c2149558f4023987c90ecdc",
+        "classification": {
+          "description": "Інфузійні розчини",
+          "scheme": "ДК021",
+          "id": "33692100-8"
+        },
+        "unit": {
+          "name": "Флакон",
+          "code": "VI"
+        },
+        "deliveryDate": {
+          "endDate": "2022-12-30T00:00:00+02:00"
+        },
+        "deliveryAddress": {
+          "streetAddress": "провулок Матросова, 5",
+          "locality": "Волноваха",
+          "region": "Донецька область",
+          "postalCode": "85700",
+          "countryName": "Україна"
+        }
+      },
+      {
+        "id": "96e200542f3c443db0c8cefb13be126d",
+        "description": "Метронідазол р-н 500мг -100мл, р-н для інф.",
+        "additionalClassifications": [
+          {
+            "scheme": "INN",
+            "id": "metronidazole",
+            "description": "Metronidazole"
+          }
+        ],
+        "quantity": 600,
+        "relatedLot": "20c384c64c2149558f4023987c90ecdc",
+        "classification": {
+          "description": "Інфузійні розчини",
+          "scheme": "ДК021",
+          "id": "33692100-8"
+        },
+        "unit": {
+          "name": "Флакон",
+          "code": "VI"
+        },
+        "deliveryDate": {
+          "endDate": "2022-12-30T00:00:00+02:00"
+        },
+        "deliveryAddress": {
+          "streetAddress": "провулок Матросова, 5",
+          "locality": "Волноваха",
+          "region": "Донецька область",
+          "postalCode": "85700",
+          "countryName": "Україна"
+        }
+      },
+      {
+        "id": "ad78c3877f1343a4ae6de20e77dbe826",
+        "description": "Лінезолідин розчин д/інф. 2 мг/мл по 300 мл у пляш..",
+        "additionalClassifications": [
+          {
+            "scheme": "INN",
+            "id": "linezolid",
+            "description": "Linezolid"
+          }
+        ],
+        "quantity": 200,
+        "relatedLot": "20c384c64c2149558f4023987c90ecdc",
+        "classification": {
+          "description": "Інфузійні розчини",
+          "scheme": "ДК021",
+          "id": "33692100-8"
+        },
+        "unit": {
+          "name": "Флакон",
+          "code": "VI"
+        },
+        "deliveryDate": {
+          "endDate": "2022-12-30T00:00:00+02:00"
+        },
+        "deliveryAddress": {
+          "streetAddress": "провулок Матросова, 5",
+          "locality": "Волноваха",
+          "region": "Донецька область",
+          "postalCode": "85700",
+          "countryName": "Україна"
+        }
+      },
+      {
+        "id": "09903012c39044779a7b27b8538d8c11",
+        "description": "Натрію хлорид р-н 0,9% -100мл, р-н для інф.",
+        "additionalClassifications": [
+          {
+            "scheme": "INN",
+            "id": "sodium chloride",
+            "description": "Sodium chloride"
+          }
+        ],
+        "quantity": 2000,
+        "relatedLot": "20c384c64c2149558f4023987c90ecdc",
+        "classification": {
+          "description": "Інфузійні розчини",
+          "scheme": "ДК021",
+          "id": "33692100-8"
+        },
+        "unit": {
+          "name": "Флакон",
+          "code": "VI"
+        },
+        "deliveryDate": {
+          "endDate": "2022-12-30T00:00:00+02:00"
+        },
+        "deliveryAddress": {
+          "streetAddress": "провулок Матросова, 5",
+          "locality": "Волноваха",
+          "region": "Донецька область",
+          "postalCode": "85700",
+          "countryName": "Україна"
+        }
+      },
+      {
+        "id": "4846084b5b654d00994a3596fb24a397",
+        "description": "Натрію хлорид р-н 0,9% -200мл, р-н для інф. .",
+        "additionalClassifications": [
+          {
+            "scheme": "INN",
+            "id": "sodium chloride",
+            "description": "Sodium chloride"
+          }
+        ],
+        "quantity": 4000,
+        "relatedLot": "20c384c64c2149558f4023987c90ecdc",
+        "classification": {
+          "description": "Інфузійні розчини",
+          "scheme": "ДК021",
+          "id": "33692100-8"
+        },
+        "unit": {
+          "name": "Флакон",
+          "code": "VI"
+        },
+        "deliveryDate": {
+          "endDate": "2022-12-30T00:00:00+02:00"
+        },
+        "deliveryAddress": {
+          "streetAddress": "провулок Матросова, 5",
+          "locality": "Волноваха",
+          "region": "Донецька область",
+          "postalCode": "85700",
+          "countryName": "Україна"
+        }
+      },
+      {
+        "id": "adc172706d65471b8226cf795c0ec939",
+        "description": "Новокаїн р-н 0,5% - 200мл, р-н для ін., у флак.",
+        "additionalClassifications": [
+          {
+            "scheme": "INN",
+            "id": "procaine",
+            "description": "Procaine"
+          }
+        ],
+        "quantity": 200,
+        "relatedLot": "20c384c64c2149558f4023987c90ecdc",
+        "classification": {
+          "description": "Інфузійні розчини",
+          "scheme": "ДК021",
+          "id": "33692100-8"
+        },
+        "unit": {
+          "name": "Флакон",
+          "code": "VI"
+        },
+        "deliveryDate": {
+          "endDate": "2022-12-30T00:00:00+02:00"
+        },
+        "deliveryAddress": {
+          "streetAddress": "провулок Матросова, 5",
+          "locality": "Волноваха",
+          "region": "Донецька область",
+          "postalCode": "85700",
+          "countryName": "Україна"
+        }
+      },
+      {
+        "id": "7ed31ce99a0c4fa5ab1a9235ca32f512",
+        "description": "Реосорбілакт р-н - 200мл, р-н для інф",
+        "additionalClassifications": [
+          {
+            "scheme": "INN",
+            "id": "electrolytes in combination with other drugs",
+            "description": "Electrolytes in combination with other drugs"
+          }
+        ],
+        "quantity": 2000,
+        "relatedLot": "20c384c64c2149558f4023987c90ecdc",
+        "classification": {
+          "description": "Інфузійні розчини",
+          "scheme": "ДК021",
+          "id": "33692100-8"
+        },
+        "unit": {
+          "name": "Флакон",
+          "code": "VI"
+        },
+        "deliveryDate": {
+          "endDate": "2022-12-30T00:00:00+02:00"
+        },
+        "deliveryAddress": {
+          "streetAddress": "провулок Матросова, 5",
+          "locality": "Волноваха",
+          "region": "Донецька область",
+          "postalCode": "85700",
+          "countryName": "Україна"
+        }
+      },
+      {
+        "id": "d6a1315136b1444cafa0040e36697fd0",
+        "description": "Натрію хлорид р-н 0,9% 5 мл №10 ампули",
+        "additionalClassifications": [
+          {
+            "scheme": "INN",
+            "id": "sodium chloride",
+            "description": "Sodium chloride"
+          }
+        ],
+        "quantity": 200,
+        "relatedLot": "20c384c64c2149558f4023987c90ecdc",
+        "classification": {
+          "description": "Інфузійні розчини",
+          "scheme": "ДК021",
+          "id": "33692100-8"
+        },
+        "unit": {
+          "name": "упаковка",
+          "code": "PK"
+        },
+        "deliveryDate": {
+          "endDate": "2022-12-30T00:00:00+02:00"
+        },
+        "deliveryAddress": {
+          "streetAddress": "провулок Матросова, 5",
+          "locality": "Волноваха",
+          "region": "Донецька область",
+          "postalCode": "85700",
+          "countryName": "Україна"
+        }
+      },
+      {
+        "id": "76ae6a9882044712a8315b4281ecfbe9",
+        "description": "Рінгера р-н - 200мл, р-н для інф",
+        "additionalClassifications": [
+          {
+            "scheme": "INN",
+            "id": "electrolytes in combination with other drugs",
+            "description": "Electrolytes in combination with other drugs"
+          }
+        ],
+        "quantity": 2000,
+        "relatedLot": "20c384c64c2149558f4023987c90ecdc",
+        "classification": {
+          "description": "Інфузійні розчини",
+          "scheme": "ДК021",
+          "id": "33692100-8"
+        },
+        "unit": {
+          "name": "Флакон",
+          "code": "VI"
+        },
+        "deliveryDate": {
+          "endDate": "2022-12-30T00:00:00+02:00"
+        },
+        "deliveryAddress": {
+          "streetAddress": "провулок Матросова, 5",
+          "locality": "Волноваха",
+          "region": "Донецька область",
+          "postalCode": "85700",
+          "countryName": "Україна"
+        }
+      },
+      {
+        "id": "9ef996dddab24dd1a87862433ecf3260",
+        "description": "Трисоль р-н  200мл, р-н для інф",
+        "additionalClassifications": [
+          {
+            "scheme": "INN",
+            "id": "electrolytes in combination with other drugs",
+            "description": "Electrolytes in combination with other drugs"
+          }
+        ],
+        "quantity": 200,
+        "relatedLot": "20c384c64c2149558f4023987c90ecdc",
+        "classification": {
+          "description": "Інфузійні розчини",
+          "scheme": "ДК021",
+          "id": "33692100-8"
+        },
+        "unit": {
+          "name": "Флакон",
+          "code": "VI"
+        },
+        "deliveryDate": {
+          "endDate": "2022-12-30T00:00:00+02:00"
+        },
+        "deliveryAddress": {
+          "streetAddress": "провулок Матросова, 5",
+          "locality": "Волноваха",
+          "region": "Донецька область",
+          "postalCode": "85700",
+          "countryName": "Україна"
+        }
+      },
+      {
+        "id": "7ec8fa63a3e74209be84f685f55feff3",
+        "description": "Магнію сульфат р-н 250мг/мл 5мл ампула №10",
+        "additionalClassifications": [
+          {
+            "scheme": "INN",
+            "id": "magnesium sulfate",
+            "description": "Magnesium sulfate"
+          }
+        ],
+        "quantity": 200,
+        "relatedLot": "20c384c64c2149558f4023987c90ecdc",
+        "classification": {
+          "description": "Інфузійні розчини",
+          "scheme": "ДК021",
+          "id": "33692100-8"
+        },
+        "unit": {
+          "name": "упаковка",
+          "code": "PK"
+        },
+        "deliveryDate": {
+          "endDate": "2022-12-30T00:00:00+02:00"
+        },
+        "deliveryAddress": {
+          "streetAddress": "провулок Матросова, 5",
+          "locality": "Волноваха",
+          "region": "Донецька область",
+          "postalCode": "85700",
+          "countryName": "Україна"
+        }
+      },
+      {
+        "id": "b01d93e4df5a45719cec2e137c88ede2",
+        "description": "Інгаміст р-н 100 мг/мл 3мл ампула №10",
+        "additionalClassifications": [
+          {
+            "scheme": "INN",
+            "id": "acetylcysteine",
+            "description": "Acetylcysteine"
+          }
+        ],
+        "quantity": 300,
+        "relatedLot": "20c384c64c2149558f4023987c90ecdc",
+        "classification": {
+          "description": "Інфузійні розчини",
+          "scheme": "ДК021",
+          "id": "33692100-8"
+        },
+        "unit": {
+          "name": "упаковка",
+          "code": "PK"
+        },
+        "deliveryDate": {
+          "endDate": "2022-12-30T00:00:00+02:00"
+        },
+        "deliveryAddress": {
+          "streetAddress": "провулок Матросова, 5",
+          "locality": "Волноваха",
+          "region": "Донецька область",
+          "postalCode": "85700",
+          "countryName": "Україна"
+        }
+      },
+      {
+        "id": "5b199b8aa6bd45e78f305d0ee1b2ef66",
+        "description": "Еуфілін р-н для ін 20 мг/мл 5 мл №10",
+        "additionalClassifications": [
+          {
+            "scheme": "INN",
+            "id": "theophylline",
+            "description": "Theophylline"
+          }
+        ],
+        "quantity": 100,
+        "relatedLot": "20c384c64c2149558f4023987c90ecdc",
+        "classification": {
+          "description": "Інфузійні розчини",
+          "scheme": "ДК021",
+          "id": "33692100-8"
+        },
+        "unit": {
+          "name": "упаковка",
+          "code": "PK"
+        },
+        "deliveryDate": {
+          "endDate": "2022-12-30T00:00:00+02:00"
+        },
+        "deliveryAddress": {
+          "streetAddress": "провулок Матросова, 5",
+          "locality": "Волноваха",
+          "region": "Донецька область",
+          "postalCode": "85700",
+          "countryName": "Україна"
+        }
+      },
+      {
+        "id": "03fe3930de0d4784b078a61d17772001",
+        "description": "Сода-буфер розчин для інфузій, 42 мг/мл, по 100 мл в пляшках скляних",
+        "additionalClassifications": [
+          {
+            "scheme": "INN",
+            "id": "sodium bicarbonate",
+            "description": "Sodium bicarbonate"
+          }
+        ],
+        "quantity": 100,
+        "relatedLot": "20c384c64c2149558f4023987c90ecdc",
+        "classification": {
+          "description": "Інфузійні розчини",
+          "scheme": "ДК021",
+          "id": "33692100-8"
+        },
+        "unit": {
+          "name": "Флакон",
+          "code": "VI"
+        },
+        "deliveryDate": {
+          "endDate": "2022-12-30T00:00:00+02:00"
+        },
+        "deliveryAddress": {
+          "streetAddress": "провулок Матросова, 5",
+          "locality": "Волноваха",
+          "region": "Донецька область",
+          "postalCode": "85700",
+          "countryName": "Україна"
+        }
+      },
+      {
+        "id": "079c6bd7d59f4074a617ea3a09056c9e",
+        "description": "Анальгін р-н для ін 500мг/мл 2 мл №10",
+        "additionalClassifications": [
+          {
+            "scheme": "INN",
+            "id": "metamizole sodium",
+            "description": "Metamizole sodium"
+          }
+        ],
+        "quantity": 1000,
+        "relatedLot": "20c384c64c2149558f4023987c90ecdc",
+        "classification": {
+          "description": "Інфузійні розчини",
+          "scheme": "ДК021",
+          "id": "33692100-8"
+        },
+        "unit": {
+          "name": "упаковка",
+          "code": "PK"
+        },
+        "deliveryDate": {
+          "endDate": "2022-12-30T00:00:00+02:00"
+        },
+        "deliveryAddress": {
+          "streetAddress": "провулок Матросова, 5",
+          "locality": "Волноваха",
+          "region": "Донецька область",
+          "postalCode": "85700",
+          "countryName": "Україна"
+        }
+      },
+      {
+        "id": "850a105457924696a5c6698aa4882de3",
+        "description": "Кальцію глюконат р-н для ін 100 мг/мл 10 мл №10",
+        "additionalClassifications": [
+          {
+            "scheme": "INN",
+            "id": "calcium gluconate",
+            "description": "Calcium gluconate"
+          }
+        ],
+        "quantity": 100,
+        "relatedLot": "20c384c64c2149558f4023987c90ecdc",
+        "classification": {
+          "description": "Інфузійні розчини",
+          "scheme": "ДК021",
+          "id": "33692100-8"
+        },
+        "unit": {
+          "name": "упаковка",
+          "code": "PK"
+        },
+        "deliveryDate": {
+          "endDate": "2022-12-30T00:00:00+02:00"
+        },
+        "deliveryAddress": {
+          "streetAddress": "провулок Матросова, 5",
+          "locality": "Волноваха",
+          "region": "Донецька область",
+          "postalCode": "85700",
+          "countryName": "Україна"
+        }
+      },
+      {
+        "id": "8919a2b10f0149a99a66b7230a82e3f1",
+        "description": "ГІК (Electrolytes with carbohydrates) розчин для інфузій, по 100 мл у пляшках",
+        "additionalClassifications": [
+          {
+            "scheme": "INN",
+            "id": "electrolytes with carbohydrates",
+            "description": "Electrolytes with carbohydrates"
+          }
+        ],
+        "quantity": 200,
+        "relatedLot": "20c384c64c2149558f4023987c90ecdc",
+        "classification": {
+          "description": "Інфузійні розчини",
+          "scheme": "ДК021",
+          "id": "33692100-8"
+        },
+        "unit": {
+          "name": "Флакон",
+          "code": "VI"
+        },
+        "deliveryDate": {
+          "endDate": "2022-12-30T00:00:00+02:00"
+        },
+        "deliveryAddress": {
+          "streetAddress": "провулок Матросова, 5",
+          "locality": "Волноваха",
+          "region": "Донецька область",
+          "postalCode": "85700",
+          "countryName": "Україна"
+        }
+      },
+      {
+        "id": "a94c4e32680f4f7b93fcc3c117a6b1cd",
+        "description": "Йогексол, розчин для ін'єкцій 350 мг/мл скляні флакони об'ємом по 100 мл",
+        "additionalClassifications": [
+          {
+            "scheme": "INN",
+            "id": "iohexol",
+            "description": "Iohexol"
+          }
+        ],
+        "quantity": 220,
+        "relatedLot": "4e7bf1b4e6b4434c923955abd2550456",
+        "classification": {
+          "description": "Реактиви та контрастні речовини",
+          "scheme": "ДК021",
+          "id": "33696000-5"
+        },
+        "unit": {
+          "name": "Флакон",
+          "code": "VI"
+        },
+        "deliveryDate": {
+          "endDate": "2022-12-30T00:00:00+02:00"
+        },
+        "deliveryAddress": {
+          "streetAddress": "Провулок Матросова, 5",
+          "locality": "Волноваха",
+          "region": "Донецька область",
+          "postalCode": "85700",
+          "countryName": "Україна"
+        }
+      },
+      {
+        "id": "c7131ce335a6496ab7f887f6eafd73e7",
+        "description": "Йогексол, розчин для ін'єкцій 350 мг/мл скляні флакони об'ємом по 50 мл",
+        "additionalClassifications": [
+          {
+            "scheme": "INN",
+            "id": "iohexol",
+            "description": "Iohexol"
+          }
+        ],
+        "quantity": 20,
+        "relatedLot": "4e7bf1b4e6b4434c923955abd2550456",
+        "classification": {
+          "description": "Реактиви та контрастні речовини",
+          "scheme": "ДК021",
+          "id": "33696000-5"
+        },
+        "unit": {
+          "name": "Флакон",
+          "code": "VI"
+        },
+        "deliveryDate": {
+          "endDate": "2022-12-30T00:00:00+02:00"
+        },
+        "deliveryAddress": {
+          "streetAddress": "Провулок Матросова, 5",
+          "locality": "Волноваха",
+          "region": "Донецька область",
+          "postalCode": "85700",
+          "countryName": "Україна"
+        }
+      },
+      {
+        "id": "7fa7b5f6e67e48be938f96575a0d84cc",
+        "description": "Йогексол, розчин для ін'єкцій 350 мг/мл скляні флакони об'ємом по 200 мл.",
+        "additionalClassifications": [
+          {
+            "scheme": "INN",
+            "id": "iohexol",
+            "description": "Iohexol"
+          }
+        ],
+        "quantity": 3,
+        "relatedLot": "4e7bf1b4e6b4434c923955abd2550456",
+        "classification": {
+          "description": "Реактиви та контрастні речовини",
+          "scheme": "ДК021",
+          "id": "33696000-5"
+        },
+        "unit": {
+          "name": "Флакон",
+          "code": "VI"
+        },
+        "deliveryDate": {
+          "endDate": "2022-12-30T00:00:00+02:00"
+        },
+        "deliveryAddress": {
+          "streetAddress": "Провулок Матросова, 5",
+          "locality": "Волноваха",
+          "region": "Донецька область",
+          "postalCode": "85700",
+          "countryName": "Україна"
+        }
+      }
+    ],
+    "lots": [
+      {
+        "id": "20c384c64c2149558f4023987c90ecdc",
+        "title": "Інфузійні розчини",
+        "date": "2022-02-08T09:21:24.209699+02:00",
+        "status": "active",
+        "value": {
+          "amount": 640000,
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        },
+        "minimalStep": {
+          "amount": 6400,
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        },
+        "auctionPeriod": {
+          "startDate": "2022-02-24T12:04:37+02:00",
+          "endDate": "2022-02-24T12:27:38.441538+02:00"
+        },
+        "auctionUrl": "https://auctions.prozorro.gov.ua/tenders/e4e66f5674f9449eb03340e4ca11e521_20c384c64c2149558f4023987c90ecdc",
+        "guarantee": {
+          "amount": 0,
+          "currency": "UAH"
+        }
+      },
+      {
+        "id": "4e7bf1b4e6b4434c923955abd2550456",
+        "title": "Реактиви та контрастні речовини",
+        "date": "2022-02-24T00:00:47.222120+02:00",
+        "status": "unsuccessful",
+        "value": {
+          "amount": 155000,
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        },
+        "minimalStep": {
+          "amount": 1550,
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        },
+        "guarantee": {
+          "amount": 0,
+          "currency": "UAH"
+        }
+      }
+    ],
+    "status": "active.qualification",
+    "complaintPeriod": {
+      "startDate": "2022-02-08T09:21:23.643864+02:00",
+      "endDate": "2022-02-20T00:00:00+02:00"
+    },
+    "awardPeriod": {
+      "startDate": "2022-02-24T12:27:38.441538+02:00",
+      "endDate": null
+    },
+    "awards": [
+      {
+        "id": "ff9fe68cab8f44b49fc09636e625464b",
+        "status": "pending",
+        "date": "2022-02-24T12:27:38.441538+02:00",
+        "value": {
+          "amount": 635126.01,
+          "currency": "UAH",
+          "valueAddedTaxIncluded": true
+        },
+        "suppliers": [
+          {
+            "name": "ТОВ \" Медичний центр \"М.Т.К.\"",
+            "identifier": {
+              "legalName": "ТОВ \" Медичний центр \"М.Т.К.\"",
+              "scheme": "UA-EDR",
+              "id": "21633086"
+            },
+            "address": {
+              "streetAddress": "вул. Миколи Амосова, 10",
+              "locality": "Київ",
+              "region": "Київська область",
+              "postalCode": "03110",
+              "countryName": "Україна"
+            },
+            "contactPoint": {
+              "email": "ANDRII.DYMNICH@UF.UA",
+              "telephone": "380952834833",
+              "name": "Димніч Андрій"
+            },
+            "scale": "large"
+          }
+        ],
+        "bid_id": "a15b858dff76468e9426b9821a2329b7",
+        "lotID": "20c384c64c2149558f4023987c90ecdc",
+        "qualified": false,
+        "eligible": false
+      }
+    ],
+    "dateCreated": "2022-02-08T09:21:24.223664+02:00",
+    "id": "e4e66f5674f9449eb03340e4ca11e521"
+  },
+  "config": {
+    "hasAuction": true,
+    "valueCurrencyEquality": true,
+    "hasAwardingOrder": true,
+    "hasValueRestriction": true,
+    "hasPrequalification": false,
+    "minBidsNumber": 2,
+    "hasAwardComplaints": true,
+    "hasCancellationComplaints": true,
+    "hasTenderComplaints": true,
+    "restricted": false,
+    "hasPreSelectionAgreement": false
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "data": {
+    "id": "a77607e39ff24cc7818634f075426f99",
+    "status": "active",
+    "date": "2024-05-10T05:33:59.886187+03:00",
+    "value": {
+      "amount": 9482213.44,
+      "currency": "UAH",
+      "valueAddedTaxIncluded": false
+    },
+    "weightedValue": {
+      "amount": 9309360.59,
+      "currency": "UAH",
+      "valueAddedTaxIncluded": true,
+      "denominator": 1.019
+    },
+    "suppliers": [
+      {
+        "name": "СПОЖИВЧЕ ТОВАРИСТВО СОЛОВЬОВСЬКЕ",
+        "identifier": {
+          "scheme": "UA-EDR",
+          "id": "23986506",
+          "legalName": "СПОЖИВЧЕ ТОВАРИСТВО СОЛОВЬОВСЬКЕ"
+        },
+        "address": {
+          "streetAddress": "Набережна, 23",
+          "locality": "Київ",
+          "region": "Київська область",
+          "postalCode": "234234234",
+          "countryName": "Україна"
+        },
+        "contactPoint": {
+          "name": "Smart Provider Tender",
+          "email": "SmartTenderProvider2@gmail.com",
+          "telephone": "380222333441",
+          "url": "https://knrtmqsmckepswvb.org.ua/"
+        },
+        "scale": "not specified"
+      }
+    ],
+    "bid_id": "802b5713b1f745438cb31cd2ce1408df",
+    "lotID": "eb3dc007db2a4fa3a8c7a4bdfd09d74c",
+    "documents": [
+      {
+        "documentType": "registerExtract",
+        "id": "de05132ca4224f26a313ec91dc5df7ad",
+        "datePublished": "2024-05-10T05:33:40.762719+03:00",
+        "hash": "md5:86f00ecdad67ffcbeb827676579916d6",
+        "title": "edr_identification.yaml",
+        "format": "application/yaml",
+        "url": "https://public-docs-staging.prozorro.gov.ua/get/42b4208b7e0b4ad4958d73745499771b?Signature=M4Copz2t73%2FC9h682UObfiV%2BTsig4VpcyEdLhXhTA3ZlHSSljVMn6K3i8YMn5%2FlzUcB%2FJjBrZSSuy5AAhuQPBQ%3D%3D&KeyID=01b985cf",
+        "documentOf": "tender",
+        "dateModified": "2024-05-10T05:33:40.762719+03:00",
+        "author": "bots",
+        "language": "uk"
+      },
+      {
+        "id": "5e969bf6cae240eabe5bd19216c91f0d",
+        "datePublished": "2024-05-10T05:33:48.085767+03:00",
+        "hash": "md5:665f667e342545760d88ac81742e2ea4",
+        "title": "d-надкусити-c1c8a52e-5cee-444d-a926-1056d94d5276.docx",
+        "format": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "url": "https://public-docs-staging.prozorro.gov.ua/get/70297639d19e4379a28518fb21ea7c34?Signature=SjoA8B7wlFxb31r1VqUwaSAwhU8H2Rmi9WvVPJRBjW07RDAepGIv3jAwq9UkFlCvaCfOEGD13Ft7crAGzdwpCA%3D%3D&KeyID=01b985cf",
+        "documentOf": "tender",
+        "dateModified": "2024-05-10T05:33:48.085767+03:00",
+        "author": "tender_owner",
+        "language": "uk"
+      },
+      {
+        "id": "77ee561b4fae4e05afe073a1097f2d78",
+        "datePublished": "2024-05-10T05:33:59.411910+03:00",
+        "hash": "md5:279931f02921b47e93a0278073685fce",
+        "title": "sign.p7s",
+        "format": "application/pkcs7-signature",
+        "url": "/test-data/determining_winner_of_procurement/2/awards/sign.p7s",
+        "documentOf": "tender",
+        "dateModified": "2024-05-10T05:33:59.411910+03:00",
+        "author": "tender_owner",
+        "language": "uk"
+      }
+    ],
+    "title": "Визнаний переможцем",
+    "description": "Потесати закут гупалка напасати потріпки дихало потаска сходистий.",
+    "qualified": true,
+    "eligible": true,
+    "complaintPeriod": {
+      "startDate": "2024-05-10T05:33:59.886187+03:00",
+      "endDate": "2024-05-10T05:43:59.886187+03:00"
+    }
+  }
+}

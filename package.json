@@ -1,0 +1,81 @@
+{
+  "name": "@prozorro/prozorro-pdf",
+  "private": false,
+  "version": "1.1.0",
+  "description": "PDF generation service",
+  "author": "Dmytro Rybachek",
+  "license": "MIT",
+  "main": "./dist/prozorro-pdf.cjs.js",
+  "module": "./dist/prozorro-pdf.es.js",
+  "types": "./dist/prozorro-pdf.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/prozorro-pdf.d.ts",
+      "import": "./dist/prozorro-pdf.es.js",
+      "require": "./dist/prozorro-pdf.cjs.js"
+    },
+    "./dist/": {
+      "import": "./dist"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite --config vite.config.lib.ts",
+    "build:lib": "tsc && vite build --config vite.config.lib.ts && npm run types && copyfiles ./package.json dist && npm run removeFromBuild:lib",
+    "build:app": "vite build --config vite.config.app.ts",
+    "build": "npm run clean && npm run build:lib && npm run build:app",
+    "test": "vitest",
+    "preview": "vite preview",
+    "test:coverage": "vitest --coverage",
+    "lint:scripts": "eslint . --ext .ts",
+    "format:scripts": "prettier . --write",
+    "format": "npm run format:scripts && npm run format:styles",
+    "types": "tsc --project tsconfig.types.json",
+    "removeFromBuild:lib": "rimraf ./dist/robots.txt ./dist/test-data",
+    "clean": "rimraf dist"
+  },
+  "keywords": [
+    "typescript",
+    "library",
+    "prozorro",
+    "sign",
+    "pdf"
+  ],
+  "devDependencies": {
+    "@types/lodash": "^4.17.17",
+    "@types/node": "^22.15.29",
+    "@types/pdfmake": "^0.2.11",
+    "@types/qs": "^6.14.0",
+    "@types/uuid": "^10.0.0",
+    "@vitest/coverage-v8": "^3.2.1",
+    "copyfiles": "^2.4.1",
+    "eslint": "^9.28.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-prettier": "^5.4.1",
+    "jiti": "^2.4.2",
+    "lint-staged": "^16.1.0",
+    "prettier": "^3.5.3",
+    "rimraf": "^6.0.1",
+    "ts-node": "^10.9.2",
+    "typescript": "~5.7.3",
+    "typescript-eslint": "^8.33.1",
+    "vite": "^6.3.5",
+    "vitest": "^3.2.1"
+  },
+  "dependencies": {
+    "@prozorro/prozorro-eds": "^1.0.0",
+    "axios": "^1.9.0",
+    "lodash": "^4.17.21",
+    "pdfmake": "^0.2.20",
+    "qs": "^6.14.0",
+    "uuid": "^11.1.0",
+    "vite-plugin-dts": "^4.5.4",
+    "yaml": "^2.8.0"
+  },
+  "peerDependencies": {
+    "@prozorro/prozorro-eds": ">=1.0.0"
+  }
+}

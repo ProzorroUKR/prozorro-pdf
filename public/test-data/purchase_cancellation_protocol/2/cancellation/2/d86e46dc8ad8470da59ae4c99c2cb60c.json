@@ -1,0 +1,39 @@
+{
+  "data": {
+    "id": "d86e46dc8ad8470da59ae4c99c2cb60c",
+    "reason": "11",
+    "date": "2022-05-05T17:22:31.685536+03:00",
+    "status": "active",
+    "cancellationOf": "lot",
+    "relatedLot": "b63f95fc21038c68c796ec44b30ccd7d",
+    "reasonType": "unFixable",
+    "complaintPeriod": {
+      "startDate": "2022-05-05T17:22:31.668434+03:00",
+      "endDate": "2022-05-05T17:32:31.668434+03:00"
+    },
+    "documents": [
+      {
+        "id": "dd4b7ebdb9a84b989821800008a58ff0",
+        "hash": "md5:bd6e3f26e45b936b8f14e71161929871",
+        "title": "2",
+        "format": "image/jpeg",
+        "url": "https://public-docs-staging.prozorro.gov.ua/get/4f6c445fd28248f7ad167b6f5d71bcd8?Signature=Y85iYUlgrpqwlaOOp9%2BXjgMXDQhP9E%2Bitay8tFvNVXql%2FDi1YJ2r%2B%2FcEZhwq5dn%2BadIoQHIe5oat%2F8eRcaWgCw%3D%3D&KeyID=01b985cf",
+        "datePublished": "2022-05-05T17:22:02.641980+03:00",
+        "dateModified": "2022-05-05T17:22:02.641997+03:00",
+        "documentOf": "tender",
+        "language": "uk"
+      },
+      {
+        "id": "bc183b7162af42a8a2a9d1b3f7ca5d3b",
+        "hash": "md5:d9b62425dad0ac802b50bd907dc0a67d",
+        "title": "sign.p7s",
+        "format": "application/pkcs7-signature",
+        "url": "/test-data/purchase_cancellation_protocol/2/cancellation/2/sign.p7s",
+        "datePublished": "2022-05-05T17:22:31.399513+03:00",
+        "dateModified": "2022-05-05T17:22:31.399536+03:00",
+        "documentOf": "tender",
+        "language": "uk"
+      }
+    ]
+  }
+}

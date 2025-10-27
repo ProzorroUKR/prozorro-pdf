@@ -1,0 +1,617 @@
+{
+  "data": {
+    "procuringEntity": {
+      "id": "4111ef73619b4d228dd0d86e4bac49b9",
+      "name": "КОМУНАЛЬНЕ НЕКОМЕРЦІЙНЕ ПІДПРИЄМСТВО «ОБЛАСНИЙ КЛІНІЧНИЙ ПРОТИТУБЕРКУЛЬОЗНИЙ ДИСПАНСЕР»",
+      "name_en": "KOMUNALNE NEKOMERTsIINE PIDPRIYeMSTVO «OBLASNII KLINIChNII PROTITUBERKULOZNII DISPANSER»",
+      "identifier": {
+        "scheme": "UA-EDR",
+        "id": "01990766",
+        "legalName": "КОМУНАЛЬНЕ НЕКОМЕРЦІЙНЕ ПІДПРИЄМСТВО «ОБЛАСНИЙ КЛІНІЧНИЙ ПРОТИТУБЕРКУЛЬОЗНИЙ ДИСПАНСЕР»",
+        "legalName_en": "KOMUNALNE NEKOMERTsIINE PIDPRIYeMSTVO «OBLASNII KLINIChNII PROTITUBERKULOZNII DISPANSER»"
+      },
+      "address": {
+        "streetAddress": "ВУЛИЦЯ КИРИЛКІНА, будинок 10",
+        "locality": "Краматорськ",
+        "region": "Донецька область",
+        "postalCode": "84333",
+        "countryName": "Україна"
+      },
+      "kind": "general"
+    },
+    "tender": {
+      "procurementMethod": "open",
+      "procurementMethodType": "aboveThresholdUA",
+      "tenderPeriod": {
+        "startDate": "2023-11-01T00:00:00+02:00"
+      }
+    },
+    "budget": {
+      "id": "d6b32a25ff794c5bbba3d45bc1df173d33600000-6",
+      "description": "Фармацевтична продукція (Код ДК 021:2015- 33600000-6 Фармацевтична продукція)",
+      "amount": 106000,
+      "currency": "UAH",
+      "amountNet": 0,
+      "project": {
+        "id": "d6b32a25ff794c5bbba3d45bc1df173d",
+        "name": "Фармацевтична продукція (Код ДК 021:2015- 33600000-6 Фармацевтична продукція)"
+      },
+      "period": {
+        "startDate": "2023-01-01T00:00:00+02:00",
+        "endDate": "2023-12-31T23:59:00+02:00"
+      },
+      "breakdown": [
+        {
+          "id": "986d41edd9b0485888b251693e12efec",
+          "title": "other",
+          "description": "Кошти НСЗУ",
+          "value": {
+            "amount": 106000,
+            "currency": "UAH"
+          }
+        }
+      ]
+    },
+    "classification": {
+      "description": "Фармацевтична продукція",
+      "scheme": "ДК021",
+      "id": "33600000-6"
+    },
+    "additionalClassifications": [
+      {
+        "scheme": "КЕКВ",
+        "id": "2220",
+        "description": "Медикаменти та перев'язувальні матеріали"
+      },
+      {
+        "scheme": "КЕКВ",
+        "id": "2610",
+        "description": "Субсидії та поточні трансферти підприємствам (установам, організаціям)"
+      }
+    ],
+    "documents": [
+      {
+        "id": "becf8e63e54c4debb67bf1d15363e832",
+        "hash": "md5:2a88106e14f46c05e86dfa1bb5d4b9ef",
+        "title": "sign.p7s",
+        "format": "application/pkcs7-signature",
+        "url": "/test-data/AnnualProcurementPlan/2/sign.p7s",
+        "datePublished": "2023-11-06T09:45:38.231836+02:00",
+        "dateModified": "2023-11-06T09:45:38.231853+02:00"
+      }
+    ],
+    "tender_id": "e45cdb97d7104355ae24d66ea0bd7132",
+    "planID": "UA-P-2023-11-06-000791-b",
+    "items": [
+      {
+        "id": "a44271c4a92f470ca63b46119c3f46d5",
+        "classification": {
+          "description": "Проносні засоби",
+          "scheme": "ДК021",
+          "id": "33613000-0"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "INN",
+            "id": "senna glycosides",
+            "description": "Senna glycosides"
+          }
+        ],
+        "unit": {
+          "name": "паковання",
+          "code": "PK"
+        },
+        "quantity": 2,
+        "deliveryDate": {
+          "endDate": "2023-12-15T00:00:00+02:00"
+        },
+        "description": "Сена 70мг таб №10"
+      },
+      {
+        "id": "354b47cac97c41c88f4e343ea10fc339",
+        "classification": {
+          "description": "Лікарські засоби для лікування функціональних розладів шлунково-кишкового тракту",
+          "scheme": "ДК021",
+          "id": "33612000-3"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "INN",
+            "id": "multienzymes (lipase, protease etc.)",
+            "description": "Multienzymes (lipase, protease etc.)"
+          }
+        ],
+        "unit": {
+          "name": "паковання",
+          "code": "PK"
+        },
+        "quantity": 5,
+        "deliveryDate": {
+          "endDate": "2023-12-15T00:00:00+02:00"
+        },
+        "description": "Ферменти підшлункової залозі 8000 №50"
+      },
+      {
+        "id": "81f1932841bd4f94952485caffd86ffb",
+        "classification": {
+          "description": "Інсулін",
+          "scheme": "ДК021",
+          "id": "33615100-5"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "INN",
+            "id": "insulin (human)",
+            "description": "Insulin (human)"
+          }
+        ],
+        "unit": {
+          "name": "паковання",
+          "code": "PK"
+        },
+        "quantity": 3,
+        "deliveryDate": {
+          "endDate": "2023-12-15T00:00:00+02:00"
+        },
+        "description": "Хумодар Б 100Р сусп 100 МО 10 мл №1"
+      },
+      {
+        "id": "0257f64b0ca8479faa778ed5150f7211",
+        "classification": {
+          "description": "Лікарські засоби для лікування обструктивних захворювань дихальних шляхів",
+          "scheme": "ДК021",
+          "id": "33673000-8"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "INN",
+            "id": "salbutamol",
+            "description": "Salbutamol"
+          }
+        ],
+        "unit": {
+          "name": "паковання",
+          "code": "PK"
+        },
+        "quantity": 2,
+        "deliveryDate": {
+          "endDate": "2023-12-15T00:00:00+02:00"
+        },
+        "description": "Сальбутамол аер. 100 мгк/доза 200 доз"
+      },
+      {
+        "id": "15c6fa927f834ea0ab852a811d39b133",
+        "classification": {
+          "description": "Лікарські засоби для лікування обструктивних захворювань дихальних шляхів",
+          "scheme": "ДК021",
+          "id": "33673000-8"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "INN",
+            "id": "theophylline",
+            "description": "Theophylline"
+          }
+        ],
+        "unit": {
+          "name": "паковання",
+          "code": "PK"
+        },
+        "quantity": 20,
+        "deliveryDate": {
+          "endDate": "2023-12-15T00:00:00+02:00"
+        },
+        "description": "Теофілін р-н д-ін 2% по 5мл №10"
+      },
+      {
+        "id": "bad2d5487a2c451693b8688082bc8324",
+        "classification": {
+          "description": "Інфузійні розчини",
+          "scheme": "ДК021",
+          "id": "33692100-8"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "INN",
+            "id": "electrolytes",
+            "description": "Electrolytes"
+          }
+        ],
+        "unit": {
+          "name": "Флакон",
+          "code": "VI"
+        },
+        "quantity": 1000,
+        "deliveryDate": {
+          "endDate": "2023-12-15T00:00:00+02:00"
+        },
+        "description": "Рінгера розчин інф 200 мл"
+      },
+      {
+        "id": "4b07ed54022e46f2a3ca7eae78cb73c5",
+        "classification": {
+          "description": "Лікарські засоби для лікування захворювань шлунково-кишкового тракту та розладів обміну речовин",
+          "scheme": "ДК021",
+          "id": "33610000-9"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "INN",
+            "id": "ranitidine",
+            "description": "Ranitidine"
+          }
+        ],
+        "unit": {
+          "name": "паковання",
+          "code": "PK"
+        },
+        "quantity": 150,
+        "deliveryDate": {
+          "endDate": "2023-12-15T00:00:00+02:00"
+        },
+        "description": "Ранітидин 150мг №20 таб"
+      },
+      {
+        "id": "27704dea93d347b2852d60de00445730",
+        "classification": {
+          "description": "Розчини для ін’єкцій",
+          "scheme": "ДК021",
+          "id": "33692500-2"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "INN",
+            "id": "aqua pro injectioni",
+            "description": "Aqua pro injectioni"
+          }
+        ],
+        "unit": {
+          "name": "Флакон",
+          "code": "VI"
+        },
+        "quantity": 50,
+        "deliveryDate": {
+          "endDate": "2023-12-15T00:00:00+02:00"
+        },
+        "description": "Вода для ін’єкцій 400 мл"
+      },
+      {
+        "id": "6346078e27304044b099a7180adbe852",
+        "classification": {
+          "description": "Антигістамінні засоби для системного застосування",
+          "scheme": "ДК021",
+          "id": "33675000-2"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "INN",
+            "id": "loratadine",
+            "description": "Loratadine"
+          }
+        ],
+        "unit": {
+          "name": "паковання",
+          "code": "PK"
+        },
+        "quantity": 50,
+        "deliveryDate": {
+          "endDate": "2023-12-15T00:00:00+02:00"
+        },
+        "description": "Лоратадин 10мг №10 таб"
+      },
+      {
+        "id": "9c560a421b7b4914b4c996f60cf18186",
+        "classification": {
+          "description": "Інші лікарські засоби",
+          "scheme": "ДК021",
+          "id": "33693000-4"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "INN",
+            "id": "calcium gluconate",
+            "description": "Calcium gluconate"
+          }
+        ],
+        "unit": {
+          "name": "паковання",
+          "code": "PK"
+        },
+        "quantity": 500,
+        "deliveryDate": {
+          "endDate": "2023-12-15T00:00:00+02:00"
+        },
+        "description": "Кальцію глюконот р-н д ін 100мг/мл по 10мл №10"
+      },
+      {
+        "id": "be40409cd39743baa5855a42d11c69f4",
+        "classification": {
+          "description": "Анальгетичні засоби",
+          "scheme": "ДК021",
+          "id": "33661200-3"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "INN",
+            "id": "metamizole sodium",
+            "description": "Metamizole sodium"
+          }
+        ],
+        "unit": {
+          "name": "паковання",
+          "code": "PK"
+        },
+        "quantity": 20,
+        "deliveryDate": {
+          "endDate": "2023-12-15T00:00:00+02:00"
+        },
+        "description": "Метамізол натрію  р-н д-ін 500мг/мл по 2мл №10"
+      },
+      {
+        "id": "3f659056c2424849b65078c426b93c11",
+        "classification": {
+          "description": "Протиепілептичні засоби",
+          "scheme": "ДК021",
+          "id": "33661300-4"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "INN",
+            "id": "valproic acid",
+            "description": "Valproic acid"
+          }
+        ],
+        "unit": {
+          "name": "паковання",
+          "code": "PK"
+        },
+        "quantity": 2,
+        "deliveryDate": {
+          "endDate": "2023-12-15T00:00:00+02:00"
+        },
+        "description": "Вальпроєва кислота 500 №30 табл"
+      },
+      {
+        "id": "941206276ebc40e2be945d4c36c228ba",
+        "classification": {
+          "description": "Лікарські засоби для лікування захворювань серцево-судинної системи",
+          "scheme": "ДК021",
+          "id": "33622000-6"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "INN",
+            "id": "bisoprolol",
+            "description": "Bisoprolol"
+          }
+        ],
+        "unit": {
+          "name": "паковання",
+          "code": "PK"
+        },
+        "quantity": 2,
+        "deliveryDate": {
+          "endDate": "2023-12-15T00:00:00+02:00"
+        },
+        "description": "Бісопролол 5мг №30 таб"
+      },
+      {
+        "id": "dbc47bbc558147aab2bfbda0f6e307b3",
+        "classification": {
+          "description": "Лікарські засоби для лікування захворювань серцево-судинної системи",
+          "scheme": "ДК021",
+          "id": "33622000-6"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "INN",
+            "id": "metoprolol",
+            "description": "Metoprolol"
+          }
+        ],
+        "unit": {
+          "name": "паковання",
+          "code": "PK"
+        },
+        "quantity": 2,
+        "deliveryDate": {
+          "endDate": "2023-12-15T00:00:00+02:00"
+        },
+        "description": "Метопролол 50мг №30 таб"
+      },
+      {
+        "id": "70c3b27cba4d4bb3b6e1fc8fc271d661",
+        "classification": {
+          "description": "Лікарські засоби для лікування захворювань серцево-судинної системи",
+          "scheme": "ДК021",
+          "id": "33622000-6"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "INN",
+            "id": "verapamil",
+            "description": "Verapamil"
+          }
+        ],
+        "unit": {
+          "name": "паковання",
+          "code": "PK"
+        },
+        "quantity": 2,
+        "deliveryDate": {
+          "endDate": "2023-12-15T00:00:00+02:00"
+        },
+        "description": "Верапаміл 40мг №20 таб"
+      },
+      {
+        "id": "8a602eec38d0453dacc493a3ef3e68c0",
+        "classification": {
+          "description": "Лікарські засоби для лікування захворювань серцево-судинної системи",
+          "scheme": "ДК021",
+          "id": "33622000-6"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "INN",
+            "id": "atenolol",
+            "description": "Atenolol"
+          }
+        ],
+        "unit": {
+          "name": "паковання",
+          "code": "PK"
+        },
+        "quantity": 2,
+        "deliveryDate": {
+          "endDate": "2023-12-15T00:00:00+02:00"
+        },
+        "description": "Атенолол 50мг №20 таб"
+      },
+      {
+        "id": "4ced2d65c8624a6c94b29c532ba48520",
+        "classification": {
+          "description": "Лікарські засоби для лікування захворювань серцево-судинної системи",
+          "scheme": "ДК021",
+          "id": "33622000-6"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "INN",
+            "id": "enalapril",
+            "description": "Enalapril"
+          }
+        ],
+        "unit": {
+          "name": "паковання",
+          "code": "PK"
+        },
+        "quantity": 2,
+        "deliveryDate": {
+          "endDate": "2023-12-15T00:00:00+02:00"
+        },
+        "description": "Еналаприл 10мг №20 таб"
+      },
+      {
+        "id": "404c1c69339148a9afcde485b255d495",
+        "classification": {
+          "description": "Інші лікарські засоби",
+          "scheme": "ДК021",
+          "id": "33693000-4"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "INN",
+            "id": "benzyl benzoate",
+            "description": "Benzyl benzoate"
+          }
+        ],
+        "unit": {
+          "name": "Флакон",
+          "code": "VI"
+        },
+        "quantity": 3,
+        "deliveryDate": {
+          "endDate": "2023-12-15T00:00:00+02:00"
+        },
+        "description": "Бензилбензоат 20% по 50г фл"
+      },
+      {
+        "id": "f505b90cd15d464c98060d52641c25fa",
+        "classification": {
+          "description": "Інсулін",
+          "scheme": "ДК021",
+          "id": "33615100-5"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "INN",
+            "id": "insulin aspart",
+            "description": "Insulin aspart"
+          }
+        ],
+        "unit": {
+          "name": "паковання",
+          "code": "PK"
+        },
+        "quantity": 3,
+        "deliveryDate": {
+          "endDate": "2023-12-15T00:00:00+02:00"
+        },
+        "description": "Інсулін для ін\"єкцій (короткої дії) 100МО/мл по 10мл фл"
+      },
+      {
+        "id": "440dc1b1e03b4921811d1e655e9c99e9",
+        "classification": {
+          "description": "Вакцини",
+          "scheme": "ДК021",
+          "id": "33651600-4"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "INN",
+            "id": "tuberculin",
+            "description": "Tuberculin"
+          }
+        ],
+        "unit": {
+          "name": "паковання",
+          "code": "PK"
+        },
+        "quantity": 3,
+        "deliveryDate": {
+          "endDate": "2023-12-15T00:00:00+02:00"
+        },
+        "description": "Туберкулін ППД-Л р-н д/ін з акт 2 ТО/доза; по 1 мл (10 доз) в ампулах № 10"
+      },
+      {
+        "id": "596c1593c85d46cdbd6c9ac21ea0eb71",
+        "classification": {
+          "description": "Протигіпертонічні засоби",
+          "scheme": "ДК021",
+          "id": "33622200-8"
+        },
+        "additionalClassifications": [
+          {
+            "scheme": "INN",
+            "id": "phenylephrine",
+            "description": "Phenylephrine"
+          }
+        ],
+        "unit": {
+          "name": "паковання",
+          "code": "PK"
+        },
+        "quantity": 4,
+        "deliveryDate": {
+          "endDate": "2023-12-15T00:00:00+02:00"
+        },
+        "description": "Фенілефрин р-н д- ін 1% по 1мл №10"
+      }
+    ],
+    "buyers": [
+      {
+        "id": "779cfb142b48402e982476251fab8c69",
+        "name": "КОМУНАЛЬНЕ НЕКОМЕРЦІЙНЕ ПІДПРИЄМСТВО «ОБЛАСНИЙ КЛІНІЧНИЙ ПРОТИТУБЕРКУЛЬОЗНИЙ ДИСПАНСЕР»",
+        "identifier": {
+          "scheme": "UA-EDR",
+          "id": "01990766",
+          "legalName": "КОМУНАЛЬНЕ НЕКОМЕРЦІЙНЕ ПІДПРИЄМСТВО «ОБЛАСНИЙ КЛІНІЧНИЙ ПРОТИТУБЕРКУЛЬОЗНИЙ ДИСПАНСЕР»"
+        },
+        "address": {
+          "streetAddress": "ВУЛИЦЯ КИРИЛКІНА, будинок 10",
+          "locality": "Краматорськ",
+          "region": "Донецька область",
+          "postalCode": "84333",
+          "countryName": "Україна"
+        },
+        "kind": "general"
+      }
+    ],
+    "status": "complete",
+    "dateCreated": "2023-11-06T09:44:32.083151+02:00",
+    "dateModified": "2023-11-06T09:54:13.698202+02:00",
+    "datePublished": "2023-11-06T09:44:32.129799+02:00",
+    "owner": "e-tender.biz",
+    "id": "b0096e7f335b4aba9133da89e07de8eb"
+  }
+}

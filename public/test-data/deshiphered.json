@@ -1,0 +1,302 @@
+{
+  "procurementMethod": "open",
+  "mainProcurementCategory": "goods",
+  "complaintPeriod": {
+    "startDate": "2020-01-20T11:34:07.497077+02:00",
+    "endDate": "2020-02-14T00:00:00+02:00"
+  },
+  "enquiryPeriod": {
+    "startDate": "2020-01-20T11:34:07.497077+02:00",
+    "clarificationsUntil": "2020-02-13T00:00:00+02:00",
+    "endDate": "2020-02-08T22:00:00+02:00",
+    "invalidationDate": "2020-02-11T16:47:52.155930+02:00"
+  },
+  "submissionMethod": "electronicAuction",
+  "next_check": "2020-02-18T22:00:00+02:00",
+  "procuringEntity": {
+    "kind": "general",
+    "name": "КОМУНАЛЬНЕ НЕКОМЕРЦІЙНЕ ПІДПРИЄМСТВО \"МІСЬКА ДИТЯЧА КЛІНІЧНА ЛІКАРНЯ М.ЛЬВОВА\"",
+    "address": {
+      "postalCode": "79059",
+      "countryName": "Україна",
+      "streetAddress": "П.ОРЛИКА, будинок 4",
+      "region": "Львівська область",
+      "locality": "Львів"
+    },
+    "contactPoint": {
+      "telephone": "380322917651",
+      "name": "Гонтарева Дарія Мирославівна",
+      "email": "buhg_mdkl@ukr.net"
+    },
+    "identifier": {
+      "scheme": "UA-EDR",
+      "legalName_en": "KOMUNALNE NEKOMERTsIINE PIDPRIYeMSTVO \"MISKA DITYaChA KLINIChNA LIKARNYa M.LVOVA\"",
+      "id": "22331468",
+      "legalName": "КОМУНАЛЬНЕ НЕКОМЕРЦІЙНЕ ПІДПРИЄМСТВО \"МІСЬКА ДИТЯЧА КЛІНІЧНА ЛІКАРНЯ М.ЛЬВОВА\""
+    },
+    "name_en": "KOMUNALNE NEKOMERTsIINE PIDPRIYeMSTVO \"MISKA DITYaChA KLINIChNA LIKARNYa M.LVOVA\""
+  },
+  "owner": "e-tender.biz",
+  "id": "b2fcffa9b61e4717894a8a656e3edd07",
+  "description": "Під кількістю 18 одиниць слід розуміти кількість та обсяги найменувань згідно медико-технічних вимог",
+  "documents": [
+    {
+      "hash": "md5:8c9e6e6f43e9f2a9cd7b2e6b436d5d52",
+      "author": "tender_owner",
+      "format": "text/plain",
+      "url": "https://public.docs.openprocurement.org/get/babf5f84ce77488098ec00df4a0b113e?KeyID=52462340&Signature=LQAbths4XLZRU8zveM%2FrEMzAm4Mppayc51PLNM2CpcOpdzxr%2Ffw0fHF9GR0xDLm7zQVZUM0BiXx7E40VLRcCAg%253D%253D",
+      "title": "Тендерна документація.docx",
+      "documentOf": "tender",
+      "datePublished": "2020-01-20T11:35:08.809004+02:00",
+      "documentType": "biddingDocuments",
+      "dateModified": "2020-01-20T11:35:08.809044+02:00",
+      "id": "044e5299f0f94d09b98b2856e6822cf5"
+    },
+    {
+      "hash": "md5:9f0e8257b396cbdb39b6878b6ca8ba82",
+      "author": "tender_owner",
+      "format": "text/plain",
+      "url": "https://public.docs.openprocurement.org/get/02e29c14472a4a48ac1c6e47a66976f0?KeyID=52462340&Signature=fs8AYl%2FF%2FI%252BrtQ1QHyIatdX6R5NfMmeaHuiYarzr3phKXYybvTijwO8PSfhH6VIzFRUMKFUKwvvJ0R2TPXlgBQ%253D%253D",
+      "title": "Технічні вимоги.docx",
+      "documentOf": "tender",
+      "datePublished": "2020-01-20T11:35:25.076660+02:00",
+      "documentType": "technicalSpecifications",
+      "dateModified": "2020-01-20T11:35:25.076698+02:00",
+      "id": "95b187d17925479cbfb77d0d84189d7f"
+    },
+    {
+      "hash": "md5:f217a5de1bfddd31ca91ca980dbcd7e4",
+      "author": "tender_owner",
+      "format": "text/plain",
+      "url": "https://public.docs.openprocurement.org/get/1052d7606dab49019440a0c320636c31?KeyID=52462340&Signature=iJfcfqoMJ%252B5aMWP9pJT4bJF6QAZgnVagShENe8kcvSmHdOq2cp6lo2rIN4ZjmjjGyQgRBtmRQxjXeLx1Fc8VCQ%253D%253D",
+      "title": "проект договору.docx",
+      "documentOf": "tender",
+      "datePublished": "2020-01-20T11:35:47.517824+02:00",
+      "documentType": "contractProforma",
+      "dateModified": "2020-01-20T11:35:47.517862+02:00",
+      "id": "2dd58bd8572a48aaa92851d9e4751dcb"
+    },
+    {
+      "hash": "md5:8e44ca2b60c532f2839490f8b2ff2f7b",
+      "author": "tender_owner",
+      "format": "application/pkcs7-signature",
+      "url": "https://public.docs.openprocurement.org/get/a50be6fecde94e6ba18b55b9c0b6edf4?KeyID=52462340&Signature=jotbmlGzyPLurpfJZ4Z2x8Jj3PPER1r7NFDuwa1Zf%2FzByGnmA904In5wUmYRVKZRVTzWFOF%2Fa7bRLxVJDQjmDA%253D%253D",
+      "title": "sign.p7s",
+      "documentOf": "tender",
+      "datePublished": "2020-01-20T11:41:32.050904+02:00",
+      "dateModified": "2020-01-20T11:41:32.050934+02:00",
+      "id": "f02bde2966014227b8de2a0559f68b78"
+    },
+    {
+      "hash": "md5:88eaa2c844f9f63142c527bdc181be5b",
+      "author": "tender_owner",
+      "format": "text/plain",
+      "url": "https://public.docs.openprocurement.org/get/879449278f9c4a75b92628f4b4f91367?KeyID=52462340&Signature=Ot8k6%2FWyE2fdhAQa3shYQJAYnrVW324XNt6r%252B3FaoA2M5n1HsDexAHbpjHmMj8yQCiXS%2FW1ou5r3ih2EdkF9CQ%253D%253D",
+      "title": "Тендерна документація.docx",
+      "documentOf": "tender",
+      "datePublished": "2020-01-20T11:35:08.809004+02:00",
+      "documentType": "biddingDocuments",
+      "dateModified": "2020-02-05T15:42:44.891546+02:00",
+      "id": "044e5299f0f94d09b98b2856e6822cf5"
+    },
+    {
+      "hash": "md5:fb028ec53fc3299a17dd2b083cd74580",
+      "author": "tender_owner",
+      "format": "text/plain",
+      "url": "https://public.docs.openprocurement.org/get/d294cb42d4474a999d82f6901089a0dc?KeyID=52462340&Signature=JQ5rRZBZ6T09poFSZFCSZehQ4tczp7xzR6aVNytBCmCtp3ENA1pCHNJxHNDFidmyMRgCsxwFh6QQBc0rDB%252BsAw%253D%253D",
+      "title": "Технічні вимоги.docx",
+      "documentOf": "tender",
+      "datePublished": "2020-01-20T11:35:25.076660+02:00",
+      "documentType": "technicalSpecifications",
+      "dateModified": "2020-02-05T15:43:51.575869+02:00",
+      "id": "95b187d17925479cbfb77d0d84189d7f"
+    },
+    {
+      "hash": "md5:8af12f2126dfaad85daa5dbf2634178c",
+      "author": "tender_owner",
+      "format": "text/plain",
+      "url": "https://public.docs.openprocurement.org/get/ef48af3bbbbd48649d6df277dc5afd0a?KeyID=52462340&Signature=aydg3j4lNZV%2FwP5xE%2FJef88y%2FcZJq67GAbWyC6Q2ruyQEc505ZcPYQ%252BlWuj5DeNrNyoL6DgkBQUIS2b0%2F8BWCQ%253D%253D",
+      "title": "Рішення про внесення змін.doc",
+      "documentOf": "tender",
+      "datePublished": "2020-02-05T15:44:05.270108+02:00",
+      "dateModified": "2020-02-05T15:44:05.270130+02:00",
+      "id": "24980a8dce9d42ffa5e42752846ae495"
+    },
+    {
+      "hash": "md5:a56b620d901608a31efcaaba7b42cda2",
+      "author": "tender_owner",
+      "format": "application/pkcs7-signature",
+      "url": "https://public.docs.openprocurement.org/get/73a11e76991241b780e907ea94325241?KeyID=52462340&Signature=ptiErdirtUrjm2Ad3j3RFzE05vdH7kMRlgjeRqpXw6m4OavMtz1Mi5SZLOsIwP73Zr7YHDLJWLN54ctEaH0TCA%253D%253D",
+      "title": "sign.p7s",
+      "documentOf": "tender",
+      "datePublished": "2020-01-20T11:41:32.050904+02:00",
+      "dateModified": "2020-02-05T19:52:01.457925+02:00",
+      "id": "f02bde2966014227b8de2a0559f68b78"
+    },
+    {
+      "hash": "md5:470880e2861e7dc21f47db8a7a3b5e54",
+      "author": "tender_owner",
+      "format": "text/plain",
+      "url": "https://public.docs.openprocurement.org/get/669eed3bce424422844c658cd0297cf9?KeyID=52462340&Signature=qDvwuXq3AqitKXt47EI35Q7k%2Fe%252Bd%2FethJ6VKlLfQ2M0Qvf47%2FX2HhjEzQsv80wzbtagg8hGAUk0uTNR3oeb3Dw%253D%253D",
+      "title": "Тендерна документація.docx",
+      "documentOf": "tender",
+      "datePublished": "2020-01-20T11:35:08.809004+02:00",
+      "documentType": "biddingDocuments",
+      "dateModified": "2020-02-11T14:59:47.857941+02:00",
+      "id": "044e5299f0f94d09b98b2856e6822cf5"
+    },
+    {
+      "hash": "md5:6a1cd6b4411d29e899c6ebc2f1f5139d",
+      "author": "tender_owner",
+      "format": "text/plain",
+      "url": "https://public.docs.openprocurement.org/get/6058b9a61a694d9ba2f775040d4f2c4a?KeyID=52462340&Signature=NkD2ik3O4gJD%2FjOMHtJAPTYs5yoPB%252BJi2lQHVWa44PqUFNY57hCzUV7BHz1D39coVF7fE5Inv7Y7unlJByScAA%253D%253D",
+      "title": "Технічні вимоги.docx",
+      "documentOf": "tender",
+      "datePublished": "2020-01-20T11:35:25.076660+02:00",
+      "documentType": "technicalSpecifications",
+      "dateModified": "2020-02-11T15:00:08.810805+02:00",
+      "id": "95b187d17925479cbfb77d0d84189d7f"
+    },
+    {
+      "hash": "md5:b9fb4165b639078dc6af4f642e1bffb9",
+      "author": "tender_owner",
+      "format": "text/plain",
+      "url": "https://public.docs.openprocurement.org/get/0a8ce46063304f779694199c5e48aed1?KeyID=52462340&Signature=aIPD2aVcCWv%2FFPqljUulcDysa7zdiWFxJvvm%2FxMLS%2FL1tZNqcc81na4PaTUdqqonBMX8I7z5CGmfgKcRCHlECg%253D%253D",
+      "title": "проект договору.docx",
+      "documentOf": "tender",
+      "datePublished": "2020-01-20T11:35:47.517824+02:00",
+      "documentType": "contractProforma",
+      "dateModified": "2020-02-11T15:00:46.125290+02:00",
+      "id": "2dd58bd8572a48aaa92851d9e4751dcb"
+    },
+    {
+      "hash": "md5:283717dc4df6b9e6f018930a924cc152",
+      "author": "tender_owner",
+      "format": "text/plain",
+      "url": "https://public.docs.openprocurement.org/get/5998556d32724aa995015aaac73d5dc2?KeyID=52462340&Signature=RXmuMtsSadL99Z3HaoyrDr25YlOosvwLUKRhJkxSIPTGHBjxh3I3uSTD%252BEnp6DyypmUwofU4jBTHbBKYxYcMCw%253D%253D",
+      "title": "Рішення про внесення змін.doc",
+      "documentOf": "tender",
+      "datePublished": "2020-02-11T15:02:52.825846+02:00",
+      "dateModified": "2020-02-11T15:02:52.825894+02:00",
+      "id": "1a12f6c53dda4c8a9e2991502a14bae5"
+    },
+    {
+      "hash": "md5:e3e93a2a94fabaf0f11648241b68e9de",
+      "author": "tender_owner",
+      "format": "text/plain",
+      "url": "https://public.docs.openprocurement.org/get/21f2c2b85cac4058ae1227edcb333ee4?KeyID=52462340&Signature=mkn8z5rySPwOTrP6Z4y1z2s0gdtjZaLJhmVaKYnfMlAP4vTedLlGsfi%2F6yfTwUcq448Lr%2Fi17K3KIZxR1khJDw%253D%253D",
+      "title": "Тендерна документація.docx",
+      "documentOf": "tender",
+      "datePublished": "2020-01-20T11:35:08.809004+02:00",
+      "documentType": "biddingDocuments",
+      "dateModified": "2020-02-11T16:47:12.057890+02:00",
+      "id": "044e5299f0f94d09b98b2856e6822cf5"
+    },
+    {
+      "hash": "md5:c9b40fd4b80dcdc92a1ef7feaa51ff5d",
+      "author": "tender_owner",
+      "format": "text/plain",
+      "url": "https://public.docs.openprocurement.org/get/907b1fe11f3443c4b5a4747c146fb096?KeyID=52462340&Signature=hqeUrbVxkVCBf43Vt7WE6DuCkp5gkszvvJMLKiD71uCLFrPszB0hs%252BfvHg0Zipcz8eWBzxitwqEZjc7rfix9Bg%253D%253D",
+      "title": "Технічні вимоги.docx",
+      "documentOf": "tender",
+      "datePublished": "2020-01-20T11:35:25.076660+02:00",
+      "documentType": "technicalSpecifications",
+      "dateModified": "2020-02-11T16:47:30.858254+02:00",
+      "id": "95b187d17925479cbfb77d0d84189d7f"
+    },
+    {
+      "hash": "md5:2d4cc1898bac492bc576c281993afc0e",
+      "author": "tender_owner",
+      "format": "text/plain",
+      "url": "https://public.docs.openprocurement.org/get/8b1222ed61eb40a699ac78afd1b2876d?KeyID=52462340&Signature=YgeMMwAcUtHoec%252BHJ85xnCb3WNnd3tpVN%2FyifFIRnlEOKoSxrFxve6wdMg9tSbDvHZObfMTUt%2FuRebwJ8SSVBQ%253D%253D",
+      "title": "проект договору.docx",
+      "documentOf": "tender",
+      "datePublished": "2020-01-20T11:35:47.517824+02:00",
+      "documentType": "contractProforma",
+      "dateModified": "2020-02-11T16:47:52.153479+02:00",
+      "id": "2dd58bd8572a48aaa92851d9e4751dcb"
+    }
+  ],
+  "title": "Придбання медичного обладнання для ортопедичної операційної анестезіологічного відділення КНП \"Міська дитяча клінічна лікарня м. Львова\" за адресою вул. П.Орлика, 4: Світильник операційний, Консоль стельова, Компресор, Бінокулярний збільшувач, Негатоскоп, Коагулятор, Відсмоктувач, Монітор пацієнта, Секційний протипролежневий матрац, Стимулятор нервів, Шафа медична двохдверна,  Монітор пацієнта з додатковими функціями для анастезіології, Консоль приліжкова, Тумба приліжкова пластикова,  Столик анестезіолога, зі штучним камінням та висувною плоскістю, Візок медичний,  Столик інструментальний Зомберга, Система кольорової візуалізації вен»\nНК 024:2019 «Класифікатор медичних виробів»: 12282 - Операційний світильник; 36810 - Консоль з підводами комунікацій універсальна, з настінним кріпленням; 31253 - Компресор повітряний для медичних виробів; 32692 - Лупа хірургічна бінокулярна, багаторазового використання; 35823 - Негатоскоп медичний, з електроживленням; 33602 - Ендоскопічний генератор електрохірургічної діатермічної системи; 10223 - Електрична система всмоктування для ран; 33586 - Система моніторингу фізіологічних показників одного пацієнта; 41900 - Матрац протипролежневий надувний з регульованим тиском, багаторазового використання; 17908 - Ультразвукова / нейром'язова система стимуляції фізичної терапії; 10535 - Медична шафа; 35395 - Столик приліжковий; 13951 - Стіл на анестезіологічні інструменти; 34909 -  Візок для медичних інструментів; 13959 - Стіл для хірургічних інструментів; 48039 - Локатор вен інфрачервоний",
+  "plans": [
+    {
+      "id": "5fde1d89c2e44854ba37b9606808effd"
+    }
+  ],
+  "tenderID": "UA-2020-01-20-001169-c",
+  "guarantee": {
+    "currency": "UAH",
+    "amount": 0
+  },
+  "dateModified": "2020-02-11T16:47:52.174314+02:00",
+  "status": "active.tendering",
+  "tenderPeriod": {
+    "startDate": "2020-01-20T11:34:07.497077+02:00",
+    "endDate": "2020-02-18T22:00:00+02:00"
+  },
+  "auctionPeriod": {
+    "startDate": "2020-02-19T14:46:34+02:00",
+    "shouldStartAfter": "2020-02-19T00:00:00+02:00"
+  },
+  "procurementMethodType": "aboveThresholdUA",
+  "date": "2020-01-20T11:34:08.246746+02:00",
+  "milestones": [
+    {
+      "code": "postpayment",
+      "description": "Джерело фінансування. громадський бюджет м. Львова",
+      "sequenceNumber": 1,
+      "title": "deliveryOfGoods",
+      "duration": {
+        "type": "calendar",
+        "days": 30
+      },
+      "percentage": 100,
+      "type": "financing",
+      "id": "268b968d66a143caaba85c5670a4ca81"
+    }
+  ],
+  "minimalStep": {
+    "currency": "UAH",
+    "amount": 1780,
+    "valueAddedTaxIncluded": true
+  },
+  "items": [
+    {
+      "description": "Придбання медичного обладнання для ортопедичної операційної анестезіологічного відділення КНП \"Міська дитяча клінічна лікарня м. Львова\" за адресою вул. П.Орлика, 4 : Світильник операційний, Консоль стельова, Компресор, Бінокулярний збільшувач, Негатоскоп, Коагулятор, Відсмоктувач, Монітор пацієнта, Секційний протипролежневий матрац, Стимулятор нервів, Шафа медична двохдверна,  Монітор пацієнта з додатковими функціями для анастезіології, Консоль приліжкова, Тумба приліжкова пластикова,  Столик анестезіолога, зі штучним камінням та висувною плоскістю, Візок медичний,  Столик інструментальний Зомберга, Система кольорової візуалізації вен»\nНК 024:2019 «Класифікатор медичних виробів»: 12282 - Операційний світильник; 36810 - Консоль з підводами комунікацій універсальна, з настінним кріпленням; 31253 - Компресор повітряний для медичних виробів; 32692 - Лупа хірургічна бінокулярна, багаторазового використання; 35823 - Негатоскоп медичний, з електроживленням; 33602 - Ендоскопічний генератор електрохірургічної діатермічної системи; 10223 - Електрична система всмоктування для ран; 33586 - Система моніторингу фізіологічних показників одного пацієнта; 41900 - Матрац протипролежневий надувний з регульованим тиском, багаторазового використання; 17908 - Ультразвукова / нейром'язова система стимуляції фізичної терапії; 10535 - Медична шафа; 35395 - Столик приліжковий; 13951 - Стіл на анестезіологічні інструменти; 34909 -  Візок для медичних інструментів; 13959 - Стіл для хірургічних інструментів; 48039 - Локатор вен інфрачервоний",
+      "classification": {
+        "scheme": "ДК021",
+        "description": "Устаткування для операційних блоків",
+        "id": "33160000-9"
+      },
+      "additionalClassifications": [
+        {
+          "scheme": "GMDN",
+          "id": "12282",
+          "description": "Операційний світильник"
+        }
+      ],
+      "deliveryAddress": {
+        "postalCode": "79059",
+        "countryName": "Україна",
+        "streetAddress": "вул. П. Орлика, 4",
+        "region": "Львівська область",
+        "locality": "Львів"
+      },
+      "deliveryDate": {
+        "endDate": "2020-12-31T00:00:00+02:00"
+      },
+      "id": "30450f45ceb14f7e909b3a9c8323c924",
+      "unit": {
+        "code": "E50",
+        "name": "Одиниця"
+      },
+      "quantity": 18
+    }
+  ],
+  "value": {
+    "currency": "UAH",
+    "amount": 1780000,
+    "valueAddedTaxIncluded": true
+  },
+  "awardCriteria": "lowestCost"
+}

@@ -1,0 +1,100 @@
+{
+  "data": {
+    "id": "a3e915ff6adf426bb8ffcf682c27d4d5",
+    "reason": "111",
+    "date": "2022-05-05T17:17:35.463895+03:00",
+    "status": "active",
+    "cancellationOf": "lot",
+    "relatedLot": "3fe38f3973f61f38bee3197d468b1f93",
+    "reasonType": "noDemand",
+    "complaintPeriod": {
+      "startDate": "2022-05-05T17:17:35.450382+03:00",
+      "endDate": "2022-05-05T17:27:35.450382+03:00"
+    },
+    "complaints": [
+      {
+        "id": "3133f766a2404b2daacd1d360494d93b",
+        "complaintID": "UA-2022-05-05-000416.d2",
+        "date": "2022-05-05T17:20:08.942816+03:00",
+        "documents": [
+          {
+            "id": "f17153fd77a14ef9ab15d4b78d2dcda8",
+            "hash": "md5:58371d396771f7ba4deca4553f5d63e3",
+            "title": "sign.p7s",
+            "format": "application/pkcs7-signature",
+            "url": "https://public-docs-staging.prozorro.gov.ua/get/c3e880157c08415991aa0ec59c639751?Signature=m7z0a8NQ4kRj7f0gS68lVmvmRy8MkHIcQshLm7hhmuLY4YLn8V8VIy0aShZA6IS%2BCpVuCosuPpX1zbsfOaUaCQ%3D%3D&KeyID=01b985cf",
+            "datePublished": "2022-05-05T17:20:30.618345+03:00",
+            "dateModified": "2022-05-05T17:20:30.618359+03:00",
+            "author": "complaint_owner",
+            "documentOf": "tender"
+          },
+          {
+            "id": "8e55b8afda244e2ab005e04f34c74166",
+            "hash": "md5:bd6e3f26e45b936b8f14e71161929871",
+            "title": "2",
+            "format": "image/jpeg",
+            "url": "https://public-docs-staging.prozorro.gov.ua/get/c9573e404d25481f98be418172cf65fd?Signature=EwfZwTtj3s9m3%2F3z7n1uKBOwU63IVNpwsMLxo0bJ%2Bn9QOBnDOKmKIXX19Se3pp6AX76Het71Q7B9fRwWToRtCQ%3D%3D&KeyID=01b985cf",
+            "datePublished": "2022-05-05T17:21:03.351008+03:00",
+            "dateModified": "2022-05-05T17:21:03.351021+03:00",
+            "author": "complaint_owner",
+            "documentOf": "tender"
+          }
+        ],
+        "author": {
+          "name": "Тест ЮР 06.12.20212",
+          "address": {
+            "streetAddress": "Набержна 12",
+            "locality": "Київ",
+            "region": "м. Київ",
+            "postalCode": "01001",
+            "countryName": "Україна"
+          },
+          "contactPoint": {
+            "name": "Іван  Іванов Іванович",
+            "name_en": "2 2 2",
+            "email": "u.s.t.u.d.iotesting@gmail.com",
+            "telephone": "+380758705875"
+          },
+          "identifier": {
+            "scheme": "UA-EDR",
+            "id": "65643322",
+            "legalName": "Тест ЮР 06.12.20212"
+          }
+        },
+        "title": "111",
+        "description": "111",
+        "value": {
+          "amount": 2000,
+          "currency": "UAH"
+        },
+        "rejectReason": "complaintPeriodEnded",
+        "status": "mistaken",
+        "type": "complaint"
+      }
+    ],
+    "documents": [
+      {
+        "id": "9d9e44dd8ddb49e28ea915189e7eabd6",
+        "hash": "md5:bd6e3f26e45b936b8f14e71161929871",
+        "title": "2",
+        "format": "image/jpeg",
+        "url": "https://public-docs-staging.prozorro.gov.ua/get/d1261e0d8558423bb99534f916284a20?Signature=07gyKNx7%2FTyarWZLUF5XFFk1PNG3fSMTbcFPcJmPwQkdPuOxr1GsKnPtJ8%2Bx8y7DP5rUFvWMVqQhx9DD%2BCiGBA%3D%3D&KeyID=01b985cf",
+        "datePublished": "2022-05-05T17:17:03.785057+03:00",
+        "dateModified": "2022-05-05T17:17:03.785070+03:00",
+        "documentOf": "tender",
+        "language": "uk"
+      },
+      {
+        "id": "ae9766494bb8466a9724409643ef7314",
+        "hash": "md5:7420b470cbfd8de0869e123557d31dd1",
+        "title": "sign.p7s",
+        "format": "application/pkcs7-signature",
+        "url": "/test-data/purchase_cancellation_protocol/2/cancellation/1/sign.p7s",
+        "datePublished": "2022-05-05T17:17:35.175840+03:00",
+        "dateModified": "2022-05-05T17:17:35.175862+03:00",
+        "documentOf": "tender",
+        "language": "uk"
+      }
+    ]
+  }
+}

@@ -1,0 +1,510 @@
+{
+  "data": {
+    "status": "active",
+    "documents": [],
+    "selfEligible": true,
+    "lotValues": [
+      {
+        "relatedLot": "e59528abb4bcd1663e60a983e1fc85d8",
+        "status": "active",
+        "value": {},
+        "subcontractingDetails": "-",
+        "date": "2020-02-04T11:44:10.652542+02:00",
+        "participationUrl": "https://auction.openprocurement.org/esco-tenders/6615a68e90524aebb5da97320a998339_e59528abb4bcd1663e60a983e1fc85d8/login?bidder_id=a27546e4bf744488a39b2b04e7a231c5&hash=878bad8db2db4c83b0bc74b43815b578ad134338"
+      },
+      {
+        "relatedLot": "6fc05f21a4d52cc87c63227812f45915",
+        "status": "active",
+        "value": {
+          "yearlyPaymentsPercentage": 0.96,
+          "amountPerformance": 409481.87,
+          "currency": "UAH",
+          "amount": 7276434.21,
+          "contractDuration": {
+            "days": 339,
+            "years": 14
+          },
+          "valueAddedTaxIncluded": true,
+          "annualCostsReduction": [
+            0,
+            82838.35,
+            360125.19,
+            552583.63,
+            552583.63,
+            552583.63,
+            552583.63,
+            552583.63,
+            552583.63,
+            552583.63,
+            552583.63,
+            552583.63,
+            552583.63,
+            552583.63,
+            552583.63,
+            552583.63,
+            552583.63,
+            552583.63,
+            552583.63,
+            552583.63,
+            552583.63
+          ]
+        },
+        "subcontractingDetails": "-",
+        "date": "2020-02-24T14:02:54.673390+02:00",
+        "participationUrl": "https://auction.openprocurement.org/esco-tenders/6615a68e90524aebb5da97320a998339_6fc05f21a4d52cc87c63227812f45915/login?bidder_id=a27546e4bf744488a39b2b04e7a231c5&hash=878bad8db2db4c83b0bc74b43815b578ad134338"
+      },
+      {
+        "relatedLot": "b4a33d0ff5fbf5cbc3cc7ec7d95e8b67",
+        "status": "active",
+        "value": {
+          "yearlyPaymentsPercentage": 0.95,
+          "amountPerformance": 603866.63,
+          "currency": "UAH",
+          "amount": 9892310.35,
+          "contractDuration": {
+            "days": 339,
+            "years": 14
+          },
+          "valueAddedTaxIncluded": true,
+          "annualCostsReduction": [
+            0,
+            89137,
+            443534.79,
+            765020.06,
+            765020.06,
+            765020.06,
+            765020.06,
+            765020.06,
+            765020.06,
+            765020.06,
+            765020.06,
+            765020.06,
+            765020.06,
+            765020.06,
+            765020.06,
+            765020.06,
+            765020.06,
+            765020.06,
+            765020.06,
+            765020.06,
+            765020.06
+          ]
+        },
+        "subcontractingDetails": "-",
+        "date": "2020-02-06T10:22:58.411433+02:00",
+        "participationUrl": "https://auction.openprocurement.org/esco-tenders/6615a68e90524aebb5da97320a998339_b4a33d0ff5fbf5cbc3cc7ec7d95e8b67/login?bidder_id=a27546e4bf744488a39b2b04e7a231c5&hash=878bad8db2db4c83b0bc74b43815b578ad134338"
+      },
+      {
+        "relatedLot": "6367c3fd2d00fae8fb2238da26e473c6",
+        "status": "active",
+        "value": {
+          "yearlyPaymentsPercentage": 0.95,
+          "amountPerformance": 438067.04,
+          "currency": "UAH",
+          "amount": 7204894.85,
+          "contractDuration": {
+            "days": 339,
+            "years": 14
+          },
+          "valueAddedTaxIncluded": true,
+          "annualCostsReduction": [
+            0,
+            93282.07,
+            388411.17,
+            549931.78,
+            549931.78,
+            549931.78,
+            549931.78,
+            549931.78,
+            549931.78,
+            549931.78,
+            549931.78,
+            549931.78,
+            549931.78,
+            549931.78,
+            549931.78,
+            549931.78,
+            549931.78,
+            549931.78,
+            549931.78,
+            549931.78,
+            549931.78
+          ]
+        },
+        "subcontractingDetails": "-",
+        "date": "2020-02-24T14:53:31.828381+02:00",
+        "participationUrl": "https://auction.openprocurement.org/esco-tenders/6615a68e90524aebb5da97320a998339_6367c3fd2d00fae8fb2238da26e473c6/login?bidder_id=a27546e4bf744488a39b2b04e7a231c5&hash=878bad8db2db4c83b0bc74b43815b578ad134338"
+      },
+      {
+        "relatedLot": "8f9f982375f7bdf0cd9d2921a8dc0c33",
+        "status": "active",
+        "value": {
+          "yearlyPaymentsPercentage": 0.95,
+          "amountPerformance": 502480.46,
+          "currency": "UAH",
+          "amount": 8262671.37,
+          "contractDuration": {
+            "days": 339,
+            "years": 14
+          },
+          "valueAddedTaxIncluded": true,
+          "annualCostsReduction": [
+            0,
+            113057.23,
+            436023.97,
+            630927.17,
+            630927.17,
+            630927.17,
+            630927.17,
+            630927.17,
+            630927.17,
+            630927.17,
+            630927.17,
+            630927.17,
+            630927.17,
+            630927.17,
+            630927.17,
+            630927.17,
+            630927.17,
+            630927.17,
+            630927.17,
+            630927.17,
+            630927.17
+          ]
+        },
+        "subcontractingDetails": "-",
+        "date": "2020-02-24T15:25:48.083615+02:00",
+        "participationUrl": "https://auction.openprocurement.org/esco-tenders/6615a68e90524aebb5da97320a998339_8f9f982375f7bdf0cd9d2921a8dc0c33/login?bidder_id=a27546e4bf744488a39b2b04e7a231c5&hash=878bad8db2db4c83b0bc74b43815b578ad134338"
+      },
+      {
+        "relatedLot": "649ec3f113c847e990abf8f72402c502",
+        "status": "active",
+        "value": {
+          "yearlyPaymentsPercentage": 0.95,
+          "amountPerformance": 1052103.3,
+          "currency": "UAH",
+          "amount": 17460335.92,
+          "contractDuration": {
+            "days": 339,
+            "years": 14
+          },
+          "valueAddedTaxIncluded": true,
+          "annualCostsReduction": [
+            0,
+            384982.84,
+            1293153.4,
+            1293153.4,
+            1293153.4,
+            1293153.4,
+            1293153.4,
+            1293153.4,
+            1293153.4,
+            1293153.4,
+            1293153.4,
+            1293153.4,
+            1293153.4,
+            1293153.4,
+            1293153.4,
+            1293153.4,
+            1293153.4,
+            1293153.4,
+            1293153.4,
+            1293153.4,
+            1293153.4
+          ]
+        },
+        "subcontractingDetails": "-",
+        "date": "2020-02-04T16:23:41.342861+02:00",
+        "participationUrl": "https://auction.openprocurement.org/esco-tenders/6615a68e90524aebb5da97320a998339_649ec3f113c847e990abf8f72402c502/login?bidder_id=a27546e4bf744488a39b2b04e7a231c5&hash=878bad8db2db4c83b0bc74b43815b578ad134338"
+      },
+      {
+        "relatedLot": "4861959a5b2d2dd791f14553981bd70b",
+        "status": "active",
+        "value": {
+          "yearlyPaymentsPercentage": 0.95,
+          "amountPerformance": 641533.69,
+          "currency": "UAH",
+          "amount": 10595869.99,
+          "contractDuration": {
+            "days": 339,
+            "years": 14
+          },
+          "valueAddedTaxIncluded": true,
+          "annualCostsReduction": [
+            0,
+            123087.28,
+            715512.07,
+            798675.44,
+            798675.44,
+            798675.44,
+            798675.44,
+            798675.44,
+            798675.44,
+            798675.44,
+            798675.44,
+            798675.44,
+            798675.44,
+            798675.44,
+            798675.44,
+            798675.44,
+            798675.44,
+            798675.44,
+            798675.44,
+            798675.44,
+            798675.44
+          ]
+        },
+        "subcontractingDetails": "-",
+        "date": "2020-02-24T11:17:01.440874+02:00",
+        "participationUrl": "https://auction.openprocurement.org/esco-tenders/6615a68e90524aebb5da97320a998339_4861959a5b2d2dd791f14553981bd70b/login?bidder_id=a27546e4bf744488a39b2b04e7a231c5&hash=878bad8db2db4c83b0bc74b43815b578ad134338"
+      },
+      {
+        "relatedLot": "ff0692ad06912cee64d7660664477189",
+        "status": "active",
+        "value": {
+          "yearlyPaymentsPercentage": 0.95,
+          "amountPerformance": 846357.91,
+          "currency": "UAH",
+          "amount": 13873740.57,
+          "contractDuration": {
+            "days": 339,
+            "years": 14
+          },
+          "valueAddedTaxIncluded": true,
+          "annualCostsReduction": [
+            0,
+            123227.2,
+            650609.15,
+            1070850,
+            1070850,
+            1070850,
+            1070850,
+            1070850,
+            1070850,
+            1070850,
+            1070850,
+            1070850,
+            1070850,
+            1070850,
+            1070850,
+            1070850,
+            1070850,
+            1070850,
+            1070850,
+            1070850,
+            1070850
+          ]
+        },
+        "subcontractingDetails": "-",
+        "date": "2020-02-04T16:23:41.346808+02:00",
+        "participationUrl": "https://auction.openprocurement.org/esco-tenders/6615a68e90524aebb5da97320a998339_ff0692ad06912cee64d7660664477189/login?bidder_id=a27546e4bf744488a39b2b04e7a231c5&hash=878bad8db2db4c83b0bc74b43815b578ad134338"
+      },
+      {
+        "relatedLot": "9964eb627422d4a4a3edaff5f5432f03",
+        "status": "active",
+        "value": {
+          "yearlyPaymentsPercentage": 0.95,
+          "amountPerformance": 585432.9,
+          "currency": "UAH",
+          "amount": 9618643.45,
+          "contractDuration": {
+            "days": 339,
+            "years": 14
+          },
+          "valueAddedTaxIncluded": true,
+          "annualCostsReduction": [
+            0,
+            123193.41,
+            489550.05,
+            736515.21,
+            736515.21,
+            736515.21,
+            736515.21,
+            736515.21,
+            736515.21,
+            736515.21,
+            736515.21,
+            736515.21,
+            736515.21,
+            736515.21,
+            736515.21,
+            736515.21,
+            736515.21,
+            736515.21,
+            736515.21,
+            736515.21,
+            736515.21
+          ]
+        },
+        "subcontractingDetails": "-",
+        "date": "2020-02-24T12:16:04.700606+02:00",
+        "participationUrl": "https://auction.openprocurement.org/esco-tenders/6615a68e90524aebb5da97320a998339_9964eb627422d4a4a3edaff5f5432f03/login?bidder_id=a27546e4bf744488a39b2b04e7a231c5&hash=878bad8db2db4c83b0bc74b43815b578ad134338"
+      },
+      {
+        "relatedLot": "9f03563453fc6e072f0be4af33f19757",
+        "status": "active",
+        "value": {
+          "yearlyPaymentsPercentage": 0.95,
+          "amountPerformance": 953715.9,
+          "currency": "UAH",
+          "amount": 15628618.16,
+          "contractDuration": {
+            "days": 339,
+            "years": 14
+          },
+          "valueAddedTaxIncluded": true,
+          "annualCostsReduction": [
+            0,
+            142181.71,
+            715442.08,
+            1207392.22,
+            1207392.22,
+            1207392.22,
+            1207392.22,
+            1207392.22,
+            1207392.22,
+            1207392.22,
+            1207392.22,
+            1207392.22,
+            1207392.22,
+            1207392.22,
+            1207392.22,
+            1207392.22,
+            1207392.22,
+            1207392.22,
+            1207392.22,
+            1207392.22,
+            1207392.22
+          ]
+        },
+        "subcontractingDetails": "-",
+        "date": "2020-02-04T16:23:41.350470+02:00",
+        "participationUrl": "https://auction.openprocurement.org/esco-tenders/6615a68e90524aebb5da97320a998339_9f03563453fc6e072f0be4af33f19757/login?bidder_id=a27546e4bf744488a39b2b04e7a231c5&hash=878bad8db2db4c83b0bc74b43815b578ad134338"
+      }
+    ],
+    "selfQualified": true,
+    "financialDocuments": [
+      {
+        "hash": "md5:48eef4b2d6519ccf285a53853c54c981",
+        "confidentiality": "public",
+        "language": "uk",
+        "format": "application/pkcs7-signature",
+        "url": "https://public.docs.openprocurement.org/get/dceff72010aa4a7e841ff8f1cccd8acf?KeyID=52462340&Signature=%2Fc19AGX1oKlzOPANqOhEVbNqz7vqG4Q4JLGAuhg8LAhtvbuDcbz8BqKNR2TEK7KOx2fdf5MXxU9ZyRAZOwQ%252BBg%253D%253D",
+        "title": "sign.p7s",
+        "documentOf": "tender",
+        "datePublished": "2020-02-04T11:44:22.622774+02:00",
+        "dateModified": "2020-02-04T11:44:22.622810+02:00",
+        "id": "53ecbccde5ec41b69f1438af1c8ba178"
+      },
+      {
+        "hash": "md5:2e8ddd0d561826b761c62e44578f4f0b",
+        "confidentiality": "public",
+        "language": "uk",
+        "format": "application/pkcs7-signature",
+        "url": "https://public.docs.openprocurement.org/get/9cf3372ef50148a9b9fb80cd4ce9cf47?KeyID=52462340&Signature=I3Bx4qWfodr9JqhT7kaND4lPUieL8de1dxmsaQoUyEdtxwgayOERd56TdO0s5uVVfT0sK9haqbBAMtXyqrikAw%253D%253D",
+        "title": "sign.p7s",
+        "documentOf": "tender",
+        "datePublished": "2020-02-05T12:27:38.634095+02:00",
+        "dateModified": "2020-02-05T12:27:38.503868+02:00",
+        "id": "53ecbccde5ec41b69f1438af1c8ba178"
+      },
+      {
+        "hash": "md5:5a59bfbdf865fe8ebdc8082d527026a7",
+        "confidentiality": "public",
+        "language": "uk",
+        "format": "application/pkcs7-signature",
+        "url": "https://public.docs.openprocurement.org/get/33320e30c02943c28b194973b99fbed8?KeyID=52462340&Signature=y5d0iAkMIWO8QfmSG37LpipYtL91LjWW%252B1O%2FdsT6jrQeuFJJzyifTKBubOOi8vMAC7Rp9isZ8Ebp256WZ6oaDw%253D%253D",
+        "title": "sign.p7s",
+        "documentOf": "tender",
+        "datePublished": "2020-02-05T13:39:17.569741+02:00",
+        "dateModified": "2020-02-05T13:39:17.446964+02:00",
+        "id": "53ecbccde5ec41b69f1438af1c8ba178"
+      },
+      {
+        "hash": "md5:bbdcd4294f2435b4291ae917ba9749f4",
+        "confidentiality": "public",
+        "language": "uk",
+        "format": "application/pkcs7-signature",
+        "url": "https://public.docs.openprocurement.org/get/613457f5d3e043feb37f34932bea0c56?KeyID=52462340&Signature=ebFnpvtE2TD0x2ZLiLxC2lxcmYEjLYsDAXKg8%252ByWdH3Dgg1DE8sy5dDOtPfEkzYKZzqu6SEqP6A4hJ%2FFgt2OBg%253D%253D",
+        "title": "sign.p7s",
+        "documentOf": "tender",
+        "datePublished": "2020-02-05T18:07:42.663639+02:00",
+        "dateModified": "2020-02-05T18:07:42.533155+02:00",
+        "id": "53ecbccde5ec41b69f1438af1c8ba178"
+      },
+      {
+        "hash": "md5:ca006c99cda6f585af8b1081a18b3496",
+        "confidentiality": "public",
+        "language": "uk",
+        "format": "application/pkcs7-signature",
+        "url": "https://public.docs.openprocurement.org/get/3d393e6cc84c40348695573273034fba?KeyID=52462340&Signature=mj2lv6%2FO8RhRsnLITIXGNmZqkfbglxQkg2CEA1Wt7KFX5GH3AmCFvujaDOEr9mlVYdmUPwfZ%2FYlfV4S40eFPBQ%253D%253D",
+        "title": "sign.p7s",
+        "documentOf": "tender",
+        "datePublished": "2020-02-06T08:43:57.681147+02:00",
+        "dateModified": "2020-02-06T08:43:57.367682+02:00",
+        "id": "53ecbccde5ec41b69f1438af1c8ba178"
+      },
+      {
+        "hash": "md5:e132d4769fa3d28ac3a787a803dfaac4",
+        "confidentiality": "public",
+        "language": "uk",
+        "format": "application/pkcs7-signature",
+        "url": "https://public.docs.openprocurement.org/get/a6792b7c5d1345458d7f9fa7aa03246a?KeyID=52462340&Signature=2Ijykfp7MvWCd0vWQRuLEIleCNIy8EowRLyZrVYYDNymkMFmYc5yFFa%252BpgJ5nO4hNO%252B7sznuNLwoLviP1sFpAg%253D%253D",
+        "title": "sign.p7s",
+        "documentOf": "tender",
+        "datePublished": "2020-02-06T09:53:17.622620+02:00",
+        "dateModified": "2020-02-06T09:53:17.353992+02:00",
+        "id": "53ecbccde5ec41b69f1438af1c8ba178"
+      },
+      {
+        "hash": "md5:3ad0d067b449b89a1749ba89a9201c4b",
+        "confidentiality": "public",
+        "language": "uk",
+        "format": "application/pkcs7-signature",
+        "url": "https://public.docs.openprocurement.org/get/2118cb4feb464685891a30d2b853670e?KeyID=52462340&Signature=gGOHjIX%252BvDXAm34W3sKIq45AbpzWMkqwkrtRp3V5pKv7yAb8REl9Uwugb5b9gW9pu1SFk9LJY7I2q%252BFsG07UBw%253D%253D",
+        "title": "sign.p7s",
+        "documentOf": "tender",
+        "datePublished": "2020-02-06T10:08:15.314356+02:00",
+        "dateModified": "2020-02-06T10:08:14.954853+02:00",
+        "id": "53ecbccde5ec41b69f1438af1c8ba178"
+      },
+      {
+        "hash": "md5:146e9d906a8cbd558f110ae2114a1b2e",
+        "confidentiality": "public",
+        "language": "uk",
+        "format": "application/pkcs7-signature",
+        "url": "/test-data/TenderOffer/3/bids/1/sign.p7s",
+        "title": "sign.p7s",
+        "documentOf": "tender",
+        "datePublished": "2020-02-06T10:25:52.107794+02:00",
+        "dateModified": "2020-02-06T10:25:51.829975+02:00",
+        "id": "53ecbccde5ec41b69f1438af1c8ba178"
+      }
+    ],
+    "tenderers": [
+      {
+        "scale": "mid",
+        "contactPoint": {
+          "telephone": "+380674630273",
+          "name": "ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ \"ЕСКО ЮА\"",
+          "email": "escouatender@ukr.net"
+        },
+        "identifier": {
+          "scheme": "UA-EDR",
+          "id": "41543652",
+          "legalName": "ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ \"ЕСКО ЮА\""
+        },
+        "name": "ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ \"ЕСКО ЮА\"",
+        "address": {
+          "postalCode": "",
+          "countryName": "Україна",
+          "streetAddress": "03191, м.Київ, ВУЛИЦЯ ЛОМОНОСОВА, будинок 56, квартира 52",
+          "region": "",
+          "locality": ""
+        }
+      }
+    ],
+    "date": "2020-02-04T11:44:10.651974+02:00",
+    "id": "a27546e4bf744488a39b2b04e7a231c5"
+  }
+}
