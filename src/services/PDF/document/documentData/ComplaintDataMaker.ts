@@ -1,6 +1,6 @@
+import type { SignerType } from "@prozorro/prozorro-eds";
 import { AbstractDocumentStrategy } from "@/services/PDF/document/AbstractDocumentStrategy";
 import { ANNOUNCEMENT_PAGE_MARGIN } from "@/config/pdf/announcementConstants";
-import type { SignerType } from "types/sign/SignerType";
 import { PDF_FILED_KEYS } from "@/constants/pdf/pdfFieldKeys";
 import { COMPLAINT_TEXTS_LISTS } from "@/config/pdf/texts/COMPLAINT";
 import { ROW_WIDTH_110, ROW_WIDTH_200 } from "@/constants/pdf/pdfHelperConstants";

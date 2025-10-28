@@ -20,43 +20,30 @@ export class DictionaryHelper {
     }
     const mapDict = new Map(Object.entries(procurementMethodTypeDictionary));
     const methodTypeTranslated = mapDict.get(type).name;
-    return this.strategy.showWithDefault(
-      methodTypeTranslated,
-      title,
-      methodTypeTranslated !== undefined
-    );
+    return this.strategy.showWithDefault(methodTypeTranslated, title, methodTypeTranslated !== undefined);
   }
 
   public getClassificationField(
     classification: Record<string, any>,
     classifierDictionary: Record<string, any> | undefined
   ): string {
-    if (
-      classifierDictionary === undefined ||
-      this.strategy.emptyChecker.isEmptyObject(classification)
-    ) {
+    if (classifierDictionary === undefined || this.strategy.emptyChecker.isEmptyObject(classification)) {
       return STRING.DASH;
     }
+
     const { id, scheme: classificationType } = classification;
+
     if (
       this.strategy.emptyChecker.isEmptyString(classificationType) ||
-      (classificationType !== CLASSIFICATION_CONSTANTS.CPV &&
-        classificationType !== CLASSIFICATION_CONSTANTS.DK021)
+      (classificationType !== CLASSIFICATION_CONSTANTS.CPV && classificationType !== CLASSIFICATION_CONSTANTS.DK021)
     ) {
       return STRING.DASH;
     }
-    let description = this.strategy.getField(
-      classification,
-      "description",
-      STRING.EMPTY
-    );
-    if (
-      this.strategy.emptyChecker.isEmptyString(description) &&
-      !this.strategy.emptyChecker.isEmptyString(id)
-    ) {
-      description = classifierDictionary.hasOwnProperty(`${id}`)
-        ? classifierDictionary[id]
-        : STRING.DASH;
+
+    let description = this.strategy.getField(classification, "description", STRING.EMPTY);
+
+    if (this.strategy.emptyChecker.isEmptyString(description) && !this.strategy.emptyChecker.isEmptyString(id)) {
+      description = classifierDictionary.hasOwnProperty(`${id}`) ? classifierDictionary[id] : STRING.DASH;
     }
 
     return `${ANNOUNCEMENT_TEXTS_LIST.dk_2015} ${id} ${STRING.DASH} ${description}`;

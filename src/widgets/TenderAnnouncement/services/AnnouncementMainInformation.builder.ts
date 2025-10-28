@@ -193,7 +193,7 @@ export class AnnouncementMainInformationBuilder implements IAnnouncementMainInfo
     if (classifiedId) {
       this._addRow(
         ANNOUNCEMENT_TEXTS_LIST.purchase_dictionary_code,
-        `${ANNOUNCEMENT_TEXTS_LIST.dk_2015}:${classifiedKey}: ${classifiedId}`
+        `${ANNOUNCEMENT_TEXTS_LIST.dk_2015}: ${classifiedKey} - ${classifiedId}`
       );
     }
 

@@ -1,11 +1,10 @@
+import type { SignerType } from "@prozorro/prozorro-eds";
 import { PDF_FILED_KEYS } from "@/constants/pdf/pdfFieldKeys";
 import * as PDF_HELPER_CONST from "@/constants/pdf/pdfHelperConstants";
 import { MILESTONE_EVENT } from "@/widgets/TenderAnnouncement/constants/milestone";
 import { PAYMENT_TYPE } from "@/widgets/TenderAnnouncement/constants/paymentType";
 import { DURATION_TYPE } from "@/widgets/TenderAnnouncement/constants/durationType";
 import { AbstractDocumentStrategy } from "@/services/PDF/document/AbstractDocumentStrategy";
-import { additionalClassifications } from "@/widgets/TenderAnnouncement/constants/additionalClassifications";
-import type { SignerType } from "types/sign/SignerType";
 import { ANNOUNCEMENT_PAGE_MARGIN } from "@/config/pdf/announcementConstants";
 import { DateHandler } from "@/utils/DateHandler";
 import { ANNOUNCEMENT_TEXTS_LIST } from "@/config/pdf/texts/ANNOUNCEMENT";
@@ -17,17 +16,14 @@ import { CriterionValues } from "@/constants/tender/criterion.enum";
 import { AnnouncementMainInformationBuilder } from "./services/AnnouncementMainInformation.builder";
 import { ESCO_TYPE } from "@/constants/string";
 import type { PdfDocumentConfigType } from "@/types/pdf/PdfDocumentConfigType";
-import type {
-  AnnouncementItem,
-  AnnouncementItemAdditionalClassification,
-  Milestone,
-} from "@/types/Announcement/AnnouncementTypes";
+import type { AnnouncementItem, Milestone } from "@/types/Announcement/AnnouncementTypes";
 import {
   closeFrame,
   noAuction,
   noSecurement,
   procurementMethodTypes,
 } from "@/widgets/TenderAnnouncement/constants/conditions";
+import { ClassificationHandler } from "@/utils/ClassificationHandler.ts";
 
 const nbuRateConverter = 100;
 
@@ -79,12 +75,14 @@ export class AnnouncementDataMaker extends AbstractDocumentStrategy {
     dictionaries: Map<string, Record<string, any>>
   ): Record<string, any>[] {
     const isEsco = procurementMethodType === ESCO_TYPE;
+    const hasMilestones = Array.isArray(milestones) && milestones?.length;
 
     return [
       isEsco
         ? this.createEscoItemTable(items, minimalStepPercentage, yearlyPaymentsPercentageRange, fundingKind)
         : this.createItemTable(items),
-      Array.isArray(milestones)
+
+      hasMilestones
         ? PDFTablesHandler.createTableLayout([
             PDFTablesHandler.createTableRow({
               head: ANNOUNCEMENT_TEXTS_LIST.contract_terms,
@@ -93,7 +91,7 @@ export class AnnouncementDataMaker extends AbstractDocumentStrategy {
           ])
         : PDF_HELPER_CONST.EMPTY_FIELD,
 
-      this.createPaymentTable(milestones),
+      hasMilestones ? this.createPaymentTable(milestones) : PDF_HELPER_CONST.EMPTY_FIELD,
 
       this.showIfAvailable(this.getField(plans, "[0].id"), ANNOUNCEMENT_TEXTS_LIST.plans, Array.isArray(plans)),
       this.showIfAvailable(
@@ -165,9 +163,14 @@ export class AnnouncementDataMaker extends AbstractDocumentStrategy {
   }
 
   private createItemTable(items: Array<AnnouncementItem>): Record<string, any> {
-    if (!Array.isArray(items)) {
+    const hasItems = Array.isArray(items) && items?.length;
+
+    if (!hasItems) {
       return PDF_HELPER_CONST.EMPTY_FIELD;
     }
+
+    console.log("items", items);
+
     const header = [
       {
         text: ANNOUNCEMENT_TEXTS_LIST.procuring_entity_name,
@@ -190,34 +193,31 @@ export class AnnouncementDataMaker extends AbstractDocumentStrategy {
         style: PDF_FILED_KEYS.TABLE_HEAD,
       },
     ];
+
     const body: { text: string }[][] = [];
+
     body.push(header);
-    items.forEach(item =>
+
+    items.forEach(item => {
       body.push([
+        { text: this.getField(item, "description") },
         {
-          text: this.getField(item, "description"),
+          text: ClassificationHandler.format(item.classification, item.additionalClassifications).join("\n"),
         },
-        {
-          text: this.getField(item, "classification")
-            ? `${ANNOUNCEMENT_TEXTS_LIST.dk_2015} ${this.getField(item, "classification.id")}-${this.getField(item, "classification.description")} ${this.getItemAdditionalClassification(this.getField(item, "additionalClassifications") || [])}`
-            : `${ANNOUNCEMENT_TEXTS_LIST.dk_not_set} ${this.getItemAdditionalClassification(this.getField(item, "additionalClassifications") || [])}`,
-        },
-        {
-          text: `${this.getField(item, "quantity")} ${this.getField(item, "unit.name")}`,
-        },
-        {
-          text: StringHandler.customerLocation(this.getField(item, "deliveryAddress")),
-        },
+        { text: `${this.getField(item, "quantity")} ${this.getField(item, "unit.name")}` },
+        { text: StringHandler.customerLocation(this.getField(item, "deliveryAddress")) },
         {
           text:
             (this.getField(item, "deliveryDate.startDate")
               ? `від ${this.getDecisionDatePublished(this.getField(item, "deliveryDate.startDate"), false, true)}`
               : "") + `до ${this.getDecisionDatePublished(this.getField(item, "deliveryDate.endDate"), false, true)}`,
         },
-      ])
-    );
+      ]);
+    });
+
     return {
       headerRows: 1,
+      alignment: "left",
       table: {
         dontBreakRows: true,
         widths: [
@@ -290,9 +290,7 @@ export class AnnouncementDataMaker extends AbstractDocumentStrategy {
           style: PDF_FILED_KEYS.TABLE_DATA_ESCO,
         },
         {
-          text: this.getField(item, "classification")
-            ? `${ANNOUNCEMENT_TEXTS_LIST.dk_2015} ${this.getField(item, "classification.id")}-${this.getField(item, "classification.description")} ${this.getItemAdditionalClassification(this.getField(item, "additionalClassifications") || [])}`
-            : `${ANNOUNCEMENT_TEXTS_LIST.dk_not_set} ${this.getItemAdditionalClassification(this.getField(item, "additionalClassifications") || [])}`,
+          text: ClassificationHandler.format(item.classification, item.additionalClassifications).join("\n"),
           style: PDF_FILED_KEYS.TABLE_DATA_ESCO,
         },
         {
@@ -335,9 +333,6 @@ export class AnnouncementDataMaker extends AbstractDocumentStrategy {
   }
 
   private createPaymentTable(milestones: Array<Milestone>): Record<string, any> {
-    if (!Array.isArray(milestones)) {
-      return PDF_HELPER_CONST.EMPTY_FIELD;
-    }
     const header = [
       {
         text: ANNOUNCEMENT_TEXTS_LIST.contract_terms_event,
@@ -364,8 +359,10 @@ export class AnnouncementDataMaker extends AbstractDocumentStrategy {
         style: PDF_FILED_KEYS.TABLE_HEAD,
       },
     ];
+
     const body: { text: string }[][] = [];
     body.push(header);
+
     milestones.forEach((milestone: Record<string, any>) =>
       body.push([
         {
@@ -401,26 +398,6 @@ export class AnnouncementDataMaker extends AbstractDocumentStrategy {
         body,
       },
     };
-  }
-
-  private getItemAdditionalClassification(classifications: AnnouncementItemAdditionalClassification[]): string {
-    if (!Array.isArray(classifications)) {
-      return "";
-    }
-
-    let res = "";
-    const classificationATC = classifications.filter(item => item.scheme === "ATC");
-    const classificationINN = classifications.filter(item => item.scheme === "INN");
-
-    if (classificationATC || classificationINN) {
-      res = `${this.getField(classificationINN[0], "title")} ${this.getField(classificationATC[0], "title")}`;
-    } else {
-      const resClassifications = classifications.filter(item => item.scheme && item.id && item.id !== "000");
-      resClassifications.map(
-        item => (res = `${res} ${this.getField(additionalClassifications, item.scheme)} ${item.id}-${item.description}`)
-      );
-    }
-    return res;
   }
 
   private getTenderPeriod(
