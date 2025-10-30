@@ -169,8 +169,6 @@ export class AnnouncementDataMaker extends AbstractDocumentStrategy {
       return PDF_HELPER_CONST.EMPTY_FIELD;
     }
 
-    console.log("items", items);
-
     const header = [
       {
         text: ANNOUNCEMENT_TEXTS_LIST.procuring_entity_name,
