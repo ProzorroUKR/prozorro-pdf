@@ -20,29 +20,32 @@ import { DictionaryCollector } from "@/services/DictionaryCollector/DictionaryCo
 import { SIGN_TO_DOC_FRAME_ID, STRING } from "@/constants/string";
 import { PROZORRO_TEMPLATE_CODES } from "@/widgets/pq/types/TemplateCodes.enum";
 import { PROZORRO_PDF_ERROR_CODES } from "@/widgets/ErrorExceptionCore/constants/ERROR_CODES.enum";
-import type { EnvironmentModeType } from "@/types/pdf/EnvironmentModeType";
 import type { EnvironmentType } from "@/types/pdf/EnvironmentType";
+import { ENVIRONMENT_MODE } from "@/constants/ENVIRONMENT_MODE.enum";
+import { edsModeMap } from "@/config/edsModeMap";
 
 export interface IProzorroPdf {
+  MODE: typeof ENVIRONMENT_MODE;
   TYPES: typeof PROZORRO_PDF_TYPES;
   TEMPLATES: typeof PROZORRO_TEMPLATE_CODES;
-  init(environment?: EnvironmentModeType): Promise<void>;
+  init(environment?: ENVIRONMENT_MODE): Promise<void>;
   setConfig(config: PdfConfigType): Promise<void | ErrorExceptionCore>;
   open(config: PdfDocumentConfigType): Promise<void | ErrorExceptionCore>;
   getIframe(config: PdfDocumentConfigType): Promise<void | ErrorExceptionCore>;
-  save(config: PdfDocumentConfigType): Promise<void | ErrorExceptionCore>;
+  save(config: PdfDocumentConfigType, fileName?: string): Promise<void | ErrorExceptionCore>;
 }
 
 export class ProzorroPdf implements IProzorroPdf {
+  readonly MODE = ENVIRONMENT_MODE;
   readonly TYPES = PROZORRO_PDF_TYPES;
   readonly TEMPLATES = PROZORRO_TEMPLATE_CODES;
-  private readonly dataTypeValidator = new DataTypeValidator();
+
   private object?: PdfObjectType;
   private documentType = PROZORRO_PDF_TYPES.TICKET;
-  private envVars: EnvironmentType = ENV_CONFIG.development;
+  private envVars: EnvironmentType = ENV_CONFIG.SANDBOX;
 
-  async init(environment: EnvironmentModeType = "development"): Promise<void> {
-    await ProzorroEds.init({ environment });
+  async init(environment: ENVIRONMENT_MODE = ENVIRONMENT_MODE.SANDBOX): Promise<void> {
+    await ProzorroEds.init({ environment: edsModeMap.get(environment) });
     this.envVars = ENV_CONFIG[environment];
     pdfMake.fonts = FONTS_CONFIG;
   }
@@ -50,12 +53,13 @@ export class ProzorroPdf implements IProzorroPdf {
   async setConfig({ url, type }: PdfConfigType): Promise<void | ErrorExceptionCore> {
     try {
       this.documentType = type;
+      const dataTypeValidator = new DataTypeValidator();
 
       if (type === PROZORRO_PDF_TYPES.PQ && url === STRING.EMPTY) {
         return;
       }
 
-      this.dataTypeValidator.validate(url, ValidationTypes.STRING, ERROR_MESSAGES.INVALID_PARAMS.undefinedUrl);
+      dataTypeValidator.validate(url, ValidationTypes.STRING, ERROR_MESSAGES.INVALID_PARAMS.undefinedUrl);
 
       const {
         data: { data: payload },
@@ -81,11 +85,11 @@ export class ProzorroPdf implements IProzorroPdf {
     }
   }
 
-  async save(config: PdfDocumentConfigType): Promise<void | ErrorExceptionCore> {
+  async save(config: PdfDocumentConfigType, fileName?: string): Promise<void | ErrorExceptionCore> {
     const { data, title } = await this.create(config);
 
     try {
-      (pdfMake as Pdfmake).createPdf(data).download(`${title}.pdf`);
+      (pdfMake as Pdfmake).createPdf(data).download(`${fileName || title}.pdf`);
     } catch (error) {
       throw new ErrorExceptionCore({
         originalError: error,

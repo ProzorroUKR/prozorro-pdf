@@ -11,15 +11,10 @@ export class UnitHelper {
 
   // 483500 -> 483 500,00
   static currencyFormatting(currency: string | number): string {
-    const [full = STRING.EMPTY, decimal = STRING.EMPTY] = currency
-      .toString()
-      .split(STRING.DOT);
+    const [full = STRING.EMPTY, decimal = STRING.EMPTY] = currency.toString().split(STRING.DOT);
     const decimal_part = UnitHelper.coinsFormatting(decimal);
 
-    return [
-      full.replace(/\B(?=(\d{3})+(?!\d))/g, STRING.WHITESPACE),
-      decimal_part,
-    ].join(STRING.COMMA);
+    return [full.replace(/\B(?=(\d{3})+(?!\d))/g, STRING.WHITESPACE), decimal_part].join(STRING.COMMA);
   }
 
   static coinsFormatting(decimal: string): string {
@@ -35,15 +30,8 @@ export class UnitHelper {
     }
   }
 
-  public prepareUnitName(
-    item: AnnouncementItem,
-    recommendedDictionary: Record<string, any> | undefined
-  ): string {
-    if (
-      !this.strategy.emptyChecker.isEmptyString(
-        this.strategy.getField(item, "unit.name")
-      )
-    ) {
+  public prepareUnitName(item: AnnouncementItem, recommendedDictionary: Record<string, any> | undefined): string {
+    if (!this.strategy.emptyChecker.isEmptyString(this.strategy.getField(item, "unit.name"))) {
       return this.strategy.getField(item, "unit.name");
     }
     if (recommendedDictionary === undefined) {
@@ -54,8 +42,6 @@ export class UnitHelper {
       `${this.strategy.getField(item, "unit.code", "")}.name`,
       ""
     );
-    return this.strategy.emptyChecker.isEmptyString(unitDictionaryName)
-      ? STRING.DASH
-      : unitDictionaryName;
+    return this.strategy.emptyChecker.isEmptyString(unitDictionaryName) ? STRING.DASH : unitDictionaryName;
   }
 }

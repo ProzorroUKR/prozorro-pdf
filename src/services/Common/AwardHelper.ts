@@ -23,10 +23,7 @@ export class AwardHelper {
         : this.strategy.showWithDefault(STRING.DASH, mainText);
     }
 
-    let currency: string | undefined = this.strategy.getField(
-      currencyBlock,
-      "amountPerformance"
-    );
+    let currency: string | undefined = this.strategy.getField(currencyBlock, "amountPerformance");
     if (!currency) {
       return !showDefaultIfNotAvailable
         ? this.strategy.showIfAvailable("", "", false)
@@ -34,10 +31,7 @@ export class AwardHelper {
     }
     currency = UnitHelper.currencyFormatting(currency);
     let text = `${currency} ${this.strategy.getField(currencyBlock, "currency")}`;
-    const hasTax = this.strategy.getField(
-      currencyBlock,
-      "valueAddedTaxIncluded"
-    );
+    const hasTax = this.strategy.getField(currencyBlock, "valueAddedTaxIncluded");
     if (text.length && true === hasTax) {
       text += ` ${withTaxText}`;
     }
@@ -46,33 +40,17 @@ export class AwardHelper {
       : this.strategy.showWithDefault(text, mainText);
   }
 
-  public showAwardWithTax(
-    award: AwardType,
-    fieldName: string,
-    withTaxText: string
-  ): string {
-    const realFieldName =
-      fieldName === "amountPerformance" || fieldName === "value"
-        ? "value"
-        : `${fieldName}`;
-    const amountSelector =
-      fieldName !== "amountPerformance"
-        ? `${fieldName}.amount`
-        : "value.amountPerformance";
+  public showAwardWithTax(award: AwardType, fieldName: string, withTaxText: string): string {
+    const realFieldName = fieldName === "amountPerformance" || fieldName === "value" ? "value" : `${fieldName}`;
+    const amountSelector = fieldName !== "amountPerformance" ? `${fieldName}.amount` : "value.amountPerformance";
     const currencySelector = `${realFieldName}.currency`;
-    let amountValue: string | undefined = this.strategy.getField(
-      award,
-      amountSelector
-    );
+    let amountValue: string | undefined = this.strategy.getField(award, amountSelector);
     if (!amountValue) {
       return STRING.EMPTY;
     }
     amountValue = UnitHelper.currencyFormatting(amountValue);
     let text = `${amountValue} ${this.strategy.getField(award, currencySelector)}`;
-    const hasTax = this.strategy.getField(
-      award,
-      `${realFieldName}.valueAddedTaxIncluded`
-    );
+    const hasTax = this.strategy.getField(award, `${realFieldName}.valueAddedTaxIncluded`);
     if (true === hasTax) {
       text += ` ${withTaxText}`;
     }

@@ -15,27 +15,15 @@ export type FormatConfig = {
 
 export class ContactPointFormatter {
   public static contactPointParts = new Map<string, string[]>()
-    .set(CONTRACT_POINT_TYPE.NTFEU, [
-      "name",
-      "telephone",
-      "faxNumber",
-      "email",
-      "url",
-    ])
+    .set(CONTRACT_POINT_TYPE.NTFEU, ["name", "telephone", "faxNumber", "email", "url"])
     .set(CONTRACT_POINT_TYPE.NTE, ["name", "telephone", "email"])
     .set(CONTRACT_POINT_TYPE.ETE, ["name_en", "telephone", "email"]);
 
-  public static format(
-    contactPoint: ContactPointType,
-    { separator, type }: FormatConfig
-  ): string {
+  public static format(contactPoint: ContactPointType, { separator, type }: FormatConfig): string {
     const parts = this.contactPointParts.get(type) || [];
 
     return parts.reduce((result, item): string => {
-      const value = DocumentExtractionService.getField<string>(
-        contactPoint,
-        item
-      );
+      const value = DocumentExtractionService.getField<string>(contactPoint, item);
 
       if (result && value) {
         return `${result}${separator} ${value}`;

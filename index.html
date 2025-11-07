@@ -53,6 +53,37 @@
     <div class="container-fluid my-3">
       <div class="row" id="layoutRow">
         <div class="col col-12 col-xl-6">
+
+          <div class="card m-3">
+            <div class="card-body">
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="environment-label">Environment</span>
+
+                <select
+                  class="form-select form-control"
+                  aria-label="Env select"
+                  id="environment"
+                  aria-describedby="environment-label"
+                >
+                  <option value="SANDBOX">SANDBOX</option>
+                  <option value="STAGING">STAGING</option>
+                </select>
+              </div>
+
+              <div class="input-group">
+                <span class="input-group-text" id="filename-label">Filename <sup class="text-primary">optional</sup></span>
+
+                <input
+                  type="text"
+                  class="form-control"
+                  id="filename"
+                  aria-describedby="filename-label"
+                  placeholder="Enter filename"
+                >
+              </div>
+            </div>
+          </div>
+
           <div class="accordion p-3" id="accordionList"></div>
         </div>
 
@@ -130,6 +161,7 @@
 
     <script>
       const STORAGE_ACTIVE_ACCORDION_KEY = "ACTIVE_ACCORDION";
+      const STORAGE_ENV_KEY = "PDF_ENV";
 
       customElements.define("app-card", class extends HTMLElement {
         connectedCallback() {
@@ -205,7 +237,9 @@
       });
 
       window.onload = async () => {
-        await window.signToDoc.init("development");
+        const mode = localStorage.getItem(STORAGE_ENV_KEY) || window.signToDoc.MODE.SANDBOX;
+        await window.signToDoc.init(mode);
+        document.getElementById("environment").value = mode;
 
         /**
          * @typedef {Object} AppCardField
@@ -353,7 +387,7 @@
             fields: [
               {
                 key: "url",
-                label: "Tender URL",
+                label: "Tender / Contract URL",
                 defaultValue: "/test-data/pq/generic.json",
               },
               {
@@ -658,7 +692,12 @@
           element.addEventListener("click", ({ target }) => {
             localStorage.setItem(STORAGE_ACTIVE_ACCORDION_KEY, target.closest("app-card").getAttribute("type"))
           });
-        })
+        });
+
+        document.getElementById("environment").addEventListener("change", async ({ target: { value } }) => {
+          localStorage.setItem(STORAGE_ENV_KEY, value);
+          await window.signToDoc.init(value);
+        });
       }
 
       /**
@@ -697,18 +736,20 @@
       }
 
       const downloadPdfFile = async ({ url, title, type, date, contractTemplateName, tender }) => {
-          await window.signToDoc.setConfig({url, type});
-          await window.signToDoc.save({title, date, contractTemplateName, tender});
+        const filename = document.getElementById("filename").value;
+
+        await window.signToDoc.setConfig({url, type});
+        await window.signToDoc.save({title, date, contractTemplateName, tender}, filename);
       }
 
       const openInNewWindowPdfFile = async ({ url, title, type, date, contractTemplateName, tender }) => {
-          await window.signToDoc.setConfig({url, type});
-          await window.signToDoc.open({title, date, contractTemplateName, tender});
+        await window.signToDoc.setConfig({url, type});
+        await window.signToDoc.open({title, date, contractTemplateName, tender});
       }
 
       const openInFramePdfFile = async ({ url, title, type, date, contractTemplateName, tender }) => {
-          await window.signToDoc.setConfig({url, type});
-          await window.signToDoc.getIframe({title, date, contractTemplateName, tender});
+        await window.signToDoc.setConfig({url, type});
+        await window.signToDoc.getIframe({title, date, contractTemplateName, tender});
       }
     </script>
   </body>

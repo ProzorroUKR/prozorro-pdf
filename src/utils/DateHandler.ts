@@ -13,56 +13,41 @@ export class DateHandler {
     if (period) {
       if (period.indexOf("Y") > 0) {
         timeStr +=
-          this.timeToStr(
-            Number(period.slice(lastIndex, period.indexOf("Y"))),
-            TIME_NAMES.Years
-          ) + STRING.WHITESPACE;
+          this.timeToStr(Number(period.slice(lastIndex, period.indexOf("Y"))), TIME_NAMES.Years) + STRING.WHITESPACE;
         lastIndex = period.indexOf("Y") + 1;
       }
 
       if (period.indexOf("M") > 0) {
         timeStr +=
-          this.timeToStr(
-            Number(period.slice(lastIndex, period.indexOf("M"))),
-            TIME_NAMES.Months
-          ) + STRING.WHITESPACE;
+          this.timeToStr(Number(period.slice(lastIndex, period.indexOf("M"))), TIME_NAMES.Months) + STRING.WHITESPACE;
         lastIndex = period.indexOf("M") + 1;
       }
 
       if (period.indexOf("D") > 0) {
         timeStr +=
-          this.timeToStr(
-            Number(period.slice(lastIndex, period.indexOf("D"))),
-            TIME_NAMES.Days
-          ) + STRING.WHITESPACE;
+          this.timeToStr(Number(period.slice(lastIndex, period.indexOf("D"))), TIME_NAMES.Days) + STRING.WHITESPACE;
       }
     }
     if (timeStamp) {
       lastIndex = 0;
       if (timeStamp.indexOf("H") > 0) {
         timeStr +=
-          this.timeToStr(
-            Number(timeStamp.slice(lastIndex, timeStamp.indexOf("H"))),
-            TIME_NAMES.Hours
-          ) + STRING.WHITESPACE;
+          this.timeToStr(Number(timeStamp.slice(lastIndex, timeStamp.indexOf("H"))), TIME_NAMES.Hours) +
+          STRING.WHITESPACE;
         lastIndex = timeStamp.indexOf("H") + 1;
       }
 
       if (timeStamp.indexOf("I") > 0) {
         timeStr +=
-          this.timeToStr(
-            Number(timeStamp.slice(lastIndex, timeStamp.indexOf("I"))),
-            TIME_NAMES.Minutes
-          ) + STRING.WHITESPACE;
+          this.timeToStr(Number(timeStamp.slice(lastIndex, timeStamp.indexOf("I"))), TIME_NAMES.Minutes) +
+          STRING.WHITESPACE;
         lastIndex = timeStamp.indexOf("I") + 1;
       }
 
       if (timeStamp.indexOf("S") > 0) {
         timeStr +=
-          this.timeToStr(
-            Number(timeStamp.slice(lastIndex, timeStamp.indexOf("S"))),
-            TIME_NAMES.Seconds
-          ) + STRING.WHITESPACE;
+          this.timeToStr(Number(timeStamp.slice(lastIndex, timeStamp.indexOf("S"))), TIME_NAMES.Seconds) +
+          STRING.WHITESPACE;
       }
     }
     return timeStr;
@@ -103,10 +88,7 @@ export class DateHandler {
     });
   }
 
-  static deliveryDateDiff(
-    { startDate, endDate }: ContractPeriod,
-    defaultValue = ""
-  ): string {
+  static deliveryDateDiff({ startDate, endDate }: ContractPeriod, defaultValue = ""): string {
     const start = new Date(startDate);
     const end = new Date(endDate);
 
@@ -118,15 +100,10 @@ export class DateHandler {
     const daysOfSigning = 1; // additional, to include calendar days of contract signing to this Diff
     const dateDiffResult = Math.round(differenceBtwDates / aDayInMs);
 
-    return dateDiffResult >= 0
-      ? String(dateDiffResult + daysOfSigning)
-      : defaultValue;
+    return dateDiffResult >= 0 ? String(dateDiffResult + daysOfSigning) : defaultValue;
   }
 
-  static dateModifiedDiff(
-    a: { dateModified?: string },
-    b: { dateModified?: string }
-  ): number {
+  static dateModifiedDiff(a: { dateModified?: string }, b: { dateModified?: string }): number {
     const dateA = new Date(a.dateModified || STRING.EMPTY);
     const dateB = new Date(b.dateModified || STRING.EMPTY);
 
