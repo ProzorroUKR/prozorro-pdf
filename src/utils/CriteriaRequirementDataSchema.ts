@@ -3,9 +3,7 @@ import type { DataSchemaType } from "@/types/TenderOffer/Tender";
 import { dataSchemaToDictionaryMap } from "@/widgets/TenderOffer/constants/dataSchemaToDictionaryMap";
 
 export class CriteriaRequirementDataSchema {
-  constructor(
-    private readonly dictionaries: Map<string, Record<string, any>>
-  ) {}
+  constructor(private readonly dictionaries: Map<string, Record<string, any>>) {}
 
   /**
    * translate values related to dataSchema
@@ -20,11 +18,8 @@ export class CriteriaRequirementDataSchema {
     return values.map(value => dictionary[value]?.name || value);
   }
 
-  private _getDictionary(
-    dataSchema?: DataSchemaType
-  ): Record<string, { name: string }> | undefined {
-    const dictionaryKey =
-      dataSchemaToDictionaryMap.get(dataSchema) || STRING.EMPTY;
+  private _getDictionary(dataSchema?: DataSchemaType): Record<string, { name: string }> | undefined {
+    const dictionaryKey = dataSchemaToDictionaryMap.get(dataSchema) || STRING.EMPTY;
     return this.dictionaries.get(dictionaryKey);
   }
 }

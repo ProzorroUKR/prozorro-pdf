@@ -10,16 +10,8 @@ export class DeliveryHelper {
   }
 
   public prepareDeliveryDate(item: Record<string, any>): string {
-    const startDateRawField = this.strategy.getField(
-      item,
-      "deliveryDate.startDate",
-      ""
-    );
-    const endDateRawField = this.strategy.getField(
-      item,
-      "deliveryDate.endDate",
-      ""
-    );
+    const startDateRawField = this.strategy.getField(item, "deliveryDate.startDate", "");
+    const endDateRawField = this.strategy.getField(item, "deliveryDate.endDate", "");
     if (
       this.strategy.emptyChecker.isEmptyString(startDateRawField) &&
       this.strategy.emptyChecker.isEmptyString(endDateRawField)
@@ -37,12 +29,8 @@ export class DeliveryHelper {
       ? `${endDateRaw.getDate()} ${MONTHS_LIST[endDateRaw.getMonth()]} ${endDateRaw.getFullYear()}`
       : "";
 
-    startDate = this.strategy.emptyChecker.isNotEmptyString(startDate)
-      ? `з ${startDate}`
-      : "";
-    endDate = this.strategy.emptyChecker.isNotEmptyString(endDate)
-      ? `до ${endDate}`
-      : "";
+    startDate = this.strategy.emptyChecker.isNotEmptyString(startDate) ? `з ${startDate}` : "";
+    endDate = this.strategy.emptyChecker.isNotEmptyString(endDate) ? `до ${endDate}` : "";
 
     return `${startDate} ${endDate}`;
   }

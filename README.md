@@ -39,6 +39,7 @@ yarn add @prozorro/prozorro-pdf
 import { onMounted, ref } from "vue";
 import { useRoute } from "vue-router";
 import {
+  ENVIRONMENT_MODE,
   PROZORRO_PDF_TYPES,
   ProzorroPdfService,
   IPrzorroPdfErrorExceptionCore,
@@ -52,7 +53,7 @@ onMounted(async () => {
   const { params: { type }, query: { dateModified, url, tenderUrl, contractTemplateName, title } } = route;
 
   try {
-    ProzorroPdfService.init("development");
+    ProzorroPdfService.init(ENVIRONMENT_MODE.SANDBOX);
 
     await ProzorroPdfService.setConfig({
       type: type as PROZORRO_PDF_TYPES,
@@ -83,10 +84,10 @@ onMounted(async () => {
 
 ## API
 
-### `init(environment: EnvironmentModeType): void`
+### `init(environment: ENVIRONMENT_MODE): void`
 Ініціалізація та початок роботи з бібліотекою.  
 Аргументи:
-- `environment: EnvironmentModeType` — тип середовища "production" або "development"
+- `environment: ENVIRONMENT_MODE` — тип середовища "SANDBOX", "STAGING" або "PRODUCTION"
 
 ---
 
@@ -98,13 +99,14 @@ onMounted(async () => {
 
 ---
 
-### `open({ title, date?, contractTemplateName?, tender? }): Promise<void>`
+### `open({ title, date?, contractTemplateName?, tender? }, fileName?: string): Promise<void>`
 Відкриття документа у **новій вкладці браузера**.  
 Аргументи:
-- `title: string` — назва файлу (наприклад, `"sign.p7s"`);
+- `title: string` — назва файлу в об'єкті документу (наприклад, `"sign.p7s"`);
 - `date?: string` — дата модифікації документа;
 - `contractTemplateName?: string` — назва шаблону контракту;
-- `tender?: string` — посилання на об’єкт тендеру.
+- `tender?: string` — посилання на об’єкт тендеру;
+- `fileName?: string` — назва завантажувального файлу.
 
 ---
 
@@ -123,12 +125,12 @@ onMounted(async () => {
 ## Типи документів
 
 | Type                                     | Title                                                   | Description                                                                                                                                                                                                                                                                                               | Fields                                                                                                                                          |
-| ---------------------------------------- | ------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| ---------------------------------------- | ------------------------------------------------------- |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| ----------------------------------------------------------------------------------------------------------------------------------------------- |
 | `TICKET`                                 | Запит до ДПС / Довідка ДПС                              | Get all sign files from `tender.awards[N].documents`.<br>File title must have extensions `*.XML.p7s` or `*.KVT.p7s`.<br>Optional validation by `document.dateModified`.                                                                                                                                   | • **url** – Tender URL *(required, string)*<br>• **title** – Document title *(required, string)*<br>• **date** – Date modified *(date)*         |
 | `CONCLUSION`                             | Висновок про результати моніторингу                     | Get all sign files from `monitoring.conclusion[N].documents`.<br>File title must have extension `*.p7s`.<br>Optional validation by `document.dateModified`.<br>If not set → take last document.                                                                                                           | • **url** – Monitoring URL *(required, string)*<br>• **title** – Document title *(required, string)*<br>• **date** – Date modified *(date)*     |
 | `NAZK`                                   | Довідка НАЗК                                            | Get all sign files from `award.documents`.<br>File title must have extension `*.p7s`.<br>`document.title` must be `"napc"`.<br>`document.documentType` must be `"register"`.<br>Take last document.                                                                                                       | • **url** – Award URL *(required, string)*                                                                                                      |
 | `ANNOUNCEMENT`                           | Оголошення про проведення закупівлі                     | Get all sign files from `tender.documents`.<br>File title must be `sign.p7s`.<br>Optional validation by `document.dateModified`.<br>If not set → take last document.                                                                                                                                      | • **url** – Tender URL *(required, string)*<br>• **date** – Date modified *(date)*                                                              |
-| `PQ`                                     | Шаблони договорів                                       | 2 options:<br>• Empty contract template – field `Contract template name` must be one of [valid codes](https://github.com/ProzorroUKR/standards/blob/master/templates/contract_templates.json).<br>• Filled contract template – use Tender URL + `Contract template name`.                                 | • **url** – Tender URL *(string)*<br>• **contractTemplateName** – Contract template name *(string)*                                             |
+| `PQ`                                     | Шаблони договорів                                       | 2 options:<br>• Empty contract template – field `Contract template name` must be one of [valid codes](https://github.com/ProzorroUKR/standards/blob/master/templates/contract_templates.json).<br>• Filled contract template – use Tender / Contract URL + `Contract template name`.                      | • **url** – Tender URL *(string)*<br>• **contractTemplateName** – Contract template name *(string)*                                             |
 | `ANNUAL_PROCUREMENT_PLAN`                | еПротокол затвердження річного плану закупівель         | Get all sign files from `plan.documents`.<br>File title must be `sign.p7s`.<br>Optional validation by `document.dateModified`.<br>If not set → take last document.                                                                                                                                        | • **url** – Plan URL *(required, string)*<br>• **date** – Date modified *(date)*                                                                |
 | `TENDER_REJECTION_PROTOCOL`              | еПротокол відхилення пропозиції                         | Get all sign files from `award.documents`.<br>`document.documentType` must be `"notice"`.<br>`award.status` must be `"unsuccessful"` or `"cancelled"`.<br>If `"cancelled"` → `award.eligible` or `award.qualified` must be `false`.<br>Optional validation by `document.dateModified`.                    | • **url** – Award URL *(required, string)*<br>• **date** – Date modified *(date)*                                                               |
 | `DETERMINING_WINNER_OF_PROCUREMENT`      | еПротокол визначення переможця та намір укласти договір | Get all sign files from `award.documents`.<br>`document.documentType` must be `"notice"`.<br>`award.status` must be `"active"` or `"cancelled"`.<br>If `"cancelled"` → `award.qualified` must be `true` and `award.eligible` must be `true/undefined`.<br>Optional validation by `document.dateModified`. | • **url** – Award URL *(required, string)*<br>• **date** – Date modified *(date)*                                                               |
@@ -150,6 +152,10 @@ onMounted(async () => {
 - **27.10.2025**
     - Remove ProzorroEds manual dependency from documentation
     - Fix bugs in the `Announcement` type
+- **28.10.2025**
+  - Added `filename` optional field to `open` method; 
+  - Changed the environment mode to `enum` type and values to: `SANDBOX`, `STAGING`, `PRODUCTION`;
+  - Fix PQ for `SANDBOX` environment;
 
 ---
 
