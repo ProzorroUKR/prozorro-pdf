@@ -1,4 +1,4 @@
-export const pqGenericBase: Record<string, string> = {
+export const pqGenericBase = {
   contractNumber: "ДОГОВІР ПРО ЗАКУПІВЛЮ №",
   fromBuyer: "Замовника: ",
   fromSupplier: "Постачальника: ",

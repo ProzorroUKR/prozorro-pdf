@@ -13,6 +13,7 @@ import { Pharm2Builder } from "@/widgets/pq/templates/pharm2/Pharm2Builder";
 import { Fuel2Builder } from "@/widgets/pq/templates/fuel2/Fuel2Builder";
 import { SoftwareBuilder } from "@/widgets/pq/templates/software/SoftwareBuilder";
 import { Fruit2Builder } from "@/widgets/pq/templates/fruit2/Fruit2Builder";
+import { NushBuilder } from "@/widgets/pq/templates/nush/NushBuilder.ts";
 
 export const TEMPLATE_TO_BUILDER = new Map<string, IPQBuilder>()
   .set(PROZORRO_TEMPLATE_CODES.COMPUTER, new ComputersBuilder())
@@ -27,4 +28,5 @@ export const TEMPLATE_TO_BUILDER = new Map<string, IPQBuilder>()
   .set(PROZORRO_TEMPLATE_CODES.MEDICINE2, new Medicine2Builder())
   .set(PROZORRO_TEMPLATE_CODES.OTHER, new OtherBuilder())
   .set(PROZORRO_TEMPLATE_CODES.PHARM, new PharmBuilder())
-  .set(PROZORRO_TEMPLATE_CODES.PHARM2, new Pharm2Builder());
+  .set(PROZORRO_TEMPLATE_CODES.PHARM2, new Pharm2Builder())
+  .set(PROZORRO_TEMPLATE_CODES.NUSH, new NushBuilder());

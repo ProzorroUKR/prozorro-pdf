@@ -17,6 +17,7 @@ import {
 } from "@/widgets/pq/services/ContractEnsuring/config/PQreqirements";
 import { EnsuringOptionToTextMap } from "@/widgets/pq/services/ContractEnsuring/config/EnsuringOptionToTextMap";
 import { pqBase } from "@/widgets/pq/configs/pqTexts";
+import { pqNushTexts } from "@/widgets/pq/templates/nush/configs/pqNushTexts.ts";
 
 export class CompoundTextAdapter {
   private static readonly _numberSpeller = new NumbersSpeller();
@@ -26,7 +27,7 @@ export class CompoundTextAdapter {
     functionName: string,
     dataObject: Record<any, any>,
     defaults: string,
-    tender?: Record<string, any>
+    tender?: TenderOfferType
   ): string {
     switch (functionName) {
       case FormattingFunctionsEnum.NUMBER_TO_TEXT as string:
@@ -74,12 +75,24 @@ export class CompoundTextAdapter {
        *   Payment details list from tender milestones, iterated with 1), 2), 3) etc.
        */
       case FormattingFunctionsEnum.PAYMENT_DETAILS as string: {
-        const paymentDetailsHandler = new PQpaymentDetails(
-          tender as TenderOfferType,
-          DocumentExtractionService.getField(dataObject, "items", [])
-        );
-
+        const paymentDetailsHandler = new PQpaymentDetails(tender?.milestones || [], dataObject?.items || []);
         return paymentDetailsHandler.createPaymentDetailsBlock();
+      }
+
+      case FormattingFunctionsEnum.GET_FINANCING_MILESTONES as string: {
+        const milestones = tender?.milestones?.filter(({ type }) => type === "financing") || [];
+        return (
+          new PQpaymentDetails(milestones, dataObject?.items || []).createPaymentDetailsBlock() ||
+          pqNushTexts.notSpecified
+        );
+      }
+
+      case FormattingFunctionsEnum.GET_DELIVERY_MILESTONES as string: {
+        const milestones = tender?.milestones?.filter(({ type }) => type === "delivery") || [];
+        return (
+          new PQpaymentDetails(milestones, dataObject?.items || []).createPaymentDetailsBlock() ||
+          pqNushTexts.notSpecified
+        );
       }
 
       case FormattingFunctionsEnum.GET_GUARANTEE_PERIOD as string: {

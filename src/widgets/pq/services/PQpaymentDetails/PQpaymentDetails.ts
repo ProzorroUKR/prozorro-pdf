@@ -1,4 +1,3 @@
-import type { TenderOfferType } from "@/types/TenderOffer/Tender";
 import type { PQItem } from "@/widgets/pq/types/PQTypes";
 import type { PQpaymentDetailsInterface } from "@/widgets/pq/services/PQpaymentDetails/PQpaymentDetailsInterface";
 import { pqGenericPaymentDetails } from "@/widgets/pq/templates/generic/configs/pqGenericTexts";
@@ -12,16 +11,14 @@ import {
 import { NumbersSpeller } from "@/utils/numbersSpeller/NumbersSpeller";
 
 export class PQpaymentDetails implements PQpaymentDetailsInterface {
-  private readonly tender: TenderOfferType;
-  private readonly items: PQItem[];
   private readonly result: string[] = [];
 
-  constructor(tender: TenderOfferType, items: PQItem[]) {
-    this.tender = tender ?? {};
-    this.items = items;
-  }
+  constructor(
+    private readonly milestones: Milestone[],
+    private readonly items: PQItem[]
+  ) {}
 
-  public createPaymentDetailsBlock(): string {
+  createPaymentDetailsBlock(): string {
     const relatedLots = this.getContractRelatedLots();
     const milestones: Milestone[] = this.getRelatedMilestones(relatedLots);
 
@@ -43,11 +40,11 @@ export class PQpaymentDetails implements PQpaymentDetailsInterface {
    */
   private getRelatedMilestones(relatedLots: string[]): Milestone[] {
     const relatedMilestones =
-      this.tender.milestones?.filter(milestone => relatedLots.includes(milestone?.relatedLot || STRING.EMPTY)) || [];
+      this.milestones.filter(milestone => relatedLots.includes(milestone?.relatedLot || STRING.EMPTY)) || [];
 
     return relatedMilestones.length
       ? this.filterMilestonesByType(relatedMilestones)
-      : this.filterMilestonesByType(this.tender.milestones) || [];
+      : this.filterMilestonesByType(this.milestones) || [];
   }
 
   /*

@@ -6,9 +6,8 @@ import { TemplateBuildHelper } from "@/widgets/pq/templates/TemplateBuildHelper"
 export class ComputersBuilder implements IPQBuilder {
   build(
     contractObject: PQContractType | Record<string, never>,
-    contractTemplate: PROZORRO_TEMPLATE_CODES,
-    _tender: any
+    contractTemplate: PROZORRO_TEMPLATE_CODES
   ): Record<string, any>[] {
-    return TemplateBuildHelper.fruitBuilder(contractObject, contractTemplate, _tender);
+    return TemplateBuildHelper.fruitBuilder(contractObject, contractTemplate);
   }
 }

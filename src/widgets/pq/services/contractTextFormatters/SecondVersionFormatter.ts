@@ -1,3 +1,4 @@
+import { get } from "lodash";
 import type { PQContractType, PQItem, PQsupplier } from "@/widgets/pq/types/PQTypes";
 import { DocumentExtractionService } from "@/services/PDF/document/DocumentExtractionService";
 import { PQFormattingService } from "@/widgets/pq/services/Formating/PQFormattingService";
@@ -192,28 +193,33 @@ export class SecondVersionFormatter {
     tableItemsBody.push(TemplateToTableHead.get(contractTemplateName) || genericTableItemsHeader);
 
     if ((items as [])?.length) {
-      (items as PQItem[]).forEach(item =>
+      (items as PQItem[]).forEach(({ description, quantity, unit }) => {
+        const itemAmount: number = get(unit, "value.amount") as number;
+        const itemCurrency: string = get(unit, "value.currency") || "";
+        const tax = get(unit, "value.valueAddedTaxIncluded") ? " з ПДВ" : " без ПДВ";
+
+        const pricePerOne = PriceHandler.addCurrency(itemAmount, itemCurrency);
+
+        const fullPrice = PriceHandler.addCurrency(
+          PriceHandler.getPrice(
+            {
+              currency,
+              amount: itemAmount,
+              valueAddedTaxIncluded: false,
+            },
+            Number(quantity)
+          ),
+          itemCurrency
+        );
+
         tableItemsBody.push([
-          DocumentExtractionService.getField(item, "description"),
-          DocumentExtractionService.getField(item, "quantity"),
-          DocumentExtractionService.getField(item, "unit.name"),
-          PriceHandler.addCurrency(
-            DocumentExtractionService.getField(item, "unit.value.amount"),
-            DocumentExtractionService.getField(item, "unit.value.currency")
-          ),
-          PriceHandler.addCurrency(
-            PriceHandler.getPrice(
-              {
-                amount: DocumentExtractionService.getField(item, "unit.value.amount"),
-                valueAddedTaxIncluded: false,
-                currency,
-              },
-              Number(DocumentExtractionService.getField(item, "quantity"))
-            ),
-            DocumentExtractionService.getField(item, "unit.value.currency")
-          ),
-        ])
-      );
+          description,
+          quantity.toString(),
+          unit?.name,
+          `${pricePerOne}${tax}`,
+          `${fullPrice}${tax}`,
+        ]);
+      });
     } else {
       tableItemsBody.push([{}, {}, {}, {}, {}]);
     }
@@ -310,60 +316,55 @@ export class SecondVersionFormatter {
   static createContactsTable(contractObject: PQContractType | Record<any, any>): Record<string, any> {
     const { buyer } = contractObject;
     const supplier = DocumentExtractionService.getField<PQsupplier | string>(contractObject, "suppliers[0]");
+    const table = [
+      [
+        {
+          style: PDF_FILED_KEYS.CENTERED_CAPITALISED,
+          text: pqSignature.supplier,
+        },
+        {
+          style: PDF_FILED_KEYS.CENTERED_CAPITALISED,
+          text: pqSignature.customer,
+        },
+      ],
+      [
+        pqGenericBase.suppliersTitle + DocumentExtractionService.getField(supplier as any, "name"),
+        pqGenericBase.buyersTitle + DocumentExtractionService.getField(buyer, "name"),
+      ],
+      [
+        pqGenericBase.location +
+          StringHandler.customerLocation(DocumentExtractionService.getField<AddressType>(supplier as any, "address")),
+        pqGenericBase.location +
+          StringHandler.customerLocation(DocumentExtractionService.getField<AddressType>(buyer, "address")) ||
+          pqSignature.location,
+      ],
+      [
+        pqGenericBase.mailAddress + DocumentExtractionService.getField(supplier as any, "signerInfo.email"),
+        pqGenericBase.mailAddress + DocumentExtractionService.getField(buyer, "signerInfo.email"),
+      ],
+      [
+        pqGenericBase.edrpouIpn + DocumentExtractionService.getField(supplier as any, "identifier.id"),
+        pqGenericBase.edrpouIpn + DocumentExtractionService.getField(buyer, "identifier.id"),
+      ],
+      [
+        pqGenericBase.iban + DocumentExtractionService.getField(supplier as any, "signerInfo.iban"),
+        pqGenericBase.iban + DocumentExtractionService.getField(buyer, "signerInfo.iban"),
+      ],
+      [
+        pqGenericBase.phone + DocumentExtractionService.getField(supplier as any, "signerInfo.telephone"),
+        pqGenericBase.phone + DocumentExtractionService.getField(buyer, "signerInfo.telephone"),
+      ],
+      [
+        pqGenericBase.email + DocumentExtractionService.getField(supplier as any, "signerInfo.email"),
+        pqGenericBase.email + DocumentExtractionService.getField(buyer, "signerInfo.email"),
+      ],
+    ];
 
-    return {
-      style: PDF_FILED_KEYS.CONTACTS_TABLE_CONTENT,
-      table: {
-        headerRows: 1,
-        widths: [PDF_HELPER_CONST.ROW_WIDTH_250, "auto"],
-        heights: 40,
-        body: [
-          [
-            {
-              style: PDF_FILED_KEYS.CENTERED_CAPITALISED,
-              text: pqSignature.supplier,
-            },
-            {
-              style: PDF_FILED_KEYS.CENTERED_CAPITALISED,
-              text: pqSignature.customer,
-            },
-          ],
-          [
-            pqGenericBase.suppliersTitle + DocumentExtractionService.getField(supplier as any, "name"),
-            pqGenericBase.buyersTitle + DocumentExtractionService.getField(buyer, "name"),
-          ],
-          [
-            pqGenericBase.location +
-              StringHandler.customerLocation(
-                DocumentExtractionService.getField<AddressType>(supplier as any, "address")
-              ),
-            pqGenericBase.location +
-              StringHandler.customerLocation(DocumentExtractionService.getField<AddressType>(buyer, "address")) ||
-              pqSignature.location,
-          ],
-          [
-            pqGenericBase.mailAddress + DocumentExtractionService.getField(supplier as any, "signerInfo.email"),
-            pqGenericBase.mailAddress + DocumentExtractionService.getField(buyer, "signerInfo.email"),
-          ],
-          [
-            pqGenericBase.edrpouIpn + DocumentExtractionService.getField(supplier as any, "identifier.id"),
-            pqGenericBase.edrpouIpn + DocumentExtractionService.getField(buyer, "identifier.id"),
-          ],
-          [
-            pqGenericBase.iban + DocumentExtractionService.getField(supplier as any, "signerInfo.iban"),
-            pqGenericBase.iban + DocumentExtractionService.getField(buyer, "signerInfo.iban"),
-          ],
-          [
-            pqGenericBase.phone + DocumentExtractionService.getField(supplier as any, "signerInfo.telephone"),
-            pqGenericBase.phone + DocumentExtractionService.getField(buyer, "signerInfo.telephone"),
-          ],
-          [
-            pqGenericBase.email + DocumentExtractionService.getField(supplier as any, "signerInfo.email"),
-            pqGenericBase.email + DocumentExtractionService.getField(buyer, "signerInfo.email"),
-          ],
-        ],
-      },
-    };
+    return PDFTablesHandler.createTable(
+      table,
+      [PDF_HELPER_CONST.ROW_WIDTH_250, "auto"],
+      PDF_FILED_KEYS.CONTACTS_TABLE_CONTENT
+    );
   }
 
   static createSignatureBlock(contractObject: PQContractType | Record<any, any>): Record<string, any> {

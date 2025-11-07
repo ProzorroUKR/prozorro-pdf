@@ -223,7 +223,13 @@ export class PQFormattingService {
         const index = Number(item);
         const itemValue =
           functionName && functionName[index]
-            ? CompoundTextAdapter.convertToText(paths[index], functionName[index], dataObject, defaults[index], tender)
+            ? CompoundTextAdapter.convertToText(
+                paths[index],
+                functionName[index],
+                dataObject,
+                defaults[index],
+                tender as TenderOfferType | undefined
+              )
             : DocumentExtractionService.getField(dataObject, paths[index], defaults[index]);
 
         return accum.concat(itemValue);
