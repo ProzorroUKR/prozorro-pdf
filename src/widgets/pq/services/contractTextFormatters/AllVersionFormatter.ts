@@ -143,14 +143,14 @@ export class AllVersionFormatter {
       ],
       margin: TABLE_COLUMN_LEFT_MARGIN,
       style: subtitleStyle,
-      alignment: isVersion2 ? "right" : "left",
+      alignment: "left",
     };
 
     const subtitleDate = {
       text: DateHandler.prepareDateSigned(DocumentExtractionService.getField(contractObject, "dateSigned"), "року"),
       margin: PQ_GENERIC_TITLE_MARGIN,
       style: subtitleStyle,
-      alignment: isVersion2 ? "left" : "right",
+      alignment: "right",
     };
 
     return [

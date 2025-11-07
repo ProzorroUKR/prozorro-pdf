@@ -4,6 +4,8 @@ export enum FormattingFunctionsEnum {
   CONVERT_DATE = "convertDate",
   FORMAT_DATE = "formatDate",
   PAYMENT_DETAILS = "paymentDetails",
+  GET_FINANCING_MILESTONES = "getFinancingMilestones",
+  GET_DELIVERY_MILESTONES = "getDeliveryMilestones",
   GET_GUARANTEE_PERIOD = "getGuaranteePeriod",
   GET_ENSURING_TYPE = "getEnsuringType",
   GET_ENSURING_OPTIONAL_FIELD = "getEnsuringOptionalField",

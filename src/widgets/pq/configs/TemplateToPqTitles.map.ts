@@ -8,6 +8,7 @@ import { fuelTitlesConfig } from "@/widgets/pq/templates/fuel/configs/fuelTitles
 import { medicineTitlesConfig } from "@/widgets/pq/templates/medicine/configs/medicineTitlesConfig";
 import { pharm2TitlesConfig } from "@/widgets/pq/templates/pharm2/configs/pharm2Titles.config";
 import { fuel2TitlesConfig } from "@/widgets/pq/templates/fuel2/configs/fuel2Titles.config";
+import { nushTitlesConfig } from "@/widgets/pq/templates/nush/configs/nushTitles.config";
 
 export const TemplateToPqTitlesMap = new Map<PROZORRO_TEMPLATE_CODES, Record<string, string>>()
   .set(PROZORRO_TEMPLATE_CODES.FRUIT, generalTitlesConfig)
@@ -22,4 +23,5 @@ export const TemplateToPqTitlesMap = new Map<PROZORRO_TEMPLATE_CODES, Record<str
   .set(PROZORRO_TEMPLATE_CODES.GAS2, fuel2TitlesConfig)
   .set(PROZORRO_TEMPLATE_CODES.GENERIC, genericTitlesConfig)
   .set(PROZORRO_TEMPLATE_CODES.MEDICINE2, medicineV2titlesConfig)
-  .set(PROZORRO_TEMPLATE_CODES.FOOD, foodTitlesConfig);
+  .set(PROZORRO_TEMPLATE_CODES.FOOD, foodTitlesConfig)
+  .set(PROZORRO_TEMPLATE_CODES.NUSH, nushTitlesConfig);

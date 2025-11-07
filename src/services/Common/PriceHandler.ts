@@ -3,9 +3,8 @@ import { NumbersSpeller } from "@/utils/numbersSpeller/NumbersSpeller";
 import { UnitHelper } from "@/services/Common/UnitHelper";
 import type { WordCaseModel } from "@/utils/numbersSpeller/models/WordCase.model";
 import { STRING } from "@/constants/string";
-import type { PQContractType, PQItem, PQvalue } from "@/widgets/pq/types/PQTypes";
+import type { PQvalue } from "@/widgets/pq/types/PQTypes";
 import * as PDF_HELPER_CONST from "@/constants/pdf/pdfHelperConstants";
-import { DocumentExtractionService } from "@/services/PDF/document/DocumentExtractionService";
 import { FloatFormatter } from "@/utils/ObjectToString/FloatFormatter";
 
 export class PriceHandler {
@@ -20,26 +19,7 @@ export class PriceHandler {
   static addCurrency(price: number, currency = ""): string {
     return Number.isFinite(price) || price === 0
       ? `${UnitHelper.currencyFormatting(FloatFormatter.format(price, PDF_HELPER_CONST.PRICE_DECIMAL_PRECISION))} ${currency}`
-      : STRING.EMPTY;
-  }
-
-  static getTotalPriceNoTax(contractObject: PQContractType | Record<any, any>): number {
-    const price = DocumentExtractionService.getField<PQItem[]>(contractObject, "items", []).reduce(
-      (totalAmount, item) => {
-        const itemsAmount = PriceHandler.getPrice(
-          DocumentExtractionService.getField(item, "unit.value", {
-            amount: 0,
-            currency: "uah",
-          }),
-          DocumentExtractionService.getField(item, "quantity", 0)
-        );
-
-        return totalAmount + itemsAmount;
-      },
-      0
-    );
-
-    return PriceHandler.roundPriceToCoins(price);
+      : STRING.EXTRA_LONG_DASH;
   }
 
   static amountRemoveTax(amount: number): number {

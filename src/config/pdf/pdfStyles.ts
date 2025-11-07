@@ -5,7 +5,7 @@ import {
   PQ_TESTING_GROUNDS_MARGIN,
 } from "@/widgets/pq/configs/margins";
 
-export const PDF_STYLES: Record<string, Record<string, string | number | boolean | (string | number)[]>> = {
+export const PDF_STYLES = {
   heading: {
     bold: true,
     alignment: "center",

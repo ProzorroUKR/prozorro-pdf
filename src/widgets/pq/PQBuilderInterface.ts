@@ -5,6 +5,6 @@ export interface IPQBuilder {
   build(
     contractObject: PQContractType | Record<string, never>,
     contractTemplate: PROZORRO_TEMPLATE_CODES,
-    tender: any
+    tender?: any
   ): Record<string, any>[];
 }

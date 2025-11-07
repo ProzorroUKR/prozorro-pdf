@@ -5,12 +5,15 @@ import { PQFormattingService } from "@/widgets/pq/services/Formating/PQFormattin
 import { MedicineFormatter } from "@/widgets/pq/services/contractTextFormatters/MedicineFormatter";
 import { PROZORRO_TEMPLATE_CODES } from "@/widgets/pq/types/TemplateCodes.enum";
 import { SecondVersionFormatter } from "@/widgets/pq/services/contractTextFormatters/SecondVersionFormatter";
+import { NushFormatter } from "@/widgets/pq/services/contractTextFormatters/NushFormatter.ts";
+import { pqNushTexts } from "@/widgets/pq/templates/nush/configs/pqNushTexts.ts";
+import { PDF_FILED_KEYS } from "@/constants/pdf/pdfFieldKeys.ts";
+import { PQ_LIST_HEADING_MARGIN } from "@/widgets/pq/configs/margins.ts";
 
 export class TemplateBuildHelper {
   static pharmBuild(
     contractObject: PQContractType | Record<string, never>,
-    contractTemplate: PROZORRO_TEMPLATE_CODES,
-    _tender: any
+    contractTemplate: PROZORRO_TEMPLATE_CODES
   ): Record<string, any>[] {
     return [
       AllVersionFormatter.createTitle(contractObject as PQContractType, contractTemplate),
@@ -27,8 +30,7 @@ export class TemplateBuildHelper {
 
   static fruitBuilder(
     contractObject: PQContractType | Record<string, never>,
-    contractTemplate: PROZORRO_TEMPLATE_CODES,
-    _tender: any
+    contractTemplate: PROZORRO_TEMPLATE_CODES
   ): Record<string, any>[] {
     return [
       AllVersionFormatter.createTitle(contractObject as PQContractType, contractTemplate),
@@ -67,6 +69,34 @@ export class TemplateBuildHelper {
       SecondVersionFormatter.createGenericHeader(contractObject as PQContractType, tender),
       AllVersionFormatter.createContractText(contractObject, contractTemplate, tender),
       SecondVersionFormatter.createGenericAddition1(contractObject, contractTemplate),
+      SecondVersionFormatter.createGenericAddition2(contractObject, contractTemplate, tender),
+    ];
+  }
+
+  static nushBuilder(
+    contractObject: PQContractType | Record<string, never>,
+    contractTemplate: PROZORRO_TEMPLATE_CODES,
+    tender: any
+  ): Record<string, any>[] {
+    return [
+      AllVersionFormatter.createTitle(contractObject as PQContractType, contractTemplate),
+      NushFormatter.createHeader(contractObject as PQContractType, tender),
+      AllVersionFormatter.createContractText(contractObject, contractTemplate, tender),
+      [
+        PQFormattingService.createUnitHeader(
+          pqNushTexts.contactTitle,
+          16,
+          PDF_FILED_KEYS.HEADING,
+          PQ_LIST_HEADING_MARGIN
+        ),
+        SecondVersionFormatter.createContactsTable(contractObject),
+        SecondVersionFormatter.createSignatureBlock(contractObject),
+      ],
+      [
+        SecondVersionFormatter.createGenericAddition1(contractObject, contractTemplate),
+        SecondVersionFormatter.createContactsTable(contractObject),
+        SecondVersionFormatter.createSignatureBlock(contractObject),
+      ],
       SecondVersionFormatter.createGenericAddition2(contractObject, contractTemplate, tender),
     ];
   }

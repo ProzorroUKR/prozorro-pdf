@@ -12,6 +12,7 @@ import { softwareContractConfig } from "@/widgets/pq/templates/software/configs/
 import { pharm2ContractConfig } from "@/widgets/pq/templates/pharm2/configs/pharm2Contract.config";
 import { medicineV2ContractConfig } from "@/widgets/pq/templates/medicine2/config/medicineV2Contract.config";
 import { fruit2ContractConfig } from "@/widgets/pq/templates/fruit2/configs/fruit2Contract.config";
+import { nushContractConfig } from "@/widgets/pq/templates/nush/configs/nushContract.config";
 
 export const TemplateToTextMap = new Map<string, TextConfigType>()
   .set(PROZORRO_TEMPLATE_CODES.FRUIT, fruitContractConfig)
@@ -26,4 +27,5 @@ export const TemplateToTextMap = new Map<string, TextConfigType>()
   .set(PROZORRO_TEMPLATE_CODES.GENERIC, genericContractConfig)
   .set(PROZORRO_TEMPLATE_CODES.FOOD, foodContractConfig)
   .set(PROZORRO_TEMPLATE_CODES.MEDICINE2, medicineV2ContractConfig)
-  .set(PROZORRO_TEMPLATE_CODES.PHARM2, pharm2ContractConfig);
+  .set(PROZORRO_TEMPLATE_CODES.PHARM2, pharm2ContractConfig)
+  .set(PROZORRO_TEMPLATE_CODES.NUSH, nushContractConfig);
