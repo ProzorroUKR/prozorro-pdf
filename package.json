@@ -1,7 +1,7 @@
 {
   "name": "@prozorro/prozorro-pdf",
   "private": false,
-  "version": "1.1.5",
+  "version": "1.2.1",
   "description": "PDF generation service",
   "author": "Dmytro Rybachek",
   "license": "MIT",
