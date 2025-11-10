@@ -58,7 +58,7 @@ export class NushFormatter {
 
     const paragraphLaw = PQFormattingService.createTextUnit(
       [
-        pqNushTexts.withRequestResult,
+        pqGenericBase.withProposal,
         DocumentExtractionService.getField(tender, "tenderID", DEFAULT_TEXT_FIELDS.UNDERSCORES_16),
       ],
       PQ_PARAGRAPH_MARGIN,
