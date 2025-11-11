@@ -51,7 +51,10 @@ export class AnnouncementDataMaker extends AbstractDocumentStrategy {
   }
 
   private displayUnderHeader(
-    {
+    data: Record<string, any>,
+    dictionaries: Map<string, Record<string, any>>
+  ): Record<string, any>[] {
+    const {
       items,
       minimalStep,
       tenderPeriod,
@@ -71,11 +74,11 @@ export class AnnouncementDataMaker extends AbstractDocumentStrategy {
       minimalStepPercentage,
       yearlyPaymentsPercentageRange,
       fundingKind,
-    }: Record<string, any>,
-    dictionaries: Map<string, Record<string, any>>
-  ): Record<string, any>[] {
+    } = data;
     const isEsco = procurementMethodType === ESCO_TYPE;
     const hasMilestones = Array.isArray(milestones) && milestones?.length;
+    const hasSecurementAmount: boolean =
+      Boolean(criteria.length) && noSecurement.includes(procurementMethodType as procurementMethodTypes);
 
     return [
       isEsco
@@ -94,11 +97,13 @@ export class AnnouncementDataMaker extends AbstractDocumentStrategy {
       hasMilestones ? this.createPaymentTable(milestones) : PDF_HELPER_CONST.EMPTY_FIELD,
 
       this.showIfAvailable(this.getField(plans, "[0].id"), ANNOUNCEMENT_TEXTS_LIST.plans, Array.isArray(plans)),
+
       this.showIfAvailable(
         `${UnitHelper.currencyFormatting(this.getField(value, "amount"))} ${this.getField(value, "currency")}`,
         ANNOUNCEMENT_TEXTS_LIST.expected_price,
         !isEsco
       ),
+
       this.showIfAvailable(
         `${UnitHelper.currencyFormatting(this.getField(minimalStep, "amount"))} ${this.getField(minimalStep, "currency")}`,
         ANNOUNCEMENT_TEXTS_LIST.minimal_step,
@@ -109,19 +114,24 @@ export class AnnouncementDataMaker extends AbstractDocumentStrategy {
         ANNOUNCEMENT_TEXTS_LIST.formula,
         !isEsco
       ),
+
       this.showIfAvailable(`${NBUdiscountRate * nbuRateConverter}%`, ANNOUNCEMENT_TEXTS_LIST.nbu_discount_rate, isEsco),
+
       PDFTablesHandler.createTableLayout([
         PDFTablesHandler.createTableRow({
           head: ANNOUNCEMENT_TEXTS_LIST.deadline,
           data: this.getDecisionDatePublished(this.getField(tenderPeriod, "endDate"), true, true),
         }),
       ]),
+
       CriteriaHandler.getCriterionLanguage(criteria, dictionaries),
+
       this.showIfAvailable(
         `${UnitHelper.currencyFormatting(this.getField(guarantee, "amount") || "0")} ${this.getField(guarantee, "currency")}`,
         ANNOUNCEMENT_TEXTS_LIST.securement,
         !noSecurement.includes(procurementMethodType) && !isEsco
       ),
+
       this.showIfAvailable(
         this.getField<string | number>(guarantee, "amount").toString().length > 0
           ? ANNOUNCEMENT_TEXTS_LIST.e_guarantee
@@ -129,6 +139,7 @@ export class AnnouncementDataMaker extends AbstractDocumentStrategy {
         ANNOUNCEMENT_TEXTS_LIST.securement_type,
         !isEsco
       ),
+
       PDFTablesHandler.createTableLayout([
         PDFTablesHandler.createTableRow({
           head: ANNOUNCEMENT_TEXTS_LIST.disclosure_date,
@@ -139,12 +150,15 @@ export class AnnouncementDataMaker extends AbstractDocumentStrategy {
           ),
         }),
       ]),
-      this.getSecurementAmount(criteria, lots, guarantee, procurementMethodType),
+
+      hasSecurementAmount ? this.getSecurementAmount(guarantee) : PDF_HELPER_CONST.EMPTY_FIELD,
+
       this.showIfAvailable(
         this.getOnlineAuction(lots, auctionPeriod),
         ANNOUNCEMENT_TEXTS_LIST.auction_date,
         !noAuction.includes(procurementMethodType) && lots
       ),
+
       closeFrame.includes(procurementMethodType)
         ? PDFTablesHandler.createTableLayout([
             PDFTablesHandler.createTableRow({
@@ -157,6 +171,7 @@ export class AnnouncementDataMaker extends AbstractDocumentStrategy {
             }),
           ])
         : PDF_HELPER_CONST.EMPTY_FIELD,
+
       CriteriaHandler.getCriterionSecuringOffer(criteria, dictionaries),
       CriteriaHandler.getCriterionSecurityContract(criteria, dictionaries),
     ];
@@ -455,31 +470,21 @@ export class AnnouncementDataMaker extends AbstractDocumentStrategy {
       });
       res.push(this.displayUnderHeader(lotFile, dictionaries));
     });
+
     return res;
   }
 
-  private getSecurementAmount(
-    criteria: Record<string, any>[],
-    lots: Record<string, any>[],
-    guarantee: Record<string, any>,
-    procurementMethodType: string
-  ): Record<string, any> {
-    if (!Array.isArray(criteria)) {
-      return PDF_HELPER_CONST.EMPTY_FIELD;
-    }
-
+  private getSecurementAmount({ amount, currency }: Record<string, any> = {}): Record<string, any> {
     const guaranteeAmount =
-      guarantee && Number(this.getField(guarantee, "amount")) > 0
-        ? `${UnitHelper.currencyFormatting(this.getField(guarantee, "amount"))} ${this.getField(guarantee, "currency")}`
+      Number(amount) > 0
+        ? `${UnitHelper.currencyFormatting(amount)} ${currency || ""}`
         : ANNOUNCEMENT_TEXTS_LIST.missing_he;
-    const lotsGuaranteeAmount =
-      Number(this.getField(lots, "[0].guarantee.amount")) > 0
-        ? `${UnitHelper.currencyFormatting(this.getField(lots, "[0].guarantee.amount"))} ${this.getField(lots, "[0].guarantee.currency")}`
-        : ANNOUNCEMENT_TEXTS_LIST.missing_he;
-    return this.showIfAvailable(
-      Array.isArray(lots) && lots.length > 0 ? lotsGuaranteeAmount : guaranteeAmount,
-      ANNOUNCEMENT_TEXTS_LIST.securement_amount,
-      Array.isArray(criteria) && noSecurement.includes(procurementMethodType as procurementMethodTypes)
-    );
+
+    return PDFTablesHandler.createTableLayout([
+      PDFTablesHandler.createTableRow({
+        head: ANNOUNCEMENT_TEXTS_LIST.securement,
+        data: guaranteeAmount,
+      }),
+    ]);
   }
 }
