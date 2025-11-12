@@ -5,6 +5,7 @@ export const STRING = {
   MINUS: "-",
   DASH: "—",
   EXTRA_LONG_DASH: "⸺",
+  UNDERSCORE: "_",
   SEMICOLON: ";",
   WHITESPACE: " ",
   DELIMITER: {
@@ -25,8 +26,7 @@ export const DEFAULT_TEXT_FIELDS: Record<string, string> = {
   UNDERSCORES_16: "________________", // 16 underscores
   UNDERSCORES_32: "________________________________", // 32 underscores
   UNDERSCORES_40: "________________________________________", // 40 underscores
-  UNDERSCORES_68:
-    "____________________________________________________________________", // 68 underscores
+  UNDERSCORES_68: "____________________________________________________________________", // 68 underscores
   SIGNATURE: "_________________/ _______________",
   DEFAULT_PRICE:
     "______________________ гривень без ПДВ/з ПДВ (_____________ __________________________________________сума прописом).",

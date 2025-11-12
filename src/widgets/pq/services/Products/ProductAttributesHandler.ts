@@ -1,9 +1,8 @@
+import { STRING } from "@/constants/string";
+import { PDF_FILED_KEYS } from "@/constants/pdf/pdfFieldKeys";
 import type { PQattribute, PQItem } from "@/widgets/pq/types/PQTypes";
 import type { PDFTableBodyType } from "@/widgets/pq/types/TextConfigType";
-import { STRING } from "@/constants/string";
-import { BooleanSpeller } from "@/utils/BooleanSpeller";
-import { DocumentExtractionService } from "@/services/PDF/document/DocumentExtractionService";
-import { PDF_FILED_KEYS } from "@/constants/pdf/pdfFieldKeys";
+import { AttributesValueStrategy } from "@/widgets/pq/services/Products/AttributesValue.strategy";
 
 export class ProductAttributesHandler {
   static createTableAttributesBody(items: PQItem[]): PDFTableBodyType {
@@ -18,7 +17,7 @@ export class ProductAttributesHandler {
         {},
       ]);
 
-      accumulator.push(...ProductAttributesHandler.formatAttributeRows(item.attributes));
+      accumulator.push(...ProductAttributesHandler.formatAttributeRows(item.attributes || []));
 
       accumulator.push([
         {
@@ -34,13 +33,12 @@ export class ProductAttributesHandler {
     }, []);
   }
 
-  static formatAttributeRows(attributes?: PQattribute[]): PDFTableBodyType {
-    return (attributes || []).map(value => {
-      const unitField = DocumentExtractionService.getField<string>(value, "unit.name");
-      const unitName = unitField ? ` (${unitField})` : STRING.EMPTY;
-      const attributeValues = String((value.values || []).map(val => BooleanSpeller.parse(val)));
+  static formatAttributeRows(attributes: PQattribute[]): PDFTableBodyType {
+    const formatValueStrategy = new AttributesValueStrategy();
 
-      return [`${value.name || STRING.EMPTY}${unitName}`, attributeValues];
+    return attributes.map(attr => {
+      const label = attr.unit ? `${attr.name}, ${attr?.unit?.name || attr?.unit?.code}` : attr.name;
+      return [label, formatValueStrategy.format(attr) as string];
     });
   }
 }
