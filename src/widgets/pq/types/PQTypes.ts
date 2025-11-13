@@ -49,11 +49,12 @@ export type PQItem = {
 
 export type PQattribute = {
   name: string;
-  unit: {
+  unit?: {
     name: string;
     code: string;
   };
-  values: (number | boolean)[];
+  values?: (string | number | boolean)[];
+  value?: string | number | boolean;
 };
 
 export type PQsupplier = {
