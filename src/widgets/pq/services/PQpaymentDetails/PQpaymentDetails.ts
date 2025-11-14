@@ -73,14 +73,14 @@ export class PQpaymentDetails implements PQpaymentDetailsInterface {
 
   private createPaymentDetailsLine(milestone: Milestone): void {
     this.result.push(
-      MILESTONES_PAYMENT_TYPE[milestone.code],
+      MILESTONES_PAYMENT_TYPE[milestone.code as string],
       pqGenericPaymentDetails.size,
       String(milestone.percentage),
       STRING.PERCENT,
       pqGenericPaymentDetails.period,
       NumbersSpeller.getBankDaysForm(milestone.duration),
       pqGenericPaymentDetails.days,
-      MILESTONE_EVENT_TITLE[milestone.title],
+      MILESTONE_EVENT_TITLE[milestone.title as string],
       milestone.description ? `${pqGenericPaymentDetails.other} ${milestone.description}.` : STRING.DELIMITER.DOT,
       STRING.DELIMITER.NEW_LINE
     );

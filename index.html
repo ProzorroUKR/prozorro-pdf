@@ -669,6 +669,33 @@
               },
             ],
           },
+          {
+            type: window.signToDoc.TYPES.DEVIATION_REPORT,
+            title: "Протокол рішення УО щодо виявлення невідповідностей (24 год)",
+            description: `
+                <h6>Validations:</h6>
+                   <ul>
+                    <li>Get all sign files from <code>award.documents</code> or <code>qualification.documents</code></li>
+                    <li>Field <code>document.documentType</code> must be <code>"deviationReport"</code></li>
+                    <li>Optional validation by <code>document.dateModified</code> field</li>
+                    <li>If document.dateModified isn't set, after validating it gets the last document from the list</li>
+                </ul>
+            `,
+            fields: [
+              {
+                key: "url",
+                label: "Award / Qualification URL",
+                defaultValue: "https://lb-api-sandbox-2.prozorro.gov.ua/api/2.5/tenders/e4e7d9b9d315434481c53231920af9fa/awards/bedabb9ac05b4f8f8070b5f32f492715",
+                required: true,
+              },
+              {
+                key: "date",
+                label: "Date modified",
+                defaultValue: "",
+                type: "date",
+              },
+            ],
+          },
         ];
 
         createCardList(DATA_COLLECTION);

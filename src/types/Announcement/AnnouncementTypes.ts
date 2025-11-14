@@ -6,15 +6,16 @@ export type AnnouncementType = {
 };
 
 export type Milestone = {
-  code: string;
-  description: string;
-  sequenceNumber: number;
-  title: string;
+  code?: string;
+  description?: string;
+  sequenceNumber?: number;
+  title?: string;
   duration: MilestoneDurationType;
-  percentage: number;
-  type: string;
+  percentage?: number;
+  type?: string;
   id: string;
   relatedLot?: string;
+  dueDate?: string;
 };
 
 export type MilestoneDurationType = {
