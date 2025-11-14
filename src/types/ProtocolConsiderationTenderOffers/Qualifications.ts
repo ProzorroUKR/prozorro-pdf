@@ -1,5 +1,6 @@
-import type { DocumentType } from "@/types/Tender/DocumentType";
 import type { ComplaintType } from "@/types/complaints";
+import type { DocumentType } from "@/types/Tender/DocumentType";
+import type { Milestone } from "@/types/Announcement/AnnouncementTypes";
 
 export type QualificationsType = {
   id: string;
@@ -13,7 +14,9 @@ export type QualificationsType = {
   complaints?: ComplaintType[];
   qualified?: boolean;
   eligible?: boolean;
+  milestones?: Milestone[];
 };
+
 export const QualificationsStatusType = {
   CANCELLED: "cancelled",
   PENDING: "pending",

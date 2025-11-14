@@ -16,7 +16,8 @@ import { ProtocolOnExtensionOfReviewPeriodDataMaker } from "@/services/PDF/docum
 import { TenderOfferDataMaker } from "@/services/PDF/document/documentData/TenderOfferDataMaker";
 import { EdrDataMaker } from "@/services/PDF/document/documentData/EdrDataMaker";
 import { ComplaintPostDataMaker } from "@/widgets/ComplaintPost/ComplaintPostDataMaker";
-import type { EnvironmentType } from "@/types/pdf/EnvironmentType.ts";
+import type { EnvironmentType } from "@/types/pdf/EnvironmentType";
+import { DeviationReportMaker } from "@/services/PDF/document/documentData/DeviationReportMaker";
 
 export const documentStrategyMap = new Map<
   PdfTemplateTypes,
@@ -37,4 +38,5 @@ export const documentStrategyMap = new Map<
   .set(PdfTemplateTypes.TENDER_OFFER_TEMPLATE, TenderOfferDataMaker)
   .set(PdfTemplateTypes.COMPLAINT, ComplaintDataMaker)
   .set(PdfTemplateTypes.EDR, EdrDataMaker)
-  .set(PdfTemplateTypes.COMPLAINT_POST, ComplaintPostDataMaker);
+  .set(PdfTemplateTypes.COMPLAINT_POST, ComplaintPostDataMaker)
+  .set(PdfTemplateTypes.DEVIATION_REPORT, DeviationReportMaker);

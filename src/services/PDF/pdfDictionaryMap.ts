@@ -8,6 +8,7 @@ import { purchaseCancellationProtocolDictionaries } from "@/services/DictionaryC
 import { protocolConsiderationTenderOffersDictionaries } from "@/services/DictionaryCollector/dictionaries/ProtocolconsiderationtenderoffersDictionaries.map";
 import { protocolOnExtensionOfReviewPeriodDictionaries } from "@/services/DictionaryCollector/dictionaries/ProtocolOnExtensionOfReviewPeriodDictionaries";
 import { tenderOfferDictionaries } from "@/services/DictionaryCollector/dictionaries/TenderOfferDictionaries.map";
+import { deviationReportDictionaries } from "@/services/DictionaryCollector/dictionaries/DeviationReport.map";
 
 export const pdfDictionaryMap = new Map<PdfTemplateTypes, Map<string, string>>()
   .set(PdfTemplateTypes.XML, new Map())
@@ -24,4 +25,5 @@ export const pdfDictionaryMap = new Map<PdfTemplateTypes, Map<string, string>>()
   .set(PdfTemplateTypes.PROTOCOL_ON_EXTENSION_OF_REVIEW_PERIOD_TEMPLATE, protocolOnExtensionOfReviewPeriodDictionaries)
   .set(PdfTemplateTypes.TENDER_OFFER_TEMPLATE, tenderOfferDictionaries)
   .set(PdfTemplateTypes.COMPLAINT, complaintDictionaries)
-  .set(PdfTemplateTypes.COMPLAINT_POST, new Map());
+  .set(PdfTemplateTypes.COMPLAINT_POST, new Map())
+  .set(PdfTemplateTypes.DEVIATION_REPORT, deviationReportDictionaries);

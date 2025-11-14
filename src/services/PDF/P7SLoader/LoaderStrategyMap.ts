@@ -15,7 +15,8 @@ import { ProtocolOnExtensionOfReviewPeriodLoader } from "@/services/PDF/P7SLoade
 import { TenderOfferLoader } from "@/services/PDF/P7SLoader/loaders/TenderOfferLoader";
 import { EdrLoader } from "@/services/PDF/P7SLoader/loaders/EdrLoader";
 import { ComplaintPostLoader } from "@/services/PDF/P7SLoader/loaders/ComplaintPostLoader";
-import type { EnvironmentType } from "@/types/pdf/EnvironmentType.ts";
+import type { EnvironmentType } from "@/types/pdf/EnvironmentType";
+import { DeviationReportLoader } from "@/services/PDF/P7SLoader/loaders/DeviationReportLoader";
 
 export const loaderStrategyMap = new Map<string, new (envVars: EnvironmentType) => LoaderStrategyInterface<any>>()
   .set(PROZORRO_PDF_TYPES.TICKET, TicketLoader)
@@ -32,4 +33,5 @@ export const loaderStrategyMap = new Map<string, new (envVars: EnvironmentType) 
   .set(PROZORRO_PDF_TYPES.TENDER_OFFER, TenderOfferLoader)
   .set(PROZORRO_PDF_TYPES.COMPLAINT, ComplaintLoader)
   .set(PROZORRO_PDF_TYPES.EDR, EdrLoader)
-  .set(PROZORRO_PDF_TYPES.COMPLAINT_POST, ComplaintPostLoader);
+  .set(PROZORRO_PDF_TYPES.COMPLAINT_POST, ComplaintPostLoader)
+  .set(PROZORRO_PDF_TYPES.DEVIATION_REPORT, DeviationReportLoader);

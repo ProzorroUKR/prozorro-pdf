@@ -2,6 +2,7 @@ import type { MoneyType } from "@/types/Tender/MoneyType";
 import type { OrganizationType } from "@/types/Tender/OrganizationType";
 import type { AwardItemType } from "@/types/Tender/AwardItemType";
 import type { DocumentType } from "@/types/Tender/DocumentType";
+import type { Milestone } from "@/types/Announcement/AnnouncementTypes.ts";
 
 export type AwardType = {
   id: string;
@@ -17,6 +18,7 @@ export type AwardType = {
   qualified?: boolean;
   eligible?: boolean;
   bid_id?: string;
+  milestones?: Milestone[];
 };
 export const AwardStatus = {
   UNSUCCESSFUL: "unsuccessful",
