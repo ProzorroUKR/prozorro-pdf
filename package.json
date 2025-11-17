@@ -66,7 +66,7 @@
     "vitest": "^3.2.1"
   },
   "dependencies": {
-    "@prozorro/prozorro-eds": "^1.0.0",
+    "@prozorro/prozorro-eds": "^1.0.2",
     "axios": "^1.9.0",
     "lodash": "^4.17.21",
     "pdfmake": "^0.2.20",
@@ -76,6 +76,6 @@
     "yaml": "^2.8.0"
   },
   "peerDependencies": {
-    "@prozorro/prozorro-eds": ">=1.0.0"
+    "@prozorro/prozorro-eds": ">=1.0.2"
   }
 }
