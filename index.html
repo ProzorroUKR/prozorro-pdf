@@ -11,7 +11,7 @@
           display: contents;
       }
 
-      #signToDocFrameID {
+      #pdfFrameID {
           width: 100%;
           height: 90vh;
       }
@@ -89,7 +89,7 @@
 
         <div class="col col-12 col-xl-6">
           <div class="p-3">
-            <div id="signToDocFrameID"></div>
+            <div id="pdfFrameID"></div>
           </div>
         </div>
       </div>
@@ -160,6 +160,7 @@
     <script type="module" src="/src/main.ts"></script>
 
     <script>
+      const PDF_FRAME_ID = "pdfFrameID";
       const STORAGE_ACTIVE_ACCORDION_KEY = "ACTIVE_ACCORDION";
       const STORAGE_ENV_KEY = "PDF_ENV";
 
@@ -211,7 +212,7 @@
           const btnActionWrapper = async (cb, btn) => {
             const text = btn.textContent;
             // Clear error message or previous PDF
-            document.getElementById("signToDocFrameID").innerHTML = "";
+            document.getElementById(PDF_FRAME_ID).innerHTML = "";
 
             try {
               btnGroup.forEach(btn => btn.disabled = true);
@@ -759,7 +760,7 @@
               Message: ${error.message}
               Timestamp: ${error.timestamp}
               Original Error: ${error.originalError || error.stack}`;
-        document.getElementById("signToDocFrameID").appendChild(component);
+        document.getElementById(PDF_FRAME_ID).appendChild(component);
       }
 
       const downloadPdfFile = async ({ url, title, type, date, contractTemplateName, tender }) => {
@@ -776,7 +777,7 @@
 
       const openInFramePdfFile = async ({ url, title, type, date, contractTemplateName, tender }) => {
         await window.signToDoc.setConfig({url, type});
-        await window.signToDoc.getIframe({title, date, contractTemplateName, tender});
+        await window.signToDoc.getIframe({title, date, contractTemplateName, tender}, PDF_FRAME_ID);
       }
     </script>
   </body>
