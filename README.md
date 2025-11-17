@@ -32,7 +32,7 @@ yarn add @prozorro/prozorro-pdf
 
 ```vue
 <template>
-  <div id="signToDocFrameID"></div>
+  <div id="pdfParentFrameID"></div>
 </template>
 
 <script setup lang="ts">
@@ -65,7 +65,7 @@ onMounted(async () => {
       title: title ?? "sign.p7s",
       date: dateModified,
       contractTemplateName: contractTemplateName as PROZORRO_TEMPLATE_CODES,
-    });
+    }, "pdfParentFrameID");
   } catch (error) {
     pdfError.value = error as IPrzorroPdfErrorExceptionCore;
   }
@@ -84,6 +84,14 @@ onMounted(async () => {
 
 ## API
 
+### Type `PdfDocumentConfigType`
+Аргументи:
+- `title: string` — назва файлу в об'єкті документу (наприклад, `"sign.p7s"`);
+- `date?: string` — дата модифікації документа;
+- `contractTemplateName?: string` — назва шаблону контракту;
+- `tender?: string` — посилання на об’єкт тендеру;
+- `fileName?: string` — назва завантажувального файлу.
+
 ### `init(environment: ENVIRONMENT_MODE): void`
 Ініціалізація та початок роботи з бібліотекою.  
 Аргументи:
@@ -99,26 +107,26 @@ onMounted(async () => {
 
 ---
 
-### `open({ title, date?, contractTemplateName?, tender? }, fileName?: string): Promise<void>`
+### `open(config: PdfDocumentConfigType): Promise<void>`
 Відкриття документа у **новій вкладці браузера**.  
 Аргументи:
-- `title: string` — назва файлу в об'єкті документу (наприклад, `"sign.p7s"`);
-- `date?: string` — дата модифікації документа;
-- `contractTemplateName?: string` — назва шаблону контракту;
-- `tender?: string` — посилання на об’єкт тендеру;
-- `fileName?: string` — назва завантажувального файлу.
+- `config` - тип PdfDocumentConfigType
 
 ---
 
-### `save({ title, date?, contractTemplateName?, tender? }): Promise<void>`
+### `save(config: PdfDocumentConfigType, fileName?: string): Promise<void>`
 Завантаження документа.  
-Аргументи аналогічні до `open(...)`.
+Аргументи:
+- `config` - тип PdfDocumentConfigType
+- `fileName` - назва файлу, за замовчуванням `document.title`
 
 ---
 
-### `getIframe({ title, date?, contractTemplateName?, tender? }): Promise<void>`
-Створює **iframe** у контейнері з `id="signToDocFrameID"`.  
-Аргументи аналогічні до `open(...)`.
+### `getIframe(config: PdfDocumentConfigType, parentFrameId?: string): Promise<void>`
+Створює **iframe** у контейнері з вказаним ID.  
+Аргументи:
+- `config` - тип PdfDocumentConfigType
+- `parentFrameId` - ID батьківського елементу, в середину якого буде втавлено iframe з ПДФ, за замовчуванням `signToDocFrameID`
 
 ---
 
@@ -164,6 +172,10 @@ onMounted(async () => {
 - **12.11.2025**
   - Added DEVIATION_REPORT PDF
   - Fix PQ Item Attributes
+- **14.11.2025**
+  - Optimized library speed;
+  - Updated documentation;
+  - Added `parentFrameId` to `getIframe` method;
 
 ---
 

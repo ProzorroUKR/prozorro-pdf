@@ -32,7 +32,6 @@ export const DEFAULT_TEXT_FIELDS: Record<string, string> = {
     "______________________ гривень без ПДВ/з ПДВ (_____________ __________________________________________сума прописом).",
 };
 
-export const SIGN_TO_DOC_FRAME_ID = "signToDocFrameID";
 export const CLASSIFICATION_CONSTANTS: { readonly [index: string]: string } = {
   DK021: "ДК021",
   CPV: "CPV",

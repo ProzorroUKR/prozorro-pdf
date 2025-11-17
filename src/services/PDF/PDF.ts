@@ -1,7 +1,8 @@
 import axios from "axios";
+import { ProzorroEds } from "@prozorro/prozorro-eds";
 import type { Pdfmake } from "@/vite-env";
 import pdfMake from "pdfmake/build/pdfmake";
-import { ProzorroEds } from "@prozorro/prozorro-eds";
+import { STRING } from "@/constants/string";
 import { ENV_CONFIG } from "@/config/ENV.config";
 import { FONTS_CONFIG } from "@/config/FONTS.config";
 import { ErrorExceptionCore } from "@/widgets/ErrorExceptionCore/ErrorExceptionCore";
@@ -17,12 +18,12 @@ import type { PdfObjectType } from "@/types/pdf/PdfObjectType";
 import { DataTypeValidator } from "@/services/DataTypeValidator/DataTypeValidator";
 import { ValidationTypes } from "@/services/DataTypeValidator/ValidationTypes";
 import { DictionaryCollector } from "@/services/DictionaryCollector/DictionaryCollector";
-import { SIGN_TO_DOC_FRAME_ID, STRING } from "@/constants/string";
 import { PROZORRO_TEMPLATE_CODES } from "@/widgets/pq/types/TemplateCodes.enum";
 import { PROZORRO_PDF_ERROR_CODES } from "@/widgets/ErrorExceptionCore/constants/ERROR_CODES.enum";
 import type { EnvironmentType } from "@/types/pdf/EnvironmentType";
 import { ENVIRONMENT_MODE } from "@/constants/ENVIRONMENT_MODE.enum";
 import { edsModeMap } from "@/config/edsModeMap";
+import { DomHandler } from "@/services/Dom/DomHandler";
 
 export interface IProzorroPdf {
   MODE: typeof ENVIRONMENT_MODE;
@@ -31,7 +32,7 @@ export interface IProzorroPdf {
   init(environment?: ENVIRONMENT_MODE): Promise<void>;
   setConfig(config: PdfConfigType): Promise<void | ErrorExceptionCore>;
   open(config: PdfDocumentConfigType): Promise<void | ErrorExceptionCore>;
-  getIframe(config: PdfDocumentConfigType): Promise<void | ErrorExceptionCore>;
+  getIframe(config: PdfDocumentConfigType, parentFrameId?: string): Promise<void | ErrorExceptionCore>;
   save(config: PdfDocumentConfigType, fileName?: string): Promise<void | ErrorExceptionCore>;
 }
 
@@ -74,50 +75,76 @@ export class ProzorroPdf implements IProzorroPdf {
   async open(config: PdfDocumentConfigType): Promise<void | ErrorExceptionCore> {
     const { data } = await this.create(config);
 
-    try {
-      (pdfMake as Pdfmake).createPdf(data).open();
-    } catch (error) {
-      throw new ErrorExceptionCore({
-        originalError: error,
-        message: (error as any)?.message,
-        code: PROZORRO_PDF_ERROR_CODES.PDF_GENERATION_FAILED,
-      });
-    }
+    return new Promise((resolve, reject) => {
+      try {
+        (pdfMake as Pdfmake).createPdf(data).open({
+          progressCallback: progress => {
+            if (progress === 1) {
+              resolve();
+            }
+          },
+        });
+      } catch (error) {
+        reject(
+          new ErrorExceptionCore({
+            originalError: error,
+            message: (error as any)?.message,
+            code: PROZORRO_PDF_ERROR_CODES.PDF_GENERATION_FAILED,
+          })
+        );
+      }
+    });
   }
 
   async save(config: PdfDocumentConfigType, fileName?: string): Promise<void | ErrorExceptionCore> {
     const { data, title } = await this.create(config);
 
-    try {
-      (pdfMake as Pdfmake).createPdf(data).download(`${fileName || title}.pdf`);
-    } catch (error) {
-      throw new ErrorExceptionCore({
-        originalError: error,
-        message: (error as any)?.message,
-        code: PROZORRO_PDF_ERROR_CODES.PDF_GENERATION_FAILED,
-      });
-    }
+    return new Promise((resolve, reject) => {
+      try {
+        (pdfMake as Pdfmake).createPdf(data).download(`${fileName || title}.pdf`, () => {}, {
+          progressCallback: progress => {
+            if (progress === 1) {
+              resolve();
+            }
+          },
+        });
+      } catch (error) {
+        reject(
+          new ErrorExceptionCore({
+            originalError: error,
+            message: (error as any)?.message,
+            code: PROZORRO_PDF_ERROR_CODES.PDF_GENERATION_FAILED,
+          })
+        );
+      }
+    });
   }
 
-  async getIframe(config: PdfDocumentConfigType): Promise<void | ErrorExceptionCore> {
+  async getIframe(
+    config: PdfDocumentConfigType,
+    parentFrameId: string = "signToDocFrameID"
+  ): Promise<void | ErrorExceptionCore> {
     const { data } = await this.create(config);
 
-    try {
-      (pdfMake as Pdfmake).createPdf(data).getDataUrl(dataUrl => {
-        const targetElement: HTMLElement = document.getElementById(SIGN_TO_DOC_FRAME_ID) as HTMLElement;
-        const iframe = document.createElement("iframe");
-        iframe.src = dataUrl;
-        iframe.width = "100%";
-        iframe.height = "100%";
-        targetElement.appendChild(iframe);
-      });
-    } catch (error) {
-      throw new ErrorExceptionCore({
-        originalError: error,
-        message: (error as any)?.message,
-        code: PROZORRO_PDF_ERROR_CODES.PDF_GENERATION_FAILED,
-      });
-    }
+    return new Promise((resolve, reject) => {
+      try {
+        (pdfMake as Pdfmake).createPdf(data).getDataUrl(dataUrl => DomHandler.passIframe(parentFrameId, dataUrl), {
+          progressCallback: progress => {
+            if (progress === 1) {
+              resolve();
+            }
+          },
+        });
+      } catch (error) {
+        reject(
+          new ErrorExceptionCore({
+            originalError: error,
+            message: (error as any)?.message,
+            code: PROZORRO_PDF_ERROR_CODES.PDF_GENERATION_FAILED,
+          })
+        );
+      }
+    });
   }
 
   private async create(config: PdfDocumentConfigType): Promise<{
