@@ -20,6 +20,7 @@ import { UnitHelper } from "@/services/Common/UnitHelper";
 import { StringHandler } from "@/utils/StringHandler";
 import type { PdfDocumentConfigType } from "@/types/pdf/PdfDocumentConfigType";
 import { DictionaryCollector } from "@/services/DictionaryCollector/DictionaryCollector";
+import { PDFTablesHandler } from "@/services/PDF/Formatting/PDFTablesHandler.ts";
 
 export class AnnualProcurementPlanDataMaker extends AbstractDocumentStrategy {
   private readonly dictionaryHelper = new DictionaryHelper(this);
@@ -229,7 +230,7 @@ export class AnnualProcurementPlanDataMaker extends AbstractDocumentStrategy {
         },
       ])
     );
-    return this.resolveTableBug(
+    return PDFTablesHandler.resolveTableBug(
       {
         table: {
           unbreakable: true,
@@ -309,7 +310,7 @@ export class AnnualProcurementPlanDataMaker extends AbstractDocumentStrategy {
       ])
     );
 
-    return this.resolveTableBug(
+    return PDFTablesHandler.resolveTableBug(
       {
         pageBreak: "before",
         table: {
