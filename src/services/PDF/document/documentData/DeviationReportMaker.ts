@@ -56,7 +56,7 @@ export class DeviationReportMaker extends AbstractDocumentStrategy {
       }),
     ];
 
-    return this.resolveTableBug(
+    return PDFTablesHandler.resolveTableBug(
       {
         table: {
           headerRows: 0,

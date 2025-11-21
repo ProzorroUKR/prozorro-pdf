@@ -142,28 +142,6 @@ export abstract class AbstractDocumentStrategy implements DocumentStrategyInterf
     };
   }
 
-  /**
-   * Якщо таблиця розміром більше ніж 1 листок,
-   * то може появлятись лінія на футері,
-   * що перекреслює контент в футері
-   */
-  resolveTableBug(table: Record<string, any>, title: Record<string, any>): Record<string, any> {
-    return {
-      layout: {
-        hLineColor: (): string => "white",
-        vLineColor: (): string => "white",
-        defaultBorder: false,
-      },
-      headlineLevel: 1,
-      table: {
-        headerRows: 0,
-        dontBreakRows: false,
-        body: [[title], [table]],
-        widths: [PDF_HELPER_CONST.ROW_ALL_WIDTH],
-      },
-    };
-  }
-
   abstract create(
     file: any,
     config: PdfDocumentConfigType,

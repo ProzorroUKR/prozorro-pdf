@@ -30,6 +30,7 @@ export class PDFTablesHandler {
       },
     };
   }
+
   // TODO add test
   static showIfAvailable({ value, title, conditional = true }: TableRowTitleValueConditional): Record<string, any> {
     return conditional && value
@@ -128,6 +129,11 @@ export class PDFTablesHandler {
     ];
   }
 
+  /**
+   * Якщо таблиця розміром більше ніж 1 листок,
+   * то може появлятись лінія на футері,
+   * що перекреслює контент в футері
+   */
   static resolveTableBug(table: Record<string, any>, title: Record<string, any>): Record<string, any> {
     return {
       layout: {

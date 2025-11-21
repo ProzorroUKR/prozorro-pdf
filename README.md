@@ -176,6 +176,8 @@ onMounted(async () => {
   - Optimized library speed;
   - Updated documentation;
   - Added `parentFrameId` to `getIframe` method;
+- **20.11.2025**
+  - Fixed Announcement Items table
 
 ---
 

@@ -43,6 +43,7 @@ import {
 } from "@/widgets/TenderOffer/configs/criterionTables.config";
 import { CriteriaRequirementDataSchema } from "@/utils/CriteriaRequirementDataSchema";
 import type { PdfDocumentConfigType } from "@/types/pdf/PdfDocumentConfigType";
+import { PDFTablesHandler } from "@/services/PDF/Formatting/PDFTablesHandler.ts";
 
 export class TenderOfferDataMaker extends AbstractDocumentStrategy {
   private readonly HUNDRED_PERCENT: number = 100;
@@ -197,7 +198,7 @@ export class TenderOfferDataMaker extends AbstractDocumentStrategy {
       }
     });
 
-    return this.resolveTableBug(
+    return PDFTablesHandler.resolveTableBug(
       {
         table: {
           headerRows: 0,
@@ -428,7 +429,7 @@ export class TenderOfferDataMaker extends AbstractDocumentStrategy {
       },
     ]);
 
-    return this.resolveTableBug(
+    return PDFTablesHandler.resolveTableBug(
       {
         table: {
           headerRows: 0,
@@ -616,7 +617,7 @@ export class TenderOfferDataMaker extends AbstractDocumentStrategy {
       ]);
     }
 
-    return this.resolveTableBug(
+    return PDFTablesHandler.resolveTableBug(
       {
         table: {
           headerRows: 0,
@@ -683,7 +684,7 @@ export class TenderOfferDataMaker extends AbstractDocumentStrategy {
       ]);
     });
 
-    return this.resolveTableBug(
+    return PDFTablesHandler.resolveTableBug(
       {
         table: {
           headerRows: 0,
@@ -737,7 +738,7 @@ export class TenderOfferDataMaker extends AbstractDocumentStrategy {
       },
     ]);
 
-    return this.resolveTableBug(
+    return PDFTablesHandler.resolveTableBug(
       {
         table: {
           headerRows: 0,

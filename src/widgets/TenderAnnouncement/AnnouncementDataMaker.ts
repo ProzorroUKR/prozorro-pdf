@@ -228,21 +228,16 @@ export class AnnouncementDataMaker extends AbstractDocumentStrategy {
       ]);
     });
 
-    return {
-      headerRows: 1,
-      alignment: "left",
-      table: {
-        dontBreakRows: true,
-        widths: [
-          PDF_HELPER_CONST.ROW_WIDTH_110,
-          PDF_HELPER_CONST.ROW_WIDTH_100,
-          PDF_HELPER_CONST.ROW_WIDTH_70,
-          PDF_HELPER_CONST.ROW_WIDTH_100,
-          PDF_HELPER_CONST.ROW_WIDTH_90,
-        ],
-        body,
-      },
-    };
+    return PDFTablesHandler.resolveTableBug(
+      PDFTablesHandler.createTable(body, [
+        PDF_HELPER_CONST.ROW_WIDTH_110,
+        PDF_HELPER_CONST.ROW_WIDTH_100,
+        PDF_HELPER_CONST.ROW_WIDTH_70,
+        PDF_HELPER_CONST.ROW_WIDTH_100,
+        PDF_HELPER_CONST.ROW_WIDTH_90,
+      ]),
+      {}
+    );
   }
 
   private createEscoItemTable(
