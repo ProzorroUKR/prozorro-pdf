@@ -13,7 +13,7 @@ export const ANNOUNCEMENT_TEXTS_LIST: Record<string, string> = {
   procurement_amount: "Кількість товарів або обсяг виконання робіт чи надання послуг",
   procurement_destination: "Місце поставки товарів або місце виконання робіт чи надання послуг",
   delivery_period: "Строк поставки товарів, виконання робіт чи надання послуг",
-  contract_terms: "Умови оплати:",
+  contract_terms: "Умови поставки та здійснення розрахунків:",
   securement_terms: "Умови надання забезпечення тендерних пропозицій/пропозицій",
   contract_terms_event: "Подія",
   contract_terms_description: "Опис",

@@ -178,6 +178,8 @@ onMounted(async () => {
   - Added `parentFrameId` to `getIframe` method;
 - **20.11.2025**
   - Fixed Announcement Items table
+- **05.12.2025**
+  - Updated ANNOUNCEMENT texts
 
 ---
 
