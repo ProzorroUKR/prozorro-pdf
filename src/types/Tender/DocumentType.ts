@@ -8,7 +8,7 @@ export type DocumentType = Record<string, string> & {
   dateModified?: string;
   datePublished?: string;
   language?: string;
-  documentOf?: "tender" | "item" | "lot";
+  documentOf?: "tender" | "item" | "lot" | "post";
   relatedItem?: string;
   author?: string;
 };

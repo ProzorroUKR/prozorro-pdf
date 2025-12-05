@@ -76,6 +76,6 @@
     "yaml": "^2.8.0"
   },
   "peerDependencies": {
-    "@prozorro/prozorro-eds": ">=1.0.2"
+    "@prozorro/prozorro-eds": ">=1.1.0"
   }
 }
