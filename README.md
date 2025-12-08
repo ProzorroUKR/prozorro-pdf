@@ -180,6 +180,8 @@ onMounted(async () => {
   - Fixed Announcement Items table
 - **05.12.2025**
   - Updated ANNOUNCEMENT texts
+- **08.12.2025**
+  - Updated ANNOUNCEMENT texts
 
 ---
 

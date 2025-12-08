@@ -86,12 +86,18 @@ export class AnnouncementDataMaker extends AbstractDocumentStrategy {
         : this.createItemTable(items),
 
       hasMilestones
-        ? PDFTablesHandler.createTableLayout([
-            PDFTablesHandler.createTableRow({
-              head: ANNOUNCEMENT_TEXTS_LIST.contract_terms,
-              data: "",
-            }),
-          ])
+        ? PDFTablesHandler.createTableLayout(
+            [
+              PDFTablesHandler.createTableRow({
+                head: ANNOUNCEMENT_TEXTS_LIST.contract_terms,
+                data: "",
+              }),
+            ],
+            true,
+            [],
+            PDF_HELPER_CONST.TABLE_LAYOUT_NO_BORDERS,
+            [PDF_HELPER_CONST.ROW_WIDTH_423, PDF_HELPER_CONST.ROW_AUTO_WIDTH]
+          )
         : PDF_HELPER_CONST.EMPTY_FIELD,
 
       hasMilestones ? this.createPaymentTable(milestones) : PDF_HELPER_CONST.EMPTY_FIELD,
