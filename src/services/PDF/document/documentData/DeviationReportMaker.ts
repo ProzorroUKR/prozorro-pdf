@@ -11,7 +11,7 @@ import type { PdfDocumentConfigType } from "@/types/pdf/PdfDocumentConfigType";
 import { DEVIATION_REPORT_TEXT } from "@/config/pdf/texts/DEVIATION_REPORT_TEXT";
 import { AbstractDocumentStrategy } from "@/services/PDF/document/AbstractDocumentStrategy";
 import type { QualificationsType } from "@/types/ProtocolConsiderationTenderOffers/Qualifications";
-import { LINE_HEIGHT_20, ROW_ALL_WIDTH, ROW_WIDTH_250 } from "@/constants/pdf/pdfHelperConstants";
+import { LINE_HEIGHT_20, ROW_WIDTH_250 } from "@/constants/pdf/pdfHelperConstants";
 import { MainInformationBuilder } from "@/widgets/DeviationReport/services/MainInformation.builder";
 import { PDFTablesHandler } from "@/services/PDF/Formatting/PDFTablesHandler.ts";
 
@@ -62,7 +62,7 @@ export class DeviationReportMaker extends AbstractDocumentStrategy {
           headerRows: 0,
           heights: LINE_HEIGHT_20,
           dontBreakRows: false,
-          widths: [ROW_WIDTH_250, ROW_ALL_WIDTH],
+          widths: [ROW_WIDTH_250, ROW_WIDTH_250],
           body: body,
         },
         margin: MARGIN_TOP_3,
