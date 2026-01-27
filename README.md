@@ -184,6 +184,10 @@ onMounted(async () => {
   - Updated ANNOUNCEMENT texts
 - **10.12.2025**
   - Fix table width in `DEVIATION_REPORT`
+- **22.01.2026**
+  - Fixed ANNOUNCEMENT visualization plan's ids
+- **23.01.2026**
+  - Fixed Announcement Items table
 
 ---
 
