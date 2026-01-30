@@ -14,7 +14,7 @@ import { CriteriaHandler } from "./services/CriteriaHandler";
 import { PDFTablesHandler } from "@/services/PDF/Formatting/PDFTablesHandler";
 import { CriterionValues } from "@/constants/tender/criterion.enum";
 import { AnnouncementMainInformationBuilder } from "./services/AnnouncementMainInformation.builder";
-import { ESCO_TYPE } from "@/constants/string";
+import { ESCO_TYPE, STRING } from "@/constants/string";
 import type { PdfDocumentConfigType } from "@/types/pdf/PdfDocumentConfigType";
 import type { AnnouncementItem, Milestone } from "@/types/Announcement/AnnouncementTypes";
 import {
@@ -79,6 +79,7 @@ export class AnnouncementDataMaker extends AbstractDocumentStrategy {
     const hasMilestones = Array.isArray(milestones) && milestones?.length;
     const hasSecurementAmount: boolean =
       Boolean(criteria.length) && noSecurement.includes(procurementMethodType as procurementMethodTypes);
+    const plansList = (plans || []).map(({ id }: any) => id).join(STRING.DELIMITER.NEW_LINE);
 
     return [
       isEsco
@@ -102,7 +103,7 @@ export class AnnouncementDataMaker extends AbstractDocumentStrategy {
 
       hasMilestones ? this.createPaymentTable(milestones) : PDF_HELPER_CONST.EMPTY_FIELD,
 
-      this.showIfAvailable(this.getField(plans, "[0].id"), ANNOUNCEMENT_TEXTS_LIST.plans, Array.isArray(plans)),
+      this.showIfAvailable(plansList, ANNOUNCEMENT_TEXTS_LIST.plans),
 
       this.showIfAvailable(
         `${UnitHelper.currencyFormatting(this.getField(value, "amount"))} ${this.getField(value, "currency")}`,
@@ -235,13 +236,20 @@ export class AnnouncementDataMaker extends AbstractDocumentStrategy {
     });
 
     return PDFTablesHandler.resolveTableBug(
-      PDFTablesHandler.createTable(body, [
-        PDF_HELPER_CONST.ROW_WIDTH_110,
-        PDF_HELPER_CONST.ROW_WIDTH_100,
-        PDF_HELPER_CONST.ROW_WIDTH_70,
-        PDF_HELPER_CONST.ROW_WIDTH_100,
-        PDF_HELPER_CONST.ROW_WIDTH_90,
-      ]),
+      PDFTablesHandler.createTable(
+        body,
+        [
+          PDF_HELPER_CONST.ROW_WIDTH_110,
+          PDF_HELPER_CONST.ROW_WIDTH_100,
+          PDF_HELPER_CONST.ROW_WIDTH_70,
+          PDF_HELPER_CONST.ROW_AUTO_WIDTH,
+          PDF_HELPER_CONST.ROW_WIDTH_90,
+        ],
+        undefined,
+        undefined,
+        undefined,
+        false
+      ),
       {}
     );
   }
@@ -288,15 +296,14 @@ export class AnnouncementDataMaker extends AbstractDocumentStrategy {
     ];
     const body: { text: string; style: string }[][] = [];
     body.push(header);
-    let fundingKindCell = "";
-    switch (fundingKind) {
-      case "other":
-        fundingKindCell = ANNOUNCEMENT_TEXTS_LIST.esco_funding_other;
-        break;
-      case "budget":
-        fundingKindCell = ANNOUNCEMENT_TEXTS_LIST.esco_funding_budget;
-        break;
-    }
+
+    const fundingKindCell =
+      fundingKind === "other"
+        ? ANNOUNCEMENT_TEXTS_LIST.esco_funding_other
+        : fundingKind === "budget"
+          ? ANNOUNCEMENT_TEXTS_LIST.esco_funding_budget
+          : "";
+
     items.forEach(item =>
       body.push([
         {
@@ -329,6 +336,7 @@ export class AnnouncementDataMaker extends AbstractDocumentStrategy {
         },
       ])
     );
+
     return {
       headerRows: 1,
       table: {
