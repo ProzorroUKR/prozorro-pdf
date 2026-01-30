@@ -153,6 +153,96 @@ onMounted(async () => {
 
 ---
 
+## Обробка помилок
+
+Бібліотека використовує уніфіковану систему обробки помилок, яка повертає екземпляри `IPrzorroPdfErrorExceptionCore` для всіх випадків помилок. Це забезпечує послідовну обробку помилок і надає детальну інформацію про помилки.
+
+### Структура помилки
+Кожен об’єкт помилки реалізує інтерфейс `IPrzorroPdfErrorExceptionCore` і містить:
+- `code`: Ідентифікатор типів помилок (`PROZORRO_PDF_ERROR_CODES` enum)
+- `details`: Містить розширену інформацію про помилку (`ErrorDetailsModel`)
+- `timestamp`: Час створення помилки
+- `logWithTrace()`: Метод для реєстрації помилок з трасуванням
+
+### Типи помилок (`PROZORRO_PDF_ERROR_CODES`)
+
+| Код | Опис | Можливі причини | Рекомендовані дії |
+| :--- | :--- | :--- | :--- |
+| **INVALID_SIGNATURE** | Помилка електронного підпису | Підпис пошкоджений, некоректний формат, підпис не відповідає даним | Перевірити цілісність підпису, повторно підписати |
+| **INVALID_PARAMS** | Некоректні вхідні дані | Неповні дані, некоректний формат параметрів, відсутні URL | Валідувати дані перед передачею в бібліотеку |
+| **VALIDATION_FAILED** | Помилка бізнес-логіки | Відсутні дані в об'єкті (наприклад, awards, conclusion), невідповідність статусів | Перевірити наявність всіх необхідних даних у ЦБД |
+| **PDF_GENERATION_FAILED** | Помилка генерації PDF | Внутрішня помилка генератора PDF Make | Звернутись до технічної підтримки |
+| **SERVICE_UNAVAILABLE** | Сервіс недоступний | Внутрішні помилки сервісу, неможливо визначити стратегію | Звернутись до технічної підтримки |
+
+### Детальні повідомлення про помилки
+
+| Тип помилки | Ключ повідомлення | Повідомлення | Контекст валідації |
+| :--- | :--- | :--- | :--- |
+| **INVALID_SIGNATURE** | `documentAccess` | Не вдалося отримати доступ до файлу підпису | Помилка при спробі завантажити файл підпису за посиланням |
+| | `documentEncoding` | Не вдалося розшифрувати файл підпису | Помилка при спробі декодувати контент файлу (p7s) |
+| **INVALID_PARAMS** | `incorrectInputFormat` | Неправильний формат вхідних даних | Передані типи даних не відповідають очікуваним |
+| | `undefinedUrl` | Відсутнє посилання на об'єкт ЦБД | Обов'язкове поле `url` у `setConfig` не передано |
+| | `undefinedTitle` | Відсутній параметр "Document title" | Обов'язкове поле `title` (для деяких типів) не передано |
+| | `undefinedDate` | Відсутній параметр "Date modified" | Обов'язкове поле `date` (для деяких типів) не передано |
+| **VALIDATION_FAILED** | `undefinedObject` | Дані об'єкта ЦБД відсутні | Завантажений JSON об'єкт пустий або некоректний |
+| | `undefinedAwards` | Відсутнє поле "awards" об'єкта з ЦБД | У завантажених даних тендеру відсутній масив `awards` |
+| | `undefinedStatus` | Відсутнє поле "status" об'єкта "award" | У об'єкті нагороди відсутній статус |
+| | `undefinedConclusion` | Відсутнє поле "conclusion" об'єкта з ЦБД | У даних моніторингу відсутній розділ `conclusion` |
+| | `undefinedConclusionOfDocs` | Відсутнє поле "document" в об'єкті "conclusion" | У висновку моніторингу відсутні посилання на документи |
+| | `undefinedDocumentTitle` | Не вдалося знайти ім'я документу в об'єкті | Не знайдено документа з відповідним заголовком у списку |
+| | `wrongDocumentType` | Не вдалося визначити тип документу | Документи в списку не відповідають очікуваному `documentType` |
+| | `signersObjectUnavailable` | Виникла помилка при формуванні колонтитулу з підписом | Не вдалося отримати інформацію про підписувачів з файлу |
+| | `documentListUndefined` | Відсутній список документів | Поле `documents` в об'єкті відсутнє або пусте |
+| | `wrongDocumentTypeStatus` | Неправильний тип документу | Тип документа не відповідає вимогам обраного шаблону PDF |
+| | `wrongDocumentTitle` | Неправильний заголовок документу | Заголовок документа не відповідає очікуваному (наприклад, не "sign.p7s") |
+| | `wrongURL` | Неправильне посилання на документ | У списку документів відсутнє або некоректне поле `url` |
+| | `tenderLoader` | Не передано "config.tender" | Для деяких типів (наприклад, COMPLAINT) потрібно посилання на тендер |
+| | `undefinedCancellationStatus` | Статус відміни закупівлі відсутній | У об'єкті `cancellation` відсутнє поле `status` |
+| | `awardStatusNotFind` | Статус в "award" не відповідає умовам | Статус нагороди не є допустимим для генерації обраного PDF |
+| | `wrongDocumentDate` | Неправильна дата документу | `dateModified` документа не збігається з переданою датою |
+| | `wrongQualified` | Поле "qualified" не "true" | Бізнес-перевірка: учасник має бути кваліфікований |
+| | `wrongEligible` | Поле "eligible" не "true" | Бізнес-перевірка: учасник має відповідати вимогам |
+| | `wrongEligibleOrQualified` | Поле "eligible" або "qualified" не "false" | Перевірка для еПротоколу відхилення |
+| | `awardNotFound` | Відсутня інформація в файлі підпису | Дані всередині підпису не містять потрібної інформації про нагороду |
+| | `suppliersIsNotDefined` | Відсутня інформація про постачальників | Поле `suppliers` відсутнє в об'єкті `award`/`bid` |
+| | `cancellationNotFound` | Відсутня інформація про відміну | У файлі підпису відсутні дані про скасування закупівлі/лоту |
+| | `participantsIsNotDefined` | Відсутня інформація про учасників | Поле `participants` відсутнє в даних |
+| | `tenderersIsNotDefined` | Відсутня інформація про учасника | Поле `tenderers` відсутнє в даних пропозиції |
+| | `wrongEdrDocumentType` | Поле "documentType" не "registerExtract" | Перевірка типу документа для ЄДР |
+| | `wrongEdrFile` | Нічого не знайдено за вказаним кодом | Помилка пошуку в даних ЄДР |
+| | `undefinedPosts` | В скарзі відсутні не пусті об'єкти posts | У даних скарги відсутні деталі заперечень |
+| **SERVICE_UNAVAILABLE** | `typeIsNotDefined` | Неможливо отримати стратегію типів | Передано невідомий `PROZORRO_PDF_TYPES` |
+| | `loaderTypeIsNotDefined` | Не вдається отримати стратегію завантажувача | Внутрішня помилка вибору стратегії завантаження даних |
+
+### Приклад обробки помилок
+
+```typescript
+import { IPrzorroPdfErrorExceptionCore, PROZORRO_PDF_ERROR_CODES } from "@prozorro/prozorro-pdf";
+
+try {
+  await ProzorroPdfService.setConfig({
+    url: '/tender-url',
+    type: PROZORRO_PDF_TYPES.TICKET
+  });
+  await ProzorroPdfService.open({ title: 'document.xml.p7s' });
+} catch (error) {
+  const pdfError = error as IPrzorroPdfErrorExceptionCore;
+  
+  switch (pdfError.code) {
+    case PROZORRO_PDF_ERROR_CODES.INVALID_PARAMS:
+      console.error("Перевірте вхідні параметри:", pdfError.details.message);
+      break;
+    case PROZORRO_PDF_ERROR_CODES.VALIDATION_FAILED:
+      console.error("Помилка валідації даних:", pdfError.details.message);
+      break;
+    default:
+      console.error("Виникла помилка:", pdfError.details.message);
+  }
+}
+```
+
+---
+
 ## Release notes
 
 - **24.10.2025**
@@ -184,6 +274,12 @@ onMounted(async () => {
   - Updated ANNOUNCEMENT texts
 - **10.12.2025**
   - Fix table width in `DEVIATION_REPORT`
+- **22.01.2026**
+  - Fixed `ANNOUNCEMENT` visualization plan's ids
+- **23.01.2026**
+  - Fixed Announcement Items table
+- **30.01.2026**
+  - Added error handling documentation
 
 ---
 
