@@ -1,4 +1,4 @@
-export const ANNOUNCEMENT_TEXTS_LIST: Record<string, string> = {
+export const ANNUAL_PROCUREMENT_PLAN_TEXTS_LIST: Record<string, string> = {
   title: "ПРОТОКОЛ",
   subtitle: "затвердження річного плану закупівель",
   customer_info: "Найменування замовника:",

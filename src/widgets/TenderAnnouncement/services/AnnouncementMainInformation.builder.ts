@@ -7,7 +7,6 @@ import { ContactPointFormatter, CONTRACT_POINT_TYPE } from "@/utils/ObjectToStri
 import { ANNOUNCEMENT_TEXTS_LIST } from "@/config/pdf/texts/ANNOUNCEMENT";
 import { PROCUREMENT_METHOD_TYPE } from "@/widgets/TenderAnnouncement/constants/procurementMethodType";
 import * as CONCLUSION_OF_MONITORING_CONST from "@/config/pdf/conclusionOfMonitoringConstants";
-import { PROCUREMENT_METHOD } from "@/widgets/TenderAnnouncement/constants/procurementMethod";
 import { procurementMethodTypeEU } from "@/widgets/TenderAnnouncement/constants/conditions";
 import { PROCUREMENT_CATEGORY } from "@/widgets/TenderAnnouncement/constants/procurementCategory";
 import { CLASSIFIED_ID_CHARACTERS } from "@/constants/pdf/pdfHelperConstants";
@@ -48,12 +47,9 @@ export class AnnouncementMainInformationBuilder implements IAnnouncementMainInfo
   }
 
   get setSubTitle(): IAnnouncementMainInformationBuilder {
-    const { procurementMethod, procurementMethodType } = this.tender;
-    const subTitle = this._getField(PROCUREMENT_METHOD_TYPE, `${procurementMethod}.${procurementMethodType}`);
-
     this._data.push({
       margin: CONCLUSION_OF_MONITORING_CONST.MARGIN_TOP_3,
-      text: subTitle || this._getField(PROCUREMENT_METHOD, procurementMethod),
+      text: this._getField(PROCUREMENT_METHOD_TYPE, this.tender.procurementMethodType),
       style: PDF_FILED_KEYS.TITLE_MEDIUM,
     });
     return this;

@@ -280,6 +280,8 @@ try {
   - Fixed Announcement Items table
 - **30.01.2026**
   - Added error handling documentation
+- **23.02.2026**
+  - Refactored `ANNOUNCEMENT` subtitles
 
 ---
 
