@@ -34,6 +34,8 @@ export class AnnouncementDataMaker extends AbstractDocumentStrategy {
     _signers: SignerType[],
     dictionaries: Map<string, Record<string, any>>
   ): Record<string, any>[] {
+    console.log("tender", tender);
+
     const hasLots = Boolean(tender?.lots?.length);
     const builder = new AnnouncementMainInformationBuilder(tender, dictionaries);
 

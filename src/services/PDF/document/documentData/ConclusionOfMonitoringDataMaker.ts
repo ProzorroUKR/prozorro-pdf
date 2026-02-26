@@ -16,6 +16,9 @@ import { afterXDate, afterYDate, beforeXDate } from "@/config/pdf/conclusionOfMo
 import { CONCLUSION_OF_MONITORING_TEXTS_LIST } from "@/config/pdf/texts/CONCLUSION_OF_MONITORING";
 import { PDFTablesHandler } from "@/services/PDF/Formatting/PDFTablesHandler";
 import type { PdfDocumentConfigType } from "@/types/pdf/PdfDocumentConfigType";
+import { ErrorExceptionCore } from "@/widgets/ErrorExceptionCore/ErrorExceptionCore.ts";
+import { PROZORRO_PDF_ERROR_CODES } from "@/widgets/ErrorExceptionCore/constants/ERROR_CODES.enum.ts";
+import { ERROR_MESSAGES } from "@/widgets/ErrorExceptionCore/configs/messages.ts";
 
 export class ConclusionOfMonitoringDataMaker extends AbstractDocumentStrategy {
   createFooter(): Record<string, any>[] {
@@ -26,11 +29,18 @@ export class ConclusionOfMonitoringDataMaker extends AbstractDocumentStrategy {
     return DEFAULT_PAGE_MARGIN;
   }
 
-  public create(
+  create(
     { tender, monitoring }: Record<any, any>,
     _config: PdfDocumentConfigType,
     signers: SignerType[]
   ): Record<string, any>[] {
+    if (!monitoring || !tender) {
+      throw new ErrorExceptionCore({
+        code: PROZORRO_PDF_ERROR_CODES.VALIDATION_FAILED,
+        message: ERROR_MESSAGES.VALIDATION_FAILED.encodingOrError,
+      });
+    }
+
     const conclusionDateCreated = this.getField<string>(monitoring, "conclusion-date-created");
     const firstSigner: SignerType = ArrayHandler.getFirstElement(signers) as SignerType;
     const lastSigner: SignerType = ArrayHandler.getLastElement(signers) as SignerType;

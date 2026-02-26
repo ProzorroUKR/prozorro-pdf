@@ -6,7 +6,6 @@ import { Assert } from "@/widgets/ErrorExceptionCore/Assert";
 import { ArrayHandler } from "@/utils/ArrayHandler";
 import type { MonitoringType } from "@/types/Monitoring/MonitoringType";
 import type { DocumentType } from "@/types/Tender/DocumentType";
-import { ENCODING } from "@/constants/encoding";
 import { PdfTemplateTypes } from "@/services/PDF/PdfTemplateTypes.ts";
 import type { PdfDocumentConfigType } from "@/types/pdf/PdfDocumentConfigType";
 import { ObjectDecoder } from "@/utils/ObjectDecoder";
@@ -28,14 +27,15 @@ export class ConclusionLoader
 
     const document = this.getDocument(object, config);
     const file = await this.getData(document.url);
-    const { data, signers } = await this.getDataFromSign(file, ENCODING.UTF_8 || config.encoding);
+    const { data, signers } = await this.getDataFromSign(file, config.encoding);
+    console.log(ObjectDecoder.decode<Record<any, any>>(data));
 
     return {
       url: document.url,
       title: document.title,
       signers: signers || [],
       type: PdfTemplateTypes.MONITORING,
-      file: this.unwrapTender(ObjectDecoder.decode<Record<any, any>>(data)),
+      file: ObjectDecoder.decode<Record<any, any>>(data),
     };
   }
 
