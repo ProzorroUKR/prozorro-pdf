@@ -1,6 +1,5 @@
 export const ANNOUNCEMENT_TEXTS_LIST: Record<string, string> = {
   title: "ОГОЛОШЕННЯ",
-  subtitle: "про проведення відкритих торгів",
   underline_spaces: ".........................................................", // 56 spaces
   customer_info: "Найменування замовника",
   customer_edrpou: "Ідентифікаційний код замовника в ЄДР:",
