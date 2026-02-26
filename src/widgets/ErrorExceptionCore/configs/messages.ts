@@ -39,6 +39,7 @@ export const ERROR_MESSAGES = {
     wrongEdrDocumentType: 'Поле "documentType" не "registerExtract"',
     wrongEdrFile: "На жаль, за вказаним кодом нічого не знайдено",
     undefinedPosts: "В скарзі відсутні не пусті об'єкти objections:posts.",
+    encodingOrError: "Невірний формат вхідних даних або не валідний підпис",
   },
   [PROZORRO_PDF_ERROR_CODES.SERVICE_UNAVAILABLE]: {
     typeIsNotDefined: "Неможливо отримати стратегію обробки типів",
