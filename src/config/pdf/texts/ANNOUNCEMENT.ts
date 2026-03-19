@@ -79,4 +79,6 @@ export const ANNOUNCEMENT_TEXTS_LIST: Record<string, string> = {
   esco_classification_codes: "Коди відповідних класифікаторів предмета закупівлі (за наявності)",
   esco_funding_other: "фінансування з інших джерел",
   esco_funding_budget: "фінансування з бюджетних коштів",
+  max_reward_amount: "Максимальний розмір винагороди:",
+  min_auction_amount_step: "Розмір мінімального кроку аукціону:",
 };

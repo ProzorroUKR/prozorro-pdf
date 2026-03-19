@@ -285,6 +285,10 @@ try {
   - Refactored `ANNOUNCEMENT` subtitles
 - **26.02.2026**
   - Fixed `CONSLUSION` pdf with unvalid sign
+- **19.03.2026**
+  - Fix calculation prices in PQ;
+  - Fix `value.amount` and `minimalStep.amount` in ANNOUNCEMENT;
+  - Added `value.amountPercentage` and `minimalStep.amountPercentage` to ANNOUNCEMENT;
 
 ---
 

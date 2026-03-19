@@ -24,6 +24,8 @@ import {
   procurementMethodTypes,
 } from "@/widgets/TenderAnnouncement/constants/conditions";
 import { ClassificationHandler } from "@/utils/ClassificationHandler.ts";
+import { PriceHandler } from "@/services/Common/PriceHandler.ts";
+import { isNumber } from "lodash";
 
 const nbuRateConverter = 100;
 
@@ -34,8 +36,6 @@ export class AnnouncementDataMaker extends AbstractDocumentStrategy {
     _signers: SignerType[],
     dictionaries: Map<string, Record<string, any>>
   ): Record<string, any>[] {
-    console.log("tender", tender);
-
     const hasLots = Boolean(tender?.lots?.length);
     const builder = new AnnouncementMainInformationBuilder(tender, dictionaries);
 
@@ -77,6 +77,10 @@ export class AnnouncementDataMaker extends AbstractDocumentStrategy {
       yearlyPaymentsPercentageRange,
       fundingKind,
     } = data;
+
+    console.log("value", value);
+    console.log("minimalStep", minimalStep);
+
     const isEsco = procurementMethodType === ESCO_TYPE;
     const hasMilestones = Array.isArray(milestones) && milestones?.length;
     const hasSecurementAmount: boolean =
@@ -108,16 +112,29 @@ export class AnnouncementDataMaker extends AbstractDocumentStrategy {
       this.showIfAvailable(plansList, ANNOUNCEMENT_TEXTS_LIST.plans),
 
       this.showIfAvailable(
-        `${UnitHelper.currencyFormatting(this.getField(value, "amount"))} ${this.getField(value, "currency")}`,
+        PriceHandler.currencyFormat(value?.amount, value?.currency),
         ANNOUNCEMENT_TEXTS_LIST.expected_price,
         !isEsco
       ),
 
       this.showIfAvailable(
-        `${UnitHelper.currencyFormatting(this.getField(minimalStep, "amount"))} ${this.getField(minimalStep, "currency")}`,
+        PriceHandler.currencyFormat(minimalStep?.amount, minimalStep?.currency),
         ANNOUNCEMENT_TEXTS_LIST.minimal_step,
         !isEsco
       ),
+
+      this.showIfAvailable(
+        PriceHandler.currencyFormat(value?.amountPercentage, "%"),
+        ANNOUNCEMENT_TEXTS_LIST.max_reward_amount,
+        isNumber(value?.amountPercentage)
+      ),
+
+      this.showIfAvailable(
+        PriceHandler.currencyFormat(minimalStep?.amountPercentage, "%"),
+        ANNOUNCEMENT_TEXTS_LIST.min_auction_amount_step,
+        isNumber(minimalStep?.amountPercentage)
+      ),
+
       this.showIfAvailable(
         features ? ANNOUNCEMENT_TEXTS_LIST.feature : ANNOUNCEMENT_TEXTS_LIST.missing_she,
         ANNOUNCEMENT_TEXTS_LIST.formula,
