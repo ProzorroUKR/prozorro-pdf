@@ -66,8 +66,9 @@
     "vitest": "^3.2.1"
   },
   "dependencies": {
-    "@prozorro/prozorro-eds": "^1.0.2",
+    "@prozorro/prozorro-eds": ">=1.1.0",
     "axios": "^1.9.0",
+    "decimal.js": "^10.6.0",
     "lodash": "^4.17.21",
     "pdfmake": "^0.2.20",
     "qs": "^6.14.0",

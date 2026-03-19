@@ -1,4 +1,3 @@
-import { get } from "lodash";
 import type { PQContractType, PQItem, PQsupplier } from "@/widgets/pq/types/PQTypes";
 import { DocumentExtractionService } from "@/services/PDF/document/DocumentExtractionService";
 import { PQFormattingService } from "@/widgets/pq/services/Formating/PQFormattingService";
@@ -194,9 +193,9 @@ export class SecondVersionFormatter {
 
     if ((items as [])?.length) {
       (items as PQItem[]).forEach(({ description, quantity, unit }) => {
-        const itemAmount: number = get(unit, "value.amount") as number;
-        const itemCurrency: string = get(unit, "value.currency") || "";
-        const tax = get(unit, "value.valueAddedTaxIncluded") ? " з ПДВ" : " без ПДВ";
+        const itemAmount: number = unit?.value?.amount as number;
+        const itemCurrency: string = unit?.value?.currency || "";
+        const tax = unit?.value?.valueAddedTaxIncluded ? " з ПДВ" : " без ПДВ";
 
         const pricePerOne = PriceHandler.addCurrency(itemAmount, itemCurrency);
 

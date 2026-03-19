@@ -1,3 +1,4 @@
+import Decimal from "decimal.js";
 import { PRICE_DECIMAL_PRECISION } from "@/constants/pdf/pdfHelperConstants";
 import { NumbersSpeller } from "@/utils/numbersSpeller/NumbersSpeller";
 import { UnitHelper } from "@/services/Common/UnitHelper";
@@ -12,8 +13,7 @@ export class PriceHandler {
 
   static getPrice({ amount = 0, valueAddedTaxIncluded }: PQvalue, quantity = 1): number {
     const price = valueAddedTaxIncluded ? this.amountRemoveTax(amount) : amount;
-
-    return price * quantity;
+    return new Decimal(price).mul(quantity).toNumber();
   }
 
   static addCurrency(price: number, currency = ""): string {
