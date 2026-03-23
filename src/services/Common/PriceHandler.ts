@@ -7,6 +7,7 @@ import { STRING } from "@/constants/string";
 import type { PQvalue } from "@/widgets/pq/types/PQTypes";
 import * as PDF_HELPER_CONST from "@/constants/pdf/pdfHelperConstants";
 import { FloatFormatter } from "@/utils/ObjectToString/FloatFormatter";
+import { isNumber } from "lodash";
 
 export class PriceHandler {
   private static readonly _numberSpeller = new NumbersSpeller();
@@ -41,5 +42,22 @@ export class PriceHandler {
 
   static roundPriceToCoins(price: number): number {
     return Number(price.toFixed(PRICE_DECIMAL_PRECISION));
+  }
+
+  /**
+   * 123456.5 => "123 456,50 UAH"
+   */
+  static currencyFormat(value?: number, currency: string = "UAH", defaultValue: string = "—"): string {
+    if (!isNumber(value)) {
+      return defaultValue;
+    }
+
+    const price = new Intl.NumberFormat("uk-UK", {
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 7,
+      roundingMode: "floor",
+    } as any).format(value);
+
+    return `${price} ${currency}`;
   }
 }
