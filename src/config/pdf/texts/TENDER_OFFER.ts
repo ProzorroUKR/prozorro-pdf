@@ -10,6 +10,8 @@ export const TENDER_OFFER = {
   information_price_tender_offer: "Інформація щодо ціни тендерної пропозиції/пропозиції до початку аукціону:",
   information_price_tender_offer_before_start:
     "Інформація щодо приведеної ціни тендерної пропозиції/пропозиції до початку аукціону:",
+  information_on_amount_of_remuneration:
+    "Інформація про розмір винагороди управителя складного активу (активів) до початку аукціону:",
   with_tax: "з ПДВ",
   without_tax: "без ПДВ",
   subcontractor: "Субпідрядник:",
