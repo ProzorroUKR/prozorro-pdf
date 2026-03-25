@@ -68,6 +68,7 @@ export type ContactPointType = {
 
 export type BidsValueType = {
   amount?: number;
+  amountPercentage?: number;
   amountPerformance?: number;
   currency?: string;
   valueAddedTaxIncluded?: boolean;

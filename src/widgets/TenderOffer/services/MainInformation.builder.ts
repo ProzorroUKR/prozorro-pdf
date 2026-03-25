@@ -20,6 +20,7 @@ export interface IMainInformationBuilder {
   setScale: IMainInformationBuilder;
   setValue: IMainInformationBuilder;
   setWeightedValue: IMainInformationBuilder;
+  setAmountPercentage: IMainInformationBuilder;
   setSubcontractingDetails: IMainInformationBuilder;
 }
 
@@ -107,6 +108,19 @@ export class MainInformationBuilder implements IMainInformationBuilder {
       this._addSimpleRow(
         TENDER_OFFER.information_price_tender_offer_before_start,
         this._getPrice(this.bid?.weightedValue || {})
+      );
+    }
+    return this;
+  }
+
+  get setAmountPercentage(): IMainInformationBuilder {
+    if (isNumber(this.bid?.value?.amountPercentage)) {
+      this._addSimpleRow(
+        TENDER_OFFER.information_on_amount_of_remuneration,
+        this._getPrice({
+          amount: this.bid?.value?.amountPercentage,
+          currency: "%",
+        })
       );
     }
     return this;

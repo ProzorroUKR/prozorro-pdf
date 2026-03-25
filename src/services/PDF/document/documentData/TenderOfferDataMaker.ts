@@ -792,7 +792,7 @@ export class TenderOfferDataMaker extends AbstractDocumentStrategy {
         style: PDF_FILED_KEYS.TITLE_LARGE_TENDER_OFFER,
         text: `Лот - ${lot.title}`,
       },
-      ...mainInfoBuilder.setValue.setWeightedValue.setSubcontractingDetails.getResult,
+      ...mainInfoBuilder.setValue.setWeightedValue.setAmountPercentage.setSubcontractingDetails.getResult,
       this.escoTable(tender, bid, lotValueBid),
       ...criterionTables,
       this.resolveSpecificationTable(tender, bid, lot),

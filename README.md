@@ -289,6 +289,8 @@ try {
   - Fix calculation prices in PQ;
   - Fix `value.amount` and `minimalStep.amount` in ANNOUNCEMENT;
   - Added `value.amountPercentage` and `minimalStep.amountPercentage` to ANNOUNCEMENT;
+- **24.03.2026**
+  - Update `TENDER_OFFER` for ARMA;
 
 ---
 
