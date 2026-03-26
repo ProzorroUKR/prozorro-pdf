@@ -1,5 +1,3 @@
-import type { SignerType } from "@prozorro/prozorro-eds";
-import * as PDF_HELPER_CONST from "@/constants/pdf/pdfHelperConstants";
 import { AbstractDocumentStrategy } from "@/services/PDF/document/AbstractDocumentStrategy";
 import { DEFAULT_PAGE_MARGIN } from "@/config/pdf/announcementConstants";
 import type { PQContractType, PQDataComplexType } from "@/widgets/pq/types/PQTypes";
@@ -13,12 +11,7 @@ import type { PdfDocumentConfigType } from "@/types/pdf/PdfDocumentConfigType";
 export class PQDataMaker extends AbstractDocumentStrategy {
   private _tender: TenderOfferType | Record<string, any> = {};
 
-  create(
-    contract: PQDataComplexType | Record<string, any>,
-    config: PdfDocumentConfigType,
-    _signers?: SignerType[],
-    _dictionaries?: Map<string, Record<string, any>>
-  ): Record<string, any>[] {
+  create(contract: PQDataComplexType | Record<string, any>, config: PdfDocumentConfigType): Record<string, any>[] {
     this._tender = contract?.tender || {};
     const contractObject: PQContractType | Record<string, never> = contract?.contract || {
       contractTemplateName: STRING.EMPTY,
@@ -34,8 +27,18 @@ export class PQDataMaker extends AbstractDocumentStrategy {
     return [];
   }
 
+  createHeader(): (currentPage: number) => Record<string, any>[] {
+    return (currentPage: number) => [
+      {
+        text: currentPage > 1 ? currentPage.toString() : "",
+        alignment: "center",
+        margin: [0, 15, 0, 0] as [number, number, number, number],
+      },
+    ];
+  }
+
   createFooter(): Record<string, any>[] {
-    return [PDF_HELPER_CONST.EMPTY_FIELD];
+    return [];
   }
 
   getPageMargins(): number[] {

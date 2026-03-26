@@ -2,6 +2,7 @@ import { pqBase, pqSpecificationTexts, pqTexts } from "@/widgets/pq/configs/pqTe
 import { PdfItemEnum } from "@/widgets/pq/types/TextConfigType";
 import type { TextConfigType } from "@/widgets/pq/types/TextConfigType";
 import { STRING } from "@/constants/string";
+import { pqAozTexts } from "@/widgets/pq/templates/aoz/configs/pqAozTexts.ts";
 
 export const fuelContractConfig: TextConfigType = {
   subject: [pqTexts.subject.fuelObligations, pqTexts.subject.talons, pqTexts.subject.fuelProcurement],
@@ -110,22 +111,11 @@ export const fuelContractConfig: TextConfigType = {
 };
 
 export const fuelTableHeader = [
-  {
-    text: pqSpecificationTexts.productName,
-  },
-  {
-    text: pqSpecificationTexts.technicalCharacteristics,
-  },
-  {
-    text: pqSpecificationTexts.amount,
-  },
-  {
-    text: pqSpecificationTexts.packing,
-  },
-  {
-    text: pqSpecificationTexts.singlePrice,
-  },
-  {
-    text: pqSpecificationTexts.totalPrice,
-  },
+  { text: pqAozTexts.number },
+  { text: pqSpecificationTexts.productName },
+  { text: pqSpecificationTexts.technicalCharacteristics },
+  { text: pqSpecificationTexts.amount },
+  { text: pqSpecificationTexts.packing },
+  { text: pqSpecificationTexts.singlePrice },
+  { text: pqSpecificationTexts.totalPrice },
 ];

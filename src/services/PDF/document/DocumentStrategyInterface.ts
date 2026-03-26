@@ -13,6 +13,7 @@ export interface DocumentStrategyInterface {
     signers?: SignerType[],
     link?: string
   ): ((currentPage: number) => Record<string, any>[]) | Record<string, any>[];
+  createHeader?(): ((currentPage: number) => Record<string, any>[]) | Record<string, any>[];
   getPageMargins(): number[];
   pageBreakBefore(): (
     currentNode?: Record<string, any>,

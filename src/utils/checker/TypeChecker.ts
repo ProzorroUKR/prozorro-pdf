@@ -1,8 +1,5 @@
 import type { TypeCheckerInterface } from "@/utils/checker/TypeCheckerInterface";
-import type {
-  CompoundTextType,
-  OlConfigType,
-} from "@/widgets/pq/types/TextConfigType";
+import type { CompoundTextType, OlConfigType } from "@/widgets/pq/types/TextConfigType";
 
 export class TypeChecker implements TypeCheckerInterface {
   static isCompoundTextType(x: OlConfigType): boolean {
@@ -24,9 +21,7 @@ export class TypeChecker implements TypeCheckerInterface {
   }
 
   isArray(value: any): boolean {
-    return Boolean(
-      value && typeof value === "object" && value.constructor === Array
-    );
+    return Boolean(value && typeof value === "object" && value.constructor === Array);
   }
 
   isFunction(value: any): boolean {
@@ -34,9 +29,7 @@ export class TypeChecker implements TypeCheckerInterface {
   }
 
   isObject(value: any): boolean {
-    return Boolean(
-      value && typeof value === "object" && value.constructor === Object
-    );
+    return Boolean(value && typeof value === "object" && value.constructor === Object);
   }
 
   isNull(value: any): boolean {
@@ -52,9 +45,7 @@ export class TypeChecker implements TypeCheckerInterface {
   }
 
   isRegExp(value: any): boolean {
-    return Boolean(
-      value && typeof value === "object" && value.constructor === RegExp
-    );
+    return Boolean(value && typeof value === "object" && value.constructor === RegExp);
   }
 
   isError(value: any): boolean {

@@ -9,6 +9,7 @@ import type { TextConfigType } from "@/widgets/pq/types/TextConfigType";
 import { PDF_FILED_KEYS } from "@/constants/pdf/pdfFieldKeys";
 import { DEFAULT_TEXT_FIELDS, STRING } from "@/constants/string";
 import { FormattingFunctionsEnum } from "@/widgets/pq/services/Formating/config/FormattingFunctions.enum";
+import { pqAozTexts } from "@/widgets/pq/templates/aoz/configs/pqAozTexts.ts";
 
 export const genericContractConfig: TextConfigType = {
   subject: [
@@ -231,6 +232,10 @@ export const genericContractConfig: TextConfigType = {
 };
 
 export const genericTableItemsHeader = [
+  {
+    text: pqAozTexts.number,
+    style: PDF_FILED_KEYS.BOLD_TEXT,
+  },
   {
     text: pqSpecificationTexts.productName,
     style: PDF_FILED_KEYS.BOLD_TEXT,

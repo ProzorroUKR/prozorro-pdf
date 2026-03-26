@@ -39,12 +39,14 @@ export class DocumentManager {
       dictionaries,
       data
     );
+    const header = this.documentGenerator.createHeader ? this.documentGenerator.createHeader() : undefined;
     const footer: Record<string, any>[] | ((currentPage: number) => Record<string, any>) =
       this.documentType === PdfTemplateTypes.COMPLAINT_POST
         ? complaintPostCustomFooter
         : this.documentGenerator.createFooter(signers, link); // TODO
 
     return {
+      header,
       footer,
       content,
       styles: PDF_STYLES,

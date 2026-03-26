@@ -9,6 +9,9 @@ import { NushFormatter } from "@/widgets/pq/services/contractTextFormatters/Nush
 import { pqNushTexts } from "@/widgets/pq/templates/nush/configs/pqNushTexts.ts";
 import { PDF_FILED_KEYS } from "@/constants/pdf/pdfFieldKeys.ts";
 import { PQ_LIST_HEADING_MARGIN } from "@/widgets/pq/configs/margins.ts";
+import { AozFormatter } from "@/widgets/pq/services/contractTextFormatters/AozFormatter.ts";
+import { pqAozTexts } from "@/widgets/pq/templates/aoz/configs/pqAozTexts.ts";
+import { STRING } from "@/constants/string.ts";
 
 export class TemplateBuildHelper {
   static pharmBuild(
@@ -98,6 +101,39 @@ export class TemplateBuildHelper {
         SecondVersionFormatter.createSignatureBlock(contractObject),
       ],
       SecondVersionFormatter.createGenericAddition2(contractObject, contractTemplate, tender),
+    ];
+  }
+
+  static aozBuilder(contractObject: PQContractType | Record<string, never>, tender: any): Record<string, any>[] {
+    return [
+      AozFormatter.createTitle(contractObject as PQContractType),
+      AozFormatter.createHeader(contractObject as PQContractType),
+      AllVersionFormatter.createContractText(contractObject, PROZORRO_TEMPLATE_CODES.DPA, tender),
+      [
+        PQFormattingService.createUnitHeader(
+          pqAozTexts.requisitesTitle,
+          15,
+          PDF_FILED_KEYS.HEADING,
+          PQ_LIST_HEADING_MARGIN
+        ),
+        SecondVersionFormatter.createContactsTable(contractObject, pqAozTexts.performerCapitalize),
+        SecondVersionFormatter.createSignatureBlock(contractObject),
+        [STRING.WHITESPACE, STRING.WHITESPACE],
+        PQFormattingService.createCompoundItemFromConfig([pqAozTexts.requisitesText], contractObject, 15, tender),
+        {
+          text: pqAozTexts.signersTitle,
+          style: PDF_FILED_KEYS.HEADING,
+          margin: PQ_LIST_HEADING_MARGIN,
+        },
+        SecondVersionFormatter.createContactsTable(contractObject, pqAozTexts.performerCapitalize),
+        SecondVersionFormatter.createSignatureBlock(contractObject),
+      ],
+      AozFormatter.createAddition1(contractObject),
+      AozFormatter.createAddition2(contractObject),
+      AozFormatter.createAddition3(contractObject),
+      AozFormatter.createAddition4(contractObject),
+      AozFormatter.createAddition5(contractObject),
+      AozFormatter.createAddition6(contractObject),
     ];
   }
 }

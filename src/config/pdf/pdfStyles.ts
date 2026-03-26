@@ -55,10 +55,10 @@ export const PDF_STYLES = {
     bold: true,
   },
   italic: {
+    fontSize: 12,
     italics: true,
   },
   title_medium_bold: {
-    fontSize: 12,
     alignment: "center",
     bold: true,
   },

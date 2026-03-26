@@ -10,17 +10,19 @@ export type OlConfigType = string | (string | CompoundTextType)[] | CompoundText
 export enum PdfItemEnum {
   TEXT = "text",
   LIST_ITEM = "listItem",
+  FORMATTED_LIST_ITEM = "formattedListItem",
   TABLE = "table",
 }
 
 export type CompoundTextType = {
-  text: (string | number)[];
-  paths: string[];
-  defaults: string[];
+  text: (string | number | Record<string, any>)[];
+  paths?: string[];
+  defaults?: string[];
   pdfType: PdfItemEnum;
   functionName?: string[];
   header?: string[];
   widths?: string[];
+  style?: any;
 };
 
 export type OlPdfType = {
@@ -56,7 +58,7 @@ export type TableConfigType = {
   style?: string;
   margin?: number[];
   headerRows?: number;
-  layout?: Record<string, any>;
+  layout?: Record<string, any> | string;
 };
 
 export type TableWidthType = (number | string)[];
