@@ -27,9 +27,7 @@ export class EmptyChecker implements EmptyCheckerInterface {
   }
 
   isNotEmptyObject(value: any): boolean {
-    return (
-      this.typeChecker.isObject(value) && this.isNotEmpty(Object.keys(value))
-    );
+    return this.typeChecker.isObject(value) && this.isNotEmpty(Object.keys(value));
   }
 
   private isEmpty(value: { length: number }): boolean {

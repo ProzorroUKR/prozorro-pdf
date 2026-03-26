@@ -28,6 +28,8 @@ export const ROW_COUNT_6 = 6;
 export const ROW_COUNT_10 = 10;
 export const TWO_COLS = 2;
 
+export const ROW_WIDTH_20 = 20;
+export const ROW_WIDTH_30 = 30;
 export const ROW_WIDTH_50 = 50;
 export const ROW_WIDTH_65 = 65;
 export const ROW_WIDTH_70 = 70;

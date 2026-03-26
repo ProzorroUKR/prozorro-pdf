@@ -10,14 +10,7 @@ export default [
   ...tseslint.configs.recommended,
   eslintConfigPrettier,
   {
-    ignores: [
-      "**/.history",
-      "**/.husky",
-      "**/.vscode",
-      "**/coverage",
-      "**/dist",
-      "**/node_modules",
-    ],
+    ignores: ["**/.history", "**/.husky", "**/.vscode", "**/coverage", "**/dist", "**/node_modules"],
   },
   {
     plugins: {
@@ -34,6 +27,7 @@ export default [
     rules: {
       "prettier/prettier": "error",
       "@typescript-eslint/no-explicit-any": "off",
+      "no-irregular-whitespace": "off",
     },
   },
 ] satisfies Linter.Config[];

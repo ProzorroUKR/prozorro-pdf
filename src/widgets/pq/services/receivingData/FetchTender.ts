@@ -16,7 +16,7 @@ export class FetchTender {
         data: { data },
       }: AxiosResponse = await axios.get(`${this.apiUrl}/${tenderID}`);
       return data as TenderOfferType;
-    } catch (e) {
+    } catch {
       return {} as TenderOfferType;
     }
   }
@@ -29,7 +29,7 @@ export class FetchTender {
         tender,
         contract,
       };
-    } catch (err) {
+    } catch {
       return {
         tender: {} as TenderOfferType,
         contract,

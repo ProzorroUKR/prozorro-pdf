@@ -23,6 +23,8 @@ export const DEFAULT_TEXT_FIELDS: Record<string, string> = {
   SPACE: STRING.EMPTY,
   SPACE_LARGE: "   ",
   UNDERSCORES_3: "___", // 3 underscores
+  UNDERSCORES_6: "______", // 6 underscores
+  UNDERSCORES_10: "__________", // 10 underscores
   UNDERSCORES_16: "________________", // 16 underscores
   UNDERSCORES_32: "________________________________", // 32 underscores
   UNDERSCORES_40: "________________________________________", // 40 underscores
@@ -30,6 +32,7 @@ export const DEFAULT_TEXT_FIELDS: Record<string, string> = {
   SIGNATURE: "_________________/ _______________",
   DEFAULT_PRICE:
     "______________________ гривень без ПДВ/з ПДВ (_____________ __________________________________________сума прописом).",
+  DPA_PRICE: "___________ ( _________________) гривень ___ копійок.",
 };
 
 export const CLASSIFICATION_CONSTANTS: { readonly [index: string]: string } = {

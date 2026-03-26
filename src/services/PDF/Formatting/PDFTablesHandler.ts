@@ -17,11 +17,13 @@ export class PDFTablesHandler {
     style = PDF_FILED_KEYS.TABLE_DATA,
     heights = PDF_HELPER_CONST.LINE_HEIGHT_40,
     headerRows = 1,
-    dontBreakRows = true
+    dontBreakRows = true,
+    layout?: string
   ): TableConfigType {
     return {
       headerRows,
       style,
+      layout,
       table: {
         dontBreakRows,
         heights,

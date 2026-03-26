@@ -136,6 +136,17 @@ export class DateHandler {
   }
 
   /**
+   * Prepare PQ dateSigned for displaying
+   * Формат 1 травня 2024
+   */
+  static fullDate(date: string, prefix?: string): string {
+    const dateObj = new Date(date);
+    return !isNaN(dateObj.getTime())
+      ? `${prefix || ""}${dateObj.getDate()} ${MONTHS_LIST[dateObj.getMonth()]} ${dateObj.getFullYear()}`
+      : STRING.DASH;
+  }
+
+  /**
    * "2025-02-10T09:47:13+00:00" => "2025-02-10 09:47:13"
    * @param date
    */

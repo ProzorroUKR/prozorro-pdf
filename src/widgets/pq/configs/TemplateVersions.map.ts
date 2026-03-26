@@ -19,4 +19,5 @@ export const TemplateVersionsMap = new Map<TemplateVersionsEnum, PROZORRO_TEMPLA
     PROZORRO_TEMPLATE_CODES.MEDICINE2,
     PROZORRO_TEMPLATE_CODES.SOFTWARE,
     PROZORRO_TEMPLATE_CODES.NUSH,
-  ]);
+  ])
+  .set(TemplateVersionsEnum.VERSION_3, [PROZORRO_TEMPLATE_CODES.DPA]);

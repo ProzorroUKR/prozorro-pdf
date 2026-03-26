@@ -580,7 +580,7 @@ export const pqSpecificationTexts: Record<string, string> = {
   addition1: "Додаток 1\n\n",
   toContract: "До Договору № ________________\n\n",
   specification: "Специфікація",
-  productName: "Найменування Товару",
+  productName: "Найменування \n товару",
   fuelName: "Найменування Палива/товару",
   talonDueDate: "Строк дії Талонів",
   litresAmount: "Кількість, л.",

@@ -57,7 +57,7 @@ export class PQFormattingService {
   }
 
   static formatOlItem(
-    text: string,
+    text: string | Record<string, any> | any[],
     listIndex = -1,
     itemIndex = 1,
     indexReducer = 0,
@@ -79,7 +79,7 @@ export class PQFormattingService {
   }
 
   static formatTable(
-    { header = [], text, paths, defaults, widths }: CompoundTextType,
+    { header = [], text, paths = [], defaults = [], widths }: CompoundTextType,
     dataObject: Record<string, any> = {},
     acc: OlFromConfigAccumulatorType,
     consecutiveNoMarkerText: number
@@ -87,7 +87,7 @@ export class PQFormattingService {
     const columnsAmount = header.length || 1;
     consecutiveNoMarkerText += 1;
 
-    const tableRows: string[][] = text.reduce((tableRowsAccum, textItem, index) => {
+    const tableRows: string[][] = (text as string[]).reduce((tableRowsAccum, textItem, index) => {
       if (index % columnsAmount === 0) {
         tableRowsAccum.push([]);
       }
@@ -193,6 +193,19 @@ export class PQFormattingService {
       return acc;
     }
 
+    if ((olItem as CompoundTextType).pdfType === PdfItemEnum.FORMATTED_LIST_ITEM) {
+      acc.listText.push(
+        this.formatOlItem(
+          (olItem as CompoundTextType).text,
+          listIndex,
+          itemIndex,
+          consecutiveNoMarkerText
+        )
+      );
+
+      return acc;
+    }
+
     if ((olItem as CompoundTextType).pdfType === PdfItemEnum.TABLE) {
       return this.formatTable(olItem as CompoundTextType, dataObject, acc, consecutiveNoMarkerText);
     }
@@ -213,7 +226,7 @@ export class PQFormattingService {
    * convert CompoundTextType to pdfMaker formatted ol element
    */
   static formatNoMarkerText(
-    { text, paths, defaults, functionName }: CompoundTextType,
+    { text, paths = [], defaults = [], functionName }: CompoundTextType,
     dataObject: Record<string, any>,
     tender?: TenderOfferType | Record<string, any>
   ): Record<string, any> {
@@ -224,12 +237,12 @@ export class PQFormattingService {
         const itemValue =
           functionName && functionName[index]
             ? CompoundTextAdapter.convertToText(
-                paths[index],
-                functionName[index],
-                dataObject,
-                defaults[index],
-                tender as TenderOfferType | undefined
-              )
+              paths[index],
+              functionName[index],
+              dataObject,
+              defaults[index],
+              tender as TenderOfferType | undefined
+            )
             : DocumentExtractionService.getField(dataObject, paths[index], defaults[index]);
 
         return accum.concat(itemValue);
