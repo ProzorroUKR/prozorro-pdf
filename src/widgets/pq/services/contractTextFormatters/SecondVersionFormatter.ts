@@ -219,7 +219,7 @@ export class SecondVersionFormatter {
         ]);
       });
     } else {
-      tableItemsBody.push([{}, {}, {}, {}, {}, {}]);
+      tableItemsBody.push([{}, {}, {}, {}, {}, {}, {}]);
     }
 
     tableItemsBody.push([

@@ -291,6 +291,8 @@ try {
   - Added `value.amountPercentage` and `minimalStep.amountPercentage` to ANNOUNCEMENT;
 - **24.03.2026**
   - Update `TENDER_OFFER` for ARMA;
+- **08.04.2026**
+- Fix `PQ` first generation;
 
 ---
 

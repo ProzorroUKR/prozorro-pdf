@@ -212,11 +212,12 @@ export class FirstVersionFormatter {
     body.push(tableHeader);
 
     if ((items as [])?.length) {
-      (items as PQItem[]).forEach(item => {
+      (items as PQItem[]).forEach((item, index) => {
         const itemPrice = DocumentExtractionService.getField<PQvalue>(item, "unit.value");
         const currency = DocumentExtractionService.getField<string>(itemPrice, "currency");
 
         return body.push([
+          (index + 1).toString(),
           DocumentExtractionService.getField(item, "description"),
           ItemAttributesFormatter.formatAttribute(item.attributes),
           DocumentExtractionService.getField(item, "quantity"),
@@ -229,14 +230,15 @@ export class FirstVersionFormatter {
         ]);
       });
     } else {
-      body.push([{}, {}, {}, {}, {}, {}]);
+      body.push([{}, {}, {}, {}, {}, {}, {}]);
     }
 
     body.push([
       {
         text: pqSpecificationTexts.totalPrice,
-        colSpan: 5,
+        colSpan: 6,
       },
+      {},
       {},
       {},
       {},
@@ -247,8 +249,9 @@ export class FirstVersionFormatter {
     body.push([
       {
         text: pqSpecificationTexts.tax,
-        colSpan: 5,
+        colSpan: 6,
       },
+      {},
       {},
       {},
       {},
@@ -262,8 +265,9 @@ export class FirstVersionFormatter {
     body.push([
       {
         text: pqSpecificationTexts.priceWithTax,
-        colSpan: 5,
+        colSpan: 6,
       },
+      {},
       {},
       {},
       {},
