@@ -293,6 +293,8 @@ try {
   - Update `TENDER_OFFER` for ARMA;
 - **08.04.2026**
 - Fix `PQ` first generation;
+- **10.04.2026**
+- Fix `PQ` DPA type generation;
 
 ---
 
