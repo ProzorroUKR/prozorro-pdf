@@ -1,6 +1,7 @@
 export enum PROZORRO_PDF_TYPES {
   PQ = "pq",
   EDR = "EDR",
+  EDR_2 = "EDR_2",
   NAZK = "nazk",
   TICKET = "ticket",
   COMPLAINT = "complaint",

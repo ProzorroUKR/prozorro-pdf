@@ -623,6 +623,39 @@
             ],
           },
           {
+            type: window.signToDoc.TYPES.EDR_2,
+            title: "Довідка ЄДР 2.0",
+            description: `
+                <h6>Validations:</h6>
+                <ul>
+                    <li>Get all yaml files from <code>award.documents</code> or <code>qualification.documents</code></li>
+                    <li>Field <code>document.documentType</code> must be <code>"registerUSR"</code></li>
+                    <li>Field <code>document.format</code> must be <code>"application/yaml"</code></li>
+                    <li>Optional filter by <code>document.title</code> and <code>document.dateModified</code></li>
+                    <li>If dateModified isn't set, the last matching yaml document is taken from the filtered list</li>
+                </ul>
+            `,
+            fields: [
+              {
+                key: "url",
+                label: "Award / Qualification URL",
+                defaultValue: "https://lb-api-sandbox-2.prozorro.gov.ua/api/2.5/tenders/53939f9dfd2847ecb29566355e783749/qualifications/f9cc56d8e85640d39c9ccc4c50fcae5d",
+                required: true,
+              },
+              {
+                key: "title",
+                label: "Document title",
+                defaultValue: "",
+              },
+              {
+                key: "date",
+                label: "Date modified",
+                defaultValue: "",
+                type: "date",
+              },
+            ],
+          },
+          {
             type: window.signToDoc.TYPES.COMPLAINT,
             title: "Скарга до органу оскарження",
             description: `

@@ -27,7 +27,10 @@ export abstract class AbstractDocumentStrategy implements DocumentStrategyInterf
     return `${day}.${leadingZeroMonth}.${year}`;
   }
 
-  createFooter(signers?: SignerType[], link?: string): Record<string, any>[] {
+  createFooter(
+    signers?: SignerType[],
+    link?: string
+  ): Record<string, any>[] | ((currentPage: number) => Record<string, any>[]) {
     if (!signers) {
       Assert.isDefined(signers, ERROR_MESSAGES.VALIDATION_FAILED.signersObjectUnavailable);
       return [PDF_HELPER_CONST.EMPTY_FIELD];

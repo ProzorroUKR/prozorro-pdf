@@ -1,0 +1,21 @@
+subject:
+  name: ТОВ "Приклад ЄДР 2.0"
+  code: "44556677"
+  address:
+    fullAddress: Україна, 01001, м. Київ, вул. Архівна, 7
+registration:
+  status: registered
+  statusDetails: зареєстровано
+  recordNumber: "1000741020001000001"
+activities:
+  primary:
+    code: "62.01"
+    name: Комп'ютерне програмування
+  secondary:
+    - code: "62.02"
+      name: Консультування з питань інформатизації
+    - code: "63.11"
+      name: Оброблення даних, розміщення інформації на веб-вузлах
+meta:
+  sourceDate: "2026-03-31T08:15:00+03:00"
+  portal: EDR 2.0
