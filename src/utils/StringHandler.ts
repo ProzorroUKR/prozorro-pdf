@@ -1,5 +1,7 @@
-import type { AddressType } from "@/types/Tender/AddressType";
+import { get } from "lodash";
 import { ADDRESS_ORDER } from "@/config/pdf/addressOrder";
+import type { Edr2AddressType } from "@/types/Edr/Edr2Type";
+import type { AddressType } from "@/types/Tender/AddressType";
 
 const DATE_LENGTH_SHORT = 2;
 const DATE_LENGTH_FULL = 4;
@@ -18,9 +20,13 @@ export class StringHandler {
     return `${day}.${month}.${year}`;
   }
 
-  static customerLocation(address?: AddressType, defaultValue = "", parts = ADDRESS_ORDER.COUNTRY_TO_STREET): string {
+  static customerLocation(
+    address?: AddressType | Edr2AddressType,
+    defaultValue = "",
+    parts = ADDRESS_ORDER.COUNTRY_TO_STREET
+  ): string {
     const collectedAddress = parts
-      .map(key => (address || {})[key]?.toString()?.trim())
+      .map(key => (get(address || {}, key) || key)?.toString()?.trim())
       .filter(Boolean)
       .join(", ");
     return collectedAddress || defaultValue;

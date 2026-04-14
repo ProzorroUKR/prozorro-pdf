@@ -11,6 +11,7 @@ import { tenderOfferDictionaries } from "@/services/DictionaryCollector/dictiona
 import { deviationReportDictionaries } from "@/services/DictionaryCollector/dictionaries/DeviationReport.map";
 
 export const pdfDictionaryMap = new Map<PdfTemplateTypes, Map<string, string>>()
+  .set(PdfTemplateTypes.EDR_2, new Map())
   .set(PdfTemplateTypes.XML, new Map())
   .set(PdfTemplateTypes.KVT, new Map())
   .set(PdfTemplateTypes.MONITORING, new Map())

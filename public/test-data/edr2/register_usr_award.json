@@ -1,0 +1,21 @@
+{
+  "data": {
+    "id": "f8abcc0ab2ec4d2db1a2eb5a00a4e9d5",
+    "status": "active",
+    "date": "2026-03-31T09:25:00+03:00",
+    "documents": [
+      {
+        "id": "d96a1a7c2c7a4f77b0559c0e13f5f1f1",
+        "documentType": "registerUSR",
+        "title": "edr2_extract.yaml",
+        "format": "application/yaml",
+        "url": "/test-data/edr2/register_usr.yaml",
+        "dateModified": "2026-03-31T09:20",
+        "datePublished": "2026-03-31T09:20:00+03:00",
+        "documentOf": "tender",
+        "author": "bots",
+        "language": "uk"
+      }
+    ]
+  }
+}

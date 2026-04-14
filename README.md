@@ -6,7 +6,7 @@
 Основні можливості:
 - відкриття документа у новій вкладці;
 - завантаження документа;
-- вставка документа у сторінку у вигляді `iframe`;
+- вставка документа у сторінку у вигляді `iframe`.
 
 ---
 
@@ -147,6 +147,7 @@ onMounted(async () => {
 | `PROTOCOL_CONSIDERATION_TENDER_OFFERS`   | еПротокол розгляду тендерних пропозицій                       | `document.documentType` must be `"evaluationReports"`.<br>`document.title` must be `"sign.p7s"`.<br>Optional validation by `document.dateModified`.<br>If not set → take last document.                                                                                                                   | • **url** – Document URL *(required, string)*<br>• **date** – Date modified *(string)*                                                          |
 | `TENDER_OFFER`                           | еПропозиція                                                   | Get all sign files from `bid.documents` or `bid.financialDocuments`.<br>`document.documentType` must be `"proposal"`.                                                                                                                                                                                     | • **url** – Bid URL *(required, string)*<br>• **date** – Date modified *(required, string)*                                                     |
 | `EDR`                                    | Довідка ЄДР                                                   | Get all sign files from `award.documents` or `qualification.documents`.<br>`document.documentType` must be `"registerExtract"`.<br>Optional file title (default: `edr_identification.yaml`).<br>Optional validation by `document.dateModified`.<br>If not set → take last document.                       | • **url** – Awards / Qualification URL *(required, string)*<br>• **title** – Document title *(string)*<br>• **date** – Date modified *(string)* |
+| `EDR_2`                                  | Витяг з ЄДР 2.0                                               | Get YAML files from `award.documents` or `qualification.documents`.<br>`document.documentType` must be `"registerUSR"`.<br>`document.format` must be `"application/yaml"`.<br>Optional validation by `document.title` and `document.dateModified`.<br>If not set → take last matching document.         | • **url** – Awards / Qualification URL *(required, string)*<br>• **title** – Document title *(string)*<br>• **date** – Date modified *(string)* |
 | `COMPLAINT`                              | Скарга до органу оскарження                                   | Get all sign files from `complaint.documents`.<br>`document.title` must be `"sign.p7s"`.<br>Newest document is chosen by `dateModified`.                                                                                                                                                                  | • **url** – Complaint URL *(required, string)*<br>• **tender** – Tender URL *(string)*                                                          |
 | `COMPLAINT_POST`                         | Запити/пояснення до скарги                                    | Field `complaint.post` mustn’t be empty.                                                                                                                                                                                                                                                                  | • **url** – Complaint URL *(required, string)*<br>• **tender** – Tender URL *(string)*                                                          |
 | `DEVIATION_REPORT`                       | Протокол рішення УО щодо виявлення невідповідностей (24 год)  | Get all sign files from `award.documents` or `qualification.documents`.<br>`document.documentType` must be `"deviationReport"`.<br>Optional validation by `document.dateModified`.<br>If not set → take last document.                                                                                    | • **url** – Awards / Qualification URL *(required, string)*<br>• **date** – Date modified *(string)*                                            |
@@ -192,28 +193,30 @@ onMounted(async () => {
 | | `undefinedDocumentTitle`      | Не вдалося знайти ім'я документу в об'єкті | Не знайдено документа з відповідним заголовком у списку |
 | | `wrongDocumentType`           | Не вдалося визначити тип документу | Документи в списку не відповідають очікуваному `documentType` |
 | | `signersObjectUnavailable`    | Виникла помилка при формуванні колонтитулу з підписом | Не вдалося отримати інформацію про підписувачів з файлу |
-| | `documentListUndefined`       | Відсутній список документів | Поле `documents` в об'єкті відсутнє або пусте |
+| | `documentListUndefined`       | Відсутній список документів для отримання посилання файлу підпису | Поле `documents` в об'єкті відсутнє або пусте |
 | | `wrongDocumentTypeStatus`     | Неправильний тип документу | Тип документа не відповідає вимогам обраного шаблону PDF |
+| | `wrongDocumentFormat`         | Неправильний формат документу | Формат документа не відповідає вимогам обраного шаблону PDF |
 | | `wrongDocumentTitle`          | Неправильний заголовок документу | Заголовок документа не відповідає очікуваному (наприклад, не "sign.p7s") |
 | | `wrongURL`                    | Неправильне посилання на документ | У списку документів відсутнє або некоректне поле `url` |
-| | `tenderLoader`                | Не передано "config.tender" | Для деяких типів (наприклад, COMPLAINT) потрібно посилання на тендер |
+| | `tenderLoader`                | Виникла помилка при завантаженні документу закупівлі. Не передано "config.tender" | Для деяких типів (наприклад, `COMPLAINT`) потрібно посилання на тендер |
 | | `undefinedCancellationStatus` | Статус відміни закупівлі відсутній | У об'єкті `cancellation` відсутнє поле `status` |
-| | `awardStatusNotFind`          | Статус в "award" не відповідає умовам | Статус нагороди не є допустимим для генерації обраного PDF |
-| | `wrongDocumentDate`           | Неправильна дата документу | `dateModified` документа не збігається з переданою датою |
+| | `awardStatusNotFind`          | Статус в "award" не відповідає заданим умовам | Статус нагороди не є допустимим для генерації обраного PDF |
+| | `wrongDocumentDate`           | Неправильна дата документу (dateModified не відповідає переданій даті) | `dateModified` документа не збігається з переданою датою |
 | | `wrongQualified`              | Поле "qualified" не "true" | Бізнес-перевірка: учасник має бути кваліфікований |
 | | `wrongEligible`               | Поле "eligible" не "true" | Бізнес-перевірка: учасник має відповідати вимогам |
 | | `wrongEligibleOrQualified`    | Поле "eligible" або "qualified" не "false" | Перевірка для еПротоколу відхилення |
-| | `awardNotFound`               | Відсутня інформація в файлі підпису | Дані всередині підпису не містять потрібної інформації про нагороду |
+| | `awardNotFound`               | Відсутня інформація про закупівлю та переможця в файлі підпису | Дані всередині підпису не містять потрібної інформації про закупівлю та переможця |
 | | `suppliersIsNotDefined`       | Відсутня інформація про постачальників | Поле `suppliers` відсутнє в об'єкті `award`/`bid` |
-| | `cancellationNotFound`        | Відсутня інформація про відміну | У файлі підпису відсутні дані про скасування закупівлі/лоту |
+| | `cancellationNotFound`        | Відсутня інформація про закупівлю та/або відміну закупівлі/лоту в файлі підпису | У файлі підпису відсутні дані про закупівлю або скасування закупівлі/лоту |
 | | `participantsIsNotDefined`    | Відсутня інформація про учасників | Поле `participants` відсутнє в даних |
-| | `tenderersIsNotDefined`       | Відсутня інформація про учасника | Поле `tenderers` відсутнє в даних пропозиції |
+| | `tenderersIsNotDefined`       | Відсутня інформація про учасника в даних пропозиції | Поле `tenderers` відсутнє в даних пропозиції |
 | | `wrongEdrDocumentType`        | Поле "documentType" не "registerExtract" | Перевірка типу документа для ЄДР |
-| | `wrongEdrFile`                | Нічого не знайдено за вказаним кодом | Помилка пошуку в даних ЄДР |
-| | `undefinedPosts`              | В скарзі відсутні не пусті об'єкти posts | У даних скарги відсутні деталі заперечень |
-| | `encodingOrError`             | Невірний формат вхідних даних або не валідний підпис | Структура даних не відпідає валідаціям або вказано не підтримуване кодування файлу |
-| **SERVICE_UNAVAILABLE** | `typeIsNotDefined`            | Неможливо отримати стратегію типів | Передано невідомий `PROZORRO_PDF_TYPES` |
-| | `loaderTypeIsNotDefined`      | Не вдається отримати стратегію завантажувача | Внутрішня помилка вибору стратегії завантаження даних |
+| | `wrongEdr2DocumentType`       | Поле "documentType" не "registerUSR" | Перевірка типу документа для `EDR_2` |
+| | `wrongEdrFile`                | На жаль, за вказаним кодом нічого не знайдено | Помилка пошуку в даних ЄДР |
+| | `undefinedPosts`              | В скарзі відсутні не пусті об'єкти objections:posts. | У даних скарги відсутні деталі заперечень |
+| | `encodingOrError`             | Невірний формат вхідних даних або не валідний підпис | Структура даних не відповідає валідаціям або вказано не підтримуване кодування файлу |
+| **SERVICE_UNAVAILABLE** | `typeIsNotDefined`            | Неможливо отримати стратегію обробки типів | Передано невідомий `PROZORRO_PDF_TYPES` |
+| | `loaderTypeIsNotDefined`      | Не вдається отримати стратегію типу завантажувача pdf | Внутрішня помилка вибору стратегії завантаження даних |
 
 ### Приклад обробки помилок
 
@@ -291,6 +294,9 @@ try {
   - Added `value.amountPercentage` and `minimalStep.amountPercentage` to ANNOUNCEMENT;
 - **24.03.2026**
   - Update `TENDER_OFFER` for ARMA;
+- **01.04.2026**
+  - Added new `EDR_2` document type;
+  - Updated validation error documentation in `README.md`;
 - **08.04.2026**
 - Fix `PQ` first generation;
 - **10.04.2026**
@@ -301,4 +307,3 @@ try {
 ## Ліцензія
 
 © Prozorro. Усі права захищені.
-

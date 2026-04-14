@@ -1,5 +1,6 @@
 export enum PdfTemplateTypes {
   EDR = "EDR",
+  EDR_2 = "EDR_2",
   XML = "XML",
   KVT = "KVT",
   MONITORING = "MONITORING",
