@@ -218,7 +218,7 @@ export class Edr2DataMaker extends AbstractDocumentStrategy {
             text: EDR_2_TEXTS_LIST.beneficiary_title,
             style: PDF_FILED_KEYS.TITLE_LARGE,
           },
-          [0, 6, 0, 0]
+          this._blockMargin
         ),
         ...beneficiariesTables,
       ];
