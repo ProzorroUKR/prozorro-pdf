@@ -1,5 +1,5 @@
 include:
   - project: 'Web-Projects/client-services/prozorro-pdf.ci'
-    ref: master
+    ref: security_pipeline
     file: '.gitlab-ci-private.yml'
 
