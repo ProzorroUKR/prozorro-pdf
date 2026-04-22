@@ -25,6 +25,7 @@
         "url": "/test-data/purchase_cancellation_protocol/1/cancellation/sign.p7s",
         "documentOf": "tender",
         "language": "uk",
+        "documentType": "cancellationReport",
         "id": "d7d720b1a3b4458b985fb59821cfb803",
         "datePublished": "2023-12-29T17:12:31.952980+02:00",
         "dateModified": "2023-12-29T17:12:31.952980+02:00"
