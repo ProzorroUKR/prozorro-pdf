@@ -7,7 +7,6 @@ import type { PdfDocumentConfigType } from "@/types/pdf/PdfDocumentConfigType";
 import { PdfTemplateTypes } from "@/services/PDF/PdfTemplateTypes";
 import { ArrayHandler } from "@/utils/ArrayHandler";
 import type { CancellationType } from "@/types/PurchaseCancellation/PurchaseCancellationTypes";
-import { SIGNATURE_FILE_NAME } from "@/constants/string";
 import { ObjectDecoder } from "@/utils/ObjectDecoder";
 import type { DocumentType } from "@/types/Tender/DocumentType.ts";
 
@@ -39,7 +38,7 @@ export class PurchaseCancellationProtocolLoader
 
     const list = documents.filter(
       (doc: DocumentType) =>
-        doc.title === SIGNATURE_FILE_NAME && this.approximateCheckDateModified(doc.dateModified, date)
+        doc.documentType === "cancellationReport" && this.approximateCheckDateModified(doc.dateModified, date)
     );
     const document = ArrayHandler.getLastElement(list);
 
