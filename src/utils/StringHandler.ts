@@ -26,7 +26,11 @@ export class StringHandler {
     parts = ADDRESS_ORDER.COUNTRY_TO_STREET
   ): string {
     const collectedAddress = parts
-      .map(key => (get(address || {}, key) || key)?.toString()?.trim())
+      .map(key =>
+        get(address || {}, key)
+          ?.toString()
+          ?.trim()
+      )
       .filter(Boolean)
       .join(", ");
     return collectedAddress || defaultValue;

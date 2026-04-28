@@ -298,9 +298,11 @@ try {
   - Added new `EDR_2` document type;
   - Updated validation error documentation in `README.md`;
 - **08.04.2026**
-- Fix `PQ` first generation;
+  - Fix `PQ` first generation;
 - **10.04.2026**
-- Fix `PQ` DPA type generation;
+  - Fix `PQ` DPA type generation;
+- **28.04.2026**
+  - Fix address preview;
 
 ---
 
