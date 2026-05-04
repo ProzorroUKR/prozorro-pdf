@@ -307,6 +307,9 @@ try {
   - Fix `PQ` DPA type generation;
 - **28.04.2026**
   - Fix address preview;
+- **04.05.2026**
+  - Added `getDataUrl` method to `ProzorroPdfService`. Method return PDF in `blob` format;
+
 
 ---
 

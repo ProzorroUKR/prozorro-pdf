@@ -33,6 +33,7 @@ export interface IProzorroPdf {
   setConfig(config: PdfConfigType): Promise<void | ErrorExceptionCore>;
   open(config: PdfDocumentConfigType): Promise<void | ErrorExceptionCore>;
   getIframe(config: PdfDocumentConfigType, parentFrameId?: string): Promise<void | ErrorExceptionCore>;
+  getDataUrl(config: PdfDocumentConfigType): Promise<string | ErrorExceptionCore>;
   save(config: PdfDocumentConfigType, fileName?: string): Promise<void | ErrorExceptionCore>;
 }
 
@@ -135,6 +136,24 @@ export class ProzorroPdf implements IProzorroPdf {
             }
           },
         });
+      } catch (error) {
+        reject(
+          new ErrorExceptionCore({
+            originalError: error,
+            message: (error as any)?.message,
+            code: PROZORRO_PDF_ERROR_CODES.PDF_GENERATION_FAILED,
+          })
+        );
+      }
+    });
+  }
+
+  async getDataUrl(config: PdfDocumentConfigType): Promise<string | ErrorExceptionCore> {
+    const { data } = await this.create(config);
+
+    return new Promise((resolve, reject) => {
+      try {
+        (pdfMake as Pdfmake).createPdf(data).getDataUrl(dataUrl => resolve(dataUrl));
       } catch (error) {
         reject(
           new ErrorExceptionCore({
