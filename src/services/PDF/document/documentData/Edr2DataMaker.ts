@@ -53,8 +53,6 @@ export class Edr2DataMaker extends AbstractDocumentStrategy {
       });
     }
 
-    console.log(data);
-
     this._metaSourceDate = meta.sourceDate || STRING.EMPTY;
 
     return [
