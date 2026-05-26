@@ -22,10 +22,3 @@ export const noSecurement = [
 export const noAuction = ["competitiveDialogueUA", "competitiveDialogueEU"];
 
 export const closeFrame = ["closeFrameworkAgreementUA"];
-
-export const qualificationPeriodTypes = [
-  ...noAuction,
-  "aboveThresholdEU",
-  "competitiveDialogueUA.stage2",
-  "competitiveDialogueEU.stage2",
-];

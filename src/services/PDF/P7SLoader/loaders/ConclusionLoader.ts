@@ -28,7 +28,6 @@ export class ConclusionLoader
     const document = this.getDocument(object, config);
     const file = await this.getData(document.url);
     const { data, signers } = await this.getDataFromSign(file, config.encoding);
-    console.log(ObjectDecoder.decode<Record<any, any>>(data));
 
     return {
       url: document.url,

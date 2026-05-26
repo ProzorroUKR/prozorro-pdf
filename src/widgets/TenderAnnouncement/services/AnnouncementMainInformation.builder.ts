@@ -8,7 +8,6 @@ import { ANNOUNCEMENT_TEXTS_LIST } from "@/config/pdf/texts/ANNOUNCEMENT";
 import { PROCUREMENT_METHOD_TYPE } from "@/widgets/TenderAnnouncement/constants/procurementMethodType";
 import * as CONCLUSION_OF_MONITORING_CONST from "@/config/pdf/conclusionOfMonitoringConstants";
 import { procurementMethodTypeEU } from "@/widgets/TenderAnnouncement/constants/conditions";
-import { PROCUREMENT_CATEGORY } from "@/widgets/TenderAnnouncement/constants/procurementCategory";
 import { CLASSIFIED_ID_CHARACTERS } from "@/constants/pdf/pdfHelperConstants";
 
 export interface IAnnouncementMainInformationBuilder {
@@ -133,8 +132,11 @@ export class AnnouncementMainInformationBuilder implements IAnnouncementMainInfo
   }
 
   get setMainProcurementCategory(): IAnnouncementMainInformationBuilder {
+    const dictionary: Record<string, { name: string }> =
+      this.dictionaries.get("tender_main_procurement_category") || {};
+
     const { mainProcurementCategory } = this.tender;
-    const value = this._getField<string | undefined>(PROCUREMENT_CATEGORY, mainProcurementCategory);
+    const value = dictionary[mainProcurementCategory]?.name;
     this._addRow(ANNOUNCEMENT_TEXTS_LIST.procurement_category, value);
 
     if (this._isEuProcMethodType()) {

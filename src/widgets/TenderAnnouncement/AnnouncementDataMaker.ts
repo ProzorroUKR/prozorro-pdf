@@ -1,9 +1,7 @@
+import { isNumber } from "lodash";
 import type { SignerType } from "@prozorro/prozorro-eds";
 import { PDF_FILED_KEYS } from "@/constants/pdf/pdfFieldKeys";
 import * as PDF_HELPER_CONST from "@/constants/pdf/pdfHelperConstants";
-import { MILESTONE_EVENT } from "@/widgets/TenderAnnouncement/constants/milestone";
-import { PAYMENT_TYPE } from "@/widgets/TenderAnnouncement/constants/paymentType";
-import { DURATION_TYPE } from "@/widgets/TenderAnnouncement/constants/durationType";
 import { AbstractDocumentStrategy } from "@/services/PDF/document/AbstractDocumentStrategy";
 import { ANNOUNCEMENT_PAGE_MARGIN } from "@/config/pdf/announcementConstants";
 import { DateHandler } from "@/utils/DateHandler";
@@ -25,7 +23,6 @@ import {
 } from "@/widgets/TenderAnnouncement/constants/conditions";
 import { ClassificationHandler } from "@/utils/ClassificationHandler.ts";
 import { PriceHandler } from "@/services/Common/PriceHandler.ts";
-import { isNumber } from "lodash";
 
 const nbuRateConverter = 100;
 
@@ -78,9 +75,6 @@ export class AnnouncementDataMaker extends AbstractDocumentStrategy {
       fundingKind,
     } = data;
 
-    console.log("value", value);
-    console.log("minimalStep", minimalStep);
-
     const isEsco = procurementMethodType === ESCO_TYPE;
     const hasMilestones = Array.isArray(milestones) && milestones?.length;
     const hasSecurementAmount: boolean =
@@ -107,7 +101,7 @@ export class AnnouncementDataMaker extends AbstractDocumentStrategy {
           )
         : PDF_HELPER_CONST.EMPTY_FIELD,
 
-      hasMilestones ? this.createPaymentTable(milestones) : PDF_HELPER_CONST.EMPTY_FIELD,
+      hasMilestones ? this.createPaymentTable(milestones, dictionaries) : PDF_HELPER_CONST.EMPTY_FIELD,
 
       this.showIfAvailable(plansList, ANNOUNCEMENT_TEXTS_LIST.plans),
 
@@ -373,7 +367,11 @@ export class AnnouncementDataMaker extends AbstractDocumentStrategy {
     };
   }
 
-  private createPaymentTable(milestones: Array<Milestone>): Record<string, any> {
+  private createPaymentTable(
+    milestones: Array<Milestone>,
+    dictionaries: Map<string, Record<string, any>>
+  ): Record<string, any> {
+    const body: { text: string }[][] = [];
     const header = [
       {
         text: ANNOUNCEMENT_TEXTS_LIST.contract_terms_event,
@@ -401,31 +399,35 @@ export class AnnouncementDataMaker extends AbstractDocumentStrategy {
       },
     ];
 
-    const body: { text: string }[][] = [];
     body.push(header);
+
+    const titleDictionary: Record<string, { name: string }> = dictionaries.get("milestone_title") ?? {};
+    const codeDictionary: Record<string, { name: string }> = dictionaries.get("milestone_code") ?? {};
+    const dayTypeDictionary: Record<string, { name: string }> = dictionaries.get("milestone_day_type") ?? {};
 
     milestones.forEach((milestone: Record<string, any>) =>
       body.push([
         {
-          text: this.getField(MILESTONE_EVENT, this.getField(milestone, "title")),
+          text: this.getField(titleDictionary, `${milestone?.title}.name`), // title
         },
         {
           text: this.getField(milestone, "description"),
         },
         {
-          text: this.getField(PAYMENT_TYPE, this.getField(milestone, "code")),
+          text: this.getField(codeDictionary, `${milestone?.code}.name`), // title
         },
         {
           text: this.getField(milestone, "duration.days"),
         },
         {
-          text: this.getField(DURATION_TYPE, this.getField(milestone, "duration.type")),
+          text: this.getField(dayTypeDictionary, `${milestone?.duration?.type}.name`), // title
         },
         {
           text: this.getField(milestone, "percentage"),
         },
       ])
     );
+
     return {
       table: {
         widths: [

@@ -309,6 +309,8 @@ try {
   - Fix address preview;
 - **04.05.2026**
   - Added `getDataUrl` method to `ProzorroPdfService`. Method return PDF in `blob` format;
+- **25.05.2026**
+  - Removed local dictionaries for `ANNOUNCEMENT` type;
 
 
 ---
