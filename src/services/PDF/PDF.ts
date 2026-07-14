@@ -1,49 +1,41 @@
-import axios from "axios";
 import { ProzorroEds } from "@prozorro/prozorro-eds";
-import type { Pdfmake } from "@/vite-env";
 import pdfMake from "pdfmake/build/pdfmake";
-import { STRING } from "@/constants/string";
 import { ENV_CONFIG } from "@/config/ENV.config";
 import { FONTS_CONFIG } from "@/config/FONTS.config";
 import { ErrorExceptionCore } from "@/widgets/ErrorExceptionCore/ErrorExceptionCore";
-import type { TenderResponseType } from "@/types/Tender/TenderResponseType";
-import { DocumentManager } from "@/services/PDF/document/DocumentManager";
-import { Assert } from "@/widgets/ErrorExceptionCore/Assert";
 import { ERROR_MESSAGES } from "@/widgets/ErrorExceptionCore/configs/messages";
 import { PROZORRO_PDF_TYPES } from "@/services/PDF/PdfTypes";
 import type { PdfConfigType } from "@/types/pdf/PdfConfigType";
-import { LoaderManager } from "@/services/PDF/P7SLoader/LoaderManager";
-import type { PdfDocumentConfigType } from "@/types/pdf/PdfDocumentConfigType";
-import type { PdfObjectType } from "@/types/pdf/PdfObjectType";
+import { HttpClient } from "@/services/Http/HttpClient";
+import { PdfDocument } from "@/services/PDF/PdfDocument";
 import { DataTypeValidator } from "@/services/DataTypeValidator/DataTypeValidator";
 import { ValidationTypes } from "@/services/DataTypeValidator/ValidationTypes";
-import { DictionaryCollector } from "@/services/DictionaryCollector/DictionaryCollector";
-import { PROZORRO_TEMPLATE_CODES } from "@/widgets/pq/types/TemplateCodes.enum";
-import { PROZORRO_PDF_ERROR_CODES } from "@/widgets/ErrorExceptionCore/constants/ERROR_CODES.enum";
+import { PROZORRO_TEMPLATE_CODES } from "@/types/pq/TemplateCodes.enum";
 import type { EnvironmentType } from "@/types/pdf/EnvironmentType";
 import { ENVIRONMENT_MODE } from "@/constants/ENVIRONMENT_MODE.enum";
 import { edsModeMap } from "@/config/edsModeMap";
-import { DomHandler } from "@/services/Dom/DomHandler";
+import type { PdfObjectType } from "@/types/pdf/PdfObjectType.ts";
 
 export interface IProzorroPdf {
   MODE: typeof ENVIRONMENT_MODE;
   TYPES: typeof PROZORRO_PDF_TYPES;
   TEMPLATES: typeof PROZORRO_TEMPLATE_CODES;
   init(environment?: ENVIRONMENT_MODE): Promise<void>;
-  setConfig(config: PdfConfigType): Promise<void | ErrorExceptionCore>;
-  open(config: PdfDocumentConfigType): Promise<void | ErrorExceptionCore>;
-  getIframe(config: PdfDocumentConfigType, parentFrameId?: string): Promise<void | ErrorExceptionCore>;
-  getDataUrl(config: PdfDocumentConfigType): Promise<string | ErrorExceptionCore>;
-  save(config: PdfDocumentConfigType, fileName?: string): Promise<void | ErrorExceptionCore>;
+  setConfig(config: PdfConfigType): Promise<PdfDocument>;
 }
 
+/**
+ * Stateless factory for the Prozorro PDF library.
+ *
+ * `init()` performs one-time global setup (EDS, fonts, environment). `setConfig()`
+ * fetches the CBD object and returns an isolated {@link PdfDocument} handle — the
+ * factory itself holds no per-request mutable state, so concurrent documents are safe.
+ */
 export class ProzorroPdf implements IProzorroPdf {
   readonly MODE = ENVIRONMENT_MODE;
   readonly TYPES = PROZORRO_PDF_TYPES;
   readonly TEMPLATES = PROZORRO_TEMPLATE_CODES;
 
-  private object?: PdfObjectType;
-  private documentType = PROZORRO_PDF_TYPES.TICKET;
   private envVars: EnvironmentType = ENV_CONFIG.SANDBOX;
 
   async init(environment: ENVIRONMENT_MODE = ENVIRONMENT_MODE.SANDBOX): Promise<void> {
@@ -52,158 +44,19 @@ export class ProzorroPdf implements IProzorroPdf {
     pdfMake.fonts = FONTS_CONFIG;
   }
 
-  async setConfig({ url, type }: PdfConfigType): Promise<void | ErrorExceptionCore> {
+  async setConfig({ url, type }: PdfConfigType): Promise<PdfDocument> {
     try {
-      this.documentType = type;
       const dataTypeValidator = new DataTypeValidator();
 
-      if (type === PROZORRO_PDF_TYPES.PQ && url === STRING.EMPTY) {
-        return;
+      if (type === PROZORRO_PDF_TYPES.PQ && !url) {
+        return new PdfDocument(this.envVars, type);
       }
 
       dataTypeValidator.validate(url, ValidationTypes.STRING, ERROR_MESSAGES.INVALID_PARAMS.undefinedUrl);
 
-      const {
-        data: { data: payload },
-      }: TenderResponseType = await axios.get(url);
+      const { data: payload } = await HttpClient.get<{ data: PdfObjectType }>(url);
 
-      this.object = payload;
-    } catch (error) {
-      throw new ErrorExceptionCore(error as Error);
-    }
-  }
-
-  async open(config: PdfDocumentConfigType): Promise<void | ErrorExceptionCore> {
-    const { data } = await this.create(config);
-
-    return new Promise((resolve, reject) => {
-      try {
-        (pdfMake as Pdfmake).createPdf(data).open({
-          progressCallback: progress => {
-            if (progress === 1) {
-              resolve();
-            }
-          },
-        });
-      } catch (error) {
-        reject(
-          new ErrorExceptionCore({
-            originalError: error,
-            message: (error as any)?.message,
-            code: PROZORRO_PDF_ERROR_CODES.PDF_GENERATION_FAILED,
-          })
-        );
-      }
-    });
-  }
-
-  async save(config: PdfDocumentConfigType, fileName?: string): Promise<void | ErrorExceptionCore> {
-    const { data, title } = await this.create(config);
-
-    return new Promise((resolve, reject) => {
-      try {
-        (pdfMake as Pdfmake).createPdf(data).download(`${fileName || title}.pdf`, () => {}, {
-          progressCallback: progress => {
-            if (progress === 1) {
-              resolve();
-            }
-          },
-        });
-      } catch (error) {
-        reject(
-          new ErrorExceptionCore({
-            originalError: error,
-            message: (error as any)?.message,
-            code: PROZORRO_PDF_ERROR_CODES.PDF_GENERATION_FAILED,
-          })
-        );
-      }
-    });
-  }
-
-  async getIframe(
-    config: PdfDocumentConfigType,
-    parentFrameId: string = "signToDocFrameID"
-  ): Promise<void | ErrorExceptionCore> {
-    const { data } = await this.create(config);
-
-    return new Promise((resolve, reject) => {
-      try {
-        (pdfMake as Pdfmake).createPdf(data).getDataUrl(dataUrl => DomHandler.passIframe(parentFrameId, dataUrl), {
-          progressCallback: progress => {
-            if (progress === 1) {
-              resolve();
-            }
-          },
-        });
-      } catch (error) {
-        reject(
-          new ErrorExceptionCore({
-            originalError: error,
-            message: (error as any)?.message,
-            code: PROZORRO_PDF_ERROR_CODES.PDF_GENERATION_FAILED,
-          })
-        );
-      }
-    });
-  }
-
-  async getDataUrl(config: PdfDocumentConfigType): Promise<string | ErrorExceptionCore> {
-    const { data } = await this.create(config);
-
-    return new Promise((resolve, reject) => {
-      try {
-        (pdfMake as Pdfmake).createPdf(data).getDataUrl(dataUrl => resolve(dataUrl));
-      } catch (error) {
-        reject(
-          new ErrorExceptionCore({
-            originalError: error,
-            message: (error as any)?.message,
-            code: PROZORRO_PDF_ERROR_CODES.PDF_GENERATION_FAILED,
-          })
-        );
-      }
-    });
-  }
-
-  private async create(config: PdfDocumentConfigType): Promise<{
-    title: string;
-    data: Record<string, any>;
-  }> {
-    try {
-      // TODO
-      if (this.documentType !== PROZORRO_PDF_TYPES.PQ) {
-        Assert.isDefined(this.object, ERROR_MESSAGES.VALIDATION_FAILED.undefinedObject);
-      }
-
-      const loaderManager = new LoaderManager(this.envVars);
-      loaderManager.setLoaderType(this.documentType);
-      const { file, type, signers, url, additionalData, title } = await loaderManager.getData(
-        this.object as any,
-        config
-      );
-
-      Assert.isDefined(
-        file,
-        ERROR_MESSAGES.INVALID_SIGNATURE.documentEncoding,
-        PROZORRO_PDF_ERROR_CODES.INVALID_SIGNATURE
-      );
-
-      const dictionaries = await new DictionaryCollector(this.envVars.staticDataUrl).loadByType(type);
-
-      const documentManager = new DocumentManager(this.envVars);
-
-      documentManager.setDocumentType(type);
-      const data = await documentManager.getDocumentData(
-        file,
-        config,
-        signers,
-        dictionaries,
-        url,
-        additionalData || this.object
-      );
-
-      return { data, title };
+      return new PdfDocument(this.envVars, type, payload);
     } catch (error) {
       throw new ErrorExceptionCore(error as Error);
     }

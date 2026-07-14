@@ -1,5 +1,4 @@
 include:
-  - project: 'Web-Projects/client-services/prozorro-pdf.ci'
+  - project: "Web-Projects/client-services/prozorro-pdf.ci"
     ref: master
-    file: '.gitlab-ci-private.yml'
-
+    file: ".gitlab-ci-private.yml"

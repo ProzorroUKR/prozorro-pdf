@@ -1,4 +1,3 @@
-import { PREFIX } from "@/constants/prefixes";
 import { formatLogParamDecorator, traceDecorator } from "./helpers";
 
 export interface LogDetails {
@@ -53,6 +52,6 @@ export class Logger implements ILogger {
   }
 
   private _formatMessage({ message }: LogDetails): string {
-    return `${PREFIX.SIGN_TO_DOC}${this.prefix ? ` ${this.prefix}:` : ""} ${message}`;
+    return `Prozorro PDF:${this.prefix ? ` ${this.prefix}:` : ""} ${message}`;
   }
 }

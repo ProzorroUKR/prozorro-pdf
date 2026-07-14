@@ -1,5 +1,5 @@
 import { LoaderFactory } from "@/services/PDF/P7SLoader/LoaderFactory";
-import { loaderStrategyMap } from "@/services/PDF/P7SLoader/LoaderStrategyMap";
+import { moduleRegistry } from "@/modules/ModuleRegistry";
 import { PROZORRO_PDF_TYPES } from "@/services/PDF/PdfTypes";
 import type { P7SLoadResultType } from "@/types/pdf/P7SLoadResultType";
 import type { PdfDocumentConfigType } from "@/types/pdf/PdfDocumentConfigType";
@@ -16,7 +16,7 @@ export class LoaderManager<DataType> implements ILoaderManager<DataType> {
   private dataGenerator;
 
   constructor(envVars: EnvironmentType) {
-    this.loaderFactory = new LoaderFactory(loaderStrategyMap, envVars);
+    this.loaderFactory = new LoaderFactory(moduleRegistry.loaderStrategyMap, envVars);
     this.dataGenerator = this.loaderFactory.create(PROZORRO_PDF_TYPES.TICKET);
   }
 

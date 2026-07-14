@@ -12,13 +12,16 @@ export default defineConfig({
     }),
   ],
   build: {
-    sourcemap: true,
+    sourcemap: false,
     outDir: "./dist",
     lib: {
       entry: resolve(__dirname, "src/main.ts"),
       name: "ProzorroPdf",
-      formats: ["es", "iife", "cjs", "umd"],
-      fileName: format => `prozorro-pdf.${format}.js`,
+      formats: ["es", "cjs"],
+      fileName: format => (format === "es" ? "prozorro-pdf.es.js" : "prozorro-pdf.cjs"),
+    },
+    rollupOptions: {
+      external: [/^@prozorro\/prozorro-eds/, /^pdfmake/, /^lodash/, /^decimal\.js/, /^qs/, /^yaml/],
     },
   },
   test: {

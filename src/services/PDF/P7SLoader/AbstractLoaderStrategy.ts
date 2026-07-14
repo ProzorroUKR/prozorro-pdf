@@ -1,7 +1,7 @@
-import axios, { type AxiosResponse } from "axios";
 import { ProzorroEds } from "@prozorro/prozorro-eds";
 import { Base64 } from "@/utils/Base64";
 import { ENCODING } from "@/constants/encoding";
+import { HttpClient } from "@/services/Http/HttpClient";
 import type { PdfObjectType } from "@/types/pdf/PdfObjectType";
 import type { EnvironmentType } from "@/types/pdf/EnvironmentType";
 import type { P7SLoadResultType } from "@/types/pdf/P7SLoadResultType";
@@ -20,9 +20,7 @@ export abstract class AbstractLoaderStrategy<DataType> implements LoaderStrategy
 
   protected async getData(url: string): Promise<string> {
     try {
-      const { data }: AxiosResponse = await axios.get(url, {
-        responseType: "blob",
-      });
+      const data = await HttpClient.get<Blob>(url, { responseType: "blob" });
 
       return await this._base64.encode(data);
     } catch {

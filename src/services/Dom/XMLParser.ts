@@ -1,7 +1,10 @@
 import { STRING } from "@/constants/string";
-import type { XMLParserInterface } from "@/services/Dom/XMLParserInterface";
 import { Logger } from "@/utils/Logger";
 import type { ILogger } from "@/utils/Logger";
+
+export interface XMLParserInterface {
+  getData(xmlString: string, selectors: string[]): Record<string, string>;
+}
 
 export class XMLParser implements XMLParserInterface {
   private readonly _logger: ILogger = new Logger("XMLParser");

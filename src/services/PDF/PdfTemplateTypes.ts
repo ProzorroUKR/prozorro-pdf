@@ -4,7 +4,7 @@ export enum PdfTemplateTypes {
   XML = "XML",
   KVT = "KVT",
   MONITORING = "MONITORING",
-  ANNOUNCEMENT = "announcement",
+  ANNOUNCEMENT = "ANNOUNCEMENT",
   NAZK = "NAZK",
   PQ = "PQ",
   COMPLAINT = "COMPLAINT",

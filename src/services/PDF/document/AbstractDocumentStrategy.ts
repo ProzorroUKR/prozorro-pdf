@@ -1,4 +1,4 @@
-import { get } from "lodash";
+import get from "lodash/get";
 import { STRING } from "@/constants/string";
 import { MONTHS_LIST } from "@/constants/monthList";
 import type { SignerType } from "@/types/sign/SignerType";

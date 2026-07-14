@@ -3,7 +3,7 @@ import {
   POST_HEADING_ADDRESS_MARGIN,
   PQ_GENERIC_TITLE_MARGIN,
   PQ_TESTING_GROUNDS_MARGIN,
-} from "@/widgets/pq/configs/margins";
+} from "@/config/pdf/pqMargins";
 
 export const PDF_STYLES = {
   heading: {

@@ -5,7 +5,8 @@ declare class Pdfmake {
   createPdf(data: Record<string, any>): TCreatedPdf;
 }
 
-declare interface Window {
-  signToDoc: import("@/services/PDF/PDFInterface").PDFInterface;
-  signToDocErrorExceptionInterface: import("@/widgets/ErrorExceptionCore/ErrorExceptionCore").IErrorExceptionCore;
+declare global {
+  interface Window {
+    ProzorroPdf: import("@/services/PDF/PDF").IProzorroPdf;
+  }
 }

@@ -1,6 +1,6 @@
 import { STRING } from "@/constants/string";
 import type { DataSchemaType } from "@/types/TenderOffer/Tender";
-import { dataSchemaToDictionaryMap } from "@/widgets/TenderOffer/constants/dataSchemaToDictionaryMap";
+import { dataSchemaToDictionaryMap } from "@/constants/dataSchemaToDictionaryMap";
 
 export class CriteriaRequirementDataSchema {
   constructor(private readonly dictionaries: Map<string, Record<string, any>>) {}

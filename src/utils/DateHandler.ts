@@ -1,6 +1,6 @@
 import { STRING } from "@/constants/string";
 import { TIME_NAMES } from "@/config/pdf/announcementConstants";
-import type { ContractPeriod } from "@/widgets/pq/types/PQTypes";
+import type { ContractPeriod } from "@/types/pq/PQTypes";
 import { MONTHS_LIST, MONTHS_LIST_DEFAULT } from "@/constants/monthList";
 
 export class DateHandler {

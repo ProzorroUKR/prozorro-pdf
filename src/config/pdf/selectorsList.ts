@@ -1,9 +1,4 @@
-export const KVT_SELECTORS_LIST: string[] = [
-  "HDOCNAME",
-  "HRESULT",
-  "HDATE",
-  "HTIME",
-];
+export const KVT_SELECTORS_LIST: string[] = ["HDOCNAME", "HRESULT", "HDATE", "HTIME"];
 
 export const XML_SELECTORS_LIST: string[] = [
   "HNAME", // Найменування
