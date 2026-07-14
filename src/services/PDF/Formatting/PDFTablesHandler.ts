@@ -3,7 +3,7 @@ import * as PDF_HELPER_CONST from "@/constants/pdf/pdfHelperConstants";
 import { PDF_FILED_KEYS } from "@/constants/pdf/pdfFieldKeys";
 import * as CONCLUSION_OF_MONITORING_CONST from "@/config/pdf/conclusionOfMonitoringConstants";
 import type { TableRow, TableRowTitleValueConditional } from "@/types/pdfFormatting/tableFormatting";
-import type { PDFTableBodyType, TableConfigType, TableWidthType } from "@/widgets/pq/types/TextConfigType";
+import type { PDFTableBodyType, TableConfigType, TableWidthType } from "@/types/pq/TextConfigType";
 import {
   TABLE_COLUMN_LEFT_MARGIN,
   TABLE_COLUMN_MARGIN,

@@ -1,0 +1,17 @@
+import type { TableHeadConfigType } from "@/types/pq/TextConfigType";
+import { PROZORRO_TEMPLATE_CODES } from "@/types/pq/TemplateCodes.enum";
+import { generalTableHeader } from "@/modules/pq/templates/computers/configs/computersContract.config";
+import { fuelTableHeader } from "@/modules/pq/templates/fuel/configs/fuelContract.config";
+import { genericTableItemsHeader } from "@/modules/pq/templates/generic/configs/genericContract.config";
+import { aozTableItemsHeader } from "@/modules/pq/templates/aoz/configs/aozContract.config.ts";
+
+export const TemplateToTableHead = new Map<string, TableHeadConfigType>()
+  .set(PROZORRO_TEMPLATE_CODES.FRUIT, generalTableHeader)
+  .set(PROZORRO_TEMPLATE_CODES.COMPUTER, generalTableHeader)
+  .set(PROZORRO_TEMPLATE_CODES.SOFTWARE, genericTableItemsHeader)
+  .set(PROZORRO_TEMPLATE_CODES.OTHER, generalTableHeader)
+  .set(PROZORRO_TEMPLATE_CODES.MEDICINE, generalTableHeader)
+  .set(PROZORRO_TEMPLATE_CODES.PHARM, generalTableHeader)
+  .set(PROZORRO_TEMPLATE_CODES.GAS, fuelTableHeader)
+  .set(PROZORRO_TEMPLATE_CODES.GENERIC, genericTableItemsHeader)
+  .set(PROZORRO_TEMPLATE_CODES.DPA, aozTableItemsHeader);

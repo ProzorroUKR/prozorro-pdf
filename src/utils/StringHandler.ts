@@ -1,4 +1,4 @@
-import { get } from "lodash";
+import get from "lodash/get";
 import { ADDRESS_ORDER } from "@/config/pdf/addressOrder";
 import type { Edr2AddressType } from "@/types/Edr/Edr2Type";
 import type { AddressType } from "@/types/Tender/AddressType";

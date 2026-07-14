@@ -11,7 +11,7 @@ import { CURRENCY_VOCABULARY } from "@/utils/numbersSpeller/config/CURRENCY_VOCA
 import { UnitHelper } from "@/services/Common/UnitHelper";
 import type { WordCaseModel } from "@/utils/numbersSpeller/models/WordCase.model";
 import type { MilestoneDurationType } from "@/types/Announcement/AnnouncementTypes";
-import { MILESTONES_DURATION_TYPE } from "@/widgets/pq/services/PQpaymentDetails/constants/milestones";
+import { MILESTONES_DURATION_TYPE } from "@/constants/pqMilestones";
 
 export class NumbersSpeller implements NumbersSpellerInterface {
   private readonly belowTwenty: string[];

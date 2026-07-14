@@ -4,10 +4,10 @@ import { NumbersSpeller } from "@/utils/numbersSpeller/NumbersSpeller";
 import { UnitHelper } from "@/services/Common/UnitHelper";
 import type { WordCaseModel } from "@/utils/numbersSpeller/models/WordCase.model";
 import { STRING } from "@/constants/string";
-import type { PQvalue } from "@/widgets/pq/types/PQTypes";
+import type { PQvalue } from "@/types/pq/PQTypes";
 import * as PDF_HELPER_CONST from "@/constants/pdf/pdfHelperConstants";
 import { FloatFormatter } from "@/utils/ObjectToString/FloatFormatter";
-import { isNumber } from "lodash";
+import isNumber from "lodash/isNumber";
 
 export class PriceHandler {
   private static readonly _numberSpeller = new NumbersSpeller();

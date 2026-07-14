@@ -4,9 +4,8 @@ import type { EnvironmentType } from "@/types/pdf/EnvironmentType";
 import { PdfTemplateTypes } from "@/services/PDF/PdfTemplateTypes";
 import { DocumentFactory } from "@/services/PDF/document/DocumentFactory";
 import type { PdfDocumentConfigType } from "@/types/pdf/PdfDocumentConfigType";
-import { documentStrategyMap } from "@/services/PDF/document/DocumentStrategyMap";
+import { moduleRegistry } from "@/modules/ModuleRegistry";
 import type { DocumentStrategyInterface } from "@/services/PDF/document/DocumentStrategyInterface";
-import { complaintPostCustomFooter } from "@/widgets/ComplaintPost/services/ComplaintPostCustomFooter.ts";
 
 export class DocumentManager {
   private documentType = "";
@@ -15,7 +14,7 @@ export class DocumentManager {
   private readonly documentFactory;
 
   constructor(envVars: EnvironmentType) {
-    this.documentFactory = new DocumentFactory(documentStrategyMap, envVars);
+    this.documentFactory = new DocumentFactory(moduleRegistry.documentStrategyMap, envVars);
     this.documentGenerator = this.documentFactory.create(PdfTemplateTypes.XML);
   }
 
@@ -40,10 +39,9 @@ export class DocumentManager {
       data
     );
     const header = this.documentGenerator.createHeader ? this.documentGenerator.createHeader() : undefined;
+    const customFooter = moduleRegistry.footerMap.get(this.documentType as PdfTemplateTypes);
     const footer: Record<string, any>[] | ((currentPage: number) => Record<string, any>) =
-      this.documentType === PdfTemplateTypes.COMPLAINT_POST
-        ? complaintPostCustomFooter
-        : this.documentGenerator.createFooter(signers, link); // TODO
+      customFooter ?? this.documentGenerator.createFooter(signers, link);
 
     return {
       header,

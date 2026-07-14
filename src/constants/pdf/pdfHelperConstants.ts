@@ -13,7 +13,6 @@ export const MARGIN_70 = 70;
 export const MARGIN_85 = 85;
 export const MARGIN_120 = 120;
 
-export const LINE_HEIGHT_SMALL = 0.3;
 export const LINE_HEIGHT_10 = 10;
 export const LINE_HEIGHT_15 = 15;
 export const LINE_HEIGHT_20 = 20;

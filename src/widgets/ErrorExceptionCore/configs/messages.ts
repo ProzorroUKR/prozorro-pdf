@@ -24,7 +24,6 @@ export const ERROR_MESSAGES = {
     wrongDocumentTypeStatus: "Неправильний тип документу",
     wrongDocumentFormat: "Неправильний формат документу",
     wrongDocumentTitle: "Неправильний заголовок документу",
-    wrongURL: "Неправильне посилання на документ",
     tenderLoader: 'Виникла помилка при завантаженні документу закупівлі. Не передано "config.tender"',
     undefinedCancellationStatus: "Статус відміни закупівлі відсутній",
     awardStatusNotFind: 'Статус в "award" не відповідає заданим умовам',
@@ -46,5 +45,7 @@ export const ERROR_MESSAGES = {
   [PROZORRO_PDF_ERROR_CODES.SERVICE_UNAVAILABLE]: {
     typeIsNotDefined: "Неможливо отримати стратегію обробки типів",
     loaderTypeIsNotDefined: "Не вдається отримати стратегію типу завантажувача pdf",
+    requestTimeout: "Перевищено час очікування запиту",
+    requestFailed: "Не вдалося виконати мережевий запит",
   },
 };

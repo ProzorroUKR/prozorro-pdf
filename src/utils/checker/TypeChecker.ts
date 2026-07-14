@@ -1,5 +1,5 @@
 import type { TypeCheckerInterface } from "@/utils/checker/TypeCheckerInterface";
-import type { CompoundTextType, OlConfigType } from "@/widgets/pq/types/TextConfigType";
+import type { CompoundTextType, OlConfigType } from "@/types/pq/TextConfigType";
 
 export class TypeChecker implements TypeCheckerInterface {
   static isCompoundTextType(x: OlConfigType): boolean {
