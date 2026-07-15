@@ -41,7 +41,7 @@ export class PurchaseCancellationProtocolDataMaker extends AbstractDocumentStrat
 
     if (Array.isArray(cancellations)) {
       cancellation = cancellations.find((c: CancellationType) => c.id === originalCancellation.id);
-    } else if (tender.hasOwnProperty("id")) {
+    } else if (tender?.id) {
       cancellation = tender;
     }
 

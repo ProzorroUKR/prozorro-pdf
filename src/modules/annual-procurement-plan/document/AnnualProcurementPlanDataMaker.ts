@@ -352,7 +352,7 @@ export class AnnualProcurementPlanDataMaker extends AbstractDocumentStrategy {
         if (this.emptyChecker.isEmptyString(item.scheme)) {
           return STRING.EMPTY;
         }
-        if (additionalClassifications.hasOwnProperty(`${item.scheme}`)) {
+        if (additionalClassifications?.[`${item.scheme}`]) {
           let text = additionalClassifications[item.scheme];
           const { dictionary } = additionalClassificationsResolves[item.scheme];
           const id = this.emptyChecker.isNotEmptyString(item.id) ? item.id : STRING.DASH;
@@ -369,7 +369,7 @@ export class AnnualProcurementPlanDataMaker extends AbstractDocumentStrategy {
             if (dictionaryData === undefined) {
               description = STRING.DASH;
             } else {
-              description = dictionaryData.hasOwnProperty(id) ? dictionaryData[id] : STRING.DASH;
+              description = dictionaryData?.[id] ? dictionaryData[id] : STRING.DASH;
             }
           }
           text = additionalClassificationsResolves[item.scheme].format

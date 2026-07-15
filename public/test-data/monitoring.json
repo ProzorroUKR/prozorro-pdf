@@ -3,14 +3,8 @@
     "tender_id": "2e98288c07e245a3bc386314ea25198c",
     "monitoring_id": "UA-M-2021-02-24-000005",
     "status": "declined",
-    "reasons": [
-      "authorities",
-      "media"
-    ],
-    "procuringStages": [
-      "planning",
-      "awarding"
-    ],
+    "reasons": ["authorities", "media"],
+    "procuringStages": ["planning", "awarding"],
     "monitoringPeriod": {
       "startDate": "2021-02-24T18:06:20.166884+02:00",
       "endDate": "2021-03-18T00:00:00+02:00"
@@ -41,9 +35,7 @@
           "telephone": "+4736430741362",
           "name": "ДАСУ (Київська обл.)"
         },
-        "roles": [
-          "sas"
-        ]
+        "roles": ["sas"]
       },
       {
         "id": "db01cd4ed1384708af15739764a51221",
@@ -66,9 +58,7 @@
           "telephone": "+7644535424176",
           "name": "ДАСУ (Київська обл.)"
         },
-        "roles": [
-          "sas"
-        ]
+        "roles": ["sas"]
       }
     ],
     "dateModified": "2021-02-26T13:04:47.565872+02:00",

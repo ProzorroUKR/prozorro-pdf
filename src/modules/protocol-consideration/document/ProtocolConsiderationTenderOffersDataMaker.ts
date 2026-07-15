@@ -173,7 +173,7 @@ export class ProtocolConsiderationTenderOffersDataMaker extends AbstractDocument
 
   private resolveBidsData(tender: ProtocolConsiderationTenderOffers, qualification: QualificationsType): string {
     const { bids } = tender;
-    if (!Array.isArray(bids) || !qualification.hasOwnProperty("bidID")) {
+    if (!Array.isArray(bids) || !qualification?.bidID) {
       return STRING.DASH;
     }
     const bid = bids.find(bid => this.getField(bid, "id") === this.getField(qualification, "bidID"));

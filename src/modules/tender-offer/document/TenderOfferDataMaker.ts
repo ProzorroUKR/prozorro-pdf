@@ -81,7 +81,7 @@ export class TenderOfferDataMaker extends AbstractDocumentStrategy {
   }
 
   prepareQuantity(item: ItemType): string {
-    if (!item.hasOwnProperty("quantity") || this.emptyChecker.isEmptyString(item.quantity)) {
+    if (!item?.quantity || this.emptyChecker.isEmptyString(item.quantity)) {
       return STRING.DASH;
     }
 
@@ -129,7 +129,7 @@ export class TenderOfferDataMaker extends AbstractDocumentStrategy {
     }
 
     const criterionList = criteria?.filter(
-      criterion => criterion.hasOwnProperty("relatedItem") && items.find(item => criterion.relatedItem === item.id)
+      criterion => criterion?.relatedItem && items.find(item => criterion.relatedItem === item.id)
     );
     return this.createSpecificationTable(items, criterionList, requirementResponses);
   }
@@ -551,7 +551,7 @@ export class TenderOfferDataMaker extends AbstractDocumentStrategy {
     }
 
     const bidEntity: BidType | LotValueType = lot ?? bidType;
-    const bidValueObject: BidsValueType | undefined = bidEntity.hasOwnProperty("value") ? bidEntity.value : undefined;
+    const bidValueObject: BidsValueType | undefined = isNumber(bidEntity?.value) ? bidEntity.value : undefined;
 
     if (!bidValueObject || this.emptyChecker.isEmptyObject(bidValueObject)) {
       return [PDF_HELPER_CONST.EMPTY_FIELD];
@@ -709,7 +709,7 @@ export class TenderOfferDataMaker extends AbstractDocumentStrategy {
       ...(qualificationDocuments ?? []),
     ]
       .filter(document => {
-        if (lot && lot.hasOwnProperty("id")) {
+        if (lot && lot?.id) {
           return (
             document.documentOf === "lot" && document.title !== SIGNATURE_FILE_NAME && document.relatedItem === lot.id
           );

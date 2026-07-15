@@ -5,10 +5,10 @@ export class TypeChecker implements TypeCheckerInterface {
   static isCompoundTextType(x: OlConfigType): boolean {
     return Boolean(
       typeof x === "object" &&
-        x !== null &&
-        (x as CompoundTextType).text?.length &&
-        (x as CompoundTextType).paths?.length &&
-        (x as CompoundTextType).defaults?.length
+      x !== null &&
+      (x as CompoundTextType).text?.length &&
+      (x as CompoundTextType).paths?.length &&
+      (x as CompoundTextType).defaults?.length
     );
   }
 

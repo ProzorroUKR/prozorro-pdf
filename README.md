@@ -94,6 +94,7 @@ onMounted(async () => {
 ### Type `PdfDocumentConfigType`
 
 Аргументи:
+
 - `title: string` — назва файлу в об'єкті документу (наприклад, `"sign.p7s"`);
 - `date?: string` — дата модифікації документа;
 - `contractTemplateName?: string` — назва шаблону контракту;
@@ -104,6 +105,7 @@ onMounted(async () => {
 
 Ініціалізація та початок роботи з бібліотекою.  
 Аргументи:
+
 - `environment: ENVIRONMENT_MODE` — тип середовища "SANDBOX", "STAGING" або "PRODUCTION"
 
 ---
@@ -112,9 +114,10 @@ onMounted(async () => {
 
 Завантажує об’єкт із ЦБД та повертає **handle документа** (`PdfDocument`), на якому
 викликаються методи генерації. Стан зберігається на handle, тому одночасна генерація
-кількох документів безпечна.  
+кількох документів безпечна.
 
 Аргументи:
+
 - `url: string` — посилання на об’єкт;
 - `type: PROZORRO_PDF_TYPES` — тип документа.
 
@@ -129,18 +132,20 @@ await doc.open({ title: "sign.p7s" });
 
 ### `open(config: PdfDocumentConfigType): Promise<void>`
 
-Відкриття документа у **новій вкладці браузера**.  
+Відкриття документа у **новій вкладці браузера**.
 
 Аргументи:
+
 - `config` - тип PdfDocumentConfigType
 
 ---
 
 ### `save(config: PdfDocumentConfigType, fileName?: string): Promise<void>`
 
-Завантаження документа.  
+Завантаження документа.
 
 Аргументи:
+
 - `config` - тип PdfDocumentConfigType
 - `fileName` - назва файлу, за замовчуванням `document.title`
 
@@ -148,9 +153,10 @@ await doc.open({ title: "sign.p7s" });
 
 ### `getIframe(config: PdfDocumentConfigType, parentFrameId?: string): Promise<void>`
 
-Створює **iframe** у контейнері з вказаним ID.  
+Створює **iframe** у контейнері з вказаним ID.
 
 Аргументи:
+
 - `config` - тип PdfDocumentConfigType
 - `parentFrameId` - ID батьківського елементу, в середину якого буде втавлено iframe з ПДФ, за замовчуванням `prozorroPdfFrameID`
 
@@ -187,6 +193,7 @@ await doc.open({ title: "sign.p7s" });
 ### Структура помилки
 
 Кожен об’єкт помилки реалізує інтерфейс `IPrzorroPdfErrorExceptionCore` і містить:
+
 - `code`: Ідентифікатор типів помилок (`PROZORRO_PDF_ERROR_CODES` enum)
 - `details`: Містить розширену інформацію про помилку (`ErrorDetailsModel`)
 - `timestamp`: Час створення помилки

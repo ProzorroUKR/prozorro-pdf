@@ -17,7 +17,7 @@ export class AwardHelper {
     withTaxText: string,
     showDefaultIfNotAvailable = true
   ): Record<string, any> {
-    if (!currencyBlock.hasOwnProperty("amountPerformance")) {
+    if (!currencyBlock?.amountPerformance) {
       return !showDefaultIfNotAvailable
         ? this.strategy.showIfAvailable("", "", false)
         : this.strategy.showWithDefault(STRING.DASH, mainText);

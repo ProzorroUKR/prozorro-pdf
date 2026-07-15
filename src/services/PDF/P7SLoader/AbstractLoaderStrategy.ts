@@ -49,11 +49,11 @@ export abstract class AbstractLoaderStrategy<DataType> implements LoaderStrategy
 
   // checkup for different input data from api for response with data and without data inside general object
   protected unwrapTender<DataType>(rawData: Record<any, any>, getData = false): Record<string, any> | DataType {
-    if (rawData.hasOwnProperty("context") && !getData) {
+    if (rawData?.context && !getData) {
       return rawData?.context?.tender as Record<string, any>;
     }
 
-    if (rawData.hasOwnProperty("data")) {
+    if (rawData?.data) {
       return rawData?.data as Record<string, any>;
     }
 

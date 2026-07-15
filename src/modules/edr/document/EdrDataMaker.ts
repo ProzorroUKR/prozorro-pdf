@@ -23,13 +23,12 @@ import {
   FOOTER_QR_MARGIN,
 } from "@/config/pdf/announcementConstants";
 import { ANNOUNCEMENT_TEXTS_LIST } from "@/config/pdf/texts/ANNOUNCEMENT";
-import type { PdfDocumentConfigType } from "@/types/pdf/PdfDocumentConfigType";
 import { PROZORRO_PDF_ERROR_CODES } from "@/widgets/ErrorExceptionCore/constants/ERROR_CODES.enum.ts";
 
 export class EdrDataMaker extends AbstractDocumentStrategy {
   private _metaSourceDate = "";
 
-  create({ data, error, meta }: EdrType, _: PdfDocumentConfigType): Record<string, any>[] {
+  create({ data, error, meta }: EdrType): Record<string, any>[] {
     this._metaSourceDate = meta.sourceDate;
 
     if (error || !data) {

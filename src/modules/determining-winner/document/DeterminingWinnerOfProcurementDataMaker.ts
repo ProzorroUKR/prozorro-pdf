@@ -41,7 +41,7 @@ export class DeterminingWinnerOfProcurementDataMaker extends AbstractDocumentStr
 
     if (Array.isArray(awards)) {
       award = awards.find((award: AwardType) => award.id === originalAward.id);
-    } else if (tender.hasOwnProperty("id")) {
+    } else if (tender?.id) {
       award = tender;
     }
 

@@ -43,7 +43,7 @@ export class DictionaryHelper {
     let description = this.strategy.getField(classification, "description", STRING.EMPTY);
 
     if (this.strategy.emptyChecker.isEmptyString(description) && !this.strategy.emptyChecker.isEmptyString(id)) {
-      description = classifierDictionary.hasOwnProperty(`${id}`) ? classifierDictionary[id] : STRING.DASH;
+      description = classifierDictionary?.[`${id}`] || STRING.DASH;
     }
 
     return `${ANNUAL_PROCUREMENT_PLAN_TEXTS_LIST.dk_2015} ${id} ${STRING.DASH} ${description}`;

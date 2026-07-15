@@ -308,8 +308,7 @@ export class FirstVersionFormatter {
       tableList.push(
         listItem.reduce((previousValue: string, currentValue: PQspecificationListItem): string => {
           if (
-            currentValue.hasOwnProperty("functionName") &&
-            DocumentExtractionService.getField(currentValue, "functionName") &&
+            (currentValue as CompoundStringListItem)?.functionName &&
             DocumentExtractionService.getField(contractObject, (currentValue as CompoundStringListItem).path)
           ) {
             const preparedValue = DocumentExtractionService.getField(
@@ -343,7 +342,7 @@ export class FirstVersionFormatter {
             }
           }
 
-          if (currentValue.hasOwnProperty("path") && DocumentExtractionService.getField(currentValue, "path")) {
+          if ((currentValue as CompoundStringListItem)?.path) {
             return previousValue.concat(
               DocumentExtractionService.getField(
                 contractObject,
@@ -353,7 +352,7 @@ export class FirstVersionFormatter {
             );
           }
 
-          if (currentValue.hasOwnProperty("text")) {
+          if ((currentValue as TextListItem)?.text) {
             return previousValue.concat((currentValue as TextListItem).text);
           }
 

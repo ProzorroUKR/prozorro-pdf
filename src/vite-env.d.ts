@@ -1,5 +1,5 @@
 /// <reference types="vite/client" />
-import { TCreatedPdf } from "pdfmake/build/pdfmake";
+import { TCreatedPdf } from "pdfmake/build/pdfmake.js";
 
 declare class Pdfmake {
   createPdf(data: Record<string, any>): TCreatedPdf;

@@ -36,7 +36,7 @@ export class ProtocolOnExtensionOfReviewPeriodDataMaker extends AbstractDocument
 
     if (Array.isArray(awards)) {
       award = awards.find((award: AwardType) => award.id === awardType.id);
-    } else if (tender.hasOwnProperty("id")) {
+    } else if (tender?.id) {
       award = tender;
     }
 
@@ -116,7 +116,7 @@ export class ProtocolOnExtensionOfReviewPeriodDataMaker extends AbstractDocument
 
     const [supplier] = suppliers;
 
-    if (award.hasOwnProperty("lotID") && STRING.EMPTY !== this.getField(award, "lotID", STRING.EMPTY)) {
+    if (award?.lotID) {
       const { lots } = tender;
       const lot = lots?.find((lotItem: Record<string, any>) => lotItem.id === award.lotID);
       let title = STRING.DASH;

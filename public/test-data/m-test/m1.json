@@ -3,14 +3,8 @@
     "tender_id": "9fbe883a48c14806a19b2dd21b89590f",
     "monitoring_id": "UA-M-2023-07-14-000048",
     "status": "declined",
-    "reasons": [
-      "fiscal"
-    ],
-    "procuringStages": [
-      "planning",
-      "awarding",
-      "contracting"
-    ],
+    "reasons": ["fiscal"],
+    "procuringStages": ["planning", "awarding", "contracting"],
     "monitoringPeriod": {
       "startDate": "2023-07-14T15:01:02.469577+03:00",
       "endDate": "2023-08-05T00:00:00+03:00"
@@ -164,9 +158,7 @@
           "telephone": "+38 (0 47) 263-16-14",
           "name": "\u041f\u0406\u0412\u041d\u0406\u0427\u041d\u0418\u0419 \u041e\u0424\u0406\u0421 \u0414\u0415\u0420\u0416\u0410\u0423\u0414\u0418\u0422\u0421\u041b\u0423\u0416\u0411\u0418 ( \u043e\u0431\u043b.)"
         },
-        "roles": [
-          "sas"
-        ]
+        "roles": ["sas"]
       }
     ],
     "dateModified": "2023-07-28T16:21:08.870156+03:00",

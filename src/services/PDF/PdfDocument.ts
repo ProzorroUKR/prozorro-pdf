@@ -1,5 +1,5 @@
 import type { Pdfmake } from "@/vite-env";
-import pdfMake from "pdfmake/build/pdfmake";
+import pdfMake from "pdfmake/build/pdfmake.js";
 import { ErrorExceptionCore } from "@/widgets/ErrorExceptionCore/ErrorExceptionCore";
 import { DocumentManager } from "@/services/PDF/document/DocumentManager";
 import { Assert } from "@/widgets/ErrorExceptionCore/Assert";

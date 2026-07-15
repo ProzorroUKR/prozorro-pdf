@@ -44,7 +44,7 @@ export class TenderRejectionProtocolDataMaker extends AbstractDocumentStrategy {
     if (Array.isArray(awards)) {
       award = awards.find((award: AwardType) => award.id === originalAward.id);
       this.isTenderLoaded = true;
-    } else if (tender.hasOwnProperty("id")) {
+    } else if (tender?.id) {
       award = tender;
     }
 
@@ -145,7 +145,7 @@ export class TenderRejectionProtocolDataMaker extends AbstractDocumentStrategy {
     dictionaries: Map<string, Record<string, any>>
   ): Record<string, any>[] {
     const { lots, items } = tender;
-    return award.hasOwnProperty("lotID") && Array.isArray(lots)
+    return award?.lotID && Array.isArray(lots)
       ? this.prepareLotsTable(tender, lots, award, dictionaries)
       : this.createItemTable(items, dictionaries, null);
   }
@@ -157,7 +157,7 @@ export class TenderRejectionProtocolDataMaker extends AbstractDocumentStrategy {
     dictionaries: Map<string, Record<string, any>>
   ): Record<string, any>[] {
     const res: Record<string, any>[] = [];
-    if (!Array.isArray(lots) || !award.hasOwnProperty("lotID")) {
+    if (!Array.isArray(lots) || !award?.lotID) {
       return res;
     }
     const lot = lots.find(lot => lot.id === award.lotID);

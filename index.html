@@ -4,7 +4,11 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Prozorro-PDF | Testing Page</title>
     <link rel="icon" type="image/x-icon" href="https://prozorro.gov.ua/favicon.ico" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
 
     <style>
       .content {
@@ -70,7 +74,9 @@
               </div>
 
               <div class="input-group">
-                <span class="input-group-text" id="filename-label">Filename <sup class="text-primary">optional</sup></span>
+                <span class="input-group-text" id="filename-label"
+                  >Filename <sup class="text-primary">optional</sup></span
+                >
 
                 <input
                   type="text"
@@ -151,7 +157,10 @@
       </div>
     </template>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
     <script type="module" src="/src/main.ts"></script>
 
     <script>
@@ -159,7 +168,9 @@
       const STORAGE_ACTIVE_ACCORDION_KEY = "ACTIVE_ACCORDION";
       const STORAGE_ENV_KEY = "PDF_ENV";
 
-      customElements.define("app-card", class extends HTMLElement {
+      customElements.define(
+        "app-card",
+        class extends HTMLElement {
           connectedCallback() {
             const store = { inputsRef: {} };
             const template = document.getElementById("app-card-template").content.cloneNode(true);
@@ -200,8 +211,14 @@
 
             const btnGroup = template.querySelectorAll("button.btn");
             const [btnOpenInFrame, btnOpenInNewWindow, btnDownload] = btnGroup;
-            btnOpenInFrame?.addEventListener("click", async () => await btnActionWrapper(openInFramePdfFile, btnOpenInFrame));
-            btnOpenInNewWindow?.addEventListener("click", async () => await btnActionWrapper(openInNewWindowPdfFile, btnOpenInNewWindow));
+            btnOpenInFrame?.addEventListener(
+              "click",
+              async () => await btnActionWrapper(openInFramePdfFile, btnOpenInFrame)
+            );
+            btnOpenInNewWindow?.addEventListener(
+              "click",
+              async () => await btnActionWrapper(openInNewWindowPdfFile, btnOpenInNewWindow)
+            );
             btnDownload?.addEventListener("click", async () => await btnActionWrapper(downloadPdfFile, btnDownload));
 
             const btnActionWrapper = async (cb, btn) => {
@@ -339,7 +356,8 @@
               {
                 label: "Award URL",
                 key: "url",
-                defaultValue: "https://lb-api-staging.prozorro.gov.ua/api/2.5/tenders/368cd29f789c4e23a21bef898511ca0c/awards/33d6ea831cc3493b84cde918d838e00a",
+                defaultValue:
+                  "https://lb-api-staging.prozorro.gov.ua/api/2.5/tenders/368cd29f789c4e23a21bef898511ca0c/awards/33d6ea831cc3493b84cde918d838e00a",
                 required: true,
               },
             ],
@@ -468,7 +486,8 @@
               {
                 key: "url",
                 label: "Award URL",
-                defaultValue: "/test-data/determining_winner_of_procurement/1/awards/97f325d5ccef4cf88ddb16e84a1fe43a.json",
+                defaultValue:
+                  "/test-data/determining_winner_of_procurement/1/awards/97f325d5ccef4cf88ddb16e84a1fe43a.json",
                 required: true,
               },
               {
@@ -495,7 +514,8 @@
               {
                 key: "url",
                 label: "Award URL",
-                defaultValue: "/test-data/ProtocolOnExtensionOfReviewPeriod/2/awards/1/a077d05f29fb49dda35da43b850b7d20.json",
+                defaultValue:
+                  "/test-data/ProtocolOnExtensionOfReviewPeriod/2/awards/1/a077d05f29fb49dda35da43b850b7d20.json",
                 required: true,
               },
               {
@@ -522,7 +542,8 @@
               {
                 key: "url",
                 label: "Cancellation URL",
-                defaultValue: "/test-data/purchase_cancellation_protocol/1/cancellation/9529d4bf7a0b44c9bfdd6c34d23b0a1d.json",
+                defaultValue:
+                  "/test-data/purchase_cancellation_protocol/1/cancellation/9529d4bf7a0b44c9bfdd6c34d23b0a1d.json",
                 required: true,
               },
               {
@@ -549,7 +570,8 @@
               {
                 key: "url",
                 label: "Document URL",
-                defaultValue: "/test-data/protocol_consideration_tender/1/documents/55dd9f06ea8b4c8c8679de9c532f18e8.json",
+                defaultValue:
+                  "/test-data/protocol_consideration_tender/1/documents/55dd9f06ea8b4c8c8679de9c532f18e8.json",
                 required: true,
               },
               {
@@ -635,7 +657,8 @@
               {
                 key: "url",
                 label: "Award / Qualification URL",
-                defaultValue: "https://lb-api-sandbox-2.prozorro.gov.ua/api/2.5/tenders/53939f9dfd2847ecb29566355e783749/qualifications/f9cc56d8e85640d39c9ccc4c50fcae5d",
+                defaultValue:
+                  "https://lb-api-sandbox-2.prozorro.gov.ua/api/2.5/tenders/53939f9dfd2847ecb29566355e783749/qualifications/f9cc56d8e85640d39c9ccc4c50fcae5d",
                 required: true,
               },
               {
@@ -689,7 +712,8 @@
               {
                 key: "url",
                 label: "Complaint URL",
-                defaultValue: "https://lb-api-sandbox-2.prozorro.gov.ua/api/2.5/tenders/33ba9c24b30b4198a2c6c76a90ec1778/complaints/35666aa0e3d44883b6a152207cfd18ad",
+                defaultValue:
+                  "https://lb-api-sandbox-2.prozorro.gov.ua/api/2.5/tenders/33ba9c24b30b4198a2c6c76a90ec1778/complaints/35666aa0e3d44883b6a152207cfd18ad",
                 required: true,
               },
               {
@@ -741,7 +765,9 @@
             return;
           }
 
-          const filteredList = DATA_COLLECTION.filter(({ type, title }) => `#${type} – ${title}`.toLowerCase().includes(value.toLowerCase()));
+          const filteredList = DATA_COLLECTION.filter(({ type, title }) =>
+            `#${type} – ${title}`.toLowerCase().includes(value.toLowerCase())
+          );
           createCardList(filteredList);
         });
 

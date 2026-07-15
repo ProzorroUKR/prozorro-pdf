@@ -143,12 +143,10 @@ export class ComplaintDataMaker extends AbstractDocumentStrategy {
         .filter(
           (document: DocumentType) => document.author === "complaint_owner" && document.title !== SIGNATURE_FILE_NAME
         )
-        .map(
-          ({ title }: DocumentType): Record<string, any> => ({
-            style: PDF_STYLES.table_data,
-            text: title,
-          })
-        )
+        .map(({ title }: DocumentType): Record<string, any> => ({
+          style: PDF_STYLES.table_data,
+          text: title,
+        }))
     );
   }
 

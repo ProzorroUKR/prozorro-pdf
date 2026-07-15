@@ -63,36 +63,28 @@
         "requirement": {
           "id": "3526ac1763a346a293c6f12a0c61f526"
         },
-        "values": [
-          89
-        ]
+        "values": [89]
       },
       {
         "id": "de122c5bf7dc417788164bb0905cca91",
         "requirement": {
           "id": "b03610975fa3428d99f6b3c7cae829bc"
         },
-        "values": [
-          true
-        ]
+        "values": [true]
       },
       {
         "id": "c2e858aa4eb44972aefae066b4f6bae8",
         "requirement": {
           "id": "976be731c0cb48c5a7cf9c2cfd4396ac"
         },
-        "values": [
-          "талон"
-        ]
+        "values": ["талон"]
       },
       {
         "id": "a7e634119a3e4fc19c7aca5696bb4719",
         "requirement": {
           "id": "37e88240b0c44e3684973ff92305681a"
         },
-        "values": [
-          "WOG"
-        ]
+        "values": ["WOG"]
       }
     ],
     "status": "active",
