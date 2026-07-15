@@ -21,7 +21,7 @@ export default defineConfig({
       fileName: format => (format === "es" ? "prozorro-pdf.es.js" : "prozorro-pdf.cjs"),
     },
     rollupOptions: {
-      external: [/^@prozorro\/prozorro-eds/, /^pdfmake/, /^lodash/, /^decimal\.js/, /^qs/, /^yaml/],
+      external: [/^@prozorro\/prozorro-eds/, /^decimal\.js/, /^qs/, /^yaml/],
     },
   },
   test: {

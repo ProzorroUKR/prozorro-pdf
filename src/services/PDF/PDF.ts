@@ -1,5 +1,5 @@
 import { ProzorroEds } from "@prozorro/prozorro-eds";
-import pdfMake from "pdfmake/build/pdfmake.js";
+import pdfMake from "pdfmake/build/pdfmake";
 import { ENV_CONFIG } from "@/config/ENV.config";
 import { FONTS_CONFIG } from "@/config/FONTS.config";
 import { ErrorExceptionCore } from "@/widgets/ErrorExceptionCore/ErrorExceptionCore";
