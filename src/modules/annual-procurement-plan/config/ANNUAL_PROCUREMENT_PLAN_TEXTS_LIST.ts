@@ -1,4 +1,4 @@
-export const ANNUAL_PROCUREMENT_PLAN_TEXTS_LIST: Record<string, string> = {
+export const ANNUAL_PROCUREMENT_PLAN_TEXTS_LIST = {
   title: "ПРОТОКОЛ",
   subtitle: "затвердження річного плану закупівель",
   customer_info: "Найменування замовника:",
@@ -20,7 +20,6 @@ export const ANNUAL_PROCUREMENT_PLAN_TEXTS_LIST: Record<string, string> = {
   procuring_entity_code_table:
     "Код згідно з Єдиним закупівельним словником, що найбільше відповідає назві номенклатурної позиції предмета закупівлі",
   procurement_amount: "Кількість товарів або обсяг виконання робіт чи надання послуг",
-  dk_2015: "ДК021-2015:",
   additional_code: "Код економічної класифікації видатків бюджету:",
   classifiers_names: "Назви відповідних класифікаторів предмета закупівлі (за наявності):",
   classifiers_names_table: "Назви відповідних класифікаторів предмета закупівлі (за наявності)",
@@ -29,9 +28,12 @@ export const ANNUAL_PROCUREMENT_PLAN_TEXTS_LIST: Record<string, string> = {
   has_been_resolved_text: "Затвердити річний план закупівлі та опублікувати на веб-порталі Уповноваженого органу",
   tender_start_date: "Орієнтовний початок проведення закупівлі:",
   source_funding: "Джерело фінансування закупівлі",
-  budget_project: "План України:",
   description: "Опис",
   classification: "Код класифікації видатків",
   address: "Адміністративно-територіальна класифікація",
   budget_breakdown_sum: "Сума",
-};
+  project_scheme: {
+    plan_of_ukraine: "План України:",
+    funder_program: "Програма фінансування:",
+  },
+} as const;

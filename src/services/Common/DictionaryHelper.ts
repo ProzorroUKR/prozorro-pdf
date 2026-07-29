@@ -1,6 +1,5 @@
 import { CLASSIFICATION_CONSTANTS, STRING } from "@/constants/string";
 import { AbstractDocumentStrategy } from "@/services/PDF/document/AbstractDocumentStrategy";
-import { ANNUAL_PROCUREMENT_PLAN_TEXTS_LIST } from "@/config/pdf/texts/ANNUAL_PROCUREMENT_PLAN_TEXTS_LIST.ts";
 
 export class DictionaryHelper {
   private readonly strategy: AbstractDocumentStrategy;
@@ -46,6 +45,6 @@ export class DictionaryHelper {
       description = classifierDictionary?.[`${id}`] || STRING.DASH;
     }
 
-    return `${ANNUAL_PROCUREMENT_PLAN_TEXTS_LIST.dk_2015} ${id} ${STRING.DASH} ${description}`;
+    return `ДК021-2015: ${id} ${STRING.DASH} ${description}`;
   }
 }
