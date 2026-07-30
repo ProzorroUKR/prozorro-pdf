@@ -2,6 +2,13 @@
 
 Усі помітні зміни в `@prozorro/prozorro-pdf`. Нові записи — зверху.
 
+## 30.07.2026
+
+- Added `UKTZED` additional classification to ANNUAL_PROCUREMENT_PLAN document type. Rendered as
+  `УКТ ЗЕД: <id> — <description>`; the description is taken from the API only (no dictionary lookup) and is printed
+  as received, including the trailing `----`.
+- Fixed a crash in ANNUAL_PROCUREMENT_PLAN when an additional classification had a label but no resolve rule.
+
 ## 29.07.2026
 
 - Added translates to `budget.project` by `scheme` fields in ANNUAL_PROCUREMENT_PLAN document type.

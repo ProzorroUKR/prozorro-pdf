@@ -12,6 +12,7 @@ import type {
 import {
   additionalClassifications,
   additionalClassificationsResolves,
+  defaultAdditionalClassificationResolve,
 } from "@/modules/annual-procurement-plan/config/additionalClassifications";
 import { STRING } from "@/constants/string";
 import { DateHandler } from "@/utils/DateHandler";
@@ -342,7 +343,8 @@ export class AnnualProcurementPlanDataMaker extends AbstractDocumentStrategy {
         }
         if (additionalClassifications?.[`${item.scheme}`]) {
           let text = additionalClassifications[item.scheme];
-          const { dictionary } = additionalClassificationsResolves[item.scheme];
+          const resolve = additionalClassificationsResolves[item.scheme] ?? defaultAdditionalClassificationResolve;
+          const { dictionary } = resolve;
           const id = this.emptyChecker.isNotEmptyString(item.id) ? item.id : STRING.DASH;
           let description = this.emptyChecker.isNotEmptyString(item.description) ? item.description : STRING.EMPTY;
           if (this.emptyChecker.isEmptyString(item.id) && this.emptyChecker.isEmptyString(item.description)) {
@@ -360,7 +362,7 @@ export class AnnualProcurementPlanDataMaker extends AbstractDocumentStrategy {
               description = dictionaryData?.[id] ? dictionaryData[id] : STRING.DASH;
             }
           }
-          text = additionalClassificationsResolves[item.scheme].format
+          text = resolve.format
             .replace(":classification", text)
             .replace(":id", id)
             .replace(":dash", STRING.DASH)

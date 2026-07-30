@@ -15,12 +15,25 @@ export const additionalClassifications: { readonly [index: string]: string } = {
   "UA-ROAD": "Індекс автомобільних доріг",
   GMDN: "НК 024:2019",
   "GMDN-2023": "НК 024:2023",
+  UKTZED: "УКТ ЗЕД",
 };
+
+export type AdditionalClassificationResolve = {
+  readonly format: string;
+  readonly dictionary: string | null;
+};
+
+/**
+ * Fallback for schemes that have a label but no explicit resolve rule:
+ * render the value as it came from the API, without a dictionary lookup.
+ */
+export const defaultAdditionalClassificationResolve: AdditionalClassificationResolve = {
+  format: ":classification: :id :dash :description",
+  dictionary: null,
+};
+
 export const additionalClassificationsResolves: {
-  [index: string]: {
-    readonly format: string;
-    readonly dictionary: string | null;
-  };
+  [index: string]: AdditionalClassificationResolve;
 } = {
   ДКПП: {
     format: ":classification: :id :dash :description",
@@ -63,6 +76,10 @@ export const additionalClassificationsResolves: {
     dictionary: null,
   },
   "GMDN-2023": {
+    format: ":classification: :id :dash :description",
+    dictionary: null,
+  },
+  UKTZED: {
     format: ":classification: :id :dash :description",
     dictionary: null,
   },
