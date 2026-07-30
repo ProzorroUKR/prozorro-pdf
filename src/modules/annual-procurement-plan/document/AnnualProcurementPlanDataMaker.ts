@@ -3,7 +3,7 @@ import { AbstractDocumentStrategy } from "@/services/PDF/document/AbstractDocume
 import { PDF_FILED_KEYS } from "@/constants/pdf/pdfFieldKeys";
 import { ANNOUNCEMENT_PAGE_MARGIN } from "@/config/pdf/announcementConstants";
 import { MARGIN_TOP_3, MARGIN_TOP_5__BOTTOM_5__LEFT_MINUS_5 } from "@/config/pdf/conclusionOfMonitoringConstants";
-import { ANNUAL_PROCUREMENT_PLAN_TEXTS_LIST } from "@/config/pdf/texts/ANNUAL_PROCUREMENT_PLAN_TEXTS_LIST.ts";
+import { ANNUAL_PROCUREMENT_PLAN_TEXTS_LIST } from "@/modules/annual-procurement-plan/config/ANNUAL_PROCUREMENT_PLAN_TEXTS_LIST.ts";
 import * as PDF_HELPER_CONST from "@/constants/pdf/pdfHelperConstants";
 import type {
   AnnouncementItem,
@@ -60,6 +60,9 @@ export class AnnualProcurementPlanDataMaker extends AbstractDocumentStrategy {
         .flat()
         .map(({ id }: any) => id)
         .filter(Boolean) || [];
+    const budgetProjectLabel: string | undefined = (
+      ANNUAL_PROCUREMENT_PLAN_TEXTS_LIST.project_scheme as Record<string, string>
+    )[budget?.project?.scheme];
 
     if (katottgIdsList.length > 0) {
       const dictionary = new Map<string, string>().set("katottg", "katottg");
@@ -88,36 +91,36 @@ export class AnnualProcurementPlanDataMaker extends AbstractDocumentStrategy {
         style: PDF_FILED_KEYS.TITLE_MEDIUM,
       },
       this.showWithDefault(
-        this.getField(buyer, "identifier.legalName") || this.getField(buyer, "name"),
+        buyer?.identifier?.legalName || buyer?.name,
         ANNUAL_PROCUREMENT_PLAN_TEXTS_LIST.customer_info
       ),
       customerCategory,
-      this.showWithDefault(this.getField(buyer, "identifier.id"), ANNUAL_PROCUREMENT_PLAN_TEXTS_LIST.customer_edrpou),
+      this.showWithDefault(buyer?.identifier?.id, ANNUAL_PROCUREMENT_PLAN_TEXTS_LIST.customer_edrpou),
       this.showWithDefault(
-        StringHandler.customerLocation(this.getField(buyer, "address")),
+        StringHandler.customerLocation(buyer?.address),
         ANNUAL_PROCUREMENT_PLAN_TEXTS_LIST.customer_location,
-        Boolean(this.getField(buyer, "address"))
+        Boolean(buyer?.address)
       ),
       this.showWithDefault(
-        this.getField(procuringEntity, "identifier.legalName") || this.getField(procuringEntity, "name") || STRING.DASH,
+        procuringEntity?.identifier?.legalName || procuringEntity?.name || STRING.DASH,
         ANNUAL_PROCUREMENT_PLAN_TEXTS_LIST.customer_organization_name
       ),
       buyerCategory,
       this.showWithDefault(
-        this.getField(procuringEntity, "identifier.id"),
+        procuringEntity?.identifier?.id,
         ANNUAL_PROCUREMENT_PLAN_TEXTS_LIST.customer_organization_edr_id
       ),
       this.showWithDefault(
-        StringHandler.customerLocation(this.getField(procuringEntity, "address")),
+        StringHandler.customerLocation(procuringEntity?.address),
         ANNUAL_PROCUREMENT_PLAN_TEXTS_LIST.customer_organization_location,
-        Boolean(this.getField(procuringEntity, "address"))
+        Boolean(procuringEntity?.address)
       ),
       this.dictionaryHelper.getTenderProcurementMethodType(
-        this.getField(tenderData, "procurementMethodType", STRING.EMPTY),
+        tenderData?.procurementMethodType,
         dictionaries.get("tender_procurement_method_type"),
         ANNUAL_PROCUREMENT_PLAN_TEXTS_LIST.type_of_purchase
       ),
-      this.showWithDefault(this.getField(budget, "description"), ANNUAL_PROCUREMENT_PLAN_TEXTS_LIST.procurement_type),
+      this.showWithDefault(budget?.description, ANNUAL_PROCUREMENT_PLAN_TEXTS_LIST.procurement_type),
       this.showWithDefault(
         this.dictionaryHelper.getClassificationField(classification, dictionaries.get("classifier_dk")),
         ANNUAL_PROCUREMENT_PLAN_TEXTS_LIST.procuring_entity_code
@@ -131,23 +134,17 @@ export class AnnualProcurementPlanDataMaker extends AbstractDocumentStrategy {
         ANNUAL_PROCUREMENT_PLAN_TEXTS_LIST.classifiers_names
       ),
       this.showWithDefault(
-        `${UnitHelper.currencyFormatting(this.getField(budget, "amount") || "0")} ${this.getField(budget, "currency")}`,
+        `${UnitHelper.currencyFormatting(budget?.amount || "0")} ${budget?.currency}`,
         ANNUAL_PROCUREMENT_PLAN_TEXTS_LIST.expected_price
       ),
       this.showWithDefault(
-        DateHandler.prepareDate(this.getField(tenderData, "tenderPeriod.startDate")),
+        DateHandler.prepareDate(tenderData?.tenderPeriod.startDate),
         ANNUAL_PROCUREMENT_PLAN_TEXTS_LIST.tender_start_date
       ),
-      this.showWithDefault(
-        this.getField(budget, "project.name") || STRING.DASH,
-        ANNUAL_PROCUREMENT_PLAN_TEXTS_LIST.budget_project
-      ),
+      budgetProjectLabel ? this.showWithDefault(budget?.project?.name || STRING.DASH, budgetProjectLabel) : {},
       this.createItemTable(items, dictionaries),
       this.createBudgetBreakdownTable(budget.breakdown, dictionaries),
-      this.showWithDefault(
-        this.getField(rationale, "description"),
-        ANNUAL_PROCUREMENT_PLAN_TEXTS_LIST.reasons_for_purchase_by_customer
-      ),
+      this.showWithDefault(rationale?.description, ANNUAL_PROCUREMENT_PLAN_TEXTS_LIST.reasons_for_purchase_by_customer),
       this.showIfAvailable(
         ANNUAL_PROCUREMENT_PLAN_TEXTS_LIST.has_been_resolved_text,
         ANNUAL_PROCUREMENT_PLAN_TEXTS_LIST.has_been_resolved
@@ -206,15 +203,11 @@ export class AnnualProcurementPlanDataMaker extends AbstractDocumentStrategy {
       body.push([
         {
           text:
-            this.getField(
-              dictionaries.get("budget_source") || {},
-              `${this.getField(item, "title")}.title`,
-              STRING.DASH
-            ) ?? STRING.DASH,
+            this.getField(dictionaries.get("budget_source") || {}, `${item?.title}.title`, STRING.DASH) ?? STRING.DASH,
           style: PDF_FILED_KEYS.TABLE_DATA,
         },
         {
-          text: this.getField(item, "description", STRING.DASH).trim(),
+          text: item?.description || STRING.DASH,
           style: PDF_FILED_KEYS.TABLE_DATA,
         },
         {
@@ -227,7 +220,7 @@ export class AnnualProcurementPlanDataMaker extends AbstractDocumentStrategy {
         },
         {
           text:
-            `${UnitHelper.currencyFormatting(this.getField(item, "value.amount") || "0")} ${this.getField(item, "value.currency")}`.trim() ??
+            `${UnitHelper.currencyFormatting(item?.value?.amount || "0")} ${item?.value?.currency}`.trim() ||
             STRING.DASH,
           style: PDF_FILED_KEYS.TABLE_DATA,
         },
@@ -290,20 +283,15 @@ export class AnnualProcurementPlanDataMaker extends AbstractDocumentStrategy {
     items.forEach(item =>
       body.push([
         {
-          text: this.emptyChecker.isEmptyString(this.getField(item, "description", STRING.EMPTY).trim())
-            ? STRING.DASH
-            : this.getField(item, "description"),
+          text: item?.description || STRING.DASH,
           style: PDF_FILED_KEYS.TABLE_DATA,
         },
         {
-          text: this.dictionaryHelper.getClassificationField(
-            this.getField(item, "classification"),
-            dictionaries.get("classifier_dk")
-          ),
+          text: this.dictionaryHelper.getClassificationField(item?.classification, dictionaries.get("classifier_dk")),
           style: PDF_FILED_KEYS.TABLE_DATA,
         },
         {
-          text: `${this.getItemAdditionalClassification(this.getField(item, "additionalClassifications"), dictionaries)}`,
+          text: `${this.getItemAdditionalClassification(item?.additionalClassifications, dictionaries)}`,
           style: PDF_FILED_KEYS.TABLE_DATA,
         },
         {

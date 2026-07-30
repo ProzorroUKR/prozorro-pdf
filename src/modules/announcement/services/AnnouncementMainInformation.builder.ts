@@ -67,6 +67,7 @@ export class AnnouncementMainInformationBuilder implements IAnnouncementMainInfo
     const name =
       this._getField<string>(this.tender, "procuringEntity.identifier.legalName") ||
       this._getField<string>(this.tender, "procuringEntity.name");
+
     this._addRow(ANNOUNCEMENT_TEXTS_LIST.customer_info, name);
 
     if (this._isEuProcMethodType()) {
