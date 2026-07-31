@@ -2,6 +2,11 @@
 
 Усі помітні зміни в `@prozorro/prozorro-pdf`. Нові записи — зверху.
 
+## 31.07.2026
+
+- Fixed translates to `budget.project` by `scheme` fields in ANNUAL_PROCUREMENT_PLAN document type.
+
+
 ## 30.07.2026
 
 - Added `UKTZED` additional classification to ANNUAL_PROCUREMENT_PLAN document type. Rendered as

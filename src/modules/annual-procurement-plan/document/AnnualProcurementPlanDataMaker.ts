@@ -61,9 +61,9 @@ export class AnnualProcurementPlanDataMaker extends AbstractDocumentStrategy {
         .flat()
         .map(({ id }: any) => id)
         .filter(Boolean) || [];
-    const budgetProjectLabel: string | undefined = (
-      ANNUAL_PROCUREMENT_PLAN_TEXTS_LIST.project_scheme as Record<string, string>
-    )[budget?.project?.scheme];
+    const budgetProjectLabel: string =
+      (ANNUAL_PROCUREMENT_PLAN_TEXTS_LIST.project_scheme as Record<string, string>)[budget?.project?.scheme] ||
+      ANNUAL_PROCUREMENT_PLAN_TEXTS_LIST.project_scheme.plan_of_ukraine;
 
     if (katottgIdsList.length > 0) {
       const dictionary = new Map<string, string>().set("katottg", "katottg");
@@ -142,7 +142,7 @@ export class AnnualProcurementPlanDataMaker extends AbstractDocumentStrategy {
         DateHandler.prepareDate(tenderData?.tenderPeriod.startDate),
         ANNUAL_PROCUREMENT_PLAN_TEXTS_LIST.tender_start_date
       ),
-      budgetProjectLabel ? this.showWithDefault(budget?.project?.name || STRING.DASH, budgetProjectLabel) : {},
+      budget?.project ? this.showWithDefault(budget?.project?.name || STRING.DASH, budgetProjectLabel) : null,
       this.createItemTable(items, dictionaries),
       this.createBudgetBreakdownTable(budget.breakdown, dictionaries),
       this.showWithDefault(rationale?.description, ANNUAL_PROCUREMENT_PLAN_TEXTS_LIST.reasons_for_purchase_by_customer),
@@ -150,7 +150,7 @@ export class AnnualProcurementPlanDataMaker extends AbstractDocumentStrategy {
         ANNUAL_PROCUREMENT_PLAN_TEXTS_LIST.has_been_resolved_text,
         ANNUAL_PROCUREMENT_PLAN_TEXTS_LIST.has_been_resolved
       ),
-    ];
+    ].filter(Boolean) as Record<string, any>[];
   }
 
   getPageMargins(): number[] {
