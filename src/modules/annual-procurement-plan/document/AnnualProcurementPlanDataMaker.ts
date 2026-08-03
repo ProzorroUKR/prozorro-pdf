@@ -143,8 +143,8 @@ export class AnnualProcurementPlanDataMaker extends AbstractDocumentStrategy {
         ANNUAL_PROCUREMENT_PLAN_TEXTS_LIST.tender_start_date
       ),
       budget?.project ? this.showWithDefault(budget?.project?.name || STRING.DASH, budgetProjectLabel) : null,
-      this.createItemTable(items, dictionaries),
-      this.createBudgetBreakdownTable(budget.breakdown, dictionaries),
+      items?.length ? this.createItemTable(items, dictionaries) : null,
+      budget.breakdown?.length ? this.createBudgetBreakdownTable(budget.breakdown, dictionaries) : null,
       this.showWithDefault(rationale?.description, ANNUAL_PROCUREMENT_PLAN_TEXTS_LIST.reasons_for_purchase_by_customer),
       this.showIfAvailable(
         ANNUAL_PROCUREMENT_PLAN_TEXTS_LIST.has_been_resolved_text,
@@ -167,13 +167,9 @@ export class AnnualProcurementPlanDataMaker extends AbstractDocumentStrategy {
   }
 
   private createBudgetBreakdownTable(
-    breakdown: Array<Record<string, any>>,
+    breakdown: Record<string, any>[],
     dictionaries: Map<string, Record<string, any>>
   ): Record<string, any> {
-    if (!Array.isArray(breakdown)) {
-      return PDF_HELPER_CONST.EMPTY_FIELD;
-    }
-
     const header = [
       {
         text: ANNUAL_PROCUREMENT_PLAN_TEXTS_LIST.source_funding,
@@ -252,13 +248,9 @@ export class AnnualProcurementPlanDataMaker extends AbstractDocumentStrategy {
   }
 
   private createItemTable(
-    items: Array<AnnouncementItem>,
+    items: AnnouncementItem[],
     dictionaries: Map<string, Record<string, any>>
   ): Record<string, any> {
-    if (!Array.isArray(items)) {
-      return PDF_HELPER_CONST.EMPTY_FIELD;
-    }
-
     const header = [
       {
         text: ANNUAL_PROCUREMENT_PLAN_TEXTS_LIST.procuring_entity_name,

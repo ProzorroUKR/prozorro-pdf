@@ -2,6 +2,10 @@
 
 Усі помітні зміни в `@prozorro/prozorro-pdf`. Нові записи — зверху.
 
+## 03.08.2026
+
+- Fixed `EDUCATION_PRICE` rounding before spelling the calculated 10% contract amount in PQ.
+
 ## 31.07.2026
 
 - Fixed translates to `budget.project` by `scheme` fields in ANNUAL_PROCUREMENT_PLAN document type.

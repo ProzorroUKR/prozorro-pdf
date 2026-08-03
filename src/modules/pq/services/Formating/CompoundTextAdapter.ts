@@ -125,7 +125,7 @@ export class CompoundTextAdapter {
 
       case FormattingFunctionsEnum.EDUCATION_PRICE as string: {
         const contractAmount = Number(DocumentExtractionService.getField(dataObject, path, defaults));
-        const educationAmount = String(contractAmount * GET_PERCENT.TEN || STRING.EMPTY);
+        const educationAmount = PriceHandler.roundPriceToCoins(contractAmount * GET_PERCENT.TEN);
 
         return educationAmount
           ? `${UnitHelper.currencyFormatting(educationAmount)} ${pqBase.hryvnias} (${this._numberSpeller.priceToWords(educationAmount, defaults)})`
