@@ -2,6 +2,10 @@
 
 Усі помітні зміни в `@prozorro/prozorro-pdf`. Нові записи — зверху.
 
+## 06.08.2026
+
+- Fixed empty page in `ANNUAL_PROCUREMENT_PLAN`.
+
 ## 03.08.2026
 
 - Fixed `EDUCATION_PRICE` rounding before spelling the calculated 10% contract amount in PQ.

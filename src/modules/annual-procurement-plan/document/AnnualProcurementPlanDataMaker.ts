@@ -296,7 +296,6 @@ export class AnnualProcurementPlanDataMaker extends AbstractDocumentStrategy {
 
     return PDFTablesHandler.resolveTableBug(
       {
-        pageBreak: "before",
         table: {
           headerRows: 0,
           dontBreakRows: false,
