@@ -2,7 +2,7 @@ import { STRING } from "@/constants/string";
 import { PDF_FILED_KEYS } from "@/constants/pdf/pdfFieldKeys";
 import { CriterionValues } from "@/constants/tender/criterion.enum";
 import { ANNOUNCEMENT_TEXTS_LIST } from "@/config/pdf/texts/ANNOUNCEMENT";
-import type { CriterionType, RequirementType } from "@/types/TenderOffer/Tender";
+import type { CriterionType, RequirementGroupType, RequirementType } from "@/types/TenderOffer/Tender";
 import { PDFTablesHandler } from "@/services/PDF/Formatting/PDFTablesHandler";
 import { StringConversionHelper } from "@/services/Common/StringConversionHelper";
 import { DocumentExtractionService } from "@/services/PDF/document/DocumentExtractionService";
@@ -54,6 +54,61 @@ export class CriteriaHandler {
       : [];
   }
 
+  /*
+    Локалізація: критерій LOCAL_ORIGIN_LEVEL має 2 requirementGroups
+    (% локалізації + країна походження) — обходимо ВСІ групи.
+    Виводимо як критерій "Забезпечення" (окрема таблиця зі стандартним заголовком).
+    Не відображаємо вимоги зі status === "cancelled"; якщо активних не лишилось — таблицю не виводимо.
+  */
+  static getCriterionLocalization(
+    criteria: CriterionType[],
+    dictionaries: Map<string, Record<string, any>>
+  ): Record<string, any>[] {
+    const filteredCriteria = (criteria ?? []).filter(
+      item =>
+        DocumentExtractionService.getField(item, "classification.id") === CriterionValues.LOCAL_ORIGIN_LEVEL &&
+        (DocumentExtractionService.getField<RequirementGroupType[]>(item, "requirementGroups") || []).some(group =>
+          (group?.requirements || []).some(requirement => requirement.status !== "cancelled")
+        )
+    );
+
+    if (!filteredCriteria.length) {
+      return [];
+    }
+
+    const requirementGroups =
+      DocumentExtractionService.getField<RequirementGroupType[]>(filteredCriteria, "[0].requirementGroups") || [];
+
+    const rows = requirementGroups.reduce<Record<string, any>[]>((acc, group) => {
+      (group?.requirements || []).forEach(currentRequirement => {
+        if (currentRequirement.status === "cancelled") {
+          return;
+        }
+
+        acc.push(
+          PDFTablesHandler.showIfAvailable({
+            title: `${currentRequirement?.title}:`,
+            value: this.getRequirementValue(currentRequirement, dictionaries),
+          })
+        );
+      });
+
+      return acc;
+    }, []);
+
+    if (!rows.length) {
+      return [];
+    }
+
+    return [
+      {
+        text: ANNOUNCEMENT_TEXTS_LIST.criterion_localization,
+        style: PDF_FILED_KEYS.HEADING_TITLE,
+      },
+      ...rows,
+    ];
+  }
+
   static criterionValuesFormatter(
     criteria: CriterionType[],
     type: CriterionValues,
@@ -96,7 +151,7 @@ export class CriteriaHandler {
   }
 
   static getRequirementValue(
-    { expectedValues, expectedValue, unit, dataSchema }: RequirementType,
+    { expectedValues, expectedValue, minValue, unit, dataSchema }: RequirementType,
     dictionaries: Map<string, Record<string, any>>
   ): string {
     if (expectedValues?.length) {
@@ -104,11 +159,11 @@ export class CriteriaHandler {
       return dataSchemaHandler.translateValues(expectedValues, dataSchema).join(STRING.DELIMITER.NEW_LINE);
     }
 
-    return `${StringConversionHelper.yesNoStringConversion(expectedValue)}${unit?.name ? ` ${unit.name}` : ""}`;
+    return `${StringConversionHelper.yesNoStringConversion(expectedValue ?? minValue)}${unit?.name ? ` ${unit.name}` : ""}`;
   }
 
   /*
-    *     Виводити з критерія в якому tender.criteria.classification.id===CRITERION.OTHER.CONTRACT.GUARANTEE назву групи зверху з tender.criteria.requirementGroups.description, потім назву поля зліва з tender.criteria.requirementGroups.requirements.title: і виводити значення поля справа з tender.criteria.requirementGroups.requirements.expectedValue (true/True - відображаємо “Так“) або tender.criteria.requirementGroups.requirements.expectedValues (масив, виводити всі значення з нового рядка).
+    * Виводити з критерія в якому tender.criteria.classification.id===CRITERION.OTHER.CONTRACT.GUARANTEE назву групи зверху з tender.criteria.requirementGroups.description, потім назву поля зліва з tender.criteria.requirementGroups.requirements.title: і виводити значення поля справа з tender.criteria.requirementGroups.requirements.expectedValue (true/True - відображаємо “Так“) або tender.criteria.requirementGroups.requirements.expectedValues (масив, виводити всі значення з нового рядка).
     Додатково до значення відображати tender.criteria.requirementGroups.requirements.unit.name за наявності.
 
     Відображати всі активні вимоги (тільки requirements зі status==active).

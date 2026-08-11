@@ -2,6 +2,10 @@
 
 Усі помітні зміни в `@prozorro/prozorro-pdf`. Нові записи — зверху.
 
+## 11.08.2026
+
+- Added `CRITERION.OTHER.SUBJECT_OF_PROCUREMENT.LOCAL_ORIGIN_LEVEL` criterion (локалізація) to ANNOUNCEMENT document type.
+
 ## 06.08.2026
 
 - Fixed empty page in `ANNUAL_PROCUREMENT_PLAN`.

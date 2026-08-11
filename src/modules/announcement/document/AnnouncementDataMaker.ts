@@ -194,6 +194,7 @@ export class AnnouncementDataMaker extends AbstractDocumentStrategy {
 
       CriteriaHandler.getCriterionSecuringOffer(criteria, dictionaries),
       CriteriaHandler.getCriterionSecurityContract(criteria, dictionaries),
+      CriteriaHandler.getCriterionLocalization(criteria, dictionaries),
     ];
   }
 
@@ -491,6 +492,7 @@ export class AnnouncementDataMaker extends AbstractDocumentStrategy {
         (criteria: { relatedItem: string; classification: { id: string }; relatesTo: string }) =>
           criteria.relatedItem === lot.id ||
           criteria.classification.id === CriterionValues.BID_LANGUAGE ||
+          (criteria.relatesTo === "item" && lotFile.items.some((el: any) => el.id === criteria.relatedItem)) ||
           criteria.relatesTo === "tender"
       );
 
