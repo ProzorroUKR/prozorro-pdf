@@ -47,6 +47,7 @@ export const ANNOUNCEMENT_TEXTS_LIST: Record<string, string> = {
   securement_type_conditions: "Вид та умови надання забезпечення пропозицій учасників:",
   securement_contract: "Розмір та умови надання забезпечення виконання договору про закупівлю:",
   criterion_security_contract: "Умови надання забезпечення виконання договору про закупівлю",
+  criterion_localization: "Застосовується локалізація",
   procuring_entity_title: "Назва предмета закупівлі",
   procuring_entity_title_en: "Назва предмета закупівлі",
   feature:
