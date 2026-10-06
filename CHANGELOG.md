@@ -2,6 +2,15 @@
 
 Усі помітні зміни в `@prozorro/prozorro-pdf`. Нові записи — зверху.
 
+## 06.10.2026
+
+- Changed sign decoding flow: by default `.p7s` files are no longer downloaded in the browser — only
+  `documents[].url` is passed to the decryption service, which fetches the file itself.
+- Added `SIGN_DECODE_MODE` enum and optional `init(ENVIRONMENT_MODE, { signDecodeMode })` option.
+  `SIGN_DECODE_MODE.URL` (default) — new flow; `SIGN_DECODE_MODE.FILE` — legacy browser-download flow
+  (needed for links unreachable by the service, e.g. local fixtures).
+- Bumped `@prozorro/prozorro-eds` peer dependency to `>=1.1.2`.
+
 ## 11.08.2026
 
 - Added `CRITERION.OTHER.SUBJECT_OF_PROCUREMENT.LOCAL_ORIGIN_LEVEL` criterion (локалізація) to ANNOUNCEMENT document type.
