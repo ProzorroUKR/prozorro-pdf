@@ -15,12 +15,16 @@ import type { EnvironmentType } from "@/types/pdf/EnvironmentType";
 import { ENVIRONMENT_MODE } from "@/constants/ENVIRONMENT_MODE.enum";
 import { edsModeMap } from "@/config/edsModeMap";
 import type { PdfObjectType } from "@/types/pdf/PdfObjectType.ts";
+import type { InitOptionsType } from "@/types/pdf/InitOptionsType";
+import { SIGN_DECODE_MODE } from "@/constants/SIGN_DECODE_MODE.enum";
+import { SignVerifier } from "@/services/Sign/SignVerifier";
 
 export interface IProzorroPdf {
   MODE: typeof ENVIRONMENT_MODE;
   TYPES: typeof PROZORRO_PDF_TYPES;
   TEMPLATES: typeof PROZORRO_TEMPLATE_CODES;
-  init(environment?: ENVIRONMENT_MODE): Promise<void>;
+  SIGN_DECODE_MODE: typeof SIGN_DECODE_MODE;
+  init(environment?: ENVIRONMENT_MODE, options?: InitOptionsType): Promise<void>;
   setConfig(config: PdfConfigType): Promise<PdfDocument>;
 }
 
@@ -35,12 +39,18 @@ export class ProzorroPdf implements IProzorroPdf {
   readonly MODE = ENVIRONMENT_MODE;
   readonly TYPES = PROZORRO_PDF_TYPES;
   readonly TEMPLATES = PROZORRO_TEMPLATE_CODES;
+  readonly SIGN_DECODE_MODE = SIGN_DECODE_MODE;
 
   private envVars: EnvironmentType = ENV_CONFIG.SANDBOX;
+  private signVerifier = new SignVerifier();
 
-  async init(environment: ENVIRONMENT_MODE = ENVIRONMENT_MODE.SANDBOX): Promise<void> {
+  async init(
+    environment: ENVIRONMENT_MODE = ENVIRONMENT_MODE.SANDBOX,
+    { signDecodeMode = SIGN_DECODE_MODE.URL }: InitOptionsType = {}
+  ): Promise<void> {
     await ProzorroEds.init({ environment: edsModeMap.get(environment) });
     this.envVars = ENV_CONFIG[environment];
+    this.signVerifier = new SignVerifier(signDecodeMode);
     pdfMake.fonts = FONTS_CONFIG;
   }
 
@@ -49,14 +59,14 @@ export class ProzorroPdf implements IProzorroPdf {
       const dataTypeValidator = new DataTypeValidator();
 
       if (type === PROZORRO_PDF_TYPES.PQ && !url) {
-        return new PdfDocument(this.envVars, type);
+        return new PdfDocument(this.envVars, type, undefined, this.signVerifier);
       }
 
       dataTypeValidator.validate(url, ValidationTypes.STRING, ERROR_MESSAGES.INVALID_PARAMS.undefinedUrl);
 
       const { data: payload } = await HttpClient.get<{ data: PdfObjectType }>(url);
 
-      return new PdfDocument(this.envVars, type, payload);
+      return new PdfDocument(this.envVars, type, payload, this.signVerifier);
     } catch (error) {
       throw new ErrorExceptionCore(error as Error);
     }

@@ -1,4 +1,5 @@
 import type { EnvironmentType } from "@/types/pdf/EnvironmentType";
+import type { SignVerifierInterface } from "@/services/Sign/SignVerifier";
 import type { LoaderStrategyInterface } from "@/services/PDF/P7SLoader/LoaderStrategyInterface";
 import type { DocumentStrategyInterface } from "@/services/PDF/document/DocumentStrategyInterface";
 import type { PROZORRO_PDF_TYPES } from "@/services/PDF/PdfTypes";
@@ -9,7 +10,10 @@ import type { PdfTemplateTypes } from "@/services/PDF/PdfTemplateTypes";
  * document for a given public `PROZORRO_PDF_TYPES` value, decodes it and
  * returns the data the document maker needs.
  */
-export type LoaderStrategyConstructor = new (envVars: EnvironmentType) => LoaderStrategyInterface<any>;
+export type LoaderStrategyConstructor = new (
+  envVars: EnvironmentType,
+  verifier?: SignVerifierInterface
+) => LoaderStrategyInterface<any>;
 
 /**
  * Constructor for a document maker strategy. A document maker turns the

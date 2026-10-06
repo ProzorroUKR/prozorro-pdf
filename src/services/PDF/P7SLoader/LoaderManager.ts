@@ -5,6 +5,7 @@ import type { P7SLoadResultType } from "@/types/pdf/P7SLoadResultType";
 import type { PdfDocumentConfigType } from "@/types/pdf/PdfDocumentConfigType";
 import type { PdfObjectType } from "@/types/pdf/PdfObjectType";
 import type { EnvironmentType } from "@/types/pdf/EnvironmentType";
+import type { SignVerifierInterface } from "@/services/Sign/SignVerifier";
 
 export interface ILoaderManager<DataType> {
   setLoaderType(type: string): void;
@@ -15,8 +16,8 @@ export class LoaderManager<DataType> implements ILoaderManager<DataType> {
   private readonly loaderFactory;
   private dataGenerator;
 
-  constructor(envVars: EnvironmentType) {
-    this.loaderFactory = new LoaderFactory(moduleRegistry.loaderStrategyMap, envVars);
+  constructor(envVars: EnvironmentType, verifier?: SignVerifierInterface) {
+    this.loaderFactory = new LoaderFactory(moduleRegistry.loaderStrategyMap, envVars, verifier);
     this.dataGenerator = this.loaderFactory.create(PROZORRO_PDF_TYPES.TICKET);
   }
 

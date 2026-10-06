@@ -21,8 +21,7 @@ export class TicketLoader extends AbstractLoaderStrategy<string> implements Load
     );
 
     const document = this.getDocument(object, config);
-    const file = await this.getData(document.url);
-    const { data, signers } = await this.getDataFromSign(file, ENCODING.WINDOWS_1251);
+    const { data, signers } = await this.verifySign({ signUrl: document.url }, ENCODING.WINDOWS_1251);
 
     return {
       file: data,

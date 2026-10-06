@@ -86,6 +86,16 @@
                   placeholder="Enter filename"
                 />
               </div>
+
+              <div class="form-check form-switch mt-3">
+                <input class="form-check-input" type="checkbox" role="switch" id="signDecodeByUrl" />
+                <label class="form-check-label" for="signDecodeByUrl">
+                  Decode sign by URL
+                  <small class="text-muted">
+                    (service fetches .p7s; off — browser downloads it, for local test data)
+                  </small>
+                </label>
+              </div>
             </div>
           </div>
 
@@ -167,6 +177,13 @@
       const PDF_FRAME_ID = "pdfFrameID";
       const STORAGE_ACTIVE_ACCORDION_KEY = "ACTIVE_ACCORDION";
       const STORAGE_ENV_KEY = "PDF_ENV";
+      const STORAGE_SIGN_DECODE_MODE_KEY = "PDF_SIGN_DECODE_MODE";
+
+      const initPdf = () =>
+        window.ProzorroPdf.init(localStorage.getItem(STORAGE_ENV_KEY) || window.ProzorroPdf.MODE.SANDBOX, {
+          signDecodeMode:
+            localStorage.getItem(STORAGE_SIGN_DECODE_MODE_KEY) || window.ProzorroPdf.SIGN_DECODE_MODE.FILE,
+        });
 
       customElements.define(
         "app-card",
@@ -251,9 +268,11 @@
       );
 
       window.onload = async () => {
-        const mode = localStorage.getItem(STORAGE_ENV_KEY) || window.ProzorroPdf.MODE.SANDBOX;
-        await window.ProzorroPdf.init(mode);
-        document.getElementById("environment").value = mode;
+        await initPdf();
+        document.getElementById("environment").value =
+          localStorage.getItem(STORAGE_ENV_KEY) || window.ProzorroPdf.MODE.SANDBOX;
+        document.getElementById("signDecodeByUrl").checked =
+          localStorage.getItem(STORAGE_SIGN_DECODE_MODE_KEY) === window.ProzorroPdf.SIGN_DECODE_MODE.URL;
 
         /**
          * @typedef {Object} AppCardField
@@ -779,7 +798,13 @@
 
         document.getElementById("environment").addEventListener("change", async ({ target: { value } }) => {
           localStorage.setItem(STORAGE_ENV_KEY, value);
-          await window.ProzorroPdf.init(value);
+          await initPdf();
+        });
+
+        document.getElementById("signDecodeByUrl").addEventListener("change", async ({ target: { checked } }) => {
+          const { URL, FILE } = window.ProzorroPdf.SIGN_DECODE_MODE;
+          localStorage.setItem(STORAGE_SIGN_DECODE_MODE_KEY, checked ? URL : FILE);
+          await initPdf();
         });
       };
 
