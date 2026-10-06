@@ -12,6 +12,7 @@ import { DictionaryCollector } from "@/services/DictionaryCollector/DictionaryCo
 import { PROZORRO_PDF_ERROR_CODES } from "@/widgets/ErrorExceptionCore/constants/ERROR_CODES.enum";
 import type { EnvironmentType } from "@/types/pdf/EnvironmentType";
 import { DomHandler } from "@/services/Dom/DomHandler";
+import type { SignVerifierInterface } from "@/services/Sign/SignVerifier";
 
 export interface IPdfDocument {
   open(config: PdfDocumentConfigType): Promise<void | ErrorExceptionCore>;
@@ -31,7 +32,8 @@ export class PdfDocument implements IPdfDocument {
   constructor(
     private readonly envVars: EnvironmentType,
     private readonly documentType: PROZORRO_PDF_TYPES,
-    private readonly object?: PdfObjectType
+    private readonly object?: PdfObjectType,
+    private readonly signVerifier?: SignVerifierInterface
   ) {}
 
   async open(config: PdfDocumentConfigType): Promise<void | ErrorExceptionCore> {
@@ -133,7 +135,7 @@ export class PdfDocument implements IPdfDocument {
         Assert.isDefined(this.object, ERROR_MESSAGES.VALIDATION_FAILED.undefinedObject);
       }
 
-      const loaderManager = new LoaderManager(this.envVars);
+      const loaderManager = new LoaderManager(this.envVars, this.signVerifier);
       loaderManager.setLoaderType(this.documentType);
       const { file, type, signers, url, additionalData, title } = await loaderManager.getData(
         this.object as any,

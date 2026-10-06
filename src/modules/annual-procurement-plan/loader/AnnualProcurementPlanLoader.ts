@@ -18,8 +18,7 @@ export class AnnualProcurementPlan
     Assert.isDefined(documents, ERROR_MESSAGES.VALIDATION_FAILED.documentListUndefined);
 
     const document = this.getDocument(documents, config);
-    const file = await this.getData(document.url);
-    const { data, signers } = await this.getDataFromSign(file, config.encoding);
+    const { data, signers } = await this.verifySign({ signUrl: document.url }, config.encoding);
 
     return {
       url: document.url,

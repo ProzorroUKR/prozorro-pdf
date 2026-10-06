@@ -25,8 +25,7 @@ export class ComplaintLoader
 
     let additionalData = null;
     const { url, title } = this.getDocument(object);
-    const file = await this.getData(url);
-    const { data, signers } = await this.getDataFromSign(file, encoding);
+    const { data, signers } = await this.verifySign({ signUrl: url }, encoding);
 
     if (tender) {
       const { data: payload }: { data: TenderType } = await HttpClient.get(tender);

@@ -24,8 +24,7 @@ export class DeviationReportLoader
     Assert.isDefined(documents, ERROR_MESSAGES.VALIDATION_FAILED.documentListUndefined);
 
     const { url, title } = this._getDocument(documents, config);
-    const file = await this.getData(url);
-    const { data, signers } = await this.getDataFromSign(file, config.encoding);
+    const { data, signers } = await this.verifySign({ signUrl: url }, config.encoding);
 
     return {
       url,

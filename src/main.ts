@@ -4,6 +4,8 @@ export * from "@/services/PDF/PdfDocument";
 export * from "@/services/PDF/PdfTypes";
 export * from "@/types/ProzorroPdfError.model";
 export * from "@/constants/ENVIRONMENT_MODE.enum";
+export * from "@/constants/SIGN_DECODE_MODE.enum";
+export type * from "@/types/pdf/InitOptionsType";
 export * from "@/types/pq/TemplateCodes.enum";
 export * from "@/widgets/ErrorExceptionCore/ErrorExceptionCore";
 export * from "@/widgets/ErrorExceptionCore/constants/ERROR_CODES.enum";

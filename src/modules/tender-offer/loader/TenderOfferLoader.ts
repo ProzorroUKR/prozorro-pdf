@@ -31,8 +31,7 @@ export class TenderOfferLoader
     }
 
     const { url, title } = this.getDocument(allDocuments, config);
-    const file = await this.getData(url);
-    const { data, signers } = await this.getDataFromSign(file, config.encoding);
+    const { data, signers } = await this.verifySign({ signUrl: url }, config.encoding);
 
     return {
       url,

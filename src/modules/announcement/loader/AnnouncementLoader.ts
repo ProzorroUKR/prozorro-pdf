@@ -17,8 +17,7 @@ export class AnnouncementLoader
 {
   async load(object: AnnouncementType, config: PdfDocumentConfigType): Promise<P7SLoadResultType<Record<any, any>>> {
     const document = this.getDocument(object, config);
-    const file = await this.getData(document.url);
-    const { data, signers } = await this.getDataFromSign(file, config.encoding);
+    const { data, signers } = await this.verifySign({ signUrl: document.url }, config.encoding);
 
     return {
       url: document.url,

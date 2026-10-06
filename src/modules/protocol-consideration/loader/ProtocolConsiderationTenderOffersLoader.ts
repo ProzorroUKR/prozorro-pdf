@@ -48,8 +48,7 @@ export class ProtocolConsiderationTenderOffersLoader
       });
     }
 
-    const file = await this.getData(url);
-    const { data, signers } = await this.getDataFromSign(file, encoding);
+    const { data, signers } = await this.verifySign({ signUrl: url }, encoding);
 
     return {
       url,
