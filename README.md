@@ -137,13 +137,20 @@ await doc.open({ title: "sign.p7s" });
 
 ---
 
-### `open(config: PdfDocumentConfigType): Promise<void>`
+### `open(config: PdfDocumentConfigType, win?: Window | null): Promise<void>`
 
 Відкриття документа у **новій вкладці браузера**.
 
 Аргументи:
 
 - `config` - тип PdfDocumentConfigType
+- `win` - (опційно) вже відкрите вікно, у яке буде завантажено PDF. Safari (зокрема iOS) блокує `window.open`,
+  викликаний після асинхронної роботи, тому в обробнику кліку вікно треба відкрити синхронно і передати сюди:
+
+```ts
+const win = window.open("", "_blank");
+await doc.open({ title: "sign.p7s" }, win);
+```
 
 ---
 

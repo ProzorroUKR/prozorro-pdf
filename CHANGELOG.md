@@ -4,6 +4,8 @@
 
 ## 07.10.2026
 
+- Added optional `win` argument to `PdfDocument.open(config, win?)` — a window pre-opened inside a user gesture is
+  passed through to pdfmake, so Safari/iOS does not popup-block the tab after the async document build.
 - Added `PdfDocument.getBlob(config)` — returns the generated PDF as a `Blob` (`application/pdf`) without base64
   encoding. Intended for `URL.createObjectURL` / pdf.js consumers (iOS cannot reliably show multi-MB `data:` URLs).
 

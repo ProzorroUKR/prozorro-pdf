@@ -15,7 +15,7 @@ import { DomHandler } from "@/services/Dom/DomHandler";
 import type { SignVerifierInterface } from "@/services/Sign/SignVerifier";
 
 export interface IPdfDocument {
-  open(config: PdfDocumentConfigType): Promise<void | ErrorExceptionCore>;
+  open(config: PdfDocumentConfigType, win?: Window | null): Promise<void | ErrorExceptionCore>;
   save(config: PdfDocumentConfigType, fileName?: string): Promise<void | ErrorExceptionCore>;
   getIframe(config: PdfDocumentConfigType, parentFrameId?: string): Promise<void | ErrorExceptionCore>;
   getDataUrl(config: PdfDocumentConfigType): Promise<string | ErrorExceptionCore>;
@@ -37,18 +37,28 @@ export class PdfDocument implements IPdfDocument {
     private readonly signVerifier?: SignVerifierInterface
   ) {}
 
-  async open(config: PdfDocumentConfigType): Promise<void | ErrorExceptionCore> {
+  /**
+   * Opens the document in a new browser tab.
+   *
+   * `win` is a window the caller has already opened (`window.open("", "_blank")`) synchronously inside a user
+   * gesture. Safari blocks `window.open` once the gesture has been consumed by awaited work, so without `win`
+   * the tab is opened only after the document data is collected and may be popup-blocked.
+   */
+  async open(config: PdfDocumentConfigType, win?: Window | null): Promise<void | ErrorExceptionCore> {
     const { data } = await this.create(config);
 
     return new Promise((resolve, reject) => {
       try {
-        (pdfMake as Pdfmake).createPdf(data).open({
-          progressCallback: progress => {
-            if (progress === 1) {
-              resolve();
-            }
+        (pdfMake as Pdfmake).createPdf(data).open(
+          {
+            progressCallback: progress => {
+              if (progress === 1) {
+                resolve();
+              }
+            },
           },
-        });
+          win
+        );
       } catch (error) {
         reject(
           new ErrorExceptionCore({

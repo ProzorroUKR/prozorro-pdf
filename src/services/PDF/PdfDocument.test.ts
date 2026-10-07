@@ -67,6 +67,39 @@ describe("PdfDocument", () => {
     });
   });
 
+  describe("open", () => {
+    it("hands the pre-opened window to pdfmake so the tab survives Safari's popup blocker", async () => {
+      const win = { location: { href: "" } } as Window;
+      const open = vi.fn((options: { progressCallback: (progress: number) => void }) => options.progressCallback(1));
+      createPdfMock.mockReturnValue({ open } as any);
+
+      await createDocument().open(CONFIG, win);
+
+      expect(open).toHaveBeenCalledWith(expect.objectContaining({ progressCallback: expect.any(Function) }), win);
+    });
+
+    it("lets pdfmake open its own window when none is given", async () => {
+      const open = vi.fn((options: { progressCallback: (progress: number) => void }) => options.progressCallback(1));
+      createPdfMock.mockReturnValue({ open } as any);
+
+      await createDocument().open(CONFIG);
+
+      expect(open).toHaveBeenCalledWith(expect.any(Object), undefined);
+    });
+
+    it("rejects with PDF_GENERATION_FAILED when the browser blocks the popup", async () => {
+      createPdfMock.mockReturnValue({
+        open: () => {
+          throw "Open PDF in new window blocked by browser";
+        },
+      } as any);
+
+      const error = await catchError(createDocument().open(CONFIG));
+
+      expect(error.code).toBe(PROZORRO_PDF_ERROR_CODES.PDF_GENERATION_FAILED);
+    });
+  });
+
   describe("getDataUrl", () => {
     it("resolves with the data URL produced by pdfmake", async () => {
       const getDataUrl = vi.fn((callback: (result: string) => void) => callback("data:application/pdf;base64,AAA"));
