@@ -19,6 +19,7 @@ export interface IPdfDocument {
   save(config: PdfDocumentConfigType, fileName?: string): Promise<void | ErrorExceptionCore>;
   getIframe(config: PdfDocumentConfigType, parentFrameId?: string): Promise<void | ErrorExceptionCore>;
   getDataUrl(config: PdfDocumentConfigType): Promise<string | ErrorExceptionCore>;
+  getBlob(config: PdfDocumentConfigType): Promise<Blob | ErrorExceptionCore>;
 }
 
 /**
@@ -26,7 +27,7 @@ export interface IPdfDocument {
  *
  * All per-document state (loaded CBD object, document type, environment)
  * lives on the instance, so concurrent handles never share configuration.
- * The four producing methods all funnel through the private {@link create}.
+ * The five producing methods all funnel through the private {@link create}.
  */
 export class PdfDocument implements IPdfDocument {
   constructor(
@@ -117,6 +118,24 @@ export class PdfDocument implements IPdfDocument {
     return new Promise((resolve, reject) => {
       try {
         (pdfMake as Pdfmake).createPdf(data).getDataUrl(dataUrl => resolve(dataUrl));
+      } catch (error) {
+        reject(
+          new ErrorExceptionCore({
+            originalError: error,
+            message: (error as any)?.message,
+            code: PROZORRO_PDF_ERROR_CODES.PDF_GENERATION_FAILED,
+          })
+        );
+      }
+    });
+  }
+
+  async getBlob(config: PdfDocumentConfigType): Promise<Blob | ErrorExceptionCore> {
+    const { data } = await this.create(config);
+
+    return new Promise((resolve, reject) => {
+      try {
+        (pdfMake as Pdfmake).createPdf(data).getBlob(blob => resolve(blob));
       } catch (error) {
         reject(
           new ErrorExceptionCore({

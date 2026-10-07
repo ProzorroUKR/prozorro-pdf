@@ -128,7 +128,7 @@ await ProzorroPdfService.init(ENVIRONMENT_MODE.SANDBOX, { signDecodeMode: SIGN_D
 - `url: string` — посилання на об’єкт;
 - `type: PROZORRO_PDF_TYPES` — тип документа.
 
-Методи `open` / `save` / `getIframe` / `getDataUrl` викликаються на отриманому handle:
+Методи `open` / `save` / `getIframe` / `getDataUrl` / `getBlob` викликаються на отриманому handle:
 
 ```ts
 const doc = await ProzorroPdfService.setConfig({ url, type });
@@ -166,6 +166,33 @@ await doc.open({ title: "sign.p7s" });
 
 - `config` - тип PdfDocumentConfigType
 - `parentFrameId` - ID батьківського елементу, в середину якого буде втавлено iframe з ПДФ, за замовчуванням `prozorroPdfFrameID`
+
+---
+
+### `getDataUrl(config: PdfDocumentConfigType): Promise<string>`
+
+Повертає документ як `data:application/pdf;base64,...` рядок (для `iframe` / `embed`).
+
+Аргументи:
+
+- `config` - тип PdfDocumentConfigType
+
+---
+
+### `getBlob(config: PdfDocumentConfigType): Promise<Blob>`
+
+Повертає документ як `Blob` (`application/pdf`) без base64-кодування. Рекомендований спосіб отримати байти PDF:
+підходить для `URL.createObjectURL`, pdf.js (`new Uint8Array(await blob.arrayBuffer())`) або завантаження.
+
+Аргументи:
+
+- `config` - тип PdfDocumentConfigType
+
+```ts
+const doc = await ProzorroPdfService.setConfig({ url, type });
+const blob = await doc.getBlob({ title: "sign.p7s" });
+const objectUrl = URL.createObjectURL(blob);
+```
 
 ---
 

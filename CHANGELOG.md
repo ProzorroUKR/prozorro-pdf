@@ -2,6 +2,11 @@
 
 Усі помітні зміни в `@prozorro/prozorro-pdf`. Нові записи — зверху.
 
+## 07.10.2026
+
+- Added `PdfDocument.getBlob(config)` — returns the generated PDF as a `Blob` (`application/pdf`) without base64
+  encoding. Intended for `URL.createObjectURL` / pdf.js consumers (iOS cannot reliably show multi-MB `data:` URLs).
+
 ## 06.10.2026
 
 - Changed sign decoding flow: by default `.p7s` files are no longer downloaded in the browser — only
