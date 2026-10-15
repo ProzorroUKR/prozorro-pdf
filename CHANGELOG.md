@@ -2,6 +2,10 @@
 
 Усі помітні зміни в `@prozorro/prozorro-pdf`. Нові записи — зверху.
 
+## 15.10.2026
+
+- Added localization tag to `annual_procurement_plan`.
+
 ## 07.10.2026
 
 - Added optional `win` argument to `PdfDocument.open(config, win?)` — a window pre-opened inside a user gesture is

@@ -1,7 +1,17 @@
+import type { ItemType } from "@/types/TenderOffer/Tender";
 import type { ClassificationType } from "@/types/Tender/ClassificationType";
 import { SCHEME_TRANSLATION_DICTIONARY } from "@/config/SCHEME_TRANSLATION_DICTIONARY";
 
 export class ClassificationHandler {
+  static hasItemsLocalizationParam(items: ItemType[]): boolean {
+    const LOCALIZATION_SCHEME = "uktzed";
+    return items.some(item =>
+      (item.additionalClassifications ?? []).some(
+        classification => classification.scheme?.toLowerCase() === LOCALIZATION_SCHEME
+      )
+    );
+  }
+
   static format(classification?: ClassificationType, additionalClassification: ClassificationType[] = []): string[] {
     return [classification, additionalClassification]
       .flat()

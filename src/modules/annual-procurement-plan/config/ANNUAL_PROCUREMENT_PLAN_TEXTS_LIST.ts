@@ -28,6 +28,7 @@ export const ANNUAL_PROCUREMENT_PLAN_TEXTS_LIST = {
   has_been_resolved_text: "Затвердити річний план закупівлі та опублікувати на веб-порталі Уповноваженого органу",
   tender_start_date: "Орієнтовний початок проведення закупівлі:",
   source_funding: "Джерело фінансування закупівлі",
+  localization_is_applied: "Застосовується локалізація:",
   description: "Опис",
   classification: "Код класифікації видатків",
   address: "Адміністративно-територіальна класифікація",

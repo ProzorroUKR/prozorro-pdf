@@ -22,6 +22,7 @@ import { StringHandler } from "@/utils/StringHandler";
 import type { PdfDocumentConfigType } from "@/types/pdf/PdfDocumentConfigType";
 import { DictionaryCollector } from "@/services/DictionaryCollector/DictionaryCollector";
 import { PDFTablesHandler } from "@/services/PDF/Formatting/PDFTablesHandler.ts";
+import { ClassificationHandler } from "@/utils/ClassificationHandler.ts";
 
 export class AnnualProcurementPlanDataMaker extends AbstractDocumentStrategy {
   private readonly dictionaryHelper = new DictionaryHelper(this);
@@ -64,6 +65,7 @@ export class AnnualProcurementPlanDataMaker extends AbstractDocumentStrategy {
     const budgetProjectLabel: string =
       (ANNUAL_PROCUREMENT_PLAN_TEXTS_LIST.project_scheme as Record<string, string>)[budget?.project?.scheme] ||
       ANNUAL_PROCUREMENT_PLAN_TEXTS_LIST.project_scheme.plan_of_ukraine;
+    const hasLocalisation = ClassificationHandler.hasItemsLocalizationParam(items);
 
     if (katottgIdsList.length > 0) {
       const dictionary = new Map<string, string>().set("katottg", "katottg");
@@ -143,6 +145,7 @@ export class AnnualProcurementPlanDataMaker extends AbstractDocumentStrategy {
         ANNUAL_PROCUREMENT_PLAN_TEXTS_LIST.tender_start_date
       ),
       budget?.project ? this.showWithDefault(budget?.project?.name || STRING.DASH, budgetProjectLabel) : null,
+      hasLocalisation ? this.showWithDefault("Так", ANNUAL_PROCUREMENT_PLAN_TEXTS_LIST.localization_is_applied) : null,
       items?.length ? this.createItemTable(items, dictionaries) : null,
       budget.breakdown?.length ? this.createBudgetBreakdownTable(budget.breakdown, dictionaries) : null,
       this.showWithDefault(rationale?.description, ANNUAL_PROCUREMENT_PLAN_TEXTS_LIST.reasons_for_purchase_by_customer),
