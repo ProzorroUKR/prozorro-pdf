@@ -3,7 +3,7 @@ import type { ClassificationType } from "@/types/Tender/ClassificationType";
 import { SCHEME_TRANSLATION_DICTIONARY } from "@/config/SCHEME_TRANSLATION_DICTIONARY";
 
 export class ClassificationHandler {
-  static hasItemsLocalizationParam(items: ItemType[]): boolean {
+  static hasItemsLocalizationParam(items: ItemType[] = []): boolean {
     const LOCALIZATION_SCHEME = "uktzed";
     return items.some(item =>
       (item.additionalClassifications ?? []).some(
