@@ -4,11 +4,9 @@ import { SCHEME_TRANSLATION_DICTIONARY } from "@/config/SCHEME_TRANSLATION_DICTI
 
 export class ClassificationHandler {
   static hasItemsLocalizationParam(items: ItemType[] = []): boolean {
-    const LOCALIZATION_SCHEME = "uktzed";
+    const LOCALIZATION_SCHEME = "UKTZED";
     return items.some(item =>
-      (item.additionalClassifications ?? []).some(
-        classification => classification.scheme?.toLowerCase() === LOCALIZATION_SCHEME
-      )
+      (item.additionalClassifications ?? []).some(classification => classification.scheme === LOCALIZATION_SCHEME)
     );
   }
 
