@@ -81,7 +81,7 @@ export class AnnouncementDataMaker extends AbstractDocumentStrategy {
       Boolean(criteria.length) && noSecurement.includes(procurementMethodType as procurementMethodTypes);
     const plansList = (plans || []).map(({ id }: any) => id).join(STRING.DELIMITER.NEW_LINE);
 
-    return [
+    const content: Record<string, any>[] = [
       isEsco
         ? this.createEscoItemTable(items, minimalStepPercentage, yearlyPaymentsPercentageRange, fundingKind)
         : this.createItemTable(items),
@@ -196,6 +196,9 @@ export class AnnouncementDataMaker extends AbstractDocumentStrategy {
       CriteriaHandler.getCriterionSecurityContract(criteria, dictionaries),
       CriteriaHandler.getCriterionLocalization(criteria, dictionaries),
     ];
+
+    // Drop empty fields ({}) so skipped optional rows don't render as blank lines
+    return content.filter(item => typeof item === "string" || (item && Object.keys(item).length > 0));
   }
 
   private createItemTable(items: Array<AnnouncementItem>): Record<string, any> {
@@ -249,23 +252,22 @@ export class AnnouncementDataMaker extends AbstractDocumentStrategy {
       ]);
     });
 
-    return PDFTablesHandler.resolveTableBug(
-      PDFTablesHandler.createTable(
-        body,
-        [
+    return {
+      headerRows: 1,
+      style: PDF_FILED_KEYS.TABLE_DATA,
+      margin: PDF_HELPER_CONST.TABLE_TOP_MARGIN,
+      table: {
+        dontBreakRows: false,
+        widths: [
           PDF_HELPER_CONST.ROW_WIDTH_110,
           PDF_HELPER_CONST.ROW_WIDTH_100,
           PDF_HELPER_CONST.ROW_WIDTH_70,
           PDF_HELPER_CONST.ROW_AUTO_WIDTH,
           PDF_HELPER_CONST.ROW_WIDTH_90,
         ],
-        undefined,
-        undefined,
-        undefined,
-        false
-      ),
-      {}
-    );
+        body,
+      },
+    };
   }
 
   private createEscoItemTable(

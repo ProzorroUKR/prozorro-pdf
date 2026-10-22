@@ -250,7 +250,7 @@
         "hash": "md5:8e44ca2b60c532f2839490f8b2ff2f7b",
         "author": "tender_owner",
         "format": "application/pkcs7-signature",
-        "url": "test-data/announcement/sign_securement.p7s",
+        "url": "test-data/announcement/sign_esco.p7s",
         "title": "sign.p7s",
         "documentOf": "tender",
         "datePublished": "2020-01-20T11:41:32.050904+02:00",

@@ -2,6 +2,11 @@
 
 Усі помітні зміни в `@prozorro/prozorro-pdf`. Нові записи — зверху.
 
+## 19.10.2026
+
+- Fix broken tables for `ANNOUNCEMENT` type;
+- Fix spaces for `ANNUAL_PROCUREMENT_PLAN` type;
+
 ## 15.10.2026
 
 - Added localization tag to `annual_procurement_plan`.

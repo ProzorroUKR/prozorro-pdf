@@ -21,7 +21,6 @@ import { UnitHelper } from "@/services/Common/UnitHelper";
 import { StringHandler } from "@/utils/StringHandler";
 import type { PdfDocumentConfigType } from "@/types/pdf/PdfDocumentConfigType";
 import { DictionaryCollector } from "@/services/DictionaryCollector/DictionaryCollector";
-import { PDFTablesHandler } from "@/services/PDF/Formatting/PDFTablesHandler.ts";
 import { ClassificationHandler } from "@/utils/ClassificationHandler.ts";
 
 export class AnnualProcurementPlanDataMaker extends AbstractDocumentStrategy {
@@ -226,28 +225,23 @@ export class AnnualProcurementPlanDataMaker extends AbstractDocumentStrategy {
         },
       ])
     );
-    return PDFTablesHandler.resolveTableBug(
-      {
-        table: {
-          unbreakable: true,
-          headerRows: 0,
-          dontBreakRows: false,
-          widths: [
-            PDF_HELPER_CONST.ROW_AUTO_WIDTH,
-            PDF_HELPER_CONST.ROW_AUTO_WIDTH,
-            PDF_HELPER_CONST.ROW_AUTO_WIDTH,
-            PDF_HELPER_CONST.ROW_AUTO_WIDTH,
-            PDF_HELPER_CONST.ROW_AUTO_WIDTH,
-          ],
-          body,
-        },
-        margin: MARGIN_TOP_5__BOTTOM_5__LEFT_MINUS_5,
+
+    return {
+      table: {
+        unbreakable: true,
+        headerRows: 0,
+        dontBreakRows: false,
+        widths: [
+          PDF_HELPER_CONST.ROW_AUTO_WIDTH,
+          PDF_HELPER_CONST.ROW_AUTO_WIDTH,
+          PDF_HELPER_CONST.ROW_AUTO_WIDTH,
+          PDF_HELPER_CONST.ROW_AUTO_WIDTH,
+          PDF_HELPER_CONST.ROW_AUTO_WIDTH,
+        ],
+        body,
       },
-      {
-        text: STRING.EMPTY,
-        style: PDF_FILED_KEYS.TABLE_HEAD,
-      }
-    );
+      margin: MARGIN_TOP_5__BOTTOM_5__LEFT_MINUS_5,
+    };
   }
 
   private createItemTable(
@@ -297,26 +291,20 @@ export class AnnualProcurementPlanDataMaker extends AbstractDocumentStrategy {
       ])
     );
 
-    return PDFTablesHandler.resolveTableBug(
-      {
-        table: {
-          headerRows: 0,
-          dontBreakRows: false,
-          widths: [
-            PDF_HELPER_CONST.ROW_AUTO_WIDTH,
-            PDF_HELPER_CONST.ROW_AUTO_WIDTH,
-            PDF_HELPER_CONST.ROW_AUTO_WIDTH,
-            PDF_HELPER_CONST.ROW_AUTO_WIDTH,
-          ],
-          body,
-        },
-        margin: MARGIN_TOP_5__BOTTOM_5__LEFT_MINUS_5,
+    return {
+      table: {
+        headerRows: 0,
+        dontBreakRows: false,
+        widths: [
+          PDF_HELPER_CONST.ROW_AUTO_WIDTH,
+          PDF_HELPER_CONST.ROW_AUTO_WIDTH,
+          PDF_HELPER_CONST.ROW_AUTO_WIDTH,
+          PDF_HELPER_CONST.ROW_AUTO_WIDTH,
+        ],
+        body,
       },
-      {
-        text: STRING.EMPTY,
-        style: PDF_FILED_KEYS.TABLE_HEAD,
-      }
-    );
+      margin: MARGIN_TOP_5__BOTTOM_5__LEFT_MINUS_5,
+    };
   }
 
   private getItemAdditionalClassification(

@@ -66,3 +66,6 @@ export const GET_PERCENT = {
 };
 
 export const NULL_MARGIN = [0, 0, 0, 0];
+
+// margin: [left, top, right, bottom] — gap above lot/item tables
+export const TABLE_TOP_MARGIN = [0, MARGIN_10, 0, 0];
