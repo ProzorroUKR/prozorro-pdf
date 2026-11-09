@@ -24,6 +24,7 @@ export const PROCUREMENT_METHOD_TYPE: Record<string, any> = {
   "negotiation.quick": "Переговорна процедура",
   reporting: "Звіт про укладений договір",
   "complexAsset.arma": "про проведення відбору управителя складного активу",
+  "simpleAsset.arma": "про проведення аукціону з визначення управителя простого активу",
 
   // Без підзаголовку
   competitiveOrdering: "",
