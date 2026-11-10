@@ -140,7 +140,9 @@ export class AnnouncementDataMaker extends AbstractDocumentStrategy {
       PDFTablesHandler.createTableLayout([
         PDFTablesHandler.createTableRow({
           head: ANNOUNCEMENT_TEXTS_LIST.deadline,
-          data: this.getDecisionDatePublished(this.getField(tenderPeriod, "endDate"), true, true),
+          data: this.getField(tenderPeriod, "endDate")
+            ? this.getDecisionDatePublished(this.getField(tenderPeriod, "endDate"), true, true)
+            : ANNOUNCEMENT_TEXTS_LIST.missing_he,
         }),
       ]),
 

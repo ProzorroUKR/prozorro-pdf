@@ -2,6 +2,11 @@
 
 Усі помітні зміни в `@prozorro/prozorro-pdf`. Нові записи — зверху.
 
+## 09.11.2026
+
+- Added `simpleAsset.arma` subtitle "про проведення аукціону з визначення управителя простого активу" to `ANNOUNCEMENT` type.
+- `ANNOUNCEMENT`: show "відсутній" for `tenderPeriod.endDate` ("Кінцевий строк подання тендерних пропозицій:") when the field is missing.
+
 ## 19.10.2026
 
 - Fix broken tables for `ANNOUNCEMENT` type;
