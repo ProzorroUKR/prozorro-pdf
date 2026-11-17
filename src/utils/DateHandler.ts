@@ -147,6 +147,18 @@ export class DateHandler {
   }
 
   /**
+   * "від 1 травня 2024 до 10 травня 2024" — either bound may be missing; the
+   * missing one is dropped and, when both are missing, `defaultValue` is returned.
+   * Формат «від <date> до <date>»
+   */
+  static fullDateRange(startDate?: string, endDate?: string, defaultValue = STRING.DASH): string {
+    const from = startDate ? DateHandler.fullDate(startDate, "від ") : STRING.EMPTY;
+    const to = endDate ? DateHandler.fullDate(endDate, "до ") : STRING.EMPTY;
+
+    return [from, to].filter(Boolean).join(STRING.WHITESPACE) || defaultValue;
+  }
+
+  /**
    * "2025-02-10T09:47:13+00:00" => "2025-02-10 09:47:13"
    * @param date
    */

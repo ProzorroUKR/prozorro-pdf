@@ -2,6 +2,14 @@
 
 Усі помітні зміни в `@prozorro/prozorro-pdf`. Нові записи — зверху.
 
+## 12.11.2026
+
+- Added `TERMINATION_REPORT` type (Звіт про виконання публічного договору) — sign file from
+  `contract.terminationDetails.documents` with `documentType` `"terminationReport"`; decoded sign splits into the
+  termination decision (`data`) and the contract snapshot (`context.contract`). Renders the contract header, items
+  table (classifications, quantity/unit, attributes with product links), contract term,
+  amount paid and, for `reasonType` `"disrupted"`, the termination reason.
+
 ## 09.11.2026
 
 - Added `simpleAsset.arma` subtitle "про проведення аукціону з визначення управителя простого активу" to `ANNOUNCEMENT` type.

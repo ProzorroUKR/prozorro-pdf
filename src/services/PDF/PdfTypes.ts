@@ -16,4 +16,5 @@ export enum PROZORRO_PDF_TYPES {
   TENDER_OFFER = "tender_offer",
   COMPLAINT_POST = "complaint_post",
   DEVIATION_REPORT = "deviation_report",
+  TERMINATION_REPORT = "termination_report",
 }
