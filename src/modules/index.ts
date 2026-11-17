@@ -8,6 +8,7 @@ import { nazkModule } from "@/modules/nazk";
 import { conclusionModule } from "@/modules/conclusion";
 import { ticketModule } from "@/modules/ticket";
 import { deviationReportModule } from "@/modules/deviation-report";
+import { terminationReportModule } from "@/modules/termination-report";
 import { complaintPostModule } from "@/modules/complaint-post";
 import { complaintModule } from "@/modules/complaint";
 import { announcementModule } from "@/modules/announcement";
@@ -43,4 +44,5 @@ export const pdfFeatureModules: PdfFeatureModule[] = [
   edr2Module,
   complaintPostModule,
   deviationReportModule,
+  terminationReportModule,
 ];

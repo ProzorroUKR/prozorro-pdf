@@ -769,6 +769,35 @@
               },
             ],
           },
+          {
+            type: window.ProzorroPdf.TYPES.TERMINATION_REPORT,
+            title: "Звіт про виконання публічного договору",
+            description: `
+                <h6>Validations:</h6>
+                   <ul>
+                    <li>Get sign file from <code>contract.terminationDetails.documents</code></li>
+                    <li>Field <code>document.documentType</code> must be <code>"terminationReport"</code></li>
+                    <li>Optional validation by <code>document.dateModified</code> field</li>
+                    <li>If document.dateModified isn't set, after validating it gets the last document from the list</li>
+                    <li>Decoded sign splits into termination decision (<code>data</code>) and contract snapshot (<code>context.contract</code>)</li>
+                </ul>
+            `,
+            fields: [
+              {
+                key: "url",
+                label: "Contract URL",
+                defaultValue:
+                  "https://lb-api-sandbox-2.prozorro.gov.ua/api/2.5/contracts/4d08e02c4b964b3cb5df88722dc0fb60",
+                required: true,
+              },
+              {
+                key: "date",
+                label: "Date modified",
+                defaultValue: "",
+                type: "date",
+              },
+            ],
+          },
         ];
 
         createCardList(DATA_COLLECTION);
